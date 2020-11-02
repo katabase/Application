@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+   <p>
+       <ul>
+       {% for catalogue in index %}
+
+
+       <li><a href="{{ url_for('view', id=catalogue.id) }}">{{ catalogue.id }}</a></li>
+
+        {% endfor %}
+   </ul>
+   </p>
+</body>
+</html>
