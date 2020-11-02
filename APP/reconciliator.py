@@ -64,6 +64,7 @@ def double_loop(input_dict, searched_date):
     # First we compare each entry with each other one and give a score to each pair.
     for i in tqdm.tqdm(input_dict):
         catalog_entry_i = i.split("_d")[0]
+        desc = input_dict[i]["desc"]
         term = input_dict[i]["term"]
         date = input_dict[i]["date"]
         format = input_dict[i]["format"]
@@ -80,6 +81,12 @@ def double_loop(input_dict, searched_date):
                 if j == i:
                     pass
                 else:
+                    # Desc of a same document are often strongly similar.
+                    if similar(input_dict[j]["desc"], desc) > 0.75:
+                        score = score + 0.3
+                    else:
+                        score = score - 0.2
+
                     if input_dict[j]["term"] == term:
                         score = score + 0.2
                     else:
