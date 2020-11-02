@@ -18,6 +18,13 @@ def search():
     return render_template("pages/Search.html")
 
 
-@app.route("/Corpus")
-def corpus():
-    return render_template("pages/Corpus.html")
+@app.route("/Index")
+def index():
+    return render_template("pages/Index.html", index=create_index())
+
+
+@app.route("/View/<id>")
+def view(id):
+    file = validate_id(id)
+    doc = open_file(file)
+    return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc))
