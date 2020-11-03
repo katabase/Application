@@ -1,13 +1,9 @@
 import json
-from time import process_time
 import tqdm
 from difflib import SequenceMatcher
-import sys
-import os
 import re
 import networkx
 from networkx.algorithms.components.connected import connected_components
-import argparse
 
 
 # https://stackoverflow.com/a/17388505
@@ -58,8 +54,8 @@ def double_loop(input_dict, searched_date):
     This function creates pairs of matching entries.
     :param input_dict: a dictionary
     :param searched_date: a string (optional parameter)
+    :return: two lists
     """
-    print("Comparing the entries")
 
     output_dict1 = {}
     # First we compare each entry with each other one and give a score to each pair.
@@ -130,7 +126,7 @@ def double_loop(input_dict, searched_date):
         second_entry = key.split("-")[1]
         final_list.append((
                           output_dict1[key]["score"], [first_entry, second_entry], output_dict1[key]["author_distance"],
-                          {first_entry: my_dict[first_entry]}, {second_entry: my_dict[second_entry]}))
+                          {first_entry: input_dict[first_entry]}, {second_entry: input_dict[second_entry]}))
     # We sort by author distance first, and then by the score.
     final_list.sort(reverse=True, key=lambda x: (x[2], x[0]))
 
@@ -148,27 +144,13 @@ def double_loop(input_dict, searched_date):
     for item in cleaned_list:
         temp_list = []
         for entry in item:
-            temp_list.append({entry: my_dict[entry]})
+            temp_list.append({entry: input_dict[entry]})
         cleaned_output_list.append(temp_list)
         cleaned_output_list[n].append(item)
         temp_list.reverse()
         n += 1
 
-    print("Number of pairs found: %s" % (len(filtered_list)))
-    print("Number of reconciliated documents: %s" % (len(cleaned_output_list)))
-    if searched_date:
-        path = 'data/json/%s/%s' % (norm_author, searched_date)
-    else:
-        path = 'data/json/%s' % norm_author
-
-    # reconciliated_pairs.json contains the score of each pair.
-    with open('%s/reconciliated_pairs.json' % path, 'w') as outfile:
-        json.dump(filtered_list_with_score, outfile)
-
-    # reconciliated_documents.json contains contains the reconciliated entries.
-    with open('%s/reconciliated_documents.json' % path, 'w') as outfile:
-        outfile.truncate(0)
-        json.dump(cleaned_output_list, outfile)
+    return filtered_list_with_score, cleaned_output_list
 
 
 def author_filtering(dictionary, name):
@@ -182,20 +164,16 @@ def author_filtering(dictionary, name):
     for key in dictionary:
         if dictionary[key]["author"] is not None and similar(dictionary[key]["author"].lower(), name) > 0.75:
             output_dict[key] = dictionary[key]
-    with open('data/json/%s/filtered_db.json' % norm_author, 'w') as outfile:
-        outfile.truncate(0)
-        print("Number of documents of %s in the database: %s" % (author, len(output_dict)))
-        json.dump(output_dict, outfile)
+
     return output_dict
 
 
-def year_filtering(dictionary):
+def year_filtering(dictionary, date):
     output_dict = {}
     # a= stands for after.
     if re.compile("^a=").match(date):
         norm_date = date.split("=")[1]
         for key in dictionary:
-            print(dictionary[key]["date"])
             if dictionary[key]["date"] is not None and dictionary[key]["date"] >= norm_date:
                 output_dict[key] = dictionary[key]
     # b= stands for before.
@@ -211,40 +189,36 @@ def year_filtering(dictionary):
         for key in dictionary:
             if dictionary[key]["date"] is not None and date_before <= dictionary[key]["date".split("-")[0]] <= date_after:
                 output_dict[key] = dictionary[key]
-    with open('data/json/%s/%s/filtered_db.json' % (norm_author, date), 'w') as outfile:
-        outfile.truncate(0)
-        json.dump(output_dict, outfile)
+
     return output_dict
-
-
-def dircreate(path):
-    try:
-        os.mkdir(path)
-    except:
-        pass
 
 
 def reconciliator(author, date):
     """
     This function is the main function used for queries.
     :param author: a string
-    :param date: an integer
-    :return:
+    :param date: a string, optional parameter
     """
-    # We normalize author names to create the folders.
-    normalisation_table = str.maketrans("éèêàç", "eeeac")
-    norm_author = author.translate(normalisation_table)
-
-    # Creation of the output directory
-    dircreate("data/json/%s" % norm_author)
-    if date:
-        dircreate("data/json/%s/%s" % (norm_author, date))
+    final_results = {}
+    # Loading of all the data in JSON.
+    with open('APP/data/json/export.json', 'r') as data:
+        all_data = json.load(data)
 
     # Only entries of the searched author are remained.
-    my_dict = author_filtering(my_dict, author)
+    author_dict = author_filtering(all_data, author)
 
+    # Entries are filtered by date, if there is one.
     if date:
-        my_dict = year_filtering(my_dict)
+        author_dict = year_filtering(author_dict, date)
 
-    double_loop(my_dict, date)
+    # The dictionary containing entries of an author are remained in the final dictionary.
+    final_results["filtered_data"] = author_dict
+
+    results_lists = double_loop(author_dict, date)
+
+    final_results["score"] = results_lists[0]
+    final_results["pairs"] = results_lists[1]
+
+    print(final_results)
+    return final_results
 

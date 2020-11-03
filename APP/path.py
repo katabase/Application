@@ -1,7 +1,7 @@
-from flask import render_template
+from flask import render_template, request
 from .app import app
-from .functions import *
-from lxml import etree
+from APP.main_functions import *
+from .reconciliator import *
 
 @app.route("/")
 def home():
@@ -13,9 +13,13 @@ def about_us():
     return render_template("pages/AboutUs.html")
 
 
-@app.route("/Search")
+@app.route("/Search", methods=['GET', 'POST'])
 def search():
-    return render_template("pages/Search.html")
+    author = request.args.get('author')
+    date = request.args.get('date')
+    if author:
+        return render_template('pages/search.html', results=reconciliator(author, date))
+    return render_template('pages/search.html')
 
 
 @app.route("/Index")

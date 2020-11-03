@@ -5,6 +5,13 @@
     <title>Search</title>
 </head>
 <body>
-<p>Search template.</p>
+
+<form action="{{ url_for('search') }}">
+  <input type="text" placeholder="Search an author by name" name="author" required/>
+    <input type="text" placeholder="Search by date (optional)" name="date"/>
+    <input type="submit"/>
+</form>
+
+
 </body>
 </html>
