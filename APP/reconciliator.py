@@ -61,6 +61,7 @@ def double_loop(input_dict, searched_date):
     """
     print("Comparing the entries")
 
+    output_dict1 = {}
     # First we compare each entry with each other one and give a score to each pair.
     for i in tqdm.tqdm(input_dict):
         catalog_entry_i = i.split("_d")[0]
@@ -223,43 +224,27 @@ def dircreate(path):
         pass
 
 
-if __name__ == "__main__":
-    t1 = process_time()
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-a", "--author", help="Author to be processed (mandatory !)")
-    parser.add_argument("-date", "--date", help="Date of the documents to be found (b= for before, a= for after, "
-                                                "YYYY-YYYY for a year range)")
-    if len(sys.argv) == 1:
-      sys.exit("""Please give me the name of the author with the -a flag !""")
-    args = parser.parse_args()
-    author = args.author
-    date = args.date
-
+def reconciliator(author, date):
+    """
+    This function is the main function used for queries.
+    :param author: a string
+    :param date: an integer
+    :return:
+    """
     # We normalize author names to create the folders.
     normalisation_table = str.maketrans("éèêàç", "eeeac")
     norm_author = author.translate(normalisation_table)
-    print(author)
 
     # Creation of the output directory
     dircreate("data/json/%s" % norm_author)
     if date:
         dircreate("data/json/%s/%s" % (norm_author, date))
 
-    # Loading of all the data in JSON.
-    with open('data/json/export.json', 'r') as outfile:
-        my_dict = json.load(outfile)
-
     # Only entries of the searched author are remained.
     my_dict = author_filtering(my_dict, author)
-
 
     if date:
         my_dict = year_filtering(my_dict)
 
-    output_dict1 = {}
-    print("Number of entries after filtering: %s" % len(my_dict))
     double_loop(my_dict, date)
 
-    t_stop = process_time()
-    print("Elapsed time during the whole program in seconds:", t_stop - t1)
