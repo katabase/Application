@@ -1,17 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Search</title>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block corps %}
+<div class="container">
+    {% if results %}
+    <form action="{{ url_for('search') }}">
+        <div class="row">
+            <div class="col">
+                <input type="text" name="author" class="form-control" placeholder="Sévigné" required
+                       aria-describedby="HelpAuthor">
+                <small id="HelpAuthor" class="form-text text-muted">This first field is required.</small>
+            </div>
+            <div class="col">
+                <input type="text" name="date" class="form-control" placeholder="1660-1680"
+                aria-describedby="HelpDate">
+                 <small id="Heldater" class="form-text text-muted">This second field is optional.
+                     Please use this format YYYY-YYYY for your search.</small>
+            </div>
+            <button type="submit" role="submit" class="btn btn-primary btn-lg btn-block">Search</button>
+        </div>
+    </form>
 
-<form action="{{ url_for('search') }}">
-  <input type="text" placeholder="Search an author by name" name="author" required/>
-    <input type="text" placeholder="Search by date (optional)" name="date"/>
-    <input type="submit"/>
-</form>
+    <div>
+      {% if date %}
+      <h1>Results for {{author}}, {{date}}</h1>
+
+      {% else %}
+      <h1>Results for {{author}}</h1>
+
+      {% endif %}
+<ul>
+
+        {% for key, content in results.filtered_data.items() %}
+
+    <li>{{ content }}</li>
+
+        {% endfor %}
+</ul>
 
 
-</body>
-</html>
+      <h1>Paires de documents</h1>
+    {% for pairs in results.pairs %}
+
+        <li>{{ pairs[0] }}</li>
+
+        {% endfor %}
+    </div>
+
+    {% else %}
+
+    <h1>Search</h1>
+
+    <p>On this page, you can search a specific author in all the catalogues.
+        If you want, you can do a more precise search by specifying the date.</p>
+
+    <form action="{{ url_for('search') }}">
+        <div class="row">
+            <div class="col">
+                <input type="text" name="author" class="form-control" placeholder="Sévigné" required
+                       aria-describedby="HelpAuthor">
+                <small id="HelpAuthor" class="form-text text-muted">This first field is required.</small>
+            </div>
+            <div class="col">
+                <input type="text" name="date" class="form-control" placeholder="1660-1680"
+                aria-describedby="HelpDate">
+                 <small id="Heldater" class="form-text text-muted">This second field is optional.
+                     Please use this format YYYY-YYYY for your search.</small>
+            </div>
+            <button type="submit" role="submit" class="btn btn-primary btn-lg btn-block">Search</button>
+        </div>
+    </form>
+
+
+    {% endif %}
+</div>
+{% endblock %}

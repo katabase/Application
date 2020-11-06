@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>View</title>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block corps %}
+<div class="container">
 <ul>
     <li>Title : {{ metadata.title}}</li>
     <li>Num : {{ metadata.num }}</li>
@@ -32,5 +28,5 @@
     <br/>
     {% endfor %}
 </ul>
-</body>
-</html>
+</div>
+{% endblock %}
