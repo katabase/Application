@@ -49,9 +49,13 @@ def create_index():
         file_id = os.path.basename(file)
         file_id = file_id.replace("_tagged.xml", "")
         file_info["id"] = file_id
+        # The main title is used.
+        opened_file = open_file(file_id)
+        metadata = get_metadata(opened_file)
+        file_info["title"] = metadata["main_title"]
         index.append(file_info)
     # Alphanumeric order is used, index is sorted by id.
-    index = sorted(index, key = lambda i: i['id'])
+    index = sorted(index, key=lambda i: i['id'])
     return index
 
 
@@ -64,14 +68,22 @@ def get_metadata(file):
     :return: a dictionary containing the metadata
     """
     metadata = {}
-    metadata["title"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:title/text()', namespaces=ns)[0]
-    metadata["num"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:num/text()', namespaces=ns)[0]
-    metadata["editor"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:editor/text()', namespaces=ns)[0]
-    metadata["publisher"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:publisher/text()', namespaces=ns)[0]
-    metadata["pubPlace"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns)[0]
-    metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns)[0]
-
-    metadata["encoder"] = file.xpath('//tei:titleStmt//tei:respStmt/tei:persName/text()', namespaces=ns)[0]
+    if file.xpath('//tei:titleStmt//tei:title/text()', namespaces=ns):
+        metadata["main_title"] = file.xpath('//tei:titleStmt//tei:title/text()', namespaces=ns)[0]
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:title/text()', namespaces=ns):
+        metadata["title"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:title/text()', namespaces=ns)[0]
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:num/text()', namespaces=ns):
+        metadata["num"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:num/text()', namespaces=ns)[0]
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:editor/text()', namespaces=ns):
+        metadata["editor"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:editor/text()', namespaces=ns)[0]
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:publisher/text()', namespaces=ns):
+        metadata["publisher"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:publisher/text()', namespaces=ns)[0]
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns):
+        metadata["pubPlace"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns)[0]
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns):
+        metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns)[0]
+    if file.xpath('//tei:titleStmt//tei:respStmt/tei:persName/text()', namespaces=ns):
+        metadata["encoder"] = file.xpath('//tei:titleStmt//tei:respStmt/tei:persName/text()', namespaces=ns)[0]
 
     return metadata
 
@@ -87,47 +99,71 @@ def get_entries(file):
     items = file.xpath('//tei:text//tei:item[@xml:id]', namespaces=ns)
 
     for item in items:
-        # The dictionary 'data' will contain information of each entry.
-        data = {}
-        data["id"] = item.xpath('./@xml:id', namespaces=ns)[0]
-        data["num"] = item.xpath('./@n', namespaces=ns)[0]
-
-        # In case there is an author :
-        if item.xpath('./tei:name[@type="author"]/text()', namespaces=ns):
-            data["author"] = item.xpath('./tei:name[@type="author"]/text()', namespaces=ns)[0]
-            if item.xpath('./tei:trait/tei:p/text()', namespaces=ns):
-                trait = item.xpath('./tei:trait/tei:p/text()', namespaces=ns)[0]
-                # Line breaks and duplicate whitespaces are removed.
-                data["trait"] = (" ".join(trait.split()))
-
-        # In case there is a note.
-        if item.xpath('./tei:note/text()', namespaces=ns):
-            note = item.xpath('./tei:note/text()', namespaces=ns)[0]
-            data["note"] = (" ".join(note.split()))
-
-        # In case there is a price.
-        if item.xpath('./tei:measure[@commodity="currency"]', namespaces=ns):
-            quantity = item.xpath('./tei:measure/@quantity', namespaces=ns)[0]
-            unit = item.xpath('./tei:measure/@unit', namespaces=ns)[0]
-            data["price"] = quantity + " " + unit
-
-        # In case there is one (or more) desc(s).
-        if item.xpath('./tei:desc', namespaces=ns):
-            descs = item.xpath('./tei:desc', namespaces=ns)
-            # Descs are contained in a list of dictionaries (one dictonary per desc).
-            descs_list = []
-            for desc in descs:
-                # Desc information are contained in a dictionary.
-                desc_dict = {}
-                desc_dict["id"] = desc.xpath('./@xml:id', namespaces=ns)[0]
-                # strip_tags is used to remove children tags of a tag, keeping the text.
-                etree.strip_tags(desc, '{http://www.tei-c.org/ns/1.0}*')
-                desc_dict["text"] = desc.text
-                descs_list.append(desc_dict)
-            data["desc"] = descs_list
+        data = get_entry(item)
 
         item_list.append(data)
 
     return item_list
 
-create_index()
+
+def get_entry(item):
+    """
+    This function retrieves data of a single item.
+    :param item: an XML element
+    :return: a dict
+    """
+    # The dictionary 'data' will contain information of each entry.
+    data = {}
+    data["id"] = item.xpath('./@xml:id', namespaces=ns)[0]
+    data["num"] = item.xpath('./@n', namespaces=ns)[0]
+
+    # In case there is an author :
+    if item.xpath('./tei:name[@type="author"]/text()', namespaces=ns):
+        data["author"] = item.xpath('./tei:name[@type="author"]/text()', namespaces=ns)[0]
+        if item.xpath('./tei:trait/tei:p/text()', namespaces=ns):
+            trait = item.xpath('./tei:trait/tei:p/text()', namespaces=ns)[0]
+            # Line breaks and duplicate whitespaces are removed.
+            data["trait"] = (" ".join(trait.split()))
+
+    # In case there is a note.
+    if item.xpath('./tei:note/text()', namespaces=ns):
+        note = item.xpath('./tei:note/text()', namespaces=ns)[0]
+        data["note"] = (" ".join(note.split()))
+
+    # In case there is a price.
+    if item.xpath('./tei:measure[@commodity="currency"]', namespaces=ns):
+        quantity = item.xpath('./tei:measure/@quantity', namespaces=ns)[0]
+        unit = item.xpath('./tei:measure/@unit', namespaces=ns)[0]
+        data["price"] = quantity + " " + unit
+
+    # In case there is one (or more) desc(s).
+    if item.xpath('./tei:desc', namespaces=ns):
+        descs = item.xpath('./tei:desc', namespaces=ns)
+        # Descs are contained in a list of dictionaries (one dictonary per desc).
+        descs_list = []
+        for desc in descs:
+            # Desc information are contained in a dictionary.
+            desc_dict = {}
+            desc_dict["id"] = desc.xpath('./@xml:id', namespaces=ns)[0]
+            # strip_tags is used to remove children tags of a tag, keeping the text.
+            etree.strip_tags(desc, '{http://www.tei-c.org/ns/1.0}*')
+            desc_dict["text"] = desc.text
+            descs_list.append(desc_dict)
+        data["desc"] = descs_list
+
+    return data
+
+
+def id_to_item(file, id):
+    """
+    This function transforms an id into an XML item to be parsed.
+    :param file: an opened XML file
+    :param id: a string
+    :return: an item to pe parsed
+    """
+    print(id)
+    # First, the id of a desc element is changed to the id of its entry.
+    id_entry = re.match("CAT_[0-9]+_e[0-9]+", id)[0]
+
+    item = file.xpath('.//tei:text//tei:item[@xml:id="%s"]' % id_entry, namespaces=ns)
+    return item[0]

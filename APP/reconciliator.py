@@ -219,6 +219,5 @@ def reconciliator(author, date):
     final_results["score"] = results_lists[0]
     final_results["pairs"] = results_lists[1]
 
-    print(final_results)
     return final_results
 

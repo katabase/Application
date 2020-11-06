@@ -18,13 +18,20 @@ def search():
     author = request.args.get('author')
     date = request.args.get('date')
     if author:
-        return render_template('pages/search.html', results=reconciliator(author, date))
+        results = reconciliator(author, date)
+        for CAT in results["filtered_data"]:
+            file = validate_id(CAT)
+            doc = open_file(file)
+            results["filtered_data"][CAT]["metadata"] = get_metadata(doc)
+            results["filtered_data"][CAT]["text"] = get_entry(id_to_item(doc, CAT))
+        return render_template('pages/search.html', results=results, author=author, date=date)
     return render_template('pages/search.html')
 
 
 @app.route("/Index")
 def index():
-    return render_template("pages/Index.html", index=create_index())
+    index = create_index()
+    return render_template("pages/Index.html", index=index)
 
 
 @app.route("/View/<id>")
