@@ -628,7 +628,7 @@
                <note anchored="true">Pièce de l'époque de l'émigration. Il certifie que M. Félix-Louis de Serrey a
                   servi dans son régiment depuis le 1er août 1794 jusqu'au 24 déc. 1796.</note>
             </item>
-            <item n="41" xml:id="CAT_000230_e_41">
+            <item n="41" xml:id="CAT_000230_e41">
                <num type="lot">41</num>
                <name type="author">Catherine reine de Pologne</name>
                <trait>
@@ -636,7 +636,7 @@
                      Gonzague, duc de Mantoue, puis de Sigismond-Auguste II, roi de Pologne, née en
                      1533.</p>
                </trait>
-               <desc xml:id="CAT_000230_e_d1"><term ana="#document_type_9">Let. sig.</term> à Martin Gusman, chambellan de Ferdinand Ier; Cracovie, <date when="1558-12-01">1er déc. 1558</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000230_e41_d1"><term ana="#document_type_9">Let. sig.</term> à Martin Gusman, chambellan de Ferdinand Ier; Cracovie, <date when="1558-12-01">1er déc. 1558</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="42" xml:id="CAT_000230_e42">
                <num type="lot">42</num>

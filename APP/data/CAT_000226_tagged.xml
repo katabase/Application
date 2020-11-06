@@ -2819,13 +2819,13 @@
                </trait>
                <desc xml:id="CAT_000226_e266_d1"><term ana="#document_type_9">Let. sig.</term> avec 7 lig. aut. ; camp de Spire, <date when="1713-06-28">28 juin 1713</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
-            <item n="267" xml:id="CAT_000226_e_267">
+            <item n="267" xml:id="CAT_000226_e267">
                <num type="lot">267</num>
                <name type="author">Voltaire</name>
                <trait>
                   <p>l'illustre écrivain.</p>
                </trait>
-               <desc xml:id="CAT_000226_e_d1">-<term ana="#document_type_8">Let. aut.</term> à Mme de Grafigny; L. a. Haye, <date when="1740-10-30">30 oct. 1740</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000226_e267_d1">-<term ana="#document_type_8">Let. aut.</term> à Mme de Grafigny; L. a. Haye, <date when="1740-10-30">30 oct. 1740</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note anchored="true">Belle lettre. (Probablement inédite). Il déplore avec elle la mort de Mme de
                   Richelieu . « sa mémoire me sera toujours d'autant plus chère qu'elle a mieux
                   senti notre mérite qu'une autre. Je me flatte qu'elle vous a laissé de quoy
