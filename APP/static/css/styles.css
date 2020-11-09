@@ -1,4 +1,12 @@
 .container {
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+button.btn {
+    margin: 3%;
+}
+
+form.right{
+    float: right;
 }
