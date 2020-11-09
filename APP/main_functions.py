@@ -53,6 +53,9 @@ def create_index():
         opened_file = open_file(file_id)
         metadata = get_metadata(opened_file)
         file_info["title"] = metadata["main_title"]
+        file_info["date"] = metadata["date"]
+        if 'publisher' in metadata:
+            file_info["publisher"] = metadata["publisher"]
         index.append(file_info)
     # Alphanumeric order is used, index is sorted by id.
     index = sorted(index, key=lambda i: i['id'])
