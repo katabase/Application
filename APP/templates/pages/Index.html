@@ -3,14 +3,22 @@
 <div class="container">
     <h1>Index</h1>
 
-    <p>On this page you can access all catalogues.</p>
-   <ul>
+    <p class="lead">On this page you can access all catalogues.</p>
+   <ul class="list-group">
 
        {% for catalogue in index %}
 
-       <li>
+       <li class="list-group-item">
            <a href="{{ url_for('view', id=catalogue.id) }}">
             {{ catalogue.title }}</a>
+           &nbsp;
+           <small class="text-muted">
+               {% if catalogue.publisher %}
+                {{ catalogue.publisher }} - {{ catalogue.date }}
+               {% else %}
+                {{ catalogue.date }}
+               {% endif %}
+           </small>
        </li>
 
         {% endfor %}

@@ -1,23 +1,30 @@
 {% extends "layout.html" %}
 {% block corps %}
 <div class="container">
+
     {% if results %}
-    <form action="{{ url_for('search') }}">
+
+    <form action="{{ url_for('search') }}" class="form-inline right">
         <div class="row">
             <div class="col">
                 <input type="text" name="author" class="form-control" placeholder="Sévigné" required
                        aria-describedby="HelpAuthor">
-                <small id="HelpAuthor" class="form-text text-muted">This first field is required.</small>
+                <small id="HelpAuthor" class="form-text text-muted">Required field (only one term).</small>
             </div>
             <div class="col">
                 <input type="text" name="date" class="form-control" placeholder="1660-1680"
                 aria-describedby="HelpDate">
-                 <small id="Heldater" class="form-text text-muted">This second field is optional.
-                     Please use this format YYYY-YYYY for your search.</small>
+                 <small id="Helpdate" class="form-text text-muted">Optional field (YYYY-YYYY).</small>
             </div>
-            <button type="submit" role="submit" class="btn btn-primary btn-lg btn-block">Search</button>
+            <div class="col">
+                 <button type="submit" role="submit" class="btn btn-outline-danger">Search</button>
+            </div>
         </div>
     </form>
+    <br/>
+    <br/>
+<div>
+
 
     <div>
       {% if date %}
@@ -45,30 +52,32 @@
         {% endfor %}
     </div>
 
+</div>
     {% else %}
 
     <h1>Search</h1>
 
-    <p>On this page, you can search a specific author in all the catalogues.
-        If you want, you can do a more precise search by specifying the date.</p>
-
+    <p class="lead">On this page, you can search a specific author in all the catalogues.
+        You can try a more precise search by specifying the date.</p>
+<br/>
+    <br/>
     <form action="{{ url_for('search') }}">
         <div class="row">
             <div class="col">
                 <input type="text" name="author" class="form-control" placeholder="Sévigné" required
                        aria-describedby="HelpAuthor">
-                <small id="HelpAuthor" class="form-text text-muted">This first field is required.</small>
+                <small id="HelpAuthor" class="form-text text-muted">This first field is required.
+                    A signle term (Sévigné or Louis-Philippe) is required.</small>
             </div>
             <div class="col">
                 <input type="text" name="date" class="form-control" placeholder="1660-1680"
                 aria-describedby="HelpDate">
-                 <small id="Heldater" class="form-text text-muted">This second field is optional.
+                 <small id="Helpdate" class="form-text text-muted">This second field is optional.
                      Please use this format YYYY-YYYY for your search.</small>
             </div>
-            <button type="submit" role="submit" class="btn btn-primary btn-lg btn-block">Search</button>
+            <button type="submit" role="submit" class="btn btn-outline-danger btn-lg btn-block">Search</button>
         </div>
     </form>
-
 
     {% endif %}
 </div>

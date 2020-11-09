@@ -1,32 +1,77 @@
 {% extends "layout.html" %}
 {% block corps %}
-<div class="container">
-<ul>
-    <li>Title : {{ metadata.title}}</li>
-    <li>Num : {{ metadata.num }}</li>
-    <li>Editor : {{ metadata.editor }}</li>
-    <li>Publisher : {{ metadata.publisher }}</li>
-    <li>PubPlace : {{ metadata.pubPlace }}</li>
-    <li>Date : {{ metadata.date }}</li>
-    <li>Encoder : {{ metadata.encoder }}</li>
-</ul>
 
-<ul>
-    {% for entry in content %}
-    <li>Id de l'entrée : {{ entry.id }}</li>
-    <li>Numéro de l'entée : {{ entry.num }}</li>
-    <li>Auteur de l'entrée : {{ entry.author }}</li>
-    <li>Bio de l'auteur : {{ entry.trait }}</li>
-    <li>Prix de l'entrée : {{ entry.price }}</li>
-    <li>Note de l'entrée : {{ entry.note }}</li>
-    <ul>
-        {% for desc in entry.desc %}
-        <li>Id du desc : {{ desc.id }}</li>
-        <li>Texte du desc : {{ desc.text }}</li>
+<div class="container">
+    <div class="text-center">
+
+        <h2>
+            {% if metadata.num %}
+                {{ metadata.title}}, n° {{ metadata.num }}
+            {% else %}
+                {{ metadata.title}}
+            {% endif %}
+        </h2>
+
+        <br/>
+
+        <h5>
+
+    {% if metadata.publisher %}
+
+        {% if metadata.pubPlace and metadata.date %}
+
+            Published by {{ metadata.publisher }} in {{ metadata.pubPlace }} on {{ metadata.date }}.
+
+        {% elif metadata.pubPlace %}
+
+            Published by {{ metadata.publisher }} in {{ metadata.pubPlace }}.
+
+        {% elif metadata.date %}
+
+            Published by {{ metadata.publisher }} on {{ metadata.date }}.
+
+        {% else %}
+
+            Published by {{ metadata.publisher }}.
+
+        {% endif %}
+
+    {% endif %}
+        </h5>
+    <p>
+
+    {% if metadata.encoder %}
+
+        Catalogue encoded by {{ metadata.encoder }}.
+
+    {% endif %}
+    </p>
+<br/><br/>
+
+    </div>
+
+    <div>
+
+        {% for entry in content %}
+        <div>
+
+            <p id="{{ entry.id}}">{{ entry.num }}.
+                {% if entry.trait %}
+                <b>{{ entry.author }}</b>, {{ entry.trait }}.
+                {% else %}
+                <b>{{ entry.author }}.</b>
+                {% endif %}
+            </p>
+                {% for desc in entry.desc %}
+                    <p>- {{ desc.text }}</p>
+                {% endfor %}
+            <p class="font-italic">{{ entry.note }}</p>
+            <p class="text-right">{{ entry.price }}</p>
+            <hr/>
+        </div>
+
         {% endfor %}
-    </ul>
-    <br/>
-    {% endfor %}
-</ul>
+
+    </div>
 </div>
 {% endblock %}
