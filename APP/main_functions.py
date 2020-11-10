@@ -164,7 +164,6 @@ def id_to_item(file, id):
     :param id: a string
     :return: an item to pe parsed
     """
-    print(id)
     # First, the id of a desc element is changed to the id of its entry.
     id_entry = re.match("CAT_[0-9]+_e[0-9]+", id)[0]
 

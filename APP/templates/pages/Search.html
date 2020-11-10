@@ -1,84 +1,120 @@
 {% extends "layout.html" %}
 {% block corps %}
 <div class="container">
+   <!-- This part is about the display of results. -->
+   {% if results %}
+   <form action="{{ url_for('search') }}" class="form-inline right">
+      <div class="row">
+         <div class="col">
+            <input type="text" name="author" class="form-control" placeholder="Sévigné" required
+               aria-describedby="HelpAuthor1">
+            <small id="HelpAuthor1" class="form-text text-muted">Required field (only one term).</small>
+         </div>
+         <div class="col">
+            <input type="text" name="date" class="form-control" placeholder="1660-1680"
+               aria-describedby="HelpDate1">
+            <small id="Helpdate1" class="form-text text-muted">Optional field (YYYY-YYYY).</small>
+         </div>
+         <div class="col">
+            <button type="submit" class="btn btn-outline-danger">Search</button>
+         </div>
+      </div>
+   </form>
+   <br/>
+   <br/>
+   <div>
+      <div class="container">
+         {% if results.result == 0 %}
+         <h1>No result</h1>
+         <p class="lead">Sorry, no matching results were found for "{{ author }}".</p>
+         <p>Do not hesitate to try again with an other search !</p>
+         {% else %}
+         {% if date %}
+         <h2>Results for "{{author}}, {{date}}"</h2>
+         {% else %}
+         <h2>Results for "{{author}}"</h2>
+         {% endif %}
+         <p class="lead">{{results.result}} entries match your search and
+            {% if results.pairs|length == 0 %}
+            there are no matching entries.
+         </p>
+         {% elif results.pairs|length == 1 %}
+         <a href="#reconciliation">
+         1 manuscript</a> is sold multiple times.</p>
+         {% else %}
+         <a href="#reconciliation">
+         {{results.pairs|length}} manuscripts</a> are sold multiple times.</p>
+         {% endif %}
+         <div class="results">
+            {% for key, content in results.filtered_data.items() %}
+            <p>
+               {% if content.text.trait %}
+               <b>
+               <a href="{{ url_for('view', id=content.cat_id) }}#{{ content.text.id }}">{{ content.text.author }}</a>
+               </b> - {{ content.text.trait }}
+               {% else %}
+               <b>
+               <a href="{{ url_for('view', id=content.cat_id) }}#{{ content.text.id }}">{{ content.text.author }}</a>
+               </b>
+               {% endif %}
+            </p>
+            {% for desc in content.text.desc %}
+             <!-- If there are multiple descs, each desc is only displayed once.-->
+             {% if desc.id == key %}
+                <p>- {{ desc.text }}</p>
+             {% endif %}
+            {% endfor %}
+            <p class="font-italic">{{ content.text.note }}</p>
+            <p class="text-right">{{ content.text.price }}</p>
+            <hr/>
+            {% endfor %}
+         </div>
+         {% if results.pairs|length > 0 %}
+         <div>
+            <h1 id="reconciliation">Reconciliation of entries</h1>
+            <div class="container">
+                {% for descs in results.pairs %}
+                <div>
+                    <p>This manuscript seems to have been sold multiple times :</p>
+                    {% for desc in descs %}
+                     <p>{{ desc }}</p>
+                    {% endfor %}
+                    <hr/>
+                </div>
 
-    {% if results %}
-
-    <form action="{{ url_for('search') }}" class="form-inline right">
-        <div class="row">
-            <div class="col">
-                <input type="text" name="author" class="form-control" placeholder="Sévigné" required
-                       aria-describedby="HelpAuthor">
-                <small id="HelpAuthor" class="form-text text-muted">Required field (only one term).</small>
+                {% endfor %}
             </div>
-            <div class="col">
-                <input type="text" name="date" class="form-control" placeholder="1660-1680"
-                aria-describedby="HelpDate">
-                 <small id="Helpdate" class="form-text text-muted">Optional field (YYYY-YYYY).</small>
-            </div>
-            <div class="col">
-                 <button type="submit" role="submit" class="btn btn-outline-danger">Search</button>
-            </div>
-        </div>
-    </form>
-    <br/>
-    <br/>
-<div>
+             {% endif %}
+         </div>
+         {% endif %}
+      </div>
+   </div>
 
-
-    <div>
-      {% if date %}
-      <h1>Results for {{author}}, {{date}}</h1>
-
-      {% else %}
-      <h1>Results for {{author}}</h1>
-
-      {% endif %}
-<ul>
-
-        {% for key, content in results.filtered_data.items() %}
-
-    <li>{{ content }}</li>
-
-        {% endfor %}
-</ul>
-
-
-      <h1>Paires de documents</h1>
-    {% for pairs in results.pairs %}
-
-        <li>{{ pairs[0] }}</li>
-
-        {% endfor %}
-    </div>
-
-</div>
-    {% else %}
-
-    <h1>Search</h1>
-
-    <p class="lead">On this page, you can search a specific author in all the catalogues.
-        You can try a more precise search by specifying the date.</p>
-<br/>
-    <br/>
-    <form action="{{ url_for('search') }}">
-        <div class="row">
-            <div class="col">
-                <input type="text" name="author" class="form-control" placeholder="Sévigné" required
-                       aria-describedby="HelpAuthor">
-                <small id="HelpAuthor" class="form-text text-muted">This first field is required.
-                    A signle term (Sévigné or Louis-Philippe) is required.</small>
-            </div>
-            <div class="col">
-                <input type="text" name="date" class="form-control" placeholder="1660-1680"
-                aria-describedby="HelpDate">
-                 <small id="Helpdate" class="form-text text-muted">This second field is optional.
-                     Please use this format YYYY-YYYY for your search.</small>
-            </div>
-            <button type="submit" role="submit" class="btn btn-outline-danger btn-lg btn-block">Search</button>
-        </div>
-    </form>
-
-    {% endif %}
+   {% else %}
+    <!-- First, this part is displayed before the search (and the results). -->
+   <h1>Search</h1>
+   <p class="lead">On this page, you can search a specific author in all the catalogues.
+      You can try a more precise search by specifying the date.
+   </p>
+   <br/>
+   <br/>
+   <form action="{{ url_for('search') }}">
+      <div class="row">
+         <div class="col">
+            <input type="text" name="author" class="form-control" placeholder="Sévigné" required
+               aria-describedby="HelpAuthor">
+            <small id="HelpAuthor" class="form-text text-muted">This first field is required.
+            A single term (Sévigné or Louis-Philippe) is accepted.</small>
+         </div>
+         <div class="col">
+            <input type="text" name="date" class="form-control" placeholder="1660-1680"
+               aria-describedby="HelpDate">
+            <small id="Helpdate" class="form-text text-muted">This second field is optional.
+            Please use this format YYYY-YYYY for your search.</small>
+         </div>
+         <button type="submit" class="btn btn-outline-danger btn-lg btn-block">Search</button>
+      </div>
+   </form>
+   {% endif %}
 </div>
 {% endblock %}

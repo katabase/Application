@@ -10,3 +10,8 @@ button.btn {
 form.right{
     float: right;
 }
+
+div.results {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

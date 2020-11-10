@@ -49,11 +49,10 @@ def to_edges(l):
         last = current
 
 
-def double_loop(input_dict, searched_date):
+def double_loop(input_dict):
     """
     This function creates pairs of matching entries.
     :param input_dict: a dictionary
-    :param searched_date: a string (optional parameter)
     :return: two lists
     """
 
@@ -139,6 +138,7 @@ def double_loop(input_dict, searched_date):
     filtered_list = [item[0] for item in filtered_list_with_score]
     graphed_list = to_graph(filtered_list)
     cleaned_list = [list(item) for item in list(connected_components(graphed_list))]
+    """
     cleaned_output_list = []
     n = 0
     for item in cleaned_list:
@@ -148,9 +148,9 @@ def double_loop(input_dict, searched_date):
         cleaned_output_list.append(temp_list)
         cleaned_output_list[n].append(item)
         temp_list.reverse()
-        n += 1
+        n += 1"""
 
-    return filtered_list_with_score, cleaned_output_list
+    return filtered_list_with_score, cleaned_list
 
 
 def author_filtering(dictionary, name):
@@ -214,10 +214,11 @@ def reconciliator(author, date):
     # The dictionary containing entries of an author are remained in the final dictionary.
     final_results["filtered_data"] = author_dict
 
-    results_lists = double_loop(author_dict, date)
+    results_lists = double_loop(author_dict)
 
     final_results["score"] = results_lists[0]
     final_results["pairs"] = results_lists[1]
+    final_results["result"] = len(author_dict)
 
     return final_results
 
