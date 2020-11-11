@@ -5,17 +5,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/styles.css">
-    <title></title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-light fixed-top" style="background-color: #962d21">
+    <nav class="navbar navbar-light position-static">
         <a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
         <a class="navbar-brand" href="{{ url_for('index') }}">Index</a>
         <a class="navbar-brand" href="{{ url_for('search') }}">Search</a>
         <a class="navbar-brand" href="{{ url_for('about_us') }}">About us</a>
     </nav>
 </header>
+
 {% block corps %}{% endblock %}
 {% extends "footer.html" %}
 </body>

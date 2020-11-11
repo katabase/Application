@@ -29,10 +29,13 @@ def search():
     return render_template('pages/search.html')
 
 
+# The index is generated when the app is launched.
+created_index = create_index()
+
+
 @app.route("/Index")
 def index():
-    index = create_index()
-    return render_template("pages/Index.html", index=index)
+    return render_template("pages/Index.html", index=created_index)
 
 
 @app.route("/View/<id>")

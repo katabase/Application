@@ -20,6 +20,17 @@ def validate_id(id):
     return good_id[0]
 
 
+def validate_entry_id(id):
+    """
+    This function verifies that the id matches predefined filenames for security reasons.
+    :param id: an id to be validate.
+    :return: the validated id.
+    """
+    # Each file starts with 'CAT_' and digits.
+    good_id = re.match("CAT_[0-9]+_e[0-9]+", id)
+    return good_id[0]
+
+
 def open_file(good_id):
     """
     This function opens the file that matches the id in oder to be able to parse it.

@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% block title %} Search {% endblock %}
 {% block corps %}
 <div class="container">
    <!-- This part is about the display of results. -->
@@ -35,16 +36,17 @@
          <h2>Results for "{{author}}"</h2>
          {% endif %}
          <p class="lead">{{results.result}} entries match your search and
-            {% if results.pairs|length == 0 %}
-            there are no matching entries.
+            {% if results.groups|length == 0 %}
+            there is no manuscript sold multiple times.
          </p>
-         {% elif results.pairs|length == 1 %}
+         {% elif results.groups|length == 1 %}
          <a href="#reconciliation">
          1 manuscript</a> is sold multiple times.</p>
          {% else %}
          <a href="#reconciliation">
-         {{results.pairs|length}} manuscripts</a> are sold multiple times.</p>
+         {{results.groups|length}} manuscripts</a> are sold multiple times.</p>
          {% endif %}
+         <p>Click on an author's name to see the entry in its context.</p>
          <div class="results">
             {% for key, content in results.filtered_data.items() %}
             <p>
@@ -69,17 +71,56 @@
             <hr/>
             {% endfor %}
          </div>
-         {% if results.pairs|length > 0 %}
+         {% if results.groups|length > 0 %}
          <div>
             <h1 id="reconciliation">Reconciliation of entries</h1>
-            <div class="container">
-                {% for descs in results.pairs %}
+            <br/>
+            <div>
+                {% for groups in results.groups %}
                 <div>
-                    <p>This manuscript seems to have been sold multiple times :</p>
-                    {% for desc in descs %}
-                     <p>{{ desc }}</p>
-                    {% endfor %}
-                    <hr/>
+                        <table class="table">
+                           <thead>
+                           <tr class="table-danger">
+                              <th scope="col" style="width: 65%">Manuscript description</th>
+                              <th scope="col" style="width: 15%">Sell date</th>
+                              <th scope="col" style="width: 5%">Price</th>
+                              <th scope="col" style="width: 15%">Catalogue link</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           {% for item in groups[1:] %}
+                           <div>
+                           {% for keys, content in item.items() %}
+                           <tr>
+                              <td>
+                                 {{ content.desc }}
+                              </td>
+                              <td>
+                                {% if content.sell_date %}
+                                    {{ content.sell_date }}
+                                 {% else %}
+                                    No sell date
+                                 {% endif %}
+                              </td>
+                              <td>
+                                 {% if content.price %}
+                                    {{ content.price }}
+                                 {% else %}
+                                    No price
+                                  {% endif %}
+                              </td>
+                              <td>
+                                 <a href="{{ url_for('view', id=content.cat_id ) }}#{{ content.cat_entry }}" target="_blank">
+                                    View
+                                 </a>
+                              </td>
+                           </tr>
+                              {% endfor %}
+                           </div>
+                           </tbody>
+                           {% endfor %}
+                        </table>
+                    <br/>
                 </div>
 
                 {% endfor %}

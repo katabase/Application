@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% block title %} View {{ metadata.title }} {% endblock %}
 {% block corps %}
 
 <div class="container">
@@ -57,9 +58,9 @@
 
             <p id="{{ entry.id}}">{{ entry.num }}.
                 {% if entry.trait %}
-                <b>{{ entry.author }}</b>, {{ entry.trait }}.
+                <b>{{ entry.author }}</b> - {{ entry.trait }}
                 {% else %}
-                <b>{{ entry.author }}.</b>
+                <b>{{ entry.author }}</b>
                 {% endif %}
             </p>
                 {% for desc in entry.desc %}

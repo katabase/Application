@@ -4,6 +4,7 @@ from difflib import SequenceMatcher
 import re
 import networkx
 from networkx.algorithms.components.connected import connected_components
+from .main_functions import *
 
 
 # https://stackoverflow.com/a/17388505
@@ -66,6 +67,8 @@ def double_loop(input_dict):
         format = input_dict[i]["format"]
         price = input_dict[i]["price"]
         pn = input_dict[i]["number_of_pages"]
+        input_dict[i]["cat_id"] = validate_id(i)
+        input_dict[i]["cat_entry"] = validate_entry_id(i)
         for j in input_dict:
             catalog_entry_j = j.split("_d")[0]
             # To compare two sub-entries (two tei:desc from the same item) makes no sense.
@@ -138,19 +141,19 @@ def double_loop(input_dict):
     filtered_list = [item[0] for item in filtered_list_with_score]
     graphed_list = to_graph(filtered_list)
     cleaned_list = [list(item) for item in list(connected_components(graphed_list))]
-    """
     cleaned_output_list = []
     n = 0
     for item in cleaned_list:
         temp_list = []
         for entry in item:
-            temp_list.append({entry: input_dict[entry]})
+            # .copy() is used to prevent the modification of the original dictionary.
+            temp_list.append({entry: input_dict[entry].copy()})
         cleaned_output_list.append(temp_list)
         cleaned_output_list[n].append(item)
         temp_list.reverse()
-        n += 1"""
+        n += 1
 
-    return filtered_list_with_score, cleaned_list
+    return filtered_list_with_score, cleaned_output_list
 
 
 def author_filtering(dictionary, name):
@@ -217,7 +220,7 @@ def reconciliator(author, date):
     results_lists = double_loop(author_dict)
 
     final_results["score"] = results_lists[0]
-    final_results["pairs"] = results_lists[1]
+    final_results["groups"] = results_lists[1]
     final_results["result"] = len(author_dict)
 
     return final_results

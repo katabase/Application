@@ -15,3 +15,28 @@ div.results {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+body {
+    padding-bottom: 70px;
+}
+
+nav {
+    background-color: #962d21
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+div.fixed-bottom {
+    background-color: #962d21
+}
+
+a.footer {
+    color: #32c1ed;
+}
+
+p.footer {
+    color: white;
+}
+
