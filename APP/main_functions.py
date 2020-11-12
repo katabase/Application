@@ -158,7 +158,6 @@ def get_metadata(file):
 
         metadata["ptr"] = ptr_list
 
-    print(metadata)
     return metadata
 
 
