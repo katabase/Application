@@ -6,22 +6,23 @@
     <div class="text-center">
 
         <h2>
+            {{ metadata.main_title }}
+        </h2>
+
+        <h3>
             {% if metadata.num %}
                 {{ metadata.title}}, n° {{ metadata.num }}
             {% else %}
                 {{ metadata.title}}
             {% endif %}
-        </h2>
+        </h3>
 
-        <br/>
-
-        <h5>
-
+        <p class="lead">
     {% if metadata.publisher %}
 
         {% if metadata.pubPlace and metadata.date %}
 
-            Published by {{ metadata.publisher }} in {{ metadata.pubPlace }} on {{ metadata.date }}.
+            Published by {{ metadata.publisher }} in {{ metadata.pubPlace }} on/in {{ metadata.date }}.
 
         {% elif metadata.pubPlace %}
 
@@ -29,7 +30,7 @@
 
         {% elif metadata.date %}
 
-            Published by {{ metadata.publisher }} on {{ metadata.date }}.
+            Published by {{ metadata.publisher }} on/in {{ metadata.date }}.
 
         {% else %}
 
@@ -38,17 +39,199 @@
         {% endif %}
 
     {% endif %}
-        </h5>
-    <p>
+        </p>
+        <div id="auction">
+            <p>
+            {% if metadata.auction_date and metadata.auction_place %}
 
-    {% if metadata.encoder %}
+            The auction took place on {{ metadata.auction_date }}, in {{ metadata.auction_place }}
 
-        Catalogue encoded by {{ metadata.encoder }}.
+            {% elif metadata.auction_date %}
+
+            The auction took place on {{ metadata.auction_date }}
+
+            {% elif metadata.auction_place %}
+
+            The auction took place in {{ metadata.auction_place }}
+            <br/>
+            {% endif %}
+
+                {% if metadata.auctioneer|length > 1 %}
+
+                    The auctioneers were
+                    {% for auctioneer in metadata.auctioneer[:-1] %}
+                        {{ auctioneer }} and
+                    {% endfor %}
+                    {% for auctioneer in metadata.auctioneer[-1:] %}
+                        {{ auctioneer }}.
+                    {% endfor %}
+
+                {% elif metadata.auctioneer|length == 1 %}
+
+                    The auctioneer was {{ metadata.auctioneer[0] }}.
+
+                {% endif %}
+
+                {% if metadata.expert|length > 1 %}
+
+                    The expert were
+                    {% for expert in metadata.expert[:-1] %}
+                        {{ expert }} and
+                    {% endfor %}
+                    {% for expert in metadata.expert[-1:] %}
+                        {{ expert }}.
+                    {% endfor %}
+
+                {% elif metadata.expert|length == 1 %}
+
+                    The expert was {{ metadata.expert[0] }}.
+
+                {% endif %}
+
+                {% if metadata.collector|length > 1 %}
+
+                    The collectors were
+                    {% for collector in metadata.collector[:-1] %}
+                        {{ collector }} and
+                    {% endfor %}
+                    {% for collector in metadata.collector[-1:] %}
+                        {{ collector }}.
+                    {% endfor %}
+
+                {% elif metadata.collector|length == 1 %}
+
+                    The collector was {{ metadata.collector[0] }}.
+
+                {% endif %}
+
+            </p>
+
+        </div>
+
+        <div id="witness">
+
+            {% if metadata.witness|length == 1 %}
+
+                <p>A witness is retained in
+
+                {% for witness in metadata.witness %}
+
+                    {% if witness.ms_country %}
+                        {{ witness.ms_country }},
+                    {% endif %}
+
+                    {% if witness.ms_settlement %}
+                        {{ witness.ms_settlement }},
+                    {% endif %}
+
+                    {% if witness.ms_institution %}
+                        {{ witness.ms_institution }},
+                    {% endif %}
+
+                    {% if witness.ms_repository %}
+                        {{ witness.ms_repository }},
+                    {% endif %}
+
+                    {% if witness.ms_idno %}
+                        with the identifier {{ witness.ms_idno }}.
+                    {% endif %}
+
+                {% endfor %}
+                </p>
+
+            {% elif metadata.witness|length > 1 %}
+            <p>
+                A first witness is retained in
+                {% for witness in metadata.witness[:1] %}
+
+                    {% if witness.ms_country %}
+                        {{ witness.ms_country }},
+                    {% endif %}
+
+                    {% if witness.ms_settlement %}
+                        {{ witness.ms_settlement }},
+                    {% endif %}
+
+                    {% if witness.ms_institution %}
+                        {{ witness.ms_institution }},
+                    {% endif %}
+
+                    {% if witness.ms_repository %}
+                        {{ witness.ms_repository }},
+                    {% endif %}
+
+                    {% if witness.ms_idno %}
+                        with the identifier {{ witness.ms_idno }}.
+                    {% endif %}
+
+                {% endfor %}
+                <br/>
+                An other witness is retained in
+                {% for witness in metadata.witness[1:] %}
+
+                    {% if witness.ms_country %}
+                        {{ witness.ms_country }},
+                    {% endif %}
+
+                    {% if witness.ms_settlement %}
+                        {{ witness.ms_settlement }},
+                    {% endif %}
+
+                    {% if witness.ms_institution %}
+                        {{ witness.ms_institution }},
+                    {% endif %}
+
+                    {% if witness.ms_repository %}
+                        {{ witness.ms_repository }},
+                    {% endif %}
+
+                    {% if witness.ms_idno %}
+                        with the identifier {{ witness.ms_idno }}.
+                    {% endif %}
+
+                {% endfor %}
+            </p>
+
+            {% endif %}
+
+            {% if metadata.ptr %}
+            External resources :
+                <p>
+                {% for ptr in metadata.ptr %}
+                    <a href="{{ ptr.ptr_target}}">{{ ptr.ptr_target}} ({{ ptr.ptr_type}})</a>
+                <br/>
+                {% endfor %}
+                </p>
+            {% endif %}
+
+        </div>
+
+    <div id="digital_publication">
+
+    {% if metadata.encoder and metadata.XML_publisher %}
+
+        <p>Catalogue encoded by {{ metadata.encoder }}, {{ metadata.XML_publisher }}.</p>
+
+        {% elif metadata.encoder and metadata.XML_Publisher %}
+
+         <p>Catalogue encoded by {{ metadata.encoder }}, {{ metadata.XML_publisher }}.</p>
+
+        {% elif metadata.encoder %}
+
+        <p>Catalogue encoded by {{ metadata.encoder }}.</p>
 
     {% endif %}
-    </p>
-<br/><br/>
+        <p>
+            <a href="https://github.com/katabase/Application/blob/main/APP/data/{{ file }}_tagged.xml" target="_blank">
+                XML encoded catalogue available on GitHub.</a>
+        </p>
 
+        <small>{% if metadata.licence %}
+            {{ metadata.licence}}
+        {% endif %}
+        </small>
+    </div>
+        <br/>
     </div>
 
     <div class="container">

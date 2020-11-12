@@ -82,6 +82,7 @@ def get_metadata(file):
     :return: a dictionary containing the metadata
     """
     metadata = {}
+    # Information about the printed publication.
     if file.xpath('//tei:titleStmt//tei:title/text()', namespaces=ns):
         metadata["main_title"] = file.xpath('//tei:titleStmt//tei:title/text()', namespaces=ns)[0]
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:title/text()', namespaces=ns):
@@ -96,9 +97,62 @@ def get_metadata(file):
         metadata["pubPlace"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns)[0]
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns):
         metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns)[0]
+
+    # Information about the digital publication.
     if file.xpath('//tei:titleStmt//tei:respStmt/tei:persName/text()', namespaces=ns):
         metadata["encoder"] = file.xpath('//tei:titleStmt//tei:respStmt/tei:persName/text()', namespaces=ns)[0]
+    if file.xpath('//tei:publicationStmt//tei:publisher/text()', namespaces=ns):
+        metadata["XML_publisher"] = file.xpath('//tei:publicationStmt//tei:publisher/text()', namespaces=ns)[0]
+    if file.xpath('//tei:publicationStmt//tei:licence/text()', namespaces=ns):
+        metadata["licence"] = file.xpath('//tei:publicationStmt//tei:licence/text()', namespaces=ns)[0]
 
+    # Information about the auction.
+    if file.xpath('//tei:sourceDesc//tei:event[@type="auction"]', namespaces=ns):
+        if file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:addrLine/text()', namespaces=ns):
+            metadata["auction_place"] = file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:addrLine/text()', namespaces=ns)[0]
+        if file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:persName[@type="auctioneer"]/text()', namespaces=ns):
+            metadata["auctioneer"] = file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:persName[@type="auctioneer"]/text()', namespaces=ns)
+        if file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:persName[@type="expert"]/text()', namespaces=ns):
+            metadata["expert"] = file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:persName[@type="expert"]/text()', namespaces=ns)
+        if file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:persName[@type="collector"]/text()', namespaces=ns):
+            metadata["collector"] = file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:persName[@type="collector"]/text()', namespaces=ns)
+        if file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:date/text()', namespaces=ns):
+            metadata["auction_date"] = file.xpath('//tei:sourceDesc//tei:event[@type="auction"]//tei:date/text()', namespaces=ns)[0]
+
+    # Information about the witness(es)
+    if file.xpath('//tei:sourceDesc//tei:listWit//tei:msDesc', namespaces=ns):
+        witnesses = file.xpath('//tei:sourceDesc//tei:listWit//tei:msDesc', namespaces=ns)
+        witnesses_list = []
+        for witness in witnesses:
+            witness_dict = {}
+            if witness.xpath('.//tei:country/text()', namespaces=ns):
+                witness_dict["ms_country"] = witness.xpath('.//tei:country/text()', namespaces=ns)[0]
+            if witness.xpath('.//tei:settlement/text()', namespaces=ns):
+                witness_dict["ms_settlement"] = witness.xpath('.//tei:settlement/text()', namespaces=ns)[0]
+            if witness.xpath('.//tei:repository/text()', namespaces=ns):
+                witness_dict["ms_repository"] = witness.xpath('.//tei:repository/text()', namespaces=ns)[0]
+            if witness.xpath('.//tei:institution/text()', namespaces=ns):
+                witness_dict["ms_institution"] = witness.xpath('.//tei:institution/text()', namespaces=ns)[0]
+            if witness.xpath('.//tei:idno/text()', namespaces=ns):
+                witness_dict["ms_idno"] = witness.xpath('//tei:idno/text()', namespaces=ns)[0]
+            witnesses_list.append(witness_dict)
+
+        metadata["witness"] = witnesses_list
+
+    if file.xpath('//tei:sourceDesc//tei:listWit//tei:ptr/@type', namespaces=ns):
+        ptrs = file.xpath('//tei:sourceDesc//tei:listWit//tei:ptr', namespaces=ns)
+        ptr_list = []
+        for ptr in ptrs:
+            ptr_dict = {}
+            if ptr.xpath('./@type', namespaces=ns):
+                ptr_dict["ptr_type"] = ptr.xpath('./@type', namespaces=ns)[0]
+            if ptr.xpath('./@target', namespaces=ns):
+                ptr_dict["ptr_target"] = ptr.xpath('./@target', namespaces=ns)[0]
+            ptr_list.append(ptr_dict)
+
+        metadata["ptr"] = ptr_list
+
+    print(metadata)
     return metadata
 
 

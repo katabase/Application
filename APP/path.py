@@ -42,4 +42,4 @@ def index():
 def view(id):
     file = validate_id(id)
     doc = open_file(file)
-    return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc))
+    return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc), file=file)
