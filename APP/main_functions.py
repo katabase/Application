@@ -2,6 +2,7 @@ from lxml import etree
 import os
 import glob
 import re
+import urllib.parse
 
 # Namespace definition :
 ns = {'tei': 'http://www.tei-c.org/ns/1.0'}
@@ -148,6 +149,11 @@ def get_metadata(file):
                 ptr_dict["ptr_type"] = ptr.xpath('./@type', namespaces=ns)[0]
             if ptr.xpath('./@target', namespaces=ns):
                 ptr_dict["ptr_target"] = ptr.xpath('./@target', namespaces=ns)[0]
+                # We don't want to display all the link, only the host name so we get it with urlparse.
+                url = ptr.xpath('./@target', namespaces=ns)[0]
+                host_url = urllib.parse.urlparse(url)
+                ptr_dict["ptr_host"] = host_url.netloc
+
             ptr_list.append(ptr_dict)
 
         metadata["ptr"] = ptr_list

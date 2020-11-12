@@ -194,16 +194,22 @@
 
             {% endif %}
 
-            {% if metadata.ptr %}
-            External resources :
+            {% if metadata.ptr|length > 1 %}
                 <p>
-                {% for ptr in metadata.ptr %}
-                    <a href="{{ ptr.ptr_target}}">{{ ptr.ptr_target}} ({{ ptr.ptr_type}})</a>
-                <br/>
-                {% endfor %}
-                </p>
-            {% endif %}
+                    External resources :
+                    {% for ptr in metadata.ptr[:-1] %}
+                        <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_host}} ({{ ptr.ptr_type}})</a> and
+                    {% endfor %}
 
+                    {% for ptr in metadata.ptr[-1:] %}
+                        <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_host}} ({{ ptr.ptr_type}})</a>.
+                    {% endfor %}
+                </p>
+            {% elif metadata.ptr|length == 1 %}
+                {% for ptr in metadata.ptr %}
+                    External resources : <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_host}} ({{ ptr.ptr_type}})</a>.
+                {% endfor %}
+            {% endif %}
         </div>
 
     <div id="digital_publication">
