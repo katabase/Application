@@ -5,7 +5,7 @@ This repository contains the web publication application of the corpus of manusc
 ## Getting started :
 
 * First, download this repository. Using command lines, clone the repository with :
-``bash
+```bash
 git clone https://github.com/katabase/Application.git
 cd Application
 ```
