@@ -38,7 +38,6 @@ def open_file(good_id):
     :param good_id: an id created before
     :return: the matching file parsed by lxml
     """
-    # !!!! Ajouter une condition pour renforcer la sécurité.
     file = "data/" + good_id + "_tagged.xml"
     actual_path = os.path.dirname(os.path.abspath(__file__))
     return etree.parse(os.path.join(actual_path, file))

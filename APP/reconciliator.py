@@ -1,7 +1,8 @@
 import json
+from functools import lru_cache
+
 import tqdm
 from difflib import SequenceMatcher
-import re
 import networkx
 from networkx.algorithms.components.connected import connected_components
 from .main_functions import *
@@ -142,18 +143,20 @@ def double_loop(input_dict):
     graphed_list = to_graph(filtered_list)
     cleaned_list = [list(item) for item in list(connected_components(graphed_list))]
     cleaned_output_list = []
+    reconciliated_desc_list = []
     n = 0
     for item in cleaned_list:
         temp_list = []
         for entry in item:
             # .copy() is used to prevent the modification of the original dictionary.
             temp_list.append({entry: input_dict[entry].copy()})
+            reconciliated_desc_list.append(entry)
         cleaned_output_list.append(temp_list)
         cleaned_output_list[n].append(item)
         temp_list.reverse()
         n += 1
 
-    return filtered_list_with_score, cleaned_output_list
+    return filtered_list_with_score, cleaned_output_list, reconciliated_desc_list
 
 
 def author_filtering(dictionary, name):
@@ -196,6 +199,7 @@ def year_filtering(dictionary, date):
     return output_dict
 
 
+@lru_cache()
 def reconciliator(author, date):
     """
     This function is the main function used for queries.
@@ -204,7 +208,10 @@ def reconciliator(author, date):
     """
     final_results = {}
     # Loading of all the data in JSON.
-    with open('APP/data/json/export.json', 'r') as data:
+    json_file = 'data/json/export.json'
+    actual_path = os.path.dirname(os.path.abspath(__file__))
+    file_to_open = os.path.join(actual_path, json_file)
+    with open(file_to_open, 'r') as data:
         all_data = json.load(data)
 
     # Only entries of the searched author are remained.
@@ -221,6 +228,7 @@ def reconciliator(author, date):
 
     final_results["score"] = results_lists[0]
     final_results["groups"] = results_lists[1]
+    final_results["recon_desc"] = results_lists[2]
     final_results["result"] = len(author_dict)
 
     return final_results

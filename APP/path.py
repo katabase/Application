@@ -3,6 +3,7 @@ from .app import app
 from APP.main_functions import *
 from .reconciliator import *
 
+
 @app.route("/")
 def home():
     return render_template("pages/Home.html")
@@ -24,6 +25,7 @@ def search():
             doc = open_file(file)
             results["filtered_data"][CAT]["metadata"] = get_metadata(doc)
             results["filtered_data"][CAT]["cat_id"] = validate_id(CAT)
+            results["filtered_data"][CAT]["desc_id"] = CAT
             results["filtered_data"][CAT]["text"] = get_entry(id_to_item(doc, CAT))
         return render_template('pages/Search.html', results=results, author=author, date=date)
     return render_template('pages/Search.html')
