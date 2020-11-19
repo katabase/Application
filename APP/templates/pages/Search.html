@@ -4,6 +4,7 @@
 <div class="container">
    <!-- This part is about the display of results. -->
    {% if results %}
+   <!-- If there are results, a smaller search form is displayed. -->
    <form action="{{ url_for('search') }}" class="form-inline right">
       <div class="row">
          <div class="col">
@@ -23,116 +24,86 @@
    </form>
    <br/>
    <br/>
-   <div>
+   <!-- Let's display the results of the search ! -->
       <div class="container">
+         <!-- If there is no result... -->
          {% if results.result == 0 %}
          <h1>No result</h1>
          <p class="lead">Sorry, no matching results were found for "{{ author }}".</p>
          <p>Do not hesitate to try again with an other search !</p>
-         {% else %}
-         {% if date %}
-         <h2>Results for "{{author}}, {{date}}"</h2>
-         {% else %}
-         <h2>Results for "{{author}}"</h2>
-         {% endif %}
-         <p class="lead">{{results.result}} entries match your search and
+         <!-- If there are results -->
+         {% elif results.result > 0 %}
+            <!-- First, display a titel -->
+            {% if author and date %}
+            <h2>Results for "{{author}}, {{date}}"</h2>
+            {% elif author %}
+            <h2>Results for "{{author}}"</h2>
+            {% endif %}
+         <!-- Display the number of matching entries and reconciliated entries-->
+            <p class="lead">{{results.result}} entries match your search and
             {% if results.groups|length == 0 %}
             there is no manuscript sold multiple times.
-         </p>
-         {% elif results.groups|length == 1 %}
-         <a href="#reconciliation">
-         1 manuscript</a> is sold multiple times.</p>
-         {% else %}
-         <a href="#reconciliation">
-         {{results.groups|length}} manuscripts</a> are sold multiple times.</p>
-         {% endif %}
-         <p>Click on an author's name to see the entry in its context.</p>
-         <div class="results">
-            {% for key, content in results.filtered_data.items() %}
-            <p>
-               {% if content.text.trait %}
-               <b>
-               <a href="{{ url_for('view', id=content.cat_id) }}#{{ content.text.id }}">{{ content.text.author }}</a>
-               </b> - {{ content.text.trait }}
-               {% else %}
-               <b>
-               <a href="{{ url_for('view', id=content.cat_id) }}#{{ content.text.id }}">{{ content.text.author }}</a>
-               </b>
-               {% endif %}
             </p>
-            {% for desc in content.text.desc %}
-             <!-- If there are multiple descs, each desc is only displayed once.-->
-             {% if desc.id == key %}
-                <p>- {{ desc.text }}</p>
-             {% endif %}
-            {% endfor %}
-            <p class="font-italic">{{ content.text.note }}</p>
-            <p class="text-right">{{ content.text.price }}</p>
-            <hr/>
-            {% endfor %}
-         </div>
-         {% if results.groups|length > 0 %}
-         <div>
-            <h1 id="reconciliation">Reconciliation of entries</h1>
-            <br/>
-            <div>
-                {% for groups in results.groups %}
-                <div>
-                        <table class="table">
-                           <thead>
-                           <tr class="table-danger">
-                              <th scope="col" style="width: 65%">Manuscript description</th>
-                              <th scope="col" style="width: 15%">Sell date</th>
-                              <th scope="col" style="width: 5%">Price</th>
-                              <th scope="col" style="width: 15%">Catalogue link</th>
-                           </tr>
-                           </thead>
-                           <tbody>
-                           {% for item in groups[1:] %}
-                           <div>
-                           {% for keys, content in item.items() %}
-                           <tr>
-                              <td>
-                                 {{ content.desc }}
-                              </td>
-                              <td>
-                                {% if content.sell_date %}
-                                    {{ content.sell_date }}
-                                 {% else %}
-                                    No sell date
-                                 {% endif %}
-                              </td>
-                              <td>
-                                 {% if content.price %}
-                                    {{ content.price }}
-                                 {% else %}
-                                    No price
-                                  {% endif %}
-                              </td>
-                              <td>
-                                 <a href="{{ url_for('view', id=content.cat_id ) }}#{{ content.cat_entry }}" target="_blank">
-                                    View
-                                 </a>
-                              </td>
-                           </tr>
-                              {% endfor %}
-                           </div>
-                           </tbody>
-                           {% endfor %}
-                        </table>
-                    <br/>
-                </div>
-
-                {% endfor %}
+            {% elif results.groups|length == 1 %}
+            1 manuscript is sold multiple times.</p>
+            {% else %}
+            {{results.groups|length}} manuscripts are sold multiple times.</p>
+            {% endif %}
+         <!-- Display, with nav, the two categories of results-->
+         <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-sell-tab" data-toggle="pill" href="#pills-sell" 
+              role="tab" aria-controls="pills-sell" aria-selected="true">View by sale</a>
+            </li>
+            <li class="nav-item" role="presentation">
+               <a class="nav-link" id="pills-manuscript-tab" data-toggle="pill" href="#pills-manuscript" 
+               role="tab" aria-controls="pills-manuscript" aria-selected="false">View by manuscript</a>
+            </li>
+         </ul>
+         <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-sell" role="tabpanel" aria-labelledby="nav-sell-tab">
+            <!--This part displays the results sale by sale -->
+               <div class="results">
+                  <p>Click on an author's name to see the entry in its context.</p>
+                  {results.filtered_data}
+                  {% for key, content in results.filtered_data.items() %}
+                  <p>
+                     {% if content.text.trait %}
+                     <b>
+                     <a href="{{ url_for('view', id=content.cat_id) }}#{{ content.text.id }}">{{ content.text.author }}</a>
+                     </b> - {{ content.text.trait }}
+                     {% else %}
+                     <b>
+                     <a href="{{ url_for('view', id=content.cat_id) }}#{{ content.text.id }}">{{ content.text.author }}</a>
+                     </b>
+                     {% endif %}
+                  </p>
+                     {% for desc in content.text.desc %}
+                     <!-- If there are multiple descs, each desc is only displayed once.-->
+                        {% if desc.id == key %}
+                        <p>- {{ desc.text }}</p>
+                        {% endif %}
+                     {% endfor %}
+                  <p class="font-italic">{{ content.text.note }}</p>
+                  <p class="text-right">{{ content.text.price }}</p>
+                  <hr/>
+                  {% endfor %}
+               </div>
             </div>
-             {% endif %}
+            <div class="tab-pane fade" id="pills-manuscript" role="tabpanel" aria-labelledby="nav-manuscript-tab">
+               <!--This part displays the results manuscript by manuscript -->
+               {% if results.groups|length > 0 %}
+               <div>
+                  <h1 id="reconciliation">Reconciliation of entries</h1>
+                  
+               {% endif %}
+               </div>
+            </div>
          </div>
          {% endif %}
       </div>
-   </div>
-
    {% else %}
-    <!-- First, this part is displayed before the search (and the results). -->
+   <!-- This part is displayed first, before the search (and the results). -->
    <h1>Search</h1>
    <p class="lead">On this page, you can search a specific author in all the catalogues.
       You can try a more precise search by specifying the date.
