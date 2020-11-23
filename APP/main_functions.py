@@ -97,6 +97,8 @@ def get_metadata(file):
         metadata["pubPlace"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns)[0]
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns):
         metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns)[0]
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns):
+        metadata["norm_date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns)[0]
 
     # Information about the digital publication.
     if file.xpath('//tei:titleStmt//tei:respStmt/tei:persName/text()', namespaces=ns):
@@ -121,7 +123,7 @@ def get_metadata(file):
 
     # Information about the witness(es)
     if file.xpath('//tei:sourceDesc//tei:listWit//tei:msDesc', namespaces=ns):
-        witnesses = file.xpath('//tei:sourceDesc//tei:listWit//tei:msDesc', namespaces=ns)
+        witnesses = file.xpath('//tei:sourceDesc//tei:listWit/tei:witness', namespaces=ns)
         witnesses_list = []
         for witness in witnesses:
             witness_dict = {}
@@ -134,13 +136,17 @@ def get_metadata(file):
             if witness.xpath('.//tei:institution/text()', namespaces=ns):
                 witness_dict["ms_institution"] = witness.xpath('.//tei:institution/text()', namespaces=ns)[0]
             if witness.xpath('.//tei:idno/text()', namespaces=ns):
-                witness_dict["ms_idno"] = witness.xpath('//tei:idno/text()', namespaces=ns)[0]
+                witness_dict["ms_idno"] = witness.xpath('.//tei:idno/text()', namespaces=ns)[0]
+            if witness.xpath('.//tei:desc/text()', namespaces=ns):
+                witness_dict["desc"] = witness.xpath('.//tei:desc/text()', namespaces=ns)[0]
+            if witness.xpath('.//tei:ptr/@target', namespaces=ns):
+                witness_dict["ptr"] = witness.xpath('.//tei:ptr/@target', namespaces=ns)[0]
             witnesses_list.append(witness_dict)
 
         metadata["witness"] = witnesses_list
 
-    if file.xpath('//tei:sourceDesc//tei:listWit//tei:ptr/@type', namespaces=ns):
-        ptrs = file.xpath('//tei:sourceDesc//tei:listWit//tei:ptr', namespaces=ns)
+    if file.xpath('//tei:sourceDesc//tei:listWit/tei:ptr/@type', namespaces=ns):
+        ptrs = file.xpath('//tei:sourceDesc//tei:listWit/tei:ptr', namespaces=ns)
         ptr_list = []
         for ptr in ptrs:
             ptr_dict = {}

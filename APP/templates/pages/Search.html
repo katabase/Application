@@ -35,12 +35,12 @@
       {% elif results.result > 0 %}
       <!-- First, display a title -->
       {% if author and date %}
-      <h2>Results for "{{author}}, {{date}}"</h2>
+      <h2>Results for "{{ author }}, {{ date }}"</h2>
       {% elif author %}
-      <h2>Results for "{{author}}"</h2>
+      <h2>Results for "{{ author }}"</h2>
       {% endif %}
       <!-- Display the number of matching entries and reconciliated entries-->
-      <p class="lead">{{results.result}} entries match your search and
+      <p class="lead">{{ results.result }} entries match your search and
          {% if results.groups|length == 0 %}
          there is no manuscript sold multiple times.
       </p>
@@ -66,7 +66,8 @@
             <div class="results">
                <p>Click on an author's name to see the entry in its context.</p>
                <!-- First, entries are grouped by sale, each sale corresponds to a catalogue (we use its id. ) -->
-               {% for cat_id, entries in results.filtered_data.values()|groupby('cat_id') %}
+               {% for cat_id, entries in results.filtered_data.values()|groupby('cat_id')|sort(attribute="1.0.metadata.norm_date") %}
+
                <div>
                   <!-- loop.index is used to automatically increment elements of a list. -->
                   <b>{{ loop.index }}.
@@ -90,10 +91,14 @@
                         <b>
                         <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
                         - {{ descs[0].text.author }}</a></b>, {{ descs[0].text.trait }}
-                        {% else %}
+                        {% elif descs[0].text.author %}
                         <b>
                         <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
                         - {{ descs[0].text.author }}</a></b>
+                        {% else %}
+                        <b>
+                        <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
+                        - {{ author }}</a></b>
                         {% endif %}
                      </p>
                      {% for desc in descs %}
@@ -108,7 +113,7 @@
                {% endfor %}
             </div>
          </div>
-         <div class="tab-pane fade" id="pills-manuscript" role="tabpanel" aria-labelledby="nav-manuscript-tab">
+         <div class="tab-pane fade results" id="pills-manuscript" role="tabpanel" aria-labelledby="nav-manuscript-tab">
             <!--This part displays the results manuscript by manuscript -->
             {% for entries in results.filtered_data.values() %}
             <p>
