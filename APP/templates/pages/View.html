@@ -136,13 +136,32 @@
                         with the identifier {{ witness.ms_idno }}.
                     {% endif %}
 
+                     {% if witness.ptr|length > 1 %}
+
+                        {% for ptr in witness.ptr[:1] %}
+                            See the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a>
+                        {% endfor %}
+
+                        {% for ptr in witness.ptr[1:] %}
+                            and the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a>
+                        {% endfor %}
+                        online.
+
+                    {% elif witness.ptr|length == 1 %}
+                        {% for ptr in witness.ptr %}
+                            See the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a> online.
+                        {% endfor %}
+
+                    {% endif %}
+
                 {% endfor %}
                 </p>
 
             {% elif metadata.witness|length > 1 %}
             <p>
-                A first witness is retained in
                 {% for witness in metadata.witness[:1] %}
+
+                    A first witness is retained in
 
                     {% if witness.ms_country %}
                         {{ witness.ms_country }},
@@ -162,12 +181,35 @@
 
                     {% if witness.ms_idno %}
                         with the identifier {{ witness.ms_idno }}.
+                    {% endif %}
+
+                    {% if witness.desc %}
+                        <small>{{ witness.desc }}</small>
+                    {% endif %}
+
+                    {% if witness.ptr|length > 1 %}
+
+                        {% for ptr in witness.ptr[:1] %}
+                            See the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a>
+                        {% endfor %}
+
+                        {% for ptr in witness.ptr[1:] %}
+                            and the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a>
+                        {% endfor %}
+                        online.
+
+                    {% elif witness.ptr|length == 1 %}
+                        {% for ptr in witness.ptr %}
+                            See the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a> online.
+                        {% endfor %}
+
                     {% endif %}
 
                 {% endfor %}
                 <br/>
-                An other witness is retained in
                 {% for witness in metadata.witness[1:] %}
+
+                    An other witness is retained in
 
                     {% if witness.ms_country %}
                         {{ witness.ms_country }},
@@ -187,6 +229,28 @@
 
                     {% if witness.ms_idno %}
                         with the identifier {{ witness.ms_idno }}.
+                    {% endif %}
+
+                    {% if witness.desc %}
+                        <small>{{ witness.desc }}</small>
+                    {% endif %}
+
+                    {% if witness.ptr|length > 1 %}
+
+                        {% for ptr in witness.ptr[:1] %}
+                            See the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a>
+                        {% endfor %}
+
+                        {% for ptr in witness.ptr[1:] %}
+                            and the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a>
+                        {% endfor %}
+                        online.
+
+                    {% elif witness.ptr|length == 1 %}
+                        {% for ptr in witness.ptr %}
+                            See the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a> online.
+                        {% endfor %}
+
                     {% endif %}
 
                 {% endfor %}
@@ -194,22 +258,6 @@
 
             {% endif %}
 
-            {% if metadata.ptr|length > 1 %}
-                <p>
-                    External resources :
-                    {% for ptr in metadata.ptr[:-1] %}
-                        <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_host}} ({{ ptr.ptr_type}})</a> and
-                    {% endfor %}
-
-                    {% for ptr in metadata.ptr[-1:] %}
-                        <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_host}} ({{ ptr.ptr_type}})</a>.
-                    {% endfor %}
-                </p>
-            {% elif metadata.ptr|length == 1 %}
-                {% for ptr in metadata.ptr %}
-                    External resources : <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_host}} ({{ ptr.ptr_type}})</a>.
-                {% endfor %}
-            {% endif %}
         </div>
 
     <div id="digital_publication">
@@ -218,11 +266,11 @@
 
         <p>Catalogue encoded by {{ metadata.encoder }}, {{ metadata.XML_publisher }}.</p>
 
-        {% elif metadata.encoder and metadata.XML_Publisher %}
+    {% elif metadata.encoder and metadata.XML_Publisher %}
 
          <p>Catalogue encoded by {{ metadata.encoder }}, {{ metadata.XML_publisher }}.</p>
 
-        {% elif metadata.encoder %}
+    {% elif metadata.encoder %}
 
         <p>Catalogue encoded by {{ metadata.encoder }}.</p>
 
@@ -231,11 +279,11 @@
             <a href="https://github.com/katabase/Application/blob/main/APP/data/{{ file }}_tagged.xml" target="_blank">
                 XML encoded catalogue available on GitHub.</a>
         </p>
-
-        <small>{% if metadata.licence %}
+        {% if metadata.licence %}
+        <small>
             {{ metadata.licence}}
-        {% endif %}
         </small>
+        {% endif %}
     </div>
         <br/>
     </div>

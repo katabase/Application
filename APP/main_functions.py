@@ -139,29 +139,24 @@ def get_metadata(file):
                 witness_dict["ms_idno"] = witness.xpath('.//tei:idno/text()', namespaces=ns)[0]
             if witness.xpath('.//tei:desc/text()', namespaces=ns):
                 witness_dict["desc"] = witness.xpath('.//tei:desc/text()', namespaces=ns)[0]
-            if witness.xpath('.//tei:ptr/@target', namespaces=ns):
-                witness_dict["ptr"] = witness.xpath('.//tei:ptr/@target', namespaces=ns)[0]
+            # Sometimes, there are multiple pointers for a single witness.
+            if witness.xpath('./tei:ptr', namespaces=ns):
+                ptrs = witness.xpath('./tei:ptr', namespaces=ns)
+                ptrs_list = []
+                for ptr in ptrs:
+                    ptr_dict = {}
+                    if ptr.xpath('./@type', namespaces=ns)[0] == "digit":
+                        ptr_dict["ptr_type"] = "digital version"
+                    else:
+                        ptr_dict["ptr_type"] = ptr.xpath('./@type', namespaces=ns)[0]
+                    if ptr.xpath('./@target', namespaces=ns):
+                        ptr_dict["ptr_target"] = ptr.xpath('./@target', namespaces=ns)[0]
+                    ptrs_list.append(ptr_dict)
+                witness_dict["ptr"] = ptrs_list
+
             witnesses_list.append(witness_dict)
 
         metadata["witness"] = witnesses_list
-
-    if file.xpath('//tei:sourceDesc//tei:listWit/tei:ptr/@type', namespaces=ns):
-        ptrs = file.xpath('//tei:sourceDesc//tei:listWit/tei:ptr', namespaces=ns)
-        ptr_list = []
-        for ptr in ptrs:
-            ptr_dict = {}
-            if ptr.xpath('./@type', namespaces=ns):
-                ptr_dict["ptr_type"] = ptr.xpath('./@type', namespaces=ns)[0]
-            if ptr.xpath('./@target', namespaces=ns):
-                ptr_dict["ptr_target"] = ptr.xpath('./@target', namespaces=ns)[0]
-                # We don't want to display all the link, only the host name so we get it with urlparse.
-                url = ptr.xpath('./@target', namespaces=ns)[0]
-                host_url = urllib.parse.urlparse(url)
-                ptr_dict["ptr_host"] = host_url.netloc
-
-            ptr_list.append(ptr_dict)
-
-        metadata["ptr"] = ptr_list
 
     return metadata
 
