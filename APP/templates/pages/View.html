@@ -154,6 +154,10 @@
 
                     {% endif %}
 
+                    {% if witness.desc %}
+                        <small>{{ witness.desc }}</small>
+                    {% endif %}
+
                 {% endfor %}
                 </p>
 
@@ -183,10 +187,6 @@
                         with the identifier {{ witness.ms_idno }}.
                     {% endif %}
 
-                    {% if witness.desc %}
-                        <small>{{ witness.desc }}</small>
-                    {% endif %}
-
                     {% if witness.ptr|length > 1 %}
 
                         {% for ptr in witness.ptr[:1] %}
@@ -203,6 +203,10 @@
                             See the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a> online.
                         {% endfor %}
 
+                    {% endif %}
+
+                    {% if witness.desc %}
+                        <small>{{ witness.desc }}</small>
                     {% endif %}
 
                 {% endfor %}
@@ -231,10 +235,6 @@
                         with the identifier {{ witness.ms_idno }}.
                     {% endif %}
 
-                    {% if witness.desc %}
-                        <small>{{ witness.desc }}</small>
-                    {% endif %}
-
                     {% if witness.ptr|length > 1 %}
 
                         {% for ptr in witness.ptr[:1] %}
@@ -251,6 +251,10 @@
                             See the <a href="{{ ptr.ptr_target}}" target="_blank">{{ ptr.ptr_type}}</a> online.
                         {% endfor %}
 
+                    {% endif %}
+
+                    {% if witness.desc %}
+                        <small>{{ witness.desc }}</small>
                     {% endif %}
 
                 {% endfor %}

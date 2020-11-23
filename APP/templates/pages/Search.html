@@ -73,13 +73,13 @@
                   <b>{{ loop.index }}.
                   {{ entries[0].metadata.title }},
                   {% if entries[0].metadata.num %}
-                  n° {{ entries[0].metadata.num }}
+                     n° {{ entries[0].metadata.num }}
                   {% endif %}
                   {% if entries[0].metadata.editor %}
-                  - {{ entries[0].metadata.editor }},
+                     - {{ entries[0].metadata.editor }},
                   {% endif %}
                   {% if entries[0].metadata.date %}
-                  {{ entries[0].metadata.date }}.
+                     {{ entries[0].metadata.date }}.
                   {% endif %}
                   </b>
                   <!-- Then, each desc is grouped by its entry. Doing so, if there are multiple descs,
