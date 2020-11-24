@@ -297,7 +297,8 @@
         {% for entry in content %}
         <div>
 
-            <p id="{{ entry.id}}">{{ entry.num }}.
+            <p id="{{ entry.id}}">
+                {{ entry.num }}.
                 {% if entry.trait %}
                 <b>{{ entry.author }}</b> - {{ entry.trait }}
                 {% else %}

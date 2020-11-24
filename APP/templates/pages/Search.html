@@ -90,15 +90,18 @@
                         {% if descs[0].text.trait %}
                         <b>
                         <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
-                        - {{ descs[0].text.author }}</a></b>, {{ descs[0].text.trait }}
+                           <i class="fas fa-arrow-circle-right"></i>
+                        {{ descs[0].text.author }}</a></b>, {{ descs[0].text.trait }}
                         {% elif descs[0].text.author %}
                         <b>
                         <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
-                        - {{ descs[0].text.author }}</a></b>
+                           <i class="fas fa-arrow-circle-right"></i>
+                        {{ descs[0].text.author }}</a></b>
                         {% else %}
                         <b>
                         <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
-                        - {{ author }}</a></b>
+                           <i class="fas fa-arrow-circle-right"></i>
+                        {{ author }}</a></b>
                         {% endif %}
                      </p>
                      {% for desc in descs %}
@@ -133,20 +136,22 @@
                {% for groups in results.groups %}
                {% if entries.desc_id in groups[0] %}
                {% for group in groups[1:] %}
+               <p>
                {% for key, value in group.items() %}
-               <li>
-                  Sell date :
+                  <i class="fas fa-arrow-circle-right"></i> Sell date :
                   <a href="{{ url_for('view', id=value.cat_id) }}#{{ value.cat_entry }}" target="_blank">{{ value.sell_date }}</a>
-               </li>
+                  - price : {{ entries.text.price }} - {{ entries.number_of_pages }} page(s).
                {% endfor %}
+               </p>
                {% endfor %}
                {% endif %}
                {% endfor %}
                {% else %}
-               <li>
-                  Sell date :
+               <p>
+                 <i class="fas fa-arrow-circle-right"></i> Sell date :
                   <a href="{{ url_for('view', id=entries.cat_id) }}#{{ entries.cat_entry }}" target="_blank">{{ entries.sell_date }}</a>
-               </li>
+                  - price : {{ entries.text.price }} - {{ entries.number_of_pages }} page(s).
+               </p>
                {% endif %}
             </ul>
             <hr/>
