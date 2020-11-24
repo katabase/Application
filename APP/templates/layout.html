@@ -19,8 +19,9 @@
         <a class="navbar-brand" href="{{ url_for('about_us') }}">About us</a>
     </nav>
 </header>
-
-{% block corps %}{% endblock %}
+<div id="corps">
+    {% block corps %}{% endblock %}
+</div>
 {% extends "footer.html" %}
 </body>
 </html>
