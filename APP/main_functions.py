@@ -48,7 +48,6 @@ def open_file(good_id):
 def create_index():
     """
     This function creates an index of all catalogues to display.
-    :param directory: a directory, the data directory to be specific.
     :return: a list of ids, one id per catalogue.
     """
     index = []
