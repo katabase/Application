@@ -27,7 +27,7 @@
                <num>24 - deuxième série</num>
                <publisher>Gabrielle Charavay</publisher>
                <pubPlace>Paris, 6 square du Croisic</pubPlace>
-               <date>1927</date>
+               <date when="1927">1927</date>
             </bibl>
             <listWit>
                <witness> BnF, 8-Q-928 <ptr/>

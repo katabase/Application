@@ -29,7 +29,7 @@
                <pubPlace>3 rue de Furstenberg, Paris</pubPlace>
                <publisher>J. Pearson &amp;co</publisher>
                <pubPlace>5, Pall Mall Place, S.W., Londres</pubPlace>
-               <date>1896</date>
+               <date when="1896">1896</date>
             </bibl>
             <listEvent>
                <event>

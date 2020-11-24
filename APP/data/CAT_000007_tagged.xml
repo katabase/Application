@@ -25,7 +25,7 @@
                <pubPlace>3 rue Furstenberg, Paris</pubPlace>
                <publisher>Pierre Cornuau</publisher>
                <pubPlace>22 rue Laffitte, Paris</pubPlace>
-               <date>1965</date>
+               <date when="1965">1965</date>
             </bibl>
             <listEvent>
                <event type="auction">

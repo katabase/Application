@@ -29,7 +29,7 @@
                <publisher>J. Pearson &amp; Cie</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date>1897</date>
+               <date when="1897">1897</date>
             </bibl>
             <listEvent>
                <event>
