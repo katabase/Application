@@ -199,7 +199,6 @@ def year_filtering(dictionary, date):
     return output_dict
 
 
-@lru_cache()
 def reconciliator(author, date):
     """
     This function is the main function used for queries.
