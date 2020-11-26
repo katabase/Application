@@ -45,3 +45,13 @@ def view(id):
     file = validate_id(id)
     doc = open_file(file)
     return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc), file=file)
+
+
+# To check if there is any memory leak.
+from pympler import muppy, summary
+@app.after_request
+def report_memory(req):
+    all_objects = muppy.get_objects()
+    sum1 = summary.summarize(all_objects)
+    summary.print_(sum1)
+    return req
