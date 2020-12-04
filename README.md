@@ -25,7 +25,7 @@ python3 run.py
 
 ## Credits
 
-* The application was designed by Alexandre Bartz with the help of Simon Gabay, Matthias Gille Levenson and Ljudmila Petkovic.
+The application was designed by Alexandre Bartz with the help of Simon Gabay, Matthias Gille Levenson and Ljudmila Petkovic.
 
 ## Cite this repository
 
