@@ -40,7 +40,8 @@
       <h2>Results for "{{ author }}"</h2>
       {% endif %}
       <!-- Display the number of matching entries and reconciliated entries-->
-      <p class="lead">{{ results.result }} entries match your search and
+      <p class="lead">
+         {{ results.result }} entries match your search and
          {% if results.groups|length == 0 %}
          there is no manuscript sold multiple times.
       </p>
