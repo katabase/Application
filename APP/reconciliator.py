@@ -51,6 +51,52 @@ def to_edges(l):
         last = current
 
 
+def similarity_score(desc_a, desc_b):
+    """
+    This function calculates the similarity score between two descs.
+    :param desc_a: first desc to compare
+    :param desc_b: second desc to compare
+    :return: the score
+    """
+
+    def equals(field):
+        return desc_a[field] == desc_b[field]
+
+    score = 0
+    # Desc of a same document are often strongly similar.
+    if similar(desc_b["desc"], desc_a["desc"]) > 0.75:
+        score = score + 0.3
+    else:
+        score = score - 0.2
+
+    if equals("term"):
+        score = score + 0.2
+    else:
+        score = score - 0.1
+
+    if equals("date") and desc_b["date"] is not None:
+        score = score + 0.5
+    else:
+        score = score - 0.5
+
+    if equals("number_of_pages"):
+        score = score + 0.1
+    else:
+        score = score - 0.1
+
+    if equals("format"):
+        score = score + 0.1
+    else:
+        score = score - 0.3
+
+    if equals("price"):
+        score = score + 0.1
+    else:
+        score = score - 0.1
+
+    return score
+
+
 def double_loop(input_dict):
     """
     This function creates pairs of matching entries.
@@ -60,67 +106,30 @@ def double_loop(input_dict):
 
     output_dict1 = {}
     # First we compare each entry with each other one and give a score to each pair.
-    for i in tqdm.tqdm(input_dict):
-        catalog_entry_i = i.split("_d")[0]
-        desc = input_dict[i]["desc"]
-        term = input_dict[i]["term"]
-        date = input_dict[i]["date"]
-        format = input_dict[i]["format"]
-        price = input_dict[i]["price"]
-        pn = input_dict[i]["number_of_pages"]
-        input_dict[i]["cat_id"] = validate_id(i)
-        input_dict[i]["cat_entry"] = validate_entry_id(i)
-        for j in input_dict:
-            catalog_entry_j = j.split("_d")[0]
+    items = list(input_dict.items())
+    for i in tqdm.tqdm(range(len(items))):
+        id_a, desc_a = items[i]
+        desc_a["cat_id"] = validate_id(id_a)
+        entry_id_a = validate_entry_id(id_a)
+        desc_a["cat_entry"] = entry_id_a
+        # We can pass items from 0 to i since we already have processed it.
+        for j in range(i + 1, len(items)):
+            id_b, desc_b = items[j]
+            entry_id_b = validate_entry_id(id_b)
             # To compare two sub-entries (two tei:desc from the same item) makes no sense.
-            if catalog_entry_i == catalog_entry_j:
-                pass
-            else:
-                dict2 = {}
-                score = 0
-                if j == i:
-                    pass
-                else:
-                    # Desc of a same document are often strongly similar.
-                    if similar(input_dict[j]["desc"], desc) > 0.75:
-                        score = score + 0.3
-                    else:
-                        score = score - 0.2
-
-                    if input_dict[j]["term"] == term:
-                        score = score + 0.2
-                    else:
-                        score = score - 0.1
-
-                    if input_dict[j]["date"] == date and input_dict[j]["date"] is not None:
-                        score = score + 0.5
-                    else:
-                        score = score - 0.5
-
-                    if input_dict[j]["number_of_pages"] == pn:
-                        score = score + 0.1
-                    else:
-                        score = score - 0.1
-
-                    if input_dict[j]["format"] == format:
-                        score = score + 0.1
-                    else:
-                        score = score - 0.3
-
-                    if input_dict[j]["price"] == price:
-                        score = score + 0.1
-                    else:
-                        score = score - 0.1
-                    try:
-                        dict2["author_distance"] = similar(input_dict[j]["author"], input_dict[i]["author"])
-                    except:
-                        dict2["author_distance"] = 0
-                    dict2["score"] = score
-                    # We clean the dictionary, as A-B comparison equals B-A comparison
-                    if "%s-%s" % (j, i) in output_dict1:
-                        pass
-                    else:
-                        output_dict1["%s-%s" % (i, j)] = dict2
+            if entry_id_a == entry_id_b:
+                continue
+            # If there is a strong possibility that autors are not the same, we simply pass.
+            if desc_b["author"] and desc_a["author"] and similar(desc_b["author"], desc_a["author"]) < 0.75:
+                continue
+            # This dict will contain the score and the author distance.
+            score_entry = {}
+            score_entry["score"] = similarity_score(desc_a, desc_b)
+            try:
+                score_entry["author_distance"] = similar(desc_b["author"], desc_a["author"])
+            except:
+                score_entry["author_distance"] = 0
+            output_dict1["%s-%s" % (id_a, id_b)] = score_entry
 
     # The final list contains the result of the whole comparison process, without filtering, sorted by score.
     final_list = []
