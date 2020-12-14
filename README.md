@@ -23,6 +23,10 @@ pip install -r requirements.txt
 python3 run.py
 ```
 
+## Workflow
+
+![Katabase workflow diagram](images/workflow.png "Katabase Workflow")
+
 ## Credits
 
 The application was designed by Alexandre Bartz with the help of Simon Gabay, Matthias Gille Levenson and Ljudmila Petkovic.
