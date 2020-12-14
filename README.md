@@ -25,7 +25,7 @@ python3 run.py
 
 ## Workflow
 
-<img src="images/workflow.png" alt="Katabase workflow diagram" title="Katabase Workflow" width="70%" height="60%"/>
+<img src="images/workflow.png" alt="Katabase workflow diagram" title="Katabase Workflow" width="70%" height="50%"/>
 />
 
 ## Credits
