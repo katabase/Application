@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1621,7 +1621,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000075_e135_d1"><term ana="#document_type_3">Pièce avec 4 lignes aut.</term>; <date date="1804-11-11" type="length">20 brumaire an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, à mi-marges.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000075_e135_d1"><term ana="#document_type_3">Pièce avec 4 lignes aut.</term>; <date when="1804-11-11">20 brumaire an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, à mi-marges.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Curieux document. Projet de rapport pour le Ministre des Cultes, sur la
                   fixation du nombre des succursales. Napoléon a écrit de sa main 24,000 pour tout
                   l'empire (au lieu de 32,000). -On y a joint la lettre signée de Hugues Maret,

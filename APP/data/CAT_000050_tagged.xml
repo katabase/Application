@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -859,7 +859,7 @@
                <trait>
                   <p>littérateur, célèbre chansonnier, né à Lyon.</p>
                </trait>
-               <desc xml:id="CAT_000050_e70_d1"><term ana="#document_type_7">L. a. s.</term> à la citoyenne Dupin (grand mère de George Sand) à Nohant; <date date="1798-07-16" type="length">28 messidor an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Fatiguée.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000050_e70_d1"><term ana="#document_type_7">L. a. s.</term> à la citoyenne Dupin (grand mère de George Sand) à Nohant; <date when="1798-07-16">28 messidor an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Fatiguée.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="71" xml:id="CAT_000050_e71">
                <num type="lot">71</num>
@@ -1012,7 +1012,7 @@
                   <p>général, défenseur des colonies françaises contre les Anglais, tué à la
                      bataille de Leipzig</p>
                </trait>
-               <desc xml:id="CAT_000050_e86_d1"><term ana="#document_type_7">L. a. s.</term> au général Desfourneaux; le Cap, <date date="1794-01-04" type="length">15 niv. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000050_e86_d1"><term ana="#document_type_7">L. a. s.</term> au général Desfourneaux; le Cap, <date when="1794-01-04">15 niv. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="87" xml:id="CAT_000050_e87">
                <num type="lot">87</num>
@@ -1101,7 +1101,7 @@
                <trait>
                   <p>célèbre femme poète</p>
                </trait>
-               <desc xml:id="CAT_000050_e96_d1"><term ana="#document_type_7">L. a. s.</term> au directeur Gohier, <date date="1798-03-22" type="length">2 germ. an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> t/2 <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000050_e96_d1"><term ana="#document_type_7">L. a. s.</term> au directeur Gohier, <date when="1798-03-22">2 germ. an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> t/2 <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Belle et curieuse lettre. Elle vient d'apprendre que l'on allait faire une
                   égale répartition des logements du Louvre enlre les artistes et les gens de
                   lettres. « Mère de famille, seule femme qui maintenant, à Paris, se dévoue
@@ -1233,7 +1233,7 @@
                   <p>éminent peintre d'histoire, que ses ouvrages rattachent à l'école flamande, né
                      à Bruges</p>
                </trait>
-               <desc xml:id="CAT_000050_e110_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date date="1799-04-03" type="length">14 germ. an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000050_e110_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1799-04-03">14 germ. an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Relative à son départ pour Rome, où il va remplir les fonctions de directeur de
                   l'école française des beaux-arts</note>
             </item>
@@ -1326,7 +1326,7 @@
                <trait>
                   <p>célèbre amiral, né à Toulon</p>
                </trait>
-               <desc xml:id="CAT_000050_e119_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Mejean; Brest, <date date="1803-11-27" type="length">5 frim. an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000050_e119_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Mejean; Brest, <date when="1803-11-27">5 frim. an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="120" xml:id="CAT_000050_e120">
                <num type="lot">120</num>
@@ -1514,7 +1514,7 @@
                <trait>
                   <p>célèbre fabuliste et littérateur, né à Caen</p>
                </trait>
-               <desc xml:id="CAT_000050_e139_d1"><term ana="#document_type_7">L. a. s.</term> à Miger, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000050_e139_d1"><term ana="#document_type_7">L. a. s.</term> à Miger, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Relative à la nombreuse collection de fabulistes qu'il a réunie</note>
             </item>
             <item n="140" xml:id="CAT_000050_e140">
@@ -1573,7 +1573,7 @@
                <trait>
                   <p>député du Calvados à la Convention.</p>
                </trait>
-               <desc xml:id="CAT_000050_e146_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1795-1796" type="length">IV</date>, l p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000050_e146_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1795-1796">IV</date>, l p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="147" xml:id="CAT_000050_e147">
                <num type="lot">147</num>
@@ -1656,7 +1656,7 @@
                <trait>
                   <p>général français, né dans le Calvados</p>
                </trait>
-               <desc xml:id="CAT_000050_e156_d1"><term ana="#document_type_9">Let. sig.</term>; Perpignan, <date date="1795-06-10" type="length">22 prairial an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000050_e156_d1"><term ana="#document_type_9">Let. sig.</term>; Perpignan, <date when="1795-06-10">22 prairial an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="157" xml:id="CAT_000050_e157">
                <num type="lot">157</num>
@@ -1713,7 +1713,7 @@
                <trait>
                   <p>homme politique, député du Calvados à la Convention, né à Caen</p>
                </trait>
-               <desc xml:id="CAT_000050_e163_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000050_e163_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="164" xml:id="CAT_000050_e164">
                <num type="lot">164</num>
@@ -1763,7 +1763,7 @@
                   <p>célèbre médecin et chirurgien, membre de plusieurs sociétés savantes, né à
                      Vire</p>
                </trait>
-               <desc xml:id="CAT_000050_e169_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000050_e169_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="170" xml:id="CAT_000050_e170">
                <num type="lot">170</num>
@@ -1806,7 +1806,7 @@
                <trait>
                   <p>auteur dramatique et romancier, né à Caen vers 1751</p>
                </trait>
-               <desc xml:id="CAT_000050_e174_d1">Reçu <term ana="#document_type_15">aut. sig.</term>, an <date date="1804-1805" type="length">XIII</date>, <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000050_e174_d1">Reçu <term ana="#document_type_15">aut. sig.</term>, an <date when="1804-1805">XIII</date>, <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Pièce relative au manuscrit de Kokoly à Capra</note>
             </item>
             <item n="175" xml:id="CAT_000050_e175">

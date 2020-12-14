@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -343,7 +343,7 @@
                <trait>
                   <p>frère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000123_e13_d1"><term ana="#document_type_9">Let. sig.</term>, à Didot aîné, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000123_e13_d1"><term ana="#document_type_9">Let. sig.</term>, à Didot aîné, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Il le remercie de l'exemplaire de la Constitution qu'il lui a adressé</note>
             </item>
             <item n="14" xml:id="CAT_000123_e14">
@@ -855,7 +855,7 @@
                <trait>
                   <p>célèbre gastronome et littérateur, né en 1758, mort en 1838</p>
                </trait>
-               <desc xml:id="CAT_000123_e60_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Maradan ; <date date="1797-03-22" type="length">2 germinal an V</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000123_e60_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Maradan ; <date when="1797-03-22">2 germinal an V</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
                <note>Il lui demande plusieurs ouvrages sur l'Amérique et lui parle du règlement de
                   son compte</note>
             </item>
@@ -1005,7 +1005,7 @@
                   <p>maréchal de France, le vainqueur de Valmy, né à Strasbourg en 1735, mort en
                      1820</p>
                </trait>
-               <desc xml:id="CAT_000123_e75_d1"><term ana="#document_type_7">L. a. s.</term> à la citoyenne Lamette; prison de l'Abbaye, <date date="1794-01-08" type="length">19 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000123_e75_d1"><term ana="#document_type_7">L. a. s.</term> à la citoyenne Lamette; prison de l'Abbaye, <date when="1794-01-08">19 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Lettre historique écrite pendant sa détention. Il avait été arrêté le 18
                   octobre dans le département du Mont-Blanc, au moment d'aller commander l'armée de
                   Toulon : « Kerllermann est pur, il a toujours fait son devoir en ferme et loyal
@@ -1125,7 +1125,7 @@
                   <p>illustre géomètre, astronome et physicien, de l'Acad. fr., né dans le Calvados
                      en 1749, mort en 1827</p>
                </trait>
-               <desc xml:id="CAT_000123_e84_d1"><term ana="#document_type_9">Let. sig.</term>; <date date="1805-07-19" type="length">30 messidor an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000123_e84_d1"><term ana="#document_type_9">Let. sig.</term>; <date when="1805-07-19">30 messidor an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="85" xml:id="CAT_000123_e85">
                <num type="lot">85</num>
@@ -1453,7 +1453,7 @@
                <trait>
                   <p>maréchal de France, né en 1794, mort en 1870,</p>
                </trait>
-               <desc xml:id="CAT_000123_e115_d1"><term ana="#document_type_7">L. a. s.</term> au colonel de Gazan; Fontainebleau, <date when="1835-10-25">25 ma 1835</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000123_e115_d1"><term ana="#document_type_7">L. a. s.</term> au colonel de Gazan; Fontainebleau, <date when="1835-12-25">25 ma 1835</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Belle lettre écrite comme colonel du 1er régiment de lanciers, il regrette
                   qu'on lui ordonne de changer de garnison, quand il vient d'envoyer au vert 126
                   jeunes chevaux. Les étapes lui en feront perdre la moitié de maladies
@@ -1638,7 +1638,7 @@
                   <p>le savant instituteur des sourds-muets, de l'Acad. fr., né au Fousseret
                      (Haute-Garonne) en 1742, mort en 1822</p>
                </trait>
-               <desc xml:id="CAT_000123_e132_d1"><term ana="#document_type_7">L. a. sig.</term>: l'Instituteur des Sourds-Muets, à une dame; pluviôse an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000123_e132_d1"><term ana="#document_type_7">L. a. sig.</term>: l'Instituteur des Sourds-Muets, à une dame; pluviôse an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="133" xml:id="CAT_000123_e133">
                <num type="lot">133</num>
@@ -1711,7 +1711,7 @@
                   <p>duc de Dalmatie, illustre maréchal de l'Empire, né à Saint-Amans-la-Bastide
                      (Tarn) en 1769, mort en 1851</p>
                </trait>
-               <desc xml:id="CAT_000123_e139_d1"><term ana="#document_type_7">L. a. s.</term> à M. Watrin ; Strasbourg, <date date="1799-02-26" type="length">8 ventôse an VII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000123_e139_d1"><term ana="#document_type_7">L. a. s.</term> à M. Watrin ; Strasbourg, <date when="1799-02-26">8 ventôse an VII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
                <note>Belle lettre écrite comme général de brigade à l'armée de Mayence</note>
             </item>
             <item n="140" xml:id="CAT_000123_e140">
@@ -1786,7 +1786,7 @@
                <trait>
                   <p>le grand diplomate</p>
                </trait>
-               <desc xml:id="CAT_000123_e146_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Rivals, ministre de HesseCassel ; Paris, <date date="1802-12-10" type="length">19 frimaire an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000123_e146_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Rivals, ministre de HesseCassel ; Paris, <date when="1802-12-10">19 frimaire an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il lui annonce que le premier consul désire qu'on favorise le retour en France
                   des ouvriers « qui se sont retirés aux Pays Etrangers pendant l'inactivité de nos
                   Manufactures de France. Les ouvriers des fabriques de Lyon doivent être plus
@@ -2264,7 +2264,7 @@
                <trait>
                   <p>prince d'Eckmüll</p>
                </trait>
-               <desc xml:id="CAT_000123_e191_d1"><term ana="#document_type_9">Let. sig.</term>, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000123_e191_d1"><term ana="#document_type_9">Let. sig.</term>, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="192" xml:id="CAT_000123_e192">
                <num type="lot">192</num>
@@ -2347,7 +2347,7 @@
                <trait>
                   <p>duc de Rivoli</p>
                </trait>
-               <desc xml:id="CAT_000123_e201_d1"><term ana="#document_type_9">Let. sig.</term>; Milan, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000123_e201_d1"><term ana="#document_type_9">Let. sig.</term>; Milan, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="202" xml:id="CAT_000123_e202">
                <num type="lot">202</num>
@@ -2368,7 +2368,7 @@
                <trait>
                   <p>duc de Trévise</p>
                </trait>
-               <desc xml:id="CAT_000123_e204_d1"><term ana="#document_type_9">Let. sig.</term>, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000123_e204_d1"><term ana="#document_type_9">Let. sig.</term>, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="205" xml:id="CAT_000123_e205">
                <num type="lot">205</num>
@@ -2384,7 +2384,7 @@
                <trait>
                   <p>prince de la Moskowa</p>
                </trait>
-               <desc xml:id="CAT_000123_e206_d1"><term ana="#document_type_4">Pièce sig</term>.; Montreuil-sur-Mer, <date date="1804-10-28" type="length">6 brumaire an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000123_e206_d1"><term ana="#document_type_4">Pièce sig</term>.; Montreuil-sur-Mer, <date when="1804-10-28">6 brumaire an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="207" xml:id="CAT_000123_e207">
                <num type="lot">207</num>
@@ -2448,7 +2448,7 @@
             <item n="216" xml:id="CAT_000123_e216">
                <num type="lot">216</num>
                <name type="author">Sérurier (J.-M.-Philibert, comte)</name>
-               <desc xml:id="CAT_000123_e216_d1"><term ana="#document_type_7">L. a. s.</term>, Paris, <date date="1802-10-18" type="length">26 vendémiaire an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000123_e216_d1"><term ana="#document_type_7">L. a. s.</term>, Paris, <date when="1802-10-18">26 vendémiaire an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="217" xml:id="CAT_000123_e217">
                <num type="lot">217</num>
@@ -2464,7 +2464,7 @@
                <trait>
                   <p>duc de Dalmatie</p>
                </trait>
-               <desc xml:id="CAT_000123_e218_d1"><term ana="#document_type_9">Let. sig.</term> à Vandamme ; Quartier général de Boulogne, <date date="1803-10-29" type="length">6 brumaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000123_e218_d1"><term ana="#document_type_9">Let. sig.</term> à Vandamme ; Quartier général de Boulogne, <date when="1803-10-29">6 brumaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Relative au service de la place de Boulogne</note>
             </item>
             <item n="219" xml:id="CAT_000123_e219">

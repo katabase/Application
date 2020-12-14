@@ -28,7 +28,7 @@
                <publisher>Frédéric Naylor</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date when="1879">1879</date>
+               <date>1879</date>
             </bibl>
             <listEvent>
                <event>
@@ -62,7 +62,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces the entries that correspond to documents for sale. All text preceding or succeeding the list of documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -266,7 +266,7 @@
                <trait>
                   <p>célèbre général républicain, tué en 1796</p>
                </trait>
-               <desc xml:id="CAT_000163_e7_d1"><term ana="#document_type_7">L. a. s.</term> à CARRIER; Pont-Saint-Père, <date date="none" type="length">13 mars an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Curieuse
+               <desc xml:id="CAT_000163_e7_d1"><term ana="#document_type_7">L. a. s.</term> à CARRIER; Pont-Saint-Père, <date when="none">13 mars an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Curieuse
                   épître, en style révolutionnaire. Elle commence par ces mots : « Tu n'as pas
                   encore assez tonné, brave et terrible montagnard! » Elle se termine par
                   ceux-ci : « Mort aux brigands, mort aux tirans!!»</note>
@@ -1059,7 +1059,7 @@
                   <p>célèbre
 					conventionnel.</p>
                </trait>
-               <desc xml:id="CAT_000163_e85_d1"><term ana="#document_type_7">L. a. s.</term> au directeur Barras; le Raincy, <date date="1797-03-30" type="length">10 germ. an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><note>Epître curieuse pour l'histoire des moeurs
+               <desc xml:id="CAT_000163_e85_d1"><term ana="#document_type_7">L. a. s.</term> au directeur Barras; le Raincy, <date when="1797-03-30">10 germ. an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><note>Epître curieuse pour l'histoire des moeurs
 						sous le Directoire. Ils sont au Raincy, et ils l'attendent pour courir le
 						daim dans la forêt de Bondy : « Vois si Reubell veut y venir. Je te réponds
 						que nous ne serons qu'entre nous.»</note>
@@ -1098,7 +1098,7 @@
                <trait>
                   <p>empereur des Français.</p>
                </trait>
-               <desc xml:id="CAT_000163_e89_d1"><term ana="#document_type_9">L. s.</term>, avec la souscript. aut., au cit. Porte ; Paris, <date date="1798-04-14" type="length">25 germinal an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc></item>
+               <desc xml:id="CAT_000163_e89_d1"><term ana="#document_type_9">L. s.</term>, avec la souscript. aut., au cit. Porte ; Paris, <date when="1798-04-14">25 germinal an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc></item>
             <item n="90" xml:id="CAT_000163_e90">
                <num type="lot">90</num>
                <name type="author">Noailles (L.-Ant., cardinal de),</name>
@@ -1122,7 +1122,7 @@
                   <p>célèbre compositeur de
 						musique,</p>
                </trait>
-               <desc xml:id="CAT_000163_e92_d1"><term ana="#document_type_7">L. a. s.</term> à Mme Henry; (messidor an <date date="1801-1802" type="length">X</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc></item>
+               <desc xml:id="CAT_000163_e92_d1"><term ana="#document_type_7">L. a. s.</term> à Mme Henry; (messidor an <date when="1801-1802">X</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc></item>
             <item n="93" xml:id="CAT_000163_e93">
                <num type="lot">93</num>
                <name type="author">Pajou (Jacques-Augustin),</name>
@@ -1307,7 +1307,7 @@
                   <p>l'auteur de Paul et Vir-
 						ginie.</p>
                </trait>
-               <desc xml:id="CAT_000163_e112_d1"><term ana="#document_type_7">L. a. s.</term> à sa femme; Gonesse, 3e jour complémentaire an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Très curieuse épître. -Il lui raconte toutes les
+               <desc xml:id="CAT_000163_e112_d1"><term ana="#document_type_7">L. a. s.</term> à sa femme; Gonesse, 3e jour complémentaire an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Très curieuse épître. -Il lui raconte toutes les
 						promenades qu'il fait avec un compagnon de voyage; « mais tout cela
 						n'approche pas de ce que je goute près de toi; ma muse, quand j'en suis un
 						peu loin, cesse de m'inspirer... Je n'ai pas eu le courage de jetter une
@@ -1332,7 +1332,7 @@
                   <p>le célèbre général de la garde
 						nationale parisienne.</p>
                </trait>
-               <desc xml:id="CAT_000163_e114_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Varin; Paris, <date date="1794-10-01" type="length">10 vendém. an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Demande des ouvrages de Parmentier sur l'emploi
+               <desc xml:id="CAT_000163_e114_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Varin; Paris, <date when="1794-10-01">10 vendém. an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Demande des ouvrages de Parmentier sur l'emploi
 						des pommes de terre.</note>
             </item>
             <item n="115" xml:id="CAT_000163_e115">
@@ -1466,7 +1466,7 @@
             <item n="128" xml:id="CAT_000163_e128">
                <num type="lot">128</num>
                <name type="author">Angleterre</name>
-               <desc xml:id="CAT_000163_e128_d1"><term ana="#document_type_9">L. s.</term> du général Lemoine au général Dumesny ; Coutances, <date date="1796-06-27" type="length">9 messidor an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr.</desc><note>Envoi de trois
+               <desc xml:id="CAT_000163_e128_d1"><term ana="#document_type_9">L. s.</term> du général Lemoine au général Dumesny ; Coutances, <date when="1796-06-27">9 messidor an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr.</desc><note>Envoi de trois
 						séries de signaux anglais trouvées sur un des sept Anglais arrêtés sur les
 						côtes normandes. -Les trois planches de signaux sont jointes à la
 						lettre.</note>
@@ -1610,7 +1610,7 @@
             <item n="148" xml:id="CAT_000163_e148">
                <num type="lot">148</num>
                <name type="author">Malesherbes (Chr.-Guill. LAmOIGNON de)</name>
-               <desc xml:id="CAT_000163_e148_d1"><term ana="#document_type_4">P. sig</term>. par Gauthier, Mathieu, Guyomar, Auguis, Pemartin, etc. ; <date date="1795-05-06" type="length">17 floréal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vign., tête impr. et cachet.</desc><note>Arrêté du Comité de sûreté générale portant
+               <desc xml:id="CAT_000163_e148_d1"><term ana="#document_type_4">P. sig</term>. par Gauthier, Mathieu, Guyomar, Auguis, Pemartin, etc. ; <date when="1795-05-06">17 floréal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vign., tête impr. et cachet.</desc><note>Arrêté du Comité de sûreté générale portant
 						que le citoyen Gallois, tuteur des mineurs Pelletier-Rosambo, pourra prendre
 						communication des registres du comité révolutionnaire du Ve arrondissement
 						concernant Lamoignon-Matesherbes et Le Pelletier Rosambo.</note>
@@ -1628,7 +1628,7 @@
                <trait>
                   <p>reine de France.</p>
                </trait>
-               <desc xml:id="CAT_000163_e150_d1">1° <term ana="#document_type_4">P. s.</term> par Léonard, premier coiffeur de la reine; <date when="1791">1791</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000163_e150_d2">2° Examen d'une Vie de Marie-Antoinette très favorable à la ci-devant cour, avec défense de mettre en vente cet ouvrage ; <date date="1802-04-22" type="length">2 floréal an X</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieux document.</desc></item>
+               <desc xml:id="CAT_000163_e150_d1">1° <term ana="#document_type_4">P. s.</term> par Léonard, premier coiffeur de la reine; <date when="1791">1791</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000163_e150_d2">2° Examen d'une Vie de Marie-Antoinette très favorable à la ci-devant cour, avec défense de mettre en vente cet ouvrage ; <date when="1802-04-22">2 floréal an X</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieux document.</desc></item>
             <item n="151" xml:id="CAT_000163_e151">
                <num type="lot">151</num>
                <name type="author">Musique du Roi</name>
@@ -1656,7 +1656,7 @@
             <item n="154" xml:id="CAT_000163_e154">
                <num type="lot">154</num>
                <name type="author">Opéra-Comique</name>
-               <desc xml:id="CAT_000163_e154_d1">1° <term ana="#document_type_4">P. s.</term> par Paulin, Michu, Granger, Philippe, Trial, Martin, Camerani, Chenard, etc. ; <date date="1795-09-26" type="length">4 vendémiaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000163_e154_d2">2° <term ana="#document_type_4">P. s.</term> par Saint-Aubin, Camerani, Granger, Chenard, Michu, Paulin, Philippe, Solié, Etleviou, etc. ; <date date="1795-12-01" type="length">10 frimaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Délibérations à
+               <desc xml:id="CAT_000163_e154_d1">1° <term ana="#document_type_4">P. s.</term> par Paulin, Michu, Granger, Philippe, Trial, Martin, Camerani, Chenard, etc. ; <date when="1795-09-26">4 vendémiaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000163_e154_d2">2° <term ana="#document_type_4">P. s.</term> par Saint-Aubin, Camerani, Granger, Chenard, Michu, Paulin, Philippe, Solié, Etleviou, etc. ; <date when="1795-12-01">10 frimaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Délibérations à
 						l'effet de donner pouvoir à un homme de loi de se rendre adjudicataire, pour
 						le compte de la société, de la maison dite Salon des Princes et de diverses
 						boutiques, le tout faisant le pourtour du bâtiment qui contient le théâtre
@@ -1665,7 +1665,7 @@
             <item n="155" xml:id="CAT_000163_e155">
                <num type="lot">155</num>
                <name type="author">Opéra-Comique</name>
-               <desc xml:id="CAT_000163_e155_d1"><term ana="#document_type_9">L. s.</term> de Fontaine-Cramayel, préfet du Palais du Gouvernement, au citoyen Nogaret; Paris, <date date="1803-02-11" type="length">22 pluviôse an XI</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Document
+               <desc xml:id="CAT_000163_e155_d1"><term ana="#document_type_9">L. s.</term> de Fontaine-Cramayel, préfet du Palais du Gouvernement, au citoyen Nogaret; Paris, <date when="1803-02-11">22 pluviôse an XI</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Document
 						curieux sur la censure théâtrale exercée à cette époque. « Je crois devoir
 						vous avertir que le premier Consul met beaucoup plus d'importance qu'on ne
 						croit aux ouvragès qui sont représentés au théâtre Feydeau, théâtre qu'il
@@ -1809,7 +1809,7 @@
             <item n="175" xml:id="CAT_000163_e175">
                <num type="lot">175</num>
                <name type="author">Saint-Omer</name>
-               <desc xml:id="CAT_000163_e175_d1"><term ana="#document_type_7">L. a. s.</term> du cit. Crachet à Daunou; Saint-Omer, <date date="1795-07-30" type="length">12 thermidor an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-1</measure>/4.</desc><note>Il sollicite la liberté du cit. Serlingue,
+               <desc xml:id="CAT_000163_e175_d1"><term ana="#document_type_7">L. a. s.</term> du cit. Crachet à Daunou; Saint-Omer, <date when="1795-07-30">12 thermidor an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-1</measure>/4.</desc><note>Il sollicite la liberté du cit. Serlingue,
 						ci-devant vicaire dans une des communes du district de Saint-Omer, et qui a
 						été emprisonné par ordre de Joseph Lebon.</note>
                </item>
@@ -1824,7 +1824,7 @@
             <item n="178" xml:id="CAT_000163_e178">
                <num type="lot">178</num>
                <name type="author">Soissons</name>
-               <desc xml:id="CAT_000163_e178_d1">P. <term ana="#document_type_15">a. s.</term> de Jean-Louis-Marie Poiret, naturaliste, né à Saint-Quentin ; an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Observations sur une espèce de
+               <desc xml:id="CAT_000163_e178_d1">P. <term ana="#document_type_15">a. s.</term> de Jean-Louis-Marie Poiret, naturaliste, né à Saint-Quentin ; an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Observations sur une espèce de
 						bois pétrifié trouvée à Belleu, près de Soissons.</note>
             </item>
             <item n="179" xml:id="CAT_000163_e179">

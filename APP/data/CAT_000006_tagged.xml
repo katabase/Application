@@ -27,7 +27,7 @@
                <num>24 - deuxième série</num>
                <publisher>Gabrielle Charavay</publisher>
                <pubPlace>Paris, 6 square du Croisic</pubPlace>
-               <date when="1927">1927</date>
+               <date>1927</date>
             </bibl>
             <listWit>
                <witness> BnF, 8-Q-928 <ptr/>
@@ -49,7 +49,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -173,7 +173,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019-05-23">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -511,7 +511,7 @@
                   <p>illustre savant, naturaliste, zoologiste, membre de l'Institut (1795). Né à
                      Agen en 1756, m. à Epinay en 1825</p>
                </trait>
-               <desc xml:id="CAT_000006_e33_d1"><term ana="#document_type_7">L. a. s.</term> à un confrère ; <date date="1796-08-07" type="length">20 thermidor an IV</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000006_e33_d1"><term ana="#document_type_7">L. a. s.</term> à un confrère ; <date when="1796-08-07">20 thermidor an IV</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Aimable lettre où il le remercie de ses deux ouvrages qu'il lui a fait remettre
                   par le citoyen Chaussier » J'ai eu pendant longtemps la même idée que le citoyen
                   Dolomieu ; et j'ai cru que nous pouvions nous compter parmi les associés de
@@ -523,7 +523,7 @@
                <trait>
                   <p>comte de). illustre savant</p>
                </trait>
-               <desc xml:id="CAT_000006_e34_d1"><term ana="#document_type_7">L. a. s.</term> à M. Duméril ; Paris, <date date="1794-08-24" type="length">7 fructidor an II</date> ; <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, très beau cachet avec devise atine.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000006_e34_d1"><term ana="#document_type_7">L. a. s.</term> à M. Duméril ; Paris, <date when="1794-08-24">7 fructidor an II</date> ; <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, très beau cachet avec devise atine.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Aimable lettre où il s'acquitte de la seule partie facile à payer, de la dette
                   qu'il a contractée envers lui</note>
             </item>
@@ -557,7 +557,7 @@
                   <p>célèbre naturaliste, zoologiste, anatomiste, membre de l'Institut (1798). Né à
                      Brive en 1762, m. à Paris en 1833</p>
                </trait>
-               <desc xml:id="CAT_000006_e37_d1"><term ana="#document_type_7">L. a. s.</term> à M. Daudin; <date date="1799-04-13" type="length">24 germ. an VII</date>; <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000006_e37_d1"><term ana="#document_type_7">L. a. s.</term> à M. Daudin; <date when="1799-04-13">24 germ. an VII</date>; <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Intéressante lettre où il lui adresse le fruit de ses recherches</note>
             </item>
             <item n="38" xml:id="CAT_000006_e38">
@@ -616,7 +616,7 @@
                <trait>
                   <p>célèbre géographe, historiographe du comte d'Artois, membre de l'Institut</p>
                </trait>
-               <desc xml:id="CAT_000006_e43_d1"><term ana="#document_type_7">L. a. s.</term> au prince Louis Bonaparte, avec 9 mots autographes de ce dernier ; Paris, <date date="1804-11-10" type="length">19 brumaire an XIII</date> ; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000006_e43_d1"><term ana="#document_type_7">L. a. s.</term> au prince Louis Bonaparte, avec 9 mots autographes de ce dernier ; Paris, <date when="1804-11-10">19 brumaire an XIII</date> ; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Il lui propose pour remplacer M. Janvier, M. Moreau mathématicien, astronome,
                   etc. - Le prince répond qu'il le remercie, mais que cette place n'est pas
                   vacante</note>
@@ -1408,7 +1408,7 @@
                   <p>célèbre homme d'Etat, auteur d'ouvrages sur Mme de Pompadour, sur St-Domingue,
                      sur la Louisiane. Né à Metz en 1745, m. en 1837</p>
                </trait>
-               <desc xml:id="CAT_000006_e118_d1"><term ana="#document_type_7">L. a. s.</term> au comte de Rayneval à St-Germain-en-Laye ; Paris, <date date="1800-08-07" type="length">19 thermidor an VIII</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000006_e118_d1"><term ana="#document_type_7">L. a. s.</term> au comte de Rayneval à St-Germain-en-Laye ; Paris, <date when="1800-08-07">19 thermidor an VIII</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il lui parle du Consul Lebrun dont l'amitié pour lui, est à la fois discrète et
                   remplie d'obligeance</note>
             </item>
@@ -1419,7 +1419,7 @@
                   <p>célèbre homme politique de la Révolution, ami du général Bonaparte. Né en 1755,
                      m. en 1829</p>
                </trait>
-               <desc xml:id="CAT_000006_e119_d1"><term ana="#document_type_7">L. a. s.</term> P Barras, « à son cher représentant » ; Paris, <date date="none" type="length">5 ven-démiaire an VII</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000006_e119_d1"><term ana="#document_type_7">L. a. s.</term> P Barras, « à son cher représentant » ; Paris, <date when="none">5 ven-démiaire an VII</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note>Je reçois la fraternelle et obligeante invitation que vous avez la bonté de
                   m'adresser au nom de nos braves frères d'armes, membres des deux conseils,
                   auxquels je me serais réuni avec empressement ; si des engagements ultérieurs ne
@@ -1455,7 +1455,7 @@
                <trait>
                   <p>maréchal de France, roi de Suède</p>
                </trait>
-               <desc xml:id="CAT_000006_e122_d1"><term ana="#document_type_9">L. sig.</term> avec 1 ligne aut., au général Brune, commandant les troupes françaises et bataves en Hollande ; Paris, <date date="1799-08-09" type="length">22 thermidor an VII</date>; <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête et vig. imp.</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
+               <desc xml:id="CAT_000006_e122_d1"><term ana="#document_type_9">L. sig.</term> avec 1 ligne aut., au général Brune, commandant les troupes françaises et bataves en Hollande ; Paris, <date when="1799-08-09">22 thermidor an VII</date>; <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête et vig. imp.</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
                <note>Importante lettre historique. « Regardez d'avance comme approuvé tout ce que
                   vous ferez. Donnez-moi sur tout des renseignements sur l'approvisionnement des
                   places, particulièrement sur celles de la frontière. Je ne vous réponds point sur
@@ -1469,7 +1469,7 @@
                <trait>
                   <p>maréchal de France, roi de Suède</p>
                </trait>
-               <desc xml:id="CAT_000006_e123_d1"><term ana="#document_type_4">P. sig</term>. comme ministre de la guerre ; Paris, <date date="1799-08-11" type="length">24 thermidor an VII</date>, à 11 h. 1/2 du soir ; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
+               <desc xml:id="CAT_000006_e123_d1"><term ana="#document_type_4">P. sig</term>. comme ministre de la guerre ; Paris, <date when="1799-08-11">24 thermidor an VII</date>, à 11 h. 1/2 du soir ; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
                <note>Il annonce que le citoyen Lefebvre, général de division est nommé commandant de
                   la 17e division militaire en remplacement du général de division Marbot appellé à
                   d'autres fonctions. Le présent arrêté ne sera pas imprimé</note>
@@ -1477,7 +1477,7 @@
             <item n="124" xml:id="CAT_000006_e124">
                <num type="lot">124</num>
                <name type="author">Bernadotte (J.-B.-J.)</name>
-               <desc xml:id="CAT_000006_e124_d1"><term ana="#document_type_9">L. sig.</term> (griffe), sig. aussi par le sieur Laperrière ; au énéral de la 17e division militaire à aris ; Paris, V fructidor an <date date="1798-1799" type="length">VII</date> ; <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette et tête imp.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000006_e124_d1"><term ana="#document_type_9">L. sig.</term> (griffe), sig. aussi par le sieur Laperrière ; au énéral de la 17e division militaire à aris ; Paris, V fructidor an <date when="1798-1799">VII</date> ; <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette et tête imp.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Il l'invite à vérifier si la conduite du 20e bataillon des conscrits du
                   département de la Seiue a été confiée a un nommé Lachaise « (La Chaise ex-garde du
                   tyran). La liste des ex-gardes du Roi, qui se sont rendus à Coblentz porte : Aubin
@@ -1546,7 +1546,7 @@
                   <p>célèbre général de la Révolution, diplomate, maréchal de l'Empire (1804). Né à
                      Brives en 1763, assassiné à Avignon en 1815</p>
                </trait>
-               <desc xml:id="CAT_000006_e129_d1"><term ana="#document_type_7">L. a. s.</term> à Barras, au Luxembourg; <date date="1796-04-28" type="length">9 floréal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="160">160</measure>
+               <desc xml:id="CAT_000006_e129_d1"><term ana="#document_type_7">L. a. s.</term> à Barras, au Luxembourg; <date when="1796-04-28">9 floréal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="160">160</measure>
                <note>Belle lettre. Ayant été du nombre des officiers chargés de licencier les deux
                   bataillons de la légion de police. « Le licenciement dans la portion qui m'était
                   confiée a été effectué sans tumulte. Les soldats se plaignaient de ce que quelques
@@ -1560,7 +1560,7 @@
                <trait>
                   <p>célèbre maréchal de l'Empire</p>
                </trait>
-               <desc xml:id="CAT_000006_e130_d1"><term ana="#document_type_7">L. a. s.</term> comme conseiller d'Etat, général on chef, au citoyen Vern, quartier général de Pavi ; <date date="1801-03-29" type="length">8 germinal an IX</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têle imp. de l'armée d'Italie avec son nom et ses titres.</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
+               <desc xml:id="CAT_000006_e130_d1"><term ana="#document_type_7">L. a. s.</term> comme conseiller d'Etat, général on chef, au citoyen Vern, quartier général de Pavi ; <date when="1801-03-29">8 germinal an IX</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têle imp. de l'armée d'Italie avec son nom et ses titres.</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
                <note>Il l'informe qu'il n'a pas reçu ses instructions. « J'aurais acheté une petite
                   maison de campagne si j'avais eu des fonds. Je n'écris pas au ministre Pétiet, dis
                   lui bien des choses de ma part.</note>
@@ -1571,7 +1571,7 @@
                <trait>
                   <p>célèbre maréchal</p>
                </trait>
-               <desc xml:id="CAT_000006_e131_d1"><term ana="#document_type_7">L. a. s.</term> au directeur Barras ; <date date="1798-01-28" type="length">9 pluviose an VI</date> ; <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="160">160</measure>
+               <desc xml:id="CAT_000006_e131_d1"><term ana="#document_type_7">L. a. s.</term> au directeur Barras ; <date when="1798-01-28">9 pluviose an VI</date> ; <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="160">160</measure>
                <note>Relative au citoyen Pierre Bonneville. « Ce jeune homme avait été arrêté pour
                   des propos en faveur d'un traître. Ces propos ayant été tenus lors de la juste
                   punition du traître il est très possible que Bonneville qui avait servi avec
@@ -1584,7 +1584,7 @@
                <trait>
                   <p>célèbre maréchal (1804)</p>
                </trait>
-               <desc xml:id="CAT_000006_e132_d1"><term ana="#document_type_7">L. a. s.</term> au représentant du peuple Barras, membre du Conseil des Cinq Cents ; Marseille, <date date="1795-11-25" type="length">4 frimaire an IV</date>; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="250">250</measure>
+               <desc xml:id="CAT_000006_e132_d1"><term ana="#document_type_7">L. a. s.</term> au représentant du peuple Barras, membre du Conseil des Cinq Cents ; Marseille, <date when="1795-11-25">4 frimaire an IV</date>; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="250">250</measure>
                <note>Très belle lettre. « Tu ne nous écris pas mon cher Barras, sans doute la
                   politique du Conseil l'exige encore; mais songe que la seule politique bonne est
                   celle qui profite le plus à la patrie, et que l'incertitude dans l'esprit de ceux
@@ -1619,7 +1619,7 @@
                <trait>
                   <p>consul, archi-chancelier, membre de l'Institut et de l'Acad. fr</p>
                </trait>
-               <desc xml:id="CAT_000006_e135_d1"><term ana="#document_type_9">L. sig.</term> au citoyen Lacretelle aîné, membre du Corps législatif; Paris, <date date="1802-09-28" type="length">6 vendémiaire an XI</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000006_e135_d1"><term ana="#document_type_9">L. sig.</term> au citoyen Lacretelle aîné, membre du Corps législatif; Paris, <date when="1802-09-28">6 vendémiaire an XI</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Ne doutez pas du plaisir que j'aurai de contribuer à assurer le succès de notre
                   affaire.</note>
             </item>
@@ -1629,7 +1629,7 @@
                <trait>
                   <p>l'organisateur des armées de la République</p>
                </trait>
-               <desc xml:id="CAT_000006_e136_d1"><term ana="#document_type_7">L. a. s.</term> comme secrétaire du Comité de Salut public, aux représentants du peuple près les armées du Nord et de Sambre-et-Meuse ; <date date="1794-07-14" type="length">26 messidor an II</date>; <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très rare de cette importance.</desc><measure commodity="currency" unit="FRF" quantity="1000">1000</measure>
+               <desc xml:id="CAT_000006_e136_d1"><term ana="#document_type_7">L. a. s.</term> comme secrétaire du Comité de Salut public, aux représentants du peuple près les armées du Nord et de Sambre-et-Meuse ; <date when="1794-07-14">26 messidor an II</date>; <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très rare de cette importance.</desc><measure commodity="currency" unit="FRF" quantity="1000">1000</measure>
                <note>Très précieuse lettre historique. Il leur adresse un arrêté sur les
                   contributions qui doivent être levées dans la Belgique. » Vous voudrez bien le
                   faire exécuter suivant sa teLa première opération à faire partout est le
@@ -1734,7 +1734,7 @@
                <trait>
                   <p>général, célébre administrateur, ministre de la guerre de 1802 à 1810</p>
                </trait>
-               <desc xml:id="CAT_000006_e143_d1"><term ana="#document_type_7">L. a. s.</term> comme général de division du génie, au payeur général de l'Armée de Sambre-et-Meuse ; Gorcum, <date date="1796-02-24" type="length">5 ventôse an IV</date> ; <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> 50 » Très belle lettre. Il adresse au citoyen Johannot, payeur général de l'armée du Nord 10 800 livres 12 sols dix deniers, numéraire à toucher sur lui « Ce versement effectué, ainsi que le payement des 889 1. 160 d. à faire au capitaine du génie Prudhomme à Dusseldorf; les 100,000 livres de fonds faits dans notre caisse se trouveront consommés</desc><note>Les mandats que je vous adresserai pour la location des bateaux, je continuerai
+               <desc xml:id="CAT_000006_e143_d1"><term ana="#document_type_7">L. a. s.</term> comme général de division du génie, au payeur général de l'Armée de Sambre-et-Meuse ; Gorcum, <date when="1796-02-24">5 ventôse an IV</date> ; <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> 50 » Très belle lettre. Il adresse au citoyen Johannot, payeur général de l'armée du Nord 10 800 livres 12 sols dix deniers, numéraire à toucher sur lui « Ce versement effectué, ainsi que le payement des 889 1. 160 d. à faire au capitaine du génie Prudhomme à Dusseldorf; les 100,000 livres de fonds faits dans notre caisse se trouveront consommés</desc><note>Les mandats que je vous adresserai pour la location des bateaux, je continuerai
                   à énoncer le montant du mandat en florins de Hollande sans réduction en livres
                   tournois.</note>
             </item>
@@ -1744,7 +1744,7 @@
                <trait>
                   <p>illustre général de la Révolution, tué à la bataille de Marengo en 1800</p>
                </trait>
-               <desc xml:id="CAT_000006_e144_d1"><term ana="#document_type_9">L. sig.</term> comme général en chef par intérim, de l'Armée de Rhin-et-Moselle, au général (Lefebvre) commandant la 4e division ; quartier général à Haguenau , <date date="1795-1796" type="length">IV</date> germinal . an <date date="1795-1796" type="length">IV</date>; <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle vignette tenant le 1/4 de la page, de l'Armée de Rhin-et-Moselle.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000006_e144_d1"><term ana="#document_type_9">L. sig.</term> comme général en chef par intérim, de l'Armée de Rhin-et-Moselle, au général (Lefebvre) commandant la 4e division ; quartier général à Haguenau , <date when="1795-1796">IV</date> germinal . an <date when="1795-1796">IV</date>; <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle vignette tenant le 1/4 de la page, de l'Armée de Rhin-et-Moselle.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note>Belle lettre. Il le prie d'exercer la plus grande surveillance sur le
                   territoire de la République, l'administration du département du Bas-Rhin l'ayant
                   informé qu'il rentre journellement des émigrés sur ce territoire, qu'ils vont et
@@ -1759,7 +1759,7 @@
                   <p>célèbre homme politique qui se fit remarquer par son patriotisme et une loyauté
                      qui ont fait sa popularité. Né au Neubourg (Eure) en 1767 m. en 1855</p>
                </trait>
-               <desc xml:id="CAT_000006_e145_d1"><term ana="#document_type_7">L. a. s.</term> à M. Boidar ; Evreux, <date date="1804-06-22" type="length">2 messidor an XII</date>; <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> On a joint un portrait.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000006_e145_d1"><term ana="#document_type_7">L. a. s.</term> à M. Boidar ; Evreux, <date when="1804-06-22">2 messidor an XII</date>; <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> On a joint un portrait.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Toute relative au citoyen Salomon Dulong</note>
             </item>
             <item n="146" xml:id="CAT_000006_e146">
@@ -2038,7 +2038,7 @@
                <trait>
                   <p>premier chambellan de Napoléon Ier, né en Provence en 1762, m. en 1823</p>
                </trait>
-               <desc xml:id="CAT_000006_e170_d1"><term ana="#document_type_9">L. sig.</term> ; Paris, <date date="1804-04-29" type="length">8 floréal an XII</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> in 4.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000006_e170_d1"><term ana="#document_type_9">L. sig.</term> ; Paris, <date when="1804-04-29">8 floréal an XII</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> in 4.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il le prie de donner avis aux membres du Sénat que le Premier Consul donnera
                   audience au Corps diplomatique le 9 au palais des Tuileries. </note>
             </item>
@@ -2140,14 +2140,14 @@
                <trait>
                   <p>le grand diplomate</p>
                </trait>
-               <desc xml:id="CAT_000006_e179_d1"><term ana="#document_type_9">L. sig.</term> Ch. Mau. Tal-leyrand, au citoyen Pichon, secrétaire de la commission chargée de traiter les différends survenus entre la France et les Etats-Unis , Paris, <date date="1800-10-16" type="length">24 vendémiaire an IX</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette. 40 » Il lui adresse l'expédition d'un arrêté des Consuls du 19 par lequel il lui est accordé, pour la négociation avec les Etats-Unis, une indemnité à raison de 20,000 fraucs par an</desc></item>
+               <desc xml:id="CAT_000006_e179_d1"><term ana="#document_type_9">L. sig.</term> Ch. Mau. Tal-leyrand, au citoyen Pichon, secrétaire de la commission chargée de traiter les différends survenus entre la France et les Etats-Unis , Paris, <date when="1800-10-16">24 vendémiaire an IX</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette. 40 » Il lui adresse l'expédition d'un arrêté des Consuls du 19 par lequel il lui est accordé, pour la négociation avec les Etats-Unis, une indemnité à raison de 20,000 fraucs par an</desc></item>
             <item n="180" xml:id="CAT_000006_e180">
                <num type="lot">180</num>
                <name type="author">Talleyrand (Ch.-M.)</name>
                <trait>
                   <p>le grand diplomate</p>
                </trait>
-               <desc xml:id="CAT_000006_e180_d1"><term ana="#document_type_9">L. sig.</term> Ch. Mau. Talleyrand ; au ministre de la Marine et des Colonies ; Paris, <date date="1797-12-18" type="length">28 frimaire an VI</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000006_e180_d1"><term ana="#document_type_9">L. sig.</term> Ch. Mau. Talleyrand ; au ministre de la Marine et des Colonies ; Paris, <date when="1797-12-18">28 frimaire an VI</date> ; <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Il lui recommande le citoyen Vallier qui lui a remis une soumission régulière
                   pour la fourniture des subsistances nécessaires aux républicains français
                   prisonniers en Angleterre ; « plusieurs patriotes m'en ayant parlé comme d'un
@@ -2169,7 +2169,7 @@
                <trait>
                   <p>le grand diplomate</p>
                </trait>
-               <desc xml:id="CAT_000006_e182_d1"><term ana="#document_type_4">P. sig</term>. Ch. Mau. Talleyrand, <date date="1799-08-11" type="length">24 thermidor an VII</date>; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000006_e182_d1"><term ana="#document_type_4">P. sig</term>. Ch. Mau. Talleyrand, <date when="1799-08-11">24 thermidor an VII</date>; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Au sujet de la succession du sieur Albert, prussien, mort à Paris le 2 prairial
                   an VII</note>
             </item>
@@ -2190,7 +2190,7 @@
                   <p>comte de Périgord, lieutenant général en 1780, oncle du grand homme d'Etat; né
                      en 1726, m. en 1795</p>
                </trait>
-               <desc xml:id="CAT_000006_e184_d1"><term ana="#document_type_7">L. a. s.</term> 2 fois, aux citoyens du bureau du domaine national du département de Paris ; <date date="1794-10-09" type="length">18 vend. an III</date> ; <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
+               <desc xml:id="CAT_000006_e184_d1"><term ana="#document_type_7">L. a. s.</term> 2 fois, aux citoyens du bureau du domaine national du département de Paris ; <date when="1794-10-09">18 vend. an III</date> ; <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
                <note>Après une détention de plus d'un an, venant d'être mis en liberté, par ordre du
                   Comité de sûreté générale, il demande que les scellés aposés chez lui soient levés
                   « attendu qu'il a le plus grand besoin de son mobilier qui est dans un dépôt rue
@@ -2377,7 +2377,7 @@
                   <p>historien, secrétaire archiviste du cabinet de Napoléon Ier et son secrétaire
                      particulier. Né en 1778, m. en 1837</p>
                </trait>
-               <desc xml:id="CAT_000006_e199_d1"><term ana="#document_type_7">L. a. s.</term> à M. de Reuilly, auditeur au Conseil d'Etat, sous-préfet à Soissons : Strasbourg, <date date="1805-10-12" type="length">20 vendémiaire an XIV</date> ; <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, grand cachet en cire rouge, marques postales.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000006_e199_d1"><term ana="#document_type_7">L. a. s.</term> à M. de Reuilly, auditeur au Conseil d'Etat, sous-préfet à Soissons : Strasbourg, <date when="1805-10-12">20 vendémiaire an XIV</date> ; <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, grand cachet en cire rouge, marques postales.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Très belle pièce. Il lui adresse une lettre qui lui rappellera un bon ami qu'il
                   a laissé en Russie, « et l'envoi que j'ai a vous faire me fournira l'occasion de
                   rappeller également à votre souvenir un autre ami que vous avez laissé à Milan et
@@ -2392,7 +2392,7 @@
                   <p>littérateur et gastronome, l'auteur de l'Almanach des Gourmands, né à Paris en
                      1758, m. en 1838</p>
                </trait>
-               <desc xml:id="CAT_000006_e200_d1"><term ana="#document_type_7">L. a. s.</term> à M. Maradan ; Paris, <date date="1804-04-19" type="length">28 germ. an XII</date> ; <measure type="length" unit="p" n="1">1 p.</measure> pl. petit <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000006_e200_d1"><term ana="#document_type_7">L. a. s.</term> à M. Maradan ; Paris, <date when="1804-04-19">28 germ. an XII</date> ; <measure type="length" unit="p" n="1">1 p.</measure> pl. petit <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Relative à son Almanach des gourmands. Il annonce aussi qu'il prépare Le Guide
                   du Gourmand</note>
             </item>

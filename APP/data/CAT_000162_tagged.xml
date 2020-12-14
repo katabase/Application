@@ -28,7 +28,7 @@
                <publisher>Frédéric Naylor</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date when="1879">1879</date>
+               <date>1879</date>
             </bibl>
             <listEvent>
                <event>
@@ -62,7 +62,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces the entries that correspond to documents for sale. All text preceding or succeeding the list of documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -852,7 +852,7 @@
                <trait>
                   <p>la célèbre actrice.</p>
                </trait>
-               <desc xml:id="CAT_000162_e82_d1"><term ana="#document_type_7">L. aut. sig.</term> Sophie A. (à Belanger) ; du Paraclet-Sophie, <date date="1797-11-04" type="length">14 brumaire an VI</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Epître des plus curieuses sur une
+               <desc xml:id="CAT_000162_e82_d1"><term ana="#document_type_7">L. aut. sig.</term> Sophie A. (à Belanger) ; du Paraclet-Sophie, <date when="1797-11-04">14 brumaire an VI</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Epître des plus curieuses sur une
 						grave maladie qu'elle vient de faire. Piquants détails sur la manière dont
 						elle a été soignée et guérie par le médecin de son village. Témoignages
 						d'affection qu'elle a reçus. Spirituelles considérations sur les
@@ -861,7 +861,7 @@
             <item n="83" xml:id="CAT_000162_e83">
                <num type="lot">83</num>
                <name type="author">Arnould (Sophie)</name>
-               <desc xml:id="CAT_000162_e83_d1"><term ana="#document_type_7">L. a. s.</term> (au même) ; Paris, <date date="1801-08-02" type="length">14 thermidor an IX</date>, <measure type="length" unit="p" n="3.75">3 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Très-belle lettre où elle parle du fâcheux état
+               <desc xml:id="CAT_000162_e83_d1"><term ana="#document_type_7">L. a. s.</term> (au même) ; Paris, <date when="1801-08-02">14 thermidor an IX</date>, <measure type="length" unit="p" n="3.75">3 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Très-belle lettre où elle parle du fâcheux état
 						de sa santé et de son fils. Intéressants détails.</note>
             </item>
             <item n="84" xml:id="CAT_000162_e84">
@@ -938,7 +938,7 @@
                   <p>amiral et ministre de la
 						marine.</p>
                </trait>
-               <desc xml:id="CAT_000162_e91_d1"><term ana="#document_type_7">L. a. s.</term> à Talleyrand ; Boulogne, <date date="1804-09-01" type="length">13 fructidor an XII</date>, <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure par la rupture du cachet.</desc><note>Lettre
+               <desc xml:id="CAT_000162_e91_d1"><term ana="#document_type_7">L. a. s.</term> à Talleyrand ; Boulogne, <date when="1804-09-01">13 fructidor an XII</date>, <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure par la rupture du cachet.</desc><note>Lettre
 						confidentielle des plus curieuses où il expose son chagrin de ne pas avoir
 						obtenu la confiance de l'Empereur, malgré tout le zèle qu'il a déployé à le
 						servir.</note>
@@ -1127,7 +1127,7 @@
                <trait>
                   <p>célèbre conventionnel.</p>
                </trait>
-               <desc xml:id="CAT_000162_e112_d1">. <term ana="#document_type_7">L. a. s.</term>, sig. aussi par Bourbotte et Prieur de la Marne, au Comité de salut public ; Angers, <date date="1793-12-06" type="length">16 frimaire an II</date>. <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><note>Document en style révolutionnaire sur les
+               <desc xml:id="CAT_000162_e112_d1">. <term ana="#document_type_7">L. a. s.</term>, sig. aussi par Bourbotte et Prieur de la Marne, au Comité de salut public ; Angers, <date when="1793-12-06">16 frimaire an II</date>. <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><note>Document en style révolutionnaire sur les
 						derniers avantages remportés sur les brigands. Parmi les prisonniers,
 						figurent l'abbesse de Sivrac, un prêtre, déguisé en meunier mais portant sur
 						lui les instruments du fanatisme, « et tin grand nombre d'autres coquins
@@ -1141,7 +1141,7 @@
                   <p>célèbre
 						conventionnel.</p>
                </trait>
-               <desc xml:id="CAT_000162_e113_d1"><term ana="#document_type_7">L. a. s.</term> au Comité de salut public ; Saintes, <date date="1794-06-05" type="length">17 prairial an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Curieuse lettre révolutionnaire.</note>
+               <desc xml:id="CAT_000162_e113_d1"><term ana="#document_type_7">L. a. s.</term> au Comité de salut public ; Saintes, <date when="1794-06-05">17 prairial an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Curieuse lettre révolutionnaire.</note>
             </item>
             <item n="114" xml:id="CAT_000162_e114">
                <num type="lot">114</num>
@@ -1158,7 +1158,7 @@
                   <p>célèbre artiste de
 						la Comédie française.</p>
                </trait>
-               <desc xml:id="CAT_000162_e115_d1">1° Reçu <term ana="#document_type_15">aut. sig.</term>; Paris, <date when="1814-11-12">12 nov. 1814</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000162_e115_d2">2° <term ana="#document_type_3">Pièce autographe</term> ; (thermidor an <date date="1802-1803" type="length">XI</date>), <measure type="length" unit="p" n="7.75">7 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Important rapport sur le Conservatoire oratoire
+               <desc xml:id="CAT_000162_e115_d1">1° Reçu <term ana="#document_type_15">aut. sig.</term>; Paris, <date when="1814-11-12">12 nov. 1814</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000162_e115_d2">2° <term ana="#document_type_3">Pièce autographe</term> ; (thermidor an <date when="1802-1803">XI</date>), <measure type="length" unit="p" n="7.75">7 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Important rapport sur le Conservatoire oratoire
 						et dramatique.</note>
             </item>
             <item n="116" xml:id="CAT_000162_e116">
@@ -1390,7 +1390,7 @@
                   <p>illustre général
 						républicain, tué en 1796.</p>
                </trait>
-               <desc xml:id="CAT_000162_e140_d1">P. <term ana="#document_type_15">a. s.</term>; quartier-général de Montigni, <date date="1794-05-27" type="length">8 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Ordre militaire au général
+               <desc xml:id="CAT_000162_e140_d1">P. <term ana="#document_type_15">a. s.</term>; quartier-général de Montigni, <date when="1794-05-27">8 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Ordre militaire au général
 					d'Hautpoul.</note>
             </item>
             <item n="141" xml:id="CAT_000162_e141">

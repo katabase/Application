@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -475,7 +475,7 @@
                   <p>célèbre peintre de portraits, l'Emilie de Demoustier dans ses Lettres sur la
                      mythologie</p>
                </trait>
-               <desc xml:id="CAT_000082_e31_d1"><term ana="#document_type_7">L. a. sig.</term> (à la 3° pers.) au libraire Maradan; an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000082_e31_d1"><term ana="#document_type_7">L. a. sig.</term> (à la 3° pers.) au libraire Maradan; an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="32" xml:id="CAT_000082_e32">
                <num type="lot">32</num>
@@ -603,7 +603,7 @@
                <trait>
                   <p>général en chef de l'armée d'Egypte</p>
                </trait>
-               <desc xml:id="CAT_000082_e45_d1">-Jolie <term ana="#document_type_4">pièce sig</term>. (dont le corps de l'écriture est de Bourrienne) ; le Caire, <date date="1799-02-06" type="length">18 pluv. an 7</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000082_e45_d1">-Jolie <term ana="#document_type_4">pièce sig</term>. (dont le corps de l'écriture est de Bourrienne) ; le Caire, <date when="1799-02-06">18 pluv. an 7</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="46" xml:id="CAT_000082_e46">
                <num type="lot">46</num>
@@ -633,7 +633,7 @@
                <trait>
                   <p>prince de Canino, frère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000082_e48_d1"><term ana="#document_type_7">L. a. s.</term> au général Cartaux ; Le Plessis, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000082_e48_d1"><term ana="#document_type_7">L. a. s.</term> au général Cartaux ; Le Plessis, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="49" xml:id="CAT_000082_e49">
                <num type="lot">49</num>
@@ -703,7 +703,7 @@
                <trait>
                   <p>reine d'Espagne, femme du roi Joseph, née à Marseille</p>
                </trait>
-               <desc xml:id="CAT_000082_e56_d1"><term ana="#document_type_9">L. s.</term> à Boulay de la Meurthe; Paris, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000082_e56_d1"><term ana="#document_type_9">L. s.</term> à Boulay de la Meurthe; Paris, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="57" xml:id="CAT_000082_e57">
                <num type="lot">57</num>
@@ -879,7 +879,7 @@
                <trait>
                   <p>illustre général de la République</p>
                </trait>
-               <desc xml:id="CAT_000082_e76_d1"><term ana="#document_type_9">L. s.</term>; Paris, <date date="1799-08-09" type="length">22 therm. an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000082_e76_d1"><term ana="#document_type_9">L. s.</term>; Paris, <date when="1799-08-09">22 therm. an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="77" xml:id="CAT_000082_e77">
                <num type="lot">77</num>
@@ -971,7 +971,7 @@
                <trait>
                   <p>célèbre conventionnel, déporté à Sinamari, où il est mort</p>
                </trait>
-               <desc xml:id="CAT_000082_e87_d1"><term ana="#document_type_9">L. s.</term>, sig. aussi de Billaud-Varenne ; <date date="1794-03-13" type="length">23 vent, an 2</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000082_e87_d1"><term ana="#document_type_9">L. s.</term>, sig. aussi de Billaud-Varenne ; <date when="1794-03-13">23 vent, an 2</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="88" xml:id="CAT_000082_e88">
                <num type="lot">88</num>
@@ -1494,7 +1494,7 @@
                   <p>fameux conventionnel, d'abord boucher, que son éloquence inculte a fait
                      surnommer le paysan du Danube</p>
                </trait>
-               <desc xml:id="CAT_000082_e145_d1">Arrêté du Comité de sûr. génér. sig. de lui, A. Dumont, Vouland, Louis, Bernard et Barbeau-Dubarran ; <date date="1794-08-28" type="length">11 fruct. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000082_e145_d1">Arrêté du Comité de sûr. génér. sig. de lui, A. Dumont, Vouland, Louis, Bernard et Barbeau-Dubarran ; <date when="1794-08-28">11 fruct. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="146" xml:id="CAT_000082_e146">
                <num type="lot">146</num>
@@ -1510,7 +1510,7 @@
                <trait>
                   <p>le célèbre dictateur de Saint-Domingue</p>
                </trait>
-               <desc xml:id="CAT_000082_e147_d1"><term ana="#document_type_9">L. s.</term> au cit. Vincent, directeur des fortifications à Saint-Domingue; le Cap, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000082_e147_d1"><term ana="#document_type_9">L. s.</term> au cit. Vincent, directeur des fortifications à Saint-Domingue; le Cap, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="148" xml:id="CAT_000082_e148">
                <num type="lot">148</num>
@@ -1656,7 +1656,7 @@
                <trait>
                   <p>le fameux conventionnel</p>
                </trait>
-               <desc xml:id="CAT_000082_e163_d1">-Arrêté sig. de lui, de Billaud-Varenne, Hérault-Séchelles et Barère; <date date="1793-10-15" type="length">24 vendém. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet du comité.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000082_e163_d1">-Arrêté sig. de lui, de Billaud-Varenne, Hérault-Séchelles et Barère; <date when="1793-10-15">24 vendém. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet du comité.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="164" xml:id="CAT_000082_e164">
                <num type="lot">164</num>
@@ -1726,7 +1726,7 @@
                   <p>brave général delà République et de l'Empire, un des pacificateurs de la
                      Vendée, condamné à mort en 1816</p>
                </trait>
-               <desc xml:id="CAT_000082_e171_d1"><term ana="#document_type_7">L. a. s.</term> à l'administration de la Loire-Inférieure; Mâchecoul, <date date="1799-10-21" type="length">29 vend, an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000082_e171_d1"><term ana="#document_type_7">L. a. s.</term> à l'administration de la Loire-Inférieure; Mâchecoul, <date when="1799-10-21">29 vend, an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>La crainte d'un débarquement l'empêche de fournir les secours
                   que le département lui demande. Tous les patriotes ont évacué depuis deux jours,
                   et il est obligé de rétrograder sur Challand</note>
@@ -1809,7 +1809,7 @@
                <trait>
                   <p>1er Consul</p>
                </trait>
-               <desc xml:id="CAT_000082_e180_d1">-<term ana="#document_type_10">Brevet sig.</term> sur vélin, an <date date="1802-1803" type="length">XI</date>, double <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Belle pièce, avec le sceau de la République et la jolie vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000082_e180_d1">-<term ana="#document_type_10">Brevet sig.</term> sur vélin, an <date when="1802-1803">XI</date>, double <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Belle pièce, avec le sceau de la République et la jolie vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Nomination du général Malher, né à Paris, au grade de général
                   de division</note>
             </item>
@@ -1851,7 +1851,7 @@
                      complicité dans la journée du 1er prairial, et guillotiné après s'être
                      poignardé</p>
                </trait>
-               <desc xml:id="CAT_000082_e184_d1"><term ana="#document_type_7">L. a. s.</term> à ses collègues de l'armée de Sambre-et-Meuse ; Trêves, <date date="1794-08-26" type="length">9 fruct. an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, vignette. Rare.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000082_e184_d1"><term ana="#document_type_7">L. a. s.</term> à ses collègues de l'armée de Sambre-et-Meuse ; Trêves, <date when="1794-08-26">9 fruct. an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, vignette. Rare.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Relative au bataillon du Cher, et au concert à établir entre
                   les représentants aux diverses armées, pour se donner mutuellement connaissance de
                   leurs opérations</note>
@@ -1938,7 +1938,7 @@
                <trait>
                   <p>savant naturaliste et l'un des créateurs de la géologie, né à Montélimart</p>
                </trait>
-               <desc xml:id="CAT_000082_e193_d1"><term ana="#document_type_7">L. a. s.</term> à l'architecte Bellanger; Jardin des Plantes, <date date="1804-12-20" type="length">29 frim. an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3.50">3 50</measure>
+               <desc xml:id="CAT_000082_e193_d1"><term ana="#document_type_7">L. a. s.</term> à l'architecte Bellanger; Jardin des Plantes, <date when="1804-12-20">29 frim. an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3.50">3 50</measure>
                <note>Curieuse lettre relative à une collection de minéraux que
                   l'état de sa santé ne lui permet pas d'aller voir. « Un pauvre diable comme moi,
                   dit-il, né dans le midi de la France, craint horriblement votre vilain froid de

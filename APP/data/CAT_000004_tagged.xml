@@ -29,7 +29,7 @@
                <pubPlace>3 rue de Furstenberg, Paris</pubPlace>
                <publisher>J. Pearson &amp;co</publisher>
                <pubPlace>5, Pall Mall Place, S.W., Londres</pubPlace>
-               <date when="1896">1896</date>
+               <date>1896</date>
             </bibl>
             <listEvent>
                <event>
@@ -65,7 +65,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -189,7 +189,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019-05-22">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1257,7 +1257,7 @@
                <trait>
                   <p>duc de Dalmatie, illustre maréchal de l'Empire, n. 1769, m. 1851</p>
                </trait>
-               <desc xml:id="CAT_000004_e114_d1"><term ana="#document_type_7">L. a. s.</term> à Boerio; Turin, <date date="1800-12-08" type="length">17 frimaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imprimée</desc></item>
+               <desc xml:id="CAT_000004_e114_d1"><term ana="#document_type_7">L. a. s.</term> à Boerio; Turin, <date when="1800-12-08">17 frimaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imprimée</desc></item>
             <item n="115" xml:id="CAT_000004_e115">
                <num type="lot">115</num>
                <name type="author">SOUVAROW (Alexandre, comte)</name>

@@ -60,7 +60,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -184,7 +184,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -429,7 +429,7 @@
                <trait>
                   <p>ler consul</p>
                </trait>
-               <desc xml:id="CAT_000019_e3948_d1">Belle <term ana="#document_type_4">pièce sig</term>. sur vélin, an <date date="1803-1804" type="length">XII</date>, double <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, avec la jolie vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000019_e3948_d1">Belle <term ana="#document_type_4">pièce sig</term>. sur vélin, an <date when="1803-1804">XII</date>, double <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, avec la jolie vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Brevet de chef de brigade accordé au citoyen Dufour, né à Lafère (Aisne)</note>
             </item>
             <item n="3949" xml:id="CAT_000019_e3949">
@@ -531,7 +531,7 @@
                <trait>
                   <p>médecin de Mirabeau, célèbre philosophe, chef des Idéologues</p>
                </trait>
-               <desc xml:id="CAT_000019_e3959_d1"><term ana="#document_type_7">L. a. s.</term> à Crapelet; Auteuil, <date date="1802-07-03" type="length">14 mess, an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4.50">4 50</measure>
+               <desc xml:id="CAT_000019_e3959_d1"><term ana="#document_type_7">L. a. s.</term> à Crapelet; Auteuil, <date when="1802-07-03">14 mess, an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4.50">4 50</measure>
                <note>Relative à limpression de ses Rapports du physique et du moral de l'Homme,
                   ouvrage qui a fondé sa réputation</note>
             </item>
@@ -620,7 +620,7 @@
                <trait>
                   <p>illustre général de la République</p>
                </trait>
-               <desc xml:id="CAT_000019_e3968_d1"><term ana="#document_type_9">L. s.</term> ; Paris, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000019_e3968_d1"><term ana="#document_type_9">L. s.</term> ; Paris, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="3969" xml:id="CAT_000019_e3969">
                <num type="lot">3969</num>
@@ -1077,7 +1077,7 @@
                <trait>
                   <p>illustre général de la République</p>
                </trait>
-               <desc xml:id="CAT_000019_e4019_d1"><term ana="#document_type_7">L. a. s.</term> au Directoire exécutif; Paris, <date date="1798-01-14" type="length">25 nivôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Belle pièce, mais à laquelle se trouve une petite coupure dans la marge.</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000019_e4019_d1"><term ana="#document_type_7">L. a. s.</term> au Directoire exécutif; Paris, <date when="1798-01-14">25 nivôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Belle pièce, mais à laquelle se trouve une petite coupure dans la marge.</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
                <note>Pièce historique. -Il vient d'apprendre que le Directoire l'a compris parmi les
                   généraux de l'armée d'Angleterre (armée d'Egypte). Les périls que doit affronter
                   cette armée, la gloire qui l'attend, le rendent sensible à cette marque de
@@ -1142,7 +1142,7 @@
                <trait>
                   <p>le fameux proconsul d'Arras</p>
                </trait>
-               <desc xml:id="CAT_000019_e4026_d1"><term ana="#document_type_9">L. s.</term> à son collègue Laurent, à Maubeuge; Arras, <date date="1794-03-03" type="length">13 vent, an 2</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000019_e4026_d1"><term ana="#document_type_9">L. s.</term> à son collègue Laurent, à Maubeuge; Arras, <date when="1794-03-03">13 vent, an 2</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
                <note>Il lui donne avis de nouvelles machinations pour affaiblir nos armées: on
                   réforme d'anciens canonniers de bonne taille; une multitude de soldats courent les
                   routes avec de faux billets d'hôpital, et l'on craint, ajoute-il, qu'ils n'aient
@@ -1188,7 +1188,7 @@
                   <p>conventionnel, non moins célèbre comme autour de Faublas que par ses
                      persistantes accusations contre Robespierre</p>
                </trait>
-               <desc xml:id="CAT_000019_e4030_d1">Arrêté du Comité de Salut public sig. de lui, de Doulcet et de J. Debry ; an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette et cachet du Comité.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000019_e4030_d1">Arrêté du Comité de Salut public sig. de lui, de Doulcet et de J. Debry ; an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette et cachet du Comité.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="4031" xml:id="CAT_000019_e4031">
                <num type="lot">4031</num>
@@ -1376,7 +1376,7 @@
                   <p>conventionnel, député de la Sarthe, célèbre par ses rapports sur la Vendée,
                      décapité avec Camille Desmoulins</p>
                </trait>
-               <desc xml:id="CAT_000019_e4051_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1793-11-06" type="length">16 brum. an 2</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000019_e4051_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1793-11-06">16 brum. an 2</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>« Vos inquiétudes diminuent sur le voisinage des brigands (de la Vendée) : Dieu
                   soit loué...</note>
             </item>
@@ -1394,7 +1394,7 @@
                <trait>
                   <p>connu par ses missions dans les Landes et l'Ardèche</p>
                </trait>
-               <desc xml:id="CAT_000019_e4053_d1"><term ana="#document_type_7">L. a. s.</term> au général Laroche; Bayonne, <date date="1794-03-16" type="length">26 vent, an 2</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 2</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000019_e4053_d1"><term ana="#document_type_7">L. a. s.</term> au général Laroche; Bayonne, <date when="1794-03-16">26 vent, an 2</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 2</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
             </item>
             <item n="4054" xml:id="CAT_000019_e4054">
                <num type="lot">4054</num>

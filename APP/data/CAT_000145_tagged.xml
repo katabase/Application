@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -531,7 +531,7 @@
                      noblesse et une pension de 12,000 livres, père du maréchal, né à Tonnerre en
                      1721, mort en 1804</p>
                </trait>
-               <desc xml:id="CAT_000145_e35_d1"><term ana="#document_type_7">L. a. s.</term>; Boynes (Loiret), <date date="1801-07-04" type="length">15 messidor an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000145_e35_d1"><term ana="#document_type_7">L. a. s.</term>; Boynes (Loiret), <date when="1801-07-04">15 messidor an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="36" xml:id="CAT_000145_e36">
                <num type="lot">36</num>
@@ -1593,7 +1593,7 @@
                <trait>
                   <p>célèbre femme auteur française, née à Metz en 1753, morte vers 1830</p>
                </trait>
-               <desc xml:id="CAT_000145_e142_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Maradan; <date date="1800-11-01" type="length">10 brumaire an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000145_e142_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Maradan; <date when="1800-11-01">10 brumaire an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Curieuse lettre au sujet de son nouvel ouvrage dont elle lui réclame le
                   manuscrit s'il ne désire pas s'en charger. Elle s'étonne qu'il veuille le faire
                   lire par un homme de lettres. « ... j'ai assez écrit et assez lu pour pouvoir
@@ -1709,7 +1709,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000145_e153_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Chauvet; quartier-général à Nice, <date date="1796-03-29" type="length">9 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette républicaine. Curieux cachet avec cette devise : Le temps passe et l'ami reste.</desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
+               <desc xml:id="CAT_000145_e153_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Chauvet; quartier-général à Nice, <date when="1796-03-29">9 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette républicaine. Curieux cachet avec cette devise : Le temps passe et l'ami reste.</desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
                <note>Très belle lettre sur l'armée d'Italie, dont il était le général en chef. Il
                   annonce que plusieurs bâtiments chargés de vin viennent d'être expédiés de
                   Marseille : « La viande fraiche commencera à être distribuée demain à la troupe et
@@ -1931,7 +1931,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie</p>
                </trait>
-               <desc xml:id="CAT_000145_e174_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Merlin ; Paris, <date date="1802-02-18" type="length">29 pluviôse an X</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000145_e174_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Merlin ; Paris, <date when="1802-02-18">29 pluviôse an X</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Il le prie de lui faire relier un exemplaire, en 5 volumes, des Etudes de la
                   nature</note>
             </item>
@@ -2530,7 +2530,7 @@
             <item n="238" xml:id="CAT_000145_e238">
                <num type="lot">238</num>
                <name type="author">Vexin. -Pontoise</name>
-               <desc xml:id="CAT_000145_e238_d1">1° <term ana="#document_type_7">L. a. s.</term> de l'architecte Fontaine; <date date="1804-07-02" type="length">12 mess. an XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000145_e238_d2">2° 6 l. <term ana="#document_type_15">a. s.</term> du sculpteur Landier à Fontaine; château de Montgobert, ans XII-XIII, <measure type="length" unit="p" n="12.5">12 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000145_e238_d1">1° <term ana="#document_type_7">L. a. s.</term> de l'architecte Fontaine; <date when="1804-07-02">12 mess. an XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000145_e238_d2">2° 6 l. <term ana="#document_type_15">a. s.</term> du sculpteur Landier à Fontaine; château de Montgobert, ans XII-XIII, <measure type="length" unit="p" n="12.5">12 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Curieux dossier relatif aux travaux du monument à élever au général Leclerc à
                   Montgobert, près Pontoise</note>
             </item>
@@ -2576,7 +2576,7 @@
             <item n="243" xml:id="CAT_000145_e243">
                <num type="lot">243</num>
                <name type="author">Aérostation</name>
-               <desc xml:id="CAT_000145_e243_d1">1° <term ana="#document_type_7">L. a. s.</term> de Blanchard, le célèbre aéronaute, à M. Roustagneng ; Cherbourg, <date date="1802-08-24" type="length">6 fructidor an X</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Relative aux expériences qu'il doit faire à Cherbourg à l'occasion « de la nomination à vie du Premier Consul de la République française Napoléon Ronaparte, le triomphant pacificateur du monde ».</desc><desc xml:id="CAT_000145_e243_d2">2° La Ballomanie à diverses époques, <date when="1851">curieuse gravure en couleur imprimée à Metz vers 1851</date>, double <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000145_e243_d1">1° <term ana="#document_type_7">L. a. s.</term> de Blanchard, le célèbre aéronaute, à M. Roustagneng ; Cherbourg, <date when="1802-08-24">6 fructidor an X</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Relative aux expériences qu'il doit faire à Cherbourg à l'occasion « de la nomination à vie du Premier Consul de la République française Napoléon Ronaparte, le triomphant pacificateur du monde ».</desc><desc xml:id="CAT_000145_e243_d2">2° La Ballomanie à diverses époques, <date when="1851">curieuse gravure en couleur imprimée à Metz vers 1851</date>, double <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="244" xml:id="CAT_000145_e244">
                <num type="lot">244</num>
@@ -2618,7 +2618,7 @@
             <item n="248" xml:id="CAT_000145_e248">
                <num type="lot">248</num>
                <name type="author">Egypte (Expédition d')</name>
-               <desc xml:id="CAT_000145_e248_d1">Pièces sig. par Kleber; quartier général du Caire <date date="1800-05-03" type="length">13 floréal an VIII</date>, <measure type="length" unit="p" n="3.75">3 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000145_e248_d1">Pièces sig. par Kleber; quartier général du Caire <date when="1800-05-03">13 floréal an VIII</date>, <measure type="length" unit="p" n="3.75">3 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Important document. Contribution extraordinaire de 10 millions de livres
                   tournois imposée à la ville du Caire pour subvenir aux besoins de l'armée. Cette
                   pièce contient tous les détails sur la façon dont cette contribution sera perçue :
@@ -2627,12 +2627,12 @@
             <item n="249" xml:id="CAT_000145_e249">
                <num type="lot">249</num>
                <name type="author">Egypte (Expédition d.)</name>
-               <desc xml:id="CAT_000145_e249_d1">1° <term ana="#document_type_9">Let. sig.</term> de Kléber, sig. aussi par le général Songis; Le Caire, <date date="1799-11-29" type="length">8 frimaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine.</desc><desc xml:id="CAT_000145_e249_d2">2° <term ana="#document_type_7">L. a. s.</term> du général Belliard : Le Caire, <date date="1801-03-07" type="length">16 ventôse an IX</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000145_e249_d1">1° <term ana="#document_type_9">Let. sig.</term> de Kléber, sig. aussi par le général Songis; Le Caire, <date when="1799-11-29">8 frimaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine.</desc><desc xml:id="CAT_000145_e249_d2">2° <term ana="#document_type_7">L. a. s.</term> du général Belliard : Le Caire, <date when="1801-03-07">16 ventôse an IX</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="250" xml:id="CAT_000145_e250">
                <num type="lot">250</num>
                <name type="author">Egypte (Expédition d')</name>
-               <desc xml:id="CAT_000145_e250_d1">5 pièces 1°<term ana="#document_type_9">Let. sig.</term> de l'adjudant-général Almeras au « général en chef Buonaparte »; Damiette, <date date="1799-04-20" type="length">1er floréal an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jolie vignette républicaine.</desc><desc xml:id="CAT_000145_e250_d2">2° <term ana="#document_type_7">L. a. s.</term> du général Destaing; Le Caire, <date date="1799-04-28" type="length">9 floréal an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><desc xml:id="CAT_000145_e250_d3">3° 2 let. sig. de Kléber; Le Caire, 9-<date date="1799-11-09" type="length">18 brumaire an VIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignettes républicaines.</desc><desc xml:id="CAT_000145_e250_d4">4° <term ana="#document_type_9">Let. sig.</term> du général Menou au citoyen Conté, chef de brigade des aérostiers: Le Caire <date date="none" type="length">12 messidor, an VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000145_e250_d1">5 pièces 1°<term ana="#document_type_9">Let. sig.</term> de l'adjudant-général Almeras au « général en chef Buonaparte »; Damiette, <date when="1799-04-20">1er floréal an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jolie vignette républicaine.</desc><desc xml:id="CAT_000145_e250_d2">2° <term ana="#document_type_7">L. a. s.</term> du général Destaing; Le Caire, <date when="1799-04-28">9 floréal an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><desc xml:id="CAT_000145_e250_d3">3° 2 let. sig. de Kléber; Le Caire, 9-<date when="1799-11-09">18 brumaire an VIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignettes républicaines.</desc><desc xml:id="CAT_000145_e250_d4">4° <term ana="#document_type_9">Let. sig.</term> du général Menou au citoyen Conté, chef de brigade des aérostiers: Le Caire <date when="none">12 messidor, an VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
          </list>
       </body>

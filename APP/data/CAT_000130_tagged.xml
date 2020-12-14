@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1015,7 +1015,7 @@
                   <p>illustre chimiste et homme d'Etat, de l'Institut, né à Nogaret (Lozère) en
                      1756, mort en 1832</p>
                </trait>
-               <desc xml:id="CAT_000130_e78_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Dieudonné; an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000130_e78_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Dieudonné; an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Lettre politique sur l'importance du port de Dunkerque au point de vue
                   militaire</note>
             </item>
@@ -1096,7 +1096,7 @@
                   <p>duc de Feltres, maréchal de France, et homme d'Etat, né à Landrecies en 1765,
                      mort en 1818</p>
                </trait>
-               <desc xml:id="CAT_000130_e86_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf ; Paris, <date date="1796-10-03" type="length">12 vendémiaire an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000130_e86_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf ; Paris, <date when="1796-10-03">12 vendémiaire an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
             </item>
             <item n="87" xml:id="CAT_000130_e87">
                <num type="lot">87</num>
@@ -1162,7 +1162,7 @@
                   <p>célébre poète dramatique, de l'Acad. fr., né à Maintenon (Eure-et-Loir), en
                      1755, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000130_e92_d1"><term ana="#document_type_7">L. a. s.</term> à M. Villeflose, son beau-frère ; Mevoisin, <date date="1805-09-23" type="length">1er vendémiaire an XIV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000130_e92_d1"><term ana="#document_type_7">L. a. s.</term> à M. Villeflose, son beau-frère ; Mevoisin, <date when="1805-09-23">1er vendémiaire an XIV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="93" xml:id="CAT_000130_e93">
                <num type="lot">93</num>
@@ -1215,7 +1215,7 @@
                   <p>comte de Champmol, homme d'Etat, ministre de Napoléon Ier, né à
                      Pont-de-Beauvoisin (Isère) en 1747, mort en 1809</p>
                </trait>
-               <desc xml:id="CAT_000130_e97_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1798-02-01" type="length">13 pluviôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000130_e97_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1798-02-01">13 pluviôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="98" xml:id="CAT_000130_e98">
                <num type="lot">98</num>
@@ -1313,7 +1313,7 @@
                   <p>savant grammairien, de l'Acad. fr., né à Aubagne (Bouches-du-Rhône) en 1745,
                      mort en 1810</p>
                </trait>
-               <desc xml:id="CAT_000130_e106_d1"><term ana="#document_type_7">L. a. s.</term> au cit Lemit ; Palais national du Muséum, <date date="1795-01-05" type="length">16 nivôse an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet de collectionneur.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000130_e106_d1"><term ana="#document_type_7">L. a. s.</term> au cit Lemit ; Palais national du Muséum, <date when="1795-01-05">16 nivôse an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet de collectionneur.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il déclare accepter avec reconnaissance la place d'élève à l'Ecole
                   normale</note>
             </item>
@@ -1492,7 +1492,7 @@
                <trait>
                   <p>célèbre constituant et économiste, de l'Institut, né en 1739, mort en 1817</p>
                </trait>
-               <desc xml:id="CAT_000130_e122_d1"><term ana="#document_type_7">L. a. s.</term> à M. Aubert, architecte; <date date="1798-06-02" type="length">14 prairial an VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000130_e122_d1"><term ana="#document_type_7">L. a. s.</term> à M. Aubert, architecte; <date when="1798-06-02">14 prairial an VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Curieuse lettre où il se plaint qu'on veuille lui retirer son logement dans une
                   maison nationale : «. indépendamment de ce qu'il faut bien que je sois à portée du
                   travail relatif à un service public aussi important qui m'est confié, j'ai cru que
@@ -1508,7 +1508,7 @@
                   <p>général, ministre de la guerre, qui ternit sa gloire par la capitulation de
                      Baylen, né à Chabanais (Charente) en 1765, mort en 1838</p>
                </trait>
-               <desc xml:id="CAT_000130_e123_d1"><term ana="#document_type_7">L. a. s.</term> au général Oudinot; quartier général à Bologne, <date date="1800-11-20" type="length">29 brumaire an IX</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000130_e123_d1"><term ana="#document_type_7">L. a. s.</term> au général Oudinot; quartier général à Bologne, <date when="1800-11-20">29 brumaire an IX</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Lettre historique intéressante relative au général Miollis qui refuse d'obéir à
                   ses ordres. Le sort de la Toscane est menacé. Curieux détails</note>
             </item>
@@ -1535,7 +1535,7 @@
                   <p>amiral français, qui prit part à la guerre d'Amérique et fut décoré de l'ordre
                      de Cincinnatus, né à Carhaix (Finistère) en 1761, mort en 1845</p>
                </trait>
-               <desc xml:id="CAT_000130_e126_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Bruix, à Boulognesur-Mer; Toulon, <date date="1803-08-09" type="length">21 thermidor an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000130_e126_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Bruix, à Boulognesur-Mer; Toulon, <date when="1803-08-09">21 thermidor an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il lui annonce qu'il vient de recevoir l'ordre de se rendre sans retard à
                   Boulognesur-Mer, pour prendre le commandement d'une division de la flottille
                   nationale</note>
@@ -1673,7 +1673,7 @@
                <trait>
                   <p>le célèbre accusateur public près le tribunal révolutionnaire</p>
                </trait>
-               <desc xml:id="CAT_000130_e140_d1"><term ana="#document_type_4">Pièce sig</term>., <date date="1794-07-06" type="length">18 messidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000130_e140_d1"><term ana="#document_type_4">Pièce sig</term>., <date when="1794-07-06">18 messidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
             </item>
             <item n="141" xml:id="CAT_000130_e141">
                <num type="lot">141</num>
@@ -1766,7 +1766,7 @@
                   <p>célèbre littérateur et homme d'État, de l'Acad. fr., auteur de Mémoires, né en
                      1749, mort en 1833</p>
                </trait>
-               <desc xml:id="CAT_000130_e149_d1"><term ana="#document_type_7">L. a. s.</term> à Perregaux; an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000130_e149_d1"><term ana="#document_type_7">L. a. s.</term> à Perregaux; an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="150" xml:id="CAT_000130_e150">
                <num type="lot">150</num>
@@ -2053,7 +2053,7 @@
                <trait>
                   <p>le célèbre général de la République</p>
                </trait>
-               <desc xml:id="CAT_000130_e175_d1"><term ana="#document_type_9">Let. sig.</term> au général Grouchy ; Angers, 2e jour complémentaire an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000130_e175_d1"><term ana="#document_type_9">Let. sig.</term> au général Grouchy ; Angers, 2e jour complémentaire an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="176" xml:id="CAT_000130_e176">
                <num type="lot">176</num>
@@ -2209,7 +2209,7 @@
                <trait>
                   <p>le célèbre géuéral</p>
                </trait>
-               <desc xml:id="CAT_000130_e191_d1"><term ana="#document_type_9">Let. sig.</term> ; Le Caire, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000130_e191_d1"><term ana="#document_type_9">Let. sig.</term> ; Le Caire, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="192" xml:id="CAT_000130_e192">
                <num type="lot">192</num>
@@ -2400,7 +2400,7 @@
                <trait>
                   <p>le célèbre conventionnel, fameux par sa mission à Arras</p>
                </trait>
-               <desc xml:id="CAT_000130_e211_d1"><term ana="#document_type_4">Pièce sig</term>. avec 3 mots aut. &gt;<date date="1794-04-22" type="length">3 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000130_e211_d1"><term ana="#document_type_4">Pièce sig</term>. avec 3 mots aut. &gt;<date when="1794-04-22">3 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Relative aux opérations des commissions révolutionnaires</note>
             </item>
             <item n="212" xml:id="CAT_000130_e212">
@@ -2573,7 +2573,7 @@
                <trait>
                   <p>duc de Rivoli, maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000130_e230_d1"><term ana="#document_type_9">Let. sig.</term> ; Quartier général de Vérone, <date date="1796-12-05" type="length">15 frimaire an V</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Un peu tachée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000130_e230_d1"><term ana="#document_type_9">Let. sig.</term> ; Quartier général de Vérone, <date when="1796-12-05">15 frimaire an V</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Un peu tachée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="231" xml:id="CAT_000130_e231">
                <num type="lot">231</num>

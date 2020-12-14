@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -402,7 +402,7 @@
                   <p>compagnon d'infortune de Napoléon Ier à Sainte-Hélène, né à Châteauroux en
                      1773. mort en 1844</p>
                </trait>
-               <desc xml:id="CAT_000115_e21_d1"><term ana="#document_type_7">L. a. s.</term> à Berthier, ministre de la guerre; Boulogne, <date date="none" type="length">15 messider an XII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Raccommodée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000115_e21_d1"><term ana="#document_type_7">L. a. s.</term> à Berthier, ministre de la guerre; Boulogne, <date when="none">15 messider an XII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Raccommodée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il lui donne des nouvelles des préparatifs faits à Boulogne pour le passage en
                   Angleterre. L'église des Annonciades est transformée en magasins; les batteries
                   rasantes dépasseront bientôt le niveau des marées ; les quais de Wimereux
@@ -549,7 +549,7 @@
                   <p>savant helléniste et philologue, né dans la
                   Lozère en 1753, mort en 1814</p>
                </trait>
-               <desc xml:id="CAT_000115_e37_d1"><term ana="#document_type_7">L. a. s.</term> à Decroix, à Lille; Avignon, <date date="1805-06-23" type="length">4 mess, an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000115_e37_d1"><term ana="#document_type_7">L. a. s.</term> à Decroix, à Lille; Avignon, <date when="1805-06-23">4 mess, an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Très belle lettre prose et vers : Decroix, tes vers taciles, élégans,
                   Chatouillent le coeur et l'orcille, Ils font passer de doux instans; Il faudrait
                   avoir tes ta'ens Pour en faire d'aussi galans; Mais, hélas, ma muse sommeille,
@@ -698,7 +698,7 @@
                <trait>
                   <p>amiral, ministre de la marine de Napoléon Ier, né à Chaumont</p>
                </trait>
-               <desc xml:id="CAT_000115_e52_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Lacrosse, à la Guadeloupe; Paris, <date date="1801-10-16" type="length">24 vendémiaire an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000115_e52_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Lacrosse, à la Guadeloupe; Paris, <date when="1801-10-16">24 vendémiaire an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Piquante lettre intime sur sa nomination comme ministre de la marine. Depuis
                   leur séparation, ses rôles ont souvent varié; il a ête plénipotentiaire, amiral,
                   puis ministre. La fortune « l'atant poussé sans qu'il y songeât, qu'il ne peut
@@ -781,7 +781,7 @@
                   <p>célèbre général de la République, né à la Guadeloupe en 1736, tué à la bataille
                      de la Sierra-Negra en 1794</p>
                </trait>
-               <desc xml:id="CAT_000115_e60_d1"><term ana="#document_type_9">Let. sig.</term> au général Dugua; <date date="none" type="length">26 fructidor, an II</date>, <measure type="length" unit="p" n="1.6600000000000001">1 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Papier avec en tête portant :Guerre à mort aux tyrans.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000115_e60_d1"><term ana="#document_type_9">Let. sig.</term> au général Dugua; <date when="none">26 fructidor, an II</date>, <measure type="length" unit="p" n="1.6600000000000001">1 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Papier avec en tête portant :Guerre à mort aux tyrans.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="61" xml:id="CAT_000115_e61">
                <num type="lot">61</num>
@@ -1911,7 +1911,7 @@
                <trait>
                   <p>le romancier populaire</p>
                </trait>
-               <desc xml:id="CAT_000115_e174_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1801-11-29" type="length">8 frimaire an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000115_e174_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1801-11-29">8 frimaire an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="175" xml:id="CAT_000115_e175">
                <num type="lot">175</num>
@@ -2229,7 +2229,7 @@
                   <p>célèbre conventionnel, né à Decize (Nièvre) en 1767, guillotiné le 28 juillet
                      1794</p>
                </trait>
-               <desc xml:id="CAT_000115_e206_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Prieur de la Côte d'Or; <date date="1794-07-12" type="length">24 messidor an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Entète du Comité de Salut Public.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000115_e206_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Prieur de la Côte d'Or; <date when="1794-07-12">24 messidor an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Entète du Comité de Salut Public.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Instructions adressées à l'Agent national de Brest, au sujet d'une fonderie de
                   canons, existant dans cette ville, et, dont le Comité ignorait l'existence.</note>
             </item>
@@ -2239,7 +2239,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie</p>
                </trait>
-               <desc xml:id="CAT_000115_e207_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Le Danois, membre du Conseil des Anciens; Paris, <date date="1799-01-02" type="length">13 nivôse an VII</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000115_e207_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Le Danois, membre du Conseil des Anciens; Paris, <date when="1799-01-02">13 nivôse an VII</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Réponse à une invitation. « Puissent la justice et la paix marcher à la suite
                   de nos drapeaux victorieux!</note>
             </item>
@@ -2355,7 +2355,7 @@
                   <p>l'illustre constituant, président du Directoire, né à Fréjus (Var) en 1748,
                      mort en 1836</p>
                </trait>
-               <desc xml:id="CAT_000115_e220_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Reinhart, ministre des Relations extérieures; Paris, <date date="1799-11-16" type="length">25 brumaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000115_e220_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Reinhart, ministre des Relations extérieures; Paris, <date when="1799-11-16">25 brumaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Il le prie de dire au citoyen Guérin de passer dans la journée chez le consul
                   Bonaparte</note>
             </item>

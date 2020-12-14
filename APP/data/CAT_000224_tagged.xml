@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -418,7 +418,7 @@
                   <p>célèbre conventionnel, président du Directoire, né à Fox-Amphoux (Var) en 1755,
                      mort en 1829.</p>
                </trait>
-               <desc xml:id="CAT_000224_e21_d1"><term ana="#document_type_9">Let. sig.</term> comme président du Directoire au général Hédouville ; Paris, <date date="1798-01-06" type="length">17 nivôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000224_e21_d1"><term ana="#document_type_9">Let. sig.</term> comme président du Directoire au général Hédouville ; Paris, <date when="1798-01-06">17 nivôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="22" xml:id="CAT_000224_e22">
                <num type="lot">22</num>
@@ -488,7 +488,7 @@
                   <p>homme d'Etat, ministre de l'intérieur en 1795, né à Montpellier en 1745, mort à
                      Saint-Domingue en 1802.</p>
                </trait>
-               <desc xml:id="CAT_000224_e29_d1"><term ana="#document_type_9">Let. sig.</term>, avec 8 petites lignes aut. sig. de JulienCamille Lemaignan, ancien conventionnel de Maine-et-Loire; Paris, <date date="1800-03-16" type="length">25 ventôse an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000224_e29_d1"><term ana="#document_type_9">Let. sig.</term>, avec 8 petites lignes aut. sig. de JulienCamille Lemaignan, ancien conventionnel de Maine-et-Loire; Paris, <date when="1800-03-16">25 ventôse an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="30" xml:id="CAT_000224_e30">
                <num type="lot">30</num>
@@ -517,7 +517,7 @@
                   <p>membre de la Convention, dont il fut le président, né à Saintes en 1750, mort
                      en Amérique en 1819.</p>
                </trait>
-               <desc xml:id="CAT_000224_e32_d1">P. <term ana="#document_type_15">a. s.</term>; Montbéliard, <date date="1794-01-29" type="length">10 pluviose an II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000224_e32_d1">P. <term ana="#document_type_15">a. s.</term>; Montbéliard, <date when="1794-01-29">10 pluviose an II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="33" xml:id="CAT_000224_e33">
                <num type="lot">33</num>
@@ -545,7 +545,7 @@
                      roi de Prusse et de l'Electeur de Hesse, frère du maréchal, né à Versailles en
                      1770, mort en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000224_e35_d1">Rapport général des moucements de l'Armée de Naples pour les mois de centose germinal, floréal, prairial et messidor an <date date="1798-1799" type="length">VII</date>, manuscrit original sig., <measure type="length" unit="p" n="24">24 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieux document historique.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000224_e35_d1">Rapport général des moucements de l'Armée de Naples pour les mois de centose germinal, floréal, prairial et messidor an <date when="1798-1799">VII</date>, manuscrit original sig., <measure type="length" unit="p" n="24">24 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieux document historique.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="36" xml:id="CAT_000224_e36">
                <num type="lot">36</num>
@@ -581,7 +581,7 @@
                   <p>maréchal de France, brave général de la République et de l'Empire, né dans
                      l'Aube en 1752, mort en 1821.</p>
                </trait>
-               <desc xml:id="CAT_000224_e39_d1"><term ana="#document_type_9">Let. sig.</term> avec 2 lig. aut. comme général en chef de l'Armée du Nord, au général Castelverd ; quartier général de Dusseldorff, <date date="1796-08-11" type="length">24 thermidor an IV</date>, tête imp. Jolie vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000224_e39_d1"><term ana="#document_type_9">Let. sig.</term> avec 2 lig. aut. comme général en chef de l'Armée du Nord, au général Castelverd ; quartier général de Dusseldorff, <date when="1796-08-11">24 thermidor an IV</date>, tête imp. Jolie vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="40" xml:id="CAT_000224_e40">
                <num type="lot">40</num>
@@ -635,7 +635,7 @@
                <trait>
                   <p>frère aîné de Napoléon Ier, roi d'Espagne, né en 1768, mort en 1844.</p>
                </trait>
-               <desc xml:id="CAT_000224_e44_d1"><term ana="#document_type_9">Let. sig.</term> avec 2 lig. aut.; Paris, <date date="1804-10-24" type="length">2 brumaire an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000224_e44_d1"><term ana="#document_type_9">Let. sig.</term> avec 2 lig. aut.; Paris, <date when="1804-10-24">2 brumaire an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="45" xml:id="CAT_000224_e45">
                <num type="lot">45</num>
@@ -643,7 +643,7 @@
                <trait>
                   <p>prince de Canino, frère de Napoléon Ier, né en 1775, mort en 1840.</p>
                </trait>
-               <desc xml:id="CAT_000224_e45_d1"><term ana="#document_type_9">Let. sig.</term> comme ministre de l'intérieur; Paris, <date date="1800-06-26" type="length">7 messidor an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000224_e45_d1"><term ana="#document_type_9">Let. sig.</term> comme ministre de l'intérieur; Paris, <date when="1800-06-26">7 messidor an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="46" xml:id="CAT_000224_e46">
                <num type="lot">46</num>
@@ -704,7 +704,7 @@
                   <p>médecin, ami de Mirabeau, chef des Idéologues sous Napoléon Ier, de l'Acad.
                      fr., né à Cosnac (Corrèze) en 1767, mort en 1808.</p>
                </trait>
-               <desc xml:id="CAT_000224_e51_d1"><term ana="#document_type_7">L. a. s.</term> à Sieyès, consul de la République française; <date date="1799-11-13" type="length">22 brumaire an VIII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000224_e51_d1"><term ana="#document_type_7">L. a. s.</term> à Sieyès, consul de la République française; <date when="1799-11-13">22 brumaire an VIII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="52" xml:id="CAT_000224_e52">
                <num type="lot">52</num>
@@ -979,7 +979,7 @@
                      Italie, beau-frère de Hoche, né à Voreppe (Isère) en 1767, mort à
                      Saint-Domingue en 1802.</p>
                </trait>
-               <desc xml:id="CAT_000224_e79_d1"><term ana="#document_type_7">L. a. s.</term>, quartier général de Trêves : <date date="1796-05-08" type="length">19 floréal an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000224_e79_d1"><term ana="#document_type_7">L. a. s.</term>, quartier général de Trêves : <date when="1796-05-08">19 floréal an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="80" xml:id="CAT_000224_e80">
                <num type="lot">80</num>
@@ -1741,7 +1741,7 @@
                   <p>duc d'Abrantès, un des plus intrepides lieutenants de Napoléon Ier, né à
                      Bussy-le Grand (Côle d'Or) en 1771, mort en 1813.</p>
                </trait>
-               <desc xml:id="CAT_000224_e155_d1"><term ana="#document_type_7">L. a. s.</term>, à Lacépède; Paris, <date date="1805-02-18" type="length">29 pluviôse an XIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Jolie vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000224_e155_d1"><term ana="#document_type_7">L. a. s.</term>, à Lacépède; Paris, <date when="1805-02-18">29 pluviôse an XIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Jolie vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="156" xml:id="CAT_000224_e156">
                <num type="lot">156</num>
@@ -1836,7 +1836,7 @@
                   <p>fille du duc d'Ayen, épouse du général Lafayette, femme célèbre par son
                      dévoûment à son mari, morte en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000224_e166_d1"><term ana="#document_type_7">L. a. s.</term> au banquier Perregaux; <date date="1803-09-17" type="length">30 fructidor an XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000224_e166_d1"><term ana="#document_type_7">L. a. s.</term> au banquier Perregaux; <date when="1803-09-17">30 fructidor an XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="167" xml:id="CAT_000224_e167">
                <num type="lot">167</num>
@@ -2124,7 +2124,7 @@
                <trait>
                   <p>général de division, membre du Directoire exécutif</p>
                </trait>
-               <desc xml:id="CAT_000224_e195_d1"><term ana="#document_type_7">L. a. s.</term>; Quartier général de Port-Malo, <date date="1794-03-06" type="length">16 ventôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000224_e195_d1"><term ana="#document_type_7">L. a. s.</term>; Quartier général de Port-Malo, <date when="1794-03-06">16 ventôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="196" xml:id="CAT_000224_e196">
                <num type="lot">196</num>
@@ -2299,7 +2299,7 @@
                   <p>duc de Massa, homme d'Etat, ministre de la justice sous Napoléon 1er, né à
                      Blamont (Meurthe.) en 1736, mort en 1814.</p>
                </trait>
-               <desc xml:id="CAT_000224_e213_d1"><term ana="#document_type_4">Pièce sig</term>. an <date date="1802-1803" type="length">XI</date>, 1 p., <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000224_e213_d1"><term ana="#document_type_4">Pièce sig</term>. an <date when="1802-1803">XI</date>, 1 p., <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="214" xml:id="CAT_000224_e214">
                <num type="lot">214</num>
@@ -2382,7 +2382,7 @@
                   <p>célèbre général de la République et de l'Empire, fils du maréchal, né près de
                      Vendôme en 1750, tué à Leipzig le 18 octobre 1813.</p>
                </trait>
-               <desc xml:id="CAT_000224_e221_d1"><term ana="#document_type_7">L. a. s.</term>; quartier-général do Milan, <date date="1801-07-06" type="length">17 messidor an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie vignette républicaine. Rognée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000224_e221_d1"><term ana="#document_type_7">L. a. s.</term>; quartier-général do Milan, <date when="1801-07-06">17 messidor an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie vignette républicaine. Rognée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="222" xml:id="CAT_000224_e222">
                <num type="lot">222</num>

@@ -29,7 +29,7 @@
                <publisher>Frédéric Naylor</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date when="1879">1879</date>
+               <date>1879</date>
             </bibl>
             <listEvent>
                <event>
@@ -65,7 +65,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -189,7 +189,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -487,7 +487,7 @@
                   <p>conventionnel montagnard, décapité en l'an III, pour sa participation au
                      mouvement de prairial.</p>
                </trait>
-               <desc xml:id="CAT_000161_e33_d1">P. <term ana="#document_type_15">a. s.</term> ; Nantes, <date date="1794-06-15" type="length">27 prairial an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr.</desc></item>
+               <desc xml:id="CAT_000161_e33_d1">P. <term ana="#document_type_15">a. s.</term> ; Nantes, <date when="1794-06-15">27 prairial an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr.</desc></item>
             <item n="34" xml:id="CAT_000161_e34">
                <num type="lot">34</num>
                <name type="author">Brohan (Augustine),</name>
@@ -554,7 +554,7 @@
                <trait>
                   <p>le fameux conventionnel.</p>
                </trait>
-               <desc xml:id="CAT_000161_e41_d1"><term ana="#document_type_4">P. s.</term>, avec une ligne autographe; Nantes, <date date="1793-11-22" type="length">2 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig., tête impr. et cachet.</desc><note>Arrêté portant que désormais la navigation de la Loire sera libre.</note>
+               <desc xml:id="CAT_000161_e41_d1"><term ana="#document_type_4">P. s.</term>, avec une ligne autographe; Nantes, <date when="1793-11-22">2 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig., tête impr. et cachet.</desc><note>Arrêté portant que désormais la navigation de la Loire sera libre.</note>
             </item>
             <item n="42" xml:id="CAT_000161_e42">
                <num type="lot">42</num>
@@ -1121,7 +1121,7 @@
                <trait>
                   <p>savant hydrographe, membre de l'Institut, né à Nantes.</p>
                </trait>
-               <desc xml:id="CAT_000161_e108_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Even; Nantes, <date date="1796-01-15" type="length">25 nivôse an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Toute relative à l'école de navigation de Paimboeuf.</note>
+               <desc xml:id="CAT_000161_e108_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Even; Nantes, <date when="1796-01-15">25 nivôse an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Toute relative à l'école de navigation de Paimboeuf.</note>
             </item>
             <item n="109" xml:id="CAT_000161_e109">
                <num type="lot">109</num>
@@ -1185,7 +1185,7 @@
                <trait>
                   <p>conventionnel, auteur de Faublas.</p>
                </trait>
-               <desc xml:id="CAT_000161_e117_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Revellière-Lepeaux; <date date="1795-02-20" type="length">2 ventôse an III</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><note>Envoi d'une dénonciation anonyme contre certaines gens qui persécutent dans le
+               <desc xml:id="CAT_000161_e117_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Revellière-Lepeaux; <date when="1795-02-20">2 ventôse an III</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><note>Envoi d'une dénonciation anonyme contre certaines gens qui persécutent dans le
                   Cantal les possesseurs de biens nationaux.</note>
             </item>
             <item n="118" xml:id="CAT_000161_e118">
@@ -1557,7 +1557,7 @@
                <trait>
                   <p>duc d'Albufera, maréchal de l'Empire.</p>
                </trait>
-               <desc xml:id="CAT_000161_e160_d1"><term ana="#document_type_7">L. a. s.</term> à Soult ; <date date="1804-01-11" type="length">20 nivôse an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. Belle lettre.</desc></item>
+               <desc xml:id="CAT_000161_e160_d1"><term ana="#document_type_7">L. a. s.</term> à Soult ; <date when="1804-01-11">20 nivôse an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. Belle lettre.</desc></item>
             <item n="161" xml:id="CAT_000161_e161">
                <num type="lot">161</num>
                <name type="author">Talma (Fr.-Jos.),</name>

@@ -60,7 +60,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces the entries that correspond to documents for sale. All text preceding or succeeding the list of documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -184,7 +184,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020-07-19">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -248,7 +248,7 @@
                <trait>
                   <p>prince de Piombino, général français, époux d'Elisa Bonaparte, né en Corse en 1762, mort en 1841.</p>
                </trait>
-               <desc xml:id="CAT_000239_e6_d1"><term ana="#document_type_9">Let. sig.</term> ; <date date="1804-02-03" type="length">13 pluviose an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000239_e6_d1"><term ana="#document_type_9">Let. sig.</term> ; <date when="1804-02-03">13 pluviose an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="7" xml:id="CAT_000239_e7">
                <num type="lot">7</num>
@@ -256,7 +256,7 @@
                <trait>
                   <p>célèbre conventionnel, président du Directoire, né à FoxAmphoux (Var) en 1755, mort en 1829.</p>
                </trait>
-               <desc xml:id="CAT_000239_e7_d1"><term ana="#document_type_2">Pièce sig. comme général en chef de l'Armée de l'Intérieur, avec 7 lig. aut. sig.</term> du conventionnel Fréron ; Paris, 19-<date date="1795-10-12" type="length">20 vendémiaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Un peu fatiguée. Ecornée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000239_e7_d1"><term ana="#document_type_2">Pièce sig. comme général en chef de l'Armée de l'Intérieur, avec 7 lig. aut. sig.</term> du conventionnel Fréron ; Paris, 19-<date when="1795-10-12">20 vendémiaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Un peu fatiguée. Ecornée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Conformément au décret de la Convention nationale du 18 vendémiaire an IV, qui porte que le représentant du peuple Fréron, se rendra dans les départements méridionaux, il est ordonné à l'adjudant général chef de brigade Gardanne de se rendre auprès de lui.</note>
             </item>
             <item n="8" xml:id="CAT_000239_e8">
@@ -366,7 +366,7 @@
                <trait>
                   <p>colonel d'infanterie, commandant en chef des ingénieurs géographes, auteur de la Carte des chasses du Roi, travail remarquable qui lui valut des lettres de noblesse et une pension de 12.000 liv., père du maréchal, né à Tonnerre en 1721, mort en 1804.</p>
                </trait>
-               <desc xml:id="CAT_000239_e20_d1"><term ana="#document_type_7">L. a. s.</term>; Boynes (Loiret), <date date="1801-07-04" type="length">15 messidor an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000239_e20_d1"><term ana="#document_type_7">L. a. s.</term>; Boynes (Loiret), <date when="1801-07-04">15 messidor an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="21" xml:id="CAT_000239_e21">
                <num type="lot">21</num>
@@ -477,7 +477,7 @@
                <trait>
                   <p>député de la Corrèze à la Convention, célèbre par sa mission dans le Gard et la Lozère.</p>
                </trait>
-               <desc xml:id="CAT_000239_e33_d1"><term ana="#document_type_9">Let. sig.</term>; Aurillac, <date date="1794-07-20" type="length">2 thermidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000239_e33_d1"><term ana="#document_type_9">Let. sig.</term>; Aurillac, <date when="1794-07-20">2 thermidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Relative aux prêtres qui cherchent à s'introduire dans les places d'instituteurs ou d'officiers publics. « Ajoute à l'envoy les renseignements nécessaires pour que je débarrasse de l'influence sacerdotale, les fonctions d'officier public et d'instituteur.»</note>
             </item>
             <item n="34" xml:id="CAT_000239_e34">
@@ -561,7 +561,7 @@
                <trait>
                   <p>médecin, ami de Mirabeau, chef des Idéologues sous Napoléon Ier, de l'Acad. fr., né à Cosnac (Corrèze) en 1767, mort en 1808.</p>
                </trait>
-               <desc xml:id="CAT_000239_e43_d1"><term ana="#document_type_7">L. a. s.</term> à Sieyès, consul de la République française; <date date="1799-11-13" type="length">22 brumaire an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000239_e43_d1"><term ana="#document_type_7">L. a. s.</term> à Sieyès, consul de la République française; <date when="1799-11-13">22 brumaire an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Curieuse lettre où il parle de Bonaparte, premier Consul, et recommande les citoyens Gallois, Fabre de l'Aude et Carret qui ont pris part aux évènements des 18 et 19 brumaire.</note>
             </item>
             <item n="44" xml:id="CAT_000239_e44">
@@ -570,7 +570,7 @@
                <trait>
                   <p>célèbre général de la Révolution, défenseur de Nantes en 1793, né en 1740, mort en 1817.</p>
                </trait>
-               <desc xml:id="CAT_000239_e44_d1"><term ana="#document_type_7">L. a. s.</term>, comme général en chef de l'armée de l'Ouest, à l'adjudant général Savary; Saumur, <date date="1795-05-01" type="length">12 floréal an III</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000239_e44_d1"><term ana="#document_type_7">L. a. s.</term>, comme général en chef de l'armée de l'Ouest, à l'adjudant général Savary; Saumur, <date when="1795-05-01">12 floréal an III</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Très intéressante lettre où il parle de la reddition probable de Stofflet. « J'espère en revanche que le chirurgien, le tonnelier et le boulanger de Stofflet obtiendront grâce du représentant du peuple Dornier.Curieux détails</note>
             </item>
             <item n="45" xml:id="CAT_000239_e45">
@@ -614,7 +614,7 @@
                <trait>
                   <p>célèbre général de la Révolution, né à Montauban en 1743.</p>
                </trait>
-               <desc xml:id="CAT_000239_e49_d1"><term ana="#document_type_7">L. a. s.</term> à sa femme; Quartier général de Bruges, <date date="1796-11-19" type="length">29 brumaire an V</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette, cachet. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000239_e49_d1"><term ana="#document_type_7">L. a. s.</term> à sa femme; Quartier général de Bruges, <date when="1796-11-19">29 brumaire an V</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette, cachet. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="50" xml:id="CAT_000239_e50">
                <num type="lot">50</num>
@@ -742,7 +742,7 @@
                <trait>
                   <p>célèbre statuaire, de l'Institut, né en 1763, mort en 1810.</p>
                </trait>
-               <desc xml:id="CAT_000239_e64_d1"><term ana="#document_type_7">L. a. s.</term> ; <date date="1799-03-16" type="length">26 ventôse an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000239_e64_d1"><term ana="#document_type_7">L. a. s.</term> ; <date when="1799-03-16">26 ventôse an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Relative à sa statue de Ciparisse pleurant son faon.</note>
             </item>
             <item n="65" xml:id="CAT_000239_e65">
@@ -784,7 +784,7 @@
                <trait>
                   <p>célèbre dessinateur et graveur, né en 1730, mort en 1809.</p>
                </trait>
-               <desc xml:id="CAT_000239_e69_d1"><term ana="#document_type_7">L. a. s.</term> (à M. Dupasquier) ; Paris, <date date="1798-11-16" type="length">26 brumaire an VII</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000239_e69_d1"><term ana="#document_type_7">L. a. s.</term> (à M. Dupasquier) ; Paris, <date when="1798-11-16">26 brumaire an VII</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Très-intéressante lettre sur les gravures du Roman des trois femmes. -On a joint une lettre de M. Dupasquier à Mme de Charrière et deux reçus aut. sig. de Choffard et de Couché.</note>
             </item>
             <item n="70" xml:id="CAT_000239_e70">
@@ -810,7 +810,7 @@
                <trait>
                   <p>le célèbre conventionnel, né en 1750, mort en 1796.</p>
                </trait>
-               <desc xml:id="CAT_000239_e72_d1"><term ana="#document_type_9">Let. sig.</term>, sig. aussi par mont, représentant du peuple dans le département de l'Oise, à Chaumont ; Paris, <date date="1794-04-08" type="length">19 germinal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000239_e72_d1"><term ana="#document_type_9">Let. sig.</term>, sig. aussi par mont, représentant du peuple dans le département de l'Oise, à Chaumont ; Paris, <date when="1794-04-08">19 germinal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Relative à des bruits alarmants que des agitateurs cherchent à répandre à Noyon.</note>
             </item>
             <item n="73" xml:id="CAT_000239_e73">
@@ -1223,7 +1223,7 @@
                <trait>
                   <p>le fameux accusateur public près le tribunal révolutionnaire, né à Hérouel (Aisne) en 1747, guillotiné le 8 mai 1795.</p>
                </trait>
-               <desc xml:id="CAT_000239_e121_d1"><term ana="#document_type_4">Pièce sig</term>.; Paris, <date date="1794-02-19" type="length">1er ventôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., cachet du tribunal. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000239_e121_d1"><term ana="#document_type_4">Pièce sig</term>.; Paris, <date when="1794-02-19">1er ventôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., cachet du tribunal. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Il accuse réception des pièces concernant l'arrestation et la traduction au tribunal du nommé Michel Costes, de Bourg de l'Egalité.</note>
             </item>
             <item n="122" xml:id="CAT_000239_e122">
@@ -1366,7 +1366,7 @@
                <trait>
                   <p>célèbre général de la République et de l'Empire, né en 1766, tué devant Gaëte en 1806.</p>
                </trait>
-               <desc xml:id="CAT_000239_e138_d1"><term ana="#document_type_7">L. a. s.</term> au prince Louis Bonaparie; Mont-de-Marsan, <date date="1804-10-15" type="length">23 vendémiaire an XIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000239_e138_d1"><term ana="#document_type_7">L. a. s.</term> au prince Louis Bonaparie; Mont-de-Marsan, <date when="1804-10-15">23 vendémiaire an XIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Superbe lettre où il demande instamtamment un congé pour le couronnement de l'Empereur. « Je suis né à Paris, élevé dans la capitale, depuis 15 ans que je sers mon pays je n'y ai passé que vingt jours en deux fois, qu'il me seroit doux de revoir ma ville natale dans le moment unique et brillant qui va luire pour elle.»</note>
             </item>
             <item n="139" xml:id="CAT_000239_e139">
@@ -1528,7 +1528,7 @@
                <trait>
                   <p>célèbre naturaliste et homme d'Etat, de l'Acad. fr., né à Agen en 1756, mort en 1825.</p>
                </trait>
-               <desc xml:id="CAT_000239_e158_d1"><term ana="#document_type_7">L. a. s.</term> ; <date date="1794-05-17" type="length">28 floréal an II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, curieux cachet avec devise.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000239_e158_d1"><term ana="#document_type_7">L. a. s.</term> ; <date when="1794-05-17">28 floréal an II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, curieux cachet avec devise.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="159" xml:id="CAT_000239_e159">
                <num type="lot">159</num>
@@ -1584,7 +1584,7 @@
                <trait>
                   <p>député de la Haute- Marne à la Convention, qui présida la séance où fut inauguré le Culte de la Raison, né à Doulevant-le-Château (Haute-Marne) en 1749, mort en 1846.</p>
                </trait>
-               <desc xml:id="CAT_000239_e165_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1798-06-06" type="length">18 prairial an VI</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000239_e165_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1798-06-06">18 prairial an VI</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="166" xml:id="CAT_000239_e166">
                <num type="lot">166</num>
@@ -1890,7 +1890,7 @@
                <trait>
                   <p>empereur des Français.</p>
                </trait>
-               <desc xml:id="CAT_000239_e201_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte comme Premier. Consul, sig. aussi par Regnier et Hugues Maret; Saint-Cloud, 5e jour complémentaire an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure> Jolie vignette de Roger, cachet. Très belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000239_e201_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte comme Premier. Consul, sig. aussi par Regnier et Hugues Maret; Saint-Cloud, 5e jour complémentaire an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure> Jolie vignette de Roger, cachet. Très belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="202" xml:id="CAT_000239_e202">
                <num type="lot">202</num>
@@ -1975,7 +1975,7 @@
                <trait>
                   <p>le célèbre aliéniste, né dans le Tarn en 1745, mort en 1826.</p>
                </trait>
-               <desc xml:id="CAT_000239_e211_d1"><term ana="#document_type_7">L. a. s.</term> à M. Gayetan, médecin à Lons-le-Saunier ; Paris, <date date="1803-03-05" type="length">14 ventôse an XI</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légères déchirures n'atteignant pas le texle.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000239_e211_d1"><term ana="#document_type_7">L. a. s.</term> à M. Gayetan, médecin à Lons-le-Saunier ; Paris, <date when="1803-03-05">14 ventôse an XI</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légères déchirures n'atteignant pas le texle.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="212" xml:id="CAT_000239_e212">
                <num type="lot">212</num>
@@ -2120,7 +2120,7 @@
                <trait>
                   <p>célèbre conventionnel, né à Bonnieux (Vaucluse), en 1748, mort à Sinnamari en 1798.</p>
                </trait>
-               <desc xml:id="CAT_000239_e228_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1796-11-23" type="length">3 frimaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000239_e228_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1796-11-23">3 frimaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="229" xml:id="CAT_000239_e229">
                <num type="lot">229</num>
@@ -2137,7 +2137,7 @@
                <trait>
                   <p>peintre et graveur, un des plus gracieux portraitistes et vignettistes du XVIIIe siècle, né en 1736, mort en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000239_e230_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1794-09-05" type="length">19 fructidor an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000239_e230_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1794-09-05">19 fructidor an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Très intéressante lettre relative au déplacement de son atelier où il travaille depuis vingt ans. « Le célèbre Cochin, mon maître et mon ami avoit toujours eu l'intention que j'eusse sa place de garde des dessins du cabinet national ainsi que son logement aux galeries du Louvre, et en effet cela alloit m'être assuré lorsque la mort l'a enlevé au milieu des démarches qu'il faisait pour cela en ma faveur.»</note>
             </item>
             <item n="231" xml:id="CAT_000239_e231">
@@ -2314,7 +2314,7 @@
                <trait>
                   <p>homme politique, conventionnel de l'Hérault, père du célèbre littérateur, né en 1734, mort en 1824.</p>
                </trait>
-               <desc xml:id="CAT_000239_e251_d1"><term ana="#document_type_7">L. a. s.</term> au Premier Consul Bonaparte; Paris, <date date="1800-04-04" type="length">14 germinal an VIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000239_e251_d1"><term ana="#document_type_7">L. a. s.</term> au Premier Consul Bonaparte; Paris, <date when="1800-04-04">14 germinal an VIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Importante lettre pour la biographie de la famille Viennet; il donne les plus grands détails sur sa situation, ses services, la position de ses enfants, etc.</note>
             </item>
             <item n="252" xml:id="CAT_000239_e252">

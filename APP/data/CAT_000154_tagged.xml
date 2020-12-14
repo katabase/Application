@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -450,7 +450,7 @@
                <trait>
                   <p>roi d'Espagne, frère aîné de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000154_e21_d1"><term ana="#document_type_7">L. a. s.</term> à un colonel; camp d'Outreau, <date date="1804-06-23" type="length">3 messidor an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000154_e21_d1"><term ana="#document_type_7">L. a. s.</term> à un colonel; camp d'Outreau, <date when="1804-06-23">3 messidor an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle lettre toute relative au neveu de sa femme, Marius Clary</note>
             </item>
             <item n="22" xml:id="CAT_000154_e22">
@@ -471,7 +471,7 @@
                <trait>
                   <p>illustre navigateur, de l'Institut, né en 1729, mort en 1814</p>
                </trait>
-               <desc xml:id="CAT_000154_e23_d1"><term ana="#document_type_7">L. a. s.</term> à Talleyrand ; Paris, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000154_e23_d1"><term ana="#document_type_7">L. a. s.</term> à Talleyrand ; Paris, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Belle lettre relative à son fils qui est au camp de Boulogne et pour lequel il
                   sollicite un brevet de lieutenant</note>
             </item>
@@ -1143,7 +1143,7 @@
                   <p>amiral français, qui prit part à la guerre d'Amérique et fut décoré de l'ordre
                      de Cincinnatus, né à Carhaix (Finistère) en 1761, mort en 1845</p>
                </trait>
-               <desc xml:id="CAT_000154_e84_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Bruix, à Boulognesur-Mer ; Toulon, <date date="1803-08-09" type="length">21 thermidor an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000154_e84_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Bruix, à Boulognesur-Mer ; Toulon, <date when="1803-08-09">21 thermidor an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
                <note>Il lui annonce qu'il vient de recevoir l'ordre de se rendre sans retard à
                   Boulognesur-Mer pour prendre le commandement d'une division de la flotille
                   nationale</note>
@@ -1329,7 +1329,7 @@
                   <p>le fameux accusateur public près le Tribunal révolutionnaire, ne en 1747,
                      guillotiné en 1795</p>
                </trait>
-               <desc xml:id="CAT_000154_e101_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, <date date="1794-07-10" type="length">22 messidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000154_e101_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, <date when="1794-07-10">22 messidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="102" xml:id="CAT_000154_e102">
                <num type="lot">102</num>
@@ -1775,7 +1775,7 @@
                   <p>un des plus braves généraux de cavalerie de la République et de l'Empire, fils
                      du précédent, né à Metz en 1770, mort en 1835</p>
                </trait>
-               <desc xml:id="CAT_000154_e142_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Trouble: quartier-général de Novare, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très belle vignette républicaine. Légèrement écornée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000154_e142_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Trouble: quartier-général de Novare, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très belle vignette républicaine. Légèrement écornée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="143" xml:id="CAT_000154_e143">
                <num type="lot">143</num>
@@ -2606,7 +2606,7 @@
                <trait>
                   <p>illustre général de la République, né à Morlaix en 1763, mort en 1813</p>
                </trait>
-               <desc xml:id="CAT_000154_e220_d1"><term ana="#document_type_7">L. a. s.</term>, comme général en chef de l'armée du Nord; <date date="1795-10-14" type="length">22 vendémiaire an IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Très jolie vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000154_e220_d1"><term ana="#document_type_7">L. a. s.</term>, comme général en chef de l'armée du Nord; <date when="1795-10-14">22 vendémiaire an IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Très jolie vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="221" xml:id="CAT_000154_e221">
                <num type="lot">221</num>
@@ -2648,7 +2648,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000154_e225_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, sur vélin, sig. aussi par Alex. Berthier et Hugues Maret; an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>, cachet, vignette de Roger. Légères déchirures</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000154_e225_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, sur vélin, sig. aussi par Alex. Berthier et Hugues Maret; an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>, cachet, vignette de Roger. Légères déchirures</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="226" xml:id="CAT_000154_e226">
                <num type="lot">226</num>

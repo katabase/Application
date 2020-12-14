@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -528,7 +528,7 @@
                <trait>
                   <p>conventionnel montagnard, célèbre par ses missions aux armées</p>
                </trait>
-               <desc xml:id="CAT_000084_e36_d1"><term ana="#document_type_7">L. a. s.</term>; Montauban, <date date="none" type="length">7 août, an II</date>, <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000084_e36_d1"><term ana="#document_type_7">L. a. s.</term>; Montauban, <date when="none">7 août, an II</date>, <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Envoyé dans le Midi pour y faire accepter la constitution, il
                   donne des détails sur les bruits absurdes qui sont répandus contre la Montagne et
                   contre Paris. Cahors n'est pas dans les meilleurs principes républicains ;
@@ -690,7 +690,7 @@
                <trait>
                   <p>roi de Suède</p>
                </trait>
-               <desc xml:id="CAT_000084_e53_d1"><term ana="#document_type_7">L. a. s.</term> à Gohier, <date date="1800-04-20" type="length">30 germ. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000084_e53_d1"><term ana="#document_type_7">L. a. s.</term> à Gohier, <date when="1800-04-20">30 germ. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il l'invite à dîner à Mousseaux. Ils jaseront un instant de
                   l'ingratitude des hommes. (Il est bon de noter que c'est quelques mois après le 18
                   brumaire.)</note>
@@ -698,7 +698,7 @@
             <item n="54" xml:id="CAT_000084_e54">
                <num type="lot">54</num>
                <name type="author">Le même</name>
-               <desc xml:id="CAT_000084_e54_d1"><term ana="#document_type_9">L. sig.</term> à Louis Bonaparte, connétable de France, Hanovre, <date date="1804-07-04" type="length">14 mess, an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000084_e54_d1"><term ana="#document_type_9">L. sig.</term> à Louis Bonaparte, connétable de France, Hanovre, <date when="1804-07-04">14 mess, an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Relative à l'élévation de Napoléon à la dignité
                   impériale</note>
             </item>
@@ -732,7 +732,7 @@
                <trait>
                   <p>maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000084_e58_d1"><term ana="#document_type_7">L. a. s.</term> au consul de la République à Malaga ; Saint-Ildephonse, <date date="1799-09-23" type="length">1er vend, an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000084_e58_d1"><term ana="#document_type_7">L. a. s.</term> au consul de la République à Malaga ; Saint-Ildephonse, <date when="1799-09-23">1er vend, an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Il le prie de lui envoyer 50 bouteilles du meilleur Malaga, à
                   Madrid, chez l'ambassadeur de France</note>
             </item>
@@ -924,7 +924,7 @@
                <trait>
                   <p>conventionnel, député de l'Orne</p>
                </trait>
-               <desc xml:id="CAT_000084_e79_d1"><term ana="#document_type_7">L. a. s.</term> au Premier Consul; Paris, <date date="1800-01-21" type="length">1er pluv. an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000084_e79_d1"><term ana="#document_type_7">L. a. s.</term> au Premier Consul; Paris, <date when="1800-01-21">1er pluv. an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Il indique les mesures à prendre pour détruire avec certitude
                   les instigateurs secrets de la chouannerie. Elles consistent surtout à arrêter les
                   prêtres insoumis et les ci-devant nobles qui se tiennent prudemment derrière la
@@ -954,7 +954,7 @@
                <trait>
                   <p>le trop fameux accusateur public près le Tribunal révolutionnaire</p>
                </trait>
-               <desc xml:id="CAT_000084_e82_d1">-<term ana="#document_type_4">Pièce sig</term>.; <date date="1794-02-21" type="length">3 vent, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000084_e82_d1">-<term ana="#document_type_4">Pièce sig</term>.; <date when="1794-02-21">3 vent, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Ordre d'exécution de Tiphaine père et fils, sur la place de la
                   Révolution</note>
             </item>
@@ -1285,7 +1285,7 @@
                <trait>
                   <p>le plus célèbre des conventionnels</p>
                </trait>
-               <desc xml:id="CAT_000084_e115_d1"><term ana="#document_type_4">Pièce sig</term>., <date date="1803-06-03" type="length">14 prair. an 11</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000084_e115_d1"><term ana="#document_type_4">Pièce sig</term>., <date when="1803-06-03">14 prair. an 11</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Arrêté du Comité de salut public ordonnant au Comité de
                   surveillance de Rongis, département de Paris, de mettre Verniquet, ci-devant
                   architecte du tyran, en état d'arrestation dans les 24 heures. (Verniquet est

@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -330,7 +330,7 @@
                <trait>
                   <p>poète et philosophe, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000040_e14_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000040_e14_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Relative à son brevet de pension</note>
             </item>
             <item n="15" xml:id="CAT_000040_e15">
@@ -404,7 +404,7 @@
                <trait>
                   <p>lectrice de Marie-Antoinette, surintendante de la maison d'Ecouen</p>
                </trait>
-               <desc xml:id="CAT_000040_e21_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Degoti; Saint-Germain, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000040_e21_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Degoti; Saint-Germain, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Belle lettre relative à un théâtre qu'elle établit pour ses
                   pensionnaires</note>
             </item>
@@ -743,7 +743,7 @@
                <trait>
                   <p>maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000040_e57_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000040_e57_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="58" xml:id="CAT_000040_e58">
                <num type="lot">58</num>
@@ -853,7 +853,7 @@
             <item n="69" xml:id="CAT_000040_e69">
                <num type="lot">69</num>
                <name type="author">Joséphine (l'impératrice)</name>
-               <desc xml:id="CAT_000040_e69_d1"><term ana="#document_type_9">L. sig.</term>, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000040_e69_d1"><term ana="#document_type_9">L. sig.</term>, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Recommandation en faveur de Mlle Coulon, artiste du Théâtre-des-Arts</note>
             </item>
             <item n="70" xml:id="CAT_000040_e70">
@@ -981,7 +981,7 @@
                <trait>
                   <p>le fameux proconsul d'Arras</p>
                </trait>
-               <desc xml:id="CAT_000040_e83_d1"><term ana="#document_type_7">L. a. s.</term> au conventionnel Laurent; Saint-Pol, <date date="1793-11-06" type="length">16 brum. an II</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000040_e83_d1"><term ana="#document_type_7">L. a. s.</term> au conventionnel Laurent; Saint-Pol, <date when="1793-11-06">16 brum. an II</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
                <note>Curieuse lettre sur un tanneur qui est soumis à deux réquisitions, celle qui
                   l'appelle aux frontières et celle qui l'oblige à travailler pour les fournitures
                   de l'armée. Lebon pense que ce citoyen, nommé Havet, est très-utile dans sa
@@ -1055,7 +1055,7 @@
                <trait>
                   <p>le chef de la conspiration de 1812</p>
                </trait>
-               <desc xml:id="CAT_000040_e90_d1"><term ana="#document_type_7">L. a. s.</term>; Angouleme, <date date="1804-06-11" type="length">21 prair. an XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000040_e90_d1"><term ana="#document_type_7">L. a. s.</term>; Angouleme, <date when="1804-06-11">21 prair. an XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Curieuse lettre, où il se plaint d'être remplacé dans le commandement du
                   département de la Charente au moment même où il vient de dénoncer les factieux
                   royaux qui tenaient des conciliabules presque publics</note>
@@ -1214,7 +1214,7 @@
                <trait>
                   <p>roi de Naples</p>
                </trait>
-               <desc xml:id="CAT_000040_e106_d1"><term ana="#document_type_9">L. sig.</term>; an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000040_e106_d1"><term ana="#document_type_9">L. sig.</term>; an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="107" xml:id="CAT_000040_e107">
                <num type="lot">107</num>
@@ -1222,7 +1222,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000040_e107_d1">Sa signature Bonaparte, comme premier Consul, avec 4 mots <term ana="#document_type_15">aut. s</term>ur une lettre du général Reille, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000040_e107_d1">Sa signature Bonaparte, comme premier Consul, avec 4 mots <term ana="#document_type_15">aut. s</term>ur une lettre du général Reille, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="108" xml:id="CAT_000040_e108">
                <num type="lot">108</num>
@@ -1359,7 +1359,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie</p>
                </trait>
-               <desc xml:id="CAT_000040_e122_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000040_e122_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Relative à son indemnité de 600 francs pour son déménagement du Louvre.</note>
             </item>
             <item n="123" xml:id="CAT_000040_e123">

@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -397,7 +397,7 @@
                      grande part à la guerre de l'Indépendance américaine, né dans la Louisiane en
                      1759, mort en 1797</p>
                </trait>
-               <desc xml:id="CAT_000159_e18_d1">2 let. sig., dont l'une avec un post-script. aut., au général de Hédouville ; 6-<date date="1796-01-02" type="length">12 nivôse an IV</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tètes imp.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000159_e18_d1">2 let. sig., dont l'une avec un post-script. aut., au général de Hédouville ; 6-<date when="1796-01-02">12 nivôse an IV</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tètes imp.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettres historiques. Il lui annonce la réunion des trois armées de l'Ouest, des
                   côtes de Brest et de Cherbourg, sous les ordres du général Hoche. « En réunissant
                   ainsi trois grandes armées, Hoche et moi, nous avons pensé que vous ne refuseriez
@@ -815,7 +815,7 @@
                   <p>illustre chimiste et homme d'Etat, de l'Institut, né à Nogaret (Lozère) en
                      1736, mort en 1832</p>
                </trait>
-               <desc xml:id="CAT_000159_e54_d1"><term ana="#document_type_7">L. a. s.</term>, au citoyen Dieudonné; an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000159_e54_d1"><term ana="#document_type_7">L. a. s.</term>, au citoyen Dieudonné; an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Lettre politique sur l'importance du port de Dunkerque au point de vue
                   militaire</note>
             </item>
@@ -1315,7 +1315,7 @@
                   <p>célèbre amiral, qui ramena Bonaparte d'Egypte, né à la Ciotat en 1755, mort en
                      1818</p>
                </trait>
-               <desc xml:id="CAT_000159_e99_d1"><term ana="#document_type_7">L. a. s.</term> au comte Otto; Paris, <date date="1800-06-11" type="length">22 prairial an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très jolie vignette tenant la moitié de la 1er page.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000159_e99_d1"><term ana="#document_type_7">L. a. s.</term> au comte Otto; Paris, <date when="1800-06-11">22 prairial an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très jolie vignette tenant la moitié de la 1er page.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="100" xml:id="CAT_000159_e100">
                <num type="lot">100</num>
@@ -1585,7 +1585,7 @@
                   <p>illustre général de la République, né à Strasbourg en 1753, assassine au Caire
                      en 1800</p>
                </trait>
-               <desc xml:id="CAT_000159_e124_d1"><term ana="#document_type_9">Let. sig.</term>; quartier général de Toulon, <date date="1798-05-07" type="length">18 floréal an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000159_e124_d1"><term ana="#document_type_9">Let. sig.</term>; quartier général de Toulon, <date when="1798-05-07">18 floréal an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
             </item>
             <item n="125" xml:id="CAT_000159_e125">
                <num type="lot">125</num>
@@ -2384,7 +2384,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000159_e194_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Chauvet; quartier-général à Nice, <date date="1796-03-29" type="length">9 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette républicaine. Curieux cachet avec cette devise : Le temps passe et l'ami reste.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000159_e194_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Chauvet; quartier-général à Nice, <date when="1796-03-29">9 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette républicaine. Curieux cachet avec cette devise : Le temps passe et l'ami reste.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Très belle lettre sur l'armée d'Italie, dont il était le général en chef. Il
                   annonce que plusieurs bâtiments chargés de vin viennent d'être expédiés de
                   Marseille : « La viande fraiche commencera à être distribuée demain à la troupe,
@@ -2524,7 +2524,7 @@
                   <p>célèbre général des armées de la République, né à Arbois en 1761, mort en
                      1804</p>
                </trait>
-               <desc xml:id="CAT_000159_e206_d1">Apostille de 16 lig. aut. sig. sur une <term ana="#document_type_4">pièce sig</term>. de Xavier Audouin et des membres du Comité révolutionnaire de Laon; an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> grand <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp , vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000159_e206_d1">Apostille de 16 lig. aut. sig. sur une <term ana="#document_type_4">pièce sig</term>. de Xavier Audouin et des membres du Comité révolutionnaire de Laon; an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> grand <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp , vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Relative au citoyen Target, chef de brigade du 13e régiment de chasseurs à
                   cheval, né à la Réunion-sur-Oise, district de Vervins (Aisne), qui se rend auprès
                   de Pichégru, général en chef de l'armée du Nord</note>
@@ -2549,7 +2549,7 @@
                   <p>célèbre conventionnel montagnard, député du Nord, rédacteur de l'Ami des lois,
                      né à Montreuil-sur-Mer en 1733, mort en 1825</p>
                </trait>
-               <desc xml:id="CAT_000159_e208_d1"><term ana="#document_type_7">L. a. s.</term> ; Montreuil-sur-Mer, <date date="1804-05-11" type="length">20 floréal an XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000159_e208_d1"><term ana="#document_type_7">L. a. s.</term> ; Montreuil-sur-Mer, <date when="1804-05-11">20 floréal an XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Belle lettre écrite comme colonel commandant d'armes de la ville et
                   arrondissement de Montreuil-sur-Mer et toute relative à la citadelle de cette
                   ville</note>
@@ -2772,7 +2772,7 @@
                <trait>
                   <p>célèbre maréchal de l'Empire, né à Laon en 1742, mort en 1819</p>
                </trait>
-               <desc xml:id="CAT_000159_e230_d1"><term ana="#document_type_7">L. a. s.</term>, Paris, <date date="1802-10-18" type="length">26 vendémiaire an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000159_e230_d1"><term ana="#document_type_7">L. a. s.</term>, Paris, <date when="1802-10-18">26 vendémiaire an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="231" xml:id="CAT_000159_e231">
                <num type="lot">231</num>
@@ -2897,7 +2897,7 @@
                   <p>administrateur distingué, ministre des contributions publiques en 1791, né à
                      Sens en 1753, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000159_e241_d1">2 <term ana="#document_type_3">pièces dont une sig. avec 7 lig. aut.</term> ; Paris, <date date="1795-05-31" type="length">12 prairial an III</date>, <measure type="length" unit="p" n="8.5">8 p. 1/2</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000159_e241_d1">2 <term ana="#document_type_3">pièces dont une sig. avec 7 lig. aut.</term> ; Paris, <date when="1795-05-31">12 prairial an III</date>, <measure type="length" unit="p" n="8.5">8 p. 1/2</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Curieuses pièces toutes relatives aux poursuites dont Tarbé fut l'objet après
                   le 10 août, et à son inscription sur la liste des émigrés</note>
             </item>

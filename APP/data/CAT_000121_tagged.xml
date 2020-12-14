@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -456,7 +456,7 @@
                <trait>
                   <p>prince de Canino, frère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000121_e28_d1"><term ana="#document_type_9">Let. sig.</term>; an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000121_e28_d1"><term ana="#document_type_9">Let. sig.</term>; an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="29" xml:id="CAT_000121_e29">
                <num type="lot">29</num>
@@ -629,7 +629,7 @@
                   <p>célèbre avocat, défenseur de Marie-Antoinette et de Charlotte Corday, né à
                      Chartres en 1756, mort en 1841</p>
                </trait>
-               <desc xml:id="CAT_000121_e46_d1"><term ana="#document_type_7">L. a. s.</term> à la citoyenne Serilly ; Paris, <date date="1795-07-20" type="length">2 thermidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Le quart du feuillet de l'adresse a été enlevé. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000121_e46_d1"><term ana="#document_type_7">L. a. s.</term> à la citoyenne Serilly ; Paris, <date when="1795-07-20">2 thermidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Le quart du feuillet de l'adresse a été enlevé. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="47" xml:id="CAT_000121_e47">
                <num type="lot">47</num>
@@ -691,7 +691,7 @@
                <trait>
                   <p>la grande tragédienne, née en 1723, morte en 1803</p>
                </trait>
-               <desc xml:id="CAT_000121_e53_d1">Letaut. à M. Berthet; Paris, <date date="1802-02-20" type="length">1er ventôse an X</date>. <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000121_e53_d1">Letaut. à M. Berthet; Paris, <date when="1802-02-20">1er ventôse an X</date>. <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Jolie lettre écrite à l'âge de 80 ans. « Je viens d'arriver ici pour y chercher
                   quelques secours aux maux de tous genres dont je suis accablée. » Elle le prie en
                   terminant de la rappeler aux amicales bontés de M. Parmentier</note>
@@ -899,7 +899,7 @@
                   <p>comédien et auteur dramatique distingué, fils de Ch. Simon et de Mme Favart, né
                      en 1749, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000121_e74_d1"><term ana="#document_type_4">Pièce sig</term>. <date date="none" type="length">2 fois ; an III</date>-IV, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000121_e74_d1"><term ana="#document_type_4">Pièce sig</term>. <date when="none">2 fois ; an III</date>-IV, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuse pièce. Relevé des droits d'auteur touchés par lui en l'an III et en
                   l'an IV pour les ouvrages de son père représentés en province</note>
             </item>
@@ -1150,7 +1150,7 @@
                   <p>célèbre médecin et chirurgien, de l'Acad. des Sciences, né en 1754, mort en
                      1822</p>
                </trait>
-               <desc xml:id="CAT_000121_e101_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="none" type="length">3 nivôse an XIV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très-belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000121_e101_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="none">3 nivôse an XIV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très-belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="102" xml:id="CAT_000121_e102">
                <num type="lot">102</num>
@@ -1267,7 +1267,7 @@
                <trait>
                   <p>le célèbre général</p>
                </trait>
-               <desc xml:id="CAT_000121_e114_d1"><term ana="#document_type_4">Pièce sig</term>. 2 fois, avec 2 mots aut. ; Le Caire, <date date="1800-02-09" type="length">20 pluviôse an VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000121_e114_d1"><term ana="#document_type_4">Pièce sig</term>. 2 fois, avec 2 mots aut. ; Le Caire, <date when="1800-02-09">20 pluviôse an VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="115" xml:id="CAT_000121_e115">
                <num type="lot">115</num>
@@ -1339,7 +1339,7 @@
                   <p>célèbre général, beau-frère de Napoléon Ier, né à Pontoise en 1772, mort à
                      Saint-Domingue en 1802</p>
                </trait>
-               <desc xml:id="CAT_000121_e122_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Lecoq, ancien administrateur de la Compagnie des Indes; quartier-général, à Rennes, <date date="1799-02-17" type="length">29 pluviôse an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000121_e122_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Lecoq, ancien administrateur de la Compagnie des Indes; quartier-général, à Rennes, <date when="1799-02-17">29 pluviôse an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="123" xml:id="CAT_000121_e123">
                <num type="lot">123</num>
@@ -1756,7 +1756,7 @@
                   <p>célèbre général en chef des armées de la République, né à Arbois en 1761, mort
                      par suicide le 5 avril 1804</p>
                </trait>
-               <desc xml:id="CAT_000121_e166_d1"><term ana="#document_type_7">L. a. s.</term> au général Desaix; quartier-général de Worms, <date date="1795-05-29" type="length">10 prairial an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000121_e166_d1"><term ana="#document_type_7">L. a. s.</term> au général Desaix; quartier-général de Worms, <date when="1795-05-29">10 prairial an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Pièce historique où il invite Desaix à se rendre sur le Haut-Rhin pour prendre
                   le commandement de la droite de l'armée, depuis Porrentruy inclusivement jusqu'à
                   Strasbourg exclusivement. Après lui avoir donné toutes les instructions
@@ -2365,7 +2365,7 @@
                <trait>
                   <p>prince de Neuchâtel</p>
                </trait>
-               <desc xml:id="CAT_000121_e230_d1"><term ana="#document_type_9">Let. sig.</term> au prince Louis Bonaparte ; Boulogne, <date date="1804-08-19" type="length">30 thermidor an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000121_e230_d1"><term ana="#document_type_9">Let. sig.</term> au prince Louis Bonaparte ; Boulogne, <date when="1804-08-19">30 thermidor an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
                <note>Relative au traitement de Louis Bonaparte comme connétable de l'Empire</note>
             </item>
             <item n="231" xml:id="CAT_000121_e231">
@@ -2420,7 +2420,7 @@
                <trait>
                   <p>né à Brive en 1763, assassiné en 1815</p>
                </trait>
-               <desc xml:id="CAT_000121_e237_d1"><term ana="#document_type_9">Let. sig.</term> au général Miollis; Vérone, <date date="1797-11-18" type="length">28 brumaire an VI</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse vignette républicaine. Légère tache. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000121_e237_d1"><term ana="#document_type_9">Let. sig.</term> au général Miollis; Vérone, <date when="1797-11-18">28 brumaire an VI</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse vignette républicaine. Légère tache. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="238" xml:id="CAT_000121_e238">
                <num type="lot">238</num>
@@ -2565,7 +2565,7 @@
                <trait>
                   <p>né à Limoges en 1762, mort en 1833</p>
                </trait>
-               <desc xml:id="CAT_000121_e257_d1"><term ana="#document_type_9">Let. sig.</term>; Milan, <date date="1804-11-09" type="length">18 brumaire an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000121_e257_d1"><term ana="#document_type_9">Let. sig.</term>; Milan, <date when="1804-11-09">18 brumaire an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="258" xml:id="CAT_000121_e258">
                <num type="lot">258</num>
@@ -2651,7 +2651,7 @@
                <trait>
                   <p>duc de Rivoli</p>
                </trait>
-               <desc xml:id="CAT_000121_e267_d1"><term ana="#document_type_9">Let. sig.</term> au général Miollis; Gênes, <date date="1800-06-04" type="length">15 prairial an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000121_e267_d1"><term ana="#document_type_9">Let. sig.</term> au général Miollis; Gênes, <date when="1800-06-04">15 prairial an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="268" xml:id="CAT_000121_e268">
                <num type="lot">268</num>

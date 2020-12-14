@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1451,7 +1451,7 @@
                      oeuvres des écrivains du XVIIe siècle, né à Dijon en 1740, mort près de Melun
                      en 1808</p>
                </trait>
-               <desc xml:id="CAT_000088_e116_d1"><term ana="#document_type_7">L. a. s.</term> à M. Gondoin, aux Vives-Eaux, près de Dammarie; Beaulieu, <date date="1801-01-14" type="length">24 nivôse an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000088_e116_d1"><term ana="#document_type_7">L. a. s.</term> à M. Gondoin, aux Vives-Eaux, près de Dammarie; Beaulieu, <date when="1801-01-14">24 nivôse an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Belle lettre écrite comme juge de paix du canton de Boissise-la-Bertrand, près
                   de Melun</note>
             </item>
@@ -1722,7 +1722,7 @@
                   <p>l'héroïque capitaine du vaisseau Le Vengeur, né en Saintonge en 1757, mort en
                      1809</p>
                </trait>
-               <desc xml:id="CAT_000088_e141_d1">-<term ana="#document_type_4">Pièce sig</term>.; à bord de l'Océan, <date date="1799-01-08" type="length">19 nivôse an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000088_e141_d1">-<term ana="#document_type_4">Pièce sig</term>.; à bord de l'Océan, <date when="1799-01-08">19 nivôse an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
          </list>
       </body>

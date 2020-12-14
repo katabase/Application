@@ -68,7 +68,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces selected entries</p>
          </samplingDecl>
-      <classDesc>
+      <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -192,7 +192,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc></encodingDesc>
+    </classDecl></encodingDesc>
    </teiHeader>
    <text>
       <body>

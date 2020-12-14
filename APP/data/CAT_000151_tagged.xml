@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -504,7 +504,7 @@
                   <p>maréchal de l'Empire, puis roi de Suède sous le nom de Charles-Jean XIV, né à
                      Pau en 1764, mort en 1844</p>
                </trait>
-               <desc xml:id="CAT_000151_e30_d1">P. <term ana="#document_type_15">a. s.</term>; Milan, <date date="1798-01-29" type="length">10 pluviôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000151_e30_d1">P. <term ana="#document_type_15">a. s.</term>; Milan, <date when="1798-01-29">10 pluviôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Belle pièce. Il prie le général Ernouf de compter dans deux mois 11,000 livres
                   tournois au général Marboz</note>
             </item>
@@ -728,7 +728,7 @@
                   <p>célèbre amiral français, né à Uzès en 1753, tué au combat d'Aboukir le 2 août
                      1798</p>
                </trait>
-               <desc xml:id="CAT_000151_e52_d1"><term ana="#document_type_7">L. a. s.</term>; Gênes, <date date="1797-05-25" type="length">6 prairial an V</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000151_e52_d1"><term ana="#document_type_7">L. a. s.</term>; Gênes, <date when="1797-05-25">6 prairial an V</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Belle lettre relative à sa croisière dans la Méditerranée. Curieux
                   détails</note>
             </item>
@@ -784,7 +784,7 @@
                <trait>
                   <p>l'illustre conventionnel</p>
                </trait>
-               <desc xml:id="CAT_000151_e58_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, <date date="1797-08-05" type="length">18 thermidor an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000151_e58_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, <date when="1797-08-05">18 thermidor an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="59" xml:id="CAT_000151_e59">
                <num type="lot">59</num>
@@ -978,7 +978,7 @@
                   <p>duc de Feltre, maréchal de France et homme d'Etat, né à Landrecies en 1765,
                      mort en 1818</p>
                </trait>
-               <desc xml:id="CAT_000151_e78_d1"><term ana="#document_type_7">L. a. s.</term> de Cuvillier-Fleury. chef du cabinet topographique du 1er Consul, au général Hédouville ; Milan, <date date="1800-06-06" type="length">17 prairial an VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rognée.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000151_e78_d1"><term ana="#document_type_7">L. a. s.</term> de Cuvillier-Fleury. chef du cabinet topographique du 1er Consul, au général Hédouville ; Milan, <date when="1800-06-06">17 prairial an VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rognée.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Belle lettre où il donne des nouvelles du général Clarke</note>
             </item>
             <item n="79" xml:id="CAT_000151_e79">
@@ -1196,7 +1196,7 @@
                   <p>poète et auteur dramatique distingué, préfet de l'Hérault, né en 1771, mort en
                      1839.</p>
                </trait>
-               <desc xml:id="CAT_000151_e98_d1">1° 5 l. <term ana="#document_type_15">a. s.</term>, dont 1 sig. à la 3e personne ; <date when="1810">1810</date>-20, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><desc xml:id="CAT_000151_e98_d2">2° P. <term ana="#document_type_15">a. s.</term> de ses initiales, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><desc xml:id="CAT_000151_e98_d3">3° <term ana="#document_type_9">Let. sig.</term>; Autun, <date date="1803-10-13" type="length">20 vendémiaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000151_e98_d4">4° Les Rencontres, opéra comique en trois actes, <term ana="#document_type_13">manuscrit aut.</term>, <measure type="length" unit="p" n="62">62 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> à mi-marges.</desc><desc xml:id="CAT_000151_e98_d5">5° P. <term ana="#document_type_15">a. s.</term> de J.-B. de Roquefort à Creuzé de Lesser. <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Pièce intéressante, contenant des détails très curieux sur les romans de la Table-Ronde.</desc><desc xml:id="CAT_000151_e98_d6">6° Laure la coquette, <term ana="#document_type_2">pièce de vers aut. sig.</term> d'Octave Creuzé, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Important dossier.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000151_e98_d1">1° 5 l. <term ana="#document_type_15">a. s.</term>, dont 1 sig. à la 3e personne ; <date when="1810">1810</date>-20, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><desc xml:id="CAT_000151_e98_d2">2° P. <term ana="#document_type_15">a. s.</term> de ses initiales, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><desc xml:id="CAT_000151_e98_d3">3° <term ana="#document_type_9">Let. sig.</term>; Autun, <date when="1803-10-13">20 vendémiaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000151_e98_d4">4° Les Rencontres, opéra comique en trois actes, <term ana="#document_type_13">manuscrit aut.</term>, <measure type="length" unit="p" n="62">62 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> à mi-marges.</desc><desc xml:id="CAT_000151_e98_d5">5° P. <term ana="#document_type_15">a. s.</term> de J.-B. de Roquefort à Creuzé de Lesser. <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Pièce intéressante, contenant des détails très curieux sur les romans de la Table-Ronde.</desc><desc xml:id="CAT_000151_e98_d6">6° Laure la coquette, <term ana="#document_type_2">pièce de vers aut. sig.</term> d'Octave Creuzé, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Important dossier.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="99" xml:id="CAT_000151_e99">
                <num type="lot">99</num>
@@ -1340,7 +1340,7 @@
                   <p>un des plus illustres généraux de la République, né en Auvergne en 1768, tué à
                      la bataille de Marengo, le 14 juin 1800</p>
                </trait>
-               <desc xml:id="CAT_000151_e114_d1"><term ana="#document_type_9">Let. sig.</term> au général Dugua; Akhmime, <date date="1799-03-22" type="length">2 germinal an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
+               <desc xml:id="CAT_000151_e114_d1"><term ana="#document_type_9">Let. sig.</term> au général Dugua; Akhmime, <date when="1799-03-22">2 germinal an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
                <note>Lettre historique importante, écrite pendant la campagne d'Egypte. Il parle de
                   la triste situation dans laquelle il se trouve lui et son armée; il réclame des
                   cartouches, des munitions d'artillerie et une canonnière : « Nous n'avons point
@@ -1383,7 +1383,7 @@
                      Tyrol, père du grand romancier, né en 1762, mort à Villers-Colterets en
                      1806</p>
                </trait>
-               <desc xml:id="CAT_000151_e118_d1">1° <term ana="#document_type_7">L. a. s.</term> à sa femme; Ancône, <date date="1801-04-18" type="length">28 germinal an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000151_e118_d2">2° <term ana="#document_type_8">Let. aut.</term> à la même; Carpenetto, <date date="1797-03-03" type="length">13 ventôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000151_e118_d3">3° <term ana="#document_type_9">Let. sig.</term> au général Watrin; Florence, <date date="1801-05-20" type="length">30 floréal an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000151_e118_d1">1° <term ana="#document_type_7">L. a. s.</term> à sa femme; Ancône, <date when="1801-04-18">28 germinal an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000151_e118_d2">2° <term ana="#document_type_8">Let. aut.</term> à la même; Carpenetto, <date when="1797-03-03">13 ventôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000151_e118_d3">3° <term ana="#document_type_9">Let. sig.</term> au général Watrin; Florence, <date when="1801-05-20">30 floréal an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="119" xml:id="CAT_000151_e119">
                <num type="lot">119</num>
@@ -1556,7 +1556,7 @@
                <trait>
                   <p>les héroïnes de la campagne de 1792, officiers d'état-major de Dumouriez</p>
                </trait>
-               <desc xml:id="CAT_000151_e135_d1">1° 2 l. <term ana="#document_type_15">a. s.</term> de Félicité à Méjan ; an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000151_e135_d2">2° <term ana="#document_type_7">L. a. s.</term> de Théophile ; <date when="1814-06-05">5 juin 1814</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000151_e135_d1">1° 2 l. <term ana="#document_type_15">a. s.</term> de Félicité à Méjan ; an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000151_e135_d2">2° <term ana="#document_type_7">L. a. s.</term> de Théophile ; <date when="1814-06-05">5 juin 1814</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
             </item>
             <item n="136" xml:id="CAT_000151_e136">
                <num type="lot">136</num>
@@ -1582,7 +1582,7 @@
                   <p>duc d'Otrante, célèbre conventionnel et ministre de Napoléon Ier, né près de
                      Nantes en 1763, mort à Trieste en 1820</p>
                </trait>
-               <desc xml:id="CAT_000151_e138_d1"><term ana="#document_type_7">L. a. s.</term> à ses électeurs ; Paris, <date date="none" type="length">1er oct. an I</date>er de de la République, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000151_e138_d1"><term ana="#document_type_7">L. a. s.</term> à ses électeurs ; Paris, <date when="none">1er oct. an I</date>er de de la République, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Importante lettre. « Je me félicite d'être aujourd'hui l'organe de la
                   Députation, je n'ai que d'heureuses espérances à vous donner. La République avait
                   à redouter les traîtres et les agitateurs, ils sont enchaînés. Une poignée
@@ -1592,7 +1592,7 @@
             <item n="139" xml:id="CAT_000151_e139">
                <num type="lot">139</num>
                <name type="author">Fouché (Jos.)</name>
-               <desc xml:id="CAT_000151_e139_d1"><term ana="#document_type_9">Let. sig.</term> ; Paris, <date date="1802-03-04" type="length">13 ventôse an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Jolie vignette de Prudhon.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000151_e139_d1"><term ana="#document_type_9">Let. sig.</term> ; Paris, <date when="1802-03-04">13 ventôse an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Jolie vignette de Prudhon.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Curieuse lettre. Relative à Bertin l'aîné « dont la destination est d'être
                   embarqué pour l'isle d'Elbe, et de rester en surveillance à Porto Longone, sous la
                   responsabilité du commandant de cette place.</note>
@@ -2026,7 +2026,7 @@
                <trait>
                   <p>l'illustre général, né en 1753, assassiné en 1800</p>
                </trait>
-               <desc xml:id="CAT_000151_e183_d1"><term ana="#document_type_9">Let. sig.</term> à Jourdan; Bamberg, <date date="1796-08-15" type="length">28 thermidor an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000151_e183_d1"><term ana="#document_type_9">Let. sig.</term> à Jourdan; Bamberg, <date when="1796-08-15">28 thermidor an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
             </item>
             <item n="184" xml:id="CAT_000151_e184">
                <num type="lot">184</num>
@@ -2330,7 +2330,7 @@
                   <p>duc de Raguse, maréchal de France, auteur de Mémoires, né à Châtillon-sur-Seine
                      en 1774, mort en 1852</p>
                </trait>
-               <desc xml:id="CAT_000151_e215_d1">3 let. sig., dont une avec un post-script, de 4 lig. aut., au général Dugua; quartier-général d'Alexandrie, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Tachées. Une de ces lettres a des incisions faites avec un canif.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000151_e215_d1">3 let. sig., dont une avec un post-script, de 4 lig. aut., au général Dugua; quartier-général d'Alexandrie, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Tachées. Une de ces lettres a des incisions faites avec un canif.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Curieuses lettres sur l'expédition d'Egypte</note>
             </item>
             <item n="216" xml:id="CAT_000151_e216">
@@ -2399,7 +2399,7 @@
                <trait>
                   <p>célèbre conventionnel, défenseur de Mayence, né en 1762, mort en 1833</p>
                </trait>
-               <desc xml:id="CAT_000151_e223_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1796-11-26" type="length">6 frimaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000151_e223_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1796-11-26">6 frimaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="224" xml:id="CAT_000151_e224">
                <num type="lot">224</num>
@@ -2497,7 +2497,7 @@
                   <p>célèbre compositeur de musique, auteur du Déserteur, né à Fauquembergues
                      (Pas-de-Calais) en 1729, mort en 1817</p>
                </trait>
-               <desc xml:id="CAT_000151_e233_d1"><term ana="#document_type_7">L. a. s.</term>; Saint-Cloud, » floréal an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000151_e233_d1"><term ana="#document_type_7">L. a. s.</term>; Saint-Cloud, » floréal an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="234" xml:id="CAT_000151_e234">
                <num type="lot">234</num>
@@ -2524,7 +2524,7 @@
                <trait>
                   <p>illustre général de la République, né à Morlaix en 1763, mort en 1813</p>
                </trait>
-               <desc xml:id="CAT_000151_e236_d1"><term ana="#document_type_7">L. a. s.</term> au général Miollis; quartier général de Conégliano, <date date="1799-09-13" type="length">27 fructidor an VII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000151_e236_d1"><term ana="#document_type_7">L. a. s.</term> au général Miollis; quartier général de Conégliano, <date when="1799-09-13">27 fructidor an VII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="237" xml:id="CAT_000151_e237">
                <num type="lot">237</num>
@@ -2582,7 +2582,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000151_e242_d1"><term ana="#document_type_9">Let. sig.</term> Buongparte, avec 13 mots aut., à Berlier ; Nice, <date date="1794-06-22" type="length">4 messidor an II</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> têle imp.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000151_e242_d1"><term ana="#document_type_9">Let. sig.</term> Buongparte, avec 13 mots aut., à Berlier ; Nice, <date when="1794-06-22">4 messidor an II</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> têle imp.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Pièce écrite comme général commandant l'artillerie de l'armée d'Italie.</note>
             </item>
             <item n="243" xml:id="CAT_000151_e243">
@@ -2668,7 +2668,7 @@
                <trait>
                   <p>ministre de la guerre en 1793, maire de Paris, né en 1746, mort en 1823</p>
                </trait>
-               <desc xml:id="CAT_000151_e252_d1"><term ana="#document_type_7">L. a. s.</term>, au conventionnel Chasles; <date date="none" type="length">10 juin, an II</date> de la République, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000151_e252_d1"><term ana="#document_type_7">L. a. s.</term>, au conventionnel Chasles; <date when="none">10 juin, an II</date> de la République, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Belle lettre où il le remercie de lui avoir envoyé une adresse des citoyens de
                   Nogent-le-Rotrou</note>
             </item>
@@ -2741,7 +2741,7 @@
                   <p>célèbre général des armées de la République, né à Arbois en 1761, mort en
                      1804</p>
                </trait>
-               <desc xml:id="CAT_000151_e259_d1"><term ana="#document_type_7">L. a. s.</term> au frère du général Moreau ; L. a. Haye, <date date="1795-02-17" type="length">29 pluviôse an III</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000151_e259_d1"><term ana="#document_type_7">L. a. s.</term> au frère du général Moreau ; L. a. Haye, <date when="1795-02-17">29 pluviôse an III</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Belle lettre où il parle de Moreau et le prie de « partager les sentiments
                   d'estime et d'attachement que j'ai voués pour la vie à mon camarade Moreau.</note>
             </item>
@@ -2847,7 +2847,7 @@
                   <p>général de la République et de l'Empire, célèbre par son brillant fait d'armes
                      de Montenotte, né à Saint-Fortunat (Ardèche) en 1759, mort en 1842</p>
                </trait>
-               <desc xml:id="CAT_000151_e270_d1">2 l. <term ana="#document_type_15">a. s.</term> au général Dugua, au Caire; quartier-général de Gubebatte, 9-<date date="1799-12-01" type="length">10 frimaire an VIII</date>. 2p. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têtes imp., vignettes. Légèrement écornées.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000151_e270_d1">2 l. <term ana="#document_type_15">a. s.</term> au général Dugua, au Caire; quartier-général de Gubebatte, 9-<date when="1799-12-01">10 frimaire an VIII</date>. 2p. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têtes imp., vignettes. Légèrement écornées.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Intéressantes lettres sur l'expédition d'Egypte</note>
             </item>
             <item n="271" xml:id="CAT_000151_e271">

@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -366,7 +366,7 @@
                <trait>
                   <p>une des femmes les plus célèbres du XVIIIe siècle, amie de J.-J. Rousseau</p>
                </trait>
-               <desc xml:id="CAT_000078_e15_d1"><term ana="#document_type_9">Let. sig.</term>; <date date="1802-03-18" type="length">27 ventôse an X</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000078_e15_d1"><term ana="#document_type_9">Let. sig.</term>; <date when="1802-03-18">27 ventôse an X</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="16" xml:id="CAT_000078_e16">
                <num type="lot">16</num>
@@ -1046,7 +1046,7 @@
                   <p>évêque de Senlis, puis archevêque de Malines, aumônier de Louis XV, membre de
                      l'Acad. franc., né près de Rodez en 1721, mort en 1818</p>
                </trait>
-               <desc xml:id="CAT_000078_e76_d1"><term ana="#document_type_7">L. a. s.</term> au géographe Robert; Malines, <date date="1802-07-22" type="length">3 thermidor an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000078_e76_d1"><term ana="#document_type_7">L. a. s.</term> au géographe Robert; Malines, <date when="1802-07-22">3 thermidor an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Très-belle lettre relative à la réception qui lui a été faite dans son diocèse
                   : « Comme vous connoissés bien les habitants de ce pays-ci, vous ne serez pas
                   surpris d'apprendre que j'y ai été reçu et installé avec la plus grande
@@ -1258,7 +1258,7 @@
                <trait>
                   <p>auteur dramatique et médecin français du commencement de ce siècle</p>
                </trait>
-               <desc xml:id="CAT_000078_e96_d1"><term ana="#document_type_4">P. s.</term>, signée aussi par les auteurs Châteauvieux et Fleureau de Ligny; Paris, <date date="1800-08-03" type="length">15 therm. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000078_e96_d1"><term ana="#document_type_4">P. s.</term>, signée aussi par les auteurs Châteauvieux et Fleureau de Ligny; Paris, <date when="1800-08-03">15 therm. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Cession au libraire Fages, d'une pantomime faite par eux en collaboration, et
                   ayant pour titre : Maria ou la Forêt de Limberg</note>
             </item>
@@ -1477,7 +1477,7 @@
                   <p>poète, auteur dramatique et chansonnier, le rénovateur du vaudeville français,
                      né en 1755, mort en 1832</p>
                </trait>
-               <desc xml:id="CAT_000078_e117_d1"><term ana="#document_type_7">L. a. s.</term> au maire de Fontainebleau; Paris, <date date="1794-01-28" type="length">9 pluviôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000078_e117_d1"><term ana="#document_type_7">L. a. s.</term> au maire de Fontainebleau; Paris, <date when="1794-01-28">9 pluviôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Il lui demande des renseignements sur M. Guneter, professeur de musique</note>
             </item>
             <item n="118" xml:id="CAT_000078_e118">
@@ -1516,7 +1516,7 @@
             <item n="123" xml:id="CAT_000078_e123">
                <num type="lot">123</num>
                <name type="author">Angleterre.</name>
-               <desc xml:id="CAT_000078_e123_d1">1° Mémoire sur l'Isle de Wigt et sur Gosport, manuscrit du XVIIIe siècle, d'environ <measure type="length" unit="p" n="50">50 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> à mi-marges;</desc><desc xml:id="CAT_000078_e123_d2">2° <term ana="#document_type_7">L. a. s.</term>, en français, d'un nommé Hugues O'Hanlon, au Premier Consul, datéé de Paris, le <date date="1803-05-25" type="length">5 prairial an XI</date>, <measure type="length" unit="p" n="6">6 p.</measure> grand <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très-curieuse lettre sur l'expédition d'Irlande;</desc><desc xml:id="CAT_000078_e123_d3">3° Politique de l'Angleterre envers l'Espagne ou Revue de l'Etat social et politique des provinces Basques, suivie de quelques remarques sur les événements, récents arrivés en Espagne, par un noble anglais, manuscrit du milieu du XIXe siècle, d'environ <measure type="length" unit="p" n="100">100 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000078_e123_d1">1° Mémoire sur l'Isle de Wigt et sur Gosport, manuscrit du XVIIIe siècle, d'environ <measure type="length" unit="p" n="50">50 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> à mi-marges;</desc><desc xml:id="CAT_000078_e123_d2">2° <term ana="#document_type_7">L. a. s.</term>, en français, d'un nommé Hugues O'Hanlon, au Premier Consul, datéé de Paris, le <date when="1803-05-25">5 prairial an XI</date>, <measure type="length" unit="p" n="6">6 p.</measure> grand <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très-curieuse lettre sur l'expédition d'Irlande;</desc><desc xml:id="CAT_000078_e123_d3">3° Politique de l'Angleterre envers l'Espagne ou Revue de l'Etat social et politique des provinces Basques, suivie de quelques remarques sur les événements, récents arrivés en Espagne, par un noble anglais, manuscrit du milieu du XIXe siècle, d'environ <measure type="length" unit="p" n="100">100 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="124" xml:id="CAT_000078_e124">
                <num type="lot">124</num>
@@ -1526,7 +1526,7 @@
             <item n="125" xml:id="CAT_000078_e125">
                <num type="lot">125</num>
                <name type="author">Révolution.</name>
-               <desc xml:id="CAT_000078_e125_d1">1° L. a. s. de Lelièvre, sig. aussi par Faure, administrateurs de police chargés de la surveillance des spectacles, au citoyen Sallé, <date date="1794-06-12" type="length">24 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Ils lui annoncent qu'ils ont lu la <term ana="#document_type_3">pièce intitulée : Le Cabinet de Calonne ou les projets détruits, prophétie en deux actes en prose. « Pièce à rejeter comme contraire aux principes de haine qui doivent être inculqués dans le coeur de tout bon français, qui doit se faire un devoir sacré de porter sa haine patriotique au plus haut</term> point pour cet infâme peuple. »</desc><desc xml:id="CAT_000078_e125_d2">2° <term ana="#document_type_4">P. s.</term> par Ollivier Descloseaux, président, et Langlois, secrétaire du district de Saint-Philippe du Roule ; Paris, <date when="1789-11-19">19 novembre 1789</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000078_e125_d1">1° L. a. s. de Lelièvre, sig. aussi par Faure, administrateurs de police chargés de la surveillance des spectacles, au citoyen Sallé, <date when="1794-06-12">24 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Ils lui annoncent qu'ils ont lu la <term ana="#document_type_3">pièce intitulée : Le Cabinet de Calonne ou les projets détruits, prophétie en deux actes en prose. « Pièce à rejeter comme contraire aux principes de haine qui doivent être inculqués dans le coeur de tout bon français, qui doit se faire un devoir sacré de porter sa haine patriotique au plus haut</term> point pour cet infâme peuple. »</desc><desc xml:id="CAT_000078_e125_d2">2° <term ana="#document_type_4">P. s.</term> par Ollivier Descloseaux, président, et Langlois, secrétaire du district de Saint-Philippe du Roule ; Paris, <date when="1789-11-19">19 novembre 1789</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Nomination de huit notables adjoints pour assister à l'instruction des procès
                   criminels.</note>
             </item>

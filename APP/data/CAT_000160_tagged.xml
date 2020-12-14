@@ -63,7 +63,7 @@
                correspond to documents for sale. All text preceding or succeeding the list of
                documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -478,7 +478,7 @@
                   <p>phil mihrope et homme politique, de l'Acad. des Sciences, né en 1747, mort en
                      1827.</p>
                </trait>
-               <desc xml:id="CAT_000160_e25_d1"><term ana="#document_type_2">P. a. s. avec 10 lig. aut. sig.</term> d'Audier-Massillon, député d'Aix à la Constituante, sig. aussi par Duquesnoy, député de Bar-le-Duc à la Constituante, et Lombard de Taradeau, député de Draguignan à la Constituante; Paris, <date date="1800-03-04" type="length">13 ventôse an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000160_e25_d1"><term ana="#document_type_2">P. a. s. avec 10 lig. aut. sig.</term> d'Audier-Massillon, député d'Aix à la Constituante, sig. aussi par Duquesnoy, député de Bar-le-Duc à la Constituante, et Lombard de Taradeau, député de Draguignan à la Constituante; Paris, <date when="1800-03-04">13 ventôse an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Très curieuse pièce où le duc de La Rochefoucauld demande sa radiation
                   définitive de la liste des émigrés.</note>
             </item>
@@ -914,7 +914,7 @@
             <item n="69" xml:id="CAT_000160_e69">
                <num type="lot">69</num>
                <name type="author">Cailhava (J.-Franc.)</name>
-               <desc xml:id="CAT_000160_e69_d1"><term ana="#document_type_7">L. a. s.</term> à Grimod de la Reynière ; Paris, <date date="1803-01-02" type="length">12 nivôse an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000160_e69_d1"><term ana="#document_type_7">L. a. s.</term> à Grimod de la Reynière ; Paris, <date when="1803-01-02">12 nivôse an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle lettre de félicitations sur son petit ouvrage (La Vision d'un
                   bonhomme).</note>
             </item>
@@ -931,7 +931,7 @@
             <item n="72" xml:id="CAT_000160_e72">
                <num type="lot">72</num>
                <name type="author">Collin d'Harleville (J.-F.)</name>
-               <desc xml:id="CAT_000160_e72_d1"><term ana="#document_type_7">L. a. s.</term>; an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000160_e72_d1"><term ana="#document_type_7">L. a. s.</term>; an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
             </item>
             <item n="73" xml:id="CAT_000160_e73">
                <num type="lot">73</num>
@@ -1089,7 +1089,7 @@
             <item n="101" xml:id="CAT_000160_e101">
                <num type="lot">101</num>
                <name type="author">Laplace (P.-Simon de)</name>
-               <desc xml:id="CAT_000160_e101_d1"><term ana="#document_type_9">Let. sig.</term>; <date date="1805-07-19" type="length">30 messidor an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000160_e101_d1"><term ana="#document_type_9">Let. sig.</term>; <date when="1805-07-19">30 messidor an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="102" xml:id="CAT_000160_e102">
                <num type="lot">102</num>
@@ -1227,7 +1227,7 @@
             <item n="127" xml:id="CAT_000160_e127">
                <num type="lot">127</num>
                <name type="author">Saint-Pierre (Bernardin de)</name>
-               <desc xml:id="CAT_000160_e127_d1"><term ana="#document_type_4">Pièce sig</term>. avec 2 lig. aut. ; Paris, <date date="1795-11-17" type="length">26 brumaire an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000160_e127_d1"><term ana="#document_type_4">Pièce sig</term>. avec 2 lig. aut. ; Paris, <date when="1795-11-17">26 brumaire an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="128" xml:id="CAT_000160_e128">
                <num type="lot">128</num>
@@ -1277,7 +1277,7 @@
             <item n="135" xml:id="CAT_000160_e135">
                <num type="lot">135</num>
                <name type="author">Sicard (R.-A. abbé)</name>
-               <desc xml:id="CAT_000160_e135_d1"><term ana="#document_type_7">L. a. sig.</term> l'Instituteur des sourds-muets à une dame; an <date date="1799-1800" type="length">VIII</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000160_e135_d1"><term ana="#document_type_7">L. a. sig.</term> l'Instituteur des sourds-muets à une dame; an <date when="1799-1800">VIII</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="136" xml:id="CAT_000160_e136">
                <num type="lot">136</num>
@@ -1325,7 +1325,7 @@
             <item n="144" xml:id="CAT_000160_e144">
                <num type="lot">144</num>
                <name type="author">Volney (C.-F comte)</name>
-               <desc xml:id="CAT_000160_e144_d1"><term ana="#document_type_7">L. a. s.</term> ; <date date="1794-05-23" type="length">4 prairial an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000160_e144_d1"><term ana="#document_type_7">L. a. s.</term> ; <date when="1794-05-23">4 prairial an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>ACTEURS 2 ACIRiCES.</note>
             </item>
             <item n="145" xml:id="CAT_000160_e145">
@@ -1374,7 +1374,7 @@
                <trait>
                   <p>dit).</p>
                </trait>
-               <desc xml:id="CAT_000160_e152_d1"><term ana="#document_type_7">L. a. s.</term>, Metz, <date date="1803-01-30" type="length">10 pluviôse an XI</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000160_e152_d1"><term ana="#document_type_7">L. a. s.</term>, Metz, <date when="1803-01-30">10 pluviôse an XI</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="153" xml:id="CAT_000160_e153">
                <num type="lot">153</num>
@@ -1522,7 +1522,7 @@
             <item n="179" xml:id="CAT_000160_e179">
                <num type="lot">179</num>
                <name type="author">Elleviou (P.-J.-B.-F.)</name>
-               <desc xml:id="CAT_000160_e179_d1"><term ana="#document_type_4">Pièce sig</term>. avec une lig. aut.; an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="0.75">3/4 de p</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000160_e179_d1"><term ana="#document_type_4">Pièce sig</term>. avec une lig. aut.; an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="0.75">3/4 de p</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Reçu de 500 francs comme sociétaire de l'Opéra-Comique.</note>
             </item>
             <item n="180" xml:id="CAT_000160_e180">
@@ -1891,7 +1891,7 @@
             <item n="247" xml:id="CAT_000160_e247">
                <num type="lot">247</num>
                <name type="author">Gossec (Fr.-Jos.)</name>
-               <desc xml:id="CAT_000160_e247_d1"><term ana="#document_type_4">Pièce sig</term>. ; an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000160_e247_d1"><term ana="#document_type_4">Pièce sig</term>. ; an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="248" xml:id="CAT_000160_e248">
                <num type="lot">248</num>
@@ -1901,7 +1901,7 @@
             <item n="249" xml:id="CAT_000160_e249">
                <num type="lot">249</num>
                <name type="author">Grétry (A.-M.)</name>
-               <desc xml:id="CAT_000160_e249_d1"><term ana="#document_type_7">L. a. s.</term> aux citoyens composant la section Lepelletier, à Paris, <date date="1794-04-23" type="length">4 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000160_e249_d1"><term ana="#document_type_7">L. a. s.</term> aux citoyens composant la section Lepelletier, à Paris, <date when="1794-04-23">4 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Par suite de l'arrestation du citoyen Potier de Lille, imprimeur, il réclame
                   les planches d'étain de 28 opéras : « Ces opéras sont trop connus pour qu'on
                   puisse douter qu'ils ne m'appartiennent.»</note>
@@ -2364,7 +2364,7 @@
             <item n="327" xml:id="CAT_000160_e327">
                <num type="lot">327</num>
                <name type="author">Millevoye (Ch.)</name>
-               <desc xml:id="CAT_000160_e327_d1"><term ana="#document_type_7">L. a. s.</term> à Laya (de l'Acad. fr.); Paris, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000160_e327_d1"><term ana="#document_type_7">L. a. s.</term> à Laya (de l'Acad. fr.); Paris, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="328" xml:id="CAT_000160_e328">
                <num type="lot">328</num>
@@ -2723,7 +2723,7 @@
             <item n="374" xml:id="CAT_000160_e374">
                <num type="lot">374</num>
                <name type="author">Postes</name>
-               <desc xml:id="CAT_000160_e374_d0">6 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000160_e374_d1">1° <term ana="#document_type_4">Pièce sig</term>. sur velin par Fr.-Michel Le Tellier, marquis de Loucois, surintendant géneral des postes; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure> Jaunie</desc><desc xml:id="CAT_000160_e374_d2">2° <term ana="#document_type_4">Pièce sig</term>. sur vélin par J.-B. Colbert, marquis de Torcy, grand-maître et surintendant général des postes; Paris, <date when="1719-04-25">25 avril 1719</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure></desc><desc xml:id="CAT_000160_e374_d3">3° <term ana="#document_type_4">Pièce sig</term>. sur vélin de Louis XVI (par le secrétaire de la main), contresignée par Amelot; <date when="1780">1780</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure></desc><desc xml:id="CAT_000160_e374_d4">4° <term ana="#document_type_4">Pièce sig</term>. par Lavallette, commissaire central des ostes; <date date="1804-01-25" type="length">4 pluviôse an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> ripée et lachée.</desc><desc xml:id="CAT_000160_e374_d5">-5° <term ana="#document_type_4">Pièce sig</term>. de Dupleix de Méry, directeur général des postes; <date when="1821-07-02">2 juillet 1821</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000160_e374_d6">6° Affiche donnant avis au public de la reprise du service postal avec la province; Paris, <date when="1871-02-12">12 fév. 1871</date>, 1/4 colombier obl. Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000160_e374_d0">6 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000160_e374_d1">1° <term ana="#document_type_4">Pièce sig</term>. sur velin par Fr.-Michel Le Tellier, marquis de Loucois, surintendant géneral des postes; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure> Jaunie</desc><desc xml:id="CAT_000160_e374_d2">2° <term ana="#document_type_4">Pièce sig</term>. sur vélin par J.-B. Colbert, marquis de Torcy, grand-maître et surintendant général des postes; Paris, <date when="1719-04-25">25 avril 1719</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure></desc><desc xml:id="CAT_000160_e374_d3">3° <term ana="#document_type_4">Pièce sig</term>. sur vélin de Louis XVI (par le secrétaire de la main), contresignée par Amelot; <date when="1780">1780</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure></desc><desc xml:id="CAT_000160_e374_d4">4° <term ana="#document_type_4">Pièce sig</term>. par Lavallette, commissaire central des ostes; <date when="1804-01-25">4 pluviôse an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> ripée et lachée.</desc><desc xml:id="CAT_000160_e374_d5">-5° <term ana="#document_type_4">Pièce sig</term>. de Dupleix de Méry, directeur général des postes; <date when="1821-07-02">2 juillet 1821</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000160_e374_d6">6° Affiche donnant avis au public de la reprise du service postal avec la province; Paris, <date when="1871-02-12">12 fév. 1871</date>, 1/4 colombier obl. Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="375" xml:id="CAT_000160_e375">
                <num type="lot">375</num>

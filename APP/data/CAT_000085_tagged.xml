@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -682,7 +682,7 @@
                   <p>chef de la Commission des armes en 1793, ministre de l'intérieur sous le
                      Directoire, né à Montpellier, mort à Saint-Domingue en 1802</p>
                </trait>
-               <desc xml:id="CAT_000085_e56_d1"><term ana="#document_type_7">L. a. s.</term> au représentant Delacroix, à Mézières; Paris, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000085_e56_d1"><term ana="#document_type_7">L. a. s.</term> au représentant Delacroix, à Mézières; Paris, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note anchored="true">Belle lettre relative aux manufactures d'armes de Charleville
                   et de Sédan</note>
             </item>
@@ -710,7 +710,7 @@
                <trait>
                   <p>maréchal de France, roi de Suède</p>
                </trait>
-               <desc xml:id="CAT_000085_e59_d1"><term ana="#document_type_7">L. a. s.</term>; Sceaux-l'Unité, <date date="1798-06-23" type="length">5 mess, an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000085_e59_d1"><term ana="#document_type_7">L. a. s.</term>; Sceaux-l'Unité, <date when="1798-06-23">5 mess, an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="60" xml:id="CAT_000085_e60">
                <num type="lot">60</num>
@@ -964,7 +964,7 @@
                <trait>
                   <p>conventionnel montagnard, député de l'Hérault et du Gers</p>
                </trait>
-               <desc xml:id="CAT_000085_e87_d1"><term ana="#document_type_7">L. a. s.</term> à Ramel ; Mirande, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000085_e87_d1"><term ana="#document_type_7">L. a. s.</term> à Ramel ; Mirande, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Belle et curieuse lettre sur sa mission aux armées des
                   Pyrénées, et sur son état de fortune</note>
             </item>
@@ -1235,7 +1235,7 @@
                   <p>savant mathématicien et physicien, un des premiers propagateurs du galvanisme
                      eu France</p>
                </trait>
-               <desc xml:id="CAT_000085_e117_d1"><term ana="#document_type_7">L. a. s.</term>; Malaga, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000085_e117_d1"><term ana="#document_type_7">L. a. s.</term>; Malaga, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="118" xml:id="CAT_000085_e118">
                <num type="lot">118</num>
@@ -1388,7 +1388,7 @@
                <trait>
                   <p>savant naturaliste, d'une famille originaire de Reims</p>
                </trait>
-               <desc xml:id="CAT_000085_e134_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1804-1805" type="length">XIII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000085_e134_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1804-1805">XIII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note anchored="true">Relative à son illustratio inconographica insectorum, son
                   principal ouvrage, devenu fort rare</note>
             </item>
@@ -1474,7 +1474,7 @@
                   <p>mathématicien et physicien distingué, de l'Acad. des sc., président du
                      département de Paris</p>
                </trait>
-               <desc xml:id="CAT_000085_e144_d1"><term ana="#document_type_9">L. s.</term>, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000085_e144_d1"><term ana="#document_type_9">L. s.</term>, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="145" xml:id="CAT_000085_e145">
                <num type="lot">145</num>
@@ -1507,7 +1507,7 @@
                <trait>
                   <p>conventionnel montagnard, né à Montpellier</p>
                </trait>
-               <desc xml:id="CAT_000085_e148_d1">-<term ana="#document_type_4">Pièce sig</term>., an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000085_e148_d1">-<term ana="#document_type_4">Pièce sig</term>., an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="149" xml:id="CAT_000085_e149">
                <num type="lot">149</num>
@@ -1515,7 +1515,7 @@
                <trait>
                   <p>député de l'Hérault au Conseil des Cinq-Cents, sénateur, né à Montpellier</p>
                </trait>
-               <desc xml:id="CAT_000085_e149_d1"><term ana="#document_type_7">L. a. s.</term>; Bruxelles, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000085_e149_d1"><term ana="#document_type_7">L. a. s.</term>; Bruxelles, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="150" xml:id="CAT_000085_e150">
                <num type="lot">150</num>
@@ -1699,7 +1699,7 @@
                   <p>littérateur célèbre, auteur des Lettres à Emilie, associé de l'Institut, né à
                      Villers-Cotterets</p>
                </trait>
-               <desc xml:id="CAT_000085_e170_d1">-Reçu sig. relatif à la représentation de sa comédie les Femmes, au théâtre Feydeau, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000085_e170_d1">-Reçu sig. relatif à la représentation de sa comédie les Femmes, au théâtre Feydeau, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="171" xml:id="CAT_000085_e171">
                <num type="lot">171</num>
@@ -1789,7 +1789,7 @@
                <trait>
                   <p>pianiste distingué et compositeur</p>
                </trait>
-               <desc xml:id="CAT_000085_e181_d1">-Reçu <term ana="#document_type_15">aut. sig.</term>, an <date date="1797-1798" type="length">VI</date>, 1 <measure type="length" unit="p" n="0">4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cession, à l'éditeur Frère, d'un de ses pots-pourris.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000085_e181_d1">-Reçu <term ana="#document_type_15">aut. sig.</term>, an <date when="1797-1798">VI</date>, 1 <measure type="length" unit="p" n="0">4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cession, à l'éditeur Frère, d'un de ses pots-pourris.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="182" xml:id="CAT_000085_e182">
                <num type="lot">182</num>
@@ -2142,7 +2142,7 @@
                   <p>fameux acteur et directeur de théâtres forains, dont l'esprit d'entreprise
                      donna lieu à ce proverbe : De plus fort en plus fort, comme chez Nicolet</p>
                </trait>
-               <desc xml:id="CAT_000085_e223_d1">-<term ana="#document_type_4">Pièce sig</term>., avec ces mots autog., approuvé l'écriture, <date date="1796-01-19" type="length">29 niv. an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000085_e223_d1">-<term ana="#document_type_4">Pièce sig</term>., avec ces mots autog., approuvé l'écriture, <date when="1796-01-19">29 niv. an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note anchored="true">Procuration pour vendre les 4 pages et dépendances qu'il
                   possède à la foire Saint-Germain</note>
             </item>

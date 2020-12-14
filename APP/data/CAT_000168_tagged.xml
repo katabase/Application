@@ -29,7 +29,7 @@
                <publisher>Frédéric Naylor</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date when="1879">1879</date>
+               <date>1879</date>
             </bibl>
             <listEvent>
                <event>
@@ -65,7 +65,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -189,7 +189,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -267,7 +267,7 @@
                <trait>
                   <p>la célèbre et spirituelle actrice.</p>
                </trait>
-               <desc xml:id="CAT_000168_e7_d1"><term ana="#document_type_8">L. aut.</term> (à l'architecte Belanger); du Paraclet-Sophie, <date date="1795-02-21" type="length">3 ventôse an III</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Lettre des plus curieuses, où on remarque ce passage : « Comment ! mon bien
+               <desc xml:id="CAT_000168_e7_d1"><term ana="#document_type_8">L. aut.</term> (à l'architecte Belanger); du Paraclet-Sophie, <date when="1795-02-21">3 ventôse an III</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Lettre des plus curieuses, où on remarque ce passage : « Comment ! mon bien
                   aimé a tant souffert! ils t'ont ruiné, mon bel ange ; ils t'ont volé ! incarcéré !
                   eh ! marié !... marié ! mon amy !... Moy ! je ne le suis pas ; eh ! peu s'en faut
                   cependant que je n'aie éprouvé les mesmes tourments, les mesmes persécutions. Ils
@@ -278,13 +278,13 @@
             <item n="8" xml:id="CAT_000168_e8">
                <num type="lot">8</num>
                <name type="author">Arnould (Sophie)</name>
-               <desc xml:id="CAT_000168_e8_d1"><term ana="#document_type_8">L. aut.</term> au même; du Paraclet-Sophie, <date date="1795-04-22" type="length">3 floréal an III</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><note>Piquante épître. « Ma foy, mon bel ange, tu n'est pas changeant. Tu n'en a pas
+               <desc xml:id="CAT_000168_e8_d1"><term ana="#document_type_8">L. aut.</term> au même; du Paraclet-Sophie, <date when="1795-04-22">3 floréal an III</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><note>Piquante épître. « Ma foy, mon bel ange, tu n'est pas changeant. Tu n'en a pas
                   de prétexte, car celle que tu aime est toujours la même!»</note>
             </item>
             <item n="9" xml:id="CAT_000168_e9">
                <num type="lot">9</num>
                <name type="author">Arnould (Sophie)</name>
-               <desc xml:id="CAT_000168_e9_d1"><term ana="#document_type_7">L. a. s.</term> au même; Paris, <date date="1801-05-31" type="length">11 prairial an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><note>Très jolie lettre où elle remercie Belanger et sa femme des preuves d'amitié
+               <desc xml:id="CAT_000168_e9_d1"><term ana="#document_type_7">L. a. s.</term> au même; Paris, <date when="1801-05-31">11 prairial an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><note>Très jolie lettre où elle remercie Belanger et sa femme des preuves d'amitié
                   qu'ils lui donnent. « Eh! ne me plaignez plus tant, car je suis heureuse en ce
                   moment. Je viens de recevoir une lettre de mon hussard, de mon Constant, de ce
                   fils tant chéris par moy eh ! qui mérite si bien toutes mes tendresses...»</note>
@@ -418,7 +418,7 @@
                   <p>un des plus fougueux montagnards de la Convention, décapité en 1795, pour sa
                      participation au mouvement du 1er prairial.</p>
                </trait>
-               <desc xml:id="CAT_000168_e24_d1"><term ana="#document_type_7">L. a. s.</term> à Dudaujon; <date date="1795-05-21" type="length">2 prairial an III</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><note>Pièce historique. Il est arrêté et écrit de sa prison pour demander du linge et
+               <desc xml:id="CAT_000168_e24_d1"><term ana="#document_type_7">L. a. s.</term> à Dudaujon; <date when="1795-05-21">2 prairial an III</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><note>Pièce historique. Il est arrêté et écrit de sa prison pour demander du linge et
                   de l'argent. Ses registres contiennent la preuve de son innocence.</note>
             </item>
             <item n="25" xml:id="CAT_000168_e25">
@@ -638,7 +638,7 @@
                <trait>
                   <p>poète dramatique, de l'Académie française.</p>
                </trait>
-               <desc xml:id="CAT_000168_e48_d1"><term ana="#document_type_7">L. a. s.</term> à Bernardin de Saint-Pierre; Versailles, <date date="none" type="length">6 thermidor an XIV</date>, <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Expressions d'amitié pour Saint-Pierre. Il se fâche contre Suard, qui veut lire
+               <desc xml:id="CAT_000168_e48_d1"><term ana="#document_type_7">L. a. s.</term> à Bernardin de Saint-Pierre; Versailles, <date when="none">6 thermidor an XIV</date>, <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Expressions d'amitié pour Saint-Pierre. Il se fâche contre Suard, qui veut lire
                   à l'Académie son Epître à Gérard. Le peintre Gérard s'y oppose, et Ducis,
                   l'auteur, ne saurait désobliger son ami. « Les cendres de ma tendre mère et de ma
                   chère fille aînée reposent près de moi. Les miennes ne peuvent pas tarder à s'y
@@ -710,7 +710,7 @@
                <trait>
                   <p>député de l'Eure à la Convention, célèbre par sa mission en Vendée.</p>
                </trait>
-               <desc xml:id="CAT_000168_e56_d1"><term ana="#document_type_7">L. a. s.</term> au Comité de salut public; Angers, <date date="1793-12-23" type="length">3 nivôse an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Importante lettre sur la guerre de la Vendée. « Toutes les notions que nous
+               <desc xml:id="CAT_000168_e56_d1"><term ana="#document_type_7">L. a. s.</term> au Comité de salut public; Angers, <date when="1793-12-23">3 nivôse an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Importante lettre sur la guerre de la Vendée. « Toutes les notions que nous
                   avons acquises sur le passage de la Loire nous portent à croire qu'il n'en a point
                   passé 800 et que La Rochejaquelein et IStofflet sont leurs seuls chefs qui se
                   soient mis en sûreté par ce moyen.»</note>
@@ -782,7 +782,7 @@
                   <p>député de Seine-et-Oise à la Convention. Compromis dans l'insurrection de
                      prairial, il se tua en entendant sa condamnation.</p>
                </trait>
-               <desc xml:id="CAT_000168_e63_d1"><term ana="#document_type_8">L. aut.</term>, sig. Gou., à sa femme; Landau, <date date="1794-07-16" type="length">28 messidor an II</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure par la rupture du cachet. Rare</desc><note>Très belle lettre où il lui donne des nouvelles des succès remportés par les
+               <desc xml:id="CAT_000168_e63_d1"><term ana="#document_type_8">L. aut.</term>, sig. Gou., à sa femme; Landau, <date when="1794-07-16">28 messidor an II</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure par la rupture du cachet. Rare</desc><note>Très belle lettre où il lui donne des nouvelles des succès remportés par les
                   républicains sur les Prussiens. Curieux détails.</note>
             </item>
             <item n="64" xml:id="CAT_000168_e64">
@@ -1221,7 +1221,7 @@
                <trait>
                   <p>premier ministre sous Louis-Philippe.</p>
                </trait>
-               <desc xml:id="CAT_000168_e112_d1"><term ana="#document_type_7">L. a. s.</term> à M. Champagnon; <date date="1803-08-11" type="length">23 thermidor an XI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc></item>
+               <desc xml:id="CAT_000168_e112_d1"><term ana="#document_type_7">L. a. s.</term> à M. Champagnon; <date when="1803-08-11">23 thermidor an XI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc></item>
             <item n="113" xml:id="CAT_000168_e113">
                <num type="lot">113</num>
                <name type="author">Petion de Villeneuve (Jérôme)</name>

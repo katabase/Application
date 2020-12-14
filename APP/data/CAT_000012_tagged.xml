@@ -69,7 +69,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces selected entries</p>
          </samplingDecl>
-      <classDesc>
+      <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -193,7 +193,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc></encodingDesc>
+    </classDecl></encodingDesc>
    </teiHeader>
    <text>
       <body>
@@ -228,7 +228,7 @@
             <item n="1081" xml:id="CAT_000012_e1081">
                <num type="lot">1081</num>
                <name type="author">SÉVIGNÉ (Madame de)</name>
-               <desc xml:id="CAT_000007_e1081_d1">A. L. s. "<term ana="#document_type_8">L. a.</term> M. de Sévigné", 5 pp. 4to, "à Grignan, ce premier may" (<date when="1691">1691</date>), to the same:</desc><desc xml:id="CAT_000007_e1081_d2">A. L. 5 pp. 4to, "à Grignan, ce 15e Septembre" (<date when="1691">1691</date>), to the same:</desc><add corresp="#CAT_000012_m">
+               <desc xml:id="CAT_000012_e1081_d1">A. L. s. "<term ana="#document_type_8">L. a.</term> M. de Sévigné", 5 pp. 4to, "à Grignan, ce premier may" (<date when="1691">1691</date>), to the same:</desc><desc xml:id="CAT_000012_e1081_d2">A. L. 5 pp. 4to, "à Grignan, ce 15e Septembre" (<date when="1691">1691</date>), to the same:</desc><add corresp="#CAT_000012_m">
                   <measure commodity="currency" unit="GBP" quantity="25">25</measure>
                   <note>Vendu à Agnew.</note>
                </add>

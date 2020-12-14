@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1339,7 +1339,7 @@
                   <p>prince de la Moskowa, illustre marechal de l'Empire, né à Sarrelouis en 1769,
                      fusillé le 7 déc. 1815</p>
                </trait>
-               <desc xml:id="CAT_000107_e117_d1"><term ana="#document_type_7">L. a. s.</term> à son secrétaire Vogt, à Malgrange, près Nancy; Paris, <date date="1802-05-10" type="length">20 floréal an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000107_e117_d1"><term ana="#document_type_7">L. a. s.</term> à son secrétaire Vogt, à Malgrange, près Nancy; Paris, <date when="1802-05-10">20 floréal an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="118" xml:id="CAT_000107_e118">
                <num type="lot">118</num>
@@ -1737,7 +1737,7 @@
                   <p>peintre et graveur, un des plus gracieux portraitistes et vignettistes du
                      XVIIIe siècle</p>
                </trait>
-               <desc xml:id="CAT_000107_e153_d1"><term ana="#document_type_7">L. a. s.</term> (à l'éditeur Renouard) ; <date date="1799-06-19" type="length">1er messidor an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000107_e153_d1"><term ana="#document_type_7">L. a. s.</term> (à l'éditeur Renouard) ; <date when="1799-06-19">1er messidor an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="154" xml:id="CAT_000107_e454">
                <num type="lot">154</num>
@@ -2185,7 +2185,7 @@
                <trait>
                   <p>le célèbre diplomate, né en 1754, mort en 1838</p>
                </trait>
-               <desc xml:id="CAT_000107_e198_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Rivals, à Cassel; Paris, <date date="1802-10-22" type="length">30 vendémiaire an XI</date>, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
+               <desc xml:id="CAT_000107_e198_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Rivals, à Cassel; Paris, <date when="1802-10-22">30 vendémiaire an XI</date>, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
                <note>Importante lettre historique pour l'histoire de la Suisse à l'époque du premier
                   Empire. Il lui explique, en entrant dans de grands détails, que le Premier Consul
                   a envahi la Suisse, non pour lui enlever sa liberté, mais pour apaiser les
@@ -2799,7 +2799,7 @@
                <trait>
                   <p>littérateur et poète, traducteur d'Horace, né en 1770, mort en 1821</p>
                </trait>
-               <desc xml:id="CAT_000107_e258_d1"><term ana="#document_type_7">L. a. s.</term> à M. de L. a. Garde ; an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000107_e258_d1"><term ana="#document_type_7">L. a. s.</term> à M. de L. a. Garde ; an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="259" xml:id="CAT_000107_e259">
                <num type="lot">259</num>

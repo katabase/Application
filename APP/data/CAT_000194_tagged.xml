@@ -59,7 +59,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces the entries that correspond to documents for sale. All text preceding or succeeding the list of documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -183,7 +183,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020-07-17">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -297,7 +297,7 @@
                <trait>
                   <p>diplomate distingué, ambassadeur en Suède, à Ratisbonne et à Francfort, né à Thann (Alsace) en 1748, mort en 1813.</p>
                </trait>
-               <desc xml:id="CAT_000194_e12_d1"><term ana="#document_type_9">Let. sig.</term> aux administrateurs du district de Montbéliard; Bâle, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000194_e12_d1"><term ana="#document_type_9">Let. sig.</term> aux administrateurs du district de Montbéliard; Bâle, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="13" xml:id="CAT_000194_e13">
                <num type="lot">13</num>
@@ -330,7 +330,7 @@
                <trait>
                   <p>célèbre diplomate, président du Direc- toire, déporté après le 18 fructidor, né à Aubagne (Bouches-du-Rhône) en 1750, mort en 1830.</p>
                </trait>
-               <desc xml:id="CAT_000194_e16_d1"><term ana="#document_type_9">Let. sig.</term>, Bade, <date date="1794-07-21" type="length">3 thermidor an II</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette, têle impr avec la devise : Liberté, Egalité, Fraternité ou la Mort.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000194_e16_d1"><term ana="#document_type_9">Let. sig.</term>, Bade, <date when="1794-07-21">3 thermidor an II</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette, têle impr avec la devise : Liberté, Egalité, Fraternité ou la Mort.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Curieuse lettre au sujet d'un bruit de la formation d'un rassemblement d'émigrés en Suisse.</note>
             </item>
             <item n="17" xml:id="CAT_000194_e17">
@@ -466,7 +466,7 @@
                <trait>
                   <p>frère aîné de Napoléon Ier, roi d'Espiigne, né en 1768, mort en 1844.</p>
                </trait>
-               <desc xml:id="CAT_000194_e32_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1805-12-20" type="length">29 frimaire an XIV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000194_e32_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1805-12-20">29 frimaire an XIV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="33" xml:id="CAT_000194_e33">
                <num type="lot">33</num>
@@ -1015,7 +1015,7 @@
                <trait>
                   <p>célèbre conventionnel, le chef de la Jeunesse dorée après le 9 thermidor, né en 1765, mort en 1802.</p>
                </trait>
-               <desc xml:id="CAT_000194_e97_d1"><term ana="#document_type_4">Pièce sig</term>.. sig. aussi par les conventionnels Bouillerot et Collombel de la Meurthe ; <date date="1794-08-08" type="length">21 thermidor an II</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000194_e97_d1"><term ana="#document_type_4">Pièce sig</term>.. sig. aussi par les conventionnels Bouillerot et Collombel de la Meurthe ; <date when="1794-08-08">21 thermidor an II</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Ordre de transférer, vu son état de santé, le citoyen Delamarre, député à la Convention (un des 73 girondins proscrits), détenu dans la maison d'arrêt des Bénédictins anglais, au domicile de son épouse, poury rester sous la surveillance d'un garde.</note>
             </item>
             <item n="98" xml:id="CAT_000194_e98">
@@ -1363,7 +1363,7 @@
                <trait>
                   <p>duc de Tarente, maréchal de France, né à Sedan en 1765. mort en 1840.</p>
                </trait>
-               <desc xml:id="CAT_000194_e139_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Audeval ; Paris, <date date="1800-05-30" type="length">10 prairial an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000194_e139_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Audeval ; Paris, <date when="1800-05-30">10 prairial an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="140" xml:id="CAT_000194_e140">
                <num type="lot">140</num>
@@ -1488,7 +1488,7 @@
                <trait>
                   <p>célèbre révolutionnaire, imprimeur et écrivain sur l'imprimerie, un des membres les plus influents du club des Cordeliers, ami d'Hebert, né à Besançon en 1756, guillotiné le 24 mars 1794.</p>
                </trait>
-               <desc xml:id="CAT_000194_e154_d1"><term ana="#document_type_4">Pièce sig</term>. avec un mot aut., comme président de la section de Marat et de Marseille; an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000194_e154_d1"><term ana="#document_type_4">Pièce sig</term>. avec un mot aut., comme président de la section de Marat et de Marseille; an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="155" xml:id="CAT_000194_e155">
                <num type="lot">155</num>
@@ -1555,7 +1555,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000194_e162_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, comme Premier. Consul, sig. aussi par Alexandre Berthier et Hugues Maret; Paris, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>, vignette, cachet.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000194_e162_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, comme Premier. Consul, sig. aussi par Alexandre Berthier et Hugues Maret; Paris, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>, vignette, cachet.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="163" xml:id="CAT_000194_e163">
                <num type="lot">163</num>
@@ -1851,7 +1851,7 @@
                <trait>
                   <p>célèbre général de la garde nationale pendant la Révolution, né en 1752, mort en 1809.</p>
                </trait>
-               <desc xml:id="CAT_000194_e197_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1801-09-03" type="length">16 fructidor an IX</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000194_e197_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1801-09-03">16 fructidor an IX</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Belle lettre toute relative à sa propriété d'Eve près de Senlis. -On a joint une copie des états de service de Santerre, rédigés par le ministre Bouchotte.</note>
             </item>
             <item n="198" xml:id="CAT_000194_e198">
@@ -2205,7 +2205,7 @@
                <trait>
                   <p>célèbre conventionnel montagnard, député du Gard, membre du Comité de Sûreté générale, né à Uzès en 1750, mort en 1802.</p>
                </trait>
-               <desc xml:id="CAT_000194_e239_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, sig. aussi par les conventionnels Goupilleau de Fontenai. Vadier, Legendre, Louis du Bas-Rhin et Bernard, comme membres du Comité de Sûreté générale ; <date date="1794-08-04" type="length">17 thermidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000194_e239_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, sig. aussi par les conventionnels Goupilleau de Fontenai. Vadier, Legendre, Louis du Bas-Rhin et Bernard, comme membres du Comité de Sûreté générale ; <date when="1794-08-04">17 thermidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Ordre de mise en liberté de Patris, détenu à la maison dite des Bénédictins anglais.</note>
             </item>
             <item n="240" xml:id="CAT_000194_e240">

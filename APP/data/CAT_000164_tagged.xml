@@ -28,7 +28,7 @@
                <publisher>Frédéric Naylor</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date when="1879">1879</date>
+               <date>1879</date>
             </bibl>
             <listEvent>
                <event>
@@ -62,7 +62,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces the entries that correspond to documents for sale. All text preceding or succeeding the list of documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -224,7 +224,7 @@
                   <p>médecin, bibliothécaire de
 						Montpellier.</p>
                </trait>
-               <desc xml:id="CAT_000164_e3_d1"><term ana="#document_type_7">L. a. s.</term> à son cousin l'ingénieur Delisle ; Montpellier, <date date="1801-03-06" type="length">15 ventôse an IX</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc></item>
+               <desc xml:id="CAT_000164_e3_d1"><term ana="#document_type_7">L. a. s.</term> à son cousin l'ingénieur Delisle ; Montpellier, <date when="1801-03-06">15 ventôse an IX</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc></item>
             <item n="4" xml:id="CAT_000164_e4">
                <num>4</num>
                <name type="author">Ampère (André-Marie),</name>
@@ -424,7 +424,7 @@
                   <p>médecin, naturaliste et
 						botaniste.</p>
                </trait>
-               <desc xml:id="CAT_000164_e26_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1800-10-18" type="length">26 vendém. an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Déchirure.</desc><note>Envoi d'un compte rendu de ses travaux
+               <desc xml:id="CAT_000164_e26_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1800-10-18">26 vendém. an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Déchirure.</desc><note>Envoi d'un compte rendu de ses travaux
 						botaniques.</note>
             </item>
             <item n="27" xml:id="CAT_000164_e27">
@@ -458,7 +458,7 @@
                   <p>fameux conventionnel, décapité en
 						1794.</p>
                </trait>
-               <desc xml:id="CAT_000164_e30_d1"><date date="none" type="length"><measure type="length" unit="p" n="2">2 p.</measure> s.; an II</date>, 2 p. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et têtes impr. Belles <term ana="#document_type_4">pièces.</term></desc></item>
+               <desc xml:id="CAT_000164_e30_d1"><date when="none"><measure type="length" unit="p" n="2">2 p.</measure> s.; an II</date>, 2 p. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et têtes impr. Belles <term ana="#document_type_4">pièces.</term></desc></item>
             <item n="31" xml:id="CAT_000164_e31">
                <num>31</num>
                <name type="author">Cassini (Henri de),</name>
@@ -466,7 +466,7 @@
                   <p>botaniste, de l'Acad. des
 						Sciences.</p>
                </trait>
-               <desc xml:id="CAT_000164_e31_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Hervet; Thury, <date date="1801-12-19" type="length">28 frimaire an X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc></item>
+               <desc xml:id="CAT_000164_e31_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Hervet; Thury, <date when="1801-12-19">28 frimaire an X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc></item>
             <item n="32" xml:id="CAT_000164_e32">
                <num>32</num>
                <name type="author">Castel (René),</name>
@@ -757,7 +757,7 @@
                   <p>romancier, auteur du Comte de
 						Valmont.</p>
                </trait>
-               <desc xml:id="CAT_000164_e66_d1"><term ana="#document_type_7">L. a. s.</term>; Passy, <date date="1804-04-20" type="length">29 germinal an XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rognée en tête.</desc></item>
+               <desc xml:id="CAT_000164_e66_d1"><term ana="#document_type_7">L. a. s.</term>; Passy, <date when="1804-04-20">29 germinal an XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rognée en tête.</desc></item>
             <item n="67" xml:id="CAT_000164_e67">
                <num>67</num>
                <name type="author">Girodet-Trioson (A.-L.),</name>
@@ -921,7 +921,7 @@
                   <p>célèbre général et
 						député.</p>
                </trait>
-               <desc xml:id="CAT_000164_e85_d1">1° <term ana="#document_type_7">L. a. s.</term>; L. a. Grange, <date date="1801-02-07" type="length">18 pluviôse an IX</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000164_e85_d2">2° <term ana="#document_type_7">L. a. s.</term> à M. Toré; Paris, <date when="1824-04-25">25 avril 1824</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Curieuse
+               <desc xml:id="CAT_000164_e85_d1">1° <term ana="#document_type_7">L. a. s.</term>; L. a. Grange, <date when="1801-02-07">18 pluviôse an IX</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000164_e85_d2">2° <term ana="#document_type_7">L. a. s.</term> à M. Toré; Paris, <date when="1824-04-25">25 avril 1824</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Curieuse
 						épître de recommandation en faveur de Mme Bidault, soeur de Pommier, un des
 						quatre sergents de La Rochelle. Intéressants détails.</note>
             </item>
@@ -1062,7 +1062,7 @@
                   <p>célèbre physicien et hydrographe,
 						de l'Acad. des Sciences.</p>
                </trait>
-               <desc xml:id="CAT_000164_e101_d1"><term ana="#document_type_7">L. a. s.</term> à un confrère ; Paris, <date date="1801-12-08" type="length">17 frimaire an X</date>, <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Il expose les raisons qui l'ont empêché de se
+               <desc xml:id="CAT_000164_e101_d1"><term ana="#document_type_7">L. a. s.</term> à un confrère ; Paris, <date when="1801-12-08">17 frimaire an X</date>, <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Il expose les raisons qui l'ont empêché de se
 						rendre à Gand pour les examens.</note>
             </item>
             <item n="102" xml:id="CAT_000164_e102">
@@ -1172,7 +1172,7 @@
                   <p>célèbre astronome, membre de
 						l'Institut.</p>
                </trait>
-               <desc xml:id="CAT_000164_e114_d1"><term ana="#document_type_7">L. a. s.</term> au général Calon; Carcassonne, <date date="1796-12-31" type="length">11 nivôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Lettre écrite en sa qualité de « chargé de
+               <desc xml:id="CAT_000164_e114_d1"><term ana="#document_type_7">L. a. s.</term> au général Calon; Carcassonne, <date when="1796-12-31">11 nivôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Lettre écrite en sa qualité de « chargé de
 						continuer les opérations de la Méridienne dans le midi de la
 						République.»</note>
             </item>
@@ -1223,7 +1223,7 @@
                   <p>célèbre chanteur, mort par suicide en
 						1802.</p>
                </trait>
-               <desc xml:id="CAT_000164_e120_d1"><term ana="#document_type_7">L. a. s.</term> à Camerani ; Amiens, <date date="none" type="length">29 août an V</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Déchirures par la rupture du cachet. Très
+               <desc xml:id="CAT_000164_e120_d1"><term ana="#document_type_7">L. a. s.</term> à Camerani ; Amiens, <date when="none">29 août an V</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Déchirures par la rupture du cachet. Très
 						intéressante lettre où il lui narre les éclatants succès qu'il vient
 						d'obtenir à Amiens.</note>
             </item>
@@ -1324,7 +1324,7 @@
                   <p>botaniste, qui a fait partie de
 						l'expédition d'Egypte.</p>
                </trait>
-               <desc xml:id="CAT_000164_e130_d1"><term ana="#document_type_7">L. a. s.</term> à Thouin; à bord la corvette anglaise le GoodDessing, en rade de Toulon, <date date="1801-11-15" type="length">24 brumaire an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Passée au vinaigre.</desc><note>Curieuse épître où il lui mande son arrivée
+               <desc xml:id="CAT_000164_e130_d1"><term ana="#document_type_7">L. a. s.</term> à Thouin; à bord la corvette anglaise le GoodDessing, en rade de Toulon, <date when="1801-11-15">24 brumaire an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Passée au vinaigre.</desc><note>Curieuse épître où il lui mande son arrivée
 						en France après l'évacuation de l'Egypte. Il apporte une ample collection de
 						grains de toutes les productions de ce pays.</note>
             </item>
@@ -1495,7 +1495,7 @@
                   <p>célèbre tragédienne du
 					Théâtre-Français.</p>
                </trait>
-               <desc xml:id="CAT_000164_e149_d1"><term ana="#document_type_7">L. a. s.</term> aux commissaires de la section de la Montagne; <date date="1794-06-13" type="length">25 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><note>Recommandation en faveur d'un
+               <desc xml:id="CAT_000164_e149_d1"><term ana="#document_type_7">L. a. s.</term> aux commissaires de la section de la Montagne; <date when="1794-06-13">25 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><note>Recommandation en faveur d'un
 						père de famille très infortuné.</note>
             </item>
             <item n="150" xml:id="CAT_000164_e150">
@@ -1515,7 +1515,7 @@
                <trait>
                   <p>célèbre conventionnel.</p>
                </trait>
-               <desc xml:id="CAT_000164_e151_d1"><term ana="#document_type_7">L. a. s.</term> à Pomme; port de la Montagne, <date date="1794-01-02" type="length">13 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr.</desc><note>Il mande qu'il va accompagner les
+               <desc xml:id="CAT_000164_e151_d1"><term ana="#document_type_7">L. a. s.</term> à Pomme; port de la Montagne, <date when="1794-01-02">13 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr.</desc><note>Il mande qu'il va accompagner les
 						troupes en Corse.</note>
             </item>
             <item n="152" xml:id="CAT_000164_e152">

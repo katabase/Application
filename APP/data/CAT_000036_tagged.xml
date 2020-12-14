@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -259,7 +259,7 @@
                <trait>
                   <p>général en chef de l'armée d'Italie</p>
                </trait>
-               <desc xml:id="CAT_000036_e6_d1"><term ana="#document_type_9">L. s.</term> à l'agent des vivres de l'armée d'Italie ; Albenga, <date date="1796-04-06" type="length">17 germ. an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Relative aux débuts de la célèbre campagne d'Italie.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000036_e6_d1"><term ana="#document_type_9">L. s.</term> à l'agent des vivres de l'armée d'Italie ; Albenga, <date when="1796-04-06">17 germ. an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Relative aux débuts de la célèbre campagne d'Italie.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="7" xml:id="CAT_000036_e7">
                <num type="lot">7</num>

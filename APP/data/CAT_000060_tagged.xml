@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -220,7 +220,7 @@
                   <p>homme politique, membre de la Convention, où il défendit Carrier, députe de la
                      Moselle</p>
                </trait>
-               <desc xml:id="CAT_000060_e2_d1"><term ana="#document_type_7">L. a. s.</term> au général Dumouriez; Paris, an <date date="1792-1793" type="length">I</date>er, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000060_e2_d1"><term ana="#document_type_7">L. a. s.</term> au général Dumouriez; Paris, an <date when="1792-1793">I</date>er, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettre historique se rapportant aux premières victoires des armées de la
                   République. La bataille de Valmy venait d'avoir lieu. « Vos exploits sont si beaux
                   que je n'ay pas d'expressions pour les peindre. Votre lettre au général prussien
@@ -298,7 +298,7 @@
                <trait>
                   <p>ministre de la justice en 1793, membre dn Directoire, auteur de Mémoires</p>
                </trait>
-               <desc xml:id="CAT_000060_e9_d1"><term ana="#document_type_7">L. a. s.</term> à Champein; au Morais, près Argenteuil, <date date="1797-07-24" type="length">6 thermidor an V</date>, <measure type="length" unit="p" n="4">4 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000060_e9_d1"><term ana="#document_type_7">L. a. s.</term> à Champein; au Morais, près Argenteuil, <date when="1797-07-24">6 thermidor an V</date>, <measure type="length" unit="p" n="4">4 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Très-belle lettre intime. Il lui annonce la nomination de Hoche, leur ami
                   commun au Ministère de la Guerre, et l'obstacle qui l'a rendue inutile. (On sait
                   que son défaut d'âge, car il avait, moins de trente ans, ne lui permit pas
@@ -509,7 +509,7 @@
                <trait>
                   <p>célèbre peintre et graveur, né en 1733, mort en 1808</p>
                </trait>
-               <desc xml:id="CAT_000060_e33_d1"><term ana="#document_type_4">Pièce sig</term>. des membres du Comité de sûreté générale Merlin de Thionville, Lacoste, Vadier, Goupilleau de Fontenay, Legendre, Louis, du Bas-Rhin, etc.; <date date="1794-08-04" type="length">17 thermidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Sceau.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000060_e33_d1"><term ana="#document_type_4">Pièce sig</term>. des membres du Comité de sûreté générale Merlin de Thionville, Lacoste, Vadier, Goupilleau de Fontenay, Legendre, Louis, du Bas-Rhin, etc.; <date when="1794-08-04">17 thermidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Sceau.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Ordre de mettre le citoyen Robert en liberté. (On sait qu'il fut arrêté à
                   l'époque de la Révolution et que le hasard seul lui sauva la vie : un prisonnier
                   qui portait le même nom que lui monta à sa place sur l'échafaud.)</note>

@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1218,7 +1218,7 @@
                   <p>célèbre poète dramatique, de l'Acad. fr., né à Maintenon (Eure-et-Loir) en
                      1755, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000108_e118_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Paris, <date date="1796-07-19" type="length">1er thermidor an IV</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000108_e118_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Paris, <date when="1796-07-19">1er thermidor an IV</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="119" xml:id="CAT_000108_e119">
                <num type="lot">119</num>
@@ -1526,7 +1526,7 @@
                   <p>le célèbre poète tragique, de l'Acad. fr., né à Versailles en 1733, mort en
                      1816</p>
                </trait>
-               <desc xml:id="CAT_000108_e154_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, Paris, <date date="1796-04-06" type="length">17 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000108_e154_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, Paris, <date when="1796-04-06">17 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="155" xml:id="CAT_000108_e155">
                <num type="lot">155</num>
@@ -2485,7 +2485,7 @@
                   <p>célèbre acteur de la Comédie-Française, de l'Institut, né à Lunéville en 1745,
                      mort en 1812</p>
                </trait>
-               <desc xml:id="CAT_000108_e267_d1"><term ana="#document_type_5">Billet aut. sig.</term> ; <date date="1799-07-01" type="length">13 messidor an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000108_e267_d1"><term ana="#document_type_5">Billet aut. sig.</term> ; <date when="1799-07-01">13 messidor an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="268" xml:id="CAT_000108_e268">
                <num type="lot">268</num>
@@ -2916,7 +2916,7 @@
                   <p>peintre et graveur, un des plus gracieux portraitistes et vignettistes du
                      XVIIIe siècle</p>
                </trait>
-               <desc xml:id="CAT_000108_e316_d1"><term ana="#document_type_4">Pièce sig</term>., Paris, <date date="1797-07-26" type="length">8 thermidor an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000108_e316_d1"><term ana="#document_type_4">Pièce sig</term>., Paris, <date when="1797-07-26">8 thermidor an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Reçu de 300 livres, à compte sur le nouveau frontispice de
                   l'Encyclopédie</note>
             </item>

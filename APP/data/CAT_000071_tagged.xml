@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -297,7 +297,7 @@
                   <p>dit le Tribun du peuple, célèbre révolutionnaire, ne dans la Somme, décapité en
                      1797</p>
                </trait>
-               <desc xml:id="CAT_000071_e8_d1"><term ana="#document_type_7">L. a. s.</term> à sa femme; <date date="1796-10-11" type="length">20 vendémiaire an V</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000071_e8_d1"><term ana="#document_type_7">L. a. s.</term> à sa femme; <date when="1796-10-11">20 vendémiaire an V</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Joli billet. -On y a joint une lettre à lui adressée signée Charles
                   Germain</note>
             </item>
@@ -549,7 +549,7 @@
                   <p>homme politique, conventionnel, député de l'Ariège à l'Assemblée législative,
                      né dans le Roussillon, mort en 1804</p>
                </trait>
-               <desc xml:id="CAT_000071_e31_d1"><term ana="#document_type_7">L. a. s.</term> au ministre Roland; Paris, <date date="none" type="length">26 octobre an I</date>er, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000071_e31_d1"><term ana="#document_type_7">L. a. s.</term> au ministre Roland; Paris, <date when="none">26 octobre an I</date>er, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="32" xml:id="CAT_000071_e32">
                <num type="lot">32</num>
@@ -734,7 +734,7 @@
                <trait>
                   <p>célèbre poète tragique, de l'Académie française</p>
                </trait>
-               <desc xml:id="CAT_000071_e47_d1"><term ana="#document_type_7">L. a. s.</term> à Agasse ; Paris, <date date="1798-10-18" type="length">27 vend, an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="13">13</measure>
+               <desc xml:id="CAT_000071_e47_d1"><term ana="#document_type_7">L. a. s.</term> à Agasse ; Paris, <date when="1798-10-18">27 vend, an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="13">13</measure>
                <note>Belle lettre relative à son épître « au respectable restaurateur de la langue
                   française.</note>
             </item>
@@ -924,7 +924,7 @@
                   <p>conventionnel montagnard, député du Tarn, défenseur de la Corse contre les
                      Anglais, habile et brave général d'artillerie, né vers 1740, mort en 1812</p>
                </trait>
-               <desc xml:id="CAT_000071_e65_d1"><term ana="#document_type_7">L. a. s.</term> à Camille Desmoulins; Paris, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000071_e65_d1"><term ana="#document_type_7">L. a. s.</term> à Camille Desmoulins; Paris, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuse lettre, écrite comme député du Tarn à l'Assemblée nationale. Il lui
                   annonce qu'il a payé à vue sa lettre de change. « Mes assignats ne sont que du
                   zèle; quand il faudra du numéraire, c'est-à-dire du talent, je tirerai sur
@@ -1081,7 +1081,7 @@
                   <p>illustre général de la République, né à Chartres en 1769, tué à Altenkirchen en
                      1796</p>
                </trait>
-               <desc xml:id="CAT_000071_e78_d1"><term ana="#document_type_7">L. a. s.</term> au général Preste; quartier général de Serousart, <date date="1794-07-20" type="length">2 therm. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000071_e78_d1"><term ana="#document_type_7">L. a. s.</term> au général Preste; quartier général de Serousart, <date when="1794-07-20">2 therm. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Lettre historique où il lui donne l'ordre de déployer ses troupes autour de
                   Namur pour couvrir cette ville</note>
             </item>

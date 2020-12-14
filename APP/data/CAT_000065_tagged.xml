@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -880,7 +880,7 @@
                <trait>
                   <p>vice-amiral, qui ramena Bonaparte d'Egypte, né à la Ciotat</p>
                </trait>
-               <desc xml:id="CAT_000065_e69_d1"><term ana="#document_type_7">L. a. s.</term> a Bonaparte, 1er consul; Pans, <date date="1800-02-24" type="length">5 ventôse an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000065_e69_d1"><term ana="#document_type_7">L. a. s.</term> a Bonaparte, 1er consul; Pans, <date when="1800-02-24">5 ventôse an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il demande le grade de lieutenant de vaisseau pour son frère Joseph-Antonin
                   Ganteaume. -La lettre porte en marge une apostille sig. de Bonaparte et du
                   ministre Forfait</note>
@@ -1713,7 +1713,7 @@
                   <p>célèbre révolutionnaire et général de la République, ami de Danton, décapité
                      avec lui</p>
                </trait>
-               <desc xml:id="CAT_000065_e154_d1"><term ana="#document_type_7">L. a. s.</term>; Nantes, <date date="1793-12-29" type="length">9 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000065_e154_d1"><term ana="#document_type_7">L. a. s.</term>; Nantes, <date when="1793-12-29">9 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="155" xml:id="CAT_000065_e155">
                <num type="lot">155</num>

@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -677,7 +677,7 @@
                   <p>dessinateur et graveur, vignettiste, qui a illustré Norvins, Dulaure, etc., né
                      vers 1782</p>
                </trait>
-               <desc xml:id="CAT_000072_e46_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1804-04-15" type="length">24 germinal an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000072_e46_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1804-04-15">24 germinal an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Relative aux planches du Voyage de Pallas</note>
             </item>
             <item n="47" xml:id="CAT_000072_e47">
@@ -762,7 +762,7 @@
                <trait>
                   <p>célèbre actrice de la Comédie-Française, née à Lyon en 1763, morte en 1841</p>
                </trait>
-               <desc xml:id="CAT_000072_e53_d1"><term ana="#document_type_4">Pièce sig</term>.; <date date="1797-04-20" type="length">1er floréal an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000072_e53_d1"><term ana="#document_type_4">Pièce sig</term>.; <date when="1797-04-20">1er floréal an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Reçu de la somme de 250 livres pour ses appointements de germinal an V, comme
                   artiste du théâtre Feydeau</note>
             </item>
@@ -1469,7 +1469,7 @@
                   <p>prince de la Moskowa, illustre maréchal de l'empire, né en 1769, fusillé le 7
                      décembre 1815</p>
                </trait>
-               <desc xml:id="CAT_000072_e120_d1"><term ana="#document_type_7">L. a. s.</term> à Kléber; Siegberg, <date date="1795-09-13" type="length">27 fructidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000072_e120_d1"><term ana="#document_type_7">L. a. s.</term> à Kléber; Siegberg, <date when="1795-09-13">27 fructidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Belle lettre militaire. Il lui donne des nouvelles de l'ennemi et lui annonce
                   qu'il a fait une reconnaissance sur Stosdorf. « Je leur ai donné une forte
                   poussée, mais comme je me voyais forcé de traverser plusieurs villages et gravir
@@ -1585,7 +1585,7 @@
                   <p>peintre et graveur un des plus gracieux portraitistes et vignettistes du XVIIIe
                      siècle</p>
                </trait>
-               <desc xml:id="CAT_000072_e131_d1"><term ana="#document_type_7">L. a. s.</term> (à l'éditeur Renouard) ; <date date="1799-06-19" type="length">1er messidor an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000072_e131_d1"><term ana="#document_type_7">L. a. s.</term> (à l'éditeur Renouard) ; <date when="1799-06-19">1er messidor an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="132" xml:id="CAT_000072_e132">
                <num type="lot">132</num>

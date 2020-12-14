@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -496,7 +496,7 @@
                   <p>maréchal de l'Empire, puis roi de Suède sous le nom de Charles-Jean XIV, né à
                      Pau en 1764, mort en 1844</p>
                </trait>
-               <desc xml:id="CAT_000124_e29_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Milan, <date date="1798-01-29" type="length">10 pluviôse an VI</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000124_e29_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Milan, <date when="1798-01-29">10 pluviôse an VI</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Il le prie de remettre au général Marbot la somme de 11,000 livres. L'acquit du
                   général Marbot se trouve en marge</note>
             </item>
@@ -551,7 +551,7 @@
                <trait>
                   <p>prince de Canino, frère de Napoléon Ier, né en 1768, mort en 1844</p>
                </trait>
-               <desc xml:id="CAT_000124_e35_d1"><term ana="#document_type_9">Let. sig.</term>; <date date="none" type="length">30 ventôse, an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000124_e35_d1"><term ana="#document_type_9">Let. sig.</term>; <date when="none">30 ventôse, an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="36" xml:id="CAT_000124_e36">
                <num type="lot">36</num>
@@ -785,7 +785,7 @@
                   <p>l'illustre organisateur de nos armées, né à Nolay (Côte-d'Or) en 1753, mort en
                      1823</p>
                </trait>
-               <desc xml:id="CAT_000124_e57_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Prieur-Duvernois, comme membres du Comité de Salut public ; Paris, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000124_e57_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Prieur-Duvernois, comme membres du Comité de Salut public ; Paris, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="58" xml:id="CAT_000124_e58">
                <num type="lot">58</num>
@@ -997,7 +997,7 @@
                   <p>célèbre poète dramatique, de l'Acad. fr., né à Maintenon (Eure-et-Loir),
                      en 1755, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000124_e78_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1797-02-22" type="length">4 ventôse an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000124_e78_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1797-02-22">4 ventôse an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="79" xml:id="CAT_000124_e79">
                <num type="lot">79</num>
@@ -1143,7 +1143,7 @@
                   <p>savant grammairien, de l'Acad. fr., né à Aubagne (Bouches-du-Rhône),
                      &gt;en 1745, mort en 1810</p>
                </trait>
-               <desc xml:id="CAT_000124_e93_d1"><term ana="#document_type_7">L. a. s.</term> à Huvé; Paris, <date date="1801-02-23" type="length">4 ventôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000124_e93_d1"><term ana="#document_type_7">L. a. s.</term> à Huvé; Paris, <date when="1801-02-23">4 ventôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="94" xml:id="CAT_000124_e94">
                <num type="lot">94</num>
@@ -1162,7 +1162,7 @@
                   <p>homme politique, député du Gers à la Convention nationale, né près d'Auch vers
                      1750, mort en 1816</p>
                </trait>
-               <desc xml:id="CAT_000124_e95_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, sig. aussi par les conventionnels Voulland, Jagot, Louis (du Bas-Rhin), Moyse Bayle, Elie Lacoste et Amar, membres du comité de sûreté générale ; <date date="1794-06-16" type="length">28 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, sceau.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000124_e95_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, sig. aussi par les conventionnels Voulland, Jagot, Louis (du Bas-Rhin), Moyse Bayle, Elie Lacoste et Amar, membres du comité de sûreté générale ; <date when="1794-06-16">28 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, sceau.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Ordre d'arrestation de « Chamilly, ci-devant noble et valet de chambre du
                   dernier tyran. » On a joint 2 autres pièces concernant la famille de
                   Chamilly</note>
@@ -1206,7 +1206,7 @@
                   <p>célèbre général de la Révolution, père du grand romancier, né  à
                      Jérémie (Haïti) en 1762, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000124_e100_d1"><term ana="#document_type_7">L. a. s.</term> au législateur Le Clerc; Villers-Cotterets, <date date="1802-06-18" type="length">29 prairial an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Vignette républicaine. Déchirure, atteignant le texte.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000124_e100_d1"><term ana="#document_type_7">L. a. s.</term> au législateur Le Clerc; Villers-Cotterets, <date when="1802-06-18">29 prairial an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Vignette républicaine. Déchirure, atteignant le texte.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="101" xml:id="CAT_000124_e101">
                <num type="lot">101</num>
@@ -1623,7 +1623,7 @@
                <trait>
                   <p>le célèbre général de la République</p>
                </trait>
-               <desc xml:id="CAT_000124_e145_d1"><term ana="#document_type_9">Let. sig.</term>, quartier général de Locminé, <date date="1794-12-07" type="length">17 frimaire an III</date>. <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000124_e145_d1"><term ana="#document_type_9">Let. sig.</term>, quartier général de Locminé, <date when="1794-12-07">17 frimaire an III</date>. <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Lettre écrite comme général en chef des armées des côtes de Cherbourg et de
                   Brest</note>
             </item>
@@ -1692,7 +1692,7 @@
                   <p>illustre général de la République, né à Strasbourg en 1753, assassiné au Caire
                      en 1800</p>
                </trait>
-               <desc xml:id="CAT_000124_e152_d1"><term ana="#document_type_9">Let. sig.</term>, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000124_e152_d1"><term ana="#document_type_9">Let. sig.</term>, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="153" xml:id="CAT_000124_e153">
                <num type="lot">153</num>
@@ -1998,7 +1998,7 @@
                <trait>
                   <p>roi de Naples, beau-frère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000124_e182_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000124_e182_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="183" xml:id="CAT_000124_e183">
                <num type="lot">183</num>
@@ -2253,7 +2253,7 @@
                   <p>célèbre jurisconsulte, un des principaux rédacteurs du Code civil, de l'Acad.
                      fr., né au Bausset (Var) en 1745, mort en 1807</p>
                </trait>
-               <desc xml:id="CAT_000124_e204_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date date="1796-07-16" type="length">28 messidor an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare autographe.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000124_e204_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1796-07-16">28 messidor an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare autographe.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Belle lettre écrite comme représentant du peuple.</note>
             </item>
             <item n="205" xml:id="CAT_000124_e205">
@@ -2350,7 +2350,7 @@
                   <p>duc de Massa, homme d'Etat, ministre de la Justice sous Napoléon Ier, né à
                      Blamont (Meurthe) en 1736, mort en 1814</p>
                </trait>
-               <desc xml:id="CAT_000124_e212_d1"><term ana="#document_type_7">L. a. s.</term> à Réal; Paris, <date date="1804-02-01" type="length">11 pluviose an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000124_e212_d1"><term ana="#document_type_7">L. a. s.</term> à Réal; Paris, <date when="1804-02-01">11 pluviose an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="213" xml:id="CAT_000124_e213">
                <num type="lot">213</num>

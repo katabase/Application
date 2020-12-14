@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -433,7 +433,7 @@
                   <p>brave et savant général de la République, compagnon de Bonaparte dans la
                      campagne d'Egypte, mort devant Saint-Jean-d'Acre</p>
                </trait>
-               <desc xml:id="CAT_000037_e23_d1"><term ana="#document_type_7">L. a. s.</term> au général Dejean; Neuss, <date date="1795-09-03" type="length">17 fruct. an III</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000037_e23_d1"><term ana="#document_type_7">L. a. s.</term> au général Dejean; Neuss, <date when="1795-09-03">17 fruct. an III</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Belle et intéressante lettre, toute relative aux préparatifs du passage du
                   Rhin, près de Dusseldorf</note>
             </item>
@@ -514,7 +514,7 @@
                <trait>
                   <p>célèbre chimiste et mécanicien, élève et ami de Monge, né dans les Ardennes</p>
                </trait>
-               <desc xml:id="CAT_000037_e32_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Robinet ; Daigny, <date date="none" type="length">15 juil. an II</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000037_e32_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Robinet ; Daigny, <date when="none">15 juil. an II</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Relative aux travaux de la manufacture de fer de Daigny, fondée par lui pour
                   l'approvisionnement des armées de la République</note>
             </item>
@@ -568,7 +568,7 @@
                <trait>
                   <p>célèbre compositeur de musique dramatique, né à Muret</p>
                </trait>
-               <desc xml:id="CAT_000037_e38_d1"><term ana="#document_type_7">L. a. s.</term> à Fabien Pillet, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet. L. a. partie blanche du feuillet d'adresse enlevée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000037_e38_d1"><term ana="#document_type_7">L. a. s.</term> à Fabien Pillet, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet. L. a. partie blanche du feuillet d'adresse enlevée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="39" xml:id="CAT_000037_e39">
                <num type="lot">39</num>
@@ -848,7 +848,7 @@
                   <p>ministre de la justice en 1793, président du Directoire lors du coup d'Etat du
                      18 brumaire, né dans l'Illeet-Vilaine</p>
                </trait>
-               <desc xml:id="CAT_000037_e67_d1"><term ana="#document_type_7">L. a. s.</term>; Amsterdam, an <date date="1805" type="length">XIV</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000037_e67_d1"><term ana="#document_type_7">L. a. s.</term>; Amsterdam, an <date when="1805">XIV</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="68" xml:id="CAT_000037_e68">
                <num type="lot">68</num>
@@ -952,7 +952,7 @@
                <trait>
                   <p>poète dram., célèbre critique, né à Nancy</p>
                </trait>
-               <desc xml:id="CAT_000037_e78_d1"><term ana="#document_type_7">L. a. s.</term> à Fabien Pillet, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000037_e78_d1"><term ana="#document_type_7">L. a. s.</term> à Fabien Pillet, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Curieuse lettre, qu'il termine par ces mots à l'endroit de son antagoniste en
                   critique littéraire : « S'il existe des Geoffroi, il existe heureusement aussi des
                   littérateurs honnêtes...</note>
@@ -1005,7 +1005,7 @@
                <trait>
                   <p>brave général polonais, compagnon de Kosciuszko</p>
                </trait>
-               <desc xml:id="CAT_000037_e84_d1"><term ana="#document_type_4">Pièce sig</term>., comme chef de la légion polonaise du Danube à l'armée du Rhin; Strasbourg, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000037_e84_d1"><term ana="#document_type_4">Pièce sig</term>., comme chef de la légion polonaise du Danube à l'armée du Rhin; Strasbourg, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="85" xml:id="CAT_000037_e85">
                <num type="lot">85</num>
@@ -1091,7 +1091,7 @@
                <trait>
                   <p>l'infortuné prisonnier de la Bastille</p>
                </trait>
-               <desc xml:id="CAT_000037_e93_d1">Quit. sig. avec <date date="none" type="length">1 lig. aut., an II</date>, <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000037_e93_d1">Quit. sig. avec <date when="none">1 lig. aut., an II</date>, <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="94" xml:id="CAT_000037_e94">
                <num type="lot">94</num>
@@ -1118,7 +1118,7 @@
                   <p>auteur dramat. fameux par sa querelle avec Etienne, à propos de la comédie Les
                      deux Gendres, né à Pierrelatte</p>
                </trait>
-               <desc xml:id="CAT_000037_e96_d1"><term ana="#document_type_7">L. a. s.</term> au Comité d'Instruction publique, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000037_e96_d1"><term ana="#document_type_7">L. a. s.</term> au Comité d'Instruction publique, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre par laquelle il réclame sa part dans les secours que va
                   distribuer la Convention. Il cite plusieurs de ses ouvrages, parmi lesquels on
                   trouve les 3 suivants, qui ne sont point mentionnés par Quérard : le Père Eternel
@@ -1361,7 +1361,7 @@
                <trait>
                   <p>le créateur de la doctrine du magnétisme animal</p>
                </trait>
-               <desc xml:id="CAT_000037_e121_d1"><term ana="#document_type_7">L. a. s.</term>, en français, au docteur Dubreuil; Paris, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000037_e121_d1"><term ana="#document_type_7">L. a. s.</term>, en français, au docteur Dubreuil; Paris, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Relative à son Mémoire sur le Magnétisme animal, son ouvrage le plus important,
                   dont il prie Dubreuil de corriger le manuscrit, sous le rapport de la langue
                   française</note>
@@ -1434,7 +1434,7 @@
                <trait>
                   <p>illustre général de la République, né à Morlaix</p>
                </trait>
-               <desc xml:id="CAT_000037_e129_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1800-01-03" type="length">13 niv. an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000037_e129_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1800-01-03">13 niv. an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Très-curieuse lettre, par laquelle il réclame avec instance des fonds pour
                   l'armée du Rhin, qu'il commande. La solde est arriérée de plus de 7 millions pour
                   le seul corps de l'Helvétie. S'il ne reçoit promptement des fonds, il ne répond de
@@ -1472,7 +1472,7 @@
                <trait>
                   <p>maréchal de France, roi de Naples</p>
                </trait>
-               <desc xml:id="CAT_000037_e133_d1"><term ana="#document_type_9">L. sig.</term> avec 2 lignes autog., comme gouverneur de Paris, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000037_e133_d1"><term ana="#document_type_9">L. sig.</term> avec 2 lignes autog., comme gouverneur de Paris, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Relative à une distribution de vin, par ordre de l'Empereur, faite aux troupes
                   réunies au Champ-de-Mars</note>
             </item>
@@ -1505,7 +1505,7 @@
                <trait>
                   <p>un de nos écrivains les plus originaux, de l'Acad. fr., né à Besançon</p>
                </trait>
-               <desc xml:id="CAT_000037_e136_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Maradan; Besançon, <date date="1803-04-08" type="length">18 germ. an XI</date>; <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000037_e136_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Maradan; Besançon, <date when="1803-04-08">18 germ. an XI</date>; <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Superbe et très-curieuse lettre, écrite à l'âge de 20 aus, relative aux
                   Proscrits et au Peintre de Salzbourg, « deux réminiscences de son orageuse
                   jeunesse. » Ces récits sont copiés fidèlement d'après son coeur. Ils ont un grand
@@ -1600,7 +1600,7 @@
                <trait>
                   <p>l'héroïque capitaine du vaisseau Le Vengeur, né en Saintonge</p>
                </trait>
-               <desc xml:id="CAT_000037_e145_d1"><term ana="#document_type_4">Pièce sig</term>., <date date="1794-04-26" type="length">7 flor. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000037_e145_d1"><term ana="#document_type_4">Pièce sig</term>., <date when="1794-04-26">7 flor. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Ordre relatif au service du Vengeur du Peuple, écrit à bord de ce vaisseau un
                   mois avant sa catastrophe, et portant, outre la signature du capitaine Renaudin,
                   celle de son frère, officier du détail, et celles de 2 autres officiers.</note>
@@ -1757,7 +1757,7 @@
                   <p>fameux révolutionnaire, qui commandait la force armée de Paris lors de
                      l'exécution de Louis XVI</p>
                </trait>
-               <desc xml:id="CAT_000037_e160_d1"><term ana="#document_type_7">L. a. s.</term> au directeur L. a. Révellière-Lépeaux ; Paris, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000037_e160_d1"><term ana="#document_type_7">L. a. s.</term> au directeur L. a. Révellière-Lépeaux ; Paris, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Père de famille et ayant perdu sa fortune au service de la République, il
                   demande un emploi, soit militaire, soit civil. Il ajoute à sa signature :
                   ex-général</note>
@@ -1936,7 +1936,7 @@
                <trait>
                   <p>illustre jurisconsulte, le Pothier moderne, né à Dol</p>
                </trait>
-               <desc xml:id="CAT_000037_e178_d1"><term ana="#document_type_7">L. a. s.</term>; Rennes, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000037_e178_d1"><term ana="#document_type_7">L. a. s.</term>; Rennes, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="179" xml:id="CAT_000037_e179">
                <num type="lot">179</num>

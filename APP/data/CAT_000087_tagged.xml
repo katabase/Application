@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -250,7 +250,7 @@
                   <p>publiciste et écrivain, historien de la Bourgogne, né dans la Côte-d'Or en
                      1760, mort en 1815</p>
                </trait>
-               <desc xml:id="CAT_000087_e4_d1"><term ana="#document_type_7">L. a. s.</term> à Hugues Maret; Auxonne, <date date="1803-01-04" type="length">14 nivose an XI</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000087_e4_d1"><term ana="#document_type_7">L. a. s.</term> à Hugues Maret; Auxonne, <date when="1803-01-04">14 nivose an XI</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Il le prie de mettre sons les veux du Premier Consul l'ouvrage qu'il vient de
                   publier sur le professeur d'artillerie Lombard, « homme qui ne fut point étranger
                   au coeur de Bonaparte.</note>
@@ -275,7 +275,7 @@
                <trait>
                   <p>le célèbre auteur de l'Histoire de France, né en 1723, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000087_e6_d1"><term ana="#document_type_7">L. a. s.</term> à Cambacérès ; <date date="1804-10-22" type="length">30 vend. an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000087_e6_d1"><term ana="#document_type_7">L. a. s.</term> à Cambacérès ; <date when="1804-10-22">30 vend. an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle et intéressante lettre toute relative à son Histoire de France. Il achève
                   de la mettre en état d'être livrée à l'impression. « Quoi qu'elle soit
                   complètement finie, vous savés, Mousieur qu'on ne peut trop revoir, surtout quand
@@ -340,7 +340,7 @@
                <trait>
                   <p>graveur d'histoire et de batailles, né en 1744, mort en 1823</p>
                </trait>
-               <desc xml:id="CAT_000087_e12_d1"><term ana="#document_type_7">L. a. s.</term> à Abraham Fontanelle ; Paris, <date date="1796-09-27" type="length">6 vendémiaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000087_e12_d1"><term ana="#document_type_7">L. a. s.</term> à Abraham Fontanelle ; Paris, <date when="1796-09-27">6 vendémiaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Relative à la gravure du portrait de Mme Lebrun, tenant sa fille sur ses
                   genoux</note>
             </item>
@@ -765,7 +765,7 @@
                   <p>antiquaire italien, auteur de l'Histoire de la sculpture, né à Ferrare en 1767,
                      mort en 1834</p>
                </trait>
-               <desc xml:id="CAT_000087_e53_d1"><term ana="#document_type_7">L. a. s.</term> à Ginguenée; Milan, <date date="1800-08-02" type="length">14 thermidor an VIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000087_e53_d1"><term ana="#document_type_7">L. a. s.</term> à Ginguenée; Milan, <date when="1800-08-02">14 thermidor an VIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Superbe lettre. Il n'a pu traverser le lac Majeur parce que trois chaloupes
                   canonnières lui ont donné la chasse; il déplore l'armistice d'Alexandrie, qui
                   immobilise dans la Lombardie deux grandes armées; le pars s'épuise à les nourrir.
@@ -1485,7 +1485,7 @@
                   <p>ministre de la justice sous le Directoire, sénateur, qui, en 1814, rédigea le
                      rapport pour la déchéance de Napoléon, né en 1753, mort en 1823</p>
                </trait>
-               <desc xml:id="CAT_000087_e119_d1">2 let. sig. à l'amiral Lacrosse; an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000087_e119_d1">2 let. sig. à l'amiral Lacrosse; an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Relatives aux opérations préparatoires pour l'expédition d'Angleterre</note>
             </item>
             <item n="120" xml:id="CAT_000087_e120">
@@ -1540,7 +1540,7 @@
                   <p>célèbre général de la République, né à Lons-le-Saulnier en 1760, mort en
                      1815</p>
                </trait>
-               <desc xml:id="CAT_000087_e124_d1"><term ana="#document_type_7">L. a. s.</term> au général Collot; Manheim, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="9">9</measure>
+               <desc xml:id="CAT_000087_e124_d1"><term ana="#document_type_7">L. a. s.</term> au général Collot; Manheim, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="9">9</measure>
                <note>Lettre historique écrite comme général en chef de l'armée du Rhin sur le blocus
                   de Philipsbourg</note>
             </item>
@@ -2054,7 +2054,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie</p>
                </trait>
-               <desc xml:id="CAT_000087_e174_d1"><term ana="#document_type_7">L. a. s.</term> à Laya, <date date="1805-07-11" type="length">22 messidor an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000087_e174_d1"><term ana="#document_type_7">L. a. s.</term> à Laya, <date when="1805-07-11">22 messidor an XIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Charmante lettre. Mme Harvey doit donner un dîner, dont feront partie lui et sa
                   femme, Mme Dufrénoy, Alibert; Ducis s'est excusé, il espère qu'il ne fera pas de
                   même</note>

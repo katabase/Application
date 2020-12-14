@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -429,7 +429,7 @@
                <trait>
                   <p>fidèle compagnon de Napoléon Ier à Sainte-Hélène, né à Châteauroux</p>
                </trait>
-               <desc xml:id="CAT_000023_e26_d1"><term ana="#document_type_7">L. a. s.</term>, comme chef de brigade du génie, au général Dugua; le Kaire, <date date="1799-03-04" type="length">14 vent, an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000023_e26_d1"><term ana="#document_type_7">L. a. s.</term>, comme chef de brigade du génie, au général Dugua; le Kaire, <date when="1799-03-04">14 vent, an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="27" xml:id="CAT_000023_e27">
                <num type="lot">27</num>
@@ -455,7 +455,7 @@
                   <p>dernier recteur de l'ancienne Université de Paris, traducteur estimé de Virgile
                      et d'Horace, né près de Beauvais</p>
                </trait>
-               <desc xml:id="CAT_000023_e29_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000023_e29_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Intéressante épître relative à sa traduction de Virgile, qu'il regarde comme
                   son ouvrage le plus considérable et à une pension de 500 fr. que vient de lui
                   accorder le gouvernement</note>
@@ -503,7 +503,7 @@
                <trait>
                   <p>général en chef de l'armée d'Egypte.</p>
                </trait>
-               <desc xml:id="CAT_000023_e33_d1">Belle pièce écrite par Bourrienne et sig. par Bonaparte; le Caire, <date date="1798-07-30" type="length">12 therm. an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000023_e33_d1">Belle pièce écrite par Bourrienne et sig. par Bonaparte; le Caire, <date when="1798-07-30">12 therm. an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Contribution de 150,000 fr. levée sur les négociants de Damiette, pour subvenir
                   aux dépenses de l'armée.</note>
             </item>
@@ -513,7 +513,7 @@
                <trait>
                   <p>premier consul</p>
                </trait>
-               <desc xml:id="CAT_000023_e34_d1"><term ana="#document_type_4">Pièce sig</term>., relative à un fusil d'honneur accordé à un fourrier de l'armée d'Egypte, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000023_e34_d1"><term ana="#document_type_4">Pièce sig</term>., relative à un fusil d'honneur accordé à un fourrier de l'armée d'Egypte, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="35" xml:id="CAT_000023_e35">
                <num type="lot">35</num>
@@ -521,7 +521,7 @@
                <trait>
                   <p>frère de Napoléon 1er</p>
                </trait>
-               <desc xml:id="CAT_000023_e35_d1"><term ana="#document_type_9">L. s.</term> à Cartaux, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000023_e35_d1"><term ana="#document_type_9">L. s.</term> à Cartaux, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="36" xml:id="CAT_000023_e36">
                <num type="lot">36</num>
@@ -600,7 +600,7 @@
                <trait>
                   <p>célèbre chimiste et agronome, collaborateur de Parmentier</p>
                </trait>
-               <desc xml:id="CAT_000023_e44_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Germain, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000023_e44_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Germain, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
                <note>Il demande deux prisonniers allemands pour planter ses pommes de terre, et
                   pense que l'on ne refusera pas cette faveur à l'apôtre zélé de cette
                   culture</note>
@@ -950,7 +950,7 @@
                <trait>
                   <p>auteur du Poète, ouvrage licencieux, le pendant de Faublas</p>
                </trait>
-               <desc xml:id="CAT_000023_e83_d1"><term ana="#document_type_12">Quitt.</term> aut. sig., <date date="1796-10-01" type="length">10 vend, an V</date>, <measure type="format" unit="f" ana="#document_format_18">in-18.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000023_e83_d1"><term ana="#document_type_12">Quitt.</term> aut. sig., <date when="1796-10-01">10 vend, an V</date>, <measure type="format" unit="f" ana="#document_format_18">in-18.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Reçu du libraire Duchesne le reste de l'édition de Richard et d'Erlet, comédie
                   qu'il fit représenter à Bordeaux en 1778, et qui fut suspendue à cause des
                   allusions satiriques qu'elle renfermait contre des personnages de la Cour</note>
@@ -1242,7 +1242,7 @@
                <trait>
                   <p>le trop fameux accusateur public du Tribunal révolutionnaire</p>
                </trait>
-               <desc xml:id="CAT_000023_e115_d1"><term ana="#document_type_4">Pièce sig</term>., <date date="1794-03-29" type="length">9 germ. an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. et cachet du tribunal.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000023_e115_d1"><term ana="#document_type_4">Pièce sig</term>., <date when="1794-03-29">9 germ. an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. et cachet du tribunal.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Ordre au gardien de la prison Du Plessis de recevoir 41 prisonniers, tous
                   nommés dans la pièce, « s'obligeant le dit gardien les représenter à toute
                   réquisition de justice.</note>

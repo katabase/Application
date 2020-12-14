@@ -29,7 +29,7 @@
                <publisher>J. Pearson &amp; Cie</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date when="1897">1897</date>
+               <date>1897</date>
             </bibl>
             <listEvent>
                <event>
@@ -65,7 +65,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -189,7 +189,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -734,7 +734,7 @@
                <trait>
                   <p>impéralrice des Français, première femme de Napoléon 1er, n. 1763, m. 1814.</p>
                </trait>
-               <desc xml:id="CAT_000167_e51_d1"><term ana="#document_type_4">P. s.</term>, avec une ligne autographe, signée aussi par Talma, le grand tragédien, et par Julie Talma, sa femme ; Paris, <date date="1795-12-22" type="length">1er nivôse an IV</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Précieuse pièce. Conventions additionnelles au bail d'une maison fait par
+               <desc xml:id="CAT_000167_e51_d1"><term ana="#document_type_4">P. s.</term>, avec une ligne autographe, signée aussi par Talma, le grand tragédien, et par Julie Talma, sa femme ; Paris, <date when="1795-12-22">1er nivôse an IV</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Précieuse pièce. Conventions additionnelles au bail d'une maison fait par
                   Madame Talma à la veuve Beauharnais. (Il s'agit du fameux petit hôtel de la rue de
                   la Victoire où Bonaparte prépara plus tard le coup d'Etat du 18 brumaire.)</note>
             </item>
@@ -744,7 +744,7 @@
                <trait>
                   <p>célèbre général des guerres de la République, n. 1769, tué à Novi en 1799.</p>
                </trait>
-               <desc xml:id="CAT_000167_e52_d1"><term ana="#document_type_7">L. a. s.</term> au Directoire; quartier général de Turin, <date date="1798-12-21" type="length">1er nivôse an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête imprimée.</desc><note>Superbe lettre où il confirme sa démission de général en chef de l'armée
+               <desc xml:id="CAT_000167_e52_d1"><term ana="#document_type_7">L. a. s.</term> au Directoire; quartier général de Turin, <date when="1798-12-21">1er nivôse an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête imprimée.</desc><note>Superbe lettre où il confirme sa démission de général en chef de l'armée
                   d'Italie.</note>
             </item>
             <item n="53" xml:id="CAT_000167_e53">
@@ -905,7 +905,7 @@
                   <p>illustre général républicain, n. 1763, blessé mortellement dans les rangs
                      ennemis à la bataille de Dresde, 1813.</p>
                </trait>
-               <desc xml:id="CAT_000167_e68_d1"><term ana="#document_type_7">L. a. s.</term> à Kleber; quartier général de l'armée de Rhin et Moselle, <date date="1796-12-30" type="length">10 nivôse an V</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette gravée.</desc><note>Importante lettre militaire où il lui annonce que le Directoire vient de le
+               <desc xml:id="CAT_000167_e68_d1"><term ana="#document_type_7">L. a. s.</term> à Kleber; quartier général de l'armée de Rhin et Moselle, <date when="1796-12-30">10 nivôse an V</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette gravée.</desc><note>Importante lettre militaire où il lui annonce que le Directoire vient de le
                   nommer général en chef des armées de Sambre-et-Meuse et de Rhin-et-Moselle. Il lui
                   donne ses instructions pour envoyer des renforts à l'armée d'Italie.</note>
             </item>
@@ -947,7 +947,7 @@
                   <p>membre de la commune du DixAoût, député de Paris à la Convention, n. 1757, m.
                      1832.</p>
                </trait>
-               <desc xml:id="CAT_000167_e72_d1"><term ana="#document_type_7">L. a. s.</term> à Barras; Paris, <date date="1796-09-05" type="length">19 fructidor an IV</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Très curieuse lettre où il lui expose sa triste situation. Il lui rappelle les
+               <desc xml:id="CAT_000167_e72_d1"><term ana="#document_type_7">L. a. s.</term> à Barras; Paris, <date when="1796-09-05">19 fructidor an IV</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Très curieuse lettre où il lui expose sa triste situation. Il lui rappelle les
                   services qu'il a rendus à la Révolution et le conjure de ne pas le laisser mourir
                   de faim. Il lui demande emphatiquement de penser à lui la nuit, s'il est trop
                   occupé pour le faire dans le jour. « Que ma pensée t'occupe un moment, la nuit
@@ -1195,7 +1195,7 @@
             <item n="95" xml:id="CAT_000167_e95">
                <num type="lot">95</num>
                <name type="author">COMITÉ DESALUT PUBLIC</name>
-               <desc xml:id="CAT_000167_e95_d1"><term ana="#document_type_4">P. s.</term> Carnot, Barère, Couthon, Collot-d'Herbois, R. Lindet et C.-A. Prieur ; Paris, <date date="1794-04-24" type="length">5 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
+               <desc xml:id="CAT_000167_e95_d1"><term ana="#document_type_4">P. s.</term> Carnot, Barère, Couthon, Collot-d'Herbois, R. Lindet et C.-A. Prieur ; Paris, <date when="1794-04-24">5 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="96" xml:id="CAT_000167_e96">
                <num type="lot">96</num>
                <name type="author">CONDE (Documents sur le Grand)</name>

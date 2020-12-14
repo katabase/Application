@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -579,7 +579,7 @@
                   <p>maréchal de France, né à Brive (Corrèze) en 1763, assassiné à Avignon le 2 août
                      1815.</p>
                </trait>
-               <desc xml:id="CAT_000172_e38_d1"><term ana="#document_type_7">L. a. s.</term> au général Cavaignac; Paris, <date date="1801-07-09" type="length">20 messidor an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000172_e38_d1"><term ana="#document_type_7">L. a. s.</term> au général Cavaignac; Paris, <date when="1801-07-09">20 messidor an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="39" xml:id="CAT_000172_e39">
                <num type="lot">39</num>
@@ -635,7 +635,7 @@
                   <p>célèbre sculpteur français, membre de l'Acad. des Beaux-Arts, né en 1757. mort
                      en 1831.</p>
                </trait>
-               <desc xml:id="CAT_000172_e44_d1"><term ana="#document_type_7">L. a. s.</term> au Président de la Société des Amis des Arts; Paris, <date date="1799-03-22" type="length">2 germinal an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000172_e44_d1"><term ana="#document_type_7">L. a. s.</term> au Président de la Société des Amis des Arts; Paris, <date when="1799-03-22">2 germinal an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Jolie lettre où il propose, pour la somme de 250 fr., une figure en terre cuite
                   « représentant l'Amitié qui presse sur son sein un ormeau sec, qu'elle arrose en
                   même tems, simbole des secours que l'on doit à un ami malheureux.»</note>
@@ -712,7 +712,7 @@
                <trait>
                   <p>célèbre statuaire, de l'Institut, né en 1763, mort en 1810.</p>
                </trait>
-               <desc xml:id="CAT_000172_e50_d1">-<term ana="#document_type_2">Pièce aut. sig.</term>; <date date="1804-11-05" type="length">14 brumaire an XIII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000172_e50_d1">-<term ana="#document_type_2">Pièce aut. sig.</term>; <date when="1804-11-05">14 brumaire an XIII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Reçu de la somme de 300 livres à valoir sur un buste de l'architecte David
                   Leroy.</note>
             </item>
@@ -1396,7 +1396,7 @@
                      août; ce fut lui qui lut à Louis XVI l'arrêt qui le condamnait à mort, né en
                      1758, mort en 1806.</p>
                </trait>
-               <desc xml:id="CAT_000172_e118_d1"><term ana="#document_type_7">L. a. s.</term> à Ginguené; Paris, <date date="1798-08-21" type="length">4 fructidor an VI</date>. <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle et intéressante lettre.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000172_e118_d1"><term ana="#document_type_7">L. a. s.</term> à Ginguené; Paris, <date when="1798-08-21">4 fructidor an VI</date>. <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle et intéressante lettre.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="119" xml:id="CAT_000172_e119">
                <num type="lot">119</num>
@@ -1577,7 +1577,7 @@
                   <p>fille du duc d'Ayen, épouse du général Lafayette, femme célèbre par son
                      dévouement à son mari, morte en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000172_e134_d1"><term ana="#document_type_7">L. a. s.</term> au banquier Perregaux; <date date="1803-09-17" type="length">30 fructidor an XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000172_e134_d1"><term ana="#document_type_7">L. a. s.</term> au banquier Perregaux; <date when="1803-09-17">30 fructidor an XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="135" xml:id="CAT_000172_e135">
                <num type="lot">135</num>
@@ -1866,7 +1866,7 @@
                <trait>
                   <p>duc de Rivoli, illustre maréchal de France.</p>
                </trait>
-               <desc xml:id="CAT_000172_e164_d1"><term ana="#document_type_7">L. a. s.</term> à son ami Vial; Loano, <date date="1795-04-21" type="length">2 floréal an III</date>. <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, légère déchirure enlevant 2 fins de lignes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000172_e164_d1"><term ana="#document_type_7">L. a. s.</term> à son ami Vial; Loano, <date when="1795-04-21">2 floréal an III</date>. <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, légère déchirure enlevant 2 fins de lignes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Intéressante lettre. « Depuis le commencement de la guerre d'Italie, je sers
                   dans cette armée, je crois y avoir servi avec distinction, ayant toujours été
                   chargé du commandement de la division la plus considérable, et des expéditions les
@@ -2007,7 +2007,7 @@
                   <p>roi de Naples, beau-frère de Napoléon Ier, né dans le Lot en 1771, fusillé le
                      13 oct. 1815.</p>
                </trait>
-               <desc xml:id="CAT_000172_e178_d1"><term ana="#document_type_9">Let. sig.</term>; Milan, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000172_e178_d1"><term ana="#document_type_9">Let. sig.</term>; Milan, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="179" xml:id="CAT_000172_e179">
                <num type="lot">179</num>
@@ -2025,7 +2025,7 @@
             <item n="180" xml:id="CAT_000172_e180">
                <num type="lot">180</num>
                <name type="author">Napoléon Ier.</name>
-               <desc xml:id="CAT_000172_e180_d1">-<term ana="#document_type_4">Pièce sig</term>. Bonaparte; Paris, <date date="1803-11-21" type="length">29 brumaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure> Vigneite de Roger. Fatiguée, et raccommodée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000172_e180_d1">-<term ana="#document_type_4">Pièce sig</term>. Bonaparte; Paris, <date when="1803-11-21">29 brumaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure> Vigneite de Roger. Fatiguée, et raccommodée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="181" xml:id="CAT_000172_e181">
                <num type="lot">181</num>
@@ -2060,7 +2060,7 @@
                   <p>duc d'Elchingen, prince de la Moskowa, illustre maréchal de France, né à
                      Sarrelouis en 1769, fusillé le 7 déc. 1815.</p>
                </trait>
-               <desc xml:id="CAT_000172_e184_d1">P. <term ana="#document_type_15">a. s.</term> ; Montreuil-sur-Mer, <date date="1804-07-26" type="length">6 thermidor an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_112">in-12 obl.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000172_e184_d1">P. <term ana="#document_type_15">a. s.</term> ; Montreuil-sur-Mer, <date when="1804-07-26">6 thermidor an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_112">in-12 obl.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="185" xml:id="CAT_000172_e185">
                <num type="lot">185</num>
@@ -2123,7 +2123,7 @@
                   <p>maréchal de France, célèbre par la campagne des Pyrénées en 1795, né près de
                      Toulouse en 1754, mort en 1818.</p>
                </trait>
-               <desc xml:id="CAT_000172_e191_d1"><term ana="#document_type_7">L. a. s.</term>; an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000172_e191_d1"><term ana="#document_type_7">L. a. s.</term>; an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="192" xml:id="CAT_000172_e192">
                <num type="lot">192</num>
@@ -2526,7 +2526,7 @@
                      auteur de la Constitution de 1791, de l'Acad. fr., né en 1733, mort en 1806.
                     </p>
                </trait>
-               <desc xml:id="CAT_000172_e227_d1"><term ana="#document_type_2">Pièce aut. sig.</term>; Paris, <date date="1799-05-05" type="length">16 floréal an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000172_e227_d1"><term ana="#document_type_2">Pièce aut. sig.</term>; Paris, <date when="1799-05-05">16 floréal an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Curieuse pièce relative à Mme de Sabran (Marie-Antoinette Coste Champeron,
                   femme du comte Elzéar de Sabran, l'écrivain). Consultation sur les droits qu'ont
                   le citoyen et la citoyenne Casteras, de Toulouse, sur la donation de 50,000 fr.
@@ -2570,7 +2570,7 @@
                   <p>célèbre général de la Révolution et de l'Empire, né à Vernon en 1749, mort en
                      1822.</p>
                </trait>
-               <desc xml:id="CAT_000172_e231_d1"><term ana="#document_type_7">L. a. s.</term> à son ami le général Ernouf ; Paris, <date date="1802-02-22" type="length">3 ventôse an X</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000172_e231_d1"><term ana="#document_type_7">L. a. s.</term> à son ami le général Ernouf ; Paris, <date when="1802-02-22">3 ventôse an X</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="232" xml:id="CAT_000172_e232">
                <num type="lot">232</num>

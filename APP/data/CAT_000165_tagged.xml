@@ -60,7 +60,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces the entries that correspond to documents for sale. All text preceding or succeeding the list of documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -184,7 +184,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020-07-17">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -296,7 +296,7 @@
                <trait>
                   <p>cantatrice de l'Opéra, célèbre par son esprit, née en 1744, morte en 1803.</p>
                </trait>
-               <desc xml:id="CAT_000165_e13_d1"><term ana="#document_type_7">L. a. s.</term> à Chaptal; Paris, <date date="1801-04-13" type="length">23 germinal an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 25</desc><note>Curieuse lettre au sujet de sa pension : « Vous avez promis à nos amis de me continuer vos bontés, de ne pas perdre de vue la pauvre Sophie.»</note>
+               <desc xml:id="CAT_000165_e13_d1"><term ana="#document_type_7">L. a. s.</term> à Chaptal; Paris, <date when="1801-04-13">23 germinal an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 25</desc><note>Curieuse lettre au sujet de sa pension : « Vous avez promis à nos amis de me continuer vos bontés, de ne pas perdre de vue la pauvre Sophie.»</note>
             </item>
             <item n="14" xml:id="CAT_000165_e14">
                <num type="lot">14</num>
@@ -304,7 +304,7 @@
                <trait>
                   <p>général et diplomate français, député de l'Isère à la Législative, ministre de la guerre en l'an IV, qui prit une grande part à la guerre de l'Indépendance américaine, né dans la Louisiane en 1759, mort en 1797.</p>
                </trait>
-               <desc xml:id="CAT_000165_e14_d1"><term ana="#document_type_9">Let. sig.</term> 2 fois avec un post-script, de 20 lignes aut. ; Toulon, <date date="1796-06-03" type="length">15 prairial an IV</date>. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imprimée. 10</desc><note>Curieuse lettre écrite comme ambassadeur de la République française près la Porte ottomane.</note>
+               <desc xml:id="CAT_000165_e14_d1"><term ana="#document_type_9">Let. sig.</term> 2 fois avec un post-script, de 20 lignes aut. ; Toulon, <date when="1796-06-03">15 prairial an IV</date>. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imprimée. 10</desc><note>Curieuse lettre écrite comme ambassadeur de la République française près la Porte ottomane.</note>
             </item>
             <item n="15" xml:id="CAT_000165_e15">
                <num type="lot">15</num>
@@ -320,7 +320,7 @@
                <trait>
                   <p>diplomate distingué, ambassadeur en Suède, à Ratisbonne et à Francfort, né à Thann (Alsace) en 1748, mort en 1813.</p>
                </trait>
-               <desc xml:id="CAT_000165_e16_d1"><term ana="#document_type_9">Let. sig.</term> aux administrateurs du distriet de Montbéliard; Bâle, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette. 8</desc></item>
+               <desc xml:id="CAT_000165_e16_d1"><term ana="#document_type_9">Let. sig.</term> aux administrateurs du distriet de Montbéliard; Bâle, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette. 8</desc></item>
             <item n="17" xml:id="CAT_000165_e17">
                <num type="lot">17</num>
                <name type="author">Bailly (Sylvain)</name>
@@ -450,7 +450,7 @@
                <trait>
                   <p>maréchal de l'Empire, puis roi de Suède sous le nom de Charles-Jean XIV, né à Pau en 1764, mort en 1844.</p>
                </trait>
-               <desc xml:id="CAT_000165_e33_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript aut.; quartier général de Mannheim, <date date="1799-03-20" type="length">30 ventôse an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> 6</desc></item>
+               <desc xml:id="CAT_000165_e33_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript aut.; quartier général de Mannheim, <date when="1799-03-20">30 ventôse an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> 6</desc></item>
             <item n="34" xml:id="CAT_000165_e34">
                <num type="lot">34</num>
                <name type="author">Bertaux (Duplessis)</name>
@@ -657,7 +657,7 @@
                <trait>
                   <p>ingénieur frère et collaborateur de Claude Chappe, né à Rouen en 1760, mort en 1828.</p>
                </trait>
-               <desc xml:id="CAT_000165_e61_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date date="1801-05-07" type="length">17 floréal an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse vignette. 6</desc></item>
+               <desc xml:id="CAT_000165_e61_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1801-05-07">17 floréal an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse vignette. 6</desc></item>
             <item n="62" xml:id="CAT_000165_e62">
                <num type="lot">62</num>
                <name type="author">Charles IX</name>
@@ -892,7 +892,7 @@
                <trait>
                   <p>dessinateur et graveur, archéologue, célèbre diplomate, né à Châlon-sur- Saône en 1747, mort en 1825.</p>
                </trait>
-               <desc xml:id="CAT_000165_e92_d1"><term ana="#document_type_7">L. a. s.</term> à Gibert ; Paris, <date date="none" type="length">13 messi lor an XI</date></desc><note>(2 juillet 1803), 2p. in-4, tête imp. 6 » Curieuse lettre. Le premier consul désire que la Vénus de Médicis (Vénus accroupie au bain, aujourd'hui dans la galerie des Offices, à Florence) soit « offerte aux regards du public le 26 messidor, pour anniversaire du 14 juillet, fête consacrée par le gouvernement. » Comme les eaux peuvent baisser, la statue, aménée par eau, pourra être transbordée dans un bateau plus petit.</note>
+               <desc xml:id="CAT_000165_e92_d1"><term ana="#document_type_7">L. a. s.</term> à Gibert ; Paris, <date when="none">13 messi lor an XI</date></desc><note>(2 juillet 1803), 2p. in-4, tête imp. 6 » Curieuse lettre. Le premier consul désire que la Vénus de Médicis (Vénus accroupie au bain, aujourd'hui dans la galerie des Offices, à Florence) soit « offerte aux regards du public le 26 messidor, pour anniversaire du 14 juillet, fête consacrée par le gouvernement. » Comme les eaux peuvent baisser, la statue, aménée par eau, pourra être transbordée dans un bateau plus petit.</note>
             </item>
             <item n="93" xml:id="CAT_000165_e93">
                <num type="lot">93</num>
@@ -1060,7 +1060,7 @@
                <trait>
                   <p>célèbre littérateur et homme d'Etat, de l'Acad. fr., né à Saffais (Meurthe-et- Moselle) en 1750, mort en 1828. </p>
                </trait>
-               <desc xml:id="CAT_000165_e114_d1">-<term ana="#document_type_9">Let. sig.</term> à Bernardin de Saint-Pierre; Paris, <date date="1798-10-18" type="length">27 vendémiaire an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. 4</desc><note>Belle lettre où il fait l'éloge des Etudes de la nature.</note>
+               <desc xml:id="CAT_000165_e114_d1">-<term ana="#document_type_9">Let. sig.</term> à Bernardin de Saint-Pierre; Paris, <date when="1798-10-18">27 vendémiaire an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. 4</desc><note>Belle lettre où il fait l'éloge des Etudes de la nature.</note>
             </item>
             <item n="115" xml:id="CAT_000165_e115">
                <num type="lot">115</num>
@@ -1423,7 +1423,7 @@
                <trait>
                   <p>l'illustre astronome, de l'Acad. des Sciences, né à Bourg (Ain) en 1732, mort en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000165_e162_d1"><term ana="#document_type_7">L. a. s.</term> à Agasse ; Paris, <date date="1800-02-06" type="length">17 pluviose an VIII</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 6</desc></item>
+               <desc xml:id="CAT_000165_e162_d1"><term ana="#document_type_7">L. a. s.</term> à Agasse ; Paris, <date when="1800-02-06">17 pluviose an VIII</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 6</desc></item>
             <item n="163" xml:id="CAT_000165_e163">
                <num type="lot">163</num>
                <name type="author">La Luzerne (Anne-César  chevalier de)</name>
@@ -1777,7 +1777,7 @@
                <trait>
                   <p>l'illustre géomètre, né à Beaune en 1746, mort en 1818.</p>
                </trait>
-               <desc xml:id="CAT_000165_e208_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Paris, <date date="1798-01-07" type="length">18 nivôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Déchirure atteignant légèrement le texte. 12</desc><note>Lettre écrite comme directeur de l'Ecole polytechnique au sujet de l'examen à faire de la poudre de guerre inventée par M. Champy.</note>
+               <desc xml:id="CAT_000165_e208_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Paris, <date when="1798-01-07">18 nivôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Déchirure atteignant légèrement le texte. 12</desc><note>Lettre écrite comme directeur de l'Ecole polytechnique au sujet de l'examen à faire de la poudre de guerre inventée par M. Champy.</note>
             </item>
             <item n="209" xml:id="CAT_000165_e209">
                <num type="lot">209</num>
@@ -2025,7 +2025,7 @@
                <trait>
                   <p>peintre et graveur, un des plus gracieux portraitistes et vignettistes du XVIIIe siècle.</p>
                </trait>
-               <desc xml:id="CAT_000165_e241_d1"><term ana="#document_type_4">Pièce sig</term>. avec 2 mots aut. ; Paris, <date date="1797-07-26" type="length">8 thermidor an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> 10</desc><note>Reçu de 300 livres, à compte sur le nouveau frontispice de l'Encyclopédie.</note>
+               <desc xml:id="CAT_000165_e241_d1"><term ana="#document_type_4">Pièce sig</term>. avec 2 mots aut. ; Paris, <date when="1797-07-26">8 thermidor an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> 10</desc><note>Reçu de 300 livres, à compte sur le nouveau frontispice de l'Encyclopédie.</note>
             </item>
             <item n="242" xml:id="CAT_000165_e242">
                <num type="lot">242</num>

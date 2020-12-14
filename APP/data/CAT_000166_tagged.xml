@@ -28,7 +28,7 @@
                <publisher>Frédéric Naylor</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date when="1879">1879</date>
+               <date>1879</date>
             </bibl>
             <listEvent>
                <event>
@@ -62,7 +62,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces the entries that correspond to documents for sale. All text preceding or succeeding the list of documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -304,7 +304,7 @@
                   <p>célèbre
 						conventionnel et directeur, n. 1755, m. 1829.</p>
                </trait>
-               <desc xml:id="CAT_000166_e12_d1">1° <term ana="#document_type_7">L. a. s.</term>, sig. aussi par Delmas, au commandant de la gendarmerie du Luxembourg; Paris, <date date="1794-07-30" type="length">12 thermidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000166_e12_d2">2° Certificat <term ana="#document_type_15">aut. sig.</term> ; Paris, <date date="1794-12-04" type="length">14 frimaire an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
+               <desc xml:id="CAT_000166_e12_d1">1° <term ana="#document_type_7">L. a. s.</term>, sig. aussi par Delmas, au commandant de la gendarmerie du Luxembourg; Paris, <date when="1794-07-30">12 thermidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000166_e12_d2">2° Certificat <term ana="#document_type_15">aut. sig.</term> ; Paris, <date when="1794-12-04">14 frimaire an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
             <item n="13" xml:id="CAT_000166_e13">
                <num type="lot">13</num>
                <name type="author">Barthelemy (A.-M.),</name>
@@ -323,7 +323,7 @@
 						Jacques, auteur dramatique et compositeur de musique, n. 1757, m.
 						1811.</p>
                </trait>
-               <desc xml:id="CAT_000166_e14_d1"><term ana="#document_type_7">L. a. s.</term> aux citoyens de la section des Petits Pères; Joigny, <date date="none" type="length">18 avril an II</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, enveloppe.</desc><note>Très curieuse épître où
+               <desc xml:id="CAT_000166_e14_d1"><term ana="#document_type_7">L. a. s.</term> aux citoyens de la section des Petits Pères; Joigny, <date when="none">18 avril an II</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, enveloppe.</desc><note>Très curieuse épître où
 						il explique à ses concitoyens que les mauvais bruits qui circulent sur la
 						situation de la capitale l'empêchent d'y revenir.</note>
             </item>
@@ -348,17 +348,17 @@
                   <p>maréchal de l'Empire, puis
 						ro de Suède, n. 1764, m. 1844.</p>
                </trait>
-               <desc xml:id="CAT_000166_e17_d1"><term ana="#document_type_7">L. a. s.</term> à Berthier; Rennes, <date date="1801-09-04" type="length">17 fructidor an IX</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Belle lettre de recommandation en faveur du
+               <desc xml:id="CAT_000166_e17_d1"><term ana="#document_type_7">L. a. s.</term> à Berthier; Rennes, <date when="1801-09-04">17 fructidor an IX</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Belle lettre de recommandation en faveur du
 						citoyen Lehoreau, commissaire des guerres.</note>
             </item>
             <item n="18" xml:id="CAT_000166_e18">
                <num type="lot">18</num>
                <name type="author">Bernadotte (J.-B.-Jules)</name>
-               <desc xml:id="CAT_000166_e18_d1"><date date="none" type="length">6 l. s. ; an VII</date>, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et têtes impr. Belles lettres.</desc></item>
+               <desc xml:id="CAT_000166_e18_d1"><date when="none">6 l. s. ; an VII</date>, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et têtes impr. Belles lettres.</desc></item>
             <item n="19" xml:id="CAT_000166_e19">
                <num type="lot">19</num>
                <name type="author">Bernadotte (J.-B.-Jules)</name>
-               <desc xml:id="CAT_000166_e19_d1">1° Recommandation de 6 lignes <term ana="#document_type_15">aut. sig.</term>, sig. aussi par Championnet, M.-J. Chénier, Jourdan, etc., <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e19_d2">2° <term ana="#document_type_9">L. s.</term> au général Ernouf; <date date="1798-01-30" type="length">11 pluviôse an VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000166_e19_d3">3° <date date="none" type="length"><measure type="length" unit="p" n="2">2 p.</measure> s.; an III</date>, 2 p. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Un peu fatiguées.</desc></item>
+               <desc xml:id="CAT_000166_e19_d1">1° Recommandation de 6 lignes <term ana="#document_type_15">aut. sig.</term>, sig. aussi par Championnet, M.-J. Chénier, Jourdan, etc., <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e19_d2">2° <term ana="#document_type_9">L. s.</term> au général Ernouf; <date when="1798-01-30">11 pluviôse an VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000166_e19_d3">3° <date when="none"><measure type="length" unit="p" n="2">2 p.</measure> s.; an III</date>, 2 p. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Un peu fatiguées.</desc></item>
             <item n="20" xml:id="CAT_000166_e20">
                <num type="lot">20</num>
                <name type="author">Bernadotte (J.-B.-Jules)</name>
@@ -412,7 +412,7 @@
                   <p>célèbre conventionnel, n. 1763,
 						compromis dans le mouvement de prairial et décapité en 1795.</p>
                </trait>
-               <desc xml:id="CAT_000166_e25_d1">1° Arrêté <term ana="#document_type_15">aut. sig.</term>; Nantes, <date date="1794-06-01" type="length">13 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig., tête imp. et cachet.</desc><desc xml:id="CAT_000166_e25_d2">2° <term ana="#document_type_2">Pièce de 7 lignes aut. sig.</term> à la suite d'une pétition ; an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
+               <desc xml:id="CAT_000166_e25_d1">1° Arrêté <term ana="#document_type_15">aut. sig.</term>; Nantes, <date when="1794-06-01">13 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig., tête imp. et cachet.</desc><desc xml:id="CAT_000166_e25_d2">2° <term ana="#document_type_2">Pièce de 7 lignes aut. sig.</term> à la suite d'une pétition ; an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="26" xml:id="CAT_000166_e26">
                <num type="lot">26</num>
                <name type="author">Bourmont (L.-Aug.-Victor, comte de),</name>
@@ -464,7 +464,7 @@
                   <p>l'illustre organisateur des armées
 						de la République, n. 1753, m. 1823.</p>
                </trait>
-               <desc xml:id="CAT_000166_e31_d1">1° P. <term ana="#document_type_15">a. s.</term>; <date date="1800-07-06" type="length">17 messidor an VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Relative à l'organisation de l'armée de réserve à l'époque de la campagne de Marengo.</desc><desc xml:id="CAT_000166_e31_d2">2° <measure type="length" unit="p" n="2">2 p.</measure> s., sig. aussi par Barère, Billaud-Varenne, Collos 3° <term ana="#document_type_9">L. s.</term>; <date when="1815">1815</date>, 1/2 p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
+               <desc xml:id="CAT_000166_e31_d1">1° P. <term ana="#document_type_15">a. s.</term>; <date when="1800-07-06">17 messidor an VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Relative à l'organisation de l'armée de réserve à l'époque de la campagne de Marengo.</desc><desc xml:id="CAT_000166_e31_d2">2° <measure type="length" unit="p" n="2">2 p.</measure> s., sig. aussi par Barère, Billaud-Varenne, Collos 3° <term ana="#document_type_9">L. s.</term>; <date when="1815">1815</date>, 1/2 p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="32" xml:id="CAT_000166_e32">
                <num type="lot">32</num>
                <name type="author">Carrel (Armand),</name>
@@ -489,7 +489,7 @@
             <item n="34" xml:id="CAT_000166_e34">
                <num type="lot">34</num>
                <name type="author">Carrier (J.-B.)</name>
-               <desc xml:id="CAT_000166_e34_d1"><term ana="#document_type_4">P. s.</term>; Nantes, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig., tête impr. et cachet.</desc></item>
+               <desc xml:id="CAT_000166_e34_d1"><term ana="#document_type_4">P. s.</term>; Nantes, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig., tête impr. et cachet.</desc></item>
             <item n="35" xml:id="CAT_000166_e35">
                <num type="lot">35</num>
                <name type="author">Catherine Opalinska,</name>
@@ -626,7 +626,7 @@
                   <p>célèbre conventionnel et membre du
 						Comité de Salut public, n. 1756, décapité en 1794.</p>
                </trait>
-               <desc xml:id="CAT_000166_e50_d1">Recommandation de 24 petites lignes <term ana="#document_type_15">aut. sig.</term> en marge d'une lettre d'Antoine Chabozy, lieutenant au 2e bataillon du Puy-de-Dôme; <date date="1794-05-09" type="length">20 floréal an II</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
+               <desc xml:id="CAT_000166_e50_d1">Recommandation de 24 petites lignes <term ana="#document_type_15">aut. sig.</term> en marge d'une lettre d'Antoine Chabozy, lieutenant au 2e bataillon du Puy-de-Dôme; <date when="1794-05-09">20 floréal an II</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="51" xml:id="CAT_000166_e51">
                <num type="lot">51</num>
                <name type="author">Crébillon (Cl.-Prosper Jolyor de),</name>
@@ -650,7 +650,7 @@
                   <p>le grand naturaliste, n. 1769, m.
 						1832.</p>
                </trait>
-               <desc xml:id="CAT_000166_e53_d1">1° <date date="none" type="length"><measure type="length" unit="p" n="2">2 p.</measure> s.; an XII</date>, 5 p. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e53_d2">2° <term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légères taches.</desc></item>
+               <desc xml:id="CAT_000166_e53_d1">1° <date when="none"><measure type="length" unit="p" n="2">2 p.</measure> s.; an XII</date>, 5 p. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e53_d2">2° <term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légères taches.</desc></item>
             <item n="54" xml:id="CAT_000166_e54">
                <num type="lot">54</num>
                <name type="author">Dampierre (A.-N.-H. Picot, marquis de),</name>
@@ -658,7 +658,7 @@
                   <p>célèbre
 						général républicain, n. 1756, tué à Famars, 1793.</p>
                </trait>
-               <desc xml:id="CAT_000166_e54_d1"><term ana="#document_type_7">L. a. s.</term>; Denain, <date date="none" type="length">7 juin an IV</date> de la liberté, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Il demande le grade de maréchal de
+               <desc xml:id="CAT_000166_e54_d1"><term ana="#document_type_7">L. a. s.</term>; Denain, <date when="none">7 juin an IV</date> de la liberté, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Il demande le grade de maréchal de
 					camp.</note>
             </item>
             <item n="55" xml:id="CAT_000166_e55">
@@ -720,7 +720,7 @@
                   <p>médecin, général des armées de
 						la République, n. 1753, m. 1800.</p>
                </trait>
-               <desc xml:id="CAT_000166_e61_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Buard; Nancy, <date date="1796-02-29" type="length">10 ventôse an IV</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr.</desc><note>Très belle lettre où il se disculpe des
+               <desc xml:id="CAT_000166_e61_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Buard; Nancy, <date when="1796-02-29">10 ventôse an IV</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr.</desc><note>Très belle lettre où il se disculpe des
 						accusations dont il est l'objet.</note>
             </item>
             <item n="62" xml:id="CAT_000166_e62">
@@ -761,7 +761,7 @@
                   <p>poète tragique, de l'Acad. fr., n.
 						1733, m. 1816.</p>
                </trait>
-               <desc xml:id="CAT_000166_e65_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1798-02-15" type="length">27 pluviôse an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Il demande un certificat du brevet de la
+               <desc xml:id="CAT_000166_e65_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1798-02-15">27 pluviôse an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Il demande un certificat du brevet de la
 						pension de 1,440 livres, dont il jouissait avant la
 					Révolution.</note>
             </item>
@@ -855,14 +855,14 @@
 						accusateur public du tribunal révolutionnaire, n. 1747, décapité en
 						1795.</p>
                </trait>
-               <desc xml:id="CAT_000166_e75_d1"><term ana="#document_type_4">P. s.</term>; <date date="1793-12-17" type="length">27 frimaire an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><note>Ordre d'exécution de Nicolas-Remy Le Piere (F),
+               <desc xml:id="CAT_000166_e75_d1"><term ana="#document_type_4">P. s.</term>; <date when="1793-12-17">27 frimaire an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><note>Ordre d'exécution de Nicolas-Remy Le Piere (F),
 						juge de paix de Sainte-Menehould, ex-député à l'Assemblée
 						constituante.</note>
             </item>
             <item n="76" xml:id="CAT_000166_e76">
                <num type="lot">76</num>
                <name type="author">Fouquier-Tinville (Ant.-Quentin)</name>
-               <desc xml:id="CAT_000166_e76_d1"><term ana="#document_type_4">P. s.</term>; <date date="1794-02-01" type="length">13 pluviôse an II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. et cachet.</desc></item>
+               <desc xml:id="CAT_000166_e76_d1"><term ana="#document_type_4">P. s.</term>; <date when="1794-02-01">13 pluviôse an II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. et cachet.</desc></item>
             <item n="77" xml:id="CAT_000166_e77">
                <num type="lot">77</num>
                <name type="author">François Ier,</name>
@@ -907,7 +907,7 @@
                   <p>célèbre amiral, n. 1755, m.
 						1818.</p>
                </trait>
-               <desc xml:id="CAT_000166_e81_d1"><term ana="#document_type_7">L. a. s.</term> à Emeriau; Aubagne, <date date="1802-07-12" type="length">23 messidor an X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. et superbe vignette avec la devise :Nous</desc><note>qouvernions sur son ttoile, qui faisait allusion
+               <desc xml:id="CAT_000166_e81_d1"><term ana="#document_type_7">L. a. s.</term> à Emeriau; Aubagne, <date when="1802-07-12">23 messidor an X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. et superbe vignette avec la devise :Nous</desc><note>qouvernions sur son ttoile, qui faisait allusion
 						au retour de Bonaparte d'Egypte.</note>
             </item>
             <item n="82" xml:id="CAT_000166_e82">
@@ -932,7 +932,7 @@
                   <p>célèbre peintre, membre
 						de l'Institut, n. 1770, m. 1837.</p>
                </trait>
-               <desc xml:id="CAT_000166_e84_d1"><term ana="#document_type_7">L. a. s.</term> à M. Trioson; Paris, <date date="1795-06-25" type="length">7 messidor an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Demande de nouvelles de Girodet.</note>
+               <desc xml:id="CAT_000166_e84_d1"><term ana="#document_type_7">L. a. s.</term> à M. Trioson; Paris, <date when="1795-06-25">7 messidor an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Demande de nouvelles de Girodet.</note>
             </item>
             <item n="85" xml:id="CAT_000166_e85">
                <num type="lot">85</num>
@@ -950,7 +950,7 @@
             <item n="86" xml:id="CAT_000166_e86">
                <num type="lot">86</num>
                <name type="author">Girodet-Trioson (A.-L.)</name>
-               <desc xml:id="CAT_000166_e86_d1"><term ana="#document_type_2">Pièce de vers aut. sig.</term>; an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Vers
+               <desc xml:id="CAT_000166_e86_d1"><term ana="#document_type_2">Pièce de vers aut. sig.</term>; an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Vers
 						lus au dîner donné par les peintres de l'Ecole française à Gros le 2
 						vendémiaire an XIII, à l'occasion du couronnement de son tableau Ea peste de
 						Jaffa.</note>
@@ -958,7 +958,7 @@
             <item n="87" xml:id="CAT_000166_e87">
                <num type="lot">87</num>
                <name type="author">Girodet-Trioson (A.-L.)</name>
-               <desc xml:id="CAT_000166_e87_d1">1° Minute de lettre autographe; Paris, <date date="1801-06-21" type="length">2 messidor an IX</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000166_e87_d2">2° <term ana="#document_type_3">Pièce autographe</term>, avec ratures et corrections; (<date when="1819">1819</date>), <measure type="length" unit="p" n="5">5 p.</measure> in-fol. à mi-marge. Très curieux article où il répond aux critiques faites dans la Renommée sur son tableau de Pygmalion et Galatée et à l'accusation de plagiat qui lui avait été adressée. 3° 2 l. a. s. du médecin Trioson, son protecteur; an IX, 8 p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
+               <desc xml:id="CAT_000166_e87_d1">1° Minute de lettre autographe; Paris, <date when="1801-06-21">2 messidor an IX</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000166_e87_d2">2° <term ana="#document_type_3">Pièce autographe</term>, avec ratures et corrections; (<date when="1819">1819</date>), <measure type="length" unit="p" n="5">5 p.</measure> in-fol. à mi-marge. Très curieux article où il répond aux critiques faites dans la Renommée sur son tableau de Pygmalion et Galatée et à l'accusation de plagiat qui lui avait été adressée. 3° 2 l. a. s. du médecin Trioson, son protecteur; an IX, 8 p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="88" xml:id="CAT_000166_e88">
                <num type="lot">88</num>
                <name type="author">Gouffé (Armand),</name>
@@ -992,7 +992,7 @@
                   <p>maréchal de France, n. 1766, m.
 						1847.</p>
                </trait>
-               <desc xml:id="CAT_000166_e91_d1">1° <term ana="#document_type_7">L. a. s.</term> à Savary; Nantes, <date date="1797-09-13" type="length">27 fructidor an V</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><desc xml:id="CAT_000166_e91_d2">2° <term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc></item>
+               <desc xml:id="CAT_000166_e91_d1">1° <term ana="#document_type_7">L. a. s.</term> à Savary; Nantes, <date when="1797-09-13">27 fructidor an V</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><desc xml:id="CAT_000166_e91_d2">2° <term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc></item>
             <item n="92" xml:id="CAT_000166_e92">
                <num type="lot">92</num>
                <name type="author">Guadet (Marguerite-Elie),</name>
@@ -1009,7 +1009,7 @@
                   <p>général des guerres de la République et de
 						l'Empire, n. 1749, m. 1815.</p>
                </trait>
-               <desc xml:id="CAT_000166_e93_d1">1° <term ana="#document_type_7">L. a. s.</term> au Comité de salut public; prison de l'Abbaye, <date date="1794-03-30" type="length">10 germinal an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e93_d2">2° P. <term ana="#document_type_15">a. s.</term>; <date date="1794-03-30" type="length">10 germinal an II</date>, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Protestation contre sa détention et état de
+               <desc xml:id="CAT_000166_e93_d1">1° <term ana="#document_type_7">L. a. s.</term> au Comité de salut public; prison de l'Abbaye, <date when="1794-03-30">10 germinal an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e93_d2">2° P. <term ana="#document_type_15">a. s.</term>; <date when="1794-03-30">10 germinal an II</date>, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Protestation contre sa détention et état de
 						ses services militaires et révolutionnaires.</note>
             </item>
             <item n="94" xml:id="CAT_000166_e94">
@@ -1019,7 +1019,7 @@
                   <p>dit le Père Duchesne, fameux
 						pamphlétaire, n. 1755, décapité en 1794.</p>
                </trait>
-               <desc xml:id="CAT_000166_e94_d1"><term ana="#document_type_9">L. s.</term>, sig. aussi par Chaumette, à Audouin; <date date="1794-02-27" type="length">9 ventôse an II</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. et vig.</desc><note>Recommandation en faveur
+               <desc xml:id="CAT_000166_e94_d1"><term ana="#document_type_9">L. s.</term>, sig. aussi par Chaumette, à Audouin; <date when="1794-02-27">9 ventôse an II</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. et vig.</desc><note>Recommandation en faveur
 						du citoyen Michel, brave soldat et bon patriote.</note>
             </item>
             <item n="95" xml:id="CAT_000166_e95">
@@ -1051,7 +1051,7 @@
                   <p>célèbre conventionnel,
 						n. 1760, décapité en 1794.</p>
                </trait>
-               <desc xml:id="CAT_000166_e98_d1"><term ana="#document_type_7">L. a. s.</term> au général Pille; Paris, <date date="1794-02-25" type="length">7 ventôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Recommandation en faveur du citoyen Malurdot qui
+               <desc xml:id="CAT_000166_e98_d1"><term ana="#document_type_7">L. a. s.</term> au général Pille; Paris, <date when="1794-02-25">7 ventôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Recommandation en faveur du citoyen Malurdot qui
 						l'a accompagné comme secrétaire dans sa mission dans le
 					Haut-Rhin.</note>
             </item>
@@ -1062,11 +1062,11 @@
                   <p>un des plus illustres généraux des
 						armées de la République, n. 1768, m. 1797.</p>
                </trait>
-               <desc xml:id="CAT_000166_e99_d1"><term ana="#document_type_9">L. s.</term> au cit. Lefebvre; Nantes, <date date="1795-11-29" type="length">8 frimaire an IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. avec la devise Res non verba.</desc></item>
+               <desc xml:id="CAT_000166_e99_d1"><term ana="#document_type_9">L. s.</term> au cit. Lefebvre; Nantes, <date when="1795-11-29">8 frimaire an IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. avec la devise Res non verba.</desc></item>
             <item n="100" xml:id="CAT_000166_e100">
                <num type="lot">100</num>
                <name type="author">Hoche (Lazare)</name>
-               <desc xml:id="CAT_000166_e100_d1"><term ana="#document_type_9">L. s.</term> au cit. Rostaing; Fridberg, <date date="1797-05-07" type="length">18 floréal an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
+               <desc xml:id="CAT_000166_e100_d1"><term ana="#document_type_9">L. s.</term> au cit. Rostaing; Fridberg, <date when="1797-05-07">18 floréal an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
             <item n="101" xml:id="CAT_000166_e101">
                <num type="lot">101</num>
                <name type="author">Huet (Pierre-Daniel),</name>
@@ -1121,7 +1121,7 @@
                   <p>le célèbre patriote polonais,
 						n. 1746, m. 1817.</p>
                </trait>
-               <desc xml:id="CAT_000166_e108_d1">Apostille de 4 lignes <term ana="#document_type_15">aut. sig.</term>; Paris, <date date="1800-11-30" type="length">9 frimaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
+               <desc xml:id="CAT_000166_e108_d1">Apostille de 4 lignes <term ana="#document_type_15">aut. sig.</term>; Paris, <date when="1800-11-30">9 frimaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
             <item n="109" xml:id="CAT_000166_e109">
                <num type="lot">109</num>
                <name type="author">Lacépède (B.-G.-Et. de La Ville, comte de),</name>
@@ -1177,7 +1177,7 @@
                   <p>un des plus grands géomètres
 						des temps modernes, n. 1736, m. 1813.</p>
                </trait>
-               <desc xml:id="CAT_000166_e113_d1">Apostille de 15 petites lignes aut. sig. sur une lettre du mathématicien Tedenat, correspondant de l'Institut; an <date date="1805" type="length">XIV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> <term ana="#document_type_8">L. a.</term> lettre de Tedenat est apostillée aussi par Fourcroy, Laplace et Berthollet.</desc></item>
+               <desc xml:id="CAT_000166_e113_d1">Apostille de 15 petites lignes aut. sig. sur une lettre du mathématicien Tedenat, correspondant de l'Institut; an <date when="1805">XIV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> <term ana="#document_type_8">L. a.</term> lettre de Tedenat est apostillée aussi par Fourcroy, Laplace et Berthollet.</desc></item>
             <item n="114" xml:id="CAT_000166_e114">
                <num type="lot">114</num>
                <name type="author">Lagrange-Chancel (Fr.-Jos. de),</name>
@@ -1237,7 +1237,7 @@
                   <p>conventionnel, ami de Madame Roland,
 						n. 1740, m. 1799.</p>
                </trait>
-               <desc xml:id="CAT_000166_e120_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Chéry ; <date date="1795-10-16" type="length">24 vendémiaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Un peu jaunie.</desc></item>
+               <desc xml:id="CAT_000166_e120_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Chéry ; <date when="1795-10-16">24 vendémiaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Un peu jaunie.</desc></item>
             <item n="121" xml:id="CAT_000166_e121">
                <num type="lot">121</num>
                <name type="author">Laplace (P.-S., marquis de),</name>
@@ -1257,7 +1257,7 @@
 						de cavalerie de la Révolution et de l'Empire, n. 1775, tué à Wagram,
 						1809.</p>
                </trait>
-               <desc xml:id="CAT_000166_e122_d1"><term ana="#document_type_7">L. a. s.</term>, comme chef de brigade; Salamanque, <date date="1801-07-11" type="length">22 messidor an IX</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr. Légèredéchirure</desc><note>par la
+               <desc xml:id="CAT_000166_e122_d1"><term ana="#document_type_7">L. a. s.</term>, comme chef de brigade; Salamanque, <date when="1801-07-11">22 messidor an IX</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr. Légèredéchirure</desc><note>par la
 						rupture du cachet. Belle et rare lettre.</note>
             </item>
             <item n="123" xml:id="CAT_000166_e123">
@@ -1267,7 +1267,7 @@
                   <p>le premier
 						grenadier de la République française, n. 1743, tué en 1800.</p>
                </trait>
-               <desc xml:id="CAT_000166_e123_d1"><term ana="#document_type_7">L. a. s.</term> à Moreau; Paris, <date date="1797-04-05" type="length">16 germinal an V</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Pièce montée. Recommandation en faveur de son
+               <desc xml:id="CAT_000166_e123_d1"><term ana="#document_type_7">L. a. s.</term> à Moreau; Paris, <date when="1797-04-05">16 germinal an V</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Pièce montée. Recommandation en faveur de son
 						ami Le Brigant, qui sollicite le congé de son fils, soldat dans la 84e
 						demi-brigade d'infanterie.</note>
             </item>
@@ -1278,13 +1278,13 @@
                   <p>fameux conventionnel, n. 1765,
 						décapité en 1795.</p>
                </trait>
-               <desc xml:id="CAT_000166_e124_d1"><term ana="#document_type_7">L. a. s.</term> à Boiltet; Arras, <date date="none" type="length">27 juin an II</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légères taches et déchirures.</desc><note>Curieuse lettre sur le règlement des
+               <desc xml:id="CAT_000166_e124_d1"><term ana="#document_type_7">L. a. s.</term> à Boiltet; Arras, <date when="none">27 juin an II</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légères taches et déchirures.</desc><note>Curieuse lettre sur le règlement des
 						comptes de son père.</note>
             </item>
             <item n="125" xml:id="CAT_000166_e125">
                <num type="lot">125</num>
                <name type="author">Lebon (Joseph)</name>
-               <desc xml:id="CAT_000166_e125_d1">Apostille signée sur une l. s. du représentant Taillefer au président de la Convention ; <date date="1793-11-07" type="length">17 brumaire an II</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
+               <desc xml:id="CAT_000166_e125_d1">Apostille signée sur une l. s. du représentant Taillefer au président de la Convention ; <date when="1793-11-07">17 brumaire an II</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
             <item n="126" xml:id="CAT_000166_e126">
                <num type="lot">126</num>
                <name type="author">Lemot (Fr.-Fréd.),</name>
@@ -1626,7 +1626,7 @@
                   <p>illustre géomètre, n. 1746, m.
 						1818.</p>
                </trait>
-               <desc xml:id="CAT_000166_e167_d1"><term ana="#document_type_8">L. aut.</term> à sa femme; Passeriano, 3e jour complémentaire an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Curieuse épître politique. Il mande que la
+               <desc xml:id="CAT_000166_e167_d1"><term ana="#document_type_8">L. aut.</term> à sa femme; Passeriano, 3e jour complémentaire an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Curieuse épître politique. Il mande que la
 						citoyenne Bonaparte (Joséphine) vient d'arriver ici et que Bonaparte a fait
 						présent d'un beau sabre au général Desaix, dont il fait un éloge
 						flatteur.</note>
@@ -1649,11 +1649,11 @@
                   <p>un des plus illustres généraux
 						de la République, n. 1763, m. 1813.</p>
                </trait>
-               <desc xml:id="CAT_000166_e169_d1">1° <term ana="#document_type_9">L. s.</term>, comme président des jeunes citoyens militaires de Bretagne et d'Anjou; Pontivy, <date when="1790-01-25">25 janv. 1790</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e169_d2">2° Apostille signée; an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-3° <term ana="#document_type_8">L. aut.</term> à sa femme, 1 p. 1/2 in-4.</desc></item>
+               <desc xml:id="CAT_000166_e169_d1">1° <term ana="#document_type_9">L. s.</term>, comme président des jeunes citoyens militaires de Bretagne et d'Anjou; Pontivy, <date when="1790-01-25">25 janv. 1790</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e169_d2">2° Apostille signée; an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-3° <term ana="#document_type_8">L. aut.</term> à sa femme, 1 p. 1/2 in-4.</desc></item>
             <item n="170" xml:id="CAT_000166_e170">
                <num type="lot">170</num>
                <name type="author">Moreau (Jean-Victor)</name>
-               <desc xml:id="CAT_000166_e170_d1"><term ana="#document_type_7">L. a. s.</term> à Jos. Moreau; Strasbourg, <date date="1797-06-03" type="length">15 prairial an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vig., enveloppe et cachet. Très légère tache.</desc><note>Intéressante lettre où il annonce que la paix
+               <desc xml:id="CAT_000166_e170_d1"><term ana="#document_type_7">L. a. s.</term> à Jos. Moreau; Strasbourg, <date when="1797-06-03">15 prairial an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vig., enveloppe et cachet. Très légère tache.</desc><note>Intéressante lettre où il annonce que la paix
 						va être conclue avec l'Autriche.</note>
             </item>
             <item n="171" xml:id="CAT_000166_e171">
@@ -1671,7 +1671,7 @@
                   <p>illustre maréchal de l'Empire, n. 1769,
 						fusillé en 1815.</p>
                </trait>
-               <desc xml:id="CAT_000166_e172_d1"><term ana="#document_type_7">L. a. s.</term> au général Freytag ; Landau, <date date="1799-10-04" type="length">12 vendémiaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc></item>
+               <desc xml:id="CAT_000166_e172_d1"><term ana="#document_type_7">L. a. s.</term> au général Freytag ; Landau, <date when="1799-10-04">12 vendémiaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc></item>
             <item n="173" xml:id="CAT_000166_e173">
                <num type="lot">173</num>
                <name type="author">Ney (Michel)</name>
@@ -1893,7 +1893,7 @@
                   <p>célèbre conventionnel et
 						chef du Comité de Salut public, n. 1758, décapité en 1794.</p>
                </trait>
-               <desc xml:id="CAT_000166_e199_d1">P. <term ana="#document_type_15">a. s.</term>, sig. aussi par Billaud-Varenne; Paris, <date date="1793-11-05" type="length">15 brumaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl</measure>ong. Pièce montée. Le papier blanc au-dessous des signatures a été enlevé.</desc></item>
+               <desc xml:id="CAT_000166_e199_d1">P. <term ana="#document_type_15">a. s.</term>, sig. aussi par Billaud-Varenne; Paris, <date when="1793-11-05">15 brumaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl</measure>ong. Pièce montée. Le papier blanc au-dessous des signatures a été enlevé.</desc></item>
             <item n="200" xml:id="CAT_000166_e200">
                <num type="lot">200</num>
                <name type="author">Robespierre (Maximilien de)</name>
@@ -1909,7 +1909,7 @@
             <item n="202" xml:id="CAT_000166_e202">
                <num type="lot">202</num>
                <name type="author">Robespierre (Maximilien de)</name>
-               <desc xml:id="CAT_000166_e202_d1"><term ana="#document_type_4">P. s.</term>, écrite et sig. par Barère, sig. aussi par Billaud-Varenne; <date date="1794-05-16" type="length">27 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Déchirure enlevant la moitié de la signature de Billaud-Varenne.</desc><note>Ordre
+               <desc xml:id="CAT_000166_e202_d1"><term ana="#document_type_4">P. s.</term>, écrite et sig. par Barère, sig. aussi par Billaud-Varenne; <date when="1794-05-16">27 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Déchirure enlevant la moitié de la signature de Billaud-Varenne.</desc><note>Ordre
 						d'arrestation du cit. Jourdeuil, ci-devant adjoint au ministère de la
 						guerre.</note>
             </item>
@@ -1920,14 +1920,14 @@
                   <p>conventionnel, frère
 						du précédent, n. 1764, décapité en 1794.</p>
                </trait>
-               <desc xml:id="CAT_000166_e203_d1">P. <term ana="#document_type_15">a. s.</term>, sig. aussi par Ricord et Saliceti; Ollioules, <date date="1793-11-26" type="length">6 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig., tête impr. et cachet.</desc><note>Nomination du
+               <desc xml:id="CAT_000166_e203_d1">P. <term ana="#document_type_15">a. s.</term>, sig. aussi par Ricord et Saliceti; Ollioules, <date when="1793-11-26">6 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig., tête impr. et cachet.</desc><note>Nomination du
 						citoyen Boissonnet aux fonctions d'adjoint au corps du génie, sous les
 						ordres du chef du génie à l'armée sous Toulon.</note>
             </item>
             <item n="204" xml:id="CAT_000166_e204">
                <num type="lot">204</num>
                <name type="author">Robespierre (Aug.-Bon-Jos. de)</name>
-               <desc xml:id="CAT_000166_e204_d1"><term ana="#document_type_9">L. s.</term> de Trophime Lafont, chef du 3e bataillon de la 20° 1/2 brigade, au Comité de Salut public; Rouabillière, <date date="1794-09-09" type="length">23 fructidor an II</date>, <measure type="length" unit="p" n="11.5">11 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Dénonciation contre Robespierre jeune et
+               <desc xml:id="CAT_000166_e204_d1"><term ana="#document_type_9">L. s.</term> de Trophime Lafont, chef du 3e bataillon de la 20° 1/2 brigade, au Comité de Salut public; Rouabillière, <date when="1794-09-09">23 fructidor an II</date>, <measure type="length" unit="p" n="11.5">11 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Dénonciation contre Robespierre jeune et
 						Ricord, représentants du peuple près l'armée d'Italie, et les généraux
 						Dumerbion et Serurier. Intéressant document.</note>
             </item>
@@ -1993,7 +1993,7 @@
                   <p>auteur dramatique, général de la
 						République, n. 1752, décapité en 1794.</p>
                </trait>
-               <desc xml:id="CAT_000166_e211_d1">1° <term ana="#document_type_7">L. a. s.</term> à Xavier Audouin; Paris, <date date="1794-02-21" type="length">3 ventôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr.</desc><desc xml:id="CAT_000166_e211_d2">2° <term ana="#document_type_9">L. s.</term> au même; Tours, <date when="1793-06-22">22 juin 1793</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
+               <desc xml:id="CAT_000166_e211_d1">1° <term ana="#document_type_7">L. a. s.</term> à Xavier Audouin; Paris, <date when="1794-02-21">3 ventôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr.</desc><desc xml:id="CAT_000166_e211_d2">2° <term ana="#document_type_9">L. s.</term> au même; Tours, <date when="1793-06-22">22 juin 1793</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="212" xml:id="CAT_000166_e212">
                <num type="lot">212</num>
                <name type="author">Rouget de Lisle (Cl.-Jos.),</name>
@@ -2030,7 +2030,7 @@
                   <p>le trop fameux
 						auteur de Justine, n. 1740, m. 1814.</p>
                </trait>
-               <desc xml:id="CAT_000166_e216_d1"><term ana="#document_type_7">L. a. s.</term> à un représentant du peuple ; <date date="1799-10-01" type="length">9 vendémiaire an VIII</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Lettre des plus curieuses où il proteste de son
+               <desc xml:id="CAT_000166_e216_d1"><term ana="#document_type_7">L. a. s.</term> à un représentant du peuple ; <date when="1799-10-01">9 vendémiaire an VIII</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Lettre des plus curieuses où il proteste de son
 						amour pour la République et son civisme, il offre une tragédie en cinq
 						actes, Jeanne Hachette. Piquants détails à ce sujet.</note>
             </item>
@@ -2056,7 +2056,7 @@
             <item n="219" xml:id="CAT_000166_e219">
                <num type="lot">219</num>
                <name type="author">Saint-Pierre (Bernardin de)</name>
-               <desc xml:id="CAT_000166_e219_d1"><term ana="#document_type_7">L. a. s.</term> au peintre Girodet; Paris, <date date="1804-04-13" type="length">22 germinal an XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Très belle lettre où il lui demande une
+               <desc xml:id="CAT_000166_e219_d1"><term ana="#document_type_7">L. a. s.</term> au peintre Girodet; Paris, <date when="1804-04-13">22 germinal an XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Très belle lettre où il lui demande une
 						illustration pour son édition in-4 de Paul et Virginie.</note>
             </item>
             <item n="220" xml:id="CAT_000166_e220">
@@ -2168,7 +2168,7 @@
                   <p>le célèbre
 						homme d'État, n. 1754, m. 1838.</p>
                </trait>
-               <desc xml:id="CAT_000166_e234_d1"><term ana="#document_type_7">L. a. s.</term> à Treilhard, ministre au congrès de Rastadt; <date date="1798-01-22" type="length">3 pluviôse an VI</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><note>Pièce historique sur les
+               <desc xml:id="CAT_000166_e234_d1"><term ana="#document_type_7">L. a. s.</term> à Treilhard, ministre au congrès de Rastadt; <date when="1798-01-22">3 pluviôse an VI</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><note>Pièce historique sur les
 						négociations particulières entamées avec les plénipotentiaires
 						prussiens.</note>
             </item>
@@ -2216,7 +2216,7 @@
                   <p>conventionnel et directeur,
 						n. 1742, m. 1810.</p>
                </trait>
-               <desc xml:id="CAT_000166_e240_d1"><term ana="#document_type_7">L. a. s.</term> (à Talleyrand) ; Lille, <date date="1797-10-13" type="length">22 vendémiaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Remerciements de sa nomination à l'ambassade de
+               <desc xml:id="CAT_000166_e240_d1"><term ana="#document_type_7">L. a. s.</term> (à Talleyrand) ; Lille, <date when="1797-10-13">22 vendémiaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Remerciements de sa nomination à l'ambassade de
 						Naples.</note>
             </item>
             <item n="241" xml:id="CAT_000166_e241">
@@ -2399,14 +2399,14 @@
 						République, déporté à Sinamary après le 18 fructidor, n. à
 						Saint-Germain-en-Laye, 1757, m. 1823.</p>
                </trait>
-               <desc xml:id="CAT_000166_e263_d1"><term ana="#document_type_7">L. a. s.</term> au Comité de Salut public; citadelle de J.-J. Rousseau, <date date="1795-01-24" type="length">5 pluviôse an III</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère tache.</desc><note>Très
+               <desc xml:id="CAT_000166_e263_d1"><term ana="#document_type_7">L. a. s.</term> au Comité de Salut public; citadelle de J.-J. Rousseau, <date when="1795-01-24">5 pluviôse an III</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère tache.</desc><note>Très
 						curieuse lettre où il se disculpe des accusations dont il est l'objet et
 						demande sa mise en liberté.</note>
             </item>
             <item n="264" xml:id="CAT_000166_e264">
                <num type="lot">264</num>
                <name type="author">Willot (Amédée, comte)</name>
-               <desc xml:id="CAT_000166_e264_d1">1° <term ana="#document_type_7">L. a. s.</term> aux représentants du peuple près l'armée des Pyrénées occidentales; <date date="1794-10-29" type="length">8 brumaire an III</date>, <measure type="length" unit="p" n="9.5">9 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e264_d2"><date when="1795">2° Extrait du journal de campagne de Willot depuis le mois de mars jusqu'au 4 décembre 1795</date>, <term ana="#document_type_2">pièce aut. sig.</term>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Documents historiques très
+               <desc xml:id="CAT_000166_e264_d1">1° <term ana="#document_type_7">L. a. s.</term> aux représentants du peuple près l'armée des Pyrénées occidentales; <date when="1794-10-29">8 brumaire an III</date>, <measure type="length" unit="p" n="9.5">9 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000166_e264_d2"><date when="1795">2° Extrait du journal de campagne de Willot depuis le mois de mars jusqu'au 4 décembre 1795</date>, <term ana="#document_type_2">pièce aut. sig.</term>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Documents historiques très
 						importants.</note>
             </item>
             <item n="265" xml:id="CAT_000166_e265">
@@ -2416,7 +2416,7 @@
                   <p>adjudant général, frère du
 						poète.</p>
                </trait>
-               <desc xml:id="CAT_000166_e265_d1">P. <term ana="#document_type_15">a. s.</term> ; Paris, <date date="1796-11-23" type="length">3 frimaire an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc></item>
+               <desc xml:id="CAT_000166_e265_d1">P. <term ana="#document_type_15">a. s.</term> ; Paris, <date when="1796-11-23">3 frimaire an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc></item>
             <item n="266" xml:id="CAT_000166_e266">
                <num type="lot">266</num>
                <name type="author">Cormenin (le vicomte de),</name>
@@ -2465,7 +2465,7 @@
                   <p>le célèbre conventionnel
 						girondin.</p>
                </trait>
-               <desc xml:id="CAT_000166_e271_d1"><term ana="#document_type_7">L. a. s.</term> ; <date date="none" type="length">15 nov. an I</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre. Rare.</desc></item>
+               <desc xml:id="CAT_000166_e271_d1"><term ana="#document_type_7">L. a. s.</term> ; <date when="none">15 nov. an I</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre. Rare.</desc></item>
             <item n="272" xml:id="CAT_000166_e272">
                <num type="lot">272</num>
                <name type="author">Kosciuszko (Thaddeus),</name>
@@ -2473,7 +2473,7 @@
                   <p>le célèbre patriote
 						polonais.</p>
                </trait>
-               <desc xml:id="CAT_000166_e272_d1"><term ana="#document_type_9">L. s.</term>, en français, à Berthier; Paris, <date date="1803-06-10" type="length">21 prairial an XI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très belle pièce.</desc></item>
+               <desc xml:id="CAT_000166_e272_d1"><term ana="#document_type_9">L. s.</term>, en français, à Berthier; Paris, <date when="1803-06-10">21 prairial an XI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très belle pièce.</desc></item>
             <item n="273" xml:id="CAT_000166_e273">
                <num type="lot">273</num>
                <name type="author">Monglat (Françoise, marquise de),</name>
@@ -2681,43 +2681,43 @@
                <trait>
                   <p>empereur des Français.</p>
                </trait>
-               <desc xml:id="CAT_000166_e300_d1"><term ana="#document_type_9">L. s.</term>, avec 2 lignes aut., au cit. Berlier, Nice, <date date="1794-06-22" type="length">4 messidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc></item>
+               <desc xml:id="CAT_000166_e300_d1"><term ana="#document_type_9">L. s.</term>, avec 2 lignes aut., au cit. Berlier, Nice, <date when="1794-06-22">4 messidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc></item>
             <item n="301" xml:id="CAT_000166_e301">
                <num type="lot">301</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000166_e301_d1"> <term ana="#document_type_9">L. s.</term>, comme commandant en chef l'artillerie de l'armée d'Italie, avec 3 lignes aut., au cit. Berlier; Antibes, <date date="1794-10-17" type="length">26 vendémiaire an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Taches de rousseur. Très belle lettre, contenant des ordres militaires.</desc></item>
+               <desc xml:id="CAT_000166_e301_d1"> <term ana="#document_type_9">L. s.</term>, comme commandant en chef l'artillerie de l'armée d'Italie, avec 3 lignes aut., au cit. Berlier; Antibes, <date when="1794-10-17">26 vendémiaire an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Taches de rousseur. Très belle lettre, contenant des ordres militaires.</desc></item>
             <item n="302" xml:id="CAT_000166_e302">
                <num type="lot">302</num>
                <name type="author">Napoléon</name>
-               <desc xml:id="CAT_000166_e302_d1"><term ana="#document_type_2">Pièce de 6 lignes aut. sig.</term>, comme général de l'armée de l'intérieur, en bas d'un certificat signé par Casabianca, Andrei, Moltedo et Arrighi ; Paris, <date date="1795-10-11" type="length">19 vendémiaire an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère déchirure. Pièce montée.</desc><note>Il certifie que le général Gentily s'est montré avec courage à la
+               <desc xml:id="CAT_000166_e302_d1"><term ana="#document_type_2">Pièce de 6 lignes aut. sig.</term>, comme général de l'armée de l'intérieur, en bas d'un certificat signé par Casabianca, Andrei, Moltedo et Arrighi ; Paris, <date when="1795-10-11">19 vendémiaire an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère déchirure. Pièce montée.</desc><note>Il certifie que le général Gentily s'est montré avec courage à la
                   journée du 13 vendémiaire. -Au dessous, Barras a aussi apposé sa
                   signature.</note>
             </item>
             <item n="303" xml:id="CAT_000166_e303">
                <num type="lot">303</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000166_e303_d1"><term ana="#document_type_9">L. s.</term>, comme général en chef de l'armée d'Italie, à Kellermann ; Plaisance, <date date="1796-05-09" type="length">20 floréal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><note>Relative à l'accord établi entre lui et le roi
+               <desc xml:id="CAT_000166_e303_d1"><term ana="#document_type_9">L. s.</term>, comme général en chef de l'armée d'Italie, à Kellermann ; Plaisance, <date when="1796-05-09">20 floréal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><note>Relative à l'accord établi entre lui et le roi
 						de Sardaigne pour le passage de l'armée française. Compliments sur
 						l'activité et le mérite du fils de Kellermann.</note>
             </item>
             <item n="304" xml:id="CAT_000166_e304">
                <num type="lot">304</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000166_e304_d1"><term ana="#document_type_9">L. s.</term>, comme général en chef de l'armée d'Italie, au cit. Périllier ; Milan, <date date="1797-01-02" type="length">13 nivôse an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Très belle pièce.</desc></item>
+               <desc xml:id="CAT_000166_e304_d1"><term ana="#document_type_9">L. s.</term>, comme général en chef de l'armée d'Italie, au cit. Périllier ; Milan, <date when="1797-01-02">13 nivôse an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Très belle pièce.</desc></item>
             <item n="305" xml:id="CAT_000166_e305">
                <num type="lot">305</num>
                <name type="author">Napoléon</name>
-               <desc xml:id="CAT_000166_e305_d1">1° Apostille sig., comme premier consul, sur un rapport de police ; <date date="1802-10-12" type="length">20 vendémiaire an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Document intéressant.</desc><desc xml:id="CAT_000166_e305_d2">2° <term ana="#document_type_4">P. s.</term> Napoléon ; palais de Trianon, <date when="1809-12-22">22 déc. 1809</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
+               <desc xml:id="CAT_000166_e305_d1">1° Apostille sig., comme premier consul, sur un rapport de police ; <date when="1802-10-12">20 vendémiaire an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Document intéressant.</desc><desc xml:id="CAT_000166_e305_d2">2° <term ana="#document_type_4">P. s.</term> Napoléon ; palais de Trianon, <date when="1809-12-22">22 déc. 1809</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
             <item n="306" xml:id="CAT_000166_e306">
                <num type="lot">306</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000166_e306_d1"><term ana="#document_type_9">L. s.</term> Napol. à l'archevêque d'Autun; palais des Tuileries, <date date="1805-01-29" type="length">9 pluviôse an XIII</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Il le félicite sur le
+               <desc xml:id="CAT_000166_e306_d1"><term ana="#document_type_9">L. s.</term> Napol. à l'archevêque d'Autun; palais des Tuileries, <date when="1805-01-29">9 pluviôse an XIII</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Il le félicite sur le
 						rétablissement de la paix et de l'union dans son diocèse.</note>
             </item>
             <item n="307" xml:id="CAT_000166_e307">
                <num type="lot">307</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000166_e307_d1">Sa signature et le mot accordé <term ana="#document_type_15">autographe s</term>ur une lettre de Berthier ; Paris, <date date="1805-02-13" type="length">24 pluviôse an XIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Il
+               <desc xml:id="CAT_000166_e307_d1">Sa signature et le mot accordé <term ana="#document_type_15">autographe s</term>ur une lettre de Berthier ; Paris, <date when="1805-02-13">24 pluviôse an XIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Il
 						autorise lord Elgin à venir à Paris.</note>
             </item>
             <item n="308" xml:id="CAT_000166_e308">
@@ -2753,7 +2753,7 @@
                   <p>roi de Naples, puis d'Espagne,
 						frère de Napoléon Ier.</p>
                </trait>
-               <desc xml:id="CAT_000166_e312_d1"><term ana="#document_type_7">L. a. s.</term> à Jean de Bry ; Morfontaine, <date date="1802-06-03" type="length">14 prairial an X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
+               <desc xml:id="CAT_000166_e312_d1"><term ana="#document_type_7">L. a. s.</term> à Jean de Bry ; Morfontaine, <date when="1802-06-03">14 prairial an X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="313" xml:id="CAT_000166_e313">
                <num type="lot">313</num>
                <name type="author">Bonaparte (Jérôme),</name>
@@ -2777,7 +2777,7 @@
                   <p>soeur de Napoléon
 					Ier.</p>
                </trait>
-               <desc xml:id="CAT_000166_e315_d1"><term ana="#document_type_7">L. a. s.</term> ; Marseille, <date date="1799-11-25" type="length">4 frimaire an VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, papier à encadrements bleus. Belle pièce.</desc></item>
+               <desc xml:id="CAT_000166_e315_d1"><term ana="#document_type_7">L. a. s.</term> ; Marseille, <date when="1799-11-25">4 frimaire an VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, papier à encadrements bleus. Belle pièce.</desc></item>
             <item n="316" xml:id="CAT_000166_e316">
                <num type="lot">316</num>
                <name type="author">Fesch (le cardinal),</name>
@@ -2793,7 +2793,7 @@
                   <p>roi de Naples, fusillé en
 						1815.</p>
                </trait>
-               <desc xml:id="CAT_000166_e317_d1">1° <term ana="#document_type_4">P. s.</term> ; an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr.</desc><desc xml:id="CAT_000166_e317_d2">2° <term ana="#document_type_4">P. s.</term> J. Napoléon ; Reggio, <date when="1814-03-11">11 mars 1814</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
+               <desc xml:id="CAT_000166_e317_d1">1° <term ana="#document_type_4">P. s.</term> ; an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig. et tête impr.</desc><desc xml:id="CAT_000166_e317_d2">2° <term ana="#document_type_4">P. s.</term> J. Napoléon ; Reggio, <date when="1814-03-11">11 mars 1814</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
             <item n="318" xml:id="CAT_000166_e318">
                <num type="lot">318</num>
                <name type="author">Leclerc (J.-V.),</name>
@@ -2801,7 +2801,7 @@
                   <p>général en chef de l'armée de
 						Saint-Domingue, premier mari de Pauline Bonaparte.</p>
                </trait>
-               <desc xml:id="CAT_000166_e318_d1"><term ana="#document_type_7">L. a. s.</term> au payeur de la guerre ; Milan, <date date="1798-03-15" type="length">25 ventôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Belle lettre.</desc></item>
+               <desc xml:id="CAT_000166_e318_d1"><term ana="#document_type_7">L. a. s.</term> au payeur de la guerre ; Milan, <date when="1798-03-15">25 ventôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vig. et tête impr. Belle lettre.</desc></item>
             <item n="319" xml:id="CAT_000166_e319">
                <num type="lot">319</num>
                <name type="author">Napoléon III,</name>
@@ -3035,7 +3035,7 @@
             <item n="354" xml:id="CAT_000166_e354">
                <num type="lot">354</num>
                <name type="author">Nantes</name>
-               <desc xml:id="CAT_000166_e354_d1"><term ana="#document_type_4">P. s.</term> par Grandmaison, Chaux, etc. , membres du Comité révolutionnaire, institué à Nantes par Carrier; Nantes, <date date="1794-03-07" type="length">17 ventôse an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. Curieux document.</desc></item>
+               <desc xml:id="CAT_000166_e354_d1"><term ana="#document_type_4">P. s.</term> par Grandmaison, Chaux, etc. , membres du Comité révolutionnaire, institué à Nantes par Carrier; Nantes, <date when="1794-03-07">17 ventôse an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. Curieux document.</desc></item>
             <item n="355" xml:id="CAT_000166_e355">
                <num type="lot">355</num>
                <name type="author">Paris sous la Révolution française</name>

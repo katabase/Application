@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -657,7 +657,7 @@
                   <p>littérateur célèbre, auteur des Lettres à Emilie, né à Villers-Cotterets en
                      1760, mort en 1801</p>
                </trait>
-               <desc xml:id="CAT_000100_e50_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Deshayes; Compiègne, <date date="1800-08-18" type="length">30 therm. an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000100_e50_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Deshayes; Compiègne, <date when="1800-08-18">30 therm. an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="51" xml:id="CAT_000100_e51">
                <num type="lot">51</num>
@@ -1700,7 +1700,7 @@
                   <p>beau-frère de Napoléon, roi de Naples, né à La Bastide-Fortunière (Lot) en
                      1771, fusillé le 13 octobre 1815</p>
                </trait>
-               <desc xml:id="CAT_000100_e166_d1"><term ana="#document_type_9">Let. sig.</term> à M. Maurice de Caraman; an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000100_e166_d1"><term ana="#document_type_9">Let. sig.</term> à M. Maurice de Caraman; an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Il lui accuse réception de son Histoire du Canal du
                   Languedoc</note>
             </item>
@@ -1763,7 +1763,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000100_e174_d1"><term ana="#document_type_9">Let. sig.</term> comme général en chef de l'armée d'Egypte; Le Caire, <date date="1798-09-06" type="length">20 fruct. an VI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000100_e174_d1"><term ana="#document_type_9">Let. sig.</term> comme général en chef de l'armée d'Egypte; Le Caire, <date when="1798-09-06">20 fruct. an VI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="175" xml:id="CAT_000100_e175">
                <num type="lot">175</num>
@@ -2168,7 +2168,7 @@
                   <p>poète, auteur dramatique et chansonnier, le rénovateur du vaudeville français,
                      né en 1755, mort en 1832</p>
                </trait>
-               <desc xml:id="CAT_000100_e219_d1"><term ana="#document_type_4">Pièce sig</term>.; an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000100_e219_d1"><term ana="#document_type_4">Pièce sig</term>.; an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="220" xml:id="CAT_000100_e220">
                <num type="lot">220</num>
@@ -2771,7 +2771,7 @@
                   <p>conventionnel, membre du Directoire et consul, né à Fréjus en 1748, mort en
                      1836</p>
                </trait>
-               <desc xml:id="CAT_000100_e283_d1"><term ana="#document_type_9">Let. sig.</term> au ministre Reinhard, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000100_e283_d1"><term ana="#document_type_9">Let. sig.</term> au ministre Reinhard, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="284" xml:id="CAT_000100_e284">
                <num type="lot">284</num>
@@ -3088,7 +3088,7 @@
                <trait>
                   <p>sculpteur distingué, élève de Pajou, né au Havre en 1749, mort en 1828</p>
                </trait>
-               <desc xml:id="CAT_000100_e319_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Charretier, commissaire des prisonniers à Londres; Paris, <date date="1797-01-30" type="length">11 pluv. an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000100_e319_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Charretier, commissaire des prisonniers à Londres; Paris, <date when="1797-01-30">11 pluv. an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Il fait appel à son humanité et le prie de transmettre à son
                   fils, détenu dans les prisons d'Angleterre, la lettre de consolation qu'il lui
                   envoie</note>

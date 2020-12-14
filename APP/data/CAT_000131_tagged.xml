@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -674,7 +674,7 @@
                <trait>
                   <p>le grand orateur libéral</p>
                </trait>
-               <desc xml:id="CAT_000131_e49_d1"><term ana="#document_type_7">L. a. s.</term> (Fructidor an <date date="1797-1798" type="length">VI</date>), <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000131_e49_d1"><term ana="#document_type_7">L. a. s.</term> (Fructidor an <date when="1797-1798">VI</date>), <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="50" xml:id="CAT_000131_e50">
                <num type="lot">50</num>
@@ -1713,7 +1713,7 @@
                <trait>
                   <p>le chef de la conspiration de 1812, fusillé le 29 oct. 1812</p>
                </trait>
-               <desc xml:id="CAT_000131_e138_d1"><term ana="#document_type_7">L. a. s.</term>; Besançon, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000131_e138_d1"><term ana="#document_type_7">L. a. s.</term>; Besançon, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="139" xml:id="CAT_000131_e139">
                <num type="lot">139</num>
@@ -1803,7 +1803,7 @@
                      place et à un boulevard de Paris, né à Marseille en 1765, tué à Austerlitz le 2
                      décembre 1805</p>
                </trait>
-               <desc xml:id="CAT_000131_e148_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Peyraube ; Forli, <date date="1801-08-23" type="length">5 fructidor an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine. Légère tache. Rare.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000131_e148_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Peyraube ; Forli, <date when="1801-08-23">5 fructidor an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette républicaine. Légère tache. Rare.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="149" xml:id="CAT_000131_e149">
                <num type="lot">149</num>
@@ -2629,7 +2629,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie</p>
                </trait>
-               <desc xml:id="CAT_000131_e232_d1"><term ana="#document_type_7">L. a. s.</term>; Essonnes, <date date="1794-08-07" type="length">20 thermidor an II</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="26">26</measure>
+               <desc xml:id="CAT_000131_e232_d1"><term ana="#document_type_7">L. a. s.</term>; Essonnes, <date when="1794-08-07">20 thermidor an II</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="26">26</measure>
                <note>La partie blanche du second feuillet a été détachée</note>
             </item>
             <item n="233" xml:id="CAT_000131_e233">

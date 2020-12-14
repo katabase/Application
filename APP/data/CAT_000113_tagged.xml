@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -323,7 +323,7 @@
                   <p>maréchal de l'Empire, puis roi de Suède sous le nom de Charies-Jean XIV, né à
                      Pau en 1764, mort en 1844</p>
                </trait>
-               <desc xml:id="CAT_000113_e14_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Pontivy, <date date="1801-06-09" type="length">20 prairial an IX</date>, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
+               <desc xml:id="CAT_000113_e14_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Pontivy, <date when="1801-06-09">20 prairial an IX</date>, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
                <note>Importante lettre historique. « La tranquilité commence à renaître (en
                   BasseBretagne). Les brigands et les chouans sont effravés par les actes de justice
                   et par l'activité des colonnes. Ce pays exigéra pendant longtemps une surveillance
@@ -569,7 +569,7 @@
                   <p>illustre membre du Comité de Salut public, l'organisateur de nos armées, né à
                      Nolay (Côte-d'Or) en 1753, mort en 1823</p>
                </trait>
-               <desc xml:id="CAT_000113_e42_d1"><term ana="#document_type_7">L. a. s.</term>, Saint-Omer, <date date="1800-10-29" type="length">7 brumaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000113_e42_d1"><term ana="#document_type_7">L. a. s.</term>, Saint-Omer, <date when="1800-10-29">7 brumaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="43" xml:id="CAT_000113_e43">
                <num type="lot">43</num>
@@ -1414,7 +1414,7 @@
                   <p>brave général de la République, parrain de Victor Hugo, compromis dans la
                      conspiration Malet, ne à Gavron (Mayenne) en 1766, fusillé le 29 oct. 1812</p>
                </trait>
-               <desc xml:id="CAT_000113_e141_d1"><term ana="#document_type_7">L. a. s.</term> au général Lecourbe; Salzbourg, <date date="none" type="length">8 ventôse, an IX</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000113_e141_d1"><term ana="#document_type_7">L. a. s.</term> au général Lecourbe; Salzbourg, <date when="none">8 ventôse, an IX</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle lettre écrite comme chef d'état-major de Moreau</note>
             </item>
             <item n="142" xml:id="CAT_000113_e142">
@@ -1516,7 +1516,7 @@
                   <p>célèbre général, beau-frère de Napoléon Ier, né à Pontoise en 1772, mort à
                      Saint-Domingue en 1802</p>
                </trait>
-               <desc xml:id="CAT_000113_e152_d1"><term ana="#document_type_7">L. a. s.</term> ; Valladolid, <date date="1801-08-31" type="length">13 fructidor an IX</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000113_e152_d1"><term ana="#document_type_7">L. a. s.</term> ; Valladolid, <date when="1801-08-31">13 fructidor an IX</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="153" xml:id="CAT_000113_e153">
                <num type="lot">153</num>
@@ -1849,7 +1849,7 @@
                   <p>duc de Raguse, maréchal de France, né à Châtillon-sur-Seine en 1774, mort en
                      1852</p>
                </trait>
-               <desc xml:id="CAT_000113_e189_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000113_e189_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="190" xml:id="CAT_000113_e190">
                <num type="lot">190</num>
@@ -2012,7 +2012,7 @@
                <trait>
                   <p>maréchal de France, né à Hayange (Moselle) en 1770, mort en 1849</p>
                </trait>
-               <desc xml:id="CAT_000113_e209_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000113_e209_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="210" xml:id="CAT_000113_e210">
                <num type="lot">210</num>
@@ -2065,7 +2065,7 @@
                <trait>
                   <p>illustre général de la République</p>
                </trait>
-               <desc xml:id="CAT_000113_e215_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très jolie vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000113_e215_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très jolie vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="216" xml:id="CAT_000113_e216">
                <num type="lot">216</num>
@@ -2920,7 +2920,7 @@
                <trait>
                   <p>le fameux accusateur public de Strasbourg, né en 1756, guillotiné en 1794</p>
                </trait>
-               <desc xml:id="CAT_000113_e307_d1"><term ana="#document_type_4">Pièce sig</term>.; Strasbourg, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000113_e307_d1"><term ana="#document_type_4">Pièce sig</term>.; Strasbourg, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="308" xml:id="CAT_000113_e308">
                <num type="lot">308</num>

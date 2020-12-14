@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -273,7 +273,7 @@
                <trait>
                   <p>maréchal de France, assassiné à Avignon en 1815.</p>
                </trait>
-               <desc xml:id="CAT_000053_e7_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Fourcade, commissaire-général à Sinope; Constantinople, <date date="1804-04-21" type="length">30 germ. an XII</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000053_e7_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Fourcade, commissaire-général à Sinope; Constantinople, <date when="1804-04-21">30 germ. an XII</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Curieuse lettre écrite comme ambassadeur de la République française à
                   Constantinople, et toute relative aux relations de la France avec la Russie et la
                   Turquie. « Je vois, avec quelque regret, qu'il n'y a plus entre vous et M. le
@@ -287,7 +287,7 @@
                <trait>
                   <p>brave maréchal de France, né à Mirepoix (Ariège)</p>
                </trait>
-               <desc xml:id="CAT_000053_e8_d1"><term ana="#document_type_7">L. a. s.</term> au général en chef Rochambeau; le Cap, <date date="1803-07-22" type="length">3 therm. an XI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000053_e8_d1"><term ana="#document_type_7">L. a. s.</term> au général en chef Rochambeau; le Cap, <date when="1803-07-22">3 therm. an XI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Intéressante lettre sur les mouvements de l'arméé de Saint-Domingue. Le général
                   Claparède commandera la colonne qui, partant du haut du Cap, ira se porter sur le
                   Morne-Pelé; « j'espère, d'après les dispositions arrêtées, que nous prendrons ou
@@ -533,7 +533,7 @@
                <trait>
                   <p>général français de de la République et de l'Empire, né à Chabannais</p>
                </trait>
-               <desc xml:id="CAT_000053_e34_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Privat, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000053_e34_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Privat, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="35" xml:id="CAT_000053_e35">
                <num type="lot">35</num>
@@ -818,7 +818,7 @@
                <trait>
                   <p>le célèbre ministre de la police</p>
                </trait>
-               <desc xml:id="CAT_000053_e65_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Ecornée. Rare aut. sig.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000053_e65_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Ecornée. Rare aut. sig.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="66" xml:id="CAT_000053_e66">
                <num type="lot">66</num>
@@ -835,7 +835,7 @@
                <trait>
                   <p>le trop fameux accusateur public près le Tribunal révolutionnaire</p>
                </trait>
-               <desc xml:id="CAT_000053_e67_d1"><term ana="#document_type_4">Pièce sig</term>. aux administrateurs du district de Mantes, <date date="1794-06-27" type="length">9 mess, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000053_e67_d1"><term ana="#document_type_4">Pièce sig</term>. aux administrateurs du district de Mantes, <date when="1794-06-27">9 mess, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Relative au dossier de Granjean, ci-devant curé de Goussonville</note>
             </item>
             <item n="68" xml:id="CAT_000053_e68">
@@ -1447,7 +1447,7 @@
                <trait>
                   <p>l'illustre général de la République</p>
                </trait>
-               <desc xml:id="CAT_000053_e136_d1"><term ana="#document_type_9">Let. sig.</term> au général Caffin; Brest, <date date="1796-11-13" type="length">23 brum. an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000053_e136_d1"><term ana="#document_type_9">Let. sig.</term> au général Caffin; Brest, <date when="1796-11-13">23 brum. an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Belle lettre, avec sa devise imprimée. Res, non verba</note>
             </item>
             <item n="137" xml:id="CAT_000053_e137">
@@ -1637,7 +1637,7 @@
                <trait>
                   <p>maréchal de France, célèbre par la campagne des Pyrénées, en 1795</p>
                </trait>
-               <desc xml:id="CAT_000053_e156_d1"><term ana="#document_type_9">Let. sig.</term> au Comité de Salut public; quartier-général de Figuières, <date date="none" type="length">5 nov. an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000053_e156_d1"><term ana="#document_type_9">Let. sig.</term> au Comité de Salut public; quartier-général de Figuières, <date when="none">5 nov. an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Très-curieuse lettre sur les préparatifs du siège de Roses. Ils se sont emparés
                   de vive force d'un retranchement ennemi et ils viennent de faire sauter deux
                   chaloupes canonnières. Il se plaint que les républicains ne mettent point dans
@@ -1654,7 +1654,7 @@
                <trait>
                   <p>savant littérateur français, membre de l'Acad. des Sciences.</p>
                </trait>
-               <desc xml:id="CAT_000053_e157_d1"><term ana="#document_type_7">L. a. s.</term> au citoven Millet-Mureau; L. a. Haye, <date date="1799-05-29" type="length">10 prair. an VII</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000053_e157_d1"><term ana="#document_type_7">L. a. s.</term> au citoven Millet-Mureau; L. a. Haye, <date when="1799-05-29">10 prair. an VII</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Cette lettre, extrêmement curieuse pour sa biographie, contient une note de
                   douze grandes lignes aut. sig. du maréchal Brune en faveur de
                   Quatremère-Disjonval, que l'on voulait envoyer à l'armée d'Italie et qui demande à
@@ -1971,7 +1971,7 @@
                <trait>
                   <p>membre du Tribunat</p>
                </trait>
-               <desc xml:id="CAT_000053_e194_d1"><term ana="#document_type_7">L. a. s.</term>, Tulle, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Sur son département.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000053_e194_d1"><term ana="#document_type_7">L. a. s.</term>, Tulle, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Sur son département.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="195" xml:id="CAT_000053_e195">
                <num type="lot">195</num>
@@ -2011,7 +2011,7 @@
                <trait>
                   <p>général français, né à Brives</p>
                </trait>
-               <desc xml:id="CAT_000053_e199_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Devaivre; an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000053_e199_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Devaivre; an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="200" xml:id="CAT_000053_e200">
                <num type="lot">200</num>
@@ -2027,7 +2027,7 @@
                <trait>
                   <p>général français, né dans la Corrèze</p>
                </trait>
-               <desc xml:id="CAT_000053_e201_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000053_e201_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="202" xml:id="CAT_000053_e202">
                <num type="lot">202</num>
@@ -2059,7 +2059,7 @@
                <trait>
                   <p>littérateur, né à Uzerches</p>
                </trait>
-               <desc xml:id="CAT_000053_e205_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Paré, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000053_e205_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Paré, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="206" xml:id="CAT_000053_e206">
                <num type="lot">206</num>
@@ -2165,7 +2165,7 @@
                <trait>
                   <p>général français, né à Lubersac</p>
                </trait>
-               <desc xml:id="CAT_000053_e218_d1"><term ana="#document_type_7">L. a. s.</term>; Lubersal, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000053_e218_d1"><term ana="#document_type_7">L. a. s.</term>; Lubersal, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="219" xml:id="CAT_000053_e219">
                <num type="lot">219</num>

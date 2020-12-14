@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -425,7 +425,7 @@
                   <p>brave général de la République et de l'Empire, né à Fontenay-le-Comte (Vendée)
                      en 1769, mort en 1832.</p>
                </trait>
-               <desc xml:id="CAT_000222_e21_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Gardanne; Marseille, <date date="1801-10-30" type="length">8 brumaire an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette. Tachée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000222_e21_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Gardanne; Marseille, <date when="1801-10-30">8 brumaire an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette. Tachée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="22" xml:id="CAT_000222_e22">
                <num type="lot">22</num>
@@ -470,7 +470,7 @@
                   <p>maréchal de l'Empire, puis roi de Suède sous le nom de Charles-Jean XIV, né à
                      Pau en 1764, mort en 1844.</p>
                </trait>
-               <desc xml:id="CAT_000222_e26_d1"><term ana="#document_type_4">Pièce sig</term>.; Paris, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette. Légère déchirure.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000222_e26_d1"><term ana="#document_type_4">Pièce sig</term>.; Paris, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette. Légère déchirure.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="27" xml:id="CAT_000222_e27">
                <num type="lot">27</num>
@@ -1138,7 +1138,7 @@
                <trait>
                   <p>le charmant romancier enfantin, né en 1761, mort en 1819.</p>
                </trait>
-               <desc xml:id="CAT_000222_e90_d1"><term ana="#document_type_7">L. a. s.</term> à Grimod de la Reynière; <date date="1800-04-09" type="length">19 germinal an VIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000222_e90_d1"><term ana="#document_type_7">L. a. s.</term> à Grimod de la Reynière; <date when="1800-04-09">19 germinal an VIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Belle lettre relative à un déjeuner. « Ma femme, qui est de la partie, et qui
                   désire bien avoir l'avantage de vous connaître, serait excessivement flattée que
                   Madame de la Reynière voulut vous accompagner. Avec les Grâces et les Muses,
@@ -1385,7 +1385,7 @@
                      l'amiral d'Estaing, ministre de la marine en 1799, né à Rouen en 1752, mort en
                      1807.</p>
                </trait>
-               <desc xml:id="CAT_000222_e111_d1"><term ana="#document_type_7">L. a. s.</term>; Gênes, <date date="1805-07-15" type="length">26 messidor an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000222_e111_d1"><term ana="#document_type_7">L. a. s.</term>; Gênes, <date when="1805-07-15">26 messidor an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="112" xml:id="CAT_000222_e112">
                <num type="lot">112</num>
@@ -1781,7 +1781,7 @@
                   <p>un des plus braves généraux de cavalerie de la République et de l'Empire, fils
                      du maréchal, né à Metz en 1770, mort en 1835.</p>
                </trait>
-               <desc xml:id="CAT_000222_e145_d1"><term ana="#document_type_9">Let. sig.</term>; quartier général de Milan, <date date="1800-08-28" type="length">10 fructidor an VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très belle vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000222_e145_d1"><term ana="#document_type_9">Let. sig.</term>; quartier général de Milan, <date when="1800-08-28">10 fructidor an VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très belle vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="146" xml:id="CAT_000222_e146">
                <num type="lot">146</num>
@@ -1878,7 +1878,7 @@
                   <p>l'illustre astronome, de l'Acad. des Sciences, né à Bourg (Ain) en 1732, mort
                      en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000222_e155_d1"><term ana="#document_type_7">L. a. s.</term> à Cretet; Collège de France, <date date="1805-03-22" type="length">1er germinal an XIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000222_e155_d1"><term ana="#document_type_7">L. a. s.</term> à Cretet; Collège de France, <date when="1805-03-22">1er germinal an XIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Belle lettre relative au projet de canal pour Brest, par M. Rochon.</note>
             </item>
             <item n="156" xml:id="CAT_000222_e156">
@@ -1988,7 +1988,7 @@
                   <p>maréchal de France, qui prit une grande part aux guerres de l'Empire, né en
                      1768, mort en 1828.</p>
                </trait>
-               <desc xml:id="CAT_000222_e163_d1"><term ana="#document_type_7">L. a. s.</term> comme aide-de-camp de l'Empereur; Toulon, <date date="1804-11-25" type="length">4 frimaire an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000222_e163_d1"><term ana="#document_type_7">L. a. s.</term> comme aide-de-camp de l'Empereur; Toulon, <date when="1804-11-25">4 frimaire an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="164" xml:id="CAT_000222_e164">
                <num type="lot">164</num>
@@ -2472,7 +2472,7 @@
                   <p>dit le patriote Palloy, architecte qui prit part à la prise de la Bastille et à
                      sa démolition, né en 1754, mort en 1835.</p>
                </trait>
-               <desc xml:id="CAT_000222_e208_d1">Plan de la Bastille, dressé sous la direction de Palloy, imprimé en couleurs, avec un envoi de 6 lig. <term ana="#document_type_15">aut. sig.</term> au conventionnel Gilbert Romme ; an <date date="1795-1796" type="length">4</date>° de la liberté, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légères déchirures sur les bords. Très intéressante pièce.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000222_e208_d1">Plan de la Bastille, dressé sous la direction de Palloy, imprimé en couleurs, avec un envoi de 6 lig. <term ana="#document_type_15">aut. sig.</term> au conventionnel Gilbert Romme ; an <date when="1795-1796">4</date>° de la liberté, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légères déchirures sur les bords. Très intéressante pièce.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="209" xml:id="CAT_000222_e209">
                <num type="lot">209</num>
@@ -2969,7 +2969,7 @@
                   <p>brave général de la République et de l'Empire, né à Marsillargues (Gard) en
                      1763, mort en 1824.</p>
                </trait>
-               <desc xml:id="CAT_000222_e250_d1"><term ana="#document_type_7">L. a. s.</term> à son camarade Régnier ; Crémone, <date date="1797-01-19" type="length">30 nivôse an V</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000222_e250_d1"><term ana="#document_type_7">L. a. s.</term> à son camarade Régnier ; Crémone, <date when="1797-01-19">30 nivôse an V</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Intéressante lettre où il parle de sa blessure reçue à la bataille d'Arcole le
                   25 brumaire précédent, il vient d'être nommé au commandement de la province de
                   Crémone. Curieux détails.</note>
@@ -2992,7 +2992,7 @@
                   <p>célèbre écrivain sur la musique, membre de l'Institut d'Egypte, ne à Bellème
                      (Orne) en 1759, mort en 1839.</p>
                </trait>
-               <desc xml:id="CAT_000222_e252_d1"><term ana="#document_type_7">L. a. s.</term> à Cellerier, directeur de l'Opéra; Paris, <date date="1793-11-10" type="length">20 brumaire an II</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure par suite de la rupture du cachet.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000222_e252_d1"><term ana="#document_type_7">L. a. s.</term> à Cellerier, directeur de l'Opéra; Paris, <date when="1793-11-10">20 brumaire an II</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère déchirure par suite de la rupture du cachet.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Curieuse lettre écrite à l'époque où il était artiste à l'Opéra, et relative
                   aux représentations de Panurge de Grétry.</note>
             </item>

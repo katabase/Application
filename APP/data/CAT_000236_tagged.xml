@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020-07-19">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -337,7 +337,7 @@
                   <p>diplomate distingué, ambassadeur en Suède, à Ratisbonne et à Francfort, né à
                      Thann (Alsace) en 1748, mort en 1813.</p>
                </trait>
-               <desc xml:id="CAT_000236_e13_d1"><term ana="#document_type_9">Let. sig.</term> aux administrateurs du district de Montbéliard ; Bâle, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000236_e13_d1"><term ana="#document_type_9">Let. sig.</term> aux administrateurs du district de Montbéliard ; Bâle, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="14" xml:id="CAT_000236_e14">
                <num type="lot">14</num>
@@ -658,7 +658,7 @@
                   <p>un des plus fougueux montagnards de la Convention, né près d'Avallon en 1763,
                      guillotiné en 1795, pour sa participation au mouvement du 1er prairial.</p>
                </trait>
-               <desc xml:id="CAT_000236_e43_d1"><term ana="#document_type_9">Let. sig.</term>; Trêves, <date date="1794-08-25" type="length">8 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette, cachet. Déchirure enlevant quelques mots par suite de la rupture du cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000236_e43_d1"><term ana="#document_type_9">Let. sig.</term>; Trêves, <date when="1794-08-25">8 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette, cachet. Déchirure enlevant quelques mots par suite de la rupture du cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="44" xml:id="CAT_000236_e44">
                <num type="lot">44</num>
@@ -1348,7 +1348,7 @@
                   <p>duc de Frioul, grand maréchal du palais de Napoléon Ier, né à Pont-à-Mousson en
                      1778, tué par un boulet à Mackersdorf en 1813.</p>
                </trait>
-               <desc xml:id="CAT_000236_e114_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Botot, secrétaire de Barras; Paris, <date date="1798-10-18" type="length">27 vendémiaire an VII</date>; <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000236_e114_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Botot, secrétaire de Barras; Paris, <date when="1798-10-18">27 vendémiaire an VII</date>; <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Belle lettre écrite comme aide de camp du général Bonaparte et où il parle du
                   directeur Barras.</note>
             </item>
@@ -1398,7 +1398,7 @@
                   <p>général français, gouverneur de la Guadeloupe, qu'il rendit aux Anglais en
                      1810, né à Alençon en 1753, mort en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000236_e119_d1"><term ana="#document_type_7">L. a. s.</term> au général Marceau; quartier général de Bonn, <date date="1795-04-10" type="length">21 germinal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imprimée.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000236_e119_d1"><term ana="#document_type_7">L. a. s.</term> au général Marceau; quartier général de Bonn, <date when="1795-04-10">21 germinal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imprimée.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Belle lettre écrite comme chef de l'EtatMajor de l'armée de
                   Sambre-et-Meuse.</note>
             </item>
@@ -2348,7 +2348,7 @@
                <trait>
                   <p>duc de Rivoli, illustre marechal de France.</p>
                </trait>
-               <desc xml:id="CAT_000236_e213_d1"><term ana="#document_type_7">L. a. s.</term> à son ami Gauthier; Paris, <date date="1803-02-01" type="length">12 pluviôse an XI</date>. <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000236_e213_d1"><term ana="#document_type_7">L. a. s.</term> à son ami Gauthier; Paris, <date when="1803-02-01">12 pluviôse an XI</date>. <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Relative à un sabre d'honneur qui est demandé par Gautier.</note>
             </item>
             <item n="214" xml:id="CAT_000236_e214">
@@ -2475,12 +2475,12 @@
                <trait>
                   <p>empereur des Français.</p>
                </trait>
-               <desc xml:id="CAT_000236_e226_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, comme Premier Consul, sur velin, sig. aussi par Alex. Berthier et Hugues Maret; Saint-Cloud, <date date="1803-05-20" type="length">30 floréal an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Cachet. Vignette de Roger. Très belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000236_e226_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, comme Premier Consul, sur velin, sig. aussi par Alex. Berthier et Hugues Maret; Saint-Cloud, <date when="1803-05-20">30 floréal an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Cachet. Vignette de Roger. Très belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
             </item>
             <item n="227" xml:id="CAT_000236_e227">
                <num type="lot">227</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000236_e227_d1"><term ana="#document_type_9">Let. sig.</term> comme géneral en chef de l'armée d'Italie; quartier général de Milan, <date date="1796-12-28" type="length">8 nivôse an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jolie vignette républicaine, montée.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000236_e227_d1"><term ana="#document_type_9">Let. sig.</term> comme géneral en chef de l'armée d'Italie; quartier général de Milan, <date when="1796-12-28">8 nivôse an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jolie vignette républicaine, montée.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="228" xml:id="CAT_000236_e228">
                <num type="lot">228</num>
@@ -2500,7 +2500,7 @@
             <item n="230" xml:id="CAT_000236_e230">
                <num type="lot">230</num>
                <name type="author">Ney (Michel)</name>
-               <desc xml:id="CAT_000236_e230_d1">1° <term ana="#document_type_9">Let. sig.</term> avec la souscript. aut. ; Montreuil-sur-Mer. <date date="1804-11-15" type="length">24 brumaire an XIII</date>, tête impr.-2° 2 l. a. s. de la maréchale Ney, <measure type="length" unit="p" n="3">3 p.</measure> petit <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-3° Lettre imprimée de faire part de la naissance d'un fils, 2 floréal an XII, 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000236_e230_d1">1° <term ana="#document_type_9">Let. sig.</term> avec la souscript. aut. ; Montreuil-sur-Mer. <date when="1804-11-15">24 brumaire an XIII</date>, tête impr.-2° 2 l. a. s. de la maréchale Ney, <measure type="length" unit="p" n="3">3 p.</measure> petit <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-3° Lettre imprimée de faire part de la naissance d'un fils, 2 floréal an XII, 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="231" xml:id="CAT_000236_e231">
                <num type="lot">231</num>
@@ -2694,7 +2694,7 @@
                <trait>
                   <p>maréchal de France, né en Corse en 1772, mort en 1851.</p>
                </trait>
-               <desc xml:id="CAT_000236_e250_d1"><term ana="#document_type_7">L. a. s.</term> au colonel Bessières; Paris. <date date="1802-04-12" type="length">22 germinal an X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000236_e250_d1"><term ana="#document_type_7">L. a. s.</term> au colonel Bessières; Paris. <date when="1802-04-12">22 germinal an X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Intéressante lettre écrite comme colonel du 9e régiment de dragons.</note>
             </item>
             <item n="251" xml:id="CAT_000236_e251">
@@ -3258,14 +3258,14 @@
             <item n="306" xml:id="CAT_000236_e306">
                <num type="lot">306</num>
                <name type="author">Révolution</name>
-               <desc xml:id="CAT_000236_e306_d1"><term ana="#document_type_4">Pièce sig</term>. des conventionnels Grenat (Jura), Guezns et Guermeur (Finistère); Rennes, <date date="none" type="length">6 dloréal an III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette, cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000236_e306_d1"><term ana="#document_type_4">Pièce sig</term>. des conventionnels Grenat (Jura), Guezns et Guermeur (Finistère); Rennes, <date when="none">6 dloréal an III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette, cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Délibération sur les mesures à prendre pour assurer les effets de la
                   pacification arrêtée à la Mabilais, près Rennes, le 1er floréal..</note>
             </item>
             <item n="307" xml:id="CAT_000236_e307">
                <num type="lot">307</num>
                <name type="author">Révolution</name>
-               <desc xml:id="CAT_000236_e307_d1"><term ana="#document_type_4">Pièce sig</term>. par Cambacérès et Rabaut-Pommier, comme membres du Comité de Salut-Public ; <date date="1795-07-01" type="length">13 messidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> in--fol., tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000236_e307_d1"><term ana="#document_type_4">Pièce sig</term>. par Cambacérès et Rabaut-Pommier, comme membres du Comité de Salut-Public ; <date when="1795-07-01">13 messidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> in--fol., tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Relative aux ouvriers de la forge nationale d'Alby (Tarn)..</note>
             </item>
             <item n="308" xml:id="CAT_000236_e308">

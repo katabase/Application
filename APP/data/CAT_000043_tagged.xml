@@ -60,7 +60,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -184,7 +184,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -242,7 +242,7 @@
                <trait>
                   <p>poète tragique, auteur de Marius à Minturne, de l'Acad. fr</p>
                </trait>
-               <desc xml:id="CAT_000043_e5_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure>, petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000043_e5_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure>, petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="6" xml:id="CAT_000043_e6">
                <num type="lot">6</num>
@@ -258,7 +258,7 @@
                <trait>
                   <p>maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000043_e7_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Strasbourg, an <date date="1797-1798" type="length">6</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000043_e7_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Strasbourg, an <date when="1797-1798">6</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="8" xml:id="CAT_000043_e8">
                <num type="lot">8</num>
@@ -619,7 +619,7 @@
                <trait>
                   <p>célèbre femme auteur</p>
                </trait>
-               <desc xml:id="CAT_000043_e48_d1"><term ana="#document_type_7">L. a. s.</term> à Sabatier de Cabre, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000043_e48_d1"><term ana="#document_type_7">L. a. s.</term> à Sabatier de Cabre, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Belle et intéressante lettre sur la maison d'Ecouen, qu'elle dirige</note>
             </item>
             <item n="49" xml:id="CAT_000043_e49">
@@ -778,7 +778,7 @@
                <trait>
                   <p>savant et aéronaute célèbre</p>
                </trait>
-               <desc xml:id="CAT_000043_e67_d1"><term ana="#document_type_7">L. a. s.</term> au général Dugas; le Caire, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000043_e67_d1"><term ana="#document_type_7">L. a. s.</term> au général Dugas; le Caire, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="68" xml:id="CAT_000043_e68">
                <num type="lot">68</num>
@@ -960,7 +960,7 @@
                <trait>
                   <p>le trop fameux accusateur public du Tribunal révolutionnaire</p>
                </trait>
-               <desc xml:id="CAT_000043_e86_d1"><term ana="#document_type_9">L. s.</term>, comme accusateur public, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000043_e86_d1"><term ana="#document_type_9">L. s.</term>, comme accusateur public, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="87" xml:id="CAT_000043_e87">
                <num type="lot">87</num>
@@ -1498,7 +1498,7 @@
                <trait>
                   <p>l'auteur de la Marseillaise</p>
                </trait>
-               <desc xml:id="CAT_000043_e147_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen directeur (Gohier), an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000043_e147_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen directeur (Gohier), an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il lui demande une carte d'entrée au Directoire. Il en profitera pour aller
                   causer avec lui de leur chère patrie. « Ma grosse et imperturbable franchise a
                   rendu jusqu'ici les amateurs de ces entretiens extrêmement rares.</note>

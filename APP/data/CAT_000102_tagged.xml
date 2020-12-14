@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -677,7 +677,7 @@
                   <p>maréchal de France, diplomate et ministre, petit-fils du fameux financier, né à
                      Pondichéry en 1768, mort en 1828</p>
                </trait>
-               <desc xml:id="CAT_000102_e45_d1"><term ana="#document_type_7">L. a. s.</term> (au général Ernouf) ; Fort-de-France, <date date="1805-06-02" type="length">13 prairial an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000102_e45_d1"><term ana="#document_type_7">L. a. s.</term> (au général Ernouf) ; Fort-de-France, <date when="1805-06-02">13 prairial an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note anchored="true">Importante lettre historique sur l'expédition de Batavia. Il le
                   prie de lui donner des renseignements sur l'importance des élablisments anglais,
                   depuis la Trinité jusqu'à Saint Domingue. Détails sur l'organisation de corps de
@@ -1727,7 +1727,7 @@
                   <p>compositeur et chanteur de l'époque de la Révolution et de l'Empire, né en
                      1764, mort en 1829</p>
                </trait>
-               <desc xml:id="CAT_000102_e149_d1"><term ana="#document_type_4">Pièce sig</term>.; <date date="1795-12-21" type="length">30 frimaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000102_e149_d1"><term ana="#document_type_4">Pièce sig</term>.; <date when="1795-12-21">30 frimaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Reçu de la somme de 3,961 livres 6 sols pour deux
                   représentations du Bon Fils au théâtre Feyde au</note>
             </item>

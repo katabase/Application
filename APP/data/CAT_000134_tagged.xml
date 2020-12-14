@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -289,7 +289,7 @@
                <trait>
                   <p>cantatrice de l'Opéra, célèbre par son esprit, née en 1744, morte en 1803</p>
                </trait>
-               <desc xml:id="CAT_000134_e9_d1"><term ana="#document_type_7">L. a. s.</term> à Chaptal; Paris, <date date="1801-04-13" type="length">23 germinal an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000134_e9_d1"><term ana="#document_type_7">L. a. s.</term> à Chaptal; Paris, <date when="1801-04-13">23 germinal an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Curieuse lettre au sujet de sa pension : « Vous avez promis à nos amis de me
                   continuer vos bontés, de ne pas perdre de vue la pauvre Sophie.</note>
             </item>
@@ -562,7 +562,7 @@
                      organisateurs de la conspiration de Babeuf, dont il a écrit l'histoire, né en
                      1761, mort en 1837</p>
                </trait>
-               <desc xml:id="CAT_000134_e37_d1"><term ana="#document_type_7">L. a. s.</term> à son ami Flaminius Aquarone, à Port-Maurice; Sospello, <date date="1803-05-04" type="length">14 floréal an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000134_e37_d1"><term ana="#document_type_7">L. a. s.</term> à son ami Flaminius Aquarone, à Port-Maurice; Sospello, <date when="1803-05-04">14 floréal an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Charmante lettre où il l'engage à venir le voir : « Tommasi est arrêté : tel
                   est le sort des amis de la liberté et de l'égalité.</note>
             </item>
@@ -615,7 +615,7 @@
                <trait>
                   <p>mère de Charles-Albert, roi de Sardaigne</p>
                </trait>
-               <desc xml:id="CAT_000134_e43_d1">2 l. <term ana="#document_type_15">a. s.</term>, en français, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000134_e43_d1">2 l. <term ana="#document_type_15">a. s.</term>, en français, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="44" xml:id="CAT_000134_e44">
                <num type="lot">44</num>
@@ -1812,7 +1812,7 @@
                   <p>l'introducteur de la pomme de terre en France, né à Montdidier en 1737, mort en
                      1813</p>
                </trait>
-               <desc xml:id="CAT_000134_e161_d1"><term ana="#document_type_7">L. a. s.</term> à Grégoire, le conventionnel; an <date date="1794-1795" type="length">III</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000134_e161_d1"><term ana="#document_type_7">L. a. s.</term> à Grégoire, le conventionnel; an <date when="1794-1795">III</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Lettre de recommandation en faveur de Belin de Ballu, l'helléniste. La deuxième
                   page est remplie de notes autographes de Grégoire</note>
             </item>

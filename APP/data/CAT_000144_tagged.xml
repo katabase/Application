@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -324,7 +324,7 @@
                   <p>peintre paysagiste très distingué, fondateur de l'Ecole nationale des Arts
                      décoratifs, né en 1724, mort en 1805</p>
                </trait>
-               <desc xml:id="CAT_000144_e10_d1">1° <term ana="#document_type_4">Pièce sig</term>. avec trois mots aut.; Paris, <date date="1802-03-05" type="length">14 ventôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000144_e10_d2">2° Mémoire sur la manière de peudre à l'encaustique, en usage chez les anciens; traité par les peintres modernes, terminé par un nouveau procédé pour peindre à l'huile non siccative. Lu à la 3me classe de l'Institut national, le <date date="1800-12-29" type="length">8 nivôse an IX</date> de la Rép.blique, par le citoyen Bachelier, directeur de l'Ecole gratuite de dessin, manuscrit original, <measure type="length" unit="p" n="20">20 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Déchirures n'atteignant pas le texte. Légères taches.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000144_e10_d1">1° <term ana="#document_type_4">Pièce sig</term>. avec trois mots aut.; Paris, <date when="1802-03-05">14 ventôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000144_e10_d2">2° Mémoire sur la manière de peudre à l'encaustique, en usage chez les anciens; traité par les peintres modernes, terminé par un nouveau procédé pour peindre à l'huile non siccative. Lu à la 3me classe de l'Institut national, le <date when="1800-12-29">8 nivôse an IX</date> de la Rép.blique, par le citoyen Bachelier, directeur de l'Ecole gratuite de dessin, manuscrit original, <measure type="length" unit="p" n="20">20 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Déchirures n'atteignant pas le texte. Légères taches.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="11" xml:id="CAT_000144_e11">
                <num type="lot">11</num>
@@ -458,7 +458,7 @@
                   <p>secrétaire de Napoléon Ier, auteur de Mémoires, né à Sens en 1769, mort en
                      1834</p>
                </trait>
-               <desc xml:id="CAT_000144_e24_d1"><term ana="#document_type_7">L. a. s.</term> à Jullien de Paris; Le Caire, <date date="1798-09-06" type="length">20 fructidor an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000144_e24_d1"><term ana="#document_type_7">L. a. s.</term> à Jullien de Paris; Le Caire, <date when="1798-09-06">20 fructidor an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Il lui recommande, dès qu'il aura touché terre, d'écrire à sa femme, à Sens,
                   qu'il se porte bien</note>
             </item>
@@ -563,7 +563,7 @@
                   <p>célèbre sculpteur français, membre de l'Acad. des Beaux-Arts, né en 1757, mort
                      en 1831</p>
                </trait>
-               <desc xml:id="CAT_000144_e35_d1"><term ana="#document_type_7">L. a. s.</term> au Président de la Société des Amis des Arts; Paris, <date date="1799-03-22" type="length">2 germinal an VII</date>. <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000144_e35_d1"><term ana="#document_type_7">L. a. s.</term> au Président de la Société des Amis des Arts; Paris, <date when="1799-03-22">2 germinal an VII</date>. <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Jolie lettre où il propose, pour la somme de 250 fr., une figure en terre
                   cuite, « représentant l'Amitié qui presse sur son sein un ormeau sec, qu'elle
                   arrose en même tems, simbole des secours que l'on doit à un ami malheureux.</note>
@@ -1507,7 +1507,7 @@
                      conspiration Malet, né à Gavron (Mavenne) en 1766, fusillé le 29 octobre
                      1812</p>
                </trait>
-               <desc xml:id="CAT_000144_e132_d1"><term ana="#document_type_7">L. a. s.</term> au général Quantin, à Vannes ; <date date="1797-05-15" type="length">26 floréal an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000144_e132_d1"><term ana="#document_type_7">L. a. s.</term> au général Quantin, à Vannes ; <date when="1797-05-15">26 floréal an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="133" xml:id="CAT_000144_e133">
                <num type="lot">133</num>
@@ -2355,7 +2355,7 @@
                   <p>architecte distingué, membre de l'Institut d'Egypte, né en 1769, mort en
                      1837</p>
                </trait>
-               <desc xml:id="CAT_000144_e218_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date date="1802-01-31" type="length">11 pluviôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000144_e218_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1802-01-31">11 pluviôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Relative à ses appointements comme membre de l'Institut d'Egypte</note>
             </item>
             <item n="219" xml:id="CAT_000144_e219">
@@ -2812,7 +2812,7 @@
             <item n="264" xml:id="CAT_000144_e264">
                <num type="lot">264</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000144_e264_d1"><term ana="#document_type_7">L. a. s.</term> de M. Caille au citoyen Maleskewski, contrôleur général à Gènes ; Nice, <date date="1799-10-12" type="length">20 vendémiaire an VIII</date>. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000144_e264_d1"><term ana="#document_type_7">L. a. s.</term> de M. Caille au citoyen Maleskewski, contrôleur général à Gènes ; Nice, <date when="1799-10-12">20 vendémiaire an VIII</date>. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Curieuse lettre. Il l'informe du retour de Bonaparte : « Lorsqu'on est venu
                   nous annoncer le retour imprévu de l'immortel Bonaparte, nous avons eu d'abord
                   beaucoup de peine à croire à celte singulière nouvelle, mais heureusement elle

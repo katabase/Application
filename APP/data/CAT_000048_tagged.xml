@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -416,7 +416,7 @@
                <trait>
                   <p>général de la République, maréchal de l'Empire, roi de Suède</p>
                </trait>
-               <desc xml:id="CAT_000048_e24_d1"><term ana="#document_type_7">L. a. s.</term> à Lucien Bonaparte; an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000048_e24_d1"><term ana="#document_type_7">L. a. s.</term> à Lucien Bonaparte; an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="25" xml:id="CAT_000048_e25">
                <num type="lot">25</num>
@@ -542,7 +542,7 @@
                      Girondins avec la Cour, et emprisonné pour sa déposition dans le procès de
                      Marie-Antoinette</p>
                </trait>
-               <desc xml:id="CAT_000048_e38_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000048_e38_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="39" xml:id="CAT_000048_e39">
                <num type="lot">39</num>
@@ -633,7 +633,7 @@
                   <p>célèbre avocat, défenseur de Marie-Antoinette et de Charlotte Corday, né à
                      Chartres</p>
                </trait>
-               <desc xml:id="CAT_000048_e48_d1"><term ana="#document_type_7">L. a. s.</term> à M. Ranté, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000048_e48_d1"><term ana="#document_type_7">L. a. s.</term> à M. Ranté, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="49" xml:id="CAT_000048_e49">
                <num type="lot">49</num>
@@ -738,7 +738,7 @@
                <trait>
                   <p>le célèbre conventionnel</p>
                </trait>
-               <desc xml:id="CAT_000048_e60_d1"><term ana="#document_type_4">Pièce sig</term>., an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, coupure dans une marge atteignant le texte.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000048_e60_d1"><term ana="#document_type_4">Pièce sig</term>., an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, coupure dans une marge atteignant le texte.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="61" xml:id="CAT_000048_e61">
                <num type="lot">61</num>
@@ -770,7 +770,7 @@
                <trait>
                   <p>auteur du Poëte, ouvrage licencieux, le pendant de Faublas</p>
                </trait>
-               <desc xml:id="CAT_000048_e64_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000048_e64_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Relative à sa nomination comme membre du jury d'instruction des Ecoles
                   primaires</note>
             </item>
@@ -1045,7 +1045,7 @@
                <trait>
                   <p>le grand peintre d'histoire</p>
                </trait>
-               <desc xml:id="CAT_000048_e94_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1794-02-13" type="length">25 pluviôse an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Coupure en marge enlevant plusieurs mots.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000048_e94_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1794-02-13">25 pluviôse an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Coupure en marge enlevant plusieurs mots.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre écrite comme juré du Tribunal révolutionnaire</note>
             </item>
             <item n="95" xml:id="CAT_000048_e95">
@@ -1167,7 +1167,7 @@
                <trait>
                   <p>poète dram., célèbre critique, né à Nancy</p>
                </trait>
-               <desc xml:id="CAT_000048_e108_d1"><term ana="#document_type_7">L. a. s.</term> à Fabien Pillet, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000048_e108_d1"><term ana="#document_type_7">L. a. s.</term> à Fabien Pillet, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Curieuse épitre, qu'il termine par ces mots à l'endroit de son antagoniste en
                   critique littéraire : « S'il existe des Geoffroi, il existe heureusement aussi des
                   littérateurs honnêtes...</note>
@@ -1402,7 +1402,7 @@
                   <p>savant grammairien et ingénieur physicien, inventeur du Caléfacteur, né dans le
                      Jura</p>
                </trait>
-               <desc xml:id="CAT_000048_e135_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare. Sur la grammaire.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000048_e135_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare. Sur la grammaire.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="136" xml:id="CAT_000048_e136">
                <num type="lot">136</num>
@@ -1587,7 +1587,7 @@
                <trait>
                   <p>général, ambassadeur à Londres, de l'Acad. des Sciences, né à Castelnaudary</p>
                </trait>
-               <desc xml:id="CAT_000048_e155_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Dalmas; Saléhié, <date date="1799-06-09" type="length">21 prair an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Piquée d'humidité dans une marge.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000048_e155_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Dalmas; Saléhié, <date when="1799-06-09">21 prair an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Piquée d'humidité dans une marge.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="156" xml:id="CAT_000048_e156">
                <num type="lot">156</num>
@@ -1928,7 +1928,7 @@
                <trait>
                   <p>chirurgien, membre de plusieurs sociétés savantes, né à Carcassonne</p>
                </trait>
-               <desc xml:id="CAT_000048_e196_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen BureauPuzy: Lyon, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000048_e196_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen BureauPuzy: Lyon, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Curieuse lettre dans laquelle il donne sa biographie et la liste de tous ses
                   ouvrages</note>
             </item>
@@ -2085,7 +2085,7 @@
                <trait>
                   <p>député de l'Aude</p>
                </trait>
-               <desc xml:id="CAT_000048_e215_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Haye, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000048_e215_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Haye, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="216" xml:id="CAT_000048_e216">
                <num type="lot">216</num>

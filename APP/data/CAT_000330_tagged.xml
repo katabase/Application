@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -211,7 +211,7 @@
                   <p>célèbre jurisconsulte, ministre de la Justice sous le Directoire et le
                      Consulat, né à Annonay en 1750, mort en 1828.</p>
                </trait>
-               <desc xml:id="CAT_000330_e1_d1"><term ana="#document_type_7">L. a. s.</term> à Cabanis; Paris, <date date="1801-02-02" type="length">13 pluviôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><num type="price">4</num>
+               <desc xml:id="CAT_000330_e1_d1"><term ana="#document_type_7">L. a. s.</term> à Cabanis; Paris, <date when="1801-02-02">13 pluviôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><num type="price">4</num>
             </item>
             <item n="2" xml:id="CAT_000330_e2">
                <num type="lot">2</num>
@@ -633,7 +633,7 @@
                   <p>célèbre homme d'Etat, conventionnel, archichancelier de l'empire, né à
                      Montpellier en 1753, mort en 1824.</p>
                </trait>
-               <desc xml:id="CAT_000330_e43_d1"><term ana="#document_type_7">L. a. s.</term> à Cabanis; Paris, <date date="1802-01-18" type="length">28 nivôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Rare.</desc><num type="price">10</num>
+               <desc xml:id="CAT_000330_e43_d1"><term ana="#document_type_7">L. a. s.</term> à Cabanis; Paris, <date when="1802-01-18">28 nivôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp. Rare.</desc><num type="price">10</num>
             </item>
             <item n="44" xml:id="CAT_000330_e44">
                <num type="lot">44</num>
@@ -1002,7 +1002,7 @@
                   <p>le célèbre chimiste, de l'Acad. des Sciences, né à Donazit (Landes) en 1727,
                      mort en 1801.</p>
                </trait>
-               <desc xml:id="CAT_000330_e79_d1">P. <term ana="#document_type_15">a. s.</term>; Paris, <date date="1795-08-06" type="length">19 thermidor an III</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">8</num>
+               <desc xml:id="CAT_000330_e79_d1">P. <term ana="#document_type_15">a. s.</term>; Paris, <date when="1795-08-06">19 thermidor an III</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">8</num>
             </item>
             <item n="80" xml:id="CAT_000330_e80">
                <num type="lot">80</num>
@@ -1097,7 +1097,7 @@
                   <p>savant astronome, de l'Acad. des Sciences, né à Amiens en 1749, mort en 1822.
                   </p>
                </trait>
-               <desc xml:id="CAT_000330_e88_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1800-12-28" type="length">7 nivôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">5</num>
+               <desc xml:id="CAT_000330_e88_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1800-12-28">7 nivôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">5</num>
             </item>
             <item n="89" xml:id="CAT_000330_e89">
                <num type="lot">89</num>
@@ -1168,7 +1168,7 @@
                   <p>célèbre actrice de la Comédie-Française, née à Lyon en 1763, morte en 1841.
                   </p>
                </trait>
-               <desc xml:id="CAT_000330_e95_d1"><term ana="#document_type_4">Pièce sig</term>.; an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">6</num>
+               <desc xml:id="CAT_000330_e95_d1"><term ana="#document_type_4">Pièce sig</term>.; an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">6</num>
             </item>
             <item n="96" xml:id="CAT_000330_e96">
                <num type="lot">96</num>
@@ -1274,7 +1274,7 @@
                <trait>
                   <p>célèbre marin français, né à Granville en 1770, mort en 1829.</p>
                </trait>
-               <desc xml:id="CAT_000330_e106_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Bruix; Granville, <date date="1802-05-15" type="length">25 floréal an X</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">10</num>
+               <desc xml:id="CAT_000330_e106_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Bruix; Granville, <date when="1802-05-15">25 floréal an X</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">10</num>
                <note>Il demande le commandement d'un bâtiment de la République pour son gendre
                   Clair-Antoine Le Boucher.</note>
             </item>
@@ -1286,7 +1286,7 @@
                      Tyrci, père du grand romancier, né en 1762, mort à Villers-Cotterets en 1806.
                   </p>
                </trait>
-               <desc xml:id="CAT_000330_e107_d1"><term ana="#document_type_4">Pièce sig</term>. avec 2 lig. aut., sig. aussi par le général Pellapra avec 2 lig. aut. et par le conventionnel Albitte; quartier général de Briançon, <date date="1794-06-25" type="length">7 messidor an II</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rare.</desc><num type="price">12</num>
+               <desc xml:id="CAT_000330_e107_d1"><term ana="#document_type_4">Pièce sig</term>. avec 2 lig. aut., sig. aussi par le général Pellapra avec 2 lig. aut. et par le conventionnel Albitte; quartier général de Briançon, <date when="1794-06-25">7 messidor an II</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rare.</desc><num type="price">12</num>
                <note>Curieuse pièce signée comme généraux de l'armée des Alpes sous les ordres de
                   Kellermann.</note>
             </item>
@@ -2092,7 +2092,7 @@
                <trait>
                   <p>célèbre jurisconsulte, conventionnel et membre du Directoire, </p>
                </trait>
-               <desc xml:id="CAT_000330_e192_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Ch. Dumont; Paris, <date date="1802-09-02" type="length">15 fructidor an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><num type="price">5</num>
+               <desc xml:id="CAT_000330_e192_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Ch. Dumont; Paris, <date when="1802-09-02">15 fructidor an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><num type="price">5</num>
             </item>
             <item n="193" xml:id="CAT_000330_e193">
                <num type="lot">193</num>
@@ -2250,7 +2250,7 @@
                   <p>voyageur et naturaliste français, membre de l'Institut, né près de Toulon en
                      1756, mort en 1814.</p>
                </trait>
-               <desc xml:id="CAT_000330_e209_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Villemet, secrétaire de la Société de Nancy; Paris, <date date="1802-11-23" type="length">2 frimaire an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">5</num>
+               <desc xml:id="CAT_000330_e209_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Villemet, secrétaire de la Société de Nancy; Paris, <date when="1802-11-23">2 frimaire an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">5</num>
             </item>
             <item n="210" xml:id="CAT_000330_e210">
                <num type="lot">210</num>
@@ -2427,7 +2427,7 @@
                   <p>célèbre conventionnel des Vosges, qui réprima les Compagnies de Jésus dans le
                      Midi, né en 1744, mort en 1826.</p>
                </trait>
-               <desc xml:id="CAT_000330_e228_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1797-09-27" type="length">6 vendémiaire an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">6</num>
+               <desc xml:id="CAT_000330_e228_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1797-09-27">6 vendémiaire an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">6</num>
             </item>
             <item n="229" xml:id="CAT_000330_e229">
                <num type="lot">229</num>
@@ -2987,7 +2987,7 @@
             <item n="287" xml:id="CAT_000330_e287">
                <num type="lot">287</num>
                <name type="author">Dauphiné</name>
-               <desc xml:id="CAT_000330_e287_d1"><term ana="#document_type_9">Let. sig.</term> par toutes les autorités constituées de Vienne-la-Patriote; <date date="1794-10-04" type="length">13 vendémiaire an III</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><num type="price">10</num>
+               <desc xml:id="CAT_000330_e287_d1"><term ana="#document_type_9">Let. sig.</term> par toutes les autorités constituées de Vienne-la-Patriote; <date when="1794-10-04">13 vendémiaire an III</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><num type="price">10</num>
                <note>Curieuse pièce relative au maintien du citoyen Gonnet comme capitaine de gen¬
                   darmerie et à la destitution de Brunel de Calvaria, détenu pendant 18 mois comme
                   suspect.»</note>

@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1216,7 +1216,7 @@
                <trait>
                   <p>savant naturaliste, de l'Institut, né à Brive en 1762 mort en 1833</p>
                </trait>
-               <desc xml:id="CAT_000135_e110_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1801-11-17" type="length">26 brumaire an X</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000135_e110_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1801-11-17">26 brumaire an X</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="111" xml:id="CAT_000135_e111">
                <num type="lot">111</num>
@@ -1413,7 +1413,7 @@
                <trait>
                   <p>duc de Rivoli, illustre maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000135_e130_d1"><term ana="#document_type_7">L. a. s.</term> à son ami Defly aîné; Antibes, <date date="1797-04-24" type="length">5 floréal an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 30 » Il le prie de tenir à sa disposition les 45,000 francs qui sont restés en dépôt chez lui.</desc></item>
+               <desc xml:id="CAT_000135_e130_d1"><term ana="#document_type_7">L. a. s.</term> à son ami Defly aîné; Antibes, <date when="1797-04-24">5 floréal an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 30 » Il le prie de tenir à sa disposition les 45,000 francs qui sont restés en dépôt chez lui.</desc></item>
             <item n="131" xml:id="CAT_000135_e131">
                <num type="lot">131</num>
                <name type="author">Mauduyt de La Varenne (P.-J.-E.)</name>
@@ -1599,7 +1599,7 @@
                   <p>célèbre général des armées de la République, né à Arbois en 1761, mort en
                      1804</p>
                </trait>
-               <desc xml:id="CAT_000135_e150_d1"><term ana="#document_type_7">L. a. s.</term> au général Watrin; Lille, <date date="1794-10-27" type="length">6 brumaire an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000135_e150_d1"><term ana="#document_type_7">L. a. s.</term> au général Watrin; Lille, <date when="1794-10-27">6 brumaire an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="151" xml:id="CAT_000135_e151">
                <num type="lot">151</num>

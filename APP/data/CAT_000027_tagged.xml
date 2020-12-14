@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -262,7 +262,7 @@
                <trait>
                   <p>roi de Suède</p>
                </trait>
-               <desc xml:id="CAT_000027_e6_d1"><term ana="#document_type_9">L. sig.</term> avec la souscription aut., au général Ferry, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000027_e6_d1"><term ana="#document_type_9">L. sig.</term> avec la souscription aut., au général Ferry, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="7" xml:id="CAT_000027_e7">
                <num type="lot">7</num>
@@ -287,7 +287,7 @@
                <trait>
                   <p>roi d'Espagne</p>
                </trait>
-               <desc xml:id="CAT_000027_e9_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000027_e9_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="10" xml:id="CAT_000027_e10">
                <num type="lot">10</num>
@@ -410,7 +410,7 @@
                <trait>
                   <p>célèbre conventionnel.</p>
                </trait>
-               <desc xml:id="CAT_000027_e21_d1"><term ana="#document_type_9">L. s.</term> de lui et de Prieur, comme membres du Comité de Salut public, au citoyen Drouas, commandant de l'arsenal de Paris; an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> 2</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000027_e21_d1"><term ana="#document_type_9">L. s.</term> de lui et de Prieur, comme membres du Comité de Salut public, au citoyen Drouas, commandant de l'arsenal de Paris; an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> 2</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Sur la réparation des 19,000 canons de fusils qui existent à l'Arsenal</note>
             </item>
             <item n="22" xml:id="CAT_000027_e22">
@@ -932,7 +932,7 @@
                <trait>
                   <p>illustre géomètre</p>
                </trait>
-               <desc xml:id="CAT_000027_e80_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Langlet, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000027_e80_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Langlet, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="81" xml:id="CAT_000027_e81">
                <num type="lot">81</num>

@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -455,7 +455,7 @@
                <trait>
                   <p>époux d'Elisa Bonaparte, dont il se sépara en 1805</p>
                </trait>
-               <desc xml:id="CAT_000101_e24_d1"><term ana="#document_type_9">Let. sig.</term> au général Watrin; Pistoia an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000101_e24_d1"><term ana="#document_type_9">Let. sig.</term> au général Watrin; Pistoia an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Il lui annonce qu'il vient de prendre possession du
                   commandement de la place de Pistoia</note>
             </item>
@@ -604,7 +604,7 @@
                   <p>général de la République, maréchal de l'Empire, roi de Suède, né à Pau en 1764,
                      mort en 1841</p>
                </trait>
-               <desc xml:id="CAT_000101_e40_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut., an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000101_e40_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut., an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="41" xml:id="CAT_000101_e41">
                <num type="lot">41</num>
@@ -709,7 +709,7 @@
                   <p>roi d'Espagne, frère aîné de Napoléon Ier, né à Corte en 1768, mort à Florence
                      en 1844</p>
                </trait>
-               <desc xml:id="CAT_000101_e51_d1"><term ana="#document_type_7">L. a. s.</term> au colonel Faviel ; Boulogne, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000101_e51_d1"><term ana="#document_type_7">L. a. s.</term> au colonel Faviel ; Boulogne, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Jolie lettre écrite comme colonel du 4r régiment d'infanterie
                   de ligne</note>
             </item>
@@ -928,7 +928,7 @@
                   <p>maréchal de France, né à Brives-la-Gaillarde en 1763, assassiné à Avignon en
                      1815</p>
                </trait>
-               <desc xml:id="CAT_000101_e72_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000101_e72_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="73" xml:id="CAT_000101_e73">
                <num type="lot">73</num>
@@ -1484,7 +1484,7 @@
                   <p>poète, grand-maître de l'Université, de l'Acad. fr., né à Niort en 1757, mort
                      en 1821</p>
                </trait>
-               <desc xml:id="CAT_000101_e131_d1"><term ana="#document_type_7">L. a. s.</term> à Mme Ducreux; Boulogne, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000101_e131_d1"><term ana="#document_type_7">L. a. s.</term> à Mme Ducreux; Boulogne, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="132" xml:id="CAT_000101_e132">
                <num type="lot">132</num>
@@ -1492,7 +1492,7 @@
                <trait>
                   <p>le célèbre accusateur public</p>
                </trait>
-               <desc xml:id="CAT_000101_e132_d1"><term ana="#document_type_9">Let. sig.</term> au juge de paix de Lagny (Seine-et-Marne): Paris, <date date="1794-07-12" type="length">24 messidor an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000101_e132_d1"><term ana="#document_type_9">Let. sig.</term> au juge de paix de Lagny (Seine-et-Marne): Paris, <date when="1794-07-12">24 messidor an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Demande de renseignements sur Jean Guillot, dit Larchevêque, «
                   prévenu d'être l'un des contre-révolutionnaires de Lagny.</note>
             </item>

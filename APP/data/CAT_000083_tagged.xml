@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -2254,7 +2254,7 @@
                <trait>
                   <p>le farouche proconsul d'Arras</p>
                </trait>
-               <desc xml:id="CAT_000083_e233_d1"><term ana="#document_type_9">L. s.</term> au Comité de surveillance de Neufchàteau ; Cambrai, <date date="1794-06-24" type="length">6 mess, an 2</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Relative à une saisie de lettres suspectes.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000083_e233_d1"><term ana="#document_type_9">L. s.</term> au Comité de surveillance de Neufchàteau ; Cambrai, <date when="1794-06-24">6 mess, an 2</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Relative à une saisie de lettres suspectes.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="234" xml:id="CAT_000083_e234">
                <num type="lot">234</num>
@@ -2336,7 +2336,7 @@
                      calendrier républicain, et se poignarda pour échapper à l'échafaud après les
                      journées de prairial</p>
                </trait>
-               <desc xml:id="CAT_000083_e242_d1"><term ana="#document_type_9">L. s.</term>, comme représentant dans la Dordogne, <date date="1794-09-08" type="length">22 fruct. an 2</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000083_e242_d1"><term ana="#document_type_9">L. s.</term>, comme représentant dans la Dordogne, <date when="1794-09-08">22 fruct. an 2</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="243" xml:id="CAT_000083_e243">
                <num type="lot">243</num>
@@ -2344,7 +2344,7 @@
                <trait>
                   <p>célèbre conventionnel, décapité avec Robespierre</p>
                </trait>
-               <desc xml:id="CAT_000083_e243_d1">-Arrêté du Comité de salut public, sig. de lui et de R. Lindet, <date date="1794-03-26" type="length">6 germ. an 2</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000083_e243_d1">-Arrêté du Comité de salut public, sig. de lui et de R. Lindet, <date when="1794-03-26">6 germ. an 2</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
             </item>
             <item n="244" xml:id="CAT_000083_e244">
                <num type="lot">244</num>

@@ -25,7 +25,7 @@
                <pubPlace>3 rue Furstenberg, Paris</pubPlace>
                <publisher>Pierre Cornuau</publisher>
                <pubPlace>22 rue Laffitte, Paris</pubPlace>
-               <date when="1965">1965</date>
+               <date>1965</date>
             </bibl>
             <listEvent>
                <event type="auction">
@@ -89,7 +89,7 @@
          <samplingDecl>
             <p>This electronic version of the catalog only reproduces selected entries</p>
          </samplingDecl>
-      <classDesc>
+      <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -213,7 +213,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc></encodingDesc>
+    </classDecl></encodingDesc>
       <revisionDesc>
          <change who="#COL_000001" when="2020-07">Correction, adding new mark-up for price and an ID for desc</change>
       </revisionDesc>

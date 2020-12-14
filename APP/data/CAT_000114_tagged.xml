@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -345,7 +345,7 @@
                      Alsace, gouverneur de Varsovie après Tilsitt, né à Valréas en 1759, mort en
                      1828</p>
                </trait>
-               <desc xml:id="CAT_000114_e14_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf, à Bâle; Winterthur, <date date="1799-04-18" type="length">29 germ. an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000114_e14_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf, à Bâle; Winterthur, <date when="1799-04-18">29 germ. an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Lettre historique. Enfin ses troupes sont ravitaillées en pain et en viande,
                   mais le fourrage fait défaut: les nouvelles qu'il vient de recevoir ne l'ont point
                   étonné (défaites de Moreau et de Scherer en Italie)</note>
@@ -366,7 +366,7 @@
                   <p>prince de Piombino, général français, époux d'Elisa Bonaparte, né en Corse en
                      1762, mort en 1841</p>
                </trait>
-               <desc xml:id="CAT_000114_e16_d1"><term ana="#document_type_9">Let. sig.</term> à Saliceti, délégué du gouvernement en Corse; Ajaccio, <date date="1800-04-07" type="length">17 germinal an VIII</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000114_e16_d1"><term ana="#document_type_9">Let. sig.</term> à Saliceti, délégué du gouvernement en Corse; Ajaccio, <date when="1800-04-07">17 germinal an VIII</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle lettre. Le brick le Lodi, qui a fait la traversée entre Toulon et
                   Damiette, a trouvé cette ville occupée par les troupes du grand vizir. « Kléber a
                   fait une capitulation (celle d'El Arisch) d'après laquelle la Porte se chargerait
@@ -755,7 +755,7 @@
                      la Convention, de Louis XVIII, puis ouvrit un bureau de tabac, née à Paris en
                      1756, morte en 1825</p>
                </trait>
-               <desc xml:id="CAT_000114_e56_d1"><term ana="#document_type_7">L. a. s.</term> à Joseph Bonaparte; <date date="1805-01-14" type="length">24 nivôse an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000114_e56_d1"><term ana="#document_type_7">L. a. s.</term> à Joseph Bonaparte; <date when="1805-01-14">24 nivôse an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Elle le prie de se joindre à son frère Louis pour obtenir du ministre des
                   finances l'indemnité qui lui est depuis longtemps promise</note>
             </item>
@@ -911,7 +911,7 @@
                   <p>l'illustre membre du Comité de Salut public, né à Nolay (Côte-d'Or) en 1753,
                      mort en 1823</p>
                </trait>
-               <desc xml:id="CAT_000114_e72_d1"><term ana="#document_type_9">Let. sig.</term>; <date date="1800-04-26" type="length">6 floréal an VIII</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000114_e72_d1"><term ana="#document_type_9">Let. sig.</term>; <date when="1800-04-26">6 floréal an VIII</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="73" xml:id="CAT_000114_e73">
                <num type="lot">73</num>
@@ -1080,7 +1080,7 @@
                      commandant de la garde du Directoire, il concourut au succès de la journée du
                      18 fructidor, né en 1762, mort à la suite de blessures en 1799</p>
                </trait>
-               <desc xml:id="CAT_000114_e91_d1"><term ana="#document_type_7">L. a. s.</term> au général Watrin ; Quartier général de Brest, <date date="1797-02-11" type="length">23 pluviôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000114_e91_d1"><term ana="#document_type_7">L. a. s.</term> au général Watrin ; Quartier général de Brest, <date when="1797-02-11">23 pluviôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Au nom du général Hoche, il lui donne l'ordre de se rendre en toute diligence
                   au quartier-général de l'armée de Sambre-et-Meuse à Cologne</note>
             </item>
@@ -2009,7 +2009,7 @@
                <trait>
                   <p>célèbre conventionnel, de l'Institut, né à Rennes en 1753, mort en 1827</p>
                </trait>
-               <desc xml:id="CAT_000114_e189_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1796-06-27" type="length">9 messidor an IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000114_e189_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1796-06-27">9 messidor an IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="190" xml:id="CAT_000114_e190">
                <num type="lot">190</num>
@@ -2206,7 +2206,7 @@
                   <p>célèbre amiral français, gouverneur de la Guadeloupe, né à Brest en 1761, mort
                      en 1848</p>
                </trait>
-               <desc xml:id="CAT_000114_e210_d1"><term ana="#document_type_7">L. a. s.</term> à M. Guignace; Paris, <date date="1802-09-06" type="length">19 fructidor an X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000114_e210_d1"><term ana="#document_type_7">L. a. s.</term> à M. Guignace; Paris, <date when="1802-09-06">19 fructidor an X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="211" xml:id="CAT_000114_e211">
                <num type="lot">211</num>
@@ -2283,7 +2283,7 @@
                <trait>
                   <p>le célèbre conventionnel, auteur de Faublas</p>
                </trait>
-               <desc xml:id="CAT_000114_e220_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Cambacérès; <date date="1795-07-21" type="length">3 thermidor an III</date>. <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000114_e220_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Cambacérès; <date when="1795-07-21">3 thermidor an III</date>. <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="221" xml:id="CAT_000114_e221">
                <num type="lot">221</num>

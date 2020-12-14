@@ -63,7 +63,7 @@
                correspond to documents for sale. All text preceding or succeeding the list of
                documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020-07-18">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -443,7 +443,7 @@
                   <p>maréchal de l'Empire, puis roi de Suède sous le nom de Charles-Jean XIV, né à
                      Pau en 1764, mort en 1844.</p>
                </trait>
-               <desc xml:id="CAT_000230_e23_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. et 2 lig. aut. à Cabanis; Paris, <date date="1801-12-30" type="length">9 nivôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000230_e23_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. et 2 lig. aut. à Cabanis; Paris, <date when="1801-12-30">9 nivôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Curieuse lettre. Il lui promet de recommander le citoyen Dumesnil-Merville au
                   Ministre de la Guerre. « Mais vous connaissez ma position, je ne puis que prier,
                   et mes sollicitations doivent être extrêmement mesurées...»</note>
@@ -709,7 +709,7 @@
                   <p>célèbre poète et conventionnel, auteur du Chant du Départ, né en 1764, mort en
                      1811.</p>
                </trait>
-               <desc xml:id="CAT_000230_e49_d1"><term ana="#document_type_4">Pièce sig</term>. avec 9 petites lig. aut. ; <date date="1796-02-15" type="length">26 pluviôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000230_e49_d1"><term ana="#document_type_4">Pièce sig</term>. avec 9 petites lig. aut. ; <date when="1796-02-15">26 pluviôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="50" xml:id="CAT_000230_e50">
                <num type="lot">50</num>
@@ -832,7 +832,7 @@
                   <p>dit Dorat-Cubières, poète, secrétaire-greffier de la Commune de Paris en 1792,
                      né à Roquemaure (Gard) en 1752, mort en 1820.</p>
                </trait>
-               <desc xml:id="CAT_000230_e62_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="none" type="length">22 ventô se an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000230_e62_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="none">22 ventô se an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Relative à ses Poèmes patriotiques.</note>
             </item>
             <item n="63" xml:id="CAT_000230_e63">
@@ -872,7 +872,7 @@
                   <p>général et écrivain distingué, ministre de Napoléon Ier, né à Castelnaudary
                      (Aude) en 1749, mort en 1824.</p>
                </trait>
-               <desc xml:id="CAT_000230_e66_d1"><term ana="#document_type_7">L. a. s.</term> au général Beurnonville, quartier-général d'Utrech, <date date="1796-10-05" type="length">14 vendémiaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette de l'armée du Nord. Belle lettre militaire.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000230_e66_d1"><term ana="#document_type_7">L. a. s.</term> au général Beurnonville, quartier-général d'Utrech, <date when="1796-10-05">14 vendémiaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette de l'armée du Nord. Belle lettre militaire.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="67" xml:id="CAT_000230_e67">
                <num type="lot">67</num>
@@ -968,7 +968,7 @@
                   <p>célèbre constituant, député des Ardennes à la Convention, général et ministre,
                      né à Charleville en 1747, mort en 1814.</p>
                </trait>
-               <desc xml:id="CAT_000230_e76_d1"><term ana="#document_type_9">Let. sig.</term>; Nantes, <date date="1797-03-09" type="length">19 ventôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000230_e76_d1"><term ana="#document_type_9">Let. sig.</term>; Nantes, <date when="1797-03-09">19 ventôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="77" xml:id="CAT_000230_e77">
                <num type="lot">77</num>
@@ -1319,7 +1319,7 @@
                <trait>
                   <p>poète distingué du XVIIIe siècle, né à Lisieux en 1760, mort en 1805.</p>
                </trait>
-               <desc xml:id="CAT_000230_e113_d1"><term ana="#document_type_7">L. a. s.</term> (à Champein) ; Lisieux, <date date="1794-09-04" type="length">18 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000230_e113_d1"><term ana="#document_type_7">L. a. s.</term> (à Champein) ; Lisieux, <date when="1794-09-04">18 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Relative à sa traduction des Argonautes par Valérius Flaccus.</note>
             </item>
             <item n="114" xml:id="CAT_000230_e114">
@@ -1648,7 +1648,7 @@
                   <p>célèbre général français, qui prit une grande part à la guerre de
                      l'Indépendance américaine, né à Dublin (Irlande) en 1754, mort en 1799.</p>
                </trait>
-               <desc xml:id="CAT_000230_e144_d1"><term ana="#document_type_2">Pièce sig. de Brune avec 9 lig. aut. sig.</term> du général Kilmaine ; Mantoue, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000230_e144_d1"><term ana="#document_type_2">Pièce sig. de Brune avec 9 lig. aut. sig.</term> du général Kilmaine ; Mantoue, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="145" xml:id="CAT_000230_e145">
                <num type="lot">145</num>
@@ -2020,7 +2020,7 @@
                   <p>général, le chef de la conspiration de 1812, né à Dôle en 1754, fusillé le 29
                      octobre 1812.</p>
                </trait>
-               <desc xml:id="CAT_000230_e181_d1"><term ana="#document_type_9">Let. sig.</term> 2 fois avec un post-script. de 8 lig. aut.; quartier-général de Besançon, <date date="1797-10-31" type="length">10 brumaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000230_e181_d1"><term ana="#document_type_9">Let. sig.</term> 2 fois avec un post-script. de 8 lig. aut.; quartier-général de Besançon, <date when="1797-10-31">10 brumaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="182" xml:id="CAT_000230_e182">
                <num type="lot">182</num>
@@ -2192,7 +2192,7 @@
                   <p>célèbre général de la République, ami de Merlin de Thionville, né à la
                      ChauxNeuve (Doubs.)mort en 1835.</p>
                </trait>
-               <desc xml:id="CAT_000230_e198_d1"><term ana="#document_type_9">Let. sig.</term> comme commandant en chef de l'armée du Rhin : quartier-général de Gundersblum, <date date="1795-02-14" type="length">26 pluviôse an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., curieuse vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000230_e198_d1"><term ana="#document_type_9">Let. sig.</term> comme commandant en chef de l'armée du Rhin : quartier-général de Gundersblum, <date when="1795-02-14">26 pluviôse an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., curieuse vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Lettre de recommandation en faveur du général Bellavène, alors
                   adjudant-général.</note>
             </item>
@@ -2299,7 +2299,7 @@
                      Etats-Généraux de 1789, rédacteur de la formule du Serment du Jeu de Paume, né
                      à Grenoble en 1758, mort en 1806. </p>
                </trait>
-               <desc xml:id="CAT_000230_e208_d1"><term ana="#document_type_9">Let. sig.</term>; Rennes, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000230_e208_d1"><term ana="#document_type_9">Let. sig.</term>; Rennes, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="209" xml:id="CAT_000230_e209">
                <num type="lot">209</num>
@@ -2307,7 +2307,7 @@
                <trait>
                   <p>empereur des Français.</p>
                </trait>
-               <desc xml:id="CAT_000230_e209_d1"><term ana="#document_type_9">Let. sig.</term> Buonaparte, comme général en chef de l'armée de l'Intérieur, aux représentants du peuple Morin et Fabre; <date date="1795-11-09" type="length">18 brumaire an IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000230_e209_d1"><term ana="#document_type_9">Let. sig.</term> Buonaparte, comme général en chef de l'armée de l'Intérieur, aux représentants du peuple Morin et Fabre; <date when="1795-11-09">18 brumaire an IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="210" xml:id="CAT_000230_e210">
                <num type="lot">210</num>
@@ -2315,7 +2315,7 @@
                <trait>
                   <p>empereur des Français.</p>
                </trait>
-               <desc xml:id="CAT_000230_e210_d1"><term ana="#document_type_4">Pièce signée</term> Bonaparte, comme général en chef de l'armée d'Italie, sur une lettre à lui adressée par Leonardo Foscarini de Venise ; Montebello, <date date="1797-07-04" type="length">16 messidor an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000230_e210_d1"><term ana="#document_type_4">Pièce signée</term> Bonaparte, comme général en chef de l'armée d'Italie, sur une lettre à lui adressée par Leonardo Foscarini de Venise ; Montebello, <date when="1797-07-04">16 messidor an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="211" xml:id="CAT_000230_e211">
                <num type="lot">211</num>
@@ -2545,7 +2545,7 @@
                <trait>
                   <p>savant géologue, de l'Institut, né à Strasbourg en 1755, mort en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000230_e234_d1">7 l. <term ana="#document_type_15">a. s.</term> à M. de Saint-Amand; Tarbes et Baguères, an <date date="1797-1798" type="length">VI</date>-an XI, . pages <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachets.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000230_e234_d1">7 l. <term ana="#document_type_15">a. s.</term> à M. de Saint-Amand; Tarbes et Baguères, an <date when="1797-1798">VI</date>-an XI, . pages <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachets.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true"> Intéressantecorrespondance politique et scientifique</note>
             </item>
             <item n="235" xml:id="CAT_000230_e235">
@@ -2804,7 +2804,7 @@
                <trait>
                   <p>le grand diplomate.</p>
                </trait>
-               <desc xml:id="CAT_000230_e260_d1"><term ana="#document_type_9">Let. sig.</term>, comme ministre des Relations extérieures; Paris, <date date="1800-03-24" type="length">3 germinal an VIII</date>, tête impr., vignette. Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000230_e260_d1"><term ana="#document_type_9">Let. sig.</term>, comme ministre des Relations extérieures; Paris, <date when="1800-03-24">3 germinal an VIII</date>, tête impr., vignette. Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="261" xml:id="CAT_000230_e261">
                <num type="lot">261</num>
@@ -2987,7 +2987,7 @@
                   <p>célèbre conventionnel montagnard, député du Gard, membre du Comité de sureté
                      générale, né à Uzès en 1750, mort en 1802.</p>
                </trait>
-               <desc xml:id="CAT_000230_e279_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, sig. aussi par les conventionnels Goupilleau de Fontenat, Vadier, Legendre, Louis du Bas-Rhin et Bernard, comme membres du Comité de sûreté générale; <date date="1794-08-04" type="length">17 thermidor an II</date>. <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.., cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000230_e279_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, sig. aussi par les conventionnels Goupilleau de Fontenat, Vadier, Legendre, Louis du Bas-Rhin et Bernard, comme membres du Comité de sûreté générale; <date when="1794-08-04">17 thermidor an II</date>. <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.., cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Ordre de mise en liberté de Patris, détenu à la maison dite des Bénédictins
                   anglais.</note>
             </item>
@@ -3198,7 +3198,7 @@
             <item n="303" xml:id="CAT_000230_e303">
                <num type="lot">303</num>
                <name type="author">Saint-Domingue</name>
-               <desc xml:id="CAT_000230_e303_d1"><term ana="#document_type_9">Let. sig.</term> du géneral J.-B. Michel ; Lorient, <date date="1798-12-19" type="length">29 frimaire an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000230_e303_d1"><term ana="#document_type_9">Let. sig.</term> du géneral J.-B. Michel ; Lorient, <date when="1798-12-19">29 frimaire an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Lettre historique sur la situation du Cap et où il est question d'une nouvelle
                   perfidie de Toussaint-Louverture. Il déplore la mort de trois de ses camarades
                   assassinés près de Montrouis. « Le cap est commandé par Christophe de la petite

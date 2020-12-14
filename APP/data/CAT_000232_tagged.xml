@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -228,7 +228,7 @@
                   <p>littérateur et auteur dramatique distingué, de l'Acad. fr., né à Beaugency
                      (Loiret).</p>
                </trait>
-               <desc xml:id="CAT_000232_e3_d1"><term ana="#document_type_7">L. a. s.</term> à l'agent national du district à Nantes ; Orléans, <date date="1794-05-08" type="length">19 floréal an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000232_e3_d1"><term ana="#document_type_7">L. a. s.</term> à l'agent national du district à Nantes ; Orléans, <date when="1794-05-08">19 floréal an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note anchored="true">Relative au citoyen Bignon Duverney, officier dans l'armée de Vendée, et depuis
                   juge de la Commission militaire à Nantes.</note>
             </item>
@@ -356,7 +356,7 @@
                <trait>
                   <p>célèbre conventionnel président du Directoire, né à FoxAmphoux (Var).</p>
                </trait>
-               <desc xml:id="CAT_000232_e16_d1"><term ana="#document_type_9">Let. sig.</term> comme président du Directoire au général Quantin ; Paris, <date date="1796-12-03" type="length">13 frimaire an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000232_e16_d1"><term ana="#document_type_9">Let. sig.</term> comme président du Directoire au général Quantin ; Paris, <date when="1796-12-03">13 frimaire an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Belle lettre. Il lui annonce que le Direc- toire a donné des ordres
                   relativement à la flotille de Dunkerque et à l'expédition qui lui a été
                   confiée.</note>
@@ -532,7 +532,7 @@
                   <p>conventionnel célèbre par sa fermeté inébranlable dans la journée du 1er
                      prairial, né dans l'Ardèche.</p>
                </trait>
-               <desc xml:id="CAT_000232_e32_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1795-12-03" type="length">12 frimaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000232_e32_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1795-12-03">12 frimaire an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Il demande des secours pour la citoyenne Lesage.</note>
             </item>
             <item n="33" xml:id="CAT_000232_e33">
@@ -621,7 +621,7 @@
                   <p>député de la Corrèze à la Convention, célèbre par sa mission dans le Gard et la
                      Lozère.</p>
                </trait>
-               <desc xml:id="CAT_000232_e39_d1"><term ana="#document_type_9">Let. sig.</term> à Lauteyres, à Alais; Aurillac (Cantal), <date date="1794-07-21" type="length">3 thermidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000232_e39_d1"><term ana="#document_type_9">Let. sig.</term> à Lauteyres, à Alais; Aurillac (Cantal), <date when="1794-07-21">3 thermidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="40" xml:id="CAT_000232_e40">
                <num type="lot">40</num>
@@ -936,7 +936,7 @@
                <trait>
                   <p>célèbre conventionnel, acteur et auteur dramatique, mort en 1796.</p>
                </trait>
-               <desc xml:id="CAT_000232_e70_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Carnot et Billaud-Varenne; <date date="1793-12-29" type="length">9 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000232_e70_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Carnot et Billaud-Varenne; <date when="1793-12-29">9 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="71" xml:id="CAT_000232_e71">
                <num type="lot">71</num>
@@ -1009,7 +1009,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000232_e76_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Billaud-Varenne, Carnot et Prieur de la Marne, comme membres du Comité de Salut public ; Paris, <date date="1794-04-09" type="length">20 germinal an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000232_e76_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Billaud-Varenne, Carnot et Prieur de la Marne, comme membres du Comité de Salut public ; Paris, <date when="1794-04-09">20 germinal an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="77" xml:id="CAT_000232_e77">
                <num type="lot">77</num>
@@ -1064,7 +1064,7 @@
                   <p>duc d'Auerstaedt, prince d'Eckmühl, illustre maréchal de France, né en 1770,
                      mort en 1823.</p>
                </trait>
-               <desc xml:id="CAT_000232_e82_d1"><term ana="#document_type_7">L. a. s.</term> au général Ambert; Spire, <date date="1795-09-10" type="length">24 fructidor an III</date>, <measure type="length" unit="p" n="4">4 pages</measure> pleines <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000232_e82_d1"><term ana="#document_type_7">L. a. s.</term> au général Ambert; Spire, <date when="1795-09-10">24 fructidor an III</date>, <measure type="length" unit="p" n="4">4 pages</measure> pleines <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note anchored="true">Magnifique lettre écrite comme général de brigade à l'armée du Rhin et Moselle.
                   Il parle de la mise en état de défense de Manheim, de Philipsbourg, etc., rend
                   compte de ses inspections et des ordres qu'il a donnés : « Compte que je
@@ -1235,7 +1235,7 @@
                   <p>célèbre conventionnel, gendre de Monge, né à Corme-Royal, près de Saintes, mort
                      en 1823.</p>
                </trait>
-               <desc xml:id="CAT_000232_e99_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Carnot, Robert Lindet, Treilhard, Ch. Cochon de Lapparent, Thuriot et Fourcroy, comme membres du Comité de Salut public ; Paris, <date date="1794-09-03" type="length">17 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000232_e99_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Carnot, Robert Lindet, Treilhard, Ch. Cochon de Lapparent, Thuriot et Fourcroy, comme membres du Comité de Salut public ; Paris, <date when="1794-09-03">17 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="100" xml:id="CAT_000232_e100">
                <num type="lot">100</num>
@@ -1396,7 +1396,7 @@
                <trait>
                   <p>célèbre amiral, qui ramena Bonaparte d'Egypte, né à La Ciotat.</p>
                </trait>
-               <desc xml:id="CAT_000232_e114_d1"><term ana="#document_type_7">Let. aut. sig.</term> à la 3me pers. à Réal; <date date="1804-05-31" type="length">10 prairial an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000232_e114_d1"><term ana="#document_type_7">Let. aut. sig.</term> à la 3me pers. à Réal; <date when="1804-05-31">10 prairial an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="115" xml:id="CAT_000232_e115">
                <num type="lot">115</num>
@@ -1546,7 +1546,7 @@
                <trait>
                   <p>célèbre marin des guerres de l'Empire, né à Honfleur (Calvados).</p>
                </trait>
-               <desc xml:id="CAT_000232_e129_d1"><term ana="#document_type_7">L. a. s.</term> au général Dugua, commandant la province du Caire; Le Caire (Egypte), <date date="1800-01-13" type="length">23 nivôse an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000232_e129_d1"><term ana="#document_type_7">L. a. s.</term> au général Dugua, commandant la province du Caire; Le Caire (Egypte), <date when="1800-01-13">23 nivôse an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Belle lettre. Il lui demande de laisser sortir d'Alexandrie un navire de Raguse
                   qui doit transporter la famille Pini et sauver ainsi les intérêts de deux
                   négociants français.</note>
@@ -1705,7 +1705,7 @@
                   <p>illustre savant, neveu de Bernard, et le continuateur de ses découvertes en
                      botanique, né à Lyon.</p>
                </trait>
-               <desc xml:id="CAT_000232_e144_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Germain Granier, à Versailles; Paris, <date date="1800-04-01" type="length">11 germinal an VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000232_e144_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Germain Granier, à Versailles; Paris, <date when="1800-04-01">11 germinal an VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Belle lettre. Il sollicite la place de souspréfet à Mantes pour le citoyen
                   Lerat de Magnitot, son gendre.</note>
             </item>
@@ -1743,7 +1743,7 @@
                <trait>
                   <p>député du Finistère à la Convention.</p>
                </trait>
-               <desc xml:id="CAT_000232_e148_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Bergoeing, Pémartin, Pierret, Sevestre. Lomont et Monmayou, comme Membres du Comité de Salut public., <date date="1795-06-24" type="length">6 messidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vig. et cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000232_e148_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Bergoeing, Pémartin, Pierret, Sevestre. Lomont et Monmayou, comme Membres du Comité de Salut public., <date when="1795-06-24">6 messidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vig. et cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Ils donnent l'ordre au représentant du peuple Lesage de se rendre à Chartres,
                   pour y prendre les mesures de sûreté nécessaires pour la garde des prisonniers de
                   guerre qui sont détenus dans les prisons et maisons d'arrêt.</note>
@@ -1809,7 +1809,7 @@
                <trait>
                   <p>célèbre naturaliste et homme d'Etat, de l'Acad. fr., né à Agen.</p>
                </trait>
-               <desc xml:id="CAT_000232_e154_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Chaptal; Paris, <date date="1801-04-18" type="length">28 germinal an IX</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000232_e154_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Chaptal; Paris, <date when="1801-04-18">28 germinal an IX</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="155" xml:id="CAT_000232_e155">
                <num type="lot">155</num>
@@ -1905,7 +1905,7 @@
                   <p>célèbre marin, qui prit part à la guerre d'Amérique, commandant de la flottille
                      de Boulogne, né à Rochefort.</p>
                </trait>
-               <desc xml:id="CAT_000232_e163_d1">L. a. s. au citoyen Forfait; Boulogne, <date date="1801-06-23" type="length">4 messidor an IX</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>, tête im<term ana="#document_type_3">p., rognée dans la marge du haut.</term></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000232_e163_d1">L. a. s. au citoyen Forfait; Boulogne, <date when="1801-06-23">4 messidor an IX</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>, tête im<term ana="#document_type_3">p., rognée dans la marge du haut.</term></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Toute relative aux travaux du port de Boulogne, pour lesquels il demande un
                   prompt achèvement.»</note>
             </item>
@@ -1929,12 +1929,12 @@
                   <p>célèbre général, mari de Pauline Bonaparte, né à Pontoise, mort à
                      Saint-Domingue en 1802.</p>
                </trait>
-               <desc xml:id="CAT_000232_e165_d1"><term ana="#document_type_7">L. a. s.</term>, comme général commandant la 2e division de l'armée du Rhin; <date date="1799-10-30" type="length">8 brumaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure>, tête impr., vig.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000232_e165_d1"><term ana="#document_type_7">L. a. s.</term>, comme général commandant la 2e division de l'armée du Rhin; <date when="1799-10-30">8 brumaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure>, tête impr., vig.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="166" xml:id="CAT_000232_e166">
                <num type="lot">166</num>
                <name type="author">Leclerc (V.-Emm.)</name>
-               <desc xml:id="CAT_000232_e166_d1"><term ana="#document_type_7">L. a. s.</term> de ses initiales à Jos. Bonaparte; Donawert, <date date="1800-08-19" type="length">1er fructidor an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000232_e166_d1"><term ana="#document_type_7">L. a. s.</term> de ses initiales à Jos. Bonaparte; Donawert, <date when="1800-08-19">1er fructidor an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Très curieusa lettre de dénonciation contre le général Moreau. « Sa jalousie
                   contre Bonaparte paraît aujourd'hui plus à découvert. Il cherche à se faire des
                   partisans. Il n'en aura que peu, grâce à son irrésolution... Je prie ton frère
@@ -2117,7 +2117,7 @@
                <trait>
                   <p>célèbre marin. qui s'illustra à Trafalgar où il fut tué en 1805.</p>
                </trait>
-               <desc xml:id="CAT_000232_e183_d1"><term ana="#document_type_7">L. a. s.</term>, fort Liberté, le <date date="1802-04-04" type="length">14 germinal an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000232_e183_d1"><term ana="#document_type_7">L. a. s.</term>, fort Liberté, le <date when="1802-04-04">14 germinal an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="184" xml:id="CAT_000232_e184">
                <num type="lot">184</num>
@@ -2415,7 +2415,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000232_e210_d1">Apostille sig., sig. aussi avec 3 petites lignes aut. de Barras, comme Directeur, sur une pièce contenant l'état des services de Jacques Aguettant, officier d'artillerie; Paris, <date date="1798-01-29" type="length">10 pluviôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000232_e210_d1">Apostille sig., sig. aussi avec 3 petites lignes aut. de Barras, comme Directeur, sur une pièce contenant l'état des services de Jacques Aguettant, officier d'artillerie; Paris, <date when="1798-01-29">10 pluviôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="211" xml:id="CAT_000232_e211">
                <num type="lot">211</num>
@@ -2486,7 +2486,7 @@
                   <p>duc d'Elchingen, illustre maréchal de France, né en 1769, fusillé le 7 décembre
                      1815.</p>
                </trait>
-               <desc xml:id="CAT_000232_e217_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Montreuil-sur-Mer, <date date="1804-08-06" type="length">17 thermidor an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8. obl.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000232_e217_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Montreuil-sur-Mer, <date when="1804-08-06">17 thermidor an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8. obl.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="218" xml:id="CAT_000232_e218">
                <num type="lot">218</num>
@@ -2660,7 +2660,7 @@
                   <p>constituant et conventionnel, membre du Directoire, surnommé le Pape des
                      Théophilanthropes, né à Montaigu (Vendée) en 1753, mort en 1824.</p>
                </trait>
-               <desc xml:id="CAT_000232_e232_d1">Apostille de 5 lignes <term ana="#document_type_15">aut. sig.</term> sur un rapport de Michel Moreau, chirurgien en chef de l'hôpital militaire de Saintes (Charente-Inférieure) ; <date date="1796-06-11" type="length">23 prairial an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse pièce.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000232_e232_d1">Apostille de 5 lignes <term ana="#document_type_15">aut. sig.</term> sur un rapport de Michel Moreau, chirurgien en chef de l'hôpital militaire de Saintes (Charente-Inférieure) ; <date when="1796-06-11">23 prairial an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieuse pièce.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="233" xml:id="CAT_000232_e233">
                <num type="lot">233</num>
@@ -3051,7 +3051,7 @@
                   <p>général de la République et de l'Empire, un des pacifiteurs de la Vendée, né à
                      Poligny (Jura) en 1766, mort en 1836.</p>
                </trait>
-               <desc xml:id="CAT_000232_e271_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Joanin ; les Sables d'Olonne, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. et vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000232_e271_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Joanin ; les Sables d'Olonne, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. et vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="272" xml:id="CAT_000232_e272">
                <num type="lot">272</num>
@@ -3343,7 +3343,7 @@
             <item n="298" xml:id="CAT_000232_e298">
                <num type="lot">298</num>
                <name type="author">Campagne d'Italie</name>
-               <desc xml:id="CAT_000232_e298_d1">60 let. sig. du général Lespinasse au général Dommartin; Vérone et Milan, an <date date="1795-1796" type="length">IV</date>an V, environ <measure type="length" unit="p" n="100">100 pages</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Têtes impr., vignettes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000232_e298_d1">60 let. sig. du général Lespinasse au général Dommartin; Vérone et Milan, an <date when="1795-1796">IV</date>an V, environ <measure type="length" unit="p" n="100">100 pages</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Têtes impr., vignettes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note anchored="true">Important dossier tout relatif à la campagne d'Italie. Détails des opérations
                   des divisions Masséna, Angereau, Victor, Serru- rier et Bernadotte.</note>
             </item>

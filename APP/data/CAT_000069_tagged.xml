@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1364,7 +1364,7 @@
                <trait>
                   <p>duc de Raguse, maréchal de France.</p>
                </trait>
-               <desc xml:id="CAT_000069_e127_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Frochot, préfet de la Seine; Paris, <date date="1802-11-25" type="length">4 frimaire an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000069_e127_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Frochot, préfet de la Seine; Paris, <date when="1802-11-25">4 frimaire an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="128" xml:id="CAT_000069_e128">
                <num type="lot">128</num>
@@ -1543,7 +1543,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000069_e147_d1"><term ana="#document_type_9">Let. sig.</term>, comme premier Consul, à Berthier, <date date="1803-11-23" type="length">1er frimaire an XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Avec une apostille de Berthier aut. sig. de ses initiales. Jolie vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000069_e147_d1"><term ana="#document_type_9">Let. sig.</term>, comme premier Consul, à Berthier, <date when="1803-11-23">1er frimaire an XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Avec une apostille de Berthier aut. sig. de ses initiales. Jolie vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="148" xml:id="CAT_000069_e148">
                <num type="lot">148</num>
@@ -1942,7 +1942,7 @@
                <trait>
                   <p>maréchal de France, ministre sous Louis-Philippe</p>
                </trait>
-               <desc xml:id="CAT_000069_e193_d1"><term ana="#document_type_9">Let. sig.</term>, quartier général de Boulogne-sur-Mer, <date date="1805-04-23" type="length">3 floréal an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000069_e193_d1"><term ana="#document_type_9">Let. sig.</term>, quartier général de Boulogne-sur-Mer, <date when="1805-04-23">3 floréal an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="194" xml:id="CAT_000069_e194">
                <num type="lot">194</num>
@@ -1950,7 +1950,7 @@
                <trait>
                   <p>duc d'Albuféra, maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000069_e194_d1"><term ana="#document_type_9">Let. sig.</term>, avec la souscript. aut., au général Radet; Paris, <date date="1802-01-08" type="length">18 nivôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000069_e194_d1"><term ana="#document_type_9">Let. sig.</term>, avec la souscript. aut., au général Radet; Paris, <date when="1802-01-08">18 nivôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="195" xml:id="CAT_000069_e195">
                <num type="lot">195</num>
@@ -1967,7 +1967,7 @@
                <trait>
                   <p>le grand diplomate</p>
                </trait>
-               <desc xml:id="CAT_000069_e196_d1"><term ana="#document_type_9">Let. sig.</term> à Lucien Bonaparte; Paris, <date date="1794-01-24" type="length">5 pluviose an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000069_e196_d1"><term ana="#document_type_9">Let. sig.</term> à Lucien Bonaparte; Paris, <date when="1794-01-24">5 pluviose an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="197" xml:id="CAT_000069_e197">
                <num type="lot">197</num>
@@ -1975,7 +1975,7 @@
                <trait>
                   <p>le grand tragédien</p>
                </trait>
-               <desc xml:id="CAT_000069_e197_d1">Reçu <term ana="#document_type_15">aut. sig.</term>, an <date date="1800-1801" type="length">IX</date>, <measure type="format" unit="f" ana="#document_format_32">in-32.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000069_e197_d1">Reçu <term ana="#document_type_15">aut. sig.</term>, an <date when="1800-1801">IX</date>, <measure type="format" unit="f" ana="#document_format_32">in-32.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="198" xml:id="CAT_000069_e198">
                <num type="lot">198</num>

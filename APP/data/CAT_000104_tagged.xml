@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -233,7 +233,7 @@
                   <p>célèbre diplomate, député de la Charente-Inférieure à la Constituante et de
                      Seine-et-Oise à la Convention, né à Talmont (Vendée) en 1752, mort en 1826</p>
                </trait>
-               <desc xml:id="CAT_000104_e3_d1"><term ana="#document_type_9">Let. sig.</term> avec 2 lignes aut. à M. Blanc; Milan, <date date="1805-06-08" type="length">19 prairial an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000104_e3_d1"><term ana="#document_type_9">Let. sig.</term> avec 2 lignes aut. à M. Blanc; Milan, <date when="1805-06-08">19 prairial an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Lettre politique où il lui annonce le passage de Napoléon Ier à Boulogne et à
                   Brescia; la guerre paraît prochaine; il termine par des considérations sur la
                   politique des Bourbons de Naples</note>
@@ -405,7 +405,7 @@
                   <p>maréchal de l'Empire, puis roi de Suède sous le nom de Charles-Jean XIV, né à
                      Pau en 1764, mort en 1844</p>
                </trait>
-               <desc xml:id="CAT_000104_e21_d1"><term ana="#document_type_7">L. a. s.</term> à Marceau, à Kirberg; Simeren, <date date="1795-12-13" type="length">22 frimaire an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet; écornée.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000104_e21_d1"><term ana="#document_type_7">L. a. s.</term> à Marceau, à Kirberg; Simeren, <date when="1795-12-13">22 frimaire an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet; écornée.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Il lui annonce que le général Mireur qui commande son avant-garde placée à
                   Diczenbach, vient de l'aviser qu'il avait entendu une vive canonnade et une
                   fusillade sur sa droite. Il le prie de le tirer d'inquiétude à cet égard</note>
@@ -603,7 +603,7 @@
                   <p>célèbre homme d'Etat, 2e consul de la République, archichancelier de l'Empire,
                      né à Montpellier en 1753, mort en 1824</p>
                </trait>
-               <desc xml:id="CAT_000104_e40_d1"><term ana="#document_type_9">Let. sig.</term> à Lakanal, commissaire de la République dans les nouveaux départements de la rive gauche du Rhin; Paris, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000104_e40_d1"><term ana="#document_type_9">Let. sig.</term> à Lakanal, commissaire de la République dans les nouveaux départements de la rive gauche du Rhin; Paris, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="41" xml:id="CAT_000104_e41">
                <num type="lot">41</num>
@@ -892,7 +892,7 @@
                   <p>l'illustre général, né en Auvergne en 1768, tué à la bataille de Marengo le 14
                      juin 1800</p>
                </trait>
-               <desc xml:id="CAT_000104_e68_d1"><term ana="#document_type_7">L. a. s.</term> à Vandamme; Trêves, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
+               <desc xml:id="CAT_000104_e68_d1"><term ana="#document_type_7">L. a. s.</term> à Vandamme; Trêves, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
                <note>Belle lettre où il aspire après le désir de le voir dans sa capitale de
                   Saarbrück</note>
             </item>
@@ -1000,7 +1000,7 @@
                <trait>
                   <p>célèbre littérateur et homme d'Etat, del'Acad. en 1750, mort en 1828.</p>
                </trait>
-               <desc xml:id="CAT_000104_e80_d1"><term ana="#document_type_7">L. a. s.</term> à Ginguené; Paris, <date date="1798-11-15" type="length">25 brum. an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000104_e80_d1"><term ana="#document_type_7">L. a. s.</term> à Ginguené; Paris, <date when="1798-11-15">25 brum. an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
                <note>Belle et intéressante lettre. Il lui demande de se charger d'un recueil de
                   morceaux choisis extraits des sermonnaires français : « Ce serait un bon ouvrage à
                   donner en prix aux élèves de nos écoles républicaines et à faire lire par
@@ -1458,7 +1458,7 @@
                   <p>célèbre général, beau-frère de Napoléon Ier, né à Pontoise en 1772, mort à
                      Saint-Domingue en 1802</p>
                </trait>
-               <desc xml:id="CAT_000104_e126_d1"><term ana="#document_type_7">L. a. s.</term>; quartier général de Colmar, <date date="1800-03-30" type="length">9 germinal an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000104_e126_d1"><term ana="#document_type_7">L. a. s.</term>; quartier général de Colmar, <date when="1800-03-30">9 germinal an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle lettre écrite comme général de division, commandant l'aile droite de
                   l'armée du Rhin</note>
             </item>

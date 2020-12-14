@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -291,7 +291,7 @@
                   <p>conventionnel montagnard (Seine-et-Oise) curé constitutionnel de Versailles,
                      ami de Marat</p>
                </trait>
-               <desc xml:id="CAT_000034_e11_d1"><term ana="#document_type_7">L. a. s.</term> aux administrateurs du département de l'Ain, <date date="1793-12-05" type="length">15 frim. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e11_d1"><term ana="#document_type_7">L. a. s.</term> aux administrateurs du département de l'Ain, <date when="1793-12-05">15 frim. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="12" xml:id="CAT_000034_e12">
                <num type="lot">12</num>
@@ -333,7 +333,7 @@
                   <p>conventionnel, montagnard (Saône-et-Loire), célèbre comme représentant aux
                      armées</p>
                </trait>
-               <desc xml:id="CAT_000034_e16_d1"><term ana="#document_type_7">L. a. s.</term> au Comité de salut public, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e16_d1"><term ana="#document_type_7">L. a. s.</term> au Comité de salut public, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="17" xml:id="CAT_000034_e17">
                <num type="lot">17</num>
@@ -508,7 +508,7 @@
                   <p>conventionnel montagnard (Yonne), décapité en l'an III, pour les affaires de
                      prairial</p>
                </trait>
-               <desc xml:id="CAT_000034_e36_d1"><term ana="#document_type_7">L. a. s.</term> à son collègue Prieur de la Marne, à Brest; Nantes, <date date="1794-06-15" type="length">27 prair. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e36_d1"><term ana="#document_type_7">L. a. s.</term> à son collègue Prieur de la Marne, à Brest; Nantes, <date when="1794-06-15">27 prair. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre écrite de la Société populaire de Nantes</note>
             </item>
             <item n="37" xml:id="CAT_000034_e37">
@@ -566,7 +566,7 @@
                   <p>médecin et ami de Mirabeau, chef des Idéologues sous Napoléon, de l'Acad.
                      fr.</p>
                </trait>
-               <desc xml:id="CAT_000034_e43_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Crapart; Auteuil, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000034_e43_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Crapart; Auteuil, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Relative à l'impression de son livre sur les Rapports du physique et du moral
                   de l'homme</note>
             </item>
@@ -734,7 +734,7 @@
                <trait>
                   <p>conventionnel(Côtes-du-Nord) proscrit avec les Girondins</p>
                </trait>
-               <desc xml:id="CAT_000034_e61_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000034_e61_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="62" xml:id="CAT_000034_e62">
                <num type="lot">62</num>
@@ -768,7 +768,7 @@
                   <p>conventionnel (Calvados), célèbre par la réponse qu'il fit au prince de Cobourg
                      lors du siège de Fondé</p>
                </trait>
-               <desc xml:id="CAT_000034_e65_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Sotin, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e65_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Sotin, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="66" xml:id="CAT_000034_e66">
                <num type="lot">66</num>
@@ -785,7 +785,7 @@
                   <p>conventionnel montagnard (Somme) célèbre par sa mission à Amiens pendant la
                      terreur</p>
                </trait>
-               <desc xml:id="CAT_000034_e67_d1"><term ana="#document_type_7">L. a. s.</term>, aux administrateurs de Seine-et-Oise, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000034_e67_d1"><term ana="#document_type_7">L. a. s.</term>, aux administrateurs de Seine-et-Oise, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="68" xml:id="CAT_000034_e68">
                <num type="lot">68</num>
@@ -793,7 +793,7 @@
                <trait>
                   <p>auteur de l'Origine des cultes, de l'Institut</p>
                </trait>
-               <desc xml:id="CAT_000034_e68_d1">1° Quit. sig., relative à son Origine des cultes, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-2° Fragment aut. de cet ouvrage. 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e68_d1">1° Quit. sig., relative à son Origine des cultes, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-2° Fragment aut. de cet ouvrage. 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="69" xml:id="CAT_000034_e69">
                <num type="lot">69</num>
@@ -819,7 +819,7 @@
                   <p>conventionnel (Bouches-du-Rhône) fameux par sa mission dans le Midi après le 9
                      thermidor</p>
                </trait>
-               <desc xml:id="CAT_000034_e71_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000034_e71_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="72" xml:id="CAT_000034_e72">
                <num type="lot">72</num>
@@ -835,7 +835,7 @@
             <item n="73" xml:id="CAT_000034_e73">
                <num type="lot">73</num>
                <name type="author">Eschassériaux (Jos.)</name>
-               <desc xml:id="CAT_000034_e73_d1">l'aîné, conventionnel montagnard (Char.-Inf.).-<term ana="#document_type_7">L. a. s.</term>, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e73_d1">l'aîné, conventionnel montagnard (Char.-Inf.).-<term ana="#document_type_7">L. a. s.</term>, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="74" xml:id="CAT_000034_e74">
                <num type="lot">74</num>
@@ -843,7 +843,7 @@
                <trait>
                   <p>le jeune, député suppléant de la Charente-Inférieure à la Convention</p>
                </trait>
-               <desc xml:id="CAT_000034_e74_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, piqûre d'humidité.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e74_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, piqûre d'humidité.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="75" xml:id="CAT_000034_e75">
                <num type="lot">75</num>
@@ -852,7 +852,7 @@
                   <p>conventionnel montagnard (Haute-Loire), fameux par ses missions dans les
                      Vosges, la Meurthe et la Moselle</p>
                </trait>
-               <desc xml:id="CAT_000034_e75_d1"><term ana="#document_type_7">L. a. s.</term> à un membre du Directoire, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e75_d1"><term ana="#document_type_7">L. a. s.</term> à un membre du Directoire, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre par laquelle il dénonce comme aristocrale le général Piston,
                   commandant dans la Ilaute-Loire, et un certain nombre de fonctionnaires de ce
                   département,</note>
@@ -928,7 +928,7 @@
                <trait>
                   <p>conventionnel montagnard (Gironde)</p>
                </trait>
-               <desc xml:id="CAT_000034_e83_d1"><term ana="#document_type_7">L. a. s.</term> à Prieur de la Marne; Bordeaux, <date date="1794-06-19" type="length">1er mess, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000034_e83_d1"><term ana="#document_type_7">L. a. s.</term> à Prieur de la Marne; Bordeaux, <date when="1794-06-19">1er mess, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="84" xml:id="CAT_000034_e84">
                <num type="lot">84</num>
@@ -936,7 +936,7 @@
                <trait>
                   <p>conventionnel montagnard (Ariège), célèbre par ses missions aux armées</p>
                </trait>
-               <desc xml:id="CAT_000034_e84_d1"><term ana="#document_type_7">L. a. s.</term> à ses collègues à Commune-Affranchie; Grenoble, 12pluv. an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e84_d1"><term ana="#document_type_7">L. a. s.</term> à ses collègues à Commune-Affranchie; Grenoble, 12pluv. an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="85" xml:id="CAT_000034_e85">
                <num type="lot">85</num>
@@ -971,7 +971,7 @@
                <trait>
                   <p>conventionnel montagnard (Vendée)</p>
                </trait>
-               <desc xml:id="CAT_000034_e88_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e88_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="89" xml:id="CAT_000034_e89">
                <num type="lot">89</num>
@@ -1054,7 +1054,7 @@
                <trait>
                   <p>conventionnel, auteur d'un livre curieux sur la Révolution</p>
                </trait>
-               <desc xml:id="CAT_000034_e97_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000034_e97_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="98" xml:id="CAT_000034_e98">
                <num type="lot">98</num>
@@ -1074,7 +1074,7 @@
                <trait>
                   <p>conventionnel montagnard (Ain), membre du Comité de sûreté générale</p>
                </trait>
-               <desc xml:id="CAT_000034_e99_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1793-12-06" type="length">16 frim. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 3.</desc></item>
+               <desc xml:id="CAT_000034_e99_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1793-12-06">16 frim. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 3.</desc></item>
             <item n="100" xml:id="CAT_000034_e100">
                <num type="lot">100</num>
                <name type="author">Janin (Jules)</name>
@@ -1154,7 +1154,7 @@
                   <p>conventionnel (Haute-Marne) président de la Convention lors de l'abjuration de
                      Gobel</p>
                </trait>
-               <desc xml:id="CAT_000034_e107_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1798-1799" type="length">7</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e107_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1798-1799">7</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="108" xml:id="CAT_000034_e108">
                <num type="lot">108</num>
@@ -1187,7 +1187,7 @@
                <trait>
                   <p>célèbre tragédien, né à La Rochelle</p>
                </trait>
-               <desc xml:id="CAT_000034_e111_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e111_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="112" xml:id="CAT_000034_e112">
                <num type="lot">112</num>
@@ -1207,7 +1207,7 @@
                <trait>
                   <p>, conventionnel montagnard (Nièvre)</p>
                </trait>
-               <desc xml:id="CAT_000034_e113_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1794-06-13" type="length">25 prair. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e113_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1794-06-13">25 prair. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Dénonciation contre Désiles, directeur de l'enregistrement à Orléans</note>
             </item>
             <item n="114" xml:id="CAT_000034_e114">
@@ -1217,7 +1217,7 @@
                   <p>conventionnel (Morbihan) fameux par ses écrits contre les prêtres, auteur des
                      Préjugés détruits</p>
                </trait>
-               <desc xml:id="CAT_000034_e114_d1"><term ana="#document_type_7">L. a. s.</term>, sig. aussi de Laignelot, à leurs collègues à Brest; Rochefort, <date date="1793-10-04" type="length">13 vend, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e114_d1"><term ana="#document_type_7">L. a. s.</term>, sig. aussi de Laignelot, à leurs collègues à Brest; Rochefort, <date when="1793-10-04">13 vend, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="115" xml:id="CAT_000034_e115">
                <num type="lot">115</num>
@@ -1291,7 +1291,7 @@
                   <p>célèbre conventionnel (Eure) membre du Comité de Salut public, Ministre des
                      finances sous le Directoire</p>
                </trait>
-               <desc xml:id="CAT_000034_e121_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e121_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="122" xml:id="CAT_000034_e122">
                <num type="lot">122</num>
@@ -1347,7 +1347,7 @@
                   <p>député de l'Aube à la Convention et au Conseil des Cinq-Cents, connu par ses
                      motions en faveur des artistes</p>
                </trait>
-               <desc xml:id="CAT_000034_e127_d1"><term ana="#document_type_7">L. a. s.</term> à son collègue Défermon ; Calais, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e127_d1"><term ana="#document_type_7">L. a. s.</term> à son collègue Défermon ; Calais, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="128" xml:id="CAT_000034_e128">
                <num type="lot">128</num>
@@ -1400,7 +1400,7 @@
                   <p>constituant et conventionnel, évêque constitutionnel de l'Oise, fameux par sa
                      mission dans les Ardennes</p>
                </trait>
-               <desc xml:id="CAT_000034_e133_d1"><term ana="#document_type_7">L. a. s.</term> au comité militaire, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, beau cachet.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000034_e133_d1"><term ana="#document_type_7">L. a. s.</term> au comité militaire, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, beau cachet.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="134" xml:id="CAT_000034_e134">
                <num type="lot">134</num>
@@ -1425,7 +1425,7 @@
                <trait>
                   <p>célèbre compositeur, auteur de la musique du Chant du départ, né à Givet</p>
                </trait>
-               <desc xml:id="CAT_000034_e136_d1"><term ana="#document_type_4">Pièce sig</term>. ; Paris, <date date="none" type="length">20 messidor, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000034_e136_d1"><term ana="#document_type_4">Pièce sig</term>. ; Paris, <date when="none">20 messidor, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Curieuse pièce relative au théâtre Feydeau. Elle porte, outre la signature de
                   Méhul, celles de Grétry, Cherubini, Dalayrac, Kreutzer, Berton père, etc</note>
             </item>
@@ -1541,7 +1541,7 @@
                   <p>conventionnel (Sarthe) ami de Camille Desmoulins, célèbre par ses mémoires sur
                      la guerre de la Vendée, décapité en 1794</p>
                </trait>
-               <desc xml:id="CAT_000034_e149_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="none" type="length">12 juin an II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e149_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="none">12 juin an II</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="150" xml:id="CAT_000034_e150">
                <num type="lot">150</num>
@@ -1549,7 +1549,7 @@
                <trait>
                   <p>conventionnel (Ardennes) qui fit accorder des secours à Mlle de Sombreuil</p>
                </trait>
-               <desc xml:id="CAT_000034_e150_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000034_e150_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="151" xml:id="CAT_000034_e151">
                <num type="lot">151</num>
@@ -1615,7 +1615,7 @@
                <trait>
                   <p>conventionnel (Saône-et-Loire), fameux par sa mission à Lyon</p>
                </trait>
-               <desc xml:id="CAT_000034_e158_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e158_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre sur la réintégration dans la gendarmerie, des officiers qu'il a
                   destitués pour leur conduite lors des égorgements royaux dans les départements du
                   Rhône, de la Loire et de l'Ain</note>
@@ -1657,7 +1657,7 @@
                   <p>conventionnel (Var) célèbre par sa mission à l'armée d'Italie et dans les
                      départements méridionaux</p>
                </trait>
-               <desc xml:id="CAT_000034_e162_d1"><term ana="#document_type_7">L. a. s.</term>, sig. aussi de Moltedo, à Saliceti; Port la Montagne (Toulon), <date date="1803-06-17" type="length">28 prair. an 11</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000034_e162_d1"><term ana="#document_type_7">L. a. s.</term>, sig. aussi de Moltedo, à Saliceti; Port la Montagne (Toulon), <date when="1803-06-17">28 prair. an 11</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Curieuse lettre relative à une expédition préparée contre les Anglais, pour la
                   reprise de la Corse. « Nous désirons, dit-il, que les vents et les circonstances
                   mettent bientôt l'escadre républicaine à même de faire goûter des prunes rouges à
@@ -1677,7 +1677,7 @@
                <trait>
                   <p>conventionnel fameux, décapité avec son frère</p>
                </trait>
-               <desc xml:id="CAT_000034_e164_d1">Arrêté sig., comme représentant à l'armée d'Italie; Nice, <date date="1794-03-19" type="length">29 vent, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000034_e164_d1">Arrêté sig., comme représentant à l'armée d'Italie; Nice, <date when="1794-03-19">29 vent, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="165" xml:id="CAT_000034_e165">
                <num type="lot">165</num>

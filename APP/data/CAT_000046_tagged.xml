@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -467,7 +467,7 @@
                <trait>
                   <p>maréchal de l'Empire</p>
                </trait>
-               <desc xml:id="CAT_000046_e28_d1"><term ana="#document_type_7">L. a. s.</term>; an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000046_e28_d1"><term ana="#document_type_7">L. a. s.</term>; an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="29" xml:id="CAT_000046_e29">
                <num type="lot">29</num>
@@ -876,7 +876,7 @@
                <trait>
                   <p>célèbre général, beau-frère de Napoléon</p>
                </trait>
-               <desc xml:id="CAT_000046_e67_d1"><term ana="#document_type_7">L. a. sig.</term> L. à Jos. Bonaparte ; Donnavert, <date date="1800-08-19" type="length">1er fructidor an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000046_e67_d1"><term ana="#document_type_7">L. a. sig.</term> L. à Jos. Bonaparte ; Donnavert, <date when="1800-08-19">1er fructidor an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Très-curieuse lettre de dénonciation contre le général Moreau. « Sa jalousie
                   contre Bonaparte paraît aujourd'hui plus à découvert. Il cherche à se faire des
                   partisans. Il n'en aura que peu, grâce à son irrésolution... Je prie ton frère
@@ -923,7 +923,7 @@
                <trait>
                   <p>célèbre conventionnel, membre du Comité de salut public</p>
                </trait>
-               <desc xml:id="CAT_000046_e71_d1"><term ana="#document_type_7">L. a. s.</term> (à Gohier); Caen, <date date="1799-07-25" type="length">7 therm. an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000046_e71_d1"><term ana="#document_type_7">L. a. s.</term> (à Gohier); Caen, <date when="1799-07-25">7 therm. an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="72" xml:id="CAT_000046_e72">
                <num type="lot">72</num>
@@ -1113,7 +1113,7 @@
                <trait>
                   <p>Le même</p>
                </trait>
-               <desc xml:id="CAT_000046_e92_d1"><term ana="#document_type_9">L. sig.</term> comme général en chef de l'armée d'Egypte, écrite par Bourrienne au général Dugua; Le Caire, <date date="1798-09-24" type="length">3 vendémiaire an VII</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000046_e92_d1"><term ana="#document_type_9">L. sig.</term> comme général en chef de l'armée d'Egypte, écrite par Bourrienne au général Dugua; Le Caire, <date when="1798-09-24">3 vendémiaire an VII</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Instructions sévères et pressantes pour se rendre souverainement maîtres du lac
                   Menzalé et soumettre complètement la province de Damiette. Il faut faire des
                   exemples, le désarmement, des tètes coupées et des ôtages.</note>
@@ -1304,7 +1304,7 @@
                <trait>
                   <p>célèbre aéronaute et physicien belge, inventeur de la Fantasmagorie</p>
                </trait>
-               <desc xml:id="CAT_000046_e112_d1"><term ana="#document_type_7">L. a. s.</term> à Ducray-Duminil, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000046_e112_d1"><term ana="#document_type_7">L. a. s.</term> à Ducray-Duminil, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="113" xml:id="CAT_000046_e113">
                <num type="lot">113</num>
@@ -1348,7 +1348,7 @@
                <trait>
                   <p>poète, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000046_e117_d1"><term ana="#document_type_7">L. a. s.</term> à Cubières de Palmezeaux; <date date="1798-07-01" type="length">13 mess, an VI</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000046_e117_d1"><term ana="#document_type_7">L. a. s.</term> à Cubières de Palmezeaux; <date when="1798-07-01">13 mess, an VI</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Belle lettre de félicitations sur son Ode au Vengeur, et, à cette occasion, il
                   passe en revue tous les poètes qui ont célébré cet épisode</note>
             </item>
@@ -1378,7 +1378,7 @@
                <trait>
                   <p>maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000046_e120_d1"><term ana="#document_type_4">Pièce sig</term>.; Milan, <date date="1798-02-21" type="length">3 vent, an VI</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000046_e120_d1"><term ana="#document_type_4">Pièce sig</term>.; Milan, <date when="1798-02-21">3 vent, an VI</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Ordre du jour adressé aux soldats composant l'armée d'Italie. « Informé que
                   l'on parie à Vérone, que les troupes autrichiennes seront dans Mantoue sous peu de
                   jours, » il dit : « Moi aussi je parie, non de l'argent, mais l'honneur français,
@@ -1394,7 +1394,7 @@
                <trait>
                   <p>conventionnel, directeur et consul</p>
                </trait>
-               <desc xml:id="CAT_000046_e121_d1"><term ana="#document_type_7">L. a. s.</term> à M. Benoit, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Encre un peu pâle.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000046_e121_d1"><term ana="#document_type_7">L. a. s.</term> à M. Benoit, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Encre un peu pâle.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="122" xml:id="CAT_000046_e122">
                <num type="lot">122</num>

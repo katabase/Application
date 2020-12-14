@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -825,7 +825,7 @@
                   <p>célèbre général de la République, né à Valence (Drôme) en 1762, mort en
                      1800</p>
                </trait>
-               <desc xml:id="CAT_000112_e61_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Bruges, <date date="1798-06-29" type="length">11 messidor an VI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000112_e61_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Bruges, <date when="1798-06-29">11 messidor an VI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il lui adresse les rapports résumés des généraux anglais faits prisonniers à
                   Ostende. On y a joint le compte rendu des opérations du général Coote, aux
                   environs d'Ostende (il dut capituler à Blankenberghe)</note>
@@ -2429,7 +2429,7 @@
                   <p>duc de Dalmatie, illustre maréchal de France, né à Saint-Amans-la-Bastide
                      (Tarn) en 1769, mort en 1851</p>
                </trait>
-               <desc xml:id="CAT_000112_e216_d1"><term ana="#document_type_4">Pièce sig</term>., quartier, général de Birmensdorf (Suisse), <date date="1799-06-14" type="length">26 prairial an VII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000112_e216_d1"><term ana="#document_type_4">Pièce sig</term>., quartier, général de Birmensdorf (Suisse), <date when="1799-06-14">26 prairial an VII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Document historique sur les opérations complémentaires de la bataille de
                   Zûrich, gagnée par Masséna : Ordre de marche pour attaquer et tourner Alstatten et
                   Albisriden, etc</note>
@@ -2448,7 +2448,7 @@
                <trait>
                   <p>le grand diplomate</p>
                </trait>
-               <desc xml:id="CAT_000112_e218_d1"><term ana="#document_type_9">Let. sig.</term>, au baron Bignon, à Cassel; Paris, <date date="1804-05-08" type="length">17 floréal an XII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000112_e218_d1"><term ana="#document_type_9">Let. sig.</term>, au baron Bignon, à Cassel; Paris, <date when="1804-05-08">17 floréal an XII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Très curieuse lettre politique où il lui annonce la transformation du
                   gouvernement consulaire en empire; la France le désire : « Ce voeu, manifesté au
                   sein de deux autorités, dont l'une est la première et l'autre la plus populaire de
@@ -2533,7 +2533,7 @@
                <trait>
                   <p>une des plus célèbres actrices de la Comnédie-Française</p>
                </trait>
-               <desc xml:id="CAT_000112_e226_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Antoine ; <date date="1799-01-13" type="length">24 nivôse an VII</date>, <measure type="length" unit="p" n="3">3 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000112_e226_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Antoine ; <date when="1799-01-13">24 nivôse an VII</date>, <measure type="length" unit="p" n="3">3 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Très-curieuse lettre sur la Comédie-Française. Malgré ses chagrins elle est
                   obligée de s'occuper des affaires duthéâtre qui encore est à la veille «
                   d'écrouler». Elle croit que « ce directeur-cy est encore pis que Gaillard Ce sont

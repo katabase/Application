@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -441,7 +441,7 @@
             <item n="23" xml:id="CAT_000171_e23">
                <num type="lot">23</num>
                <name type="author">Berthier (Alexandre)</name>
-               <desc xml:id="CAT_000171_e23_d1"><term ana="#document_type_9">Let. sig.</term> à Villemanzy; quartier général de Milan. <date date="1798-03-21" type="length">1er germinal an VI</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Papier avec sa superbe vignette républicaine de l'armée d'Italie, occupant la moitié de la page. Fripée et rognée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000171_e23_d1"><term ana="#document_type_9">Let. sig.</term> à Villemanzy; quartier général de Milan. <date when="1798-03-21">1er germinal an VI</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Papier avec sa superbe vignette républicaine de l'armée d'Italie, occupant la moitié de la page. Fripée et rognée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="24" xml:id="CAT_000171_e24">
                <num type="lot">24</num>
@@ -460,7 +460,7 @@
                   <p>célèbre amiral français, qui prit part à la guerre d'Amérique, et fut fait
                      prisonnier à Aboukir, né à Marvéjols (Lozère) en 1759, mort en 1826.</p>
                </trait>
-               <desc xml:id="CAT_000171_e25_d1"><term ana="#document_type_7">L. a. s.</term>, Toulon, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000171_e25_d1"><term ana="#document_type_7">L. a. s.</term>, Toulon, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Curieuse lettre relative à la construction d'une corvette demandée par le
                   général Bonaparte. -On a joint une notice manuscrite des services de Blanquet du
                   Chayla.</note>
@@ -831,7 +831,7 @@
                   <p>brave marin français, commandant de l'Intrépide au combat du cap Finistère, où
                      il fut tué le 22 juillet 1805.</p>
                </trait>
-               <desc xml:id="CAT_000171_e61_d1">P. <term ana="#document_type_15">a. s.</term>; <date date="1802-06-18" type="length">29 prairial an X</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000171_e61_d1">P. <term ana="#document_type_15">a. s.</term>; <date when="1802-06-18">29 prairial an X</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="62" xml:id="CAT_000171_e62">
                <num type="lot">62</num>
@@ -1055,7 +1055,7 @@
                      l'amiral d'Estaing. ministre de la marine en 1799, né à Rouen en 1752, mort en
                      1807.</p>
                </trait>
-               <desc xml:id="CAT_000171_e84_d1"><term ana="#document_type_7">L. a. s.</term>, Gènes, <date date="1805-07-15" type="length">26 messidor an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000171_e84_d1"><term ana="#document_type_7">L. a. s.</term>, Gènes, <date when="1805-07-15">26 messidor an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="85" xml:id="CAT_000171_e85">
                <num type="lot">85</num>
@@ -1064,7 +1064,7 @@
                   <p>député de la Martinique à la Convention nationale, né à Saint-Pierre
                      (Martinique) en 1754.</p>
                </trait>
-               <desc xml:id="CAT_000171_e85_d1">P. <term ana="#document_type_15">a. s.</term> ; Paris, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000171_e85_d1">P. <term ana="#document_type_15">a. s.</term> ; Paris, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="86" xml:id="CAT_000171_e86">
                <num type="lot">86</num>
@@ -1200,7 +1200,7 @@
                   <p>brave général de la République et de l'Empire, il prit part à la guerre de
                      l'Indépendance américaine, né à Toul en 1752, mort en 1823.</p>
                </trait>
-               <desc xml:id="CAT_000171_e98_d1"><term ana="#document_type_9">Let. sig.</term>; Cetle, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000171_e98_d1"><term ana="#document_type_9">Let. sig.</term>; Cetle, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="99" xml:id="CAT_000171_e99">
                <num type="lot">99</num>
@@ -1302,7 +1302,7 @@
                   <p>roi d'Haïti, il prit part à la guerre de l'Indépendance américaine, et fut
                      blessé au siège de Savannah, né en 1767, mort en 1821.</p>
                </trait>
-               <desc xml:id="CAT_000171_e108_d1">Let. sig. comme général de brigade; <term ana="#document_type_8">L. a.</term> Petite-Anse, <date date="1797-08-19" type="length">2 fructidor an V</date>, <measure type="length" unit="p" n="1.6600000000000001">1 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000171_e108_d1">Let. sig. comme général de brigade; <term ana="#document_type_8">L. a.</term> Petite-Anse, <date when="1797-08-19">2 fructidor an V</date>, <measure type="length" unit="p" n="1.6600000000000001">1 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="109" xml:id="CAT_000171_e109">
                <num type="lot">109</num>
@@ -1314,7 +1314,7 @@
                      époque, et fut déporté à l'île d'Oléron après le complot de la machine
                      infernale, né à Francfort en 1752, mort en 1821.</p>
                </trait>
-               <desc xml:id="CAT_000171_e109_d1"><term ana="#document_type_7">L. a. s.</term>, en français, (à Joseph Bonaparte); ile de Ré, <date date="1803-02-05" type="length">16 pluviôse an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très rare.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000171_e109_d1"><term ana="#document_type_7">L. a. s.</term>, en français, (à Joseph Bonaparte); ile de Ré, <date when="1803-02-05">16 pluviôse an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très rare.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Très belle et intéressante lettre. « J'ai été exilé, par le feu Directoire, à
                   30 lieues de Paris, pendant dix mois, pour avoir osé écrire en faveur de
                   Bonaparte, pendant qu'il étoit en Egypte, et par une fatalité inconcevable, me
@@ -1430,7 +1430,7 @@
                   <p>célèbre marin, qui prit part à la guerre d'Amérique, né à Brest en 1747, mort
                      en 1822.</p>
                </trait>
-               <desc xml:id="CAT_000171_e120_d1"><term ana="#document_type_9">Let. sig.</term>; Anvers, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000171_e120_d1"><term ana="#document_type_9">Let. sig.</term>; Anvers, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="121" xml:id="CAT_000171_e121">
                <num type="lot">121</num>
@@ -1507,7 +1507,7 @@
                   <p>maréchal de France, qui prit une grande part aux guerres de l'Empire, né en
                      1768, mort en 1828.</p>
                </trait>
-               <desc xml:id="CAT_000171_e127_d1"><term ana="#document_type_7">L. a. s.</term> comme aide-de-camp de l'Empereur; Toulon, <date date="1804-11-25" type="length">4 frimaire an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000171_e127_d1"><term ana="#document_type_7">L. a. s.</term> comme aide-de-camp de l'Empereur; Toulon, <date when="1804-11-25">4 frimaire an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="128" xml:id="CAT_000171_e128">
                <num type="lot">128</num>
@@ -1516,7 +1516,7 @@
                   <p>duc de Dantzick, maréchal de France, né à Ruffach (Alsace) en 1755, mort en
                      1820.</p>
                </trait>
-               <desc xml:id="CAT_000171_e128_d1"><term ana="#document_type_7">L. a. s.</term> (à Joseph Bonaparte) ; Paris, <date date="1805-07-13" type="length">24 messidor an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000171_e128_d1"><term ana="#document_type_7">L. a. s.</term> (à Joseph Bonaparte) ; Paris, <date when="1805-07-13">24 messidor an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="129" xml:id="CAT_000171_e129">
                <num type="lot">129</num>
@@ -1730,7 +1730,7 @@
                      de MM. de Guichen et de Grasse, né en 1763, tué au combat de Trafalgar le 21
                      oct. 1805</p>
                </trait>
-               <desc xml:id="CAT_000171_e149_d1"><term ana="#document_type_4">Pièce sig</term>. avec lig. aut.; Brest, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000171_e149_d1"><term ana="#document_type_4">Pièce sig</term>. avec lig. aut.; Brest, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="150" xml:id="CAT_000171_e150">
                <num type="lot">150</num>
@@ -1752,7 +1752,7 @@
             <item n="152" xml:id="CAT_000171_e152">
                <num type="lot">152</num>
                <name type="author">Maistral (Esprit-Tranquille)</name>
-               <desc xml:id="CAT_000171_e152_d1">célèbre marin français, qui prit une grande part à la guerre d'Amérique et se distingua au combat de Trafalgar, né à <term ana="#document_type_15">a. s.</term>; à bord du vaisseau le Berwick, <date date="1802-05-30" type="length">10 prairial an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000171_e152_d1">célèbre marin français, qui prit une grande part à la guerre d'Amérique et se distingua au combat de Trafalgar, né à <term ana="#document_type_15">a. s.</term>; à bord du vaisseau le Berwick, <date when="1802-05-30">10 prairial an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="153" xml:id="CAT_000171_e153">
                <num type="lot">153</num>
@@ -1965,7 +1965,7 @@
                <trait>
                   <p>général de division, membre du Directoire exécutif.</p>
                </trait>
-               <desc xml:id="CAT_000171_e174_d1"><term ana="#document_type_4">Pièce sig</term>.; an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000171_e174_d1"><term ana="#document_type_4">Pièce sig</term>.; an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="175" xml:id="CAT_000171_e175">
                <num type="lot">175</num>
@@ -2002,7 +2002,7 @@
             <item n="179" xml:id="CAT_000171_e179">
                <num type="lot">179</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000171_e179_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, sur vélin, sig. aussi par Hugues Maret et Berthier; an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>, vignette de Roger. Légèrement tachée et fripée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000171_e179_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, sur vélin, sig. aussi par Hugues Maret et Berthier; an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>, vignette de Roger. Légèrement tachée et fripée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="180" xml:id="CAT_000171_e180">
                <num type="lot">180</num>
@@ -2075,7 +2075,7 @@
                <trait>
                   <p>célèbre général de la Révolution, né à Montélimar (Drôme) en 1739.</p>
                </trait>
-               <desc xml:id="CAT_000171_e187_d1"><term ana="#document_type_2">Pièce sig. 2 fois, avec apostilles aut. sig.</term> de Kellermann et de Réal; an <date date="1795-1796" type="length">IV</date>, légère déchirure, tachée d'humidité.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000171_e187_d1"><term ana="#document_type_2">Pièce sig. 2 fois, avec apostilles aut. sig.</term> de Kellermann et de Réal; an <date when="1795-1796">IV</date>, légère déchirure, tachée d'humidité.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Très curieuse pièce. Etat de ses service dressé pour demander une pension de
                   retraite.</note>
             </item>
@@ -2353,7 +2353,7 @@
                   <p>célèbre amirat français, il prit part à la guerre d'Amérique, né à Brest en
                      1748, mort en 1832.</p>
                </trait>
-               <desc xml:id="CAT_000171_e210_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000171_e210_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="211" xml:id="CAT_000171_e211">
                <num type="lot">211</num>
@@ -2547,7 +2547,7 @@
                      assista au siège de Niewport et à la conquêle de la Grenade, né à Toulon en
                      1767.</p>
                </trait>
-               <desc xml:id="CAT_000171_e228_d1"><term ana="#document_type_7">L. a. s.</term>; à bord de la Cybêle, <date date="1803-11-24" type="length">2 frimaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000171_e228_d1"><term ana="#document_type_7">L. a. s.</term>; à bord de la Cybêle, <date when="1803-11-24">2 frimaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="229" xml:id="CAT_000171_e229">
                <num type="lot">229</num>
@@ -2658,7 +2658,7 @@
                <trait>
                   <p>célèbre peintre, né à Metz en 1769, mort en 1823.</p>
                </trait>
-               <desc xml:id="CAT_000171_e238_d1"><term ana="#document_type_7">L. a. s.</term> au président de la Société des Amis des Arts; Paris, <date date="1798-12-02" type="length">12 frimaire an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000171_e238_d1"><term ana="#document_type_7">L. a. s.</term> au président de la Société des Amis des Arts; Paris, <date when="1798-12-02">12 frimaire an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Relative à son désir d'être admis au nombre des membres de la Société.</note>
             </item>
             <item n="239" xml:id="CAT_000171_e239">
@@ -2706,7 +2706,7 @@
                <trait>
                   <p>le célèbre dictateur de Saint-Domingue.</p>
                </trait>
-               <desc xml:id="CAT_000171_e243_d1"><term ana="#document_type_4">Pièce sig</term>.; an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Coupure dans la marge enlevant les fins de lignes.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000171_e243_d1"><term ana="#document_type_4">Pièce sig</term>.; an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Coupure dans la marge enlevant les fins de lignes.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="244" xml:id="CAT_000171_e244">
                <num type="lot">244</num>
@@ -2735,7 +2735,7 @@
                   <p>brave amiral français, qui prit part à la guerre d'Amérique, où il assista à la
                      prise de Sainte-Lucie et de Tabago. né à Cherbourg en 1762, mort en 1824.</p>
                </trait>
-               <desc xml:id="CAT_000171_e246_d1"><term ana="#document_type_4">Pièce sig</term>.; à bord du Desaix, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> in- .</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000171_e246_d1"><term ana="#document_type_4">Pièce sig</term>.; à bord du Desaix, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> in- .</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="247" xml:id="CAT_000171_e247">
                <num type="lot">247</num>
@@ -2842,7 +2842,7 @@
                   <p>célèbre amiral français, qui prit une grande part à la campagne de l'Inde sous
                      les ordres de Suffren, né à Auch en 1750, mort en 1812.</p>
                </trait>
-               <desc xml:id="CAT_000171_e256_d1">P. <term ana="#document_type_15">a. s.</term>; à bord de la Montagne, à Brest, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000171_e256_d1">P. <term ana="#document_type_15">a. s.</term>; à bord de la Montagne, à Brest, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="257" xml:id="CAT_000171_e257">
                <num type="lot">257</num>
@@ -2851,7 +2851,7 @@
                   <p>célèbre et infortuné amiral, qui perdit la bataille de Trafalgar, né à
                      Valensolle (Basses-Alpes) en 1763, mort par suicide en 1806.</p>
                </trait>
-               <desc xml:id="CAT_000171_e257_d1"><term ana="#document_type_9">Let. sig.</term>; à bord du Majestueux, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000171_e257_d1"><term ana="#document_type_9">Let. sig.</term>; à bord du Majestueux, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="258" xml:id="CAT_000171_e258">
                <num type="lot">258</num>

@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -340,7 +340,7 @@
             <item n="16" xml:id="CAT_000141_e16">
                <num type="lot">16</num>
                <name type="author">Bonaparte (Lucien)</name>
-               <desc xml:id="CAT_000141_e16_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e16_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="17" xml:id="CAT_000141_e17">
                <num type="lot">17</num>
@@ -616,7 +616,7 @@
                   <p>le fameux accusateur public près le tribunal révolutionnaire, né à Hérouel
                      (Aisne) en 1747, guillotiné le 8 mai 1795</p>
                </trait>
-               <desc xml:id="CAT_000141_e44_d1"><term ana="#document_type_2">Pièce aut. sig.</term>; Paris, <date date="1793-12-16" type="length">26 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000141_e44_d1"><term ana="#document_type_2">Pièce aut. sig.</term>; Paris, <date when="1793-12-16">26 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Il ordonne au gardien de la maison d'arrêt, dite maison des Anglaises, destinée
                   à contenir les gens suspects, de recevoir Madeleine Levasseur, femme de
                   Jean-Baptiste Bultay.</note>
@@ -1200,7 +1200,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000141_e100_d1"><term ana="#document_type_9">Let. sig.</term> à la Commission administrative du Mantouan; quartier-général de Mantoue, <date date="1797-03-08" type="length">18 ventôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très belle vignette.</desc><measure commodity="currency" unit="FRF" quantity="52">52</measure>
+               <desc xml:id="CAT_000141_e100_d1"><term ana="#document_type_9">Let. sig.</term> à la Commission administrative du Mantouan; quartier-général de Mantoue, <date when="1797-03-08">18 ventôse an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très belle vignette.</desc><measure commodity="currency" unit="FRF" quantity="52">52</measure>
                <note>Très curieuse lettre écrite comme général en chef de l'armée d'Italie. « Mon
                   intention, citoyens, n'est pas de rien innover qui puisse être contraire à
                   l'instruction publique et détruire les établissemens favorables aux Beaux-Arts,
@@ -1231,7 +1231,7 @@
             <item n="103" xml:id="CAT_000141_e103">
                <num type="lot">103</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000141_e103_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, sig. aussi par Carnot; Paris, <date date="1800-07-20" type="length">1er thermidor an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, jolie vignette, cachet. Fatiguée</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000141_e103_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte, sig. aussi par Carnot; Paris, <date when="1800-07-20">1er thermidor an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, jolie vignette, cachet. Fatiguée</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="104" xml:id="CAT_000141_e104">
                <num type="lot">104</num>
@@ -1828,7 +1828,7 @@
                   <p>princesse de Chimay, femme célèbre par le rôle qu'elle joua pendant la
                      Révolution</p>
                </trait>
-               <desc xml:id="CAT_000141_e158_d1"><term ana="#document_type_7">L. a. s.</term> au comte Réal; <date date="1800-01-18" type="length">28 nivôse an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000141_e158_d1"><term ana="#document_type_7">L. a. s.</term> au comte Réal; <date when="1800-01-18">28 nivôse an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="159" xml:id="CAT_000141_e159">
                <num type="lot">159</num>
@@ -1919,7 +1919,7 @@
                <trait>
                   <p>baron de)</p>
                </trait>
-               <desc xml:id="CAT_000141_e166_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1802-02-03" type="length">14 pluviôse an X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e166_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1802-02-03">14 pluviôse an X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuse lettre où il pose sa candidature au Sénat. « Il y a plus de 40 ans que
                   je suis officier, plus de 30 que je suis capitaine, général de division depuis 8
                   ans. J'ai obtenu des armes d'honneur ; j'ai concouru deux fois puissament a-t-on
@@ -1929,7 +1929,7 @@
             <item n="167" xml:id="CAT_000141_e167">
                <num type="lot">167</num>
                <name type="author">La Boissière (Garnier)</name>
-               <desc xml:id="CAT_000141_e167_d1"><term ana="#document_type_7">L. a. s.</term> ; <date date="1803-09-08" type="length">21 fructidor an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, têté impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e167_d1"><term ana="#document_type_7">L. a. s.</term> ; <date when="1803-09-08">21 fructidor an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, têté impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="168" xml:id="CAT_000141_e168">
                <num type="lot">168</num>
@@ -1937,7 +1937,7 @@
                <trait>
                   <p>vicomte de)</p>
                </trait>
-               <desc xml:id="CAT_000141_e168_d1"><term ana="#document_type_7">L. a. s.</term> à l'adjudant général Chevallier; Rome, <date date="1798-08-29" type="length">12 fructidor an VI</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000141_e168_d1"><term ana="#document_type_7">L. a. s.</term> à l'adjudant général Chevallier; Rome, <date when="1798-08-29">12 fructidor an VI</date>, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
                <note>Curieuse lettre. Il a été blessé en défendant, avec Macdonald, Rome contre les
                   Napolitains; mais il commence à se remettre. La vue de Rome l'a frappé
                   d'admiration ; « on gémit quand on voit un caffart (Pie VI) préposé à la garde de
@@ -1979,7 +1979,7 @@
             <item n="172" xml:id="CAT_000141_e172">
                <num type="lot">172</num>
                <name type="author">Lagrange (Joseph)</name>
-               <desc xml:id="CAT_000141_e172_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf, commandant la Guadeloupe ; à bord du Majestueux, <date date="1805-01-28" type="length">8 pluviôse an XIII</date>, <measure type="length" unit="p" n="2.33">2 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e172_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf, commandant la Guadeloupe ; à bord du Majestueux, <date when="1805-01-28">8 pluviôse an XIII</date>, <measure type="length" unit="p" n="2.33">2 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Importante lettre. Il lui propose une expédition contre la Dominique et le fort
                   du Prince Rupert qui la défend, ils seront aidés par les amiraux Missiessy et
                   Villeneuve</note>
@@ -1987,25 +1987,25 @@
             <item n="173" xml:id="CAT_000141_e173">
                <num type="lot">173</num>
                <name type="author">Laharpe (Amédée-Emmanuel)</name>
-               <desc xml:id="CAT_000141_e173_d1"><term ana="#document_type_9">Let. sig.</term> au citoven Villar, envoyé de la République Française à Gênes: Savone, <date date="1796-01-04" type="length">14 nivôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> têté impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000141_e173_d1"><term ana="#document_type_9">Let. sig.</term> au citoven Villar, envoyé de la République Française à Gênes: Savone, <date when="1796-01-04">14 nivôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> têté impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="174" xml:id="CAT_000141_e174">
                <num type="lot">174</num>
                <name type="author">Lahoussaye (A. Lebrun)</name>
-               <desc xml:id="CAT_000141_e174_d1"><term ana="#document_type_7">L. a. s.</term> au général Oudinot; Compiègne, <date date="1802-01-23" type="length">3 pluviôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e174_d1"><term ana="#document_type_7">L. a. s.</term> au général Oudinot; Compiègne, <date when="1802-01-23">3 pluviôse an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Relative au 3e régiment de hussards</note>
             </item>
             <item n="175" xml:id="CAT_000141_e175">
                <num type="lot">175</num>
                <name type="author">Lamer (Ch.-Pierre)</name>
-               <desc xml:id="CAT_000141_e175_d1"><term ana="#document_type_7">L. a. s.</term> comme chef de l'Etat-major général de l'armée des Pyrénées-Orientales ; Figueras, <date date="1794-11-28" type="length">8 frimaire an III</date>; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e175_d1"><term ana="#document_type_7">L. a. s.</term> comme chef de l'Etat-major général de l'armée des Pyrénées-Orientales ; Figueras, <date when="1794-11-28">8 frimaire an III</date>; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Lettre historique. Il annonce la capitulation de la place de Chateaux rendue
                   par les Espagnols.</note>
             </item>
             <item n="176" xml:id="CAT_000141_e176">
                <num type="lot">176</num>
                <name type="author">Laprun</name>
-               <desc xml:id="CAT_000141_e176_d1"><term ana="#document_type_9">Let. sig.</term> à Kléber; Erkelins, <date date="1794-10-05" type="length">14 vendémiaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000141_e176_d1"><term ana="#document_type_9">Let. sig.</term> à Kléber; Erkelins, <date when="1794-10-05">14 vendémiaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="177" xml:id="CAT_000141_e177">
                <num type="lot">177</num>
@@ -2018,7 +2018,7 @@
             <item n="178" xml:id="CAT_000141_e178">
                <num type="lot">178</num>
                <name type="author">Latour (Henry)</name>
-               <desc xml:id="CAT_000141_e178_d1"><term ana="#document_type_7">L. a. s.</term> à Palloy ; Paris, <date date="1795-09-15" type="length">29 fructidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000141_e178_d1"><term ana="#document_type_7">L. a. s.</term> à Palloy ; Paris, <date when="1795-09-15">29 fructidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="179" xml:id="CAT_000141_e179">
                <num type="lot">179</num>
@@ -2046,7 +2046,7 @@
             <item n="182" xml:id="CAT_000141_e182">
                <num type="lot">182</num>
                <name type="author">Lechi (Joseph)</name>
-               <desc xml:id="CAT_000141_e182_d1"><term ana="#document_type_7">L. a. s.</term>; an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000141_e182_d1"><term ana="#document_type_7">L. a. s.</term>; an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="183" xml:id="CAT_000141_e183">
                <num type="lot">183</num>
@@ -2056,7 +2056,7 @@
             <item n="184" xml:id="CAT_000141_e184">
                <num type="lot">184</num>
                <name type="author">Lecourbe (Claude-Joseph)</name>
-               <desc xml:id="CAT_000141_e184_d1"><term ana="#document_type_7">L. a. s.</term> an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e184_d1"><term ana="#document_type_7">L. a. s.</term> an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="185" xml:id="CAT_000141_e185">
                <num type="lot">185</num>
@@ -2064,7 +2064,7 @@
                <trait>
                   <p>duc de Dantzig</p>
                </trait>
-               <desc xml:id="CAT_000141_e185_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e185_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="186" xml:id="CAT_000141_e186">
                <num type="lot">186</num>
@@ -2084,12 +2084,12 @@
                <trait>
                   <p>comte de)</p>
                </trait>
-               <desc xml:id="CAT_000141_e188_d1"><term ana="#document_type_7">L. a. s.</term> à Née de L. a. Rochelle ; Paris, <date date="1803-10-01" type="length">8 vendémiaire an XII</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000141_e188_d1"><term ana="#document_type_7">L. a. s.</term> à Née de L. a. Rochelle ; Paris, <date when="1803-10-01">8 vendémiaire an XII</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="189" xml:id="CAT_000141_e189">
                <num type="lot">189</num>
                <name type="author">Liébault (Ch.)</name>
-               <desc xml:id="CAT_000141_e189_d1"><term ana="#document_type_9">Let. sig.</term> ; Saintes, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000141_e189_d1"><term ana="#document_type_9">Let. sig.</term> ; Saintes, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="190" xml:id="CAT_000141_e190">
                <num type="lot">190</num>
@@ -2102,7 +2102,7 @@
                <trait>
                   <p>duc de Tarente</p>
                </trait>
-               <desc xml:id="CAT_000141_e191_d1"><term ana="#document_type_7">L. a. s.</term> à Cavaignac; Trente, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e191_d1"><term ana="#document_type_7">L. a. s.</term> à Cavaignac; Trente, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Recommandation pour le « jeune Petion, fils de l'ancien maire de Paris.</note>
             </item>
             <item n="192" xml:id="CAT_000141_e192">
@@ -2116,7 +2116,7 @@
                <trait>
                   <p>baron</p>
                </trait>
-               <desc xml:id="CAT_000141_e193_d1"><term ana="#document_type_9">Let. sig.</term> ; Rennes, <date date="1795-12-12" type="length">21 frimaire an IV</date>, <measure type="length" unit="p" n="1.6600000000000001">1 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e193_d1"><term ana="#document_type_9">Let. sig.</term> ; Rennes, <date when="1795-12-12">21 frimaire an IV</date>, <measure type="length" unit="p" n="1.6600000000000001">1 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="194" xml:id="CAT_000141_e194">
                <num type="lot">194</num>
@@ -2129,12 +2129,12 @@
                <trait>
                   <p>marquis)</p>
                </trait>
-               <desc xml:id="CAT_000141_e195_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Paris, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e195_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Paris, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="196" xml:id="CAT_000141_e196">
                <num type="lot">196</num>
                <name type="author">Malet (Cl.-Fr. de)</name>
-               <desc xml:id="CAT_000141_e196_d1"><term ana="#document_type_7">L. a. s.</term> à Berthier ; Dôle, <date date="1800-02-23" type="length">4 ventôse an VIII</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000141_e196_d1"><term ana="#document_type_7">L. a. s.</term> à Berthier ; Dôle, <date when="1800-02-23">4 ventôse an VIII</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Importante lettre. Il demande à être maintenu dans son grade de général de
                   brigade ; il a été ajourné jusqu'à ce qu'il eût accompli quelque action d'éclat,
                   il objecte que dans la dernière campagne, sous les ordres de Championnet, il a
@@ -2146,12 +2146,12 @@
             <item n="197" xml:id="CAT_000141_e197">
                <num type="lot">197</num>
                <name type="author">Malher (Jean-Pierre-Firmin)</name>
-               <desc xml:id="CAT_000141_e197_d1"><term ana="#document_type_7">L. a. s.</term> ; Rosamel, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e197_d1"><term ana="#document_type_7">L. a. s.</term> ; Rosamel, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="198" xml:id="CAT_000141_e198">
                <num type="lot">198</num>
                <name type="author">Marescot (A.-S., comte)</name>
-               <desc xml:id="CAT_000141_e198_d1"><term ana="#document_type_9">Let. sig.</term>; an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="2.33">2 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000141_e198_d1"><term ana="#document_type_9">Let. sig.</term>; an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="2.33">2 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="199" xml:id="CAT_000141_e199">
                <num type="lot">199</num>
@@ -2180,12 +2180,12 @@
                <trait>
                   <p>duc de Rivoli</p>
                </trait>
-               <desc xml:id="CAT_000141_e202_d1"><term ana="#document_type_9">Let. sig.</term> au général Miollis ; Finale, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000141_e202_d1"><term ana="#document_type_9">Let. sig.</term> au général Miollis ; Finale, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="203" xml:id="CAT_000141_e203">
                <num type="lot">203</num>
                <name type="author">Massol (Honoré-Aug.)</name>
-               <desc xml:id="CAT_000141_e203_d1"><term ana="#document_type_9">Let. sig.</term>; Grenoble, an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000141_e203_d1"><term ana="#document_type_9">Let. sig.</term>; Grenoble, an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="204" xml:id="CAT_000141_e204">
                <num type="lot">204</num>
@@ -2201,12 +2201,12 @@
                <trait>
                   <p>baron de</p>
                </trait>
-               <desc xml:id="CAT_000141_e205_d1"><term ana="#document_type_9">Let. sig.</term>; Turin, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000141_e205_d1"><term ana="#document_type_9">Let. sig.</term>; Turin, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="206" xml:id="CAT_000141_e206">
                <num type="lot">206</num>
                <name type="author">Michaud (Cl.-Ignace-François)</name>
-               <desc xml:id="CAT_000141_e206_d1"><term ana="#document_type_9">Let. sig.</term> comme commandant en chef de l'armée du Rhin; Gunderblum, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e206_d1"><term ana="#document_type_9">Let. sig.</term> comme commandant en chef de l'armée du Rhin; Gunderblum, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="207" xml:id="CAT_000141_e207">
                <num type="lot">207</num>
@@ -2224,7 +2224,7 @@
             <item n="209" xml:id="CAT_000141_e209">
                <num type="lot">209</num>
                <name type="author">Moncey</name>
-               <desc xml:id="CAT_000141_e209_d1"><term ana="#document_type_4">Pièce sig</term>. avec 2 lig. aut.; Brescia, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e209_d1"><term ana="#document_type_4">Pièce sig</term>. avec 2 lig. aut.; Brescia, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="210" xml:id="CAT_000141_e210">
                <num type="lot">210</num>
@@ -2232,27 +2232,27 @@
                <trait>
                   <p>baron de)</p>
                </trait>
-               <desc xml:id="CAT_000141_e210_d1"><term ana="#document_type_7">L. a. s.</term>; Berne, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e210_d1"><term ana="#document_type_7">L. a. s.</term>; Berne, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="211" xml:id="CAT_000141_e211">
                <num type="lot">211</num>
                <name type="author">Montrichard (J.-E.-D. Perruquet)</name>
-               <desc xml:id="CAT_000141_e211_d1"><term ana="#document_type_7">L. a. s.</term>; Strasbourg, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e211_d1"><term ana="#document_type_7">L. a. s.</term>; Strasbourg, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="212" xml:id="CAT_000141_e212">
                <num type="lot">212</num>
                <name type="author">Morand (Joseph, baron)</name>
-               <desc xml:id="CAT_000141_e212_d1"><term ana="#document_type_9">Let. sig.</term>; Bastia, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000141_e212_d1"><term ana="#document_type_9">Let. sig.</term>; Bastia, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="213" xml:id="CAT_000141_e213">
                <num type="lot">213</num>
                <name type="author">Moreau (Jean-Victor)</name>
-               <desc xml:id="CAT_000141_e213_d1"><term ana="#document_type_9">Let. sig.</term>: Gènes, <date date="1799-06-17" type="length">29 prairial an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e213_d1"><term ana="#document_type_9">Let. sig.</term>: Gènes, <date when="1799-06-17">29 prairial an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="214" xml:id="CAT_000141_e214">
                <num type="lot">214</num>
                <name type="author">Mortier (Edouard)</name>
-               <desc xml:id="CAT_000141_e214_d1"><term ana="#document_type_9">Let. sig.</term>; <date date="1798-09-28" type="length">7 vendémiaire an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, télé impr., viguette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000141_e214_d1"><term ana="#document_type_9">Let. sig.</term>; <date when="1798-09-28">7 vendémiaire an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, télé impr., viguette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="215" xml:id="CAT_000141_e215">
                <num type="lot">215</num>
@@ -2262,7 +2262,7 @@
             <item n="216" xml:id="CAT_000141_e216">
                <num type="lot">216</num>
                <name type="author">Musnier de la Converserie (L.-F.-F., comte)</name>
-               <desc xml:id="CAT_000141_e216_d1"><term ana="#document_type_7">L. a. s.</term>; Le Havre, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e216_d1"><term ana="#document_type_7">L. a. s.</term>; Le Havre, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="217" xml:id="CAT_000141_e217">
                <num type="lot">217</num>
@@ -2279,7 +2279,7 @@
             <item n="218" xml:id="CAT_000141_e218">
                <num type="lot">218</num>
                <name type="author">Ney (Michel)</name>
-               <desc xml:id="CAT_000141_e218_d1"><term ana="#document_type_9">Let. sig.</term>; quartier-général de Montreuil-sur-Mer, <date date="1804-07-12" type="length">22 messidor an XII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> tête impr., cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e218_d1"><term ana="#document_type_9">Let. sig.</term>; quartier-général de Montreuil-sur-Mer, <date when="1804-07-12">22 messidor an XII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> tête impr., cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="219" xml:id="CAT_000141_e219">
                <num type="lot">219</num>
@@ -2304,7 +2304,7 @@
                <trait>
                   <p>duc de Reggio</p>
                </trait>
-               <desc xml:id="CAT_000141_e221_d1"><term ana="#document_type_9">Let. sig.</term>, Milan, <date date="1801-04-26" type="length">6 floréal an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e221_d1"><term ana="#document_type_9">Let. sig.</term>, Milan, <date when="1801-04-26">6 floréal an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="222" xml:id="CAT_000141_e222">
                <num type="lot">222</num>
@@ -2312,7 +2312,7 @@
                <trait>
                   <p>marquis de)</p>
                </trait>
-               <desc xml:id="CAT_000141_e222_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e222_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="223" xml:id="CAT_000141_e223">
                <num type="lot">223</num>
@@ -2330,7 +2330,7 @@
             <item n="225" xml:id="CAT_000141_e225">
                <num type="lot">225</num>
                <name type="author">Pichegru (Ch.)</name>
-               <desc xml:id="CAT_000141_e225_d1"><term ana="#document_type_9">Let. sig.</term> ; Vendenheim, <date date="1793-12-12" type="length">22 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> in. fol., tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e225_d1"><term ana="#document_type_9">Let. sig.</term> ; Vendenheim, <date when="1793-12-12">22 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> in. fol., tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="226" xml:id="CAT_000141_e226">
                <num type="lot">226</num>
@@ -2343,12 +2343,12 @@
             <item n="227" xml:id="CAT_000141_e227">
                <num type="lot">227</num>
                <name type="author">Pouget (Jean-Pierre)</name>
-               <desc xml:id="CAT_000141_e227_d1"><term ana="#document_type_7">L. a. s.</term>; Carcassonne, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000141_e227_d1"><term ana="#document_type_7">L. a. s.</term>; Carcassonne, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="228" xml:id="CAT_000141_e228">
                <num type="lot">228</num>
                <name type="author">Ramel (Jean-Pierre)</name>
-               <desc xml:id="CAT_000141_e228_d1"><term ana="#document_type_9">Let. sig.</term> avec 1 mot aut. ; Périgueux, <date date="1805-01-04" type="length">14 nivôse an XIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000141_e228_d1"><term ana="#document_type_9">Let. sig.</term> avec 1 mot aut. ; Périgueux, <date when="1805-01-04">14 nivôse an XIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="229" xml:id="CAT_000141_e229">
                <num type="lot">229</num>
@@ -2371,19 +2371,19 @@
             <item n="232" xml:id="CAT_000141_e232">
                <num type="lot">232</num>
                <name type="author">Rigaud (Benoit-Joseph)</name>
-               <desc xml:id="CAT_000141_e232_d1"><term ana="#document_type_7">L. a. s.</term>; Jérémie (Saint-Domingue), <date date="1798-09-25" type="length">4 vendémiaire an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e232_d1"><term ana="#document_type_7">L. a. s.</term>; Jérémie (Saint-Domingue), <date when="1798-09-25">4 vendémiaire an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Ordre à l'adjudant général Ployer de rejoindre le général Hédouville,
                   remplaçant Boyer, nommé au Corps législatif</note>
             </item>
             <item n="233" xml:id="CAT_000141_e233">
                <num type="lot">233</num>
                <name type="author">Rusca (J.-B.)</name>
-               <desc xml:id="CAT_000141_e233_d1"><term ana="#document_type_7">L. a. s.</term>; Portoferrajo, <date date="1805-01-02" type="length">12 nivôse an XIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e233_d1"><term ana="#document_type_7">L. a. s.</term>; Portoferrajo, <date when="1805-01-02">12 nivôse an XIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="234" xml:id="CAT_000141_e234">
                <num type="lot">234</num>
                <name type="author">Sahuc (L.-M.-Ant.)</name>
-               <desc xml:id="CAT_000141_e234_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Paris, <date date="1804-08-29" type="length">10 fructidor an XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e234_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Paris, <date when="1804-08-29">10 fructidor an XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="235" xml:id="CAT_000141_e235">
                <num type="lot">235</num>
@@ -2391,12 +2391,12 @@
                <trait>
                   <p>de Damarzit-Laroche « (J.-J.-F.-L.)</p>
                </trait>
-               <desc xml:id="CAT_000141_e235_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Brest, <date date="1800-09-01" type="length">14 fructidor an VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e235_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf; Brest, <date when="1800-09-01">14 fructidor an VIII</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="236" xml:id="CAT_000141_e236">
                <num type="lot">236</num>
                <name type="author">Sainte-Suzanne (Bruneteau)</name>
-               <desc xml:id="CAT_000141_e236_d1"><term ana="#document_type_9">Let. sig.</term> ; Strasbourg, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e236_d1"><term ana="#document_type_9">Let. sig.</term> ; Strasbourg, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="237" xml:id="CAT_000141_e237">
                <num type="lot">237</num>
@@ -2426,12 +2426,12 @@
                <trait>
                   <p>baron de)</p>
                </trait>
-               <desc xml:id="CAT_000141_e240_d1"><term ana="#document_type_7">L. a. s.</term>; Strasbourg, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e240_d1"><term ana="#document_type_7">L. a. s.</term>; Strasbourg, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="241" xml:id="CAT_000141_e241">
                <num type="lot">241</num>
                <name type="author">Schérer (B.)</name>
-               <desc xml:id="CAT_000141_e241_d1"><term ana="#document_type_7">L. a. s.</term> à Kléber; Paris, <date date="1794-10-30" type="length">9 brumaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000141_e241_d1"><term ana="#document_type_7">L. a. s.</term> à Kléber; Paris, <date when="1794-10-30">9 brumaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Belle lettre historique. « Je vais en Italie, mon brave ami, et tandis que tu
                   foudroye Maestrich, qui, j'espère, tombera bientôt sous tes coups, je vais
                   préparer les moyens de fondre au printemps prochain dans le Piémont; le comité de
@@ -2444,12 +2444,12 @@
             <item n="242" xml:id="CAT_000141_e242">
                <num type="lot">242</num>
                <name type="author">Seroux (J.-N. de)</name>
-               <desc xml:id="CAT_000141_e242_d1"><term ana="#document_type_9">Let. sig.</term>; Louai, <date date="1802-10-27" type="length">5 brumaire an XI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000141_e242_d1"><term ana="#document_type_9">Let. sig.</term>; Louai, <date when="1802-10-27">5 brumaire an XI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="243" xml:id="CAT_000141_e243">
                <num type="lot">243</num>
                <name type="author">Servan (Joseph)</name>
-               <desc xml:id="CAT_000141_e243_d1"><term ana="#document_type_7">L. a. s.</term>; Lyon, <date date="1800-02-06" type="length">17 pluviôse an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000141_e243_d1"><term ana="#document_type_7">L. a. s.</term>; Lyon, <date when="1800-02-06">17 pluviôse an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="244" xml:id="CAT_000141_e244">
                <num type="lot">244</num>
@@ -2459,7 +2459,7 @@
             <item n="245" xml:id="CAT_000141_e245">
                <num type="lot">245</num>
                <name type="author">Songis (N.-M. de)</name>
-               <desc xml:id="CAT_000141_e245_d1"><term ana="#document_type_9">Let. sig.</term>; Poitiers, <date date="1800-01-31" type="length">11 pluviôse an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000141_e245_d1"><term ana="#document_type_9">Let. sig.</term>; Poitiers, <date when="1800-01-31">11 pluviôse an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="246" xml:id="CAT_000141_e246">
                <num type="lot">246</num>
@@ -2472,7 +2472,7 @@
                <trait>
                   <p>duc de Dalmatie</p>
                </trait>
-               <desc xml:id="CAT_000141_e247_d1"><term ana="#document_type_7">L. a. s.</term>; Turin, <date date="1800-12-07" type="length">16 frimaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000141_e247_d1"><term ana="#document_type_7">L. a. s.</term>; Turin, <date when="1800-12-07">16 frimaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="248" xml:id="CAT_000141_e248">
                <num type="lot">248</num>
@@ -2489,12 +2489,12 @@
                <trait>
                   <p>duc d'Albuféra</p>
                </trait>
-               <desc xml:id="CAT_000141_e249_d1"><term ana="#document_type_7">L. a. s.</term> à Miollis; Conégliano, <date date="1799-09-07" type="length">21 fructidor an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. Importante lettre où il donne des détails sur les mouvements de l'ennemi.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000141_e249_d1"><term ana="#document_type_7">L. a. s.</term> à Miollis; Conégliano, <date when="1799-09-07">21 fructidor an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. Importante lettre où il donne des détails sur les mouvements de l'ennemi.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="250" xml:id="CAT_000141_e250">
                <num type="lot">250</num>
                <name type="author">Suchet (L.-G.)</name>
-               <desc xml:id="CAT_000141_e250_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut. au général Ernoul; quartier-général de Saspello, <date date="1799-12-01" type="length">10 frimaire an VIII</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têle impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e250_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut. au général Ernoul; quartier-général de Saspello, <date when="1799-12-01">10 frimaire an VIII</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têle impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="251" xml:id="CAT_000141_e251">
                <num type="lot">251</num>
@@ -2508,7 +2508,7 @@
             <item n="252" xml:id="CAT_000141_e252">
                <num type="lot">252</num>
                <name type="author">Thouvenot (Pierre)</name>
-               <desc xml:id="CAT_000141_e252_d1"><term ana="#document_type_9">Let. sig.</term> au général Noailles (Louis-Marie, vicomte de Noailles); quartier-général du &gt;Cap (Saint-Domingue), <date date="1803-01-14" type="length">24 nivôse an XI</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e252_d1"><term ana="#document_type_9">Let. sig.</term> au général Noailles (Louis-Marie, vicomte de Noailles); quartier-général du &gt;Cap (Saint-Domingue), <date when="1803-01-14">24 nivôse an XI</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="253" xml:id="CAT_000141_e253">
                <num type="lot">253</num>
@@ -2533,7 +2533,7 @@
                <trait>
                   <p>baron)</p>
                </trait>
-               <desc xml:id="CAT_000141_e256_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1799-09-30" type="length">8 vendémiaire an VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tété imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e256_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1799-09-30">8 vendémiaire an VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tété imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="257" xml:id="CAT_000141_e257">
                <num type="lot">257</num>
@@ -2561,7 +2561,7 @@
             <item n="261" xml:id="CAT_000141_e261">
                <num type="lot">261</num>
                <name type="author">Vaubois (Cl.-H. Belgrand, comte de)</name>
-               <desc xml:id="CAT_000141_e261_d1"><term ana="#document_type_7">L. a. s.</term> à Kellermann ; Finale (Rivière de Gênes, près Savone), <date date="1795-05-13" type="length">24 floréal an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000141_e261_d1"><term ana="#document_type_7">L. a. s.</term> à Kellermann ; Finale (Rivière de Gênes, près Savone), <date when="1795-05-13">24 floréal an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Intéressante lettre. Gouvion Saint-Cyr est aussi heureux que lui-même de la
                   mise en liberté de Kellermann, détenu durant 13 mois dans les prisons de la
                   Convention. « Ils ont bien gemi sur tous les malheurs dont il c'est bien peu fallu
@@ -2593,7 +2593,7 @@
             <item n="264" xml:id="CAT_000141_e264">
                <num type="lot">264</num>
                <name type="author">Watrin (F.)</name>
-               <desc xml:id="CAT_000141_e264_d1"><term ana="#document_type_7">L. a. s.</term> ; Le Mans, <date date="1796-03-14" type="length">24 ventôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e264_d1"><term ana="#document_type_7">L. a. s.</term> ; Le Mans, <date when="1796-03-14">24 ventôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="265" xml:id="CAT_000141_e265">
                <num type="lot">265</num>
@@ -2601,17 +2601,17 @@
                <trait>
                   <p>baron de)</p>
                </trait>
-               <desc xml:id="CAT_000141_e265_d1"><term ana="#document_type_7">L. a. s.</term>; Bayeux, <date date="1805-06-21" type="length">2 messidor an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000141_e265_d1"><term ana="#document_type_7">L. a. s.</term>; Bayeux, <date when="1805-06-21">2 messidor an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="266" xml:id="CAT_000141_e266">
                <num type="lot">266</num>
                <name type="author">Wouillemont (Armand)</name>
-               <desc xml:id="CAT_000141_e266_d1"><term ana="#document_type_4">Pièce sig</term>.; Chaumont (Haule-Marne), <date date="1803-04-19" type="length">29 germinal an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e266_d1"><term ana="#document_type_4">Pièce sig</term>.; Chaumont (Haule-Marne), <date when="1803-04-19">29 germinal an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="267" xml:id="CAT_000141_e267">
                <num type="lot">267</num>
                <name type="author">Zayonchek (Joseph)</name>
-               <desc xml:id="CAT_000141_e267_d1"><term ana="#document_type_9">Let. sig.</term>; Ferrare, <date date="1802-11-30" type="length">9 frimaire an XI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e267_d1"><term ana="#document_type_9">Let. sig.</term>; Ferrare, <date when="1802-11-30">9 frimaire an XI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <note>REVOLUTION FRANCAISE-CONVENTION NATIONALE AUTOGRAPHES CLASSÉS PAR DÉPARTEMENTS
                NOTA Le classement de cette série est achevé complètement jusqu'au département de
@@ -2625,22 +2625,22 @@
             <item n="269" xml:id="CAT_000141_e269">
                <num type="lot">269</num>
                <name type="author">Guillerault (J.-G.)</name>
-               <desc xml:id="CAT_000141_e269_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1796-01-14" type="length">24 nivôse an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e269_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1796-01-14">24 nivôse an IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="270" xml:id="CAT_000141_e270">
                <num type="lot">270</num>
                <name type="author">Jourdan (J.-B.)</name>
-               <desc xml:id="CAT_000141_e270_d1"><term ana="#document_type_7">L. a. s.</term>; Clamecy, <date date="1794-12-14" type="length">24 frimaire an III</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e270_d1"><term ana="#document_type_7">L. a. s.</term>; Clamecy, <date when="1794-12-14">24 frimaire an III</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="271" xml:id="CAT_000141_e271">
                <num type="lot">271</num>
                <name type="author">efiot (J.-A.)</name>
-               <desc xml:id="CAT_000141_e271_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1794-06-13" type="length">25 prairial an II</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e271_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1794-06-13">25 prairial an II</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="272" xml:id="CAT_000141_e272">
                <num type="lot">272</num>
                <name type="author">Legendre (F.-P.)</name>
-               <desc xml:id="CAT_000141_e272_d1"><term ana="#document_type_7">L. a. s.</term> à Perrin ; Angoulême, <date date="none" type="length">23 germinel an III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. et vig.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e272_d1"><term ana="#document_type_7">L. a. s.</term> à Perrin ; Angoulême, <date when="none">23 germinel an III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. et vig.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Il attire son attention sur les troubles qui ont eu lieu dans les départements
                   de la Charente, de la Dordogne, du Bec-d'Ambez et de la Haute-Vienne</note>
             </item>
@@ -2669,12 +2669,12 @@
             <item n="276" xml:id="CAT_000141_e276">
                <num type="lot">276</num>
                <name type="author">Briez (Ph.-C.-J.)</name>
-               <desc xml:id="CAT_000141_e276_d1"><term ana="#document_type_4">Pièce sig</term>.; <date date="1794-05-29" type="length">10 prairial an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e276_d1"><term ana="#document_type_4">Pièce sig</term>.; <date when="1794-05-29">10 prairial an II</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="277" xml:id="CAT_000141_e277">
                <num type="lot">277</num>
                <name type="author">Cochet (H.-L.-J.)</name>
-               <desc xml:id="CAT_000141_e277_d1"><term ana="#document_type_7">L. a. s.</term> à l'Administration municipale de Valenciennes ; Paris, <date date="1796-03-29" type="length">9 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e277_d1"><term ana="#document_type_7">L. a. s.</term> à l'Administration municipale de Valenciennes ; Paris, <date when="1796-03-29">9 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="278" xml:id="CAT_000141_e278">
                <num type="lot">278</num>
@@ -2684,12 +2684,12 @@
             <item n="279" xml:id="CAT_000141_e279">
                <num type="lot">279</num>
                <name type="author">Duhem (P.-J.)</name>
-               <desc xml:id="CAT_000141_e279_d1"><term ana="#document_type_4">Pièce sig</term>. avec 1 lig. aut.; <date date="1794-09-13" type="length">27 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000141_e279_d1"><term ana="#document_type_4">Pièce sig</term>. avec 1 lig. aut.; <date when="1794-09-13">27 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="280" xml:id="CAT_000141_e280">
                <num type="lot">280</num>
                <name type="author">Gossuin (C.-J.-E.)</name>
-               <desc xml:id="CAT_000141_e280_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1795-07-06" type="length">18 messidor an III</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e280_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1795-07-06">18 messidor an III</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="281" xml:id="CAT_000141_e281">
                <num type="lot">281</num>
@@ -2699,17 +2699,17 @@
             <item n="282" xml:id="CAT_000141_e282">
                <num type="lot">282</num>
                <name type="author">Lesage-Senault (G.-J.-J.)</name>
-               <desc xml:id="CAT_000141_e282_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1797-01-17" type="length">28 nivôse an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e282_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1797-01-17">28 nivôse an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="283" xml:id="CAT_000141_e283">
                <num type="lot">283</num>
                <name type="author">Lesage-Senault (G.-J.-J.)</name>
-               <desc xml:id="CAT_000141_e283_d1">P. <term ana="#document_type_15">a. s.</term>; <date date="1796-02-18" type="length">29 pluviôse an IV</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e283_d1">P. <term ana="#document_type_15">a. s.</term>; <date when="1796-02-18">29 pluviôse an IV</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="284" xml:id="CAT_000141_e284">
                <num type="lot">284</num>
                <name type="author">Mallet (Ch.-Ph.)</name>
-               <desc xml:id="CAT_000141_e284_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1795-07-06" type="length">18 messidor an III</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e284_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1795-07-06">18 messidor an III</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Belle lettre au sujet de picces adressées par le Conseil géneral de la commune
                   de Marcoing, district de Cambrai, pour obtenir la cassation d'un jugement qui lui
                   paraît injuste.</note>
@@ -2737,12 +2737,12 @@
             <item n="289" xml:id="CAT_000141_e289">
                <num type="lot">289</num>
                <name type="author">Poultier d'Elmotte (F.-M.)</name>
-               <desc xml:id="CAT_000141_e289_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1800-04-22" type="length">2 floréal an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e289_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1800-04-22">2 floréal an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="290" xml:id="CAT_000141_e290">
                <num type="lot">290</num>
                <name type="author">Sallengros (A.-B.-F.)</name>
-               <desc xml:id="CAT_000141_e290_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1797-10-26" type="length">5 brumaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e290_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1797-10-26">5 brumaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <note>OISE</note>
             <item n="291" xml:id="CAT_000141_e291">
@@ -2753,27 +2753,27 @@
             <item n="292" xml:id="CAT_000141_e292">
                <num type="lot">292</num>
                <name type="author">Auger (A.-A.)</name>
-               <desc xml:id="CAT_000141_e292_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Goupilleau de Montaigu et Eschassériaux aîné; <date date="1794-01-25" type="length">6 pluviôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vign.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000141_e292_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Goupilleau de Montaigu et Eschassériaux aîné; <date when="1794-01-25">6 pluviôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vign.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="293" xml:id="CAT_000141_e293">
                <num type="lot">293</num>
                <name type="author">Bezard (F.-S.)</name>
-               <desc xml:id="CAT_000141_e293_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1799-07-16" type="length">28 messidor an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vign.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e293_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1799-07-16">28 messidor an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vign.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="294" xml:id="CAT_000141_e294">
                <num type="lot">294</num>
                <name type="author">Bezard (F.-S.)</name>
-               <desc xml:id="CAT_000141_e294_d1"><term ana="#document_type_9">Let. sig.</term>; <date date="1796-04-17" type="length">28 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000141_e294_d1"><term ana="#document_type_9">Let. sig.</term>; <date when="1796-04-17">28 germinal an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="295" xml:id="CAT_000141_e295">
                <num type="lot">295</num>
                <name type="author">Bourdon (F.-L.)</name>
-               <desc xml:id="CAT_000141_e295_d1"><term ana="#document_type_4">Pièce sig</term>., écrite et sig. par Goupilleau de Fontenai; Niort, <date date="none" type="length">23 juillet an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e295_d1"><term ana="#document_type_4">Pièce sig</term>., écrite et sig. par Goupilleau de Fontenai; Niort, <date when="none">23 juillet an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="296" xml:id="CAT_000141_e296">
                <num type="lot">296</num>
                <name type="author">Bourdon (F.-L.)</name>
-               <desc xml:id="CAT_000141_e296_d1"><term ana="#document_type_4">Pièce sig</term>. par Bourdon de l'Oise, Barbé Marbois. De L. a. Villeurnoy, Pichegru, Barthélemy, Rovère, Ramel, Tronson Ducoudray, Brotier, Aubry, Willot, Daaberjon Murinais, etc. ; Cayenne, <date date="1797-11-17" type="length">27 brumaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000141_e296_d1"><term ana="#document_type_4">Pièce sig</term>. par Bourdon de l'Oise, Barbé Marbois. De L. a. Villeurnoy, Pichegru, Barthélemy, Rovère, Ramel, Tronson Ducoudray, Brotier, Aubry, Willot, Daaberjon Murinais, etc. ; Cayenne, <date when="1797-11-17">27 brumaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Pièce très curieuse qui réunit les signatures de la plupart des hommes
                   politiques déportés à la Guyane après le 18 fructidor. Ils déclarent avoir reçu
                   chacun trois expéditions du procès-verbal de leur arrivée dans la colonie et de
@@ -2797,12 +2797,12 @@
             <item n="300" xml:id="CAT_000141_e300">
                <num type="lot">300</num>
                <name type="author">Danjou (J.-P)</name>
-               <desc xml:id="CAT_000141_e300_d1"><term ana="#document_type_5">B. a. s.</term> à André Dumont ; Paris, <date date="1795-03-11" type="length">21 ventôse an III</date> <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000141_e300_d1"><term ana="#document_type_5">B. a. s.</term> à André Dumont ; Paris, <date when="1795-03-11">21 ventôse an III</date> <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="301" xml:id="CAT_000141_e301">
                <num type="lot">301</num>
                <name type="author">Delamarre (A.)</name>
-               <desc xml:id="CAT_000141_e301_d1"><term ana="#document_type_7">L. a. s.</term>; <date date="1796-02-16" type="length">27 pluviôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e301_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1796-02-16">27 pluviôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="302" xml:id="CAT_000141_e302">
                <num type="lot">302</num>
@@ -2813,7 +2813,7 @@
             <item n="303" xml:id="CAT_000141_e303">
                <num type="lot">303</num>
                <name type="author">Isoré (J.)</name>
-               <desc xml:id="CAT_000141_e303_d1">P. <term ana="#document_type_15">a. s.</term>; Paris, <date date="1794-12-03" type="length">13 frimaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000141_e303_d1">P. <term ana="#document_type_15">a. s.</term>; Paris, <date when="1794-12-03">13 frimaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Intéressante pièce relative à la destitution du citoyen Morgan, colonet du 9e
                   hussards</note>
             </item>
@@ -2825,17 +2825,17 @@
             <item n="305" xml:id="CAT_000141_e305">
                <num type="lot">305</num>
                <name type="author">Massieu (J.-B.)</name>
-               <desc xml:id="CAT_000141_e305_d1"><term ana="#document_type_4">Pièce sig</term>. avec 8 mofs aut.; Sedan, <date date="1794-04-09" type="length">20 germinal an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000141_e305_d1"><term ana="#document_type_4">Pièce sig</term>. avec 8 mofs aut.; Sedan, <date when="1794-04-09">20 germinal an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="306" xml:id="CAT_000141_e306">
                <num type="lot">306</num>
                <name type="author">Mathieu-Mirampal (J.-B.-Ch.)</name>
-               <desc xml:id="CAT_000141_e306_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1798-06-16" type="length">28 prairial an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e306_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1798-06-16">28 prairial an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="307" xml:id="CAT_000141_e307">
                <num type="lot">307</num>
                <name type="author">Mathieu-Mirampal (J.-B.-Ch.)</name>
-               <desc xml:id="CAT_000141_e307_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Reubelle Garnier de l'Aube, Bourdon de l'Oise, Reverchon, Boudin, Méaulle Bentabole et Lomont; <date date="1794-12-23" type="length">3 nivôse an III</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vign.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e307_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Reubelle Garnier de l'Aube, Bourdon de l'Oise, Reverchon, Boudin, Méaulle Bentabole et Lomont; <date when="1794-12-23">3 nivôse an III</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vign.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Expédition d'un arrêté du Comité de sûreté générale qui ordonne que « les
                   députés ci-devant détenus et rentrés par décret dans le sein de la Convention
                   nationale seront indemnisés et déchargés de tous les frais de gardien qui ont pu
@@ -2844,7 +2844,7 @@
             <item n="308" xml:id="CAT_000141_e308">
                <num type="lot">308</num>
                <name type="author">Portiez (L.-F.)</name>
-               <desc xml:id="CAT_000141_e308_d1"><term ana="#document_type_7">L. a. s.</term> à André Dumont ; Paris, <date date="1794-04-05" type="length">16 germinal an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000141_e308_d1"><term ana="#document_type_7">L. a. s.</term> à André Dumont ; Paris, <date when="1794-04-05">16 germinal an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Très curieuse lettre au sujet de l'arrestation de son beau-frère; il signe : L.
                   Portier votant la mort du tyran, sans appel, sans sursis</note>
             </item>

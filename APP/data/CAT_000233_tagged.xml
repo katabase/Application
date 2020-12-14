@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -386,7 +386,7 @@
                <trait>
                   <p>conventionnel célèbre, né à Tarbes en 1755, mort en 1841.</p>
                </trait>
-               <desc xml:id="CAT_000233_e18_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Carnot, comme membres du Comité de Salut public ; Paris, <date date="1794-01-29" type="length">10 pluviôse an II</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000233_e18_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Carnot, comme membres du Comité de Salut public ; Paris, <date when="1794-01-29">10 pluviôse an II</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="19" xml:id="CAT_000233_e19">
                <num type="lot">19</num>
@@ -766,7 +766,7 @@
                   <p>général et homme politique, député de La Lozère à la Convention, où il prit la
                      défense de Marat, né vers 1750, mort en 1816.</p>
                </trait>
-               <desc xml:id="CAT_000233_e56_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Lanchères; quartier-général de Metz. <date date="1799-12-01" type="length">10 frimaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. et vign.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000233_e56_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Lanchères; quartier-général de Metz. <date when="1799-12-01">10 frimaire an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. et vign.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Intéressante lettre militaire écrite comme général commandant la 3e division
                   militaire à l'armée du Rhin.</note>
             </item>
@@ -890,7 +890,7 @@
                <trait>
                   <p>député de l'Aube à la Convention, né en 1750, mort à Bruxelles en 1816.</p>
                </trait>
-               <desc xml:id="CAT_000233_e69_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Joseph Pémartin, comme membres du Comité de Sureté générale; Paris, <date date="1795-05-04" type="length">15 floréal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>Vign. et cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000233_e69_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Joseph Pémartin, comme membres du Comité de Sureté générale; Paris, <date when="1795-05-04">15 floréal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>Vign. et cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Le Comité de Sûreté générale invite le citoyen Ysabeau, représentant du peuple,
                   à faire la levée des scellés apposés chez Collot d'Herbois.</note>
             </item>
@@ -1220,7 +1220,7 @@
                   <p>général français, gouverneur de la Guadeloupe qu'il rendit aux Anglais en 1810,
                      né à Alençon en 1753, mort en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000233_e100_d1">2 let. sig. au général Quantin; quartier général de Nice, <date date="1799-11-08" type="length">17 brumaire an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, têtes impr et vign. Relatives à l'armée d'Italie.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000233_e100_d1">2 let. sig. au général Quantin; quartier général de Nice, <date when="1799-11-08">17 brumaire an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, têtes impr et vign. Relatives à l'armée d'Italie.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="101" xml:id="CAT_000233_e101">
                <num type="lot">101</num>
@@ -1322,7 +1322,7 @@
                   <p>illustre chimiste et homme d'Etat, de l'Académie des Sciences, né en 1755, mort
                      en 1809.</p>
                </trait>
-               <desc xml:id="CAT_000233_e109_d1"><term ana="#document_type_7">L. a. s.</term> au professeur Willemet, à Nancy; Paris, <date date="1796-10-14" type="length">23 vendémiaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000233_e109_d1"><term ana="#document_type_7">L. a. s.</term> au professeur Willemet, à Nancy; Paris, <date when="1796-10-14">23 vendémiaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Intéressante lettre où il parle des ouvrages sur la chimie de Weigel et de
                   Wiegleb. Il ne peut les acquérir, étant d'un prix trop élevés. Il espère obtenir
                   les notices qui existent sur l'histoire des découvertes des gaz en
@@ -1729,7 +1729,7 @@
                <trait>
                   <p>duc d'Abrantés, un des plus intrépides lieutenants de Napoléon Ier.</p>
                </trait>
-               <desc xml:id="CAT_000233_e146_d1"><term ana="#document_type_7">L. a. s.</term>; Semur, <date date="1795-05-26" type="length">7 prairial an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000233_e146_d1"><term ana="#document_type_7">L. a. s.</term>; Semur, <date when="1795-05-26">7 prairial an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="147" xml:id="CAT_000233_e147">
                <num type="lot">147</num>
@@ -1737,7 +1737,7 @@
                <trait>
                   <p>illustre savant, né en 1748, mort en 1836.</p>
                </trait>
-               <desc xml:id="CAT_000233_e147_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par A.-Fr. Fourcroy, célèbre chimiste ; Paris, <date date="1800-10-09" type="length">17 vendémiaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. et vign.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000233_e147_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par A.-Fr. Fourcroy, célèbre chimiste ; Paris, <date when="1800-10-09">17 vendémiaire an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr. et vign.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="148" xml:id="CAT_000233_e148">
                <num type="lot">148</num>
@@ -1764,7 +1764,7 @@
                   <p>duc de Valmy, célèbre marechal de France, né à Strasbourg en, 1735, mort en
                      1820.</p>
                </trait>
-               <desc xml:id="CAT_000233_e149_d1"><term ana="#document_type_7">L. a. s.</term> à Barbé-Marbois, son beaufrère ; quartier-général de Chambéry, <date date="1797-06-28" type="length">10 messidor an V</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000233_e149_d1"><term ana="#document_type_7">L. a. s.</term> à Barbé-Marbois, son beaufrère ; quartier-général de Chambéry, <date when="1797-06-28">10 messidor an V</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Belle lettre écrite comme général en chef de l'armée des Alpes. « Tout est
                   tranquille. On attend la paix avec la plus vive impatience. » Il lui parle aussi
                   de sa femme, de son fils et du général Dumas.</note>
@@ -1807,7 +1807,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000233_e153_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels. Cambacérés, Carnot, Dabois-Crancé. Boissy, d'Anglas, Pelet de la Lozère et J.-P. Chazal, comme membres du Comité de Salut public ; Paris, <date date="1795-01-31" type="length">12 pluviôse an III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000233_e153_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels. Cambacérés, Carnot, Dabois-Crancé. Boissy, d'Anglas, Pelet de la Lozère et J.-P. Chazal, comme membres du Comité de Salut public ; Paris, <date when="1795-01-31">12 pluviôse an III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="154" xml:id="CAT_000233_e154">
                <num type="lot">154</num>
@@ -1824,7 +1824,7 @@
                   <p>célèbre amiral français, qui fit les campagnes de l'Inde sous Louis XVI, né en
                      1765, mort en 1826.</p>
                </trait>
-               <desc xml:id="CAT_000233_e155_d1"><term ana="#document_type_7">L. a. s.</term> au sénéral Quantin; à bord du Patriote, <date date="1798-06-05" type="length">17 prairial an VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vign. Très belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000233_e155_d1"><term ana="#document_type_7">L. a. s.</term> au sénéral Quantin; à bord du Patriote, <date when="1798-06-05">17 prairial an VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vign. Très belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="156" xml:id="CAT_000233_e156">
                <num type="lot">156</num>
@@ -2000,7 +2000,7 @@
                   <p>député de l'Eure à la Législative et à la Convention, né à Bernay (Eure) en
                      1753, mort en 1825.</p>
                </trait>
-               <desc xml:id="CAT_000233_e171_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Lazare Carnot et Prieur de la Côted'Or, comme membres du comité de Salut public; <date date="1793-12-04" type="length">14 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vign. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000233_e171_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Lazare Carnot et Prieur de la Côted'Or, comme membres du comité de Salut public; <date when="1793-12-04">14 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vign. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="172" xml:id="CAT_000233_e172">
                <num type="lot">172</num>
@@ -2376,7 +2376,7 @@
             <item n="202" xml:id="CAT_000233_e202">
                <num type="lot">202</num>
                <name type="author">Napoléon Ier</name>
-               <desc xml:id="CAT_000233_e202_d1">Apostille signée Bonaparte, sur une let. <term ana="#document_type_15">aut. sig.</term> de l'amiral Decrés au premier Consul ; Saint-Cloud, <date date="1803-08-22" type="length">4 fructidor an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000233_e202_d1">Apostille signée Bonaparte, sur une let. <term ana="#document_type_15">aut. sig.</term> de l'amiral Decrés au premier Consul ; Saint-Cloud, <date when="1803-08-22">4 fructidor an XI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="203" xml:id="CAT_000233_e203">
                <num type="lot">203</num>
@@ -2457,7 +2457,7 @@
                <trait>
                   <p>duc de Reggio, maréchal de France, né à Bar-le- Duc en 1767, mort en 1847. </p>
                </trait>
-               <desc xml:id="CAT_000233_e210_d1"><term ana="#document_type_9">Let. sig.</term> comme commandant en chef les grenadiers de l'avant-garde à Joseph Bonaparte; Winniki (Autriche), <date date="1805-07-18" type="length">29 messidor an XIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vign. Raccommodée.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000233_e210_d1"><term ana="#document_type_9">Let. sig.</term> comme commandant en chef les grenadiers de l'avant-garde à Joseph Bonaparte; Winniki (Autriche), <date when="1805-07-18">29 messidor an XIII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vign. Raccommodée.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="211" xml:id="CAT_000233_e211">
                <num type="lot">211</num>
@@ -2541,7 +2541,7 @@
                <trait>
                   <p>le romancier populaire.</p>
                </trait>
-               <desc xml:id="CAT_000233_e217_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date date="1801-11-29" type="length">8 frimaire an X</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000233_e217_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1801-11-29">8 frimaire an X</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="218" xml:id="CAT_000233_e218">
                <num type="lot">218</num>
@@ -2724,7 +2724,7 @@
                   <p>député de la Sarthe à la Convention, commissaire dans la Vendée, né à la Flèche
                      en 1752, mort à Saintes en 1834.</p>
                </trait>
-               <desc xml:id="CAT_000233_e234_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Treilhard. Charles Cochon, Bréard, Merlin de Douai, L.-B. Guyton et Fourcroy, comme membres du Comité de Salut public ; Paris, <date date="1794-11-03" type="length">13 brumaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp. et vign.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000233_e234_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Treilhard. Charles Cochon, Bréard, Merlin de Douai, L.-B. Guyton et Fourcroy, comme membres du Comité de Salut public ; Paris, <date when="1794-11-03">13 brumaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp. et vign.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="235" xml:id="CAT_000233_e235">
                <num type="lot">235</num>
@@ -2959,7 +2959,7 @@
                   <p>célèbre général de la République, ministre de la gnerre sous le Directoire, né
                      à Delle (Haut-Rhin) en 1747, mort en 1804.</p>
                </trait>
-               <desc xml:id="CAT_000233_e256_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Aubert-Dubayet; quartier-général de Nice, <date date="1796-02-08" type="length">19 pluviôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr et vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000233_e256_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Aubert-Dubayet; quartier-général de Nice, <date when="1796-02-08">19 pluviôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr et vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Intéressante lettre écrite comme général en chef de l'armée d'Italie.</note>
             </item>
             <item n="257" xml:id="CAT_000233_e257">
@@ -3068,7 +3068,7 @@
                <trait>
                   <p>prince de).</p>
                </trait>
-               <desc xml:id="CAT_000233_e267_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Bignon, envoyé près de la République Cisalpine; Paris, <date date="1799-06-22" type="length">4 messidor an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000233_e267_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Bignon, envoyé près de la République Cisalpine; Paris, <date when="1799-06-22">4 messidor an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Lettre historique où il annonce que les membres du gouvernement de la
                   république Cisalpine, obligés d'abandonner l'Italie à cause des victoires de
                   Souvarow, seront reçus à Grenoble avec les égards dus à leur rang.</note>
@@ -3115,7 +3115,7 @@
                   <p>célèbre revolutionnaire, député de la Marne à la Législative et à la
                      Convention, mort en 1829.</p>
                </trait>
-               <desc xml:id="CAT_000233_e272_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Richard, Fourcroy, Delmas, Cambacérès. Prieur de la Marne et Guyton, comme membres du Comité de Salut public ; Paris, <date date="1794-11-07" type="length">17 brumaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. et vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000233_e272_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels Richard, Fourcroy, Delmas, Cambacérès. Prieur de la Marne et Guyton, comme membres du Comité de Salut public ; Paris, <date when="1794-11-07">17 brumaire an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr. et vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Ordre du Comité de Salut public au citoyen Ruffreri, propriétaire de la fon¬
                   derie de Charbonnière et maire de Saint- Eloi (Nièvre), de cesser toute fonction
                   publique et de s'occuper exclusivement de sa forge pour le service de la
@@ -3161,7 +3161,7 @@
                <trait>
                   <p>brave général français, né en 1764, mort en 1832.</p>
                </trait>
-               <desc xml:id="CAT_000233_e275_d1">3 l. a s. et <term ana="#document_type_4">pièce sig</term>.; Caen, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="5">5 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000233_e275_d1">3 l. a s. et <term ana="#document_type_4">pièce sig</term>.; Caen, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="5">5 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="276" xml:id="CAT_000233_e276">
                <num type="lot">276</num>

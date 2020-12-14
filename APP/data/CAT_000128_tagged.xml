@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -597,7 +597,7 @@
                <trait>
                   <p>maréchal de France, puis roi de Suède</p>
                </trait>
-               <desc xml:id="CAT_000128_e45_d1"><term ana="#document_type_4">Pièce sig</term>., an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000128_e45_d1"><term ana="#document_type_4">Pièce sig</term>., an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="46" xml:id="CAT_000128_e46">
                <num type="lot">46</num>
@@ -790,7 +790,7 @@
                   <p>célèbre homme d'Etat, archi-chancelier de l'Empire, né à Montpellier en 1753,
                      mort en 1824</p>
                </trait>
-               <desc xml:id="CAT_000128_e64_d1"><term ana="#document_type_9">Let. sig.</term>; an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000128_e64_d1"><term ana="#document_type_9">Let. sig.</term>; an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="65" xml:id="CAT_000128_e65">
                <num type="lot">65</num>
@@ -1308,7 +1308,7 @@
                <trait>
                   <p>impératrice des Français, femme de Napoléon Ier.</p>
                </trait>
-               <desc xml:id="CAT_000128_e117_d1"><term ana="#document_type_9">Let. sig.</term> Lapagerie Bonaparte ; Malmaison, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000128_e117_d1"><term ana="#document_type_9">Let. sig.</term> Lapagerie Bonaparte ; Malmaison, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
                <note>Belle lettre de recommandation en faveur du père du « citoyen Edme Pourée,
                   grenadier de la garde, et l'un de ceux qui ont sauvé le général Bonaparte à
                   Saint-Cloud.»</note>
@@ -1695,7 +1695,7 @@
                <trait>
                   <p>roi de Naples, beau-frère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000128_e156_d1"><term ana="#document_type_9">Let. sig.</term>; an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imprimée.</desc><measure commodity="currency" unit="FRF" quantity="9">9</measure>
+               <desc xml:id="CAT_000128_e156_d1"><term ana="#document_type_9">Let. sig.</term>; an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imprimée.</desc><measure commodity="currency" unit="FRF" quantity="9">9</measure>
             </item>
             <item n="157" xml:id="CAT_000128_e157">
                <num type="lot">157</num>
@@ -1711,7 +1711,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000128_e158_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte ; (Le Caire), an <date date="1798-1799" type="length">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000128_e158_d1"><term ana="#document_type_4">Pièce sig</term>. Bonaparte ; (Le Caire), an <date when="1798-1799">VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="159" xml:id="CAT_000128_e159">
                <num type="lot">159</num>

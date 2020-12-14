@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -418,7 +418,7 @@
                      l'Institut, mort de joie, dit-on, à la nouvelle du débarquement de Bonaparte à
                      Fréjus</p>
                </trait>
-               <desc xml:id="CAT_000020_e4109_d1"><term ana="#document_type_7">L. a. s.</term> à Siéyès, président du Directoire; <date date="1799-08-06" type="length">19 therm. an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000020_e4109_d1"><term ana="#document_type_7">L. a. s.</term> à Siéyès, président du Directoire; <date when="1799-08-06">19 therm. an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Prière de réunir le Directoire a 9 heures du soir, pour conférer avec les
                   commissaires-inspecteurs des deux Conseils. (Sans doute sur la question des
                   Jacobins du Manège, dont la salle fut fermée le 30.) Cette pièce porte 8 autres
@@ -651,7 +651,7 @@
                <trait>
                   <p>1er Consul</p>
                </trait>
-               <desc xml:id="CAT_000020_e4134_d1">Très-jolie <term ana="#document_type_4">pièce sig</term>. sur vélin, avec la belle vignette de Roger, an <date date="1801-1802" type="length">X</date>, double <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, sceau.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000020_e4134_d1">Très-jolie <term ana="#document_type_4">pièce sig</term>. sur vélin, avec la belle vignette de Roger, an <date when="1801-1802">X</date>, double <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, sceau.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Brevet de pension accordée à lu veuve de F Gohier, lieut, de la garde nat. de
                   L'Ecocharderie « tué en combattant les Chouans, le 15 ventôse an II.</note>
             </item>
@@ -661,7 +661,7 @@
                <trait>
                   <p>roi d'Espagne</p>
                </trait>
-               <desc xml:id="CAT_000020_e4135_d1"><term ana="#document_type_9">L. s.</term>, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="1.50">1 50</measure>
+               <desc xml:id="CAT_000020_e4135_d1"><term ana="#document_type_9">L. s.</term>, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="1.50">1 50</measure>
             </item>
             <item n="4136" xml:id="CAT_000020_e4136">
                <num type="lot">4136</num>
@@ -669,7 +669,7 @@
                <trait>
                   <p>frère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000020_e4136_d1"><term ana="#document_type_9">L. s.</term>, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>,</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
+               <desc xml:id="CAT_000020_e4136_d1"><term ana="#document_type_9">L. s.</term>, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>,</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
             </item>
             <item n="4137" xml:id="CAT_000020_e4137">
                <num type="lot">4137</num>
@@ -677,7 +677,7 @@
                <trait>
                   <p>roi de Hollande, père de Napoléon III</p>
                </trait>
-               <desc xml:id="CAT_000020_e4137_d1"><term ana="#document_type_7">L. a. s.</term> au chef d'escadron Trouble; Verneuil, <date date="1800-02-04" type="length">15 pluv. an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, avec sa tète de lettre républicaine comme chef de brigade du 5e régim. de dragons.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000020_e4137_d1"><term ana="#document_type_7">L. a. s.</term> au chef d'escadron Trouble; Verneuil, <date when="1800-02-04">15 pluv. an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, avec sa tète de lettre républicaine comme chef de brigade du 5e régim. de dragons.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="4138" xml:id="CAT_000020_e4138">
                <num type="lot">4138</num>
@@ -751,7 +751,7 @@
                <trait>
                   <p>célèbre botaniste, auteur de l'Hist. des plantes de la Lorraine, né à Metz</p>
                </trait>
-               <desc xml:id="CAT_000020_e4146_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1800-01-12" type="length">22 niv. an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000020_e4146_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1800-01-12">22 niv. an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="4147" xml:id="CAT_000020_e4147">
                <num type="lot">4147</num>
@@ -1038,7 +1038,7 @@
                   <p>renferme au fort Saint-Jean, en 1793, par mesure de sûreté générale, avec tous
                      les membres de la famille d'Orléans</p>
                </trait>
-               <desc xml:id="CAT_000020_e4177_d1"><term ana="#document_type_7">L. a. sig.</term> de tous ses noms et prénoms, au citoyen Nargue; Fort Saint-Jean, à Marseille, <date date="1794-03-11" type="length">21 vent, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Curieuse. 2</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000020_e4177_d1"><term ana="#document_type_7">L. a. sig.</term> de tous ses noms et prénoms, au citoyen Nargue; Fort Saint-Jean, à Marseille, <date when="1794-03-11">21 vent, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Curieuse. 2</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
             </item>
             <item n="4178" xml:id="CAT_000020_e4178">
                <num type="lot">4178</num>
@@ -1639,7 +1639,7 @@
                <trait>
                   <p>conventionnel, auteur du roman de Faublas</p>
                </trait>
-               <desc xml:id="CAT_000020_e4238_d1"><term ana="#document_type_9">L. s.</term> de lui, Doulcet, Henry Lariviére, J. Debry et Cambacérès, membres du Comité de Sal. publ., au gén. Kellermann; I<date date="none" type="length">I therm. an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000020_e4238_d1"><term ana="#document_type_9">L. s.</term> de lui, Doulcet, Henry Lariviére, J. Debry et Cambacérès, membres du Comité de Sal. publ., au gén. Kellermann; I<date when="none">I therm. an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="4239" xml:id="CAT_000020_e4239">
                <num type="lot">4239</num>

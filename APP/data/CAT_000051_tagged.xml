@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -266,7 +266,7 @@
                <trait>
                   <p>La même</p>
                </trait>
-               <desc xml:id="CAT_000051_e6_d1"><term ana="#document_type_7">L. aut. sig.</term> Sophie à l'architecte Belanger; <date date="1801-02-20" type="length">1er ventôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000051_e6_d1"><term ana="#document_type_7">L. aut. sig.</term> Sophie à l'architecte Belanger; <date when="1801-02-20">1er ventôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Charmante épitre. « Je suis à Paris, mon bel ange : vous savez quelle perte
                   j'ay faite et l'amy que j'ay à regretter, mais vous estes et serés toujours le p
                   us avant dans mon coeur. En conséquence j'ay besoin toujours de vous voir et de me
@@ -330,7 +330,7 @@
                <trait>
                   <p>l'auteur du Mariage de Figaro</p>
                </trait>
-               <desc xml:id="CAT_000051_e12_d1">1° P. <term ana="#document_type_15">a. s.</term> d'Elie Lacoste, sig. aussi par Duharran, Lavicomtesse et Louis (du Bas-Rhin); Paris, <date date="1794-03-14" type="length">24 vent, an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, cachet. Arrêté du Comité de sûreté générale de la Convention ordonnant la mise sous le séquestre des propriétés de Beaumarchais</desc><desc xml:id="CAT_000051_e12_d2">2° Lettre de Beaumarchais, écrite par son secrétaire, annonçant sa sortie de l'Abbaye; <date when="1792-08-29">29 août 1792</date> 1/2p. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000051_e12_d3">3° <term ana="#document_type_7">L. a. s.</term> de J.-C. Beaumarchais, sa soeur, <date when="1783">1783</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse épître sur un ouvrage de sa composition, pour l'impression duquel elle demande 12 ou 15 louis à son frère.</desc><desc xml:id="CAT_000051_e12_d4">4° <term ana="#document_type_8">L. aut.</term> de l'épouse de Beaumarchais, sig. B., <date when="1809-03-22">22 mars 1809</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, d'une écriture fine et serrée. Lettre du plus haut intérêt., écrite à l'occasion d'un article aigre-doux de Laya sur Beaumarchais, dans le Moniteur.</desc><desc xml:id="CAT_000051_e12_d5">5° 2 l. <term ana="#document_type_15">a. s.</term> d' Eugénie Beaumarchais Delarue, <date when="1806">1806-1812</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuses.</desc><desc xml:id="CAT_000051_e12_d6">6° 9 let. ou pièces à lui relatives.</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000051_e12_d1">1° P. <term ana="#document_type_15">a. s.</term> d'Elie Lacoste, sig. aussi par Duharran, Lavicomtesse et Louis (du Bas-Rhin); Paris, <date when="1794-03-14">24 vent, an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, cachet. Arrêté du Comité de sûreté générale de la Convention ordonnant la mise sous le séquestre des propriétés de Beaumarchais</desc><desc xml:id="CAT_000051_e12_d2">2° Lettre de Beaumarchais, écrite par son secrétaire, annonçant sa sortie de l'Abbaye; <date when="1792-08-29">29 août 1792</date> 1/2p. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000051_e12_d3">3° <term ana="#document_type_7">L. a. s.</term> de J.-C. Beaumarchais, sa soeur, <date when="1783">1783</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse épître sur un ouvrage de sa composition, pour l'impression duquel elle demande 12 ou 15 louis à son frère.</desc><desc xml:id="CAT_000051_e12_d4">4° <term ana="#document_type_8">L. aut.</term> de l'épouse de Beaumarchais, sig. B., <date when="1809-03-22">22 mars 1809</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, d'une écriture fine et serrée. Lettre du plus haut intérêt., écrite à l'occasion d'un article aigre-doux de Laya sur Beaumarchais, dans le Moniteur.</desc><desc xml:id="CAT_000051_e12_d5">5° 2 l. <term ana="#document_type_15">a. s.</term> d' Eugénie Beaumarchais Delarue, <date when="1806">1806-1812</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuses.</desc><desc xml:id="CAT_000051_e12_d6">6° 9 let. ou pièces à lui relatives.</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
             </item>
             <item n="13" xml:id="CAT_000051_e13">
                <num type="lot">13</num>
@@ -338,7 +338,7 @@
                <trait>
                   <p>brave général de la République, tué d'un boulet de canon en l'an IV</p>
                </trait>
-               <desc xml:id="CAT_000051_e13_d1"><term ana="#document_type_7">L. a. s.</term>; Angers, <date date="1793-12-10" type="length">20 frim. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Bare.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000051_e13_d1"><term ana="#document_type_7">L. a. s.</term>; Angers, <date when="1793-12-10">20 frim. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Bare.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Relative aux combats de Saint-Christophe et de Cholet</note>
             </item>
             <item n="14" xml:id="CAT_000051_e14">
@@ -392,7 +392,7 @@
                <trait>
                   <p>peintre d'histoire, né à Bordeaux</p>
                </trait>
-               <desc xml:id="CAT_000051_e18_d1"><term ana="#document_type_7">L. a. s.</term> au général Sanson, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 5.</desc></item>
+               <desc xml:id="CAT_000051_e18_d1"><term ana="#document_type_7">L. a. s.</term> au général Sanson, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 5.</desc></item>
             <item n="19" xml:id="CAT_000051_e19">
                <num type="lot">19</num>
                <name type="author">Bernis (le cardinal de)</name>
@@ -637,7 +637,7 @@
                <trait>
                   <p>Le même</p>
                </trait>
-               <desc xml:id="CAT_000051_e44_d1"><term ana="#document_type_9">L. s.</term> au cit. Le Brigand; <date date="1800-08-24" type="length">6 fructidor an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000051_e44_d1"><term ana="#document_type_9">L. s.</term> au cit. Le Brigand; <date when="1800-08-24">6 fructidor an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Relative au monument à élever à La Tour d'Auvergne, premier grenadier de
                   France, ami de Le Brigand</note>
             </item>
@@ -647,7 +647,7 @@
                <trait>
                   <p>conventionnel fameux par sa mission à Nantes</p>
                </trait>
-               <desc xml:id="CAT_000051_e45_d1"><term ana="#document_type_4">P. s.</term>; Nantes, <date date="1793-11-06" type="length">16 brum. an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000051_e45_d1"><term ana="#document_type_4">P. s.</term>; Nantes, <date when="1793-11-06">16 brum. an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Arrêté mettant l'embargo sur les navires prêts à partir pour les ports
                   étrangers</note>
             </item>
@@ -734,7 +734,7 @@
                <trait>
                   <p>une des femmes les plus célèbres du xviiie siècle, amie de J.-J. Rousseau</p>
                </trait>
-               <desc xml:id="CAT_000051_e55_d1"><term ana="#document_type_7">L. a. s.</term> à M. Morin ; Paris, <date date="1799-02-23" type="length">5 vent, an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000051_e55_d1"><term ana="#document_type_7">L. a. s.</term> à M. Morin ; Paris, <date when="1799-02-23">5 vent, an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="56" xml:id="CAT_000051_e56">
                <num type="lot">56</num>
@@ -920,7 +920,7 @@
                <trait>
                   <p>peintre d'histoire et de portraits, né en 1725</p>
                </trait>
-               <desc xml:id="CAT_000051_e75_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Fontanelle; Villeneuve-lès-Avignon, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000051_e75_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Fontanelle; Villeneuve-lès-Avignon, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="76" xml:id="CAT_000051_e76">
                <num type="lot">76</num>
@@ -1091,7 +1091,7 @@
                <trait>
                   <p>célèbre peintre d'histoire, né à Montargis</p>
                </trait>
-               <desc xml:id="CAT_000051_e94_d1"><term ana="#document_type_7">L. a. s.</term> à Chaptal ; Paris, <date date="1801-06-04" type="length">15 prair. an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000051_e94_d1"><term ana="#document_type_7">L. a. s.</term> à Chaptal ; Paris, <date when="1801-06-04">15 prair. an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Demande de l'appartement que vient de quitter le peintre Meynier, et de deux
                   ateliers pris dans les locaux des Archives, où il puisse, exécuter les travaux
                   importants dont il a reçu la commande</note>
@@ -1102,7 +1102,7 @@
                <trait>
                   <p>célèbre conventionnel, député de la Vendée</p>
                </trait>
-               <desc xml:id="CAT_000051_e95_d1">P. <term ana="#document_type_15">a. s.</term>, sig. aussi de Voulland, Vadier, Legendre, A. Dumont et Merlin (de Thionville); <date date="1794-08-03" type="length">16 therm. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000051_e95_d1">P. <term ana="#document_type_15">a. s.</term>, sig. aussi de Voulland, Vadier, Legendre, A. Dumont et Merlin (de Thionville); <date when="1794-08-03">16 therm. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Arrêté mettant la citoyenne Marie-Jeanne Richard, femme Texier, en liberté, et
                   ordonnant la levée des scellés apposés sur ses papiers par le comité
                   révolutionnaire de Tours. (M.-J. Richard avait été traduite devant la commission
@@ -1138,7 +1138,7 @@
                <trait>
                   <p>le célèbre compositeur</p>
                </trait>
-               <desc xml:id="CAT_000051_e98_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Legrand ; Paris, <date date="1798-08-01" type="length">14 therm. an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Charmante épître.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000051_e98_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Legrand ; Paris, <date when="1798-08-01">14 therm. an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Charmante épître.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="99" xml:id="CAT_000051_e99">
                <num type="lot">99</num>
@@ -1177,7 +1177,7 @@
                <trait>
                   <p>Le même</p>
                </trait>
-               <desc xml:id="CAT_000051_e102_d1">P. <term ana="#document_type_15">a. s.</term>; Gènes, <date date="1795-05-26" type="length">7 prairial an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000051_e102_d1">P. <term ana="#document_type_15">a. s.</term>; Gènes, <date when="1795-05-26">7 prairial an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Reçu de la somme de 1,000 livres, par les mains du citoyen Villars, envoyé de
                   France à Gènes, pour le prix d'un tableau représentant la République
                   française</note>
@@ -1380,7 +1380,7 @@
                   <p>érudit breton, brave et modeste guerrier, le premier grenadier de la République
                      française, né à Carhaix, mort glorieusement à la bataille de Neuhourg</p>
                </trait>
-               <desc xml:id="CAT_000051_e123_d1"><term ana="#document_type_7">L. a. s.</term> à Moreau ; Paris, <date date="1797-04-05" type="length">16 germinal an V</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Pièce montée.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000051_e123_d1"><term ana="#document_type_7">L. a. s.</term> à Moreau ; Paris, <date when="1797-04-05">16 germinal an V</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Pièce montée.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Recommandation en faveur de son ami Le Brigant, qui sollicite le songé de son
                   fils, soldat dans la 84e demi-brigade d'infanterie</note>
             </item>
@@ -1476,7 +1476,7 @@
                <trait>
                   <p>conventionnel, l'auteur de Faublas</p>
                </trait>
-               <desc xml:id="CAT_000051_e133_d1"><term ana="#document_type_9">Let. sig.</term> à Villenave; <date date="1795-08-16" type="length">29 therm. an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000051_e133_d1"><term ana="#document_type_9">Let. sig.</term> à Villenave; <date when="1795-08-16">29 therm. an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="134" xml:id="CAT_000051_e134">
                <num type="lot">134</num>
@@ -1523,7 +1523,7 @@
                <trait>
                   <p>illustre général de la République</p>
                </trait>
-               <desc xml:id="CAT_000051_e138_d1">P. <term ana="#document_type_15">a. s.</term>; quartier-général de Montigni, <date date="1794-05-27" type="length">8 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000051_e138_d1">P. <term ana="#document_type_15">a. s.</term>; quartier-général de Montigni, <date when="1794-05-27">8 prairial an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Ordre militaire au général d'Hautpoul.</note>
             </item>
             <item n="139" xml:id="CAT_000051_e139">
@@ -1606,7 +1606,7 @@
                <trait>
                   <p>Le même</p>
                </trait>
-               <desc xml:id="CAT_000051_e147_d1"><term ana="#document_type_10">Brevet signé</term> Bonaparte, sur vélin ; an <date date="1793-1794" type="length">II</date>, double <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Sceau, superbe pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000051_e147_d1"><term ana="#document_type_10">Brevet signé</term> Bonaparte, sur vélin ; an <date when="1793-1794">II</date>, double <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Sceau, superbe pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="148" xml:id="CAT_000051_e148">
                <num type="lot">148</num>

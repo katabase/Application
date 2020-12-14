@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019-05-21">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -244,7 +244,7 @@
                <trait>
                   <p>célèbre général et diplomate, né à Castelnaudary</p>
                </trait>
-               <desc xml:id="CAT_000003_e88046_d1"><term ana="#document_type_9">L. s.</term> au citoyen Gau; Paris, Ire jour complémentaire an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette imprimée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000003_e88046_d1"><term ana="#document_type_9">L. s.</term> au citoyen Gau; Paris, Ire jour complémentaire an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette imprimée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="88047" xml:id="CAT_000003_e88047">
                <num type="lot">88047</num>
@@ -359,7 +359,7 @@
                   <p>célèbre général des guerres de la République, ambassadeur, maréchal de France
                      en 1816</p>
                </trait>
-               <desc xml:id="CAT_000003_e88057_d1"><term ana="#document_type_4">P. s.</term> ; quartier-général à Mulheim, <date date="1796-10-31" type="length">10 brumaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, jolie vignette gravée de l'armée du Nord.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88057_d1"><term ana="#document_type_4">P. s.</term> ; quartier-général à Mulheim, <date when="1796-10-31">10 brumaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, jolie vignette gravée de l'armée du Nord.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Ordre au citoyen Joseph Darey, chef de bataillon, de se rendre au camp de la
                   29e demi-brigade et d'y prendre le commandement du 3e bataillon</note>
             </item>
@@ -448,7 +448,7 @@
                <trait>
                   <p>le célèbre physiologiste et philosophe</p>
                </trait>
-               <desc xml:id="CAT_000003_e88066_d1"><term ana="#document_type_7">L. a. s.</term> à Suard; Auteuil, <date date="1803-06-08" type="length">19 prairial an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000003_e88066_d1"><term ana="#document_type_7">L. a. s.</term> à Suard; Auteuil, <date when="1803-06-08">19 prairial an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Jolie lettre où il s'excuse de ne pouvoir se rendre à la séance de l'Institut
                   et le prie de venir le voir avec sa femme</note>
             </item>
@@ -734,7 +734,7 @@
                   <p>général d'artillerie, qui s'illustra au passage de la Bérésina, né à Saint-Jean
                      de Rorbach (Moselle)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88094_d1"><term ana="#document_type_7">L. a. s.</term> au ministre de la guerre; Douai, <date date="1802-07-27" type="length">8 thermidor an X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 10.</desc></item>
+               <desc xml:id="CAT_000003_e88094_d1"><term ana="#document_type_7">L. a. s.</term> au ministre de la guerre; Douai, <date when="1802-07-27">8 thermidor an X</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 10.</desc></item>
             <item n="88095" xml:id="CAT_000003_e88095">
                <num type="lot">88095</num>
                <name type="author">EDISON (Thomas A.)</name>
@@ -837,7 +837,7 @@
                   <p>général, qui prit part aux guerres de la République et de l'Empire, né à Bastia
                      (Corse), mort du typhus à Dantzig en 1813</p>
                </trait>
-               <desc xml:id="CAT_000003_e88104_d1"><term ana="#document_type_9">L. s.</term> au ministre de la guerre ; quartier-général à Milan, <date date="1800-08-03" type="length">15 thermidor an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000003_e88104_d1"><term ana="#document_type_9">L. s.</term> au ministre de la guerre ; quartier-général à Milan, <date when="1800-08-03">15 thermidor an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="88105" xml:id="CAT_000003_e88105">
                <num type="lot">88105</num>
@@ -1567,7 +1567,7 @@
                <trait>
                   <p>le célèbre tragédien</p>
                </trait>
-               <desc xml:id="CAT_000003_e88173_d1"><term ana="#document_type_4">P. s.</term>, signée aussi par JULIE CAREAU, sa femme ; Paris, <date date="1798-12-24" type="length">4 nivôse an VII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000003_e88173_d1"><term ana="#document_type_4">P. s.</term>, signée aussi par JULIE CAREAU, sa femme ; Paris, <date when="1798-12-24">4 nivôse an VII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Achat par Julie Talma, séparée de biens de son mari, de 18 hectares 32 ares de
                   terres situées sur le canton de Miramont, département de la Somme</note>
             </item>
@@ -1667,7 +1667,7 @@
             <item n="88183" xml:id="CAT_000003_e88183">
                <num type="lot">88183</num>
                <name type="author">SEINE-ET-OISE (Département de)</name>
-               <desc xml:id="CAT_000003_e88183_d1"><term ana="#document_type_9">L. s.</term> par Des Tournelles, ministre des Contributions publiques, aux administrateurs du département de Seine-et-Oise ; Paris, <date date="1793-11-23" type="length">3 frimaire an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000003_e88183_d1"><term ana="#document_type_9">L. s.</term> par Des Tournelles, ministre des Contributions publiques, aux administrateurs du département de Seine-et-Oise ; Paris, <date when="1793-11-23">3 frimaire an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Lettre relative à la répression des déprédations qui se commettaient dans les
                   forêts de leur département, notamment dans les bois de Préaux, dépendant de
                   Soubise.</note>
@@ -1675,13 +1675,13 @@
             <item n="88184" xml:id="CAT_000003_e88184">
                <num type="lot">88184</num>
                <name type="author">RÉVOLUTION FRANÇAISE</name>
-               <desc xml:id="CAT_000003_e88184_d1"><term ana="#document_type_4">P. s.</term> par BARAILON, PLAICHARD, DELEYRE, MASSIEU, LAKANAL, DAUNOU, VILAR, DULAURE, BAILLEUL et GRÉGOIRE, conventionnels, membres du Comité d'instruction publique; <date date="1795-03-14" type="length">24 ventôse an III</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88184_d1"><term ana="#document_type_4">P. s.</term> par BARAILON, PLAICHARD, DELEYRE, MASSIEU, LAKANAL, DAUNOU, VILAR, DULAURE, BAILLEUL et GRÉGOIRE, conventionnels, membres du Comité d'instruction publique; <date when="1795-03-14">24 ventôse an III</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Arrêté pour l'organisation des écoles de Santé</note>
             </item>
             <item n="88185" xml:id="CAT_000003_e88185">
                <num type="lot">88185</num>
                <name type="author">PARIS</name>
-               <desc xml:id="CAT_000003_e88185_d1"><term ana="#document_type_4">P. s.</term> par PERRIN, BAUDIN, MATHIEU, P.-Ch. GOUPILEAU, CALÈS, YSABEAU, DELECLOY, ROVERE, GAUTHIER, LOMONT, PEMARTIN, CLAUZEL et LEGENDRE, conventionnels, membres du Comité de sûreté générale, et par BERNARD SAINT-AFFRIQUE, OLIVIER-GÉRENTE, AUBRY, RIVAUD, VILLETARD, PENIÈRE, GOSSUIN, CHATEAUNEUF-RANDON, DESPINASSY, MILHAUD, conventionnels, membres du Comité militaire ; Paris, <date date="1795-03-27" type="length">7 germinal an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, vignette imprimée, tachée d'humidité.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000003_e88185_d1"><term ana="#document_type_4">P. s.</term> par PERRIN, BAUDIN, MATHIEU, P.-Ch. GOUPILEAU, CALÈS, YSABEAU, DELECLOY, ROVERE, GAUTHIER, LOMONT, PEMARTIN, CLAUZEL et LEGENDRE, conventionnels, membres du Comité de sûreté générale, et par BERNARD SAINT-AFFRIQUE, OLIVIER-GÉRENTE, AUBRY, RIVAUD, VILLETARD, PENIÈRE, GOSSUIN, CHATEAUNEUF-RANDON, DESPINASSY, MILHAUD, conventionnels, membres du Comité militaire ; Paris, <date when="1795-03-27">7 germinal an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, vignette imprimée, tachée d'humidité.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Ordre d'arrêter plusieurs membres de la section des Gravilliers qui avaient
                   tenu une assemblée illégale et nommé un président au préjudice du président en
                   exercice.</note>
@@ -1689,7 +1689,7 @@
             <item n="88186" xml:id="CAT_000003_e88186">
                <num type="lot">88186</num>
                <name type="author">MÉDECINE</name>
-               <desc xml:id="CAT_000003_e88186_d1"><term ana="#document_type_4">P. s.</term> par DESGENETTES, LARREY, PARMENTIER, HEURTELOUP, inspecteurs généraux du service de santé militaire ; Paris, <date date="1804-11-05" type="length">14 brumaire an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88186_d1"><term ana="#document_type_4">P. s.</term> par DESGENETTES, LARREY, PARMENTIER, HEURTELOUP, inspecteurs généraux du service de santé militaire ; Paris, <date when="1804-11-05">14 brumaire an XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Curieuse pièce. -Lettre relative au paiement des médicaments qui ont servi à
                   traiter les 378 galeux du 93e régiment d'infanterie.</note>
             </item>
@@ -1758,7 +1758,7 @@
                <trait>
                   <p>homme de loi, député de l'Ailier à la Convention, né à Vichy (Allier)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88191_d1">Longue apostille <term ana="#document_type_15">aut. sig.</term>, signée aussi par JULLIEN-DUBOIS; <date date="1795-03-11" type="length">21 ventôse an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88191_d1">Longue apostille <term ana="#document_type_15">aut. sig.</term>, signée aussi par JULLIEN-DUBOIS; <date when="1795-03-11">21 ventôse an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Décision concernant la prolongation des baux des biens possédés dans la commune
                   de Biéville (district de Pont-Levêque) par le duc de Biéville (sic), frappé par le
                   glaive de la loi. (Il s'agit de Leduc-Biéville, conseiller au parlement de Rouen,
@@ -1781,7 +1781,7 @@
                <trait>
                   <p>notaire, député du Cher à la Convention, né à Coullons (Loiret)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88193_d1"><term ana="#document_type_4">P. s.</term>, signée aussi par son collègue Pressavin ; <date date="1794-01-05" type="length">16 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, cachet de cire rouge.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88193_d1"><term ana="#document_type_4">P. s.</term>, signée aussi par son collègue Pressavin ; <date when="1794-01-05">16 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, cachet de cire rouge.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Arrêté prescrivant le dépôt aux archives du Comité des assignats et des
                   monnaies de dix exemplaires de chacune des nouvelles pièces de monnaies
                   républicaines</note>
@@ -1805,7 +1805,7 @@
                      dès le début de la session en remplacement de Sieyès, qui avait opté pour la
                      Sarthe, né à Mortagne (Orne)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88195_d1"><term ana="#document_type_7">L. a. s.</term> au ministre des finances ; Paris, <date date="1796-01-11" type="length">21 nivôse an IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure>, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88195_d1"><term ana="#document_type_7">L. a. s.</term> au ministre des finances ; Paris, <date when="1796-01-11">21 nivôse an IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure>, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Lettre concernant la succession de Baudard de Saint-James</note>
             </item>
             <item n="88196" xml:id="CAT_000003_e88196">
@@ -1815,7 +1815,7 @@
                   <p>avocat au parlement de Bordeaux, député du Lot-et-Garonne à la Convention, né à
                      Tournon d'Agenais (Lot-et-Garonne</p>
                </trait>
-               <desc xml:id="CAT_000003_e88196_d1"><term ana="#document_type_7">L. a. s.</term> au ministre des finances ; Paris, <date date="1799-12-28" type="length">7 nivôse an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000003_e88196_d1"><term ana="#document_type_7">L. a. s.</term> au ministre des finances ; Paris, <date when="1799-12-28">7 nivôse an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Il le prie de lui accorder une recette des contributions directes dans le
                   département des Pyrénées-Orientales ; Roger Ducos pourra attester sa moralité.
                   «J'ai servi la République avec désintéressement et probité. A ce titre j'ay des
@@ -1829,7 +1829,7 @@
                      remplacement de Bernardin de Saint-Pierre non acceptant, né à Issoudun
                      (Indre)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88197_d1"><term ana="#document_type_7">L. a. s.</term> à Hérault de Séchelles ; Belfort, <date date="1793-11-22" type="length">2 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, adresse, cachet de cire rouge.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000003_e88197_d1"><term ana="#document_type_7">L. a. s.</term> à Hérault de Séchelles ; Belfort, <date when="1793-11-22">2 frimaire an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, adresse, cachet de cire rouge.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Il lui annonce son départ pour la Convention. Il emporte l'estime et les
                   regrets de Belfort, où il a combattu avec quelque succès l'aristocratie et le
                   modérantisme quoiqu'il s'en faille de beaucoup que ses moyens répondent à son
@@ -1853,7 +1853,7 @@
                   <p>député suppléant de la Somme à la Convention ; il siégea en remplacement de
                      Roland non acceptant, né à Albert (Somme)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88199_d1"><term ana="#document_type_1">Apostille aut. sig.</term> ; Paris, <date date="1795-10-01" type="length">9 vendémiaire an IV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000003_e88199_d1"><term ana="#document_type_1">Apostille aut. sig.</term> ; Paris, <date when="1795-10-01">9 vendémiaire an IV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Pièce relative à la pétition d'un nommé Ducorps, voiturier à Dourdan, qui
                   réclamait 3.800 livres pour 3 septiers et demi de blé qu'il avait conduit à
                   Moutiers et Epincy, district de Janville (Eure-et-Loir.)</note>
@@ -1865,7 +1865,7 @@
                   <p>bailly de Montrichard, député du Loir-et-Cher à l'Assemblée législative et à la
                      Convention, né à Montrichard (Loir-et-Cher</p>
                </trait>
-               <desc xml:id="CAT_000003_e88200_d1"><term ana="#document_type_7">L. a. s.</term> ; Civray, <date date="1799-11-04" type="length">13 brumaire an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88200_d1"><term ana="#document_type_7">L. a. s.</term> ; Civray, <date when="1799-11-04">13 brumaire an VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il fait part à un ami des inquiétudes de la population. Les chouans les
                   environnent, ils sont à quatre lieues de Tours et sont entrés dans le Vendomois.
                   Personne n'obéit aux prescriptions des autorités parce qu'on n'a pas confiance
@@ -1880,7 +1880,7 @@
                <trait>
                   <p>député d'Eure-et-Loir à la Convention, né à Ivry-la-Bataille (Eure)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88201_d1">P. <term ana="#document_type_15">a. s.</term> ; Caen, <date date="1794-05-10" type="length">21 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête et vignette imprimée.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000003_e88201_d1">P. <term ana="#document_type_15">a. s.</term> ; Caen, <date when="1794-05-10">21 floréal an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête et vignette imprimée.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Considérant que les souliers fournis aux défenseurs de la Patrie sont en
                   mauvais état il prescrit de saisir les malles qui les contiennent</note>
             </item>
@@ -1890,7 +1890,7 @@
                <trait>
                   <p>publiciste, député de Paris à la Convention</p>
                </trait>
-               <desc xml:id="CAT_000003_e88202_d1"><term ana="#document_type_7">L. a. s.</term> à Mme Duplessis (la belle-mère de Camille Desmoulins) ; <date date="1800-03-13" type="length">22 ventôse an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000003_e88202_d1"><term ana="#document_type_7">L. a. s.</term> à Mme Duplessis (la belle-mère de Camille Desmoulins) ; <date when="1800-03-13">22 ventôse an VIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il l'informe qu'il s'est entretenu de sa position et de celle d'Horace (le fils
                   de Camille) avec le ministre de l'Intérieur. Le ministre trouve juste et
                   convenable que le fils de Camille Desmoulins entre au Prytanée, mais il est
@@ -1904,7 +1904,7 @@
                <trait>
                   <p>avoué, député de la Sarthe à la Convention, né à Bessé-en-Braye (Sarthe)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88203_d1"><term ana="#document_type_9">L. s.</term> aux citoyens composant la commission des approvisionnements ; Montdidier, <date date="1795-02-18" type="length">30 pluviôse an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000003_e88203_d1"><term ana="#document_type_9">L. s.</term> aux citoyens composant la commission des approvisionnements ; Montdidier, <date when="1795-02-18">30 pluviôse an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Il déplore que, malgré toutes les mesures de rigueur, la rentrée journalière
                   des grains n'est que de deux cents quintaux par jour, alors qu'elle devrait être
                   de cinq cents. « J'ai cependant fait incarcérer quatre des cultivateurs les plus
@@ -1919,7 +1919,7 @@
                <trait>
                   <p>député de l'Ardèche à la Convention</p>
                </trait>
-               <desc xml:id="CAT_000003_e88204_d1"><term ana="#document_type_5">Billet aut. sig.</term> à Bottot ; <date date="1798-07-08" type="length">20 messidor an VI</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000003_e88204_d1"><term ana="#document_type_5">Billet aut. sig.</term> à Bottot ; <date when="1798-07-08">20 messidor an VI</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Il le prie de recommander une pétition à Barras.</note>
             </item>
             <item n="88205" xml:id="CAT_000003_e88205">
@@ -1941,7 +1941,7 @@
                   <p>cultivateur, député de la Somme à la Convention, né à Fresnoye-lès-Roye
                      (Somme)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88206_d1"><term ana="#document_type_7">L. a. s.</term> à son collègue Dumont ; Paris, <date date="1794-09-14" type="length">28 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000003_e88206_d1"><term ana="#document_type_7">L. a. s.</term> à son collègue Dumont ; Paris, <date when="1794-09-14">28 fructidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Il le prie de faire remettre en liberté le citoyen Houdet, détenu à Nointel,
                   lequel était gravement malade. </note>
             </item>
@@ -1974,7 +1974,7 @@
                   <p>avocat du roi en la sénéchaussée de Saintes, député de la Charente-Inférieure à
                      la Convention, né à Saintes</p>
                </trait>
-               <desc xml:id="CAT_000003_e88209_d1"><term ana="#document_type_7">L. a. s.</term> à Palloy ; Paris, <date date="1795-09-13" type="length">27 fructidor an III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000003_e88209_d1"><term ana="#document_type_7">L. a. s.</term> à Palloy ; Paris, <date when="1795-09-13">27 fructidor an III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Il le remercie de l'envoi d'une médaille et vante verbeusement le patriotisme
                   de Palloy. « Ne nous étonnons donc point si nous comptons aujourd'hui parmi nos
                   plus ennemis ceux que nous avons arrachés à la férocité de la tyrannie et aux
@@ -1999,7 +1999,7 @@
                   <p>conseiller du roi en l'élection de Fontenay, député de la Vendée à la
                      Convention, né à Sérigné (Vendée)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88211_d1"><term ana="#document_type_9">L. s.</term>, signée aussi par ses collègues RÉAL, CAMBON, HUMBERT, membres du Comité des finances de la Convention ; Paris, <date date="1794-10-11" type="length">20 vendémiaire an III</date>, <measure type="length" unit="p" n="1.5">I p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette imprimée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000003_e88211_d1"><term ana="#document_type_9">L. s.</term>, signée aussi par ses collègues RÉAL, CAMBON, HUMBERT, membres du Comité des finances de la Convention ; Paris, <date when="1794-10-11">20 vendémiaire an III</date>, <measure type="length" unit="p" n="1.5">I p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette imprimée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="88212" xml:id="CAT_000003_e88212">
                <num type="lot">88212</num>
@@ -2019,7 +2019,7 @@
                <trait>
                   <p>avocat, député de la Gironde à la Convention, né à Sainte-Foy (Gironde)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88213_d1"><term ana="#document_type_7">L. a. s.</term> au ministre de la Guerre ; Paris, <date date="1799-06-01" type="length">13 prairial an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000003_e88213_d1"><term ana="#document_type_7">L. a. s.</term> au ministre de la Guerre ; Paris, <date when="1799-06-01">13 prairial an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="88214" xml:id="CAT_000003_e88214">
                <num type="lot">88214</num>
@@ -2051,7 +2051,7 @@
                   <p>député de la Vendée à l'Assemblée législative et à la Convention, né aux Sables
                      d'Olonne (Vendée)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88216_d1"><term ana="#document_type_9">L. s.</term> aux membres de la Commission de la marine et des colonies ; aux Sables, <date date="1795-03-04" type="length">14 ventôse an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, vignette imprimée avec la devise : Humanité. Justice.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88216_d1"><term ana="#document_type_9">L. s.</term> aux membres de la Commission de la marine et des colonies ; aux Sables, <date when="1795-03-04">14 ventôse an III</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, vignette imprimée avec la devise : Humanité. Justice.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="88217" xml:id="CAT_000003_e88217">
                <num type="lot">88217</num>
@@ -2059,7 +2059,7 @@
                <trait>
                   <p>député des Côtes-du-Nord à la Convention, né à Pontrieux (Côtes-du-Nord)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88217_d1"><term ana="#document_type_7">L. a. s.</term>, signée aussi par son collègue G. Couppé, aux membres du Directoire ; Paris, <date date="1797-09-26" type="length">5 vendémiaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88217_d1"><term ana="#document_type_7">L. a. s.</term>, signée aussi par son collègue G. Couppé, aux membres du Directoire ; Paris, <date when="1797-09-26">5 vendémiaire an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Recommandation en faveur du citoyen Thomas, chef du 4e bataillon des
                   Côtes-du-Nord, qui demande une place de chef d'escadron dans la gendarmerie</note>
             </item>
@@ -2081,7 +2081,7 @@
                      l'Assemblée législative du même département, réélu à la Convention, né à
                      Saint-Léonard (Haute-Vienne)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88219_d1"><term ana="#document_type_7">L. a. s.</term> à un ministre ; Paris, <date date="1796-12-02" type="length">12 frimaire an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88219_d1"><term ana="#document_type_7">L. a. s.</term> à un ministre ; Paris, <date when="1796-12-02">12 frimaire an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il le prie de faire donner un cheval à un brave officier qui a perdu le sien à
                   la guerre ; son père ne peut lui rendre ce service</note>
             </item>
@@ -2092,7 +2092,7 @@
                   <p>avocat au parlement de Grenoble, député de l'Isère à la Convention, né à
                      Chabeuil (Drôme)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88220_d1"><term ana="#document_type_9">L. s.</term>, comme ministre de la Justice, à Reverchon ; Paris, <date date="1796-03-18" type="length">28 ventôse an IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette imprimée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000003_e88220_d1"><term ana="#document_type_9">L. s.</term>, comme ministre de la Justice, à Reverchon ; Paris, <date when="1796-03-18">28 ventôse an IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette imprimée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="88221" xml:id="CAT_000003_e88221">
                <num type="lot">88221</num>
@@ -2101,7 +2101,7 @@
                   <p>homme de loi, député du Loiret à l'Assemblée législative et à la Convention, né
                      à Ouzouer-sur-Trézée (Loiret)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88221_d1"><term ana="#document_type_7">L. a. s.</term> aux membres du Directoire ; Paris, 14 frimaire et Ouzouer-sur-Trézée, <date date="1795-12-09" type="length">18 frimaire an IV</date>, <measure type="length" unit="p" n="8">8 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000003_e88221_d1"><term ana="#document_type_7">L. a. s.</term> aux membres du Directoire ; Paris, 14 frimaire et Ouzouer-sur-Trézée, <date when="1795-12-09">18 frimaire an IV</date>, <measure type="length" unit="p" n="8">8 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuse lettre relative aux résultats de sa mission pour le ravitaillement de
                   Paris en bois et en charbon. Le motif qui a décidé les cultivateurs à porter le
                   bois dans les ports des canaux, ce n'est pas le désir de subvenir aux besoins de
@@ -2120,7 +2120,7 @@
                      remplacement de Bertrand de l'Hosdinière, né à Saint-Gervais-de-Messée
                      (Orne)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88222_d1"><term ana="#document_type_7">L. a. s.</term> au préfet maritime à Toulon ; Paris, <date date="1801-03-27" type="length">6 germinal an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88222_d1"><term ana="#document_type_7">L. a. s.</term> au préfet maritime à Toulon ; Paris, <date when="1801-03-27">6 germinal an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il le prie de faire passer une lettre à son fils, aspirant à bord du vaisseau
                   La Constitution</note>
             </item>
@@ -2131,7 +2131,7 @@
                   <p>notaire, député des Hautes-Pyrénées à l'Assemblée législative et à la
                      Convention, né à Guchen (Hautes-Pyrénées</p>
                </trait>
-               <desc xml:id="CAT_000003_e88223_d1"><term ana="#document_type_4">P. s.</term>, signée également par les administrateurs du département des Hautes-Pyrénées ; Tarbes, <date date="none" type="length">Ier thermidor an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000003_e88223_d1"><term ana="#document_type_4">P. s.</term>, signée également par les administrateurs du département des Hautes-Pyrénées ; Tarbes, <date when="none">Ier thermidor an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="88224" xml:id="CAT_000003_e88224">
                <num type="lot">88224</num>
@@ -2139,7 +2139,7 @@
                <trait>
                   <p>député du Morbihan à la Convention</p>
                </trait>
-               <desc xml:id="CAT_000003_e88224_d1"><term ana="#document_type_9">L. s.</term> au général Scherer, commandant l'armée devant le Quesnoy ; Quartier-général à Warem, <date date="1794-07-31" type="length">13 thermidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000003_e88224_d1"><term ana="#document_type_9">L. s.</term> au général Scherer, commandant l'armée devant le Quesnoy ; Quartier-général à Warem, <date when="1794-07-31">13 thermidor an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Il lui enjoint de bombarder le Quesnoy sans délai. « Le bombardement ne souffre
                   aucune difficulté puisque c'est un moyen de forcer l'ennemi à nous rendre la
                   place, ainsi il faut l'employer avec la plus grande vigueur... Je voudrais bien me
@@ -2152,7 +2152,7 @@
                   <p>"député de la Charente-Inférieure à la Convention, né à Coupeau (Charente-
                      Inférieure</p>
                </trait>
-               <desc xml:id="CAT_000003_e88225_d1"><term ana="#document_type_9">L. s.</term>, signée aussi par ses collègues Bourdon de l'Oise, et Vardon ; Brest, <date date="1795-06-25" type="length">7 messidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000003_e88225_d1"><term ana="#document_type_9">L. s.</term>, signée aussi par ses collègues Bourdon de l'Oise, et Vardon ; Brest, <date when="1795-06-25">7 messidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Ordre de leur faire délivrer matelas, traversins et couvertures pour leur
                   ameublement.</note>
             </item>

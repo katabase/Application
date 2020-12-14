@@ -50,7 +50,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -174,7 +174,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019-05-23">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -283,7 +283,7 @@
                <trait>
                   <p>conventionnel, membre du Directoire</p>
                </trait>
-               <desc xml:id="CAT_000005_e156_d1">Né à Fox (Var). Apostille de 4 lignes <term ana="#document_type_15">a.s.</term> <date date="1799-06-29" type="length">11 messidor an VII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000005_e156_d1">Né à Fox (Var). Apostille de 4 lignes <term ana="#document_type_15">a.s.</term> <date when="1799-06-29">11 messidor an VII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="157" xml:id="CAT_000005_e157">
                <num type="lot">157</num>
@@ -441,7 +441,7 @@
                <trait>
                   <p>député de la Drôme à la Convention nationale. Né à Montélimart (Drôme</p>
                </trait>
-               <desc xml:id="CAT_000005_e175_d1"><term ana="#document_type_7">L. aut. sig.</term>, comme représentant du peuple, à son collègue Couthon. Montélimart, le 25e jour du 1er mois de la 2e année de la République. 1 gr. p. pl. et demie <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>; en tête se trouve la réponse aut. sig. de Couthon (5 lignes); <date date="none" type="length">19 octobre an II</date>.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000005_e175_d1"><term ana="#document_type_7">L. aut. sig.</term>, comme représentant du peuple, à son collègue Couthon. Montélimart, le 25e jour du 1er mois de la 2e année de la République. 1 gr. p. pl. et demie <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>; en tête se trouve la réponse aut. sig. de Couthon (5 lignes); <date when="none">19 octobre an II</date>.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Belle lettre. Demande d'armes en fusils, pistolets, canons... «Carteaux me
                   demande des guerriers, il ne m'en manque pas; mais « puis-je les envoyer sans
                   fusils? J'en avois demandé à Dubois-Crancé 12,000 et 12 pièces de canons. Les
@@ -506,7 +506,7 @@
                   <p>professeur de physique des Enfants de France, auteur du Dictionnaire de
                      Physique, 2 vol</p>
                </trait>
-               <desc xml:id="CAT_000005_e182_d1">in-4. Membre de l'Académie des sciences. Né à Fontenay-le-Comte (Vendée). <term ana="#document_type_2">Pièce aut. sig.</term> Paris, <date date="1804-07-22" type="length">2 thermidor an XII</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. in-4. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000005_e182_d1">in-4. Membre de l'Académie des sciences. Né à Fontenay-le-Comte (Vendée). <term ana="#document_type_2">Pièce aut. sig.</term> Paris, <date when="1804-07-22">2 thermidor an XII</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. in-4. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="183" xml:id="CAT_000005_e183">
                <num type="lot">183</num>
@@ -596,7 +596,7 @@
                   <p>agronome, économiste, membre de la Société d'agriculture, de l'Académie de
                      médecine</p>
                </trait>
-               <desc xml:id="CAT_000005_e192_d1"><term ana="#document_type_7">L. aut. sig.</term>, Paris, <date date="1798-11-06" type="length">16 brumaire an VII</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. et demie <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="3.50">3 50</measure>
+               <desc xml:id="CAT_000005_e192_d1"><term ana="#document_type_7">L. aut. sig.</term>, Paris, <date when="1798-11-06">16 brumaire an VII</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. et demie <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="3.50">3 50</measure>
             </item>
             <item n="193" xml:id="CAT_000005_e193">
                <num type="lot">193</num>
@@ -797,7 +797,7 @@
                <trait>
                   <p>duc de Feltre, maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000005_e218_d1">Né à Landrecies (Nord). <term ana="#document_type_7">L. aut. sig.</term>, au premier consul. Bruxelles, <date date="1796-12-10" type="length">20 frimaire an v</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000005_e218_d1">Né à Landrecies (Nord). <term ana="#document_type_7">L. aut. sig.</term>, au premier consul. Bruxelles, <date when="1796-12-10">20 frimaire an v</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="219" xml:id="CAT_000005_e219">
                <num type="lot">219</num>
@@ -826,7 +826,7 @@
             <item n="222" xml:id="CAT_000005_e222">
                <num type="lot">222</num>
                <name type="author">Comité</name>
-               <desc xml:id="CAT_000005_e222_d1">de salut public de la Convention (Arrêté du), signé Cambacérès, Doulcet, Tallien, Défermon et Maree, au sujet du citoyen Becquemont, procureur-syndic du district de Pont-l'Evêque. Paris, <date date="1795-08-01" type="length">14 thermidor an III</date>. Demi-page <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000005_e222_d1">de salut public de la Convention (Arrêté du), signé Cambacérès, Doulcet, Tallien, Défermon et Maree, au sujet du citoyen Becquemont, procureur-syndic du district de Pont-l'Evêque. Paris, <date when="1795-08-01">14 thermidor an III</date>. Demi-page <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="223" xml:id="CAT_000005_e223">
                <num type="lot">223</num>
@@ -915,7 +915,7 @@
                <trait>
                   <p>député de la Moselle à la Convention</p>
                </trait>
-               <desc xml:id="CAT_000005_e232_d1"><term ana="#document_type_7">L. aut. sig.</term> Dourdan, <date date="1793-11-19" type="length">29 brumaire an II</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3.50">3 50</measure>
+               <desc xml:id="CAT_000005_e232_d1"><term ana="#document_type_7">L. aut. sig.</term> Dourdan, <date when="1793-11-19">29 brumaire an II</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3.50">3 50</measure>
             </item>
             <item n="233" xml:id="CAT_000005_e233">
                <num type="lot">233</num>
@@ -1072,7 +1072,7 @@
                <trait>
                   <p>représentant de Rhône-et-Loire à la Convention nationale</p>
                </trait>
-               <desc xml:id="CAT_000005_e250_d1"><term ana="#document_type_2">Pièce aut. sig.</term> comme représentant du peuple, envoyé dans la commune-affranchie, pour y assurer le bonheur du peuple avec le triomphe de la République. Commune affranchie, <date date="1794-07-14" type="length">26 messidor an II</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000005_e250_d1"><term ana="#document_type_2">Pièce aut. sig.</term> comme représentant du peuple, envoyé dans la commune-affranchie, pour y assurer le bonheur du peuple avec le triomphe de la République. Commune affranchie, <date when="1794-07-14">26 messidor an II</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="251" xml:id="CAT_000005_e251">
                <num type="lot">251</num>
@@ -1096,7 +1096,7 @@
                <trait>
                   <p>député des Landes à la Convention nationale</p>
                </trait>
-               <desc xml:id="CAT_000005_e253_d1"><term ana="#document_type_7">L. aut. sig.</term> Mont-de-Marsan, <date date="1796-07-10" type="length">22 messidor an IV</date>. <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000005_e253_d1"><term ana="#document_type_7">L. aut. sig.</term> Mont-de-Marsan, <date when="1796-07-10">22 messidor an IV</date>. <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="254" xml:id="CAT_000005_e254">
                <num type="lot">254</num>
@@ -1112,7 +1112,7 @@
                <trait>
                   <p>député de la Manche à la Convention nationale</p>
                </trait>
-               <desc xml:id="CAT_000005_e255_d1"><term ana="#document_type_7">L. aut. sig.</term> Paris, <date date="1796-12-01" type="length">11 frimaire an v</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000005_e255_d1"><term ana="#document_type_7">L. aut. sig.</term> Paris, <date when="1796-12-01">11 frimaire an v</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="256" xml:id="CAT_000005_e256">
                <num type="lot">256</num>
@@ -1120,7 +1120,7 @@
                <trait>
                   <p>député du Var à la Convention nationale</p>
                </trait>
-               <desc xml:id="CAT_000005_e256_d1"><term ana="#document_type_7">L. aut. sig.</term> Paris, <date date="none" type="length">2 juillet an II</date>. 3 gr. p. pl. et demie <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000005_e256_d1"><term ana="#document_type_7">L. aut. sig.</term> Paris, <date when="none">2 juillet an II</date>. 3 gr. p. pl. et demie <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Lettre intéressante contre le fédéralisme des Toulonnais.</note>
             </item>
             <item n="257" xml:id="CAT_000005_e257">
@@ -1192,7 +1192,7 @@
                <trait>
                   <p>maréchal de France. Né à Damvilliers (Meuse).</p>
                </trait>
-               <desc xml:id="CAT_000005_e265_d1"><term ana="#document_type_7">L. aut. sig.</term>, au prince Louis-Bonaparte. <date date="1805-09-17" type="length">30 fructidor an XIII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3"> 3</measure>
+               <desc xml:id="CAT_000005_e265_d1"><term ana="#document_type_7">L. aut. sig.</term>, au prince Louis-Bonaparte. <date when="1805-09-17">30 fructidor an XIII</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3"> 3</measure>
             </item>
             <item n="266" xml:id="CAT_000005_e266">
                <num type="lot">266</num>
@@ -1218,7 +1218,7 @@
                <trait>
                   <p>Henri Pellicot et J. Ph. Garran</p>
                </trait>
-               <desc xml:id="CAT_000005_e268_d1"><term ana="#document_type_9">L. sig.</term> au ministre de la guerre. Orléans, <date date="none" type="length">30 juin an iv</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000005_e268_d1"><term ana="#document_type_9">L. sig.</term> au ministre de la guerre. Orléans, <date when="none">30 juin an iv</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="269" xml:id="CAT_000005_e269">
                <num type="lot">269</num>
@@ -1266,7 +1266,7 @@
                <num type="lot">274</num>
                <name type="author">Imprimerie bulletin des lois (Fonte de caractères destinés à
                   l')</name>
-               <desc xml:id="CAT_000005_e274_d1">L. des administrateurs de l'agence des lois (sig. Dumont, Bernard, Chaube, Grandville), adressée au citoyen Firmin Didot, fondeur en caractères. Paris, <date date="none" type="length">2 prairial, an II</date>. <measure type="length" unit="p" n="2">2 p.</measure> pl. et quart <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000005_e274_d1">L. des administrateurs de l'agence des lois (sig. Dumont, Bernard, Chaube, Grandville), adressée au citoyen Firmin Didot, fondeur en caractères. Paris, <date when="none">2 prairial, an II</date>. <measure type="length" unit="p" n="2">2 p.</measure> pl. et quart <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Mise en demeure de fournir les caractères dont il s'est chargé</note>
             </item>
             <item n="275" xml:id="CAT_000005_e275">
@@ -1301,12 +1301,12 @@
                <trait>
                   <p>maréchal de France. Né à Limoges.</p>
                </trait>
-               <desc xml:id="CAT_000005_e278_d1">Certificat <term ana="#document_type_15">aut. sig.</term> comme représentant de la Haute-Vienne, en laveur de l'adjudant-général Devaux. Paris, <date date="1798-03-09" type="length">19 ventôse an VI</date>. <measure type="length" unit="p" n="1">1. p,</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000005_e278_d1">Certificat <term ana="#document_type_15">aut. sig.</term> comme représentant de la Haute-Vienne, en laveur de l'adjudant-général Devaux. Paris, <date when="1798-03-09">19 ventôse an VI</date>. <measure type="length" unit="p" n="1">1. p,</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="279" xml:id="CAT_000005_e279">
                <num type="lot">279</num>
                <name type="author">Jourdan (la maréchale)</name>
-               <desc xml:id="CAT_000005_e279_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre de la justice. Au Coudray, le <date date="1804-05-31" type="length">10 prairial an XII</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. et demie <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000005_e279_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre de la justice. Au Coudray, le <date when="1804-05-31">10 prairial an XII</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. et demie <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="280" xml:id="CAT_000005_e280">
                <num type="lot">280</num>

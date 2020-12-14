@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -346,7 +346,7 @@
                      Ceracchi, Demerville et Topino-Lebrun, pour l'affaire de la machine
                      infernale</p>
                </trait>
-               <desc xml:id="CAT_000025_e13_d1"><term ana="#document_type_7">L. aut. sig.</term> aux administrateurs municipaux de la Corse; Paris, <date date="1796-11-05" type="length">15 brumaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000025_e13_d1"><term ana="#document_type_7">L. aut. sig.</term> aux administrateurs municipaux de la Corse; Paris, <date when="1796-11-05">15 brumaire an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Celte lettre, qui est signée aussi par Pompei et Bozi, députés au Conseil des
                   Anciens, est relative au citoyen Guasco, officier des volontaires corses</note>
             </item>
@@ -548,7 +548,7 @@
                   <p>constituant, le spirituel auteur de la Physiologie du goût, né à Belley
                      (Ain)</p>
                </trait>
-               <desc xml:id="CAT_000025_e32_d1"><term ana="#document_type_7">L. a. s.</term> aux membres du Sénat; Versailles, <date date="1800-01-24" type="length">4 pluv. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000025_e32_d1"><term ana="#document_type_7">L. a. s.</term> aux membres du Sénat; Versailles, <date when="1800-01-24">4 pluv. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Il demande à reprendre, au Tribunal de cassation, la place qu'il a occupée par
                   le voeu du peuple jusqu'au 18 fructidor, et donne des renseignements sur ce qu'il
                   était avant 1789</note>
@@ -593,7 +593,7 @@
                      Babeuf, à la suite de laquelle il fut condamné à mort, et dont il écrivit
                      l'histoire</p>
                </trait>
-               <desc xml:id="CAT_000025_e35_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Flaminius Aquaronc; Toulon, <date date="1803-02-25" type="length">6 vent, an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000025_e35_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Flaminius Aquaronc; Toulon, <date when="1803-02-25">6 vent, an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Epître touchante, écrite du bagne de Toulon, où il était détenu, par suite de
                   la commutation de la peine prononcée contre lui dans l'affaire de Babeuf</note>
             </item>
@@ -614,7 +614,7 @@
                <trait>
                   <p>conventionnel, fameux par sa mission à Nantes</p>
                </trait>
-               <desc xml:id="CAT_000025_e37_d1"><term ana="#document_type_3">Pièce aut.</term>; Nantes, <date date="1793-12-11" type="length">21 frim. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> (Collection Lajarriette.)</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000025_e37_d1"><term ana="#document_type_3">Pièce aut.</term>; Nantes, <date when="1793-12-11">21 frim. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> (Collection Lajarriette.)</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Arrêté par lequel il destitue de Lamarre, payeur-général de la
                   Loire-Inférieure, pour son incivisme et ses liaisons avec Chapelier,
                   ex-constituant, son beau-frère, Bailly et autres contre-révolutionnaires, et le
@@ -1025,7 +1025,7 @@
                <trait>
                   <p>le sanguinaire proconsul d'Arras</p>
                </trait>
-               <desc xml:id="CAT_000025_e75_d1"><term ana="#document_type_7">L. a. s.</term> aux administrateurs du district de Boulogne ; Calais, <date date="1793-12-05" type="length">15 frim. an 2</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000025_e75_d1"><term ana="#document_type_7">L. a. s.</term> aux administrateurs du district de Boulogne ; Calais, <date when="1793-12-05">15 frim. an 2</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuse réponse à diverses questions qui lui sont soumises par le district sur
                   les prisons de Boulogne, le traitement des détenus, leur nourriture, leurs
                   vêtements, etc. Il termine par cette recommandation très-sage : « Il ne convient
@@ -1118,7 +1118,7 @@
                <trait>
                   <p>illustre général delà République, tué à Altenkirchen</p>
                </trait>
-               <desc xml:id="CAT_000025_e84_d1">Arrêté écrit de la main de Marceau et sig. par Carrier; Nantes, <date date="1794-01-02" type="length">13 niv. an 2</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, cachet à la cire rouge de Carrier, vignette. (Collection Lajarriette).</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000025_e84_d1">Arrêté écrit de la main de Marceau et sig. par Carrier; Nantes, <date when="1794-01-02">13 niv. an 2</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, cachet à la cire rouge de Carrier, vignette. (Collection Lajarriette).</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Arrêté accordant à Marceau une indemnité pour les pertes qu'il a faites pendant
                   qu'il était général en chef de l'armée de l'Ouest. -Marceau était lié d'amitié
                   avec Carrier, et c'est sans doute dans son cabinet et sous sa dictée qu'il a écrit
@@ -1188,7 +1188,7 @@
                <trait>
                   <p>dit le jeune, gracieux et fécond dessinateur vignettiste du XVIIIe siècle</p>
                </trait>
-               <desc xml:id="CAT_000025_e91_d1"><term ana="#document_type_7">L. a. s.</term> aux citoyens Cabanis ou Leclerc, membres du Conseil des Cinq-Cents ; <date date="1799-04-10" type="length">21 germ., an VII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000025_e91_d1"><term ana="#document_type_7">L. a. s.</term> aux citoyens Cabanis ou Leclerc, membres du Conseil des Cinq-Cents ; <date when="1799-04-10">21 germ., an VII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Relative aux costumes des fonctionnaires de la République, dont les dessins lui
                   ont été confiés par le gouvernement directorial</note>
             </item>
@@ -1604,7 +1604,7 @@
                   <p>physicien et agronome, un des savants de l'expédition d'Egypte, frère du
                      général Reynier</p>
                </trait>
-               <desc xml:id="CAT_000025_e140_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Daure, com. ordonnateur; Bénisouef (Egypte), <date date="1799-07-25" type="length">7 therm. an 7</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000025_e140_d1"><term ana="#document_type_7">L. a. s.</term> au cit. Daure, com. ordonnateur; Bénisouef (Egypte), <date when="1799-07-25">7 therm. an 7</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Très-belle lettre, sur papier égyptien, relative aux al provisionnements
                   destinés à l'année française</note>
             </item>
@@ -1684,7 +1684,7 @@
                <trait>
                   <p>l'auteur do la Marseillaise</p>
                </trait>
-               <desc xml:id="CAT_000025_e148_d1"><term ana="#document_type_7">L. a. s.</term> à Perregaux, an <date date="1799-1800" type="length">8</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-1</measure><date date="1799-1800" type="length">8</date>.</desc><measure commodity="currency" unit="FRF" quantity="9">9</measure>
+               <desc xml:id="CAT_000025_e148_d1"><term ana="#document_type_7">L. a. s.</term> à Perregaux, an <date when="1799-1800">8</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-1</measure><date when="1799-1800">8</date>.</desc><measure commodity="currency" unit="FRF" quantity="9">9</measure>
             </item>
             <item n="149" xml:id="CAT_000025_e149">
                <num type="lot">149</num>
@@ -1705,7 +1705,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie</p>
                </trait>
-               <desc xml:id="CAT_000025_e150_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen L. a. Varenne ; Paris, chez le citoyen Didot, <date date="1795-12-24" type="length">3 nivôse an IV</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000025_e150_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen L. a. Varenne ; Paris, chez le citoyen Didot, <date when="1795-12-24">3 nivôse an IV</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Relative à une contrefaçon de ses Etudes de la Nature, par le libraire
                   Barba</note>
             </item>
@@ -1873,7 +1873,7 @@
                <trait>
                   <p>charmant romancier enfantin, auteur de Victor ou l'Enfant de la Foret</p>
                </trait>
-               <desc xml:id="CAT_000025_e168_d1"><term ana="#document_type_7">L. a. s.</term> à Mathon de la Varenne; Sainte-Pélagie (où il était détenu), <date date="1794-01-08" type="length">19 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000025_e168_d1"><term ana="#document_type_7">L. a. s.</term> à Mathon de la Varenne; Sainte-Pélagie (où il était détenu), <date when="1794-01-08">19 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Curieuse épître. Arrêté pour des articles des Petites Affiches, qu'il
                   rédigeait, il pense que la punition que lui infligent les représentants du peuple
                   ne sera pas de longue durée. « J'ai toujours, dit-il, été patriote, dès le 12

@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -328,7 +328,7 @@
                   <p>célèbre conventionnel (Saône-et-Loire) défenseur de Hoche contre Saint-Just,
                      mort en 1830</p>
                </trait>
-               <desc xml:id="CAT_000058_e14_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Bayonne, <date date="1795-02-23" type="length">5 vent, an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000058_e14_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Bayonne, <date when="1795-02-23">5 vent, an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Belle lettre écrite comme représentant du peuple près l'armée des
                   Pyrénées-Occidentales. En marge se trouve une apostille signée du général
                   Moncey</note>
@@ -467,7 +467,7 @@
                <trait>
                   <p>prince de Canino, frère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000058_e28_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Dubois-Thainville, commissaire français d'Alger à Alicante; Aranjuez, <date date="1801-03-19" type="length">28 ventôse an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000058_e28_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Dubois-Thainville, commissaire français d'Alger à Alicante; Aranjuez, <date when="1801-03-19">28 ventôse an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Curieuse lettre relative à l'outrage commis par un officier espagnol contre
                   Dubois-Thainville. En sa qualité d'embassadeur de la République française, il
                   était décidé à demander prompte réparation au gouvernement espagnol; mais, pour
@@ -591,7 +591,7 @@
                   <p>célèbre constituant et conventionnel, un des commissaires arrêtés par
                      Dumouriez, ministre des finances, érudit, de l'Institut</p>
                </trait>
-               <desc xml:id="CAT_000058_e40_d1"><term ana="#document_type_7">L. a. s.</term> aux citoyens composant le bureau de comptabilité nationale, <date date="1797-07-18" type="length">30 messidor an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000058_e40_d1"><term ana="#document_type_7">L. a. s.</term> aux citoyens composant le bureau de comptabilité nationale, <date when="1797-07-18">30 messidor an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="41" xml:id="CAT_000058_e41">
                <num type="lot">41</num>
@@ -1068,7 +1068,7 @@
                   <p>conventionnel, membre du Conseil des Anciens où il se lit remarquer par sa vive
                      opposition au 18 brumaire</p>
                </trait>
-               <desc xml:id="CAT_000058_e90_d1"><term ana="#document_type_9">Let. sig.</term> aux administrateurs des domaines; <date date="1798-08-22" type="length">5 fructidor an VI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000058_e90_d1"><term ana="#document_type_9">Let. sig.</term> aux administrateurs des domaines; <date when="1798-08-22">5 fructidor an VI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Belle lettre écrite par Piguet et signée de Dubuisson, ses deux collègues de la
                   Haute-Saône</note>
             </item>
@@ -1253,7 +1253,7 @@
                   <p>député de la Meuse à la Convention, commissaire pour les départements
                      d'Outre-Rhin, en remplacement de Ru d 1er</p>
                </trait>
-               <desc xml:id="CAT_000058_e110_d1"><term ana="#document_type_9">Let. sig.</term> au sous-préfet de l'arrondissement de Toul; Nancy, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000058_e110_d1"><term ana="#document_type_9">Let. sig.</term> au sous-préfet de l'arrondissement de Toul; Nancy, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="111" xml:id="CAT_000058_e111">
                <num type="lot">111</num>
@@ -1301,7 +1301,7 @@
                   <p>conventionnel, célèbre général de la République et de l'Empire, né dans le
                      Cantal</p>
                </trait>
-               <desc xml:id="CAT_000058_e115_d1"><term ana="#document_type_2">Pièce aut. sig.</term>; Gènes, <date date="1804-01-11" type="length">20 nivôse an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000058_e115_d1"><term ana="#document_type_2">Pièce aut. sig.</term>; Gènes, <date when="1804-01-11">20 nivôse an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse pièce. Original du serment prêté par lui au gouvernement de la
                   République, comme général commandant une division de l'armée d'Italie</note>
             </item>
@@ -1437,7 +1437,7 @@
                <trait>
                   <p>député de la Drôme à la Convention</p>
                </trait>
-               <desc xml:id="CAT_000058_e129_d1"><term ana="#document_type_7">L. a. s.</term>; Montélimar, <date date="1793-12-10" type="length">20 frimaire an II</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000058_e129_d1"><term ana="#document_type_7">L. a. s.</term>; Montélimar, <date when="1793-12-10">20 frimaire an II</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="130" xml:id="CAT_000058_e130">
                <num type="lot">130</num>
@@ -1445,7 +1445,7 @@
                <trait>
                   <p>député de Seine-et-Marne à la Convention, célèbre par sa fin tragique</p>
                </trait>
-               <desc xml:id="CAT_000058_e130_d1"><term ana="#document_type_9">Let. sig.</term> à l'administration du district de Nantua; Lyon, <date date="1794-12-21" type="length">1er nivôse an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000058_e130_d1"><term ana="#document_type_9">Let. sig.</term> à l'administration du district de Nantua; Lyon, <date when="1794-12-21">1er nivôse an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre écrite pendant sa mission à Lyon. Il prend le titre de «
                   représentant envoyé à Lyon pour y assurer le bonheur du peuple avec le triomphe de
                   la République.</note>
@@ -1467,7 +1467,7 @@
                <trait>
                   <p>député de la Marne au Conseil des Cinq-Cents, jurisconsulte</p>
                </trait>
-               <desc xml:id="CAT_000058_e132_d1"><term ana="#document_type_7">L. a. s.</term> à M. Bordas, son ancien collègue, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000058_e132_d1"><term ana="#document_type_7">L. a. s.</term> à M. Bordas, son ancien collègue, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="133" xml:id="CAT_000058_e133">
                <num type="lot">133</num>

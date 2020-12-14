@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -541,7 +541,7 @@
                <trait>
                   <p>mère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000147_e30_d1"><term ana="#document_type_4">Pièce signée</term> Letizia Bonaparte, écrite par le cardinal Fesch : Paris, <date date="1799-08-19" type="length">2 fructidor an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> Très rare.</desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
+               <desc xml:id="CAT_000147_e30_d1"><term ana="#document_type_4">Pièce signée</term> Letizia Bonaparte, écrite par le cardinal Fesch : Paris, <date when="1799-08-19">2 fructidor an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> Très rare.</desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
                <note>Curieuse pièce. Lettre de change de la somme de 10,000 livres tournois à
                   l'ordre du conventionnel Chiappe, payable chez le citoyen Braccini à Ajaccio. -On
                   y a joint une l. a. s. du cardinal Fesch, adressée à M. Braccini, où il lui
@@ -727,7 +727,7 @@
                   <p>brave officier et administrateur, qui prit part à la guerre d'Amérique préfet
                      maritime de Brest, né en 1760, mort en 1845</p>
                </trait>
-               <desc xml:id="CAT_000147_e46_d1"><term ana="#document_type_7">L. a. s.</term> à M. Epaulart, au Mans ; Brest, <date date="1802-07-02" type="length">13 messidor an X</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000147_e46_d1"><term ana="#document_type_7">L. a. s.</term> à M. Epaulart, au Mans ; Brest, <date when="1802-07-02">13 messidor an X</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Curieuse lettre au sujet d'un envoi fait au général Leclerc</note>
             </item>
             <item n="47" xml:id="CAT_000147_e47">
@@ -973,7 +973,7 @@
                   <p>duc d'Auerstaedt, prince d'Eckmühl, illustre maréchal de France, né en 1770,
                      mort en 1823</p>
                </trait>
-               <desc xml:id="CAT_000147_e67_d1"><term ana="#document_type_7">L. a. s.</term> au général Ambert; Spire, <date date="1795-09-10" type="length">24 fructidor an III</date>, <measure type="length" unit="p" n="4">4 pages</measure> pleines <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
+               <desc xml:id="CAT_000147_e67_d1"><term ana="#document_type_7">L. a. s.</term> au général Ambert; Spire, <date when="1795-09-10">24 fructidor an III</date>, <measure type="length" unit="p" n="4">4 pages</measure> pleines <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
                <note>Magnifique lettre écrite comme général de brigade à l'armée du Rhin et Moselle.
                   Il parle de la mise en état de défense de Manheim, de Philipsbourg, etc., rend
                   compte de ses inspections et des ordres qu'il a donnés : « Compte que je
@@ -2263,7 +2263,7 @@
                      adjudant général, chef de brigade en Vendée, député aux Cinq-Cents et aux
                      Anciens, né à Vitré en 1753, mort en 1839</p>
                </trait>
-               <desc xml:id="CAT_000147_e187_d1">P. <term ana="#document_type_15">a. s.</term>; Saumur, <date date="1797-10-22" type="length">1er brumaire an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, en tête et vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000147_e187_d1">P. <term ana="#document_type_15">a. s.</term>; Saumur, <date when="1797-10-22">1er brumaire an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, en tête et vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Relative au rôle joué par le citoyen Chocard en Vendée</note>
             </item>
             <item n="188" xml:id="CAT_000147_e188">
@@ -2470,7 +2470,7 @@
                   <p>célèbre naturaliste, membre associé de l'Institut, né à Rouen en 1731, mort en
                      1807</p>
                </trait>
-               <desc xml:id="CAT_000147_e206_d1"><term ana="#document_type_7">L. a. s.</term> à Méjan; Paris, <date date="1803-10-21" type="length">28 vendémiaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000147_e206_d1"><term ana="#document_type_7">L. a. s.</term> à Méjan; Paris, <date when="1803-10-21">28 vendémiaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="207" xml:id="CAT_000147_e207">
                <num type="lot">207</num>
@@ -2641,43 +2641,43 @@
             <item n="223" xml:id="CAT_000147_e223">
                <num type="lot">223</num>
                <name type="author">Boutroué (L.-M.-S.)</name>
-               <desc xml:id="CAT_000147_e223_d1"><term ana="#document_type_2">Pièce sig. avec 4 lig. aut., sig. aussi par Lehault, avec 2 lig. aut. sig.</term> de Mailly ; an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000147_e223_d1"><term ana="#document_type_2">Pièce sig. avec 4 lig. aut., sig. aussi par Lehault, avec 2 lig. aut. sig.</term> de Mailly ; an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="224" xml:id="CAT_000147_e224">
                <num type="lot">224</num>
                <name type="author">Cornilleau (René)</name>
-               <desc xml:id="CAT_000147_e224_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Salmon ; an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000147_e224_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Salmon ; an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="225" xml:id="CAT_000147_e225">
                <num type="lot">225</num>
                <name type="author">Lehault (B.-P.)</name>
-               <desc xml:id="CAT_000147_e225_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000147_e225_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="226" xml:id="CAT_000147_e226">
                <num type="lot">226</num>
                <name type="author">Le Tourneur (Emm.-P.)</name>
-               <desc xml:id="CAT_000147_e226_d1"><term ana="#document_type_4">Pièce sig</term>. avec 6 lig. aut., sig. aussi par Garnier de Saintes, les généraux Chabot, Laronde et Lenoir; Alençon, an <date date="1793-1794" type="length">II</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000147_e226_d1"><term ana="#document_type_4">Pièce sig</term>. avec 6 lig. aut., sig. aussi par Garnier de Saintes, les généraux Chabot, Laronde et Lenoir; Alençon, an <date when="1793-1794">II</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Certificat en faveur de J.-Ch.-F. Peyron, adjudant-général</note>
             </item>
             <item n="227" xml:id="CAT_000147_e227">
                <num type="lot">227</num>
                <name type="author">Levasseur (René)</name>
-               <desc xml:id="CAT_000147_e227_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000147_e227_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="228" xml:id="CAT_000147_e228">
                <num type="lot">228</num>
                <name type="author">Richard (J.-E.)</name>
-               <desc xml:id="CAT_000147_e228_d1">P. a. s., comme représentant du peuple près les armées du Nord et de Sambre-et-Meuse ; <term ana="#document_type_8">L. a.</term> Haye, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tôté impr., curieuse vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000147_e228_d1">P. a. s., comme représentant du peuple près les armées du Nord et de Sambre-et-Meuse ; <term ana="#document_type_8">L. a.</term> Haye, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tôté impr., curieuse vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="229" xml:id="CAT_000147_e229">
                <num type="lot">229</num>
                <name type="author">Richard (J.-E.)</name>
-               <desc xml:id="CAT_000147_e229_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Guyton-Morveau, Merlin de Douai, Pelet de la Losère, Carnot, André Dumont et Fourcroy; an <date date="1794-1795" type="length">III</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000147_e229_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Guyton-Morveau, Merlin de Douai, Pelet de la Losère, Carnot, André Dumont et Fourcroy; an <date when="1794-1795">III</date>. <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="230" xml:id="CAT_000147_e230">
                <num type="lot">230</num>
                <name type="author">Salmon (G.-R.-L.)</name>
-               <desc xml:id="CAT_000147_e230_d1"><term ana="#document_type_7">L. a. s.</term> au sénateur Lemercier; Le Mans, an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000147_e230_d1"><term ana="#document_type_7">L. a. s.</term> au sénateur Lemercier; Le Mans, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Au sujet d'une place vacante à la cour criminelle du Mans, pour laquelle il
                   recommande son beau-frère M. Mallet</note>
             </item>
@@ -2689,7 +2689,7 @@
             <item n="232" xml:id="CAT_000147_e232">
                <num type="lot">232</num>
                <name type="author">Siéyès (Emm.-J.)</name>
-               <desc xml:id="CAT_000147_e232_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Cambacérés et Boissy d'Anglas, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000147_e232_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Cambacérés et Boissy d'Anglas, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Très belle lettre écrite pendant sa proscription</note>
             </item>
          </list>

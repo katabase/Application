@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -364,7 +364,7 @@
                   <p>lectrice de Marie-Antoinette, auteur de Mémoires sur cette princesse,
                      directrice de la maison d'Ecouen</p>
                </trait>
-               <desc xml:id="CAT_000074_e13_d1"><term ana="#document_type_7">L. a. s.</term>, au citoyen…; <date date="1802-07-16" type="length">27 messidor an X</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000074_e13_d1"><term ana="#document_type_7">L. a. s.</term>, au citoyen…; <date when="1802-07-16">27 messidor an X</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
                <note>Intéressante lettre sur la maison d'Ecouen, adressée à un membre du Sénat. Elle
                   regrette que la réponse de plusieurs de ses collègues lui donne la certitude
                   d'être privée du bonheur de les posséder le 6 thermidor; elle avait cependant à
@@ -551,7 +551,7 @@
                <trait>
                   <p>le célèbre fabuliste, membre de l'Académie française</p>
                </trait>
-               <desc xml:id="CAT_000074_e30_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Cicille; Sceaux-l'Unité, <date date="1794-08-15" type="length">28 thermidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000074_e30_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Cicille; Sceaux-l'Unité, <date when="1794-08-15">28 thermidor an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Jolie lettre relative à la pension qui lui revient dans la succession du duc de
                   Penthièvre</note>
             </item>
@@ -668,7 +668,7 @@
                <trait>
                   <p>célèbre danseuse et courtisane du XVIIIe siècle</p>
                </trait>
-               <desc xml:id="CAT_000074_e41_d1"><term ana="#document_type_7">L. a. s.</term> à Ginguené, <date date="1798-01-15" type="length">26 nivôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre. Rare.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000074_e41_d1"><term ana="#document_type_7">L. a. s.</term> à Ginguené, <date when="1798-01-15">26 nivôse an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre. Rare.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="42" xml:id="CAT_000074_e42">
                <num type="lot">42</num>

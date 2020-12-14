@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -1073,7 +1073,7 @@
                <trait>
                   <p>célèbre compositeur de musique dramatique</p>
                </trait>
-               <desc xml:id="CAT_000031_e95_d1"><term ana="#document_type_7">L. a. s.</term> à Arnault, de l'Institut; <date date="1800-01-29" type="length">9 pluv. an 8</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet camée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000031_e95_d1"><term ana="#document_type_7">L. a. s.</term> à Arnault, de l'Institut; <date when="1800-01-29">9 pluv. an 8</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet camée.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Belle lettre relative à l'opéra d'Onone, son dernier ouvrage</note>
             </item>
             <item n="96" xml:id="CAT_000031_e96">
@@ -1419,7 +1419,7 @@
                   <p>conventionnel montagnard, député du Lot, le réorganisateur de notre marine
                      pendant la Révolution</p>
                </trait>
-               <desc xml:id="CAT_000031_e129_d1"><term ana="#document_type_7">L. a. s.</term> au pasteur Marron ; Mayence, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000031_e129_d1"><term ana="#document_type_7">L. a. s.</term> au pasteur Marron ; Mayence, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Curieuse lettre relative au Protestantisme, auquel ses principes et son
                   éducation le rattachent plus particulièrement. Dans le département de Rhin-et-
                   Moselle, les Luthériens et les Réformés se sont spontanément réunis, et ils ne
@@ -1441,7 +1441,7 @@
                <trait>
                   <p>célèbre général de la garde nationale de Paris</p>
                </trait>
-               <desc xml:id="CAT_000031_e131_d1"><term ana="#document_type_7">L. a. s.</term>; enclos du Temple, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000031_e131_d1"><term ana="#document_type_7">L. a. s.</term>; enclos du Temple, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Curieuse lettre où il met après sa signature : Général divisionnaire, cidevant
                   brasseur. Elu par ses concitoyens notable du département de la Seine, son élection
                   n'a pas été maintenue, les voix ayant été divisées par la mention sur les listes

@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -262,7 +262,7 @@
                <trait>
                   <p>le célèbre historien, né en 1723, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000125_e7_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1801-10-01" type="length">9 vendémiaire an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000125_e7_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1801-10-01">9 vendémiaire an X</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Intéressante lettre sur la publication de son Précis de l'Histoire universelle
                   : « Voici le 9e vol., il commence par la France, ce qui peut piquer la curiosité.
                   Si le premier consul veut savoir comment j'ai envisagé la Révolution, etc.</note>
@@ -364,7 +364,7 @@
                   <p>femme poète distinguée du XVIIIesiècle, tante de l'impéralrice Joséphine, née
                      en 1738, morte en 1813</p>
                </trait>
-               <desc xml:id="CAT_000125_e18_d1">Apostille de 15 petites lignes <term ana="#document_type_15">aut. sig.</term> sur une pièce de <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>; an <date date="1799-1800" type="length">VIII</date>.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000125_e18_d1">Apostille de 15 petites lignes <term ana="#document_type_15">aut. sig.</term> sur une pièce de <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>; an <date when="1799-1800">VIII</date>.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="19" xml:id="CAT_000125_e19">
                <num type="lot">19</num>
@@ -438,7 +438,7 @@
                <trait>
                   <p>maréchal de l'Empire, puis roi de Suède</p>
                </trait>
-               <desc xml:id="CAT_000125_e27_d1"><term ana="#document_type_9">Let. sig.</term> avec <date date="none" type="length">3 lig. aut.; an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000125_e27_d1"><term ana="#document_type_9">Let. sig.</term> avec <date when="none">3 lig. aut.; an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="28" xml:id="CAT_000125_e28">
                <num type="lot">28</num>
@@ -676,7 +676,7 @@
                <trait>
                   <p>l'illustre organisateur de nos armées</p>
                </trait>
-               <desc xml:id="CAT_000125_e53_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000125_e53_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="54" xml:id="CAT_000125_e54">
                <num type="lot">54</num>
@@ -736,7 +736,7 @@
                   <p>ingénieur et physicien, inventeur du télégraphe aérien, né à Brûlon (Sarthe) en
                      1763, mort en 1805</p>
                </trait>
-               <desc xml:id="CAT_000125_e60_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, an <date date="1800-1801" type="length">IX</date>, 1 p.1/2 <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle vignette. Légère déchir ire dans un angle.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000125_e60_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, an <date when="1800-1801">IX</date>, 1 p.1/2 <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle vignette. Légère déchir ire dans un angle.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="61" xml:id="CAT_000125_e61">
                <num type="lot">61</num>
@@ -1084,7 +1084,7 @@
                <trait>
                   <p>le célèbre chanteur, né à Rennes en 1766, mort en 1842</p>
                </trait>
-               <desc xml:id="CAT_000125_e101_d1"><term ana="#document_type_12">Quitt. sig.</term> avec 1 lig. aut.; Paris <date date="1804-02-10" type="length">20 pluviose an XII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000125_e101_d1"><term ana="#document_type_12">Quitt. sig.</term> avec 1 lig. aut.; Paris <date when="1804-02-10">20 pluviose an XII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Reçu de 500 francs comme sociétaire de l'Opéra-Comique</note>
             </item>
             <item n="102" xml:id="CAT_000125_e102">
@@ -1304,7 +1304,7 @@
                   <p>médecin et constituant, introducteur en France de l'instrument de
                      supplice qui porte son nom, né à Saintes en 1738, mort en 1814.</p>
                </trait>
-               <desc xml:id="CAT_000125_e126_d1"><term ana="#document_type_2">Pièce aut. sig.</term>; Paris, an <date date="1800-1801" type="length">IX</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000125_e126_d1"><term ana="#document_type_2">Pièce aut. sig.</term>; Paris, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="127" xml:id="CAT_000125_e127">
                <num type="lot">127</num>
@@ -1950,7 +1950,7 @@
                   <p>archevêque de Bordeaux, puis de Cambrai, premier aumônier de l'impératrice
                      Joséphine, né en 1738, mort en 1813</p>
                </trait>
-               <desc xml:id="CAT_000125_e199_d1"><term ana="#document_type_7">L. a. s.</term> au général Morgan ; Paris <date date="1804-08-12" type="length">23 thermidor an XII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000125_e199_d1"><term ana="#document_type_7">L. a. s.</term> au général Morgan ; Paris <date when="1804-08-12">23 thermidor an XII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>lui avait envoyées à propos de sa nomination de premier aumônier de
                   l'impératrice</note>
             </item>
@@ -2037,7 +2037,7 @@
                <trait>
                   <p>chef de l'école socialiste qui porte son nom</p>
                </trait>
-               <desc xml:id="CAT_000125_e208_d1"><term ana="#document_type_7">L. a. s.</term> ; <date date="1802-01-30" type="length">10 pluviôse an X</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000125_e208_d1"><term ana="#document_type_7">L. a. s.</term> ; <date when="1802-01-30">10 pluviôse an X</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="209" xml:id="CAT_000125_e209">
                <num type="lot">209</num>
@@ -2065,7 +2065,7 @@
                   <p>général en chef de la Garde nationale pendant la Révolution, né en 1752, mort
                      en 1809</p>
                </trait>
-               <desc xml:id="CAT_000125_e211_d1"><term ana="#document_type_7">L. a. s.</term> à Merlin de Douai; Paris, <date date="1798-04-04" type="length">15 germinal an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000125_e211_d1"><term ana="#document_type_7">L. a. s.</term> à Merlin de Douai; Paris, <date when="1798-04-04">15 germinal an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il donne sa démission d'inspecteur du droit de passe en faveur d'un citoyen
                   Lebas, qui a parfaitement servi au faubourg et à toutes les époques de la
                   Révolution sous ses ordres</note>
@@ -2176,7 +2176,7 @@
                <trait>
                   <p>duc d'Albufera, maréchal de France, né à Lyon en 1770, mort en 1826</p>
                </trait>
-               <desc xml:id="CAT_000125_e223_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf ; Mondovi, <date date="1799-11-09" type="length">18 brumaire an VIII</date>; <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000125_e223_d1"><term ana="#document_type_7">L. a. s.</term> au général Ernouf ; Mondovi, <date when="1799-11-09">18 brumaire an VIII</date>; <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettre historique ou il lui annonce que le général en chef (Championnet) veut
                   ravitailler Coni, mais qu'il est inquiet sur le sort de Gouvion-Saint-Cyr (qui
                   venait de battre Kray à Novi)</note>
@@ -2203,7 +2203,7 @@
                <trait>
                   <p>prince de</p>
                </trait>
-               <desc xml:id="CAT_000125_e226_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Simon, chargé d'affaires près le landgrave de Hesse-Cassel; Paris, <date date="1798-01-06" type="length">17 nivôse an VI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000125_e226_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Simon, chargé d'affaires près le landgrave de Hesse-Cassel; Paris, <date when="1798-01-06">17 nivôse an VI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
                <note>Il lui fait part d'un arrêté du Directoire qui interdit aux agents de la
                   République française de « porter les décorations appartenant à la ci-devant
                   monarchie française.</note>
@@ -2214,7 +2214,7 @@
                <trait>
                   <p>prince de</p>
                </trait>
-               <desc xml:id="CAT_000125_e227_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Bignon, envoyé près de la République Cisalpine ; Paris, <date date="1799-06-22" type="length">4 messidor an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000125_e227_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen Bignon, envoyé près de la République Cisalpine ; Paris, <date when="1799-06-22">4 messidor an VII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettre historique où il annonce que les membres du gouvernement de la
                   République Cisalpine, obligés d'abandonner l'Italie à cause des victoires de
                   Souvarow, seront reçus à Grenoble avec les égards dus à leur rang</note>

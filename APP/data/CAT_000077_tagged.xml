@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -360,7 +360,7 @@
                <trait>
                   <p>maréchal de France, assassiné à Avignon en 1815</p>
                </trait>
-               <desc xml:id="CAT_000077_e16_d1"><term ana="#document_type_7">L. a. s.</term> au général Travot, aux Sables-d'Olonne ; quartier général de Vannes, <date date="1800-03-04" type="length">13 ventôse an VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000077_e16_d1"><term ana="#document_type_7">L. a. s.</term> au général Travot, aux Sables-d'Olonne ; quartier général de Vannes, <date when="1800-03-04">13 ventôse an VIII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Belle lettre écrite comme général en chef de l'armée de l'Ouest. Il lui
                   renouvelle son désir de correspondre directement avec lui et l'invite à lui faire
                   connaître la situation et l'esprit actuel de la Vendée</note>
@@ -1003,7 +1003,7 @@
                <trait>
                   <p>illustre général de la République, né à Strasbourg, assassiné au Caire</p>
                </trait>
-               <desc xml:id="CAT_000077_e76_d1"><term ana="#document_type_9">Let. sig.</term>; quartier général du Caire, <date date="1799-12-02" type="length">11 frim. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000077_e76_d1"><term ana="#document_type_9">Let. sig.</term>; quartier général du Caire, <date when="1799-12-02">11 frim. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Belle lettre écrite comme général en chef de l'armée d'Egypte. Elle est
                   relative aux appointements du citoyen Rozière (célèbre minéralogiste), portés à la
                   somme de 4,000 livres par an. -Au bas se trouve le reçu aut. sig. de
@@ -1516,7 +1516,7 @@
                <trait>
                   <p>empereur des Français.</p>
                </trait>
-               <desc xml:id="CAT_000077_e128_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin Bonaparte, comme premier Consul; Paris, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Cachet; vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000077_e128_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin Bonaparte, comme premier Consul; Paris, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Cachet; vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="129" xml:id="CAT_000077_e129">
                <num type="lot">129</num>

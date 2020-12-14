@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -475,7 +475,7 @@
                      Beauharnais, tante de l'Impératrice Joséphine, qu'elle protégea et qui lui dut
                      en partie sa fortune</p>
                </trait>
-               <desc xml:id="CAT_000117_e25_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Calmelet ; Fontainebleau, <date date="1799-04-21" type="length">2 floréal an VII</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet camée.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000117_e25_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Calmelet ; Fontainebleau, <date when="1799-04-21">2 floréal an VII</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet camée.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuse épître. Elle se plaint d'être mal payée par le citoyen Launoy : « Sy
                   ma nièce Joséphine est ainsy traitée, je la plains infiniment, quoique je n'aye
                   pas ses ressources ; a-t-elle achetté la Malmaison, les uns disent que oui, les
@@ -619,7 +619,7 @@
                   <p>prince de Neufchâtel, maréchal de France, majorgénéral de Napoléon Ier, né à
                      Versailles en 1753, mort en 1815</p>
                </trait>
-               <desc xml:id="CAT_000117_e38_d1"><term ana="#document_type_9">Let. sig.</term> au général Baraguay d'Hilliers; Gênes, <date date="1798-03-15" type="length">25 ventôse an VI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Papier avec sa superbe vignette républicaine de l'armée d'Italie, occupant la 1/2 de la première page.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000117_e38_d1"><term ana="#document_type_9">Let. sig.</term> au général Baraguay d'Hilliers; Gênes, <date when="1798-03-15">25 ventôse an VI</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Papier avec sa superbe vignette républicaine de l'armée d'Italie, occupant la 1/2 de la première page.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettre historique sur les préparatifs de l'expédition d'Egypte. Il lui donne
                   l'ordre de commencer « l'embarquement de l'artillerie et des troupes destinées à
                   l'expédition importante que vous commandez.</note>
@@ -940,7 +940,7 @@
                   <p>l'illustre organisateur des armées de la République, né à Nolay (Côte-d'Or) en
                      1753, mort en 1823</p>
                </trait>
-               <desc xml:id="CAT_000117_e69_d1"><term ana="#document_type_7">L. a. s.</term> à Richard et Choudieu, représentants du peuple près de l'armée du Nord; <date date="1794-02-28" type="length">10 ventose an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Piquée d'humidité.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000117_e69_d1"><term ana="#document_type_7">L. a. s.</term> à Richard et Choudieu, représentants du peuple près de l'armée du Nord; <date when="1794-02-28">10 ventose an II</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Piquée d'humidité.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Très belle lettre où il leur assure qu'il s'occupe de subvenir aux besoins de
                   l'armée du Nord. « Le Comité de salut public a pris un arrêté pour vous faire
                   passer au plus vite 14,000 fusils et un autre pour 150,000 paires de
@@ -1059,7 +1059,7 @@
                <trait>
                   <p>célèbre statuaire, de l'Institut, né en 1763, mort en 1810</p>
                </trait>
-               <desc xml:id="CAT_000117_e80_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; <date date="1804-11-05" type="length">14 brumaire an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000117_e80_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; <date when="1804-11-05">14 brumaire an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Reçu de la somme de 300 livres à valoir sur un buste de l'architecte David
                   Leroy</note>
             </item>
@@ -1093,7 +1093,7 @@
                   <p>célèbre poète et conventionnel, auteur du Chant du Départ, né en 1764, mort en
                      1811</p>
                </trait>
-               <desc xml:id="CAT_000117_e83_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, sig. aussi par 8 autres conventionnels; <date date="1795-07-13" type="length">25 messidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet enlevé.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000117_e83_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, sig. aussi par 8 autres conventionnels; <date when="1795-07-13">25 messidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet enlevé.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Ordre de mise en liberté du citoyen Lhermite, prêtre</note>
             </item>
             <item n="84" xml:id="CAT_000117_e84">
@@ -1640,7 +1640,7 @@
                <trait>
                   <p>archevêque de Lyon, oncle de Napoléon Ier, né en 1763, mort en 1839</p>
                </trait>
-               <desc xml:id="CAT_000117_e137_d1"><term ana="#document_type_8">Let. aut.</term> (minute) à Talleyrand ; (Rome), <date date="1804-07-12" type="length">22 mess, an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000117_e137_d1"><term ana="#document_type_8">Let. aut.</term> (minute) à Talleyrand ; (Rome), <date when="1804-07-12">22 mess, an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>A propos d'un navire anglais capturé par le corsaire français le Bonaparte, il
                   reproche à la Cour de Naples de vouloir « donner tous les secours possibles aux
                   anglais. » Sans la protection qu'il accorde hautement à nos armateurs, « nos
@@ -1726,7 +1726,7 @@
                   <p>le fameux accusateur public près le tribunal révolutionnaire, né à Hérouel
                      (Aisne) en 1747, guillotiné le 8 mai 1795</p>
                </trait>
-               <desc xml:id="CAT_000117_e145_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date date="1794-01-18" type="length">29 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000117_e145_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1794-01-18">29 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Ordre de mise en liberté, comme accusateur public</note>
             </item>
             <item n="146" xml:id="CAT_000117_e146">
@@ -2035,7 +2035,7 @@
                   <p>célèbre général en chef, pacificateur de la Vendée, né à Laon en 1755, mort en
                      1825</p>
                </trait>
-               <desc xml:id="CAT_000117_e176_d1"><term ana="#document_type_7">L. a. s.</term> à l'adjudant-général Ployer; Le Cap, <date date="1798-08-03" type="length">16 thermidor an VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000117_e176_d1"><term ana="#document_type_7">L. a. s.</term> à l'adjudant-général Ployer; Le Cap, <date when="1798-08-03">16 thermidor an VI</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Lettre militaire. Malgré les bonnes intentions du général Toussaint-Louverture,
                   il sera difficile de rétablir l'ordre dans le nord et dans l'ouest de l'île;
                   Ployer devra aider le général Rigaud à chasser les Anglais du département du sud ;
@@ -2603,7 +2603,7 @@
                   <p>prince de la Moskowa, illustre maréchal de l'Empire, né à Sarrelouis en 1769,
                      fusillé le 7 déc. 1815</p>
                </trait>
-               <desc xml:id="CAT_000117_e233_d1"><term ana="#document_type_7">L. a. s.</term> à son secrétaire Vogt, à Malgrange, près Nancy; Paris, <date date="1802-05-10" type="length">20 floréal an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000117_e233_d1"><term ana="#document_type_7">L. a. s.</term> à son secrétaire Vogt, à Malgrange, près Nancy; Paris, <date when="1802-05-10">20 floréal an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="234" xml:id="CAT_000117_e234">
                <num type="lot">234</num>

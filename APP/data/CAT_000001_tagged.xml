@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019-05-15">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -321,7 +321,7 @@
                <trait>
                   <p>célèb. actrice. N. 1744. M. 1803</p>
                </trait>
-               <desc xml:id="CAT_000001_e14_d1"><term ana="#document_type_7">L. aut. sig.</term> au citoyen Bellanger. Paris, <date date="1801-11-06" type="length">15 br. an X</date>. <measure type="length" unit="p" n="3">3 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Elle l'entretient de ses souffrances, de la dureté des temps, qui lui fait
+               <desc xml:id="CAT_000001_e14_d1"><term ana="#document_type_7">L. aut. sig.</term> au citoyen Bellanger. Paris, <date when="1801-11-06">15 br. an X</date>. <measure type="length" unit="p" n="3">3 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Elle l'entretient de ses souffrances, de la dureté des temps, qui lui fait
                   crier misère, du ministre Chaplal et de l'administrateur Cellcrier, desquels elle
                   ne peut tirer le sol « Je veux bien croire que dans le moment ils n'ont pas de
                   l'argent à remuer à la pelle, mais je crois que leurs coeurs sont encore plus secs
@@ -477,7 +477,7 @@
                <trait>
                   <p>littérat. N. 1732. M. 1808.</p>
                </trait>
-               <desc xml:id="CAT_000001_e30_d1"><term ana="#document_type_7">L. aut. sig.</term> au citoyen Président… Paris, <date date="1797-10-08" type="length">17 vendémiaire an vi</date> de la République. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Il lui adresse ses remerciments pour les divers ouvrages dont il a bien voulu
+               <desc xml:id="CAT_000001_e30_d1"><term ana="#document_type_7">L. aut. sig.</term> au citoyen Président… Paris, <date when="1797-10-08">17 vendémiaire an vi</date> de la République. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Il lui adresse ses remerciments pour les divers ouvrages dont il a bien voulu
                   le gratifier, et le prie d'agréer, non comme retour, mais comme un léger
                   témoignage de sa reconnaissance, ses Balaves et son Joseph, etc.</note>
             </item>
@@ -512,14 +512,14 @@
                <trait>
                   <p>N. 1769. M. 1821.</p>
                </trait>
-               <desc xml:id="CAT_000001_e33_d1">1° Sa sig. Buonaparte, comme général en chef de l'armée d'Italie, sur une lettre datée d'Oneille, le <date date="1795-02-13" type="length">25 pluviôse an III</date> ;</desc><desc xml:id="CAT_000001_e33_d2">2° Sa sig. Bonaparte, comme Premier Consul, sur une lettre au ministre de la guerre datée de Paris, le <date date="1800-01-21" type="length">1er pluviôse an VIII</date> ;</desc><desc xml:id="CAT_000001_e33_d3">3° Sa sig. Nap. sur une lettre au général Pajol, datée de Troyes, <date when="1814-02-03">le 3 février 1814</date>. Lettre très-curieuse. Ordre de bataille;</desc><desc xml:id="CAT_000001_e33_d4">4° Apostille de deux lignes aulog. et sig. sur un rapport du ministre Berthier, daté de Smolensk, <date when="1812-11-11">11 novembre 1812</date>;</desc><desc xml:id="CAT_000001_e33_d5">5° Apostille de deux lignes <term ana="#document_type_15">aut. s</term>ur un rapport aulog. du duc de Feltre, datée de Saint Cloud, <date when="1813-04-10">le 10 avril 1813</date></desc></item>
+               <desc xml:id="CAT_000001_e33_d1">1° Sa sig. Buonaparte, comme général en chef de l'armée d'Italie, sur une lettre datée d'Oneille, le <date when="1795-02-13">25 pluviôse an III</date> ;</desc><desc xml:id="CAT_000001_e33_d2">2° Sa sig. Bonaparte, comme Premier Consul, sur une lettre au ministre de la guerre datée de Paris, le <date when="1800-01-21">1er pluviôse an VIII</date> ;</desc><desc xml:id="CAT_000001_e33_d3">3° Sa sig. Nap. sur une lettre au général Pajol, datée de Troyes, <date when="1814-02-03">le 3 février 1814</date>. Lettre très-curieuse. Ordre de bataille;</desc><desc xml:id="CAT_000001_e33_d4">4° Apostille de deux lignes aulog. et sig. sur un rapport du ministre Berthier, daté de Smolensk, <date when="1812-11-11">11 novembre 1812</date>;</desc><desc xml:id="CAT_000001_e33_d5">5° Apostille de deux lignes <term ana="#document_type_15">aut. s</term>ur un rapport aulog. du duc de Feltre, datée de Saint Cloud, <date when="1813-04-10">le 10 avril 1813</date></desc></item>
             <item n="34" xml:id="CAT_000001_e34">
                <num type="lot">34</num>
                <name type="author">BONAPARTE (Létitia)</name>
                <trait>
                   <p>Madame, mère de l'empereur Napoléon. N. 1750. M. 1836.</p>
                </trait>
-               <desc xml:id="CAT_000001_e34_d1">1° <term ana="#document_type_8">L. aut.</term>, sig. à son fils Lucien Bonaparte. Paris, <date date="1801-03-23" type="length">2 germinal an IX</date>, une page <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><note>Elle profite du départ du citoyen .... pour lui donner de ses nouvelles. Elle
+               <desc xml:id="CAT_000001_e34_d1">1° <term ana="#document_type_8">L. aut.</term>, sig. à son fils Lucien Bonaparte. Paris, <date when="1801-03-23">2 germinal an IX</date>, une page <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><note>Elle profite du départ du citoyen .... pour lui donner de ses nouvelles. Elle
                   se porte bien, etpesoupire qu'après le momenldésiré où elle pourra le serrer dans
                   ses bras. Elisa et Charlotte vont à merveille et s'unissent à Louis pour
                   l'embrasser.... Elle finit en l'assurant de sa tendresse maternelle.</note>
@@ -538,7 +538,7 @@
                <trait>
                   <p>Madame, idem</p>
                </trait>
-               <desc xml:id="CAT_000001_e35_d1"><term ana="#document_type_9">L. sig.</term> Bonaparte mère, au citoyen Berthier, ministre de la guerre. Paris, <date date="1803-11-26" type="length">4 frimaire an XII</date>, <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Pressante recommandation en faveur du citoyen Marius Clary, pour lui faire
+               <desc xml:id="CAT_000001_e35_d1"><term ana="#document_type_9">L. sig.</term> Bonaparte mère, au citoyen Berthier, ministre de la guerre. Paris, <date when="1803-11-26">4 frimaire an XII</date>, <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Pressante recommandation en faveur du citoyen Marius Clary, pour lui faire
                   obtenir promptement son brevet d'aide de camp près le général Sébastiani. Elle
                   espère qu'il aura du plaisir à faire une chose qui lui sera agréable</note>
             </item>
@@ -584,7 +584,7 @@
                <trait>
                   <p>ex-roi de Hollande N. 1778</p>
                </trait>
-               <desc xml:id="CAT_000001_e39_d1"><term ana="#document_type_7">L. aut. sig.</term> au maréchal Berthier, ministre de la guerre. Paris, <date date="1802-07-02" type="length">13 messidor an x</date>u. 2 grandes pages <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Recommandation pleine d'intérêt en faveur de M. Lachasse Vérigny, aide de camp
+               <desc xml:id="CAT_000001_e39_d1"><term ana="#document_type_7">L. aut. sig.</term> au maréchal Berthier, ministre de la guerre. Paris, <date when="1802-07-02">13 messidor an x</date>u. 2 grandes pages <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Recommandation pleine d'intérêt en faveur de M. Lachasse Vérigny, aide de camp
                   du général Moreau et ancien officier de l'armée d'Italie, très-connu de
                   l'empereur, etc</note>
             </item>
@@ -761,7 +761,7 @@
                <trait>
                   <p>médecin, philosophe et littérateur. N. 1737. M. 1808</p>
                </trait>
-               <desc xml:id="CAT_000001_e55_d1"><term ana="#document_type_7">L. aut. sig.</term> au citoyen Lucien Bonaparte. Auteuil, <date date="1803-05-07" type="length">17 floréal an xi</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, avec vignette.</desc><note>Il lui envoie pour son discours quelques notes sur Condorcet, et lui garantit
+               <desc xml:id="CAT_000001_e55_d1"><term ana="#document_type_7">L. aut. sig.</term> au citoyen Lucien Bonaparte. Auteuil, <date when="1803-05-07">17 floréal an xi</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, avec vignette.</desc><note>Il lui envoie pour son discours quelques notes sur Condorcet, et lui garantit
                   l'exactitude des faits. Les jugements portés sur les ouvrages de cet homme célèbre
                   lui ont paru raisonnables, etc</note>
             </item>
@@ -908,7 +908,7 @@
                <trait>
                   <p>savant chimiste. N. 1756. M. 1832</p>
                </trait>
-               <desc xml:id="CAT_000001_e70_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre. Paris, <date date="1800-03-29" type="length">8 germinal an VIII</date>. <measure type="length" unit="p" n="2">2 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> avec vignette.</desc><note>Il prie le ministre de venir au secours du jeune Caraffa, dont le père, ancien
+               <desc xml:id="CAT_000001_e70_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre. Paris, <date when="1800-03-29">8 germinal an VIII</date>. <measure type="length" unit="p" n="2">2 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> avec vignette.</desc><note>Il prie le ministre de venir au secours du jeune Caraffa, dont le père, ancien
                   consul à Céphalonie, a été massacré et toutes ses propriétés incendiées. « .... Ce
                   vertueux républicain a sacrifié sa fortune pour alimenter notre garnison pendant
                   le siège de cette place, etc.»</note>
@@ -960,7 +960,7 @@
                <trait>
                   <p>membre de l'Académie française. N. 1769</p>
                </trait>
-               <desc xml:id="CAT_000001_e76_d1"><term ana="#document_type_7">L. aut. sig.</term>, au citoyen Lucien Bonaparte. Paris, <date date="1802-10-12" type="length">20 vendémiaire an XI</date> <measure type="length" unit="p" n="1">1 page</measure> et demie <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>On vient de contrefaire à Avignon le Génie du Christianisme. S'il ne veut être
+               <desc xml:id="CAT_000001_e76_d1"><term ana="#document_type_7">L. aut. sig.</term>, au citoyen Lucien Bonaparte. Paris, <date when="1802-10-12">20 vendémiaire an XI</date> <measure type="length" unit="p" n="1">1 page</measure> et demie <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>On vient de contrefaire à Avignon le Génie du Christianisme. S'il ne veut être
                   ruiné totalement, il faut qu'il parte à l'instant, et dans le plus grand secret,
                   pour faire saisir l'édition. Le prince, ayant bien voulu se déclarer le patron de
                   son ouvrage, il lui demande deux mots de recommandation pour le préfet de
@@ -972,7 +972,7 @@
                <trait>
                   <p>statuaire. N. 1763. M. 1810</p>
                </trait>
-               <desc xml:id="CAT_000001_e77_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre Chaptal. <date date="1803-02-13" type="length">24 pluv. an xi</date>. <measure type="length" unit="p" n="2">2 pag.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><note>Détails curieux et très-circonstanciés relatifs à la statue de la Paix, dont
+               <desc xml:id="CAT_000001_e77_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre Chaptal. <date when="1803-02-13">24 pluv. an xi</date>. <measure type="length" unit="p" n="2">2 pag.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><note>Détails curieux et très-circonstanciés relatifs à la statue de la Paix, dont
                   l'exécution vient de lui être confiée; avec la réponse du ministre Chaptal en tête
                   de la lettre,</note>
             </item>
@@ -982,7 +982,7 @@
                <trait>
                   <p>conventionnel, poëte et littérateur. N. 1764. M. 1811</p>
                </trait>
-               <desc xml:id="CAT_000001_e78_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, en date du <date date="none" type="length">Ier ventôse an vi</date>n. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Il propose à l'administration du département le citoyen Milon, pour remplir la
+               <desc xml:id="CAT_000001_e78_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, en date du <date when="none">Ier ventôse an vi</date>n. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Il propose à l'administration du département le citoyen Milon, pour remplir la
                   chaire de législation, vacante par la nomination du citoyen Lenoir Laroche, aux
                   fonctions de sénateur, etc</note>
             </item>
@@ -1138,7 +1138,7 @@
                <trait>
                   <p>peintre, conventionnel, memb. de l'Institut. N. 1750. M. 1825.</p>
                </trait>
-               <desc xml:id="CAT_000001_e94_d1"><term ana="#document_type_7">L. aut. sig.</term> . au citoyen ministre de l'intérieur. Paris, <date date="1798-06-14" type="length">26 prairial an vi</date> <measure type="length" unit="p" n="2">2 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Ayant été choisi par le ministre pour faire partie du jury pour l'examen des
+               <desc xml:id="CAT_000001_e94_d1"><term ana="#document_type_7">L. aut. sig.</term> . au citoyen ministre de l'intérieur. Paris, <date when="1798-06-14">26 prairial an vi</date> <measure type="length" unit="p" n="2">2 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Ayant été choisi par le ministre pour faire partie du jury pour l'examen des
                   objets destinés à l'exposition, il dit que son opinion, bien connue depuis dix ans
                   pour la liberté absolue qui doit y régner, l'empêche d'accepter celte fonction.
                   Détails à ce sujet.</note>
@@ -1158,7 +1158,7 @@
                <trait>
                   <p>savant astronome, membre de l'Institut. N. 1749. M. 1822</p>
                </trait>
-               <desc xml:id="CAT_000001_e96_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre. Datée d'Évaux, le <date date="1796-12-17" type="length">27 frimaire an 5</date>.</desc><note>Belle lettre toute scientifique sur différentes observations et nouvelles
+               <desc xml:id="CAT_000001_e96_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre. Datée d'Évaux, le <date when="1796-12-17">27 frimaire an 5</date>.</desc><note>Belle lettre toute scientifique sur différentes observations et nouvelles
                   découvertes astronomiques. Curieuse par les détails. 3 pages in-4</note>
             </item>
             <item n="97" xml:id="CAT_000001_e97">
@@ -1187,7 +1187,7 @@
                <trait>
                   <p>auteur des Lettres à Émilie sur la Mythologie. N. 1760. M. 1807.</p>
                </trait>
-               <desc xml:id="CAT_000001_e99_d1">Acte de cession <term ana="#document_type_15">aut. sig.</term>, faite au libraire Maradan de sa comédie intitulée les Femmes, en trois actes et en vers. Paris <date date="1794-09-14" type="length">28 fructidor an II</date>. <measure type="length" unit="p" n="1">1 pag.</measure> in-i</desc></item>
+               <desc xml:id="CAT_000001_e99_d1">Acte de cession <term ana="#document_type_15">aut. sig.</term>, faite au libraire Maradan de sa comédie intitulée les Femmes, en trois actes et en vers. Paris <date when="1794-09-14">28 fructidor an II</date>. <measure type="length" unit="p" n="1">1 pag.</measure> in-i</desc></item>
             <item n="100" xml:id="CAT_000001_e100">
                <num type="lot">100</num>
                <name type="author">DE THOU (Jacques-Auguste)</name>
@@ -1259,7 +1259,7 @@
                <trait>
                   <p>auteur de L'Origine des cultes. N. 1742. M. 1809</p>
                </trait>
-               <desc xml:id="CAT_000001_e107_d1"><term ana="#document_type_7">L. aut. sig.</term>, au citoyen ministre. Paris, <date date="1798-06-30" type="length">12 messidor an VI</date>.</desc><note>Il réclame contre des mesures prises par les agents préposés à la perception
+               <desc xml:id="CAT_000001_e107_d1"><term ana="#document_type_7">L. aut. sig.</term>, au citoyen ministre. Paris, <date when="1798-06-30">12 messidor an VI</date>.</desc><note>Il réclame contre des mesures prises par les agents préposés à la perception
                   des droits de passe à Bourg-Egalité, mesures autant nuisibles aux habitants de ce
                   pays, qu'onéreuses à la république</note>
             </item>
@@ -1427,7 +1427,7 @@
                <trait>
                   <p>duc d'Otrante, conventionnel et minisire de la police. N. 1763. M. 1820</p>
                </trait>
-               <desc xml:id="CAT_000001_e121_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre de la guerre. Paris, <date date="1794-11-26" type="length">6 frimaire an III</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><note>Il indique au ministre la mission qu'il désire remplir dans les Pyrénées
+               <desc xml:id="CAT_000001_e121_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre de la guerre. Paris, <date when="1794-11-26">6 frimaire an III</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc><note>Il indique au ministre la mission qu'il désire remplir dans les Pyrénées
                   occidentales, parce que cette mission le mettrait à portée d'en suivre une autre
                   conforme a ses connaissances, et qui est très-importante à la république,
                   etc</note>
@@ -1550,7 +1550,7 @@
                <trait>
                   <p>. N. 1746. M. 1831</p>
                </trait>
-               <desc xml:id="CAT_000001_e132_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre. <date date="1805-09-05" type="length">18 fructidor an 13</date>. <measure type="length" unit="p" n="2">2 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Sur les difficultés qu'elle éprouve pour avoir un petit jardin attenant à son
+               <desc xml:id="CAT_000001_e132_d1"><term ana="#document_type_7">L. aut. sig.</term>, au ministre. <date when="1805-09-05">18 fructidor an 13</date>. <measure type="length" unit="p" n="2">2 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Sur les difficultés qu'elle éprouve pour avoir un petit jardin attenant à son
                   logement à la Bibliothèque de l'Arsenal. Curieuse lettre</note>
             </item>
             <item n="133" xml:id="CAT_000001_e133">
@@ -1965,7 +1965,7 @@
                <trait>
                   <p>savant naturaliste, membre de l'Académie française. N. 1756. M. 1825</p>
                </trait>
-               <desc xml:id="CAT_000001_e178_d1"><term ana="#document_type_7">L. aut. sig.</term>. au citoyen lJoloniieu. Le <date date="1801-10-15" type="length">23 vendémiaire an 10</date>. <measure type="length" unit="p" n="1">1 page</measure> pleine <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>« Je vous remercie, mon cher ami, de l'attention que vous avez eue de m'écrire
+               <desc xml:id="CAT_000001_e178_d1"><term ana="#document_type_7">L. aut. sig.</term>. au citoyen lJoloniieu. Le <date when="1801-10-15">23 vendémiaire an 10</date>. <measure type="length" unit="p" n="1">1 page</measure> pleine <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>« Je vous remercie, mon cher ami, de l'attention que vous avez eue de m'écrire
                   du sein de vos Etats. Les hautes montagnes vous appartiennent; vous les avez
                   conquises par vos voyages, et vous régnez sur ces monts énormes par le droit le
                   plus respectable, celui du plus habile géologue, etc. »</note>
@@ -2048,7 +2048,7 @@
                <trait>
                   <p>littérateur, membre de l'Académie française. N. 1739. M. 1803</p>
                </trait>
-               <desc xml:id="CAT_000001_e185_d1"><term ana="#document_type_7">L. aut. sig.</term> Corbeil, <date date="1802-06-05" type="length">16 prairial an x</date>. <measure type="length" unit="p" n="1">1 page</measure> pleine petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Son grand âge et ses infirmités rendant ses besoins plus pressants et plus
+               <desc xml:id="CAT_000001_e185_d1"><term ana="#document_type_7">L. aut. sig.</term> Corbeil, <date when="1802-06-05">16 prairial an x</date>. <measure type="length" unit="p" n="1">1 page</measure> pleine petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Son grand âge et ses infirmités rendant ses besoins plus pressants et plus
                   nombreux, il demande qu'on veuille bien lui solder l'arriéré de ce qui lui est dû,
                   etc.</note>
             </item>
@@ -2117,14 +2117,14 @@
                <trait>
                   <p>savant mathématicien, membre de l'Institut. N. 1749. M. 1827</p>
                </trait>
-               <desc xml:id="CAT_000001_e191_d1"><term ana="#document_type_7">L. aut. sig.</term>, au citoyen ministre. Paris, <date date="1798-01-08" type="length">19 nivôse an vi</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> Détails scientifiques et littéraires. Belle lettre</desc></item>
+               <desc xml:id="CAT_000001_e191_d1"><term ana="#document_type_7">L. aut. sig.</term>, au citoyen ministre. Paris, <date when="1798-01-08">19 nivôse an vi</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> Détails scientifiques et littéraires. Belle lettre</desc></item>
             <item n="192" xml:id="CAT_000001_e192">
                <num type="lot">192</num>
                <name type="author">LAR1VE (J. Mauduit de)</name>
                <trait>
                   <p>tçagédien. N. 1749. M. 1816</p>
                </trait>
-               <desc xml:id="CAT_000001_e192_d1"><term ana="#document_type_7">L. aut. sig.</term>, à M. Alavoine. De Paris, le <date date="1798-11-27" type="length">7 frimaire an vii</date>, 1 demi-page <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc></item>
+               <desc xml:id="CAT_000001_e192_d1"><term ana="#document_type_7">L. aut. sig.</term>, à M. Alavoine. De Paris, le <date when="1798-11-27">7 frimaire an vii</date>, 1 demi-page <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc></item>
             <item n="193" xml:id="CAT_000001_e193">
                <num type="lot">193</num>
                <name type="author">LA ROCHEFOUCAULD (François, cardin. de)</name>
@@ -2361,7 +2361,7 @@
                <trait>
                   <p>conventionnel, auteur de Faublas N. 1764. M. 1797</p>
                </trait>
-               <desc xml:id="CAT_000001_e217_d1"><term ana="#document_type_7">L. aut. sig.</term>, aux citoyens collègues… Paris, <date date="1794-10-09" type="length">18 vendémiaire an III</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Il demande la mise en liberté du citoyen Ohé, qui a été arrêté et qui n'est pas
+               <desc xml:id="CAT_000001_e217_d1"><term ana="#document_type_7">L. aut. sig.</term>, aux citoyens collègues… Paris, <date when="1794-10-09">18 vendémiaire an III</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Il demande la mise en liberté du citoyen Ohé, qui a été arrêté et qui n'est pas
                   coupable; il vient d'indiquer à la section de police le vrai coupable, celui qui
                   présidait le 13 vendémiaire</note>
             </item>
@@ -2583,7 +2583,7 @@
                <trait>
                   <p>général en chef de l'armée d'Égypte. N-1750, M. 1810.</p>
                </trait>
-               <desc xml:id="CAT_000001_e241_d1"><term ana="#document_type_7">L. aut. sig.</term> Abd. (Abdallah) J. Menou , au citoyen Berthier, ministre de la guerre. Marseille, <date date="1802-02-27" type="length">8 ventôse an X</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Entièrement rétabli de la maladie qui ne t'a pas quitté depuis son départ
+               <desc xml:id="CAT_000001_e241_d1"><term ana="#document_type_7">L. aut. sig.</term> Abd. (Abdallah) J. Menou , au citoyen Berthier, ministre de la guerre. Marseille, <date when="1802-02-27">8 ventôse an X</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Entièrement rétabli de la maladie qui ne t'a pas quitté depuis son départ
                   d'Egypte, il lui annonce qu'il va se mettre en route pour Paris, et ajoute; «
                   Citoyen ministre, de vils calomniateurs ont voulu jetter de la défaveur sur mon
                   séjour à Marseille, je dois avoir des calomniateurs, et je m'en ho- « nore, car en
@@ -2598,7 +2598,7 @@
                <trait>
                   <p>auteur du Tableau de Paris et conventionnel. N. 1740. M. 1814.</p>
                </trait>
-               <desc xml:id="CAT_000001_e242_d1"><term ana="#document_type_7">L. aut. sig.</term>, aux membres composant le comité civil de la session des Amis de la pairie. <date date="1795-08-30" type="length">13 fructidor an III</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Il les invite à renvoyer le plus tôt possible au comité de sûreté générale les
+               <desc xml:id="CAT_000001_e242_d1"><term ana="#document_type_7">L. aut. sig.</term>, aux membres composant le comité civil de la session des Amis de la pairie. <date when="1795-08-30">13 fructidor an III</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Il les invite à renvoyer le plus tôt possible au comité de sûreté générale les
                   pièces et titres du citoyen Spol, incarcéré. « Le régne de la justice veut « que
                   celui même qui est coupable ne souffre pas des lenteurs de ses juges; et je sais,
                   citoyens, que ces éternelles vérités sont gravées dans vos coeurs.</note>
@@ -2748,7 +2748,7 @@
                <trait>
                   <p>Française et auleur dramatique. N. 1745. M. 1811</p>
                </trait>
-               <desc xml:id="CAT_000001_e258_d1"><term ana="#document_type_7">L. aut. sig.</term>. au citoyen Champein. Paris, <date date="1799-10-25" type="length">3 brumaire an VIII</date> <measure type="length" unit="p" n="2">2 pages</measure> et demie <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><note>« Je te remercie, mon ami, de ce que lu as fait pour Hombert. C'est bien peu de
+               <desc xml:id="CAT_000001_e258_d1"><term ana="#document_type_7">L. aut. sig.</term>. au citoyen Champein. Paris, <date when="1799-10-25">3 brumaire an VIII</date> <measure type="length" unit="p" n="2">2 pages</measure> et demie <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><note>« Je te remercie, mon ami, de ce que lu as fait pour Hombert. C'est bien peu de
                   chose, mais enfin cela me prouve (pie tu n'as pas entièrement rejetté mes prières,
                   et i'aime à croire que si tu as donné peu, c'est que tu ne pouvais accorder
                   davantage, etc.</note>
@@ -2766,7 +2766,7 @@
                <trait>
                   <p>général de la République. N 1763. Tué à Dresde en 1813</p>
                </trait>
-               <desc xml:id="CAT_000001_e260_d1"><term ana="#document_type_7">L. aut. sig.</term>, au général Dejean. Du quartier-général de l'Orient, le <date date="1795-08-25" type="length">8 fructidor an III</date> de la Répub. 1 grande page <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>; avec vignette. Détails militaires, style républicain</desc></item>
+               <desc xml:id="CAT_000001_e260_d1"><term ana="#document_type_7">L. aut. sig.</term>, au général Dejean. Du quartier-général de l'Orient, le <date when="1795-08-25">8 fructidor an III</date> de la Répub. 1 grande page <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>; avec vignette. Détails militaires, style républicain</desc></item>
             <item n="261" xml:id="CAT_000001_e261">
                <num type="lot">261</num>
                <name type="author">MORGHEN (Raphaël)</name>
@@ -2915,7 +2915,7 @@
                <trait>
                   <p>conventionnel. N. 1737. M. 1809</p>
                </trait>
-               <desc xml:id="CAT_000001_e275_d1"><term ana="#document_type_7">L. aut. sig.</term> (en anglais), au citoyen Lebrun. <date date="1794-09-25" type="length">4 vendémiaire an III</date>. <measure type="length" unit="p" n="2">2 pages</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Entièrement relative à la politique. D'après ce que la Convention a décrété,
+               <desc xml:id="CAT_000001_e275_d1"><term ana="#document_type_7">L. aut. sig.</term> (en anglais), au citoyen Lebrun. <date when="1794-09-25">4 vendémiaire an III</date>. <measure type="length" unit="p" n="2">2 pages</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Entièrement relative à la politique. D'après ce que la Convention a décrété,
                   sur la proposition de Danton, de ne plus prendre part aux affaires des
                   gouvernements étrangers, il commence à perdre toute l'espérance qu'il avait conçue
                   en faveur du peuple d'Irlande</note>
@@ -2956,7 +2956,7 @@
                <trait>
                   <p>poëte érotique. N. 1753. M. 1814</p>
                </trait>
-               <desc xml:id="CAT_000001_e280_d1"><term ana="#document_type_7">L. aut. sig.</term>, au comité de salut public. Clichy, <date date="1794-05-05" type="length">16 floréal an II</date> de la République. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>« Je me trouve frappé par la loi sur les ex-nobles. Je suis homme de lettres;
+               <desc xml:id="CAT_000001_e280_d1"><term ana="#document_type_7">L. aut. sig.</term>, au comité de salut public. Clichy, <date when="1794-05-05">16 floréal an II</date> de la République. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>« Je me trouve frappé par la loi sur les ex-nobles. Je suis homme de lettres;
                   mes ouvrages ont eu du succès, et, quoique d'un genre léger, ils sont ceux d'un
                   homme libre ... Loin de flatter la tyrannie pour en obtenir « des moyens de
                   fortune et d'avancement, j'ai dit dans une épltreaux insurgeants: « Sans papes.
@@ -3238,7 +3238,7 @@
                <trait>
                   <p>N. 1696. M. 1788</p>
                </trait>
-               <desc xml:id="CAT_000001_e305_d1"><term ana="#document_type_7">L. aut. sig.</term>, <date when="2020-10-22">à M… 1736</date>. <measure type="length" unit="p" n="4">4 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Curieuse lettre, au sujet des poursuites exercées contre lui par ses
+               <desc xml:id="CAT_000001_e305_d1"><term ana="#document_type_7">L. aut. sig.</term>, <date when="2020-12-14">à M… 1736</date>. <measure type="length" unit="p" n="4">4 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Curieuse lettre, au sujet des poursuites exercées contre lui par ses
                   créanciers; et surtout par une mégère infernale qui le persécute et a mis le
                   bouleversement dans ses affaires, et qui, tenant depuis six mois tout son bien, a
                   encore été sonner le tocsin parmi ses autres créanciers, qui veulent aussi le
@@ -3847,7 +3847,7 @@
                <trait>
                   <p>savant littérateur, membre de l'Académie française. N. 1757. M. 1820</p>
                </trait>
-               <desc xml:id="CAT_000001_e371_d1"><term ana="#document_type_7">L. aut. sig.</term> au général Samson, directeur du dépôt de la guerre. Paris, <date date="1802-12-21" type="length">30 frimaire an xi</date>. <measure type="length" unit="p" n="2">2 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Belle lettre relatives la traduction des noms arabes de la carie d'Égypte en
+               <desc xml:id="CAT_000001_e371_d1"><term ana="#document_type_7">L. aut. sig.</term> au général Samson, directeur du dépôt de la guerre. Paris, <date when="1802-12-21">30 frimaire an xi</date>. <measure type="length" unit="p" n="2">2 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Belle lettre relatives la traduction des noms arabes de la carie d'Égypte en
                   caractères européens</note>
             </item>
             <item n="372" xml:id="CAT_000001_e372">

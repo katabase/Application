@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -330,7 +330,7 @@
                   <p>général et écrivain distingué, grand-trésorier de la Légion d'honneur, né à
                      Castelnaudary (Aude) en 1749, mort en 1824</p>
                </trait>
-               <desc xml:id="CAT_000132_e15_d1"><term ana="#document_type_7">L. a. s.</term> ; an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000132_e15_d1"><term ana="#document_type_7">L. a. s.</term> ; an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="16" xml:id="CAT_000132_e16">
                <num type="lot">16</num>
@@ -650,7 +650,7 @@
                <trait>
                   <p>le célèbre généra de la République</p>
                </trait>
-               <desc xml:id="CAT_000132_e50_d1"><term ana="#document_type_9">Let. sig.</term>, au général Vandamme, <date date="1797-08-19" type="length">2 fructidor an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000132_e50_d1"><term ana="#document_type_9">Let. sig.</term>, au général Vandamme, <date when="1797-08-19">2 fructidor an V</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="51" xml:id="CAT_000132_e51">
                <num type="lot">51</num>
@@ -773,7 +773,7 @@
                   <p>célèbre amiral français, gouverneur de la Guadeloupe, né à Brest en 1761, mort
                      en 1848</p>
                </trait>
-               <desc xml:id="CAT_000132_e59_d1"><term ana="#document_type_7">L. a. s.</term> à M. Guignace; Paris, <date date="1802-09-06" type="length">19 fructidor an X</date>, 2 p.1/2 <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000132_e59_d1"><term ana="#document_type_7">L. a. s.</term> à M. Guignace; Paris, <date when="1802-09-06">19 fructidor an X</date>, 2 p.1/2 <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="60" xml:id="CAT_000132_e60">
                <num type="lot">60</num>
@@ -1051,7 +1051,7 @@
                   <p>avocat célèbre du XVIIIe siècle, qui refusa de défendre Louis XVI, le principal
                      auteur de la Constitution de 1791, de l'Acad. fr., né en 1733, mort en 1806</p>
                </trait>
-               <desc xml:id="CAT_000132_e86_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Paris, <date date="1799-05-05" type="length">16 floréal an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fo</measure>i.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000132_e86_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Paris, <date when="1799-05-05">16 floréal an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fo</measure>i.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Curieuse pièce relative à Mme de Sabran (Marie-Antoinette Coste Champeron,
                   femme du comte Elzéar de Sabran, l'écrivain). Consultation sur les droits qu'ont
                   le citoyen et la citoyenne Casteras, de Toulouse, sur la donation de 50,000 fr.
@@ -1410,7 +1410,7 @@
             <item n="146" xml:id="CAT_000132_e146">
                <num type="lot">146</num>
                <name type="author">Gossec (Fr.-Jos.)</name>
-               <desc xml:id="CAT_000132_e146_d1"><term ana="#document_type_4">Pièce sig</term>. ; an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000132_e146_d1"><term ana="#document_type_4">Pièce sig</term>. ; an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Tête impr.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="147" xml:id="CAT_000132_e147">
                <num type="lot">147</num>

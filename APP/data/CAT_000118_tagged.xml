@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -403,7 +403,7 @@
                   <p>maréchal de l'Empire, puis roi de Suède sous le nom de Charles-Jean XIV, né à
                      Pau en 1764, mort en 1844</p>
                </trait>
-               <desc xml:id="CAT_000118_e22_d1"><term ana="#document_type_9">Let. sig.</term> à Berthier; Rennes, <date date="1801-09-28" type="length">6 vendémiaire an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000118_e22_d1"><term ana="#document_type_9">Let. sig.</term> à Berthier; Rennes, <date when="1801-09-28">6 vendémiaire an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="23" xml:id="CAT_000118_e23">
                <num type="lot">23</num>
@@ -438,7 +438,7 @@
                <trait>
                   <p>prince de Ganino, frère de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000118_e26_d1"><term ana="#document_type_9">Let. sig.</term> au général Degrave; Paris, <date date="1803-01-24" type="length">4 pluviôse an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000118_e26_d1"><term ana="#document_type_9">Let. sig.</term> au général Degrave; Paris, <date when="1803-01-24">4 pluviôse an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="27" xml:id="CAT_000118_e27">
                <num type="lot">27</num>
@@ -559,7 +559,7 @@
                   <p>l'illustre organisateur de nos armées, né à Nolay (Côte-d'Or) en 1753, mort en
                      1823</p>
                </trait>
-               <desc xml:id="CAT_000118_e39_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, <date date="1800-07-06" type="length">17 messidor an VIII</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000118_e39_d1"><term ana="#document_type_2">Pièce aut. sig.</term>, <date when="1800-07-06">17 messidor an VIII</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Relative à un épisode du blocus de Gênes</note>
             </item>
             <item n="40" xml:id="CAT_000118_e40">
@@ -905,7 +905,7 @@
                   <p>duc de Frioul, grand maréchal du palais de Napoléon Ier, né à Pont-à-Mousson,
                      tué par un boulet en 1813</p>
                </trait>
-               <desc xml:id="CAT_000118_e79_d1"><term ana="#document_type_7">L. a. s.</term> à Paésiello, <date date="1802-06-10" type="length">21 prairial an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000118_e79_d1"><term ana="#document_type_7">L. a. s.</term> à Paésiello, <date when="1802-06-10">21 prairial an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Curieuse lettre. Il lui donne, au nom du premier consul, la direction des
                   musiciens du Conservatoire, et le charge de composer une marche pour la fête du 14
                   juillet. Le premier consul désire qu'elle soit sur une mesure accélérée, double de
@@ -1292,7 +1292,7 @@
                   <p>illustre général de la République, né à Strasbourg en 1753, assassiné au Caire
                      en 1800</p>
                </trait>
-               <desc xml:id="CAT_000118_e122_d1"><term ana="#document_type_4">Pièce sig</term>. avec 1 lig. aut., <date date="1794-06-10" type="length">22 prairial an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000118_e122_d1"><term ana="#document_type_4">Pièce sig</term>. avec 1 lig. aut., <date when="1794-06-10">22 prairial an II</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="123" xml:id="CAT_000118_e123">
                <num type="lot">123</num>
@@ -1316,7 +1316,7 @@
                <trait>
                   <p>illustre naturaliste et homme d'Etat, de l'Acad. fr., né à Agen</p>
                </trait>
-               <desc xml:id="CAT_000118_e125_d1"><term ana="#document_type_7">L. a. s.</term>, <date date="1803-01-07" type="length">17 nivôse an XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000118_e125_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1803-01-07">17 nivôse an XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="126" xml:id="CAT_000118_e126">
                <num type="lot">126</num>
@@ -1357,7 +1357,7 @@
                <trait>
                   <p>savant naturaliste, de l'Institut, né à Brive en 1762, mort en 1833</p>
                </trait>
-               <desc xml:id="CAT_000118_e130_d1"><term ana="#document_type_7">L. a. s.</term>. <date date="1801-11-17" type="length">26 brumaire an X</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000118_e130_d1"><term ana="#document_type_7">L. a. s.</term>. <date when="1801-11-17">26 brumaire an X</date>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="131" xml:id="CAT_000118_e131">
                <num type="lot">131</num>
@@ -1913,7 +1913,7 @@
                   <p>général et aventurier, brave officier, mais esprit dans des trahisons
                      successives, né dans le Lot-et-Garonne en 1770, mort vers 1840</p>
                </trait>
-               <desc xml:id="CAT_000118_e191_d1">P. <term ana="#document_type_15">a. s.</term>; quartier-général à Savenay, <date date="1793-12-25" type="length">5 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000118_e191_d1">P. <term ana="#document_type_15">a. s.</term>; quartier-général à Savenay, <date when="1793-12-25">5 nivôse an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Ordre au maréchal des logis Durand de partir sur le champ pour Nantes, afin de
                   préparer le logement du général en chef et de son état-major</note>
             </item>
@@ -2098,7 +2098,7 @@
                <trait>
                   <p>célèbre peintre, né à Metz en 1769, mort en 1823</p>
                </trait>
-               <desc xml:id="CAT_000118_e210_d1"><term ana="#document_type_7">L. a. s.</term> au président de la Société des amis des Arts; Paris, <date date="1798-12-02" type="length">12 frimaire an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000118_e210_d1"><term ana="#document_type_7">L. a. s.</term> au président de la Société des amis des Arts; Paris, <date when="1798-12-02">12 frimaire an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Relative à son désir d'être admis au nombre des membres de la Société</note>
             </item>
             <item n="211" xml:id="CAT_000118_e211">
@@ -2586,7 +2586,7 @@
                   <p>célèbre homme d'Etat et publiciste, ministre de la guerre et des affaires
                      étrangères, né à Noyon (Oise) en 1763, guillotiné le 27 décembre 1793</p>
                </trait>
-               <desc xml:id="CAT_000118_e256_d1">1° Pièce originale; Paris, 15 ventôse-<date date="1798-04-14" type="length">25 germinal an VI</date>, <measure type="length" unit="p" n="44">44 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Acte de vente des meubles et des livres de Lebrun Tondu par sa veuve Mari Jeanne Cherêt et son second mari Jean Champagne, (humaniste, né à Semur).-L'inventaire des livres est curieux au point de vue bibliographique.</desc><desc xml:id="CAT_000118_e256_d2">2° Catalogue méthodique manuscrit des livres du cabinet de feu le citoyen Lebrun, disposé par ordre de matières, par Guil. Debure aîné, <date when="1798">1798</date>, <measure type="length" unit="p" n="49">49 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000118_e256_d1">1° Pièce originale; Paris, 15 ventôse-<date when="1798-04-14">25 germinal an VI</date>, <measure type="length" unit="p" n="44">44 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Acte de vente des meubles et des livres de Lebrun Tondu par sa veuve Mari Jeanne Cherêt et son second mari Jean Champagne, (humaniste, né à Semur).-L'inventaire des livres est curieux au point de vue bibliographique.</desc><desc xml:id="CAT_000118_e256_d2">2° Catalogue méthodique manuscrit des livres du cabinet de feu le citoyen Lebrun, disposé par ordre de matières, par Guil. Debure aîné, <date when="1798">1798</date>, <measure type="length" unit="p" n="49">49 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Très-curieux catalogue contenant les prix d'estimations. La Bibliothèque se
                   composait de 2,372 volumes; évalués 23,647 livres 10 sous</note>
             </item>

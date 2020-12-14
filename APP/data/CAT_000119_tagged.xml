@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -567,7 +567,7 @@
                <trait>
                   <p>prince de Canino, frère de Napoléon Ier, né en 1775, mort en 1840</p>
                </trait>
-               <desc xml:id="CAT_000119_e35_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, <date date="1800-04-18" type="length">28 germinal an VIII</date>, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000119_e35_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, <date when="1800-04-18">28 germinal an VIII</date>, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="36" xml:id="CAT_000119_e36">
                <num type="lot">36</num>
@@ -648,7 +648,7 @@
                   <p>médecin, ami de Mirabeau, chef des Idéologues sous Napoléon Ier, de l'Acad.
                      fr., né à Cosnac (Corrèze) en 1757, mort en 1808</p>
                </trait>
-               <desc xml:id="CAT_000119_e43_d1"><term ana="#document_type_7">L. a. s.</term> à Frochot; Paris, <date date="1803-01-21" type="length">1er pluviose an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000119_e43_d1"><term ana="#document_type_7">L. a. s.</term> à Frochot; Paris, <date when="1803-01-21">1er pluviose an XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="44" xml:id="CAT_000119_e44">
                <num type="lot">44</num>
@@ -988,7 +988,7 @@
                   <p>savant astronome, de l'Acad. des Sciences, né à Amiens en 1749, mort en
                      1822</p>
                </trait>
-               <desc xml:id="CAT_000119_e74_d1"><term ana="#document_type_7">L. a. s.</term> (à Chaptal) ; Paris <date date="1801-01-20" type="length">30 nivôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000119_e74_d1"><term ana="#document_type_7">L. a. s.</term> (à Chaptal) ; Paris <date when="1801-01-20">30 nivôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Très-belle lettre relative aux instruments d'astronomie pour l'Egypte. « On
                   peut avoir sans délai des lunettes à choisir: j'ai déjà eu l'honneur de vous
                   mander que la pendule, le compteur et les deux montres marines sont trouvés; que
@@ -1316,7 +1316,7 @@
                <trait>
                   <p>duc d'Otrante, fameux conventionnel et ministre de la police</p>
                </trait>
-               <desc xml:id="CAT_000119_e105_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, <date date="none" type="length">9 fructior, an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000119_e105_d1"><term ana="#document_type_9">Let. sig.</term>; Paris, <date when="none">9 fructior, an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="106" xml:id="CAT_000119_e106">
                <num type="lot">106</num>
@@ -2112,7 +2112,7 @@
                      des oeuvres des écrivains du XVIIIe siècle, né à Dijon en 1740, mort près de
                      Melun en 1808</p>
                </trait>
-               <desc xml:id="CAT_000119_e180_d1"><term ana="#document_type_7">L. a. s.</term> à M. Gondoin, aux Vives-Eaux, près de Dammarie; Beaulieu, <date date="1801-01-14" type="length">24 nivôse an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très-rare .</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000119_e180_d1"><term ana="#document_type_7">L. a. s.</term> à M. Gondoin, aux Vives-Eaux, près de Dammarie; Beaulieu, <date when="1801-01-14">24 nivôse an IX</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très-rare .</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
                <note>Belle lettre écrite comme juge de paix du canton de Boissise-la-Bertrand, près
                   de Melun</note>
             </item>
@@ -2632,7 +2632,7 @@
                   <p>conventionnel, né à Mâcon en 1753, un des trois plénipotentiaires assassinés à
                      Rastadt en 1799</p>
                </trait>
-               <desc xml:id="CAT_000119_e231_d1"><term ana="#document_type_7">L. a. s.</term> à sa belle-soeur; Paris, <date date="1796-09-03" type="length">17 fructidor an IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000119_e231_d1"><term ana="#document_type_7">L. a. s.</term> à sa belle-soeur; Paris, <date when="1796-09-03">17 fructidor an IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
                <note>Très-curieuse lettre politique. « Vous avez bien raison de dire que le
                   patriotisme est plus grand à Bruxelles qu'à Paris; on voit toujours ici nombre
                   d'étrangers qui sont intéressés à décrier la Révolution; le temps et un

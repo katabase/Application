@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -313,7 +313,7 @@
                <trait>
                   <p>1er consul</p>
                </trait>
-               <desc xml:id="CAT_000032_e12_d1"><term ana="#document_type_10">Brevet sig.</term>, sur vélin, an <date date="1802-1803" type="length">XI</date>, <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, sceau, vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000032_e12_d1"><term ana="#document_type_10">Brevet sig.</term>, sur vélin, an <date when="1802-1803">XI</date>, <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, sceau, vignette de Roger.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="13" xml:id="CAT_000032_e13">
                <num type="lot">13</num>
@@ -321,7 +321,7 @@
                <trait>
                   <p>roi d'Espagne</p>
                </trait>
-               <desc xml:id="CAT_000032_e13_d1"><term ana="#document_type_4">Pièce sig</term>., an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000032_e13_d1"><term ana="#document_type_4">Pièce sig</term>., an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Reçu de 670 fr. pour un mois d'indemnité comme membre du Conseil des
                   Cinq-Cents</note>
             </item>
@@ -376,7 +376,7 @@
                <trait>
                   <p>2e consul de la République</p>
                </trait>
-               <desc xml:id="CAT_000032_e18_d1"><term ana="#document_type_4">Pièce sig</term>. avec <date date="none" type="length">2 lig. aut., an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare comme autographe.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000032_e18_d1"><term ana="#document_type_4">Pièce sig</term>. avec <date when="none">2 lig. aut., an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare comme autographe.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Reçu de 16,666 fr. 66 c pour ses frais de maison comme deuxième consul</note>
             </item>
             <item n="19" xml:id="CAT_000032_e19">
@@ -398,7 +398,7 @@
                   <p>lectrice de Marie-Antoinette, auteur de Mémoires sur cette princesse,
                      directrice de la maison d'Ecouen</p>
                </trait>
-               <desc xml:id="CAT_000032_e20_d1"><term ana="#document_type_7">L. a. s.</term> à Jos. Bonaparte; Ecouen, <date date="1799-01-20" type="length">1er pluv. an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000032_e20_d1"><term ana="#document_type_7">L. a. s.</term> à Jos. Bonaparte; Ecouen, <date when="1799-01-20">1er pluv. an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Très-curieuse épître sur la famille Napoléon. Elle lui fait présenter, par la
                   citoyenne Le Comte (femme de charge de Bernadette), la quittance du quartier de la
                   pension de Caroline Bonaparte, montant à 300 fr. Caroline est bien aimable, mais
@@ -537,7 +537,7 @@
                <trait>
                   <p>célèbre conventionnel</p>
                </trait>
-               <desc xml:id="CAT_000032_e34_d1"><term ana="#document_type_9">L. s.</term> de lui, de Cambacérès, Carnot, Boissy-d'Anglas, etc., an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000032_e34_d1"><term ana="#document_type_9">L. s.</term> de lui, de Cambacérès, Carnot, Boissy-d'Anglas, etc., an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="35" xml:id="CAT_000032_e35">
                <num type="lot">35</num>
@@ -600,7 +600,7 @@
                <trait>
                   <p>illustre poète et patriote italien</p>
                </trait>
-               <desc xml:id="CAT_000032_e42_d1">1° Critique du Falso officioso, comédie de Marchiso, <measure type="length" unit="p" n="2">2 p.</measure> autog.-2° Quit-tance sig. comme directeur du Monitore italiano, an <date date="1802-1803" type="length">XI</date>, 1 p. <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000032_e42_d1">1° Critique du Falso officioso, comédie de Marchiso, <measure type="length" unit="p" n="2">2 p.</measure> autog.-2° Quit-tance sig. comme directeur du Monitore italiano, an <date when="1802-1803">XI</date>, 1 p. <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="43" xml:id="CAT_000032_e43">
                <num type="lot">43</num>
@@ -762,7 +762,7 @@
                <trait>
                   <p>illustre naturaliste et homme d'Etat, de l'Acad. fr., né à Agen</p>
                </trait>
-               <desc xml:id="CAT_000032_e60_d1"><term ana="#document_type_7">L. a. s.</term> à Joseph Bonaparte, an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000032_e60_d1"><term ana="#document_type_7">L. a. s.</term> à Joseph Bonaparte, an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Lettre écrite, comme grand-chancelier de la Légion d'honneur, sur les
                   décorations accordées aux officiers du régiment de Joseph</note>
             </item>
@@ -1258,7 +1258,7 @@
                <trait>
                   <p>célèbre membre de la Convention</p>
                </trait>
-               <desc xml:id="CAT_000032_e111_d1"><term ana="#document_type_9">L. sig.</term> de lui et des autres membres du Comité de salut public, Billaud-Varennes, Collot-d'Herbois et Carnot, au représentant André Dumont, <date date="1793-12-24" type="length">4 niv. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000032_e111_d1"><term ana="#document_type_9">L. sig.</term> de lui et des autres membres du Comité de salut public, Billaud-Varennes, Collot-d'Herbois et Carnot, au représentant André Dumont, <date when="1793-12-24">4 niv. an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
                <note>Iis lui mandent qu'il est important, pour le salut de la patrie, de répandre,
                   par tous les moyens possibles, la Réponse au Munifeste des turans ligués contre la
                   République et le Rapport du Comité de Salut public sur la situation politique du
@@ -1452,7 +1452,7 @@
                   <p>une des plus célèbres cantatrices de l'Opera-Comique, connue au théâtre sous le
                      nom de Mademoiselle Crécy, épouse du précédent</p>
                </trait>
-               <desc xml:id="CAT_000032_e132_d1"><term ana="#document_type_4">Pièce sig</term>., avec le mot pour mon mari, aut., an <date date="1793-1794" type="length">2</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000032_e132_d1"><term ana="#document_type_4">Pièce sig</term>., avec le mot pour mon mari, aut., an <date when="1793-1794">2</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Reçu de 363 livres pour les représentations de l'Opéra de Lisia, musique de son
                   mari</note>
             </item>

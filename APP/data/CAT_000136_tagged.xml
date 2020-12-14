@@ -63,7 +63,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -427,7 +427,7 @@
                   <p>savant bibliographe, bibliothécaire de Napoléon Ier, auteur du Dictionnaire des
                      Anonymes, né à Coulommiers en 1765, mort en 1825</p>
                </trait>
-               <desc xml:id="CAT_000136_e22_d1"><term ana="#document_type_7">L. a. s.</term> (au père Adry, de l'Oratoire); <date date="1801-12-24" type="length">3 nivôse an X</date>. 2p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante lettre littéraire.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000136_e22_d1"><term ana="#document_type_7">L. a. s.</term> (au père Adry, de l'Oratoire); <date when="1801-12-24">3 nivôse an X</date>. 2p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante lettre littéraire.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="23" xml:id="CAT_000136_e23">
                <num type="lot">23</num>
@@ -964,7 +964,7 @@
                   <p>célébre homme d'Etat, deuxième consul de la République, archi-chancelier de
                      l'empire, né à Montpellier en 1753, mort en 1824</p>
                </trait>
-               <desc xml:id="CAT_000136_e78_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Locré ; <date date="1796-03-09" type="length">19 ventôse an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000136_e78_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Locré ; <date when="1796-03-09">19 ventôse an IV</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="79" xml:id="CAT_000136_e79">
                <num type="lot">79</num>
@@ -1144,7 +1144,7 @@
                   <p>dominicain, général de son ordre pendant quarante ans ami de Saint-Simon qui en
                      parle souvent dans ses Mémoires, mort en 1720</p>
                </trait>
-               <desc xml:id="CAT_000136_e96_d1">1° <term ana="#document_type_7">L. a. s.</term>; Rome, <date when="1679-10-13">13 1679</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000136_e96_d2">2° <term ana="#document_type_4">Pièce sig</term>.; <date when="1708">Rome 4 octobre 1708</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> cachet.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000136_e96_d1">1° <term ana="#document_type_7">L. a. s.</term>; Rome, <date when="1679-12-13">13 1679</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000136_e96_d2">2° <term ana="#document_type_4">Pièce sig</term>.; <date when="1708">Rome 4 octobre 1708</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> cachet.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Brevet associant Vicenzo Lini à toutes les prières de l'ordre de saint
                   Dominique. Très curieuse pièce imprimée avec encadrement repi ésentant les plus
                   grands personnages de l'ordre, des scènes de martyre, etc</note>
@@ -1486,7 +1486,7 @@
                   <p>littérateur et administrateur français, premier commis de Turgot, de l'Acad.
                      fr., mort en 1803</p>
                </trait>
-               <desc xml:id="CAT_000136_e126_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date date="1795-08-26" type="length">9 fructidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000136_e126_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1795-08-26">9 fructidor an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="127" xml:id="CAT_000136_e127">
                <num type="lot">127</num>
@@ -2121,7 +2121,7 @@
                   <p>fille du duc d'Ayen, épouse du général Lafayette, femme célèbre par son
                      dévouement à son mari</p>
                </trait>
-               <desc xml:id="CAT_000136_e188_d1"><term ana="#document_type_7">L. a. s.</term> au banquier Perregaux; <date date="1803-09-17" type="length">30 fructidor an XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000136_e188_d1"><term ana="#document_type_7">L. a. s.</term> au banquier Perregaux; <date when="1803-09-17">30 fructidor an XI</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="189" xml:id="CAT_000136_e189">
                <num type="lot">189</num>

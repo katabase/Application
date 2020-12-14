@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -622,7 +622,7 @@
                <trait>
                   <p>roi d'Espagne</p>
                </trait>
-               <desc xml:id="CAT_000061_e46_d1"><term ana="#document_type_8">Let. aut.</term> à un de ses frères; Milan, <date date="1797-07-05" type="length">17 messidor an V</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Morsures de souris dans un angle atteignant légèrement le texte.</desc><measure commodity="currency" unit="FRF" quantity="17">17</measure>
+               <desc xml:id="CAT_000061_e46_d1"><term ana="#document_type_8">Let. aut.</term> à un de ses frères; Milan, <date when="1797-07-05">17 messidor an V</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Morsures de souris dans un angle atteignant légèrement le texte.</desc><measure commodity="currency" unit="FRF" quantity="17">17</measure>
                <note>Très-curieuse lettre relative à une maison, située en Corse, que sa mère devait
                   venir habiter. Lui et Napoléone ne peuvent pas dépenser davantage pour cette
                   maison; on devra suspendre les travaux et sa mère ira habiter dans la maison
@@ -955,7 +955,7 @@
                <trait>
                   <p>une des femmes les plus célèbres du XVIIIe siècle, amie de J.-J. Rousseau</p>
                </trait>
-               <desc xml:id="CAT_000061_e82_d1"><term ana="#document_type_9">Let. sig.</term>, <date date="none" type="length">27 ventôse, an X</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000061_e82_d1"><term ana="#document_type_9">Let. sig.</term>, <date when="none">27 ventôse, an X</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="83" xml:id="CAT_000061_e83">
                <num type="lot">83</num>

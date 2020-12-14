@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -472,7 +472,7 @@
             <item n="24" xml:id="CAT_000055_e24">
                <num type="lot">24</num>
                <name type="author">Reynier (J)</name>
-               <desc xml:id="CAT_000055_e24_d1">L.-L.), un des généraux les plus distingués de l'armée d'Egypte, disgracié par Bonaparte comme ami de Moreau.-<term ana="#document_type_2">Pièce aut. sig.</term>; Le Caire, <date date="1800-08-25" type="length">7 fruct. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e24_d1">L.-L.), un des généraux les plus distingués de l'armée d'Egypte, disgracié par Bonaparte comme ami de Moreau.-<term ana="#document_type_2">Pièce aut. sig.</term>; Le Caire, <date when="1800-08-25">7 fruct. an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="25" xml:id="CAT_000055_e25">
                <num type="lot">25</num>
@@ -520,7 +520,7 @@
                <trait>
                   <p>le célèbre conventionnel</p>
                </trait>
-               <desc xml:id="CAT_000055_e30_d1"><term ana="#document_type_9">Let. sig.</term> au commissaire des administrations, police et tribunaux; <date date="1794-06-24" type="length">6 mess, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000055_e30_d1"><term ana="#document_type_9">Let. sig.</term> au commissaire des administrations, police et tribunaux; <date when="1794-06-24">6 mess, an II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Cette lettre, signée également par Barère, est relative à une dénonciation
                   contre l'administration du district de Serre (Hautes-Alpes)</note>
             </item>
@@ -666,7 +666,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000055_e46_d1">Reçu signé des deux premiers volumes des Harmonies de la Nature, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="1">1</measure>
+               <desc xml:id="CAT_000055_e46_d1">Reçu signé des deux premiers volumes des Harmonies de la Nature, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="1">1</measure>
             </item>
             <item n="47" xml:id="CAT_000055_e47">
                <num type="lot">47</num>
@@ -937,7 +937,7 @@
                   <p>brave général de la République et de l'Empire, un des pacificateurs de la
                      Vendée, condamné à mort en 1816</p>
                </trait>
-               <desc xml:id="CAT_000055_e77_d1"><term ana="#document_type_7">L. a. s.</term> à l'administration de la Loire-Inférieure; Machecoul, <date date="1799-10-21" type="length">29 vend, an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000055_e77_d1"><term ana="#document_type_7">L. a. s.</term> à l'administration de la Loire-Inférieure; Machecoul, <date when="1799-10-21">29 vend, an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>La crainte d'un débarquement l'empêche de fournir les secours que le
                   département lui demande. Tous les patriotes ont évacué depuis deux jours, et il
                   est obligé de rétrograder sur Challand</note>
@@ -1009,7 +1009,7 @@
                <trait>
                   <p>conventionnel, secrétaire du gouvernement provisoire en 1815, né à Dijon</p>
                </trait>
-               <desc xml:id="CAT_000055_e85_d1"><term ana="#document_type_9">Let. sig.</term> au général Boillaud ; an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000055_e85_d1"><term ana="#document_type_9">Let. sig.</term> au général Boillaud ; an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="86" xml:id="CAT_000055_e86">
                <num type="lot">86</num>
@@ -1087,7 +1087,7 @@
                   <p>illustre conventionnel, l'organisateur des armées de la République, né à
                      Nolay</p>
                </trait>
-               <desc xml:id="CAT_000055_e94_d1"><term ana="#document_type_9">Let. sig.</term>, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000055_e94_d1"><term ana="#document_type_9">Let. sig.</term>, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="95" xml:id="CAT_000055_e95">
                <num type="lot">95</num>
@@ -1126,7 +1126,7 @@
                <trait>
                   <p>littérateur et humaniste, né à Semur</p>
                </trait>
-               <desc xml:id="CAT_000055_e99_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1797-1798" type="length">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e99_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1797-1798">VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="100" xml:id="CAT_000055_e100">
                <num type="lot">100</num>
@@ -1142,7 +1142,7 @@
                <trait>
                   <p>général français, né à Dijon</p>
                </trait>
-               <desc xml:id="CAT_000055_e101_d1"><term ana="#document_type_7">L. a. s.</term>; quartier-général de Puicerda, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e101_d1"><term ana="#document_type_7">L. a. s.</term>; quartier-général de Puicerda, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="102" xml:id="CAT_000055_e102">
                <num type="lot">102</num>
@@ -1150,7 +1150,7 @@
                <trait>
                   <p>député de la Côte-d'Or à la Constituante</p>
                </trait>
-               <desc xml:id="CAT_000055_e102_d1"><term ana="#document_type_7">L. a. s.</term> au président du Sénat, an <date date="1801-1802" type="length">X</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e102_d1"><term ana="#document_type_7">L. a. s.</term> au président du Sénat, an <date when="1801-1802">X</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Curieuse lettre par laquelle il sollicite son entrée au Corps législatif</note>
             </item>
             <item n="103" xml:id="CAT_000055_e103">
@@ -1167,7 +1167,7 @@
                <trait>
                   <p>diplomate et homme d'Etat, député de la Côte-d'Or</p>
                </trait>
-               <desc xml:id="CAT_000055_e104_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Régnier, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e104_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Régnier, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="105" xml:id="CAT_000055_e105">
                <num type="lot">105</num>
@@ -1236,7 +1236,7 @@
                <trait>
                   <p>général français, né à Dijon</p>
                </trait>
-               <desc xml:id="CAT_000055_e112_d1"><term ana="#document_type_7">L. a. s.</term> au citoven Caffarelli; Rennes, an <date date="1793-1794" type="length">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e112_d1"><term ana="#document_type_7">L. a. s.</term> au citoven Caffarelli; Rennes, an <date when="1793-1794">II</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="113" xml:id="CAT_000055_e113">
                <num type="lot">113</num>
@@ -1270,7 +1270,7 @@
                   <p>homme politique et littérateur, auteur d'un Essai sur l'histoire littéraire de
                      la Pologne, né à Jancigny</p>
                </trait>
-               <desc xml:id="CAT_000055_e116_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Faipoult, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e116_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Faipoult, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="117" xml:id="CAT_000055_e117">
                <num type="lot">117</num>
@@ -1278,7 +1278,7 @@
                <trait>
                   <p>général français, né à Dijon</p>
                </trait>
-               <desc xml:id="CAT_000055_e117_d1"><term ana="#document_type_7">L. a. s.</term>; Bourges, an <date date="1802-1803" type="length">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e117_d1"><term ana="#document_type_7">L. a. s.</term>; Bourges, an <date when="1802-1803">XI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="118" xml:id="CAT_000055_e118">
                <num type="lot">118</num>
@@ -1338,7 +1338,7 @@
                <trait>
                   <p>littérateur et homme politique, membre de la Gonstituante</p>
                </trait>
-               <desc xml:id="CAT_000055_e124_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1796-1797" type="length">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e124_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1796-1797">V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="125" xml:id="CAT_000055_e125">
                <num type="lot">125</num>
@@ -1520,7 +1520,7 @@
                <trait>
                   <p>général français, né à Créançay</p>
                </trait>
-               <desc xml:id="CAT_000055_e146_d1"><term ana="#document_type_9">Let. sig.</term>, an <date date="1798-1799" type="length">VII</date>, l p. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e146_d1"><term ana="#document_type_9">Let. sig.</term>, an <date when="1798-1799">VII</date>, l p. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette. Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="147" xml:id="CAT_000055_e147">
                <num type="lot">147</num>
@@ -1554,7 +1554,7 @@
                   <p>duc de Bassano, célèbre homme d'Etat français, un des plus infatigables
                      ministres de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000055_e150_d1"><term ana="#document_type_4">Pièce sig</term>., an <date date="1803-1804" type="length">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000055_e150_d1"><term ana="#document_type_4">Pièce sig</term>., an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="151" xml:id="CAT_000055_e151">
                <num type="lot">151</num>
@@ -1584,7 +1584,7 @@
                <trait>
                   <p>général français, créateur de l'artillerie légère en France, né à Auxonne</p>
                </trait>
-               <desc xml:id="CAT_000055_e153_d1"><term ana="#document_type_7">L. a. s.</term> au général Dugua ; Toulouse, an <date date="1794-1795" type="length">III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette, cachet enlevé.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e153_d1"><term ana="#document_type_7">L. a. s.</term> au général Dugua ; Toulouse, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette, cachet enlevé.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="154" xml:id="CAT_000055_e154">
                <num type="lot">154</num>
@@ -1837,7 +1837,7 @@
                <trait>
                   <p>littérateur distingué, aumônier de M"" Victoire, né à Dijon</p>
                </trait>
-               <desc xml:id="CAT_000055_e183_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Maradan, an <date date="1798-1799" type="length">VII</date>, l p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e183_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Maradan, an <date when="1798-1799">VII</date>, l p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="184" xml:id="CAT_000055_e184">
                <num type="lot">184</num>
@@ -1878,7 +1878,7 @@
                <trait>
                   <p>général français, né à Seurre</p>
                </trait>
-               <desc xml:id="CAT_000055_e188_d1"><term ana="#document_type_7">L. a. s.</term>, an <date date="1799-1800" type="length">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000055_e188_d1"><term ana="#document_type_7">L. a. s.</term>, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="189" xml:id="CAT_000055_e189">
                <num type="lot">189</num>

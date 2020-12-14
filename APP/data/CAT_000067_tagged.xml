@@ -62,7 +62,7 @@
                documents for sale. All text preceding or succeeding the list of documents for sale
                is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -186,7 +186,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.6" ident="Transkribus" when="2019">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -345,7 +345,7 @@
                <trait>
                   <p>l'auteur du Mariage de Figaro</p>
                </trait>
-               <desc xml:id="CAT_000067_e15_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Bossange; <date date="1799-01-06" type="length">17 nivôse an 7</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000067_e15_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Bossange; <date when="1799-01-06">17 nivôse an 7</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Spirituelle épitre. « Vous savés que le cuivre des oeufs gravés, qu'à pondus
                   notre grand Voltaire, nous manque : vous savés même que les 7 exemplaires livrés
                   sont privés de cette gravure! J'en suis chagrin. Il nous faut fondre (non cette
@@ -737,7 +737,7 @@
                <trait>
                   <p>un des créateurs de la science géologique</p>
                </trait>
-               <desc xml:id="CAT_000067_e50_d1"><term ana="#document_type_7">L. a. s.</term> ; Côte Saint-André, <date date="1795-10-03" type="length">11 vend, an IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000067_e50_d1"><term ana="#document_type_7">L. a. s.</term> ; Côte Saint-André, <date when="1795-10-03">11 vend, an IV</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuse lettre sur un nouveau moyen que lui a communiqué Humboldt pour
                   économiser la poudre dans l'exploitation des mines. Après avoir donné la
                   description du procédé, il ajoute ; « Il me parait essentiel de faire connaître un
@@ -868,7 +868,7 @@
                <trait>
                   <p>archevêque de Lyon, oncle de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000067_e63_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Ferment; Nice, <date date="1796-03-07" type="length">17 ventôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000067_e63_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Ferment; Nice, <date when="1796-03-07">17 ventôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Très curieuse lettre. L'armée d'Italie n'a jamais été ni plus lorte en hommes,
                   ni plus misérable en toutes sortes de moyens; elle est dans une détresse absolue
                   et il ne lui reste que l'espoir de ses armes. « On assure que Buonaparte vient la
@@ -1020,7 +1020,7 @@
                   <p>un des meilleurs généraux de cavalerie des guerres de l'Empire, blessé
                      mortellement à la bataille d'Eylau, né en 1754, mort en 1807</p>
                </trait>
-               <desc xml:id="CAT_000067_e78_d1"><term ana="#document_type_7">L. a. s.</term> au maréchal Nev, commandant en chef l'armée du Rhin; quartier général d'Izey, <date date="1799-10-11" type="length">19 vend, an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000067_e78_d1"><term ana="#document_type_7">L. a. s.</term> au maréchal Nev, commandant en chef l'armée du Rhin; quartier général d'Izey, <date when="1799-10-11">19 vend, an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettre curieuse par son orthographe fantaisiste. Il lui annonce qu'il va se
                   rendre avec sa division à Oberurnen et qu'il est enchanté de passer le Rhin</note>
             </item>
@@ -1736,7 +1736,7 @@
                   <p>duc de Massa, constituant, grand-juge et ministre de la justice, né à Blamont
                      (Meurthe)</p>
                </trait>
-               <desc xml:id="CAT_000067_e152_d1"><term ana="#document_type_9">Let. sig.</term> au préfet du département de Rhin-et-Moselle, à Coblentz; Paris, <date date="1803-05-22" type="length">2 prairial an XI</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000067_e152_d1"><term ana="#document_type_9">Let. sig.</term> au préfet du département de Rhin-et-Moselle, à Coblentz; Paris, <date when="1803-05-22">2 prairial an XI</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
                <note>Curieuse lettre relative à l'arrestation des Anglais résidant en France en
                   vertu du décret du 22 mai 1813. Ceux qui habitent son département devront se
                   constituer prisonniers dans les 24 heures, cette mesure est applicable à tout

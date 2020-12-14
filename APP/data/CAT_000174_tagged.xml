@@ -63,7 +63,7 @@
                correspond to documents for sale. All text preceding or succeeding the list of
                documents for sale is not reproduced below.</p>
          </samplingDecl>
-         <classDesc>
+         <classDecl>
         <taxonomy xml:id="format">
            <desc>Document format</desc>
            <category xml:id="document_format_1">
@@ -187,7 +187,7 @@
               <catDesc>Document (?) Autographe signé</catDesc>
            </category>
         </taxonomy>
-    </classDesc><appInfo>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>
@@ -564,7 +564,7 @@
                <trait>
                   <p>roi d'Espagne, frère aîné de Napoléon 1er.</p>
                </trait>
-               <desc xml:id="CAT_000174_e32_d1"><term ana="#document_type_7">L. a. s.</term> à Cavaignac, colonel du 10e régiment de dragons; Boulogne-sur-Mer, camp d'Outreau, <date date="1805-05-10" type="length">20 floréal an XIII</date>, 2/3 de de p. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000174_e32_d1"><term ana="#document_type_7">L. a. s.</term> à Cavaignac, colonel du 10e régiment de dragons; Boulogne-sur-Mer, camp d'Outreau, <date when="1805-05-10">20 floréal an XIII</date>, 2/3 de de p. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle lettre toute relative à l'avancement de Marius Clary, neveu de sa
                   femme.</note>
             </item>
@@ -977,7 +977,7 @@
                   <p> célèbre poète dramatique, de l'Acad. fr., né à Maintenon (Eure-et-Loir) en
                      1755, mort en 1806.</p>
                </trait>
-               <desc xml:id="CAT_000174_e71_d1"><term ana="#document_type_7">L. a. s.</term> à M. Villeflose, son beau-frère ; Mevoisin, <date date="1805-09-23" type="length">1er vendémiaire an XIV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000174_e71_d1"><term ana="#document_type_7">L. a. s.</term> à M. Villeflose, son beau-frère ; Mevoisin, <date when="1805-09-23">1er vendémiaire an XIV</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="72" xml:id="CAT_000174_e72">
                <num type="lot">72</num>
@@ -1191,7 +1191,7 @@
                   <p>un des créateurs de la science géologique, de l'Institut, né près de La
                      Tour-du-Pin (Isère) en 1750, mort en 1801.</p>
                </trait>
-               <desc xml:id="CAT_000174_e92_d1">Important dossier composé de 14 pièces, toutes relatives à la captivité de Dolomieu à Messine.</desc><desc xml:id="CAT_000174_e92_d2">-1° <term ana="#document_type_4">Pièce sig</term>.; <date when="1797">1797</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Passeport à lui délivré contenant son signalement.</desc><desc xml:id="CAT_000174_e92_d3">2° <term ana="#document_type_7">L. a. s.</term> de Dolomieu, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d4">3° <term ana="#document_type_7">L. a. s.</term> du chevalier Alphonse Gratet de Dolomieu, son frère, au naturaliste Jos. Banks; Brunswick, <date when="1799-10-15">15 octobre 1799</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d5">4° <term ana="#document_type_7">L. a. s.</term> de Mme de Drée, née de Dolomieu, sa soeur, à Banks; Paris, <date date="1800-01-03" type="length">13 nivôse an VIII</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d6">5° 3 let. sig. de Jos. Niou, commissaire du Gouvernement français en Angleterre (ancien conventionnel), à Banks; Londres, <date when="1799">1799-1800</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d7">6° <term ana="#document_type_9">Let. sig.</term> de L.-G. Otto, comte de Mosloy, à Banks, avec la minute aut. de la réponse de celui-ci; Londres, <date when="1800-06-09">9 juin 1800</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d8">7° Copie d'une lettre de Banks à Dolomieu; Londres, <date when="1801">1801</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d9">8° <term ana="#document_type_7">L. a. s.</term> de Fay, ami de Dolomieu, à lord Hamilton; L. a. Valette, 8 mai 1800, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-9° 3 copies de lettres de Dolomieu, écrites pendant sa captivité, et une note sur son arrestation; <date when="1799">1799-1800</date>, 9 p. in-fol. et in-4.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000174_e92_d1">Important dossier composé de 14 pièces, toutes relatives à la captivité de Dolomieu à Messine.</desc><desc xml:id="CAT_000174_e92_d2">-1° <term ana="#document_type_4">Pièce sig</term>.; <date when="1797">1797</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Passeport à lui délivré contenant son signalement.</desc><desc xml:id="CAT_000174_e92_d3">2° <term ana="#document_type_7">L. a. s.</term> de Dolomieu, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d4">3° <term ana="#document_type_7">L. a. s.</term> du chevalier Alphonse Gratet de Dolomieu, son frère, au naturaliste Jos. Banks; Brunswick, <date when="1799-10-15">15 octobre 1799</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d5">4° <term ana="#document_type_7">L. a. s.</term> de Mme de Drée, née de Dolomieu, sa soeur, à Banks; Paris, <date when="1800-01-03">13 nivôse an VIII</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d6">5° 3 let. sig. de Jos. Niou, commissaire du Gouvernement français en Angleterre (ancien conventionnel), à Banks; Londres, <date when="1799">1799-1800</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d7">6° <term ana="#document_type_9">Let. sig.</term> de L.-G. Otto, comte de Mosloy, à Banks, avec la minute aut. de la réponse de celui-ci; Londres, <date when="1800-06-09">9 juin 1800</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d8">7° Copie d'une lettre de Banks à Dolomieu; Londres, <date when="1801">1801</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d9">8° <term ana="#document_type_7">L. a. s.</term> de Fay, ami de Dolomieu, à lord Hamilton; L. a. Valette, 8 mai 1800, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-9° 3 copies de lettres de Dolomieu, écrites pendant sa captivité, et une note sur son arrestation; <date when="1799">1799-1800</date>, 9 p. in-fol. et in-4.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
             </item>
             <item n="93" xml:id="CAT_000174_e93">
                <num type="lot">93</num>
@@ -1553,7 +1553,7 @@
                   <p>célèbre littérateur et homme d'Etat, de l'Acad. fr., auteur de Mémoires, né
                      en 1749, mort en 1833.</p>
                </trait>
-               <desc xml:id="CAT_000174_e124_d1"><term ana="#document_type_7">L. a. s.</term> à Perregaux; an <date date="1804-1805" type="length">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000174_e124_d1"><term ana="#document_type_7">L. a. s.</term> à Perregaux; an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="125" xml:id="CAT_000174_e125">
                <num type="lot">125</num>
@@ -1663,7 +1663,7 @@
                   <p>savant chimiste, deputé à la Convention, membre du Comité de Salut-Public, de
                      l'Institut, né à Dijon en 1737, mort en 1816.</p>
                </trait>
-               <desc xml:id="CAT_000174_e135_d1"><term ana="#document_type_9">Let. sig.</term> à Danton; Paris, <date date="none" type="length">1er avril an II</date>, minuit et demi, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000174_e135_d1"><term ana="#document_type_9">Let. sig.</term> à Danton; Paris, <date when="none">1er avril an II</date>, minuit et demi, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle lettre écrite comme président du comité de Défense générale, pour inviter
                   Danton à se rendre sur-le-champ à sa séance pour affaires importantes.</note>
             </item>
@@ -1834,7 +1834,7 @@
                <trait>
                   <p>brave général de la République, né à Lunéville en 1742, mort en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000174_e150_d1"><term ana="#document_type_9">Let. sig.</term> à Palloy; Rennes, an <date date="1795-1796" type="length">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000174_e150_d1"><term ana="#document_type_9">Let. sig.</term> à Palloy; Rennes, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre de remerciement pour la médaille que lui a envoyé Palloy. « Je
                   hais les tyrans et les esclaves, et je chéris le feu volcanique qui dans votre
                   coeur brûle pour la liberté.»</note>
@@ -1923,7 +1923,7 @@
                   <p>célèbre amiral, qui prit part à la guerre d'Amérique, commandant de la
                      flottille de Boulogne, né à Rochefort en 1745, mort en 1804.</p>
                </trait>
-               <desc xml:id="CAT_000174_e158_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Dencausse-Labatut ; bivouac de la Tour-d'Ordre, près Boulogne-sur-Mer, <date date="1801-08-30" type="length">12 fructidor an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000174_e158_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen Dencausse-Labatut ; bivouac de la Tour-d'Ordre, près Boulogne-sur-Mer, <date when="1801-08-30">12 fructidor an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle lettre relative à un protégé de la princesse Elisa Bonaparte.</note>
             </item>
             <item n="159" xml:id="CAT_000174_e159">
@@ -2007,7 +2007,7 @@
                   <p>duc de Dantzick, maréchal de France, né à Ruffach (Alsace) en 1755. mort en
                      1820.</p>
                </trait>
-               <desc xml:id="CAT_000174_e165_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date date="1805-02-12" type="length">23 pluviôse an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000174_e165_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1805-02-12">23 pluviôse an XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="166" xml:id="CAT_000174_e166">
                <num type="lot">166</num>
@@ -2342,7 +2342,7 @@
                <trait>
                   <p>duc de Rivoli, illustre maréchal de France.</p>
                </trait>
-               <desc xml:id="CAT_000174_e198_d1"><term ana="#document_type_9">Let. sig.</term> au général Miollis; quartier général de Finale, <date date="1800-06-12" type="length">23 prairial an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000174_e198_d1"><term ana="#document_type_9">Let. sig.</term> au général Miollis; quartier général de Finale, <date when="1800-06-12">23 prairial an VIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="199" xml:id="CAT_000174_e199">
                <num type="lot">199</num>
@@ -3202,7 +3202,7 @@
                   <p>duc de Bellune, célèbre maréchal de France, né à La Marche (Vosges) en 1764,
                      mort en 1849.</p>
                </trait>
-               <desc xml:id="CAT_000174_e278_d1"><term ana="#document_type_9">Let. sig.</term> ; Nautes, <date date="1798-04-13" type="length">24 germinal an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000174_e278_d1"><term ana="#document_type_9">Let. sig.</term> ; Nautes, <date when="1798-04-13">24 germinal an VI</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="279" xml:id="CAT_000174_e279">
                <num type="lot">279</num>
