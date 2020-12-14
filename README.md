@@ -25,7 +25,8 @@ python3 run.py
 
 ## Workflow
 
-![Katabase workflow diagram](images/workflow.png "Katabase Workflow")
+<img src="images/workflow.png" alt="Katabase workflow diagram" title="Katabase Workflow" width="70%" height="60%"/>
+/>
 
 ## Credits
 
