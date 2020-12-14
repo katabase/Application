@@ -14,6 +14,11 @@ def about_us():
     return render_template("pages/AboutUs.html")
 
 
+@app.route("/Publications")
+def publications():
+    return render_template("pages/Publications.html")
+
+
 @app.route("/Search", methods=['GET', 'POST'])
 def search():
     author = request.args.get('author')
