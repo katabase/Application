@@ -32,7 +32,7 @@ def search():
             results["filtered_data"][CAT]["cat_id"] = validate_id(CAT)
             results["filtered_data"][CAT]["desc_id"] = CAT
             results["filtered_data"][CAT]["text"] = get_entry(id_to_item(doc, CAT))
-        return render_template('pages/Search.html', results=results, author=author, date=date)
+        return render_template('pages/Search.html', results=results, author=author)
     return render_template('pages/Search.html')
 
 

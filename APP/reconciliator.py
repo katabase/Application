@@ -177,7 +177,7 @@ def author_filtering(dictionary, name):
     """
     output_dict = {}
     for key in dictionary:
-        if dictionary[key]["author"] is not None and similar(dictionary[key]["author"].lower(), name) > 0.75:
+        if dictionary[key]["author"] is not None and similar(dictionary[key]["author"].lower(), name.lower()) > 0.80:
             output_dict[key] = dictionary[key]
 
     return output_dict
