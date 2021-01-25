@@ -28,7 +28,7 @@ def validate_entry_id(id):
     :return: the validated id.
     """
     # Each file starts with 'CAT_' and digits.
-    good_id = re.match("CAT_[0-9]+_e[0-9]+", id)
+    good_id = re.match("CAT_[0-9]{6}_e[0-9]+([a-z|*]+)?", id)
     return good_id[0]
 
 
