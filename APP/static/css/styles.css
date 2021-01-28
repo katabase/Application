@@ -1,6 +1,7 @@
 .container {
     margin-top: 2%;
     margin-bottom: 3%;
+    background-color: #fcf8f7
 }
 
 body {
@@ -36,7 +37,7 @@ nav.header {
 }
 
 footer {
-    background-color: #962d21;
+    background-color: #ad2b1d;
     width:100%;
     flex-shrink: 0;
     color: white;
