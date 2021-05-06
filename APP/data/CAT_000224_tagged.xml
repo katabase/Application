@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000224">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -22,7 +22,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>Revue des autographes</title>
                <num>173</num>
                <editor>Eugène Charavay fils</editor>
@@ -145,7 +145,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,6 +198,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -471,7 +491,7 @@
                   <p>général et ingénieur, chargé en 1792 de la défense de Paris, lieutenant de
                      Dumouriez et de Jourdan, né en 1740, mort en 1819.</p>
                </trait>
-               <desc xml:id="CAT_000224_e27_d1">3 l. <term ana="#document_type_15">a. s.</term>; <date when="1793">1793</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000224_e27_d1">3 <term ana="#document_type_7">l. a. s.</term>; <date when="1793">1793</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="28" xml:id="CAT_000224_e28">
                <num type="lot">28</num>
@@ -553,7 +573,7 @@
                <trait>
                   <p>le spirituel et savant écrivain, né à Cambrai en 1804.</p>
                </trait>
-               <desc xml:id="CAT_000224_e36_d1">L. a. Prière de Marie, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000224_e36_d1">La Prière de Marie, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="37" xml:id="CAT_000224_e37">
                <num type="lot">37</num>
@@ -949,7 +969,7 @@
                   <p>historien, ministre de Napoléon Ier, de l'Acad. fr., né à Montpellier en 1767,
                      mort en 1829.</p>
                </trait>
-               <desc xml:id="CAT_000224_e76_d1"><term ana="#document_type_9">Let. sig.</term> ; Koenigsberg, 16 déc. 1812, 2/3 de p. in-fol. Papier avec le portrait de Napoléon Ier dans le filigrane, on a joint une l. a. s. du baron Louis Costaz (le célèbre ingénieur), à son oncle le baron de Bausset: Mayence, <date when="1813-09-12">12 sept. 1813</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieux papier avec le portrait de l'Impératrice Marie-Louise dans le filigrane.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000224_e76_d1">Let. sig. ; Koenigsberg, 16 déc. 1812, 2/3 de p. in-fol. Papier avec le portrait de Napoléon Ier dans le filigrane, on a joint une <term ana="#document_type_7">l. a. s.</term> du baron Louis Costaz (le célèbre ingénieur), à son oncle le baron de Bausset: Mayence, <date when="1813-09-12">12 sept. 1813</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieux papier avec le portrait de l'Impératrice Marie-Louise dans le filigrane.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="77" xml:id="CAT_000224_e77">
                <num type="lot">77</num>
@@ -1562,7 +1582,7 @@
                <trait>
                   <p>célèbre danseuse et courtisane du XVIIIe siècle.</p>
                </trait>
-               <desc xml:id="CAT_000224_e137_d1">Sa signature découpée au bas d'une quittance, <measure type="format" unit="f" ana="#document_format_132">in-32 obl.</measure> Sur la même feuille se trouvent les signatures découpées d'Auguste Vestris et de Marie-Françoise-Adélaide Gacaudan, du même format.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000224_e137_d1">Sa signature découpée au bas d'une <term ana="#document_type_12">quitt</term>ance, <measure type="format" unit="f" ana="#document_format_132">in-32 obl.</measure> Sur la même feuille se trouvent les signatures découpées d'Auguste Vestris et de Marie-Françoise-Adélaide Gacaudan, du même format.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="138" xml:id="CAT_000224_e138">
                <num type="lot">138</num>
@@ -1597,7 +1617,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000224_e141_d1"><term ana="#document_type_7">L. a. s.</term>, en latin, (à Christian Huygens) ; L. a. Haye, <date when="1675-06-16">16 juin 1675</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000224_e141_d1"><term ana="#document_type_7">L. a. s.</term>, en latin, (à Christian Huygens) ; La Haye, <date when="1675-06-16">16 juin 1675</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Il regrette qu'il ne lui ait pas répondu au sujet des livres achetés à
                   Bienville et lui adresse un catalogue pour lui prouver qu'il se souvient toujours
                   de lui..</note>
@@ -1799,7 +1819,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000224_e162_d1">69 l. <term ana="#document_type_15">a. s.</term>, <measure type="length" unit="p" n="80">80 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000224_e162_d1">69 <term ana="#document_type_7">l. a. s.</term>, <measure type="length" unit="p" n="80">80 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
             </item>
             <item n="163" xml:id="CAT_000224_e163">
                <num type="lot">163</num>
@@ -1827,7 +1847,7 @@
                <trait>
                   <p>illustre géneral et patriote, né en Auvergne en 1757, mort en 1834.</p>
                </trait>
-               <desc xml:id="CAT_000224_e165_d1"><term ana="#document_type_7">L. a. s.</term>, à Ed. Mounier; L. a. Grange, 27 sept., <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Très belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000224_e165_d1"><term ana="#document_type_7">L. a. s.</term>, à Ed. Mounier; La Grange, 27 sept., <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Très belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="166" xml:id="CAT_000224_e166">
                <num type="lot">166</num>
@@ -1949,7 +1969,7 @@
                   <p>le promoteur du percement de l'isthme de Suez, de l'Acad. fr., né à Versailles
                      en 1805, mort récemment.</p>
                </trait>
-               <desc xml:id="CAT_000224_e176_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Chénaie, par Vatan (Indre), <date when="1877">1877</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000224_e176_d1"><term ana="#document_type_7">L. a. s.</term>; La Chénaie, par Vatan (Indre), <date when="1877">1877</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="177" xml:id="CAT_000224_e177">
                <num type="lot">177</num>
@@ -2721,7 +2741,7 @@
                   <p>évêque d'Alais, puis archevêque d'Embrun, fils d'Antoine de Hennin-Lietard,
                      marquis de Blaincourt et de Saint-Phal, mort en 1724.</p>
                </trait>
-               <desc xml:id="CAT_000224_e248_d1">54 let. aut., dont 1 sig. à l'abbé Filsjean, conseiller au Parlement de Dijon ; <date when="1702">1702</date>-10, <measure type="length" unit="p" n="100">100 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets à ses armes,</desc><measure commodity="currency" unit="FRF" quantity="90">90</measure>
+               <desc xml:id="CAT_000224_e248_d1">54 <term ana="#document_type_8">let. aut.</term>, dont 1 sig. à l'abbé Filsjean, conseiller au Parlement de Dijon ; <date when="1702">1702</date>-10, <measure type="length" unit="p" n="100">100 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets à ses armes,</desc><measure commodity="currency" unit="FRF" quantity="90">90</measure>
                <note anchored="true">Intéressante correspondance pour l'histoire de la Bourgogne. Il y parle de M.
                   d'Huxelles, de M. de Bièvre, des affaires intérieures de l'évêché de Chalon, de
                   l'abbé de Thezut et autres personnes appartenant à la noblesse parlementaire de
@@ -2735,7 +2755,7 @@
                   <p>célèbre agent politique pendant l'émigration, auteur de Mémoires, né à Toulouse
                      en 1761, mort en 1841.</p>
                </trait>
-               <desc xml:id="CAT_000224_e249_d1">1° 4 l. <term ana="#document_type_15">a. s.</term>, dont une de ses initiales à Ed. Mounier; <date when="1820">1820</date>-28, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses lettres d'envois des manuscrits indiqués ci-après.</desc><desc xml:id="CAT_000224_e249_d2">2° 11 manuscrits aut., environ <measure type="length" unit="p" n="100">100 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note anchored="true">Très curieux documents politiques, rédigés sous formes de mémoires et
+               <desc xml:id="CAT_000224_e249_d1">1° 4 <term ana="#document_type_7">l. a. s.</term>, dont une de ses initiales à Ed. Mounier; <date when="1820">1820</date>-28, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses lettres d'envois des manuscrits indiqués ci-après.</desc><desc xml:id="CAT_000224_e249_d2">2° 11 manuscrits aut., environ <measure type="length" unit="p" n="100">100 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note anchored="true">Très curieux documents politiques, rédigés sous formes de mémoires et
                   d'exposés, traitant, dans tous leurs détails, des évènements les plus importants
                   de l'époque de la Restauration.»</note>
                <desc xml:id="CAT_000224_e249_d3">3° 9 manuscrits non aut. mais émanant du comte de Montgaillard, environ <measure type="length" unit="p" n="100">100 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Manuscrits du même genre que les précédents.</desc><desc xml:id="CAT_000224_e249_d4">4° <term ana="#document_type_7">L. a. s.</term> du marquis Xavier de Montgaillard, frère du comte, à Ed. Mounier; <date when="1820">1820</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
@@ -2747,9 +2767,9 @@
                   <p>célèbre jurisconsulte, un des principaux rédacteurs du Code civil, de l'Acad.
                      fr., né au Bausset (Var) en 1745, mort en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000224_e250_d1">1° 2 l. <term ana="#document_type_15">a. s.</term> à Jos. Mounier ; ans X-XI, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têtes impr., vign.</desc><desc xml:id="CAT_000224_e250_d2">-2° 17 let. sig. à Jos. Mounier ; ans X-XII, <measure type="length" unit="p" n="38">38 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têtes imp., vign.</desc><note anchored="true">Importante correspondance relative aux questions religieuses dans le
+               <desc xml:id="CAT_000224_e250_d1">1° 2 <term ana="#document_type_7">l. a. s.</term> à Jos. Mounier ; ans X-XI, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têtes impr., vign.</desc><desc xml:id="CAT_000224_e250_d2">-2° 17 <term ana="#document_type_9">let. sig.</term> à Jos. Mounier ; ans X-XII, <measure type="length" unit="p" n="38">38 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têtes imp., vign.</desc><note anchored="true">Importante correspondance relative aux questions religieuses dans le
                   département d'Ille-et-Vilaine, dont Mounier était préfet.</note>
-               <desc xml:id="CAT_000224_e250_d3">3° l. <term ana="#document_type_15">a. s.</term> ou sig. de ses initiales par le comte J.-M. Portalis, fils du précédent, au baron et à la baronue Mounier ; <date when="1820">1820</date>-48, environ <measure type="length" unit="p" n="120">120 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. Curieuses lettres politiques.</desc><desc xml:id="CAT_000224_e250_d4">4° <term ana="#document_type_7">L. a. s.</term> d'Auguste Portalis au baron Mounier; <date when="1841">1841</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
+               <desc xml:id="CAT_000224_e250_d3">3° <term ana="#document_type_7">l. a. s.</term> ou sig. de ses initiales par le comte J.-M. Portalis, fils du précédent, au baron et à la baronue Mounier ; <date when="1820">1820</date>-48, environ <measure type="length" unit="p" n="120">120 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. Curieuses lettres politiques.</desc><desc xml:id="CAT_000224_e250_d4">4° <term ana="#document_type_7">L. a. s.</term> d'Auguste Portalis au baron Mounier; <date when="1841">1841</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
             </item>
             <item n="251" xml:id="CAT_000224_e251">
                <num type="lot">251</num>
@@ -3122,7 +3142,7 @@
             <item n="279" xml:id="CAT_000224_e279">
                <num type="lot"/>
                <name type="author">Académie française</name>
-               <desc xml:id="CAT_000224_e279_d1">Ancelot, Andrieux, Arnault, Auger, Augier (Emile), Barante (le baron de), Berryer, Blanc (Ch.), Caro, Champagny (le comte Franz de), Cousin (Victor), Cuvillier-Fleury, Doucet (Camille), Du Camp (Maxime), Dufaure (J.), Dumas (J.-B.), Dupanloup (Mgr, let. sig.), Dupin aîné, Empis, Falloux (A. de)., Favre (Jules), Flourens, Guizot, Halévy (Ludovic), Janin (Jules), Jouy, Labiche (Eug.), Lainé (le vicomte), Legouvé (Ernest), Martin (Henri), Meilhac (Henri), Mézières (A.), Molé (le comte), Montalembert, Nisard, Patin (H.), Prévost-Paradol, Rémusat (Ch.-de), Roger, Sil¬ vestre de Sacy, Sainte-Beuve, Saint-Marc-Girardin, Sandeau (Jules), Vatout, Vilet, etc.</desc><measure commodity="currency" unit="FRF" quantity="1">1</measure>
+               <desc xml:id="CAT_000224_e279_d1">Ancelot, Andrieux, Arnault, Auger, Augier (Emile), Barante (le baron de), Berryer, Blanc (Ch.), Caro, Champagny (le comte Franz de), Cousin (Victor), Cuvillier-Fleury, Doucet (Camille), Du Camp (Maxime), Dufaure (J.), Dumas (J.-B.), Dupanloup (Mgr, <term ana="#document_type_9">let. sig.</term>), Dupin aîné, Empis, Falloux (A. de)., Favre (Jules), Flourens, Guizot, Halévy (Ludovic), Janin (Jules), Jouy, Labiche (Eug.), Lainé (le vicomte), Legouvé (Ernest), Martin (Henri), Meilhac (Henri), Mézières (A.), Molé (le comte), Montalembert, Nisard, Patin (H.), Prévost-Paradol, Rémusat (Ch.-de), Roger, Sil¬ vestre de Sacy, Sainte-Beuve, Saint-Marc-Girardin, Sandeau (Jules), Vatout, Vilet, etc.</desc><measure commodity="currency" unit="FRF" quantity="1">1</measure>
             </item>
             <item n="280" xml:id="CAT_000224_e280">
                <num type="lot"/>
@@ -3135,7 +3155,7 @@
             <item n="282" xml:id="CAT_000224_e282">
                <num type="lot"/>
                <name type="author">Littérateurs</name>
-               <desc xml:id="CAT_000224_e282_d1">Asseline (Louis), Aubryet (Xavier), Barbier (P.-J.), Barrière (Th.), Belot (Ad., let. sig.), Berrier (Constant), Bertin (Armand), Bonnelier (H.), Bourgeois (Anicet), Buloz, Burette (Th.), Claudin (G.), Delord (Taxile), Elzéar (Pierre), Ennery (A. d’), Feydeau (F.), Fournier (E.), Girardin (Em. de), Granier de Cassagnac, Joubert (Léon), Karr (Alph.), Kock (Paul de), <term ana="#document_type_8">L. a.</term> Bédolière, Lambert-Thi¬ boust, Lermina, Lescure (M. de), Masson (Michel), Mazières, Mire- court (Eug. de), Monselet (Ch.), Musset (Paul de), Poujade (Eug.) Pyat (Félix), Romey (Ch.), Silvestre (Arm.), Süe (Eug.), des initiales, Véron (Louis), Vitu (Aug.), Wey (Francis), etc.</desc></item>
+               <desc xml:id="CAT_000224_e282_d1">Asseline (Louis), Aubryet (Xavier), Barbier (P.-J.), Barrière (Th.), Belot (Ad., <term ana="#document_type_9">let. sig.</term>), Berrier (Constant), Bertin (Armand), Bonnelier (H.), Bourgeois (Anicet), Buloz, Burette (Th.), Claudin (G.), Delord (Taxile), Elzéar (Pierre), Ennery (A. d’), Feydeau (F.), Fournier (E.), Girardin (Em. de), Granier de Cassagnac, Joubert (Léon), Karr (Alph.), Kock (Paul de), La Bédolière, Lambert-Thi¬ boust, Lermina, Lescure (M. de), Masson (Michel), Mazières, Mire- court (Eug. de), Monselet (Ch.), Musset (Paul de), Poujade (Eug.) Pyat (Félix), Romey (Ch.), Silvestre (Arm.), Süe (Eug.), des initiales, Véron (Louis), Vitu (Aug.), Wey (Francis), etc.</desc></item>
          </list>
       </body>
       <gap/>

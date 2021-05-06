@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000105">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000105</title>
+            <title>RDA, N°102 (Décembre 1886)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>102</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -1401,7 +1433,7 @@
                <trait>
                   <p>fameux contrôleur géneral des finances sous Louis XV</p>
                </trait>
-               <desc xml:id="CAT_000105_e119_d1"><term ana="#document_type_7">L. a. s.</term> à M. Joly; L. a. MottePilly, <date when="1764-09-14">14 sept. 1764</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000105_e119_d1"><term ana="#document_type_7">L. a. s.</term> à M. Joly; La MottePilly, <date when="1764-09-14">14 sept. 1764</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="120" xml:id="CAT_000105_e120">
                <num type="lot">120</num>
@@ -1909,7 +1941,7 @@
                <trait>
                   <p>célèbre généalogiste</p>
                </trait>
-               <desc xml:id="CAT_000105_e163_d1"><term ana="#document_type_8">L. a.</term> Vie de Charles V, duc de Lorrainc et de Bar, et généralissime des troupes impériales, Amsterdam ; <date when="1691">1691</date>, <measure type="format" unit="f" ana="#document_format_12">in-12</measure> v.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000105_e163_d1">La Vie de Charles V, duc de Lorrainc et de Bar, et généralissime des troupes impériales, Amsterdam ; <date when="1691">1691</date>, <measure type="format" unit="f" ana="#document_format_12">in-12</measure> v.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Ouvrage ayant appartenu à Charles-René d'Hozier (né en 1640, mort en 1732),
                   dont il porte l'ex-libris ainsi que la signature avec 5 petites lignes aut.,
                   datées du 20 avril 1691</note>
@@ -2197,7 +2229,7 @@
                <trait>
                   <p>célèbres compositeurs de musique du XVIIIe siècle</p>
                </trait>
-               <desc xml:id="CAT_000105_e186_d1">XXII ariettes à voix seule avec accompagnement de violons et basse par MM. Philidor et Trial, <date when="1769">1769</date>, 2 vol. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Les deux volumes sont : l'un pour le premier violon et l'autre pour la basse. <term ana="#document_type_8">L. a.</term> reliure primitive en veau n'existe pour ainsi dire plus. Provenant de la bibliothèque de M. de Villebois, dont ils portent l'exlibris.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
+               <desc xml:id="CAT_000105_e186_d1">XXII ariettes à voix seule avec accompagnement de violons et basse par MM. Philidor et Trial, <date when="1769">1769</date>, 2 vol. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Les deux volumes sont : l'un pour le premier violon et l'autre pour la basse. La reliure primitive en veau n'existe pour ainsi dire plus. Provenant de la bibliothèque de M. de Villebois, dont ils portent l'exlibris.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
                <note>Cet ouvrage est des plus curieux par les illustrations qu'il contient, et qui
                   se composent de 2 superbes titres allégoriques, 2 culs-de-lampe et de 41 dessins
                   des plus gracieux dans le genre du XVIIIe siècle. Quelques-uns sont de véritables

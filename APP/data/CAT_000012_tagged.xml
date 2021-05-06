@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000012">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>Collection Morrison II</title>
+            <title>Collection Morrison II, 15-19 avril 1918</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>éditeur scientifique <date when="2019">2019</date></resp>
@@ -19,7 +19,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
+            <bibl ana="RDA">
                <title>Catalogue of the Renowned Collection of Autograph Letters and Historical Manuscipts Formed by the Late Alfred Morrison […] The second portion.</title>
                <publisher>Sotheby, Wilkinson &amp; Hodge</publisher>
                <pubPlace>Londres</pubPlace>
@@ -151,7 +151,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -194,6 +194,10 @@
            </category>
         </taxonomy>
     </classDecl></encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -228,7 +232,7 @@
             <item n="1081" xml:id="CAT_000012_e1081">
                <num type="lot">1081</num>
                <name type="author">SÉVIGNÉ (Madame de)</name>
-               <desc xml:id="CAT_000012_e1081_d1">A. L. s. "<term ana="#document_type_8">L. a.</term> M. de Sévigné", 5 pp. 4to, "à Grignan, ce premier may" (<date when="1691">1691</date>), to the same:</desc><desc xml:id="CAT_000012_e1081_d2">A. L. 5 pp. 4to, "à Grignan, ce 15e Septembre" (<date when="1691">1691</date>), to the same:</desc><add corresp="#CAT_000012_m">
+               <desc xml:id="CAT_000012_e1081_d1">A. <term ana="#document_type_9">L. s.</term> "La M. de Sévigné", 5 pp. 4to, "à Grignan, ce premier may" (<date when="1691">1691</date>), to the same:</desc><desc xml:id="CAT_000012_e1081_d2">A. L. 5 pp. 4to, "à Grignan, ce 15e Septembre" (<date when="1691">1691</date>), to the same:</desc><add corresp="#CAT_000012_m">
                   <measure commodity="currency" unit="GBP" quantity="25">25</measure>
                   <note>Vendu à Agnew.</note>
                </add>

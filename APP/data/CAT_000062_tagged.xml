@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000062">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000062</title>
+            <title>RDA, N°74 (Octobre 1882)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>74</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -389,7 +422,7 @@
                <trait>
                   <p>prince de Neufchâtel, major général de Napoléon Ier</p>
                </trait>
-               <desc xml:id="CAT_000062_e19_d1">3 let. sig. au général Becker; Berlin et Varsovie, <date when="1806">11 novembre 1806-8 janvier 1807</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000062_e19_d1">3 <term ana="#document_type_9">let. sig.</term> au général Becker; Berlin et Varsovie, <date when="1806">11 novembre 1806-8 janvier 1807</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Belles lettres militaires où il lui transmet les ordres de l'Empereur sur les
                   mouvements de l'armée pendant la première campagne de Russie</note>
             </item>
@@ -616,7 +649,7 @@
                <trait>
                   <p>ami et premier ministre de Pie VII, signataire du Concordat avec Napoléon</p>
                </trait>
-               <desc xml:id="CAT_000062_e42_d1">Minute aut., en français, d'une lettre au prince de Metternich, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="27"/>
+               <desc xml:id="CAT_000062_e42_d1">Minute aut., en français, d'une <term ana="#document_type_8">lettre au</term> prince de Metternich, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="27">27</measure>
                <note>Curieuse lettre relative à l'expédition d'une huile et dans laquelle il est
                   question du pape</note>
             </item>
@@ -765,7 +798,7 @@
                   <p>fils du roi Pierre II, qui prit une part active à la guerre contre les Turcs,
                      né en 1697.</p>
                </trait>
-               <desc xml:id="CAT_000062_e55_d1">3 l. <term ana="#document_type_15">a. s.</term>, dont 2 en français et une en espagnol, à Charles-Jean Guicciardi; Madrid, Gênes et Lisbonne, <date when="1728">1728</date>-38, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belles lettres.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000062_e55_d1">3 <term ana="#document_type_7">l. a. s.</term>, dont 2 en français et une en espagnol, à Charles-Jean Guicciardi; Madrid, Gênes et Lisbonne, <date when="1728">1728</date>-38, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belles lettres.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="56" xml:id="CAT_000062_e56">
                <num type="lot">56</num>
@@ -982,7 +1015,7 @@
                <trait>
                   <p>électeur et archevêque de Cologne</p>
                </trait>
-               <desc xml:id="CAT_000062_e78_d1">4 let. sig. avec 3 lig. aut., en français, au comte do Berlo, gouverneur de la citadelle de Liège, <date when="1701">1701</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>; cachets.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000062_e78_d1">4 <term ana="#document_type_9">let. sig.</term> avec 3 lig. aut., en français, au comte do Berlo, gouverneur de la citadelle de Liège, <date when="1701">1701</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>; cachets.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Curieuses lettres sur la défense de la ville de Liège. Il lui revient de tous
                   côtés que les Etats généraux ont l'intention de s'emparer de la ville de Liège
                   aussitôt qu'ils auront établi leurs troupes dans le duché do Juilliers. » (La
@@ -1020,7 +1053,7 @@
                <trait>
                   <p>homme d'Etat russe, favori de Paul Ier</p>
                </trait>
-               <desc xml:id="CAT_000062_e82_d1"><term ana="#document_type_7">L. a. s.</term>, en français, à Son Altesse Impériale…; L. a. Haye, <date when="1818-04-16">16 avril 1818</date>, <measure type="length" unit="p" n="2">2 p.</measure> în-4.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000062_e82_d1"><term ana="#document_type_7">L. a. s.</term>, en français, à Son Altesse Impériale…; La Haye, <date when="1818-04-16">16 avril 1818</date>, <measure type="length" unit="p" n="2">2 p.</measure> în-4.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Superbe lettre écrite deux mois avant sa mort et toute relative à son voyage eu
                   Hollande. 11 parle de l'accueil bienveillant que lui ont fait le roi, la reine et
                   la princesse d'Orange douairière, etc.</note>
@@ -1335,7 +1368,7 @@
                   <p>conseiller au Parlement, célèbre par sa croyance aux miracles du diacre Paris,
                      né en 1686, mort en 1754</p>
                </trait>
-               <desc xml:id="CAT_000062_e111_d1"><term ana="#document_type_7">L. a. s.</term> à ses chères soeurs L. a. Crosse et Nisette; Viviers, 29 mai, <measure type="length" unit="p" n="3.75">3 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000062_e111_d1"><term ana="#document_type_7">L. a. s.</term> à ses chères soeurs La Crosse et Nisette; Viviers, 29 mai, <measure type="length" unit="p" n="3.75">3 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Epitre mystique où il les console de l'arrêt qui vient de les frapper</note>
             </item>
             <item n="112" xml:id="CAT_000062_e112">
@@ -1455,7 +1488,7 @@
             <item n="124" xml:id="CAT_000062_e124">
                <num type="lot">124</num>
                <name type="author">Paris</name>
-               <desc xml:id="CAT_000062_e124_d1"><term ana="#document_type_8">L. a.</term> Bastille.-Ordonnance de paiement, sig. de François Ier, d'une somme de 360 livres tournois, pour « employer au payement des gages et souldes de douze mortes payes établies pour la garde, sûreté et deffense du chasteau et place forte de la Bastille de Paris. » Donné en l'abbaye de Bonport, <date when="1540">le xii° jour d'avril l'an 1540</date>, <measure type="format" unit="f" ana="#document_format_101">in-fol. obl</measure>ong sur vélin.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000062_e124_d1">La Bastille.-Ordonnance de paiement, sig. de François Ier, d'une somme de 360 livres tournois, pour « employer au payement des gages et souldes de douze mortes payes établies pour la garde, sûreté et deffense du chasteau et place forte de la Bastille de Paris. » Donné en l'abbaye de Bonport, <date when="1540">le xii° jour d'avril l'an 1540</date>, <measure type="format" unit="f" ana="#document_format_101">in-fol. obl</measure>ong sur vélin.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="125" xml:id="CAT_000062_e125">
                <num type="lot">125</num>
@@ -1701,7 +1734,7 @@
                   <p>femme russe célèbre, dont M. de Falloux a publié les écrits et la
                      correspondance</p>
                </trait>
-               <desc xml:id="CAT_000062_e149_d1">3 l. <term ana="#document_type_15">a. s.</term>, en français, à M'"e de Cournand, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000062_e149_d1">3 <term ana="#document_type_7">l. a. s.</term>, en français, à M'"e de Cournand, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Intéressantes lettres relatives à Mme de Narishkine, femme du célèbre poète
                   russe</note>
             </item>

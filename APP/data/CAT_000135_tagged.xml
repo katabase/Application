@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000135">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000135</title>
+            <title>RDA, N°132 (Décembre 1890)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">132</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>132</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -848,7 +880,7 @@
                   <p>les deux héroïnes qui ont immortalisé leur nom dans les première guerres de la
                      République, comme aides-de-camp de Dumouriez</p>
                </trait>
-               <desc xml:id="CAT_000135_e69_d1">2 l. <term ana="#document_type_15">a. s.</term>, l'une de Félicité et l'autre de Théophile, à M. François, avocat à Valenciennes; Bruxelles, <date when="1818">1818</date>-19, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000135_e69_d1">2 <term ana="#document_type_7">l. a. s.</term>, l'une de Félicité et l'autre de Théophile, à M. François, avocat à Valenciennes; Bruxelles, <date when="1818">1818</date>-19, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="70" xml:id="CAT_000135_e70">
                <num type="lot">70</num>
@@ -1374,7 +1406,7 @@
                <trait>
                   <p>l'illustre ministre et défenseur de Louis XVI</p>
                </trait>
-               <desc xml:id="CAT_000135_e126_d1">6 let. sig. à l'abbé Nolin; <date when="1779">1779</date>-82, <measure type="length" unit="p" n="17">17 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante correspondance.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000135_e126_d1">6 <term ana="#document_type_9">let. sig.</term> à l'abbé Nolin; <date when="1779">1779</date>-82, <measure type="length" unit="p" n="17">17 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante correspondance.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="127" xml:id="CAT_000135_e127">
                <num type="lot">127</num>
@@ -1490,7 +1522,7 @@
                <trait>
                   <p>le roi et l'historien de la Bohême, né en 1822, mort en 1861</p>
                </trait>
-               <desc xml:id="CAT_000135_e139_d1">L. a. Menteuse, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="120">120</measure>
+               <desc xml:id="CAT_000135_e139_d1">La Menteuse, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="120">120</measure>
                <note>Très curieuse pièce faite pour un album et probablement inédite. Elle est
                   illustrée de piquants dessins se rapportant au texte. Voici la dernière strophe :
                   Courez, courez, ma belle enfant, Sans mensonge, il fallait le dire, Et vous
@@ -1522,7 +1554,7 @@
                <trait>
                   <p>éminent écrivain, de l'Acad. fr., né à Besançon</p>
                </trait>
-               <desc xml:id="CAT_000135_e142_d1"><term ana="#document_type_7">L. a. s.</term> (au comte de L. a. Boulaye); Paris, <date when="1818-01-08">8 janvier 1818</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000135_e142_d1"><term ana="#document_type_7">L. a. s.</term> (au comte de La Boulaye); Paris, <date when="1818-01-08">8 janvier 1818</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Très curieuse lettre qu'il signe Charles de Nodier. Elle contient un état de sa
                   triste situation qui l'oblige à s'éloigner de son pays et à partir pour la
                   Tartarie. S'il s'adresse au comte, c'est qu'il l'a toujours considéré comme la
@@ -1962,7 +1994,7 @@
                <trait>
                   <p>l'illustre architecte du Panthéon, né près d'Auxerre en 1713, mort en 1780</p>
                </trait>
-               <desc xml:id="CAT_000135_e186_d1">1° Réponse de 11 lig. <term ana="#document_type_15">aut. sig.</term> au bas d'une lettre adressée à M. le marquis de Marigny; <date when="1767-03-04">4 mars 1767</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000135_e186_d2">2° 2 pièces le concernant.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000135_e186_d1">1° Réponse de 11 lig. aut. sig. au bas d'une <term ana="#document_type_8">lettre a</term>dressée à M. le marquis de Marigny; <date when="1767-03-04">4 mars 1767</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000135_e186_d2">2° 2 pièces le concernant.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="187" xml:id="CAT_000135_e187">
                <num type="lot">187</num>
@@ -2030,7 +2062,7 @@
                <trait>
                   <p>épouse du précédent</p>
                </trait>
-               <desc xml:id="CAT_000135_e193_d1">2 let. sig. avec la souscript. aut. à Nicolas, secrétaire du duc de Sully; Sully et Villebon, <date when="1623">1623</date>-24, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Une des deux lettres est tachée d'eau. Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000135_e193_d1">2 <term ana="#document_type_9">let. sig.</term> avec la souscript. aut. à Nicolas, secrétaire du duc de Sully; Sully et Villebon, <date when="1623">1623</date>-24, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Une des deux lettres est tachée d'eau. Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="194" xml:id="CAT_000135_e194">
                <num type="lot">194</num>
@@ -2088,7 +2120,7 @@
                <trait>
                   <p>fameux contrôleur général des finances sous Louis XV</p>
                </trait>
-               <desc xml:id="CAT_000135_e200_d1"><term ana="#document_type_7">L. a. s.</term> au premier président à Rouen ; L. a. Motte Pilly, <date when="1770-08-31">31 août 1770</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 18 « Curieuse lettre. « Enfin, Monsieur, vous</desc><note>en êtes venu à bout, il est heureux que le Parlement vous ait écouté, car je
+               <desc xml:id="CAT_000135_e200_d1"><term ana="#document_type_7">L. a. s.</term> au premier président à Rouen ; La Motte Pilly, <date when="1770-08-31">31 août 1770</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 18 « Curieuse lettre. « Enfin, Monsieur, vous</desc><note>en êtes venu à bout, il est heureux que le Parlement vous ait écouté, car je
                   vous assure que le parti est pris de tout entreprendre plutost que de laisser
                   l'authorité plier sous les arrêts des parlements.</note>
             </item>
@@ -2385,7 +2417,7 @@
             <item n="230" xml:id="CAT_000135_e230">
                <num type="lot">230</num>
                <name type="author">Artois</name>
-               <desc xml:id="CAT_000135_e230_d1"><term ana="#document_type_4">Pièce sig</term>. par Valentin de Pardieu, seigneur de L. a. Motte; Gravelines, <date when="1580-06">juin 1580</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000135_e230_d1"><term ana="#document_type_4">Pièce sig</term>. par Valentin de Pardieu, seigneur de La Motte; Gravelines, <date when="1580-06">juin 1580</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Importante pièce historique. Promesse par V. de Pardieu au colonel anglais
                   Thomas Morgan de lui faire obtenir une pension viagère de 6,000 florins « assignés
                   sur les Pays-Bas ou en Espaigne... à condition expresse que ledit Thomas férat
@@ -2484,7 +2516,7 @@
             <item n="242" xml:id="CAT_000135_e242">
                <num type="lot">242</num>
                <name type="author">Maine</name>
-               <desc xml:id="CAT_000135_e242_d1">2 l. <term ana="#document_type_15">a. s.</term> de M. de Gastines à Mme de Fontenu; <date when="1705">1705</date>-07, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000135_e242_d1">2 <term ana="#document_type_7">l. a. s.</term> de M. de Gastines à Mme de Fontenu; <date when="1705">1705</date>-07, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Il regrette que le fils de Mme de Fontenu n'ait pas obtenu l'intendance du
                   Ganada; il lui indique comment elle doit solliciter le consulat du Caire</note>
             </item>
@@ -2708,7 +2740,7 @@
             <item n="279" xml:id="CAT_000135_e279">
                <num type="lot">279</num>
                <name type="author">Régamey (Frédéric)</name>
-               <desc xml:id="CAT_000135_e279_d1">Plan de Bishopsgate à Londres. Dessin humoristique à la plume, avec personnages, sur une lettre <term ana="#document_type_15">aut. sig.</term>; (Londres), <date when="1871">1871</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000135_e279_d1">Plan de Bishopsgate à Londres. Dessin humoristique à la plume, avec personnages, sur une <term ana="#document_type_7">lettre aut. sig.</term>; (Londres), <date when="1871">1871</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="280" xml:id="CAT_000135_e280">
                <num type="lot">280</num>
@@ -2738,7 +2770,7 @@
             <item n="285" xml:id="CAT_000135_e285">
                <num type="lot">285</num>
                <name type="author">Rops (Félicien)</name>
-               <desc xml:id="CAT_000135_e285_d1">Croquis à la plume, sur une trés curieuse lettre <term ana="#document_type_15">autographe signée</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
+               <desc xml:id="CAT_000135_e285_d1">Croquis à la plume, sur une trés curieuse <term ana="#document_type_7">lettre autographe signée</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
             </item>
             <item n="286" xml:id="CAT_000135_e286">
                <num type="lot">286</num>
@@ -2783,7 +2815,7 @@
             <item n="294" xml:id="CAT_000135_e294">
                <num type="lot">294</num>
                <name type="author">Venot d'Auteroche (Eugénie)</name>
-               <desc xml:id="CAT_000135_e294_d1"><term ana="#document_type_8">L. a.</term> Cueillette du houblon à Percey (Haute-Marne). A la plume. Signé, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000135_e294_d1">La Cueillette du houblon à Percey (Haute-Marne). A la plume. Signé, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="295" xml:id="CAT_000135_e295">
                <num type="lot">295</num>

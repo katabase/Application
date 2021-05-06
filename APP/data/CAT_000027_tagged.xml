@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000027">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000027</title>
+            <title>RDA, N°33 (Novembre 1872)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>33</num>
                <editor>Gabriel Charavay</editor>
                <publisher>Gabriel Charavay</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936 <ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -420,7 +453,7 @@
                   <p>le célèbre peintre réaliste, membre de la Commune de Paris, né à Ornans en
                      1819</p>
                </trait>
-               <desc xml:id="CAT_000027_e22_d1">L. a. Vallée de Manbouck (Ornans), <term ana="#document_type_2">pièce aut. sig.</term> ; Ornans, <date when="1838">1838</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000027_e22_d1">La Vallée de Manbouck (Ornans), <term ana="#document_type_2">pièce aut. sig.</term> ; Ornans, <date when="1838">1838</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Curieuse chanson composée par Courbet à l'âge de 19 ans</note>
             </item>
             <item n="23" xml:id="CAT_000027_e23">
@@ -913,7 +946,7 @@
                <num type="lot">78</num>
                <name type="author">Mérimée (Prosper)</name>
                <trait>
-                  <p>célèbre littérateur, de l'Acad. fr</p>
+                  <p>célèbre littérateur, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000027_e78_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1864">1864</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Jolie lettre relative au poète russe Pouchkine</note>
@@ -947,7 +980,7 @@
                <name type="author">Montalembert (Ch., comte de)</name>
                <trait>
                   <p>célèbre publiciste catholique libéral, mort en niant l'infaillibilité du pape,
-                     de l'Acad. fr</p>
+                     de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000027_e82_d1"><term ana="#document_type_7">L. a. s.</term> à un abbé, <date when="1859-05-23">23 mai 1859</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Belle et curieuse lettre, relative au clergé catholique anglais. « Je me
@@ -1008,7 +1041,7 @@
                <num type="lot">88</num>
                <name type="author">Ollivier (Emile)</name>
                <trait>
-                  <p>ministre de Napoléon III, membre de l'Acad. fr</p>
+                  <p>ministre de Napoléon III, membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000027_e88_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
@@ -1018,7 +1051,7 @@
                <trait>
                   <p>célèbre compositeur et écrivain sur l'art musical</p>
                </trait>
-               <desc xml:id="CAT_000027_e89_d1"><term ana="#document_type_7">L. a. s.</term> à C. de Charlemagne, <date when="1829">1829</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet</desc><measure commodity="currency" unit="FRF" quantity="3"/>
+               <desc xml:id="CAT_000027_e89_d1"><term ana="#document_type_7">L. a. s.</term> à C. de Charlemagne, <date when="1829">1829</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="90" xml:id="CAT_000027_e90">
                <num type="lot">90</num>
@@ -1090,7 +1123,7 @@
                <trait>
                   <p>la grande tragédienne</p>
                </trait>
-               <desc xml:id="CAT_000027_e97_d1">A Monsieur Beauvallet, mille remerciments, 2 lignes <term ana="#document_type_15">aut. sig.</term>-Jolie pièce d'album.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000027_e97_d1">A Monsieur Beauvallet, mille remerciements, 2 lignes <term ana="#document_type_15">aut. sig.</term>-Jolie pièce d'album.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="98" xml:id="CAT_000027_e98">
                <num type="lot">98</num>
@@ -1187,7 +1220,7 @@
                <num type="lot">107</num>
                <name type="author">Sainte-Beuve</name>
                <trait>
-                  <p>l'éminent critique, de l'Acad. franc</p>
+                  <p>l'éminent critique, de l'Acad. franc.</p>
                </trait>
                <desc xml:id="CAT_000027_e107_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1866">1866</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Belle et curieuse épître sur les Contes d'Hawthorne, dont la traduction lui

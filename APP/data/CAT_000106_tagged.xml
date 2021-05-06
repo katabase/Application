@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000106">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000106</title>
+            <title>RDA, N°103 (Janvier 1887)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>103</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -458,7 +490,7 @@
                   <p>célèbre homme d'Etat et diplomate, ami et confident de Louis XVIII, de
                      l'Institut, né en 1770, mort. en 1839</p>
                </trait>
-               <desc xml:id="CAT_000106_e26_d1"><term ana="#document_type_7">L. a. s.</term> au vicomte de L. a. Boulaye, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000106_e26_d1"><term ana="#document_type_7">L. a. s.</term> au vicomte de La Boulaye, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="27" xml:id="CAT_000106_e27">
                <num type="lot">27</num>
@@ -1603,7 +1635,7 @@
                   <p>poète populaire allemand, qui s'est fait remarquer par son patriotisme, né en
                      1791, tué à vingt-deux ans au combat de Rosenberg, le 26 août 1813</p>
                </trait>
-               <desc xml:id="CAT_000106_e137_d1">L. a. Belle-Mère, vaudeville en vers, <term ana="#document_type_3">pièce aut.</term>; (<date when="1812">1812</date>), <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Superbe pièce.</desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
+               <desc xml:id="CAT_000106_e137_d1">La Belle-Mère, vaudeville en vers, <term ana="#document_type_3">pièce aut.</term>; (<date when="1812">1812</date>), <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Superbe pièce.</desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
             </item>
             <item n="138" xml:id="CAT_000106_e138">
                <num type="lot">138</num>
@@ -2587,7 +2619,7 @@
                <trait>
                   <p>célèbre poète provençal, né à Saint-Remy (Bouchesdu-Rhône) en 1818</p>
                </trait>
-               <desc xml:id="CAT_000106_e237_d1">L. a. Glaneuse, texte provençal et français, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <date when="1869">1869</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000106_e237_d1">La Glaneuse, texte provençal et français, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <date when="1869">1869</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="238" xml:id="CAT_000106_e238">
                <num type="lot">238</num>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000173">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000173</title>
+            <title>RDA, N°163 (Février 1894)</title>
             <respStmt>
                <persName ref="#COL_000004">Alexandre Bartz</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>Revue des autographes</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>163</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1894-02">Février 1894</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,6 +206,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -347,7 +375,7 @@
                      servir à l'Histoire de la Répuplique des lettres, né à Paris vers la fin du
                      XVIIe siècle, mort en 1771.</p>
                </trait>
-               <desc xml:id="CAT_000173_e14_d1">1° 2 l. <term ana="#document_type_15">a. s.</term>; Paris, <date when="1750">1750</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000173_e14_d2">-2° <term ana="#document_type_7">L. a. s.</term> de l'abbé de la Grive, <date when="1750-03-03">3 mars 1750</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000173_e14_d3">-3° Mémoire sur l'emplacement qu'occupoit l'hôtel de Soissons, <date when="1750-04">avril 1750</date>, manuscrit original, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000173_e14_d1">1° 2 <term ana="#document_type_7">l. a. s.</term>; Paris, <date when="1750">1750</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000173_e14_d2">-2° <term ana="#document_type_7">L. a. s.</term> de l'abbé de la Grive, <date when="1750-03-03">3 mars 1750</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000173_e14_d3">-3° Mémoire sur l'emplacement qu'occupoit l'hôtel de Soissons, <date when="1750-04">avril 1750</date>, manuscrit original, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Très curieux dossier tout relatif à l'achat de la colonne de l'hôtel de
                   Soissons. (Bachaumont avait acheté en 1750 la colonne de l'hôtel de Soissons, ce
                   monument de la régence de Catherine de Médicis; il la donna ensuite à la ville de
@@ -616,7 +644,7 @@
                <trait>
                   <p>sculpteur distingué, frère de Rosa Bonheur, né à Bordeaux en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000173_e41_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1883">1883</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> L. a. seconde page contient un très joli dessin à la plume sig., représentant un cheval de halage.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000173_e41_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1883">1883</date>, <measure type="length" unit="p" n="1">1 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> La seconde page contient un très joli dessin à la plume sig., représentant un cheval de halage.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="42" xml:id="CAT_000173_e42">
                <num type="lot">42</num>
@@ -800,7 +828,7 @@
                <trait>
                   <p>compositeur contemporain distingué, auteur de Gwendoline.</p>
                </trait>
-               <desc xml:id="CAT_000173_e60_d1"><term ana="#document_type_7">L. a. s.</term>, L. a. Membrolle, par Mettray (Indre-et-Loire); <date when="1890-09-06">6 sept. 1890</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000173_e60_d1"><term ana="#document_type_7">L. a. s.</term>, La Membrolle, par Mettray (Indre-et-Loire); <date when="1890-09-06">6 sept. 1890</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Belle lettre toute relative à Gwendoline.</note>
             </item>
             <item n="61" xml:id="CAT_000173_e61">
@@ -829,7 +857,7 @@
                   <p>célèbre général de la République, né à Valence (Drôme) en 1762, mort en 1800.
                     </p>
                </trait>
-               <desc xml:id="CAT_000173_e63_d1">1° | let. sig.; quartiers généraux de Coni, Finale et Oneille, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="11">11 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têtes imp., cachets.</desc><note>Curieuses lettres, en grande partie relatives aux embarras pécuniaires de
+               <desc xml:id="CAT_000173_e63_d1">1° | <term ana="#document_type_9">let. sig.</term>; quartiers généraux de Coni, Finale et Oneille, an <date when="1799-1800">VIII</date>, <measure type="length" unit="p" n="11">11 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, têtes imp., cachets.</desc><note>Curieuses lettres, en grande partie relatives aux embarras pécuniaires de
                   l'armée d'Italie.</note>
                <desc xml:id="CAT_000173_e63_d2">2° Résumé des Victoires de l'Armée de Rome devenue Armée de Naples, depuis le <date when="1798-11-22">2 frimaire an VII</date>, jusqu'au 5 pluviôse suivant, manuscrit du temps,-p. 1/2 <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, à mi-marges.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
@@ -1502,7 +1530,7 @@
                      campagnes de l'Empire comme lieutenant du prince Eugène, né à Sarrelouis en
                      1768, mort en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000173_e127_d1">2 let. sig.; quartier-général de Naples, 1810.-Volta, <date when="1814">1814</date>. <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000173_e127_d1">2 <term ana="#document_type_9">let. sig.</term>; quartier-général de Naples, 1810.-Volta, <date when="1814">1814</date>. <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="128" xml:id="CAT_000173_e128">
                <num type="lot">128</num>
@@ -1521,7 +1549,7 @@
                <trait>
                   <p>célèbre homme d'Etat et romancier italien, né en 1805, mort en 1873.</p>
                </trait>
-               <desc xml:id="CAT_000173_e129_d1">9 l. <term ana="#document_type_15">a. s.</term> et 1 let. aut. à l'éditeur Pollitti ; <date when="1870">1870</date>-72, <measure type="length" unit="p" n="22">22 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000173_e129_d1">9 <term ana="#document_type_7">l. a. s.</term> et 1 let. aut. à l'éditeur Pollitti ; <date when="1870">1870</date>-72, <measure type="length" unit="p" n="22">22 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Très curieuse correspondance dont voici un résumé : Cecina, 25 juin 1870. Il
                   désire que le Siège de Rome illustré (1849), soit publié avec plus de rapidité;
                   c'est le meilleur moyen de faire la guerre au Pape. -Livourne, 6 septembre 1870.
@@ -1936,7 +1964,7 @@
                   <p>dit Lebrun-Pindare, célèbre poète lyrique, de l'Acad. fr., né en 1729, mort en
                      1807.</p>
                </trait>
-               <desc xml:id="CAT_000173_e168_d1"><term ana="#document_type_7">L. a. sig.</term> en abrégé (minute) à M. (de Chassiron, à L. a. Rochelle); <date when="1760-11-26">26 novembre 1760</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000173_e168_d1"><term ana="#document_type_7">L. a. sig.</term> en abrégé (minute) à M. (de Chassiron, à La Rochelle); <date when="1760-11-26">26 novembre 1760</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Il lui adresse l'un de ses ouvrages, le félicite sur les mémoires insérés au
                   recueil de l'Académie de La Rochelle et lui parle de la générosité de Voltaire
                   recueillant la petitenièce du grand Corneille, etc.</note>
@@ -1955,7 +1983,7 @@
                <trait>
                   <p>graveur et aquafortiste contemporain très distingué.</p>
                </trait>
-               <desc xml:id="CAT_000173_e170_d1"><term ana="#document_type_2">Pièce de vers aut. sig.</term>, <date when="1884">1884</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> L. a. page est complétée par un très joli dessin à la plume, cachet.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000173_e170_d1"><term ana="#document_type_2">Pièce de vers aut. sig.</term>, <date when="1884">1884</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> La page est complétée par un très joli dessin à la plume, cachet.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="171" xml:id="CAT_000173_e171">
                <num type="lot">171</num>
@@ -2071,7 +2099,7 @@
                <trait>
                   <p>le célèbre écrivain contemporain, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000173_e183_d1">Pêcheur d'Islande, roman, Paris. Calmann Lévy, <date when="1886">1886</date>, <measure type="format" unit="f" ana="#document_format_12">in-12 b</measure>roché. Edition originale, exemplaire très frais avec les couvertures. Rare. Très joli volume auquel on a joint :</desc><desc xml:id="CAT_000173_e183_d2">1° Un croquis sig. d'un portrait de Pierre Loti, par Abot, <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><desc xml:id="CAT_000173_e183_d3">2° Une curieuse l. <term ana="#document_type_15">a. s.</term> de Pierre Loti, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Toute relative à ce portrait.</desc><desc xml:id="CAT_000173_e183_d4">-3° Une suite de 9 gravures de Manchon, d'après Jazet, pour illustrer Pêcheur d'Island; <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000173_e183_d1">Pêcheur d'Islande, roman, Paris. Calmann Lévy, <date when="1886">1886</date>, <measure type="format" unit="f" ana="#document_format_12">in-12 b</measure>roché. Edition originale, exemplaire très frais avec les couvertures. Rare. Très joli volume auquel on a joint :</desc><desc xml:id="CAT_000173_e183_d2">1° Un croquis sig. d'un portrait de Pierre Loti, par Abot, <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><desc xml:id="CAT_000173_e183_d3">2° Une curieuse <term ana="#document_type_7">l. a. s.</term> de Pierre Loti, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Toute relative à ce portrait.</desc><desc xml:id="CAT_000173_e183_d4">-3° Une suite de 9 gravures de Manchon, d'après Jazet, pour illustrer Pêcheur d'Island; <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="184" xml:id="CAT_000173_e184">
                <num type="lot">184</num>
@@ -2091,7 +2119,7 @@
                      René, bâtard de Savoie, comte de Villars et de Tende, femme de Christophe
                      Jouvenel des Ursins, baron de la Chapelle.</p>
                </trait>
-               <desc xml:id="CAT_000173_e185_d1">2 let. sig. avec la souscript. aut. à la comtesse de Brienne et de Ligny, sa belle-soeur (Guillemette de la Marck, fille de Robert IV, duc de Bouillon, femme de Jean de Luxembourg ; Paris, <date when="1583">1583</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000173_e185_d1">2 <term ana="#document_type_9">let. sig.</term> avec la souscript. aut. à la comtesse de Brienne et de Ligny, sa belle-soeur (Guillemette de la Marck, fille de Robert IV, duc de Bouillon, femme de Jean de Luxembourg ; Paris, <date when="1583">1583</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Belles et curieuses lettres, dont voici une analyse sommaire : Paris. 24
                   janvier 1583. Elle parle de son mari, M. de la Chapelle, et de son trère, M. de
                   Brienne; elle lui demande de favoriser par quelque donation le mariage de sa nièce
@@ -2344,7 +2372,7 @@
                <trait>
                   <p>roi de Naples, beau-frère de Napoléon Ier.</p>
                </trait>
-               <desc xml:id="CAT_000173_e210_d1">2 let. sig. au général Paul Grenier, commandant en chef le corps de l'Italie méridionale; camp roval de Piale (près Reggio, Calabre), <date when="1818">18 juillet-3 août 1818</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000173_e210_d1">2 <term ana="#document_type_9">let. sig.</term> au général Paul Grenier, commandant en chef le corps de l'Italie méridionale; camp roval de Piale (près Reggio, Calabre), <date when="1818">18 juillet-3 août 1818</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Intéressantes lettres historiques, dont voici une analyse sommaire : Piale, 18
                   juillet 1810. Il se plaint de voir l'escadre anglaise, qui protège la Sicile et le
                   roi Ferdinand III, croiser devant sa tente; il ordonne des rondes sur la côte de
@@ -2580,7 +2608,7 @@
                   <p>homme politique et littérateur, membre de l'Institut, né à Metz en 1754, mort
                      en 1835.</p>
                </trait>
-               <desc xml:id="CAT_000173_e233_d1"><term ana="#document_type_7">L. a. s.</term>, comme procureur général syndic de la Commune de Paris, aux membres du Directoire du Département; prison de L. a. Force, <date when="1792-08-21">(21 août 1792</date>), <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000173_e233_d1"><term ana="#document_type_7">L. a. s.</term>, comme procureur général syndic de la Commune de Paris, aux membres du Directoire du Département; prison de La Force, <date when="1792-08-21">(21 août 1792</date>), <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Très curieuse lettre. « Coinme il faut pourvoir aux besoins ainsi qu'à la
                   sûreté des prisonniers (des suspects arrêtés après la journée du 10 août), je me
                   crois obligé de rester ici; le tribunal des Minimes y est établi pour
@@ -2675,7 +2703,7 @@
                   <p>célèbre général de la garde nationale pendant la Révolution, né en 1752, mort
                      en 1809.</p>
                </trait>
-               <desc xml:id="CAT_000173_e243_d1">Let. sig. comme général de division de l'armée des côtes de <term ana="#document_type_8">L. a.</term> Rochelle; Saumur, <date when="1793-08-19">19 août 1793</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000173_e243_d1"><term ana="#document_type_9">Let. sig.</term> comme général de division de l'armée des côtes de La Rochelle; Saumur, <date when="1793-08-19">19 août 1793</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle et intéressante lettre contenant de curieux détails sur les opérations
                   contre les Vendéens.</note>
             </item>
@@ -3226,7 +3254,7 @@
             <item n="296" xml:id="CAT_000173_e296">
                <num type="lot">296</num>
                <name type="author">Postes</name>
-               <desc xml:id="CAT_000173_e296_d1">1° <term ana="#document_type_9">Let. sig.</term> de Jonathan Meigs, poslmaster général des Etats-Unis; Washington, <date when="1817">1817</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000173_e296_d2">2° 8 let. sig. des directeurs des postes, du prince de la Tour et Taxis, des Etats pontificaux, d'Autriche, de Hollande, de Bohême, d'Italie, de Prusse et de Suisse; <date when="1855">1855</date>-59. Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000173_e296_d1">1° <term ana="#document_type_9">Let. sig.</term> de Jonathan Meigs, poslmaster général des Etats-Unis; Washington, <date when="1817">1817</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000173_e296_d2">2° 8 <term ana="#document_type_9">let. sig.</term> des directeurs des postes, du prince de la Tour et Taxis, des Etats pontificaux, d'Autriche, de Hollande, de Bohême, d'Italie, de Prusse et de Suisse; <date when="1855">1855</date>-59. Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="297" xml:id="CAT_000173_e297">
                <num type="lot">297</num>

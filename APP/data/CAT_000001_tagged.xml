@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000001">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>CAT_000001</title>
+            <title>Vente Charon, 14 mai 1845</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,7 +22,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
+            <bibl ana="RDA">
                <title>Catalogue d'une belle collection d'autographes dont la vente aura lieu le mercredi 14 mai 1845 et jours suivants</title>
                <publisher>Charon</publisher>
                <pubPlace>Paris, Rue Louis-le-Grand 33</pubPlace>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness>München, Bayerische Staatsbibliothek, 9999875925<ptr target="http://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb11021427-7"/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Germany</country>
+                        <settlement>München</settlement>
+                        <institution>Bayerische Staatsbibliothek</institution>
+                        <idno type="shelfmark">9999875925</idno>
+                     </msIdentifier>
+                  </msDesc>
+                  <ptr type="catalogue" target="http://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb11021427-7"/>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,21 +206,41 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="#COL_000001" when="2020-07">Correction, adding new mark-up for price and an ID
-            for desc</change>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <gap/>
          <list>
-            <head> PREMIÈRE VACATION, mercredi 14 mai 1845 -N° 1 à 94. </head>
+            <head>PREMIÈRE VACATION, mercredi 14 mai 1845 -N° 1 à 94.</head>
             <item n="1" xml:id="CAT_000001_e1">
                <num type="lot">1</num>
                <name type="author">ACADÉMIE FRANÇAISE</name>
-               <desc xml:id="CAT_000001_e1_d1">Arrêté de Messieurs de l'Académie française, mis entre les mains de Monseigneur le chancelier Protecteur, <date when="1659">en date du 16 avril 1659</date>, pour lui témoigner le grand désir qu'ils ont de voir finir les divisions qui la troublent… « A cet effet a été adressé le présent acte, « signé des vingt-trois membres présents. » Suivent les signatures de « l'abbé Tallemant, Hardoin de Péréfixe, Lautru, Chapelain, Desmarest, Olivier Patru, Charpentier, Lachambre, Pellisson-Fontanier, <term ana="#document_type_8">L. a.</term> Meinadière, De <term ana="#document_type_8">L. a.</term> Mothe, Doujat, Chaumont, Giry, Gombault, César d'Estrées, Priézac, Ch. Colin, Mézeray, De Metz, etc.</desc></item>
+               <desc xml:id="CAT_000001_e1_d1">Arrêté de Messieurs de l'Académie française, mis entre les mains de Monseigneur le chancelier Protecteur, <date when="1659">en date du 16 avril 1659</date>, pour lui témoigner le grand désir qu'ils ont de voir finir les divisions qui la troublent… « A cet effet a été adressé le présent acte, « signé des vingt-trois membres présents. » Suivent les signatures de « l'abbé Tallemant, Hardoin de Péréfixe, Lautru, Chapelain, Desmarest, Olivier Patru, Charpentier, Lachambre, Pellisson-Fontanier, La Meinadière, De La Mothe, Doujat, Chaumont, Giry, Gombault, César d'Estrées, Priézac, Ch. Colin, Mézeray, De Metz, etc.</desc></item>
             <item n="2" xml:id="CAT_000001_e2">
                <num type="lot">2</num>
                <name type="author">ACADÉMIE FRANÇAISE (Membres de l')</name>
@@ -388,7 +417,7 @@
             </item>
             <item n="21" xml:id="CAT_000001_e21">
                <num type="lot">21</num>
-               <name type="author">BÉRANGER,</name>
+               <name type="author">BÉRANGER</name>
                <trait>
                   <p>noire poëte national. N. 1780</p>
                </trait>
@@ -412,7 +441,7 @@
                <trait>
                   <p>savant mathématicien. N. 1700. M. 1782</p>
                </trait>
-               <desc xml:id="CAT_000001_e23_d1"><term ana="#document_type_7">L. aut. sig.</term> à M. de L. a. Condamine. Bâle, <date when="1754-03-18">18 mars 1754</date>. Belle lettre toute littéraire et scientifique. 3 grandes pages <measure type="format" unit="f" ana="#document_format_4">in-4</measure> ; avec cachet</desc></item>
+               <desc xml:id="CAT_000001_e23_d1"><term ana="#document_type_7">L. aut. sig.</term> à M. de La Condamine. Bâle, <date when="1754-03-18">18 mars 1754</date>. Belle lettre toute littéraire et scientifique. 3 grandes pages <measure type="format" unit="f" ana="#document_format_4">in-4</measure> ; avec cachet</desc></item>
             <item n="24" xml:id="CAT_000001_e24">
                <num type="lot">24</num>
                <name type="author">BERRY (Ch.-Ford., duc de)</name>
@@ -432,7 +461,7 @@
             </item>
             <item n="26" xml:id="CAT_000001_e26">
                <num type="lot">26</num>
-               <name type="author">BERTON (Jean-Baptiste),</name>
+               <name type="author">BERTON (Jean-Baptiste)</name>
                <trait>
                   <p>général de la République et de l'Empire; entraîné dans la conspiration de
                      Saumur, par des agents provocateurs, il fut arrêté, livré à une commission
@@ -508,11 +537,11 @@
             </item>
             <item n="33" xml:id="CAT_000001_e33">
                <num type="lot">33</num>
-               <name>BONAPARTE (Napoléon),</name>
+               <name>BONAPARTE (Napoléon)</name>
                <trait>
                   <p>N. 1769. M. 1821.</p>
                </trait>
-               <desc xml:id="CAT_000001_e33_d1">1° Sa sig. Buonaparte, comme général en chef de l'armée d'Italie, sur une lettre datée d'Oneille, le <date when="1795-02-13">25 pluviôse an III</date> ;</desc><desc xml:id="CAT_000001_e33_d2">2° Sa sig. Bonaparte, comme Premier Consul, sur une lettre au ministre de la guerre datée de Paris, le <date when="1800-01-21">1er pluviôse an VIII</date> ;</desc><desc xml:id="CAT_000001_e33_d3">3° Sa sig. Nap. sur une lettre au général Pajol, datée de Troyes, <date when="1814-02-03">le 3 février 1814</date>. Lettre très-curieuse. Ordre de bataille;</desc><desc xml:id="CAT_000001_e33_d4">4° Apostille de deux lignes aulog. et sig. sur un rapport du ministre Berthier, daté de Smolensk, <date when="1812-11-11">11 novembre 1812</date>;</desc><desc xml:id="CAT_000001_e33_d5">5° Apostille de deux lignes <term ana="#document_type_15">aut. s</term>ur un rapport aulog. du duc de Feltre, datée de Saint Cloud, <date when="1813-04-10">le 10 avril 1813</date></desc></item>
+               <desc xml:id="CAT_000001_e33_d1">1° Sa sig. Buonaparte, comme général en chef de l'armée d'Italie, sur une lettre datée d'Oneille, le <date when="1795-02-13">25 pluviôse an III</date> ;</desc><desc xml:id="CAT_000001_e33_d2">2° Sa sig. Bonaparte, comme Premier Consul, sur une <term ana="#document_type_8">lettre au</term> ministre de la guerre datée de Paris, le <date when="1800-01-21">1er pluviôse an VIII</date> ;</desc><desc xml:id="CAT_000001_e33_d3">3° Sa sig. Nap. sur une <term ana="#document_type_8">lettre au</term> général Pajol, datée de Troyes, <date when="1814-02-03">le 3 février 1814</date>. Lettre très-curieuse. Ordre de bataille;</desc><desc xml:id="CAT_000001_e33_d4">4° Apostille de deux lignes aulog. et sig. sur un rapport du ministre Berthier, daté de Smolensk, <date when="1812-11-11">11 novembre 1812</date>;</desc><desc xml:id="CAT_000001_e33_d5">5° Apostille de deux lignes <term ana="#document_type_15">aut. s</term>ur un rapport aulog. du duc de Feltre, datée de Saint Cloud, <date when="1813-04-10">le 10 avril 1813</date></desc></item>
             <item n="34" xml:id="CAT_000001_e34">
                <num type="lot">34</num>
                <name type="author">BONAPARTE (Létitia)</name>
@@ -605,7 +634,7 @@
                <trait>
                   <p>fils de Louis et d'Horlense, prisonnier au château de Ham.</p>
                </trait>
-               <desc xml:id="CAT_000001_e41_d1">Trois lettres ou billets <term ana="#document_type_15">aut. sig.</term> de son paraphe, à M. Lombard ; ensemble, <measure type="length" unit="p" n="5">5 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note> Dans la lettre du 5 octobre 1839, il lui dit qu'aulanl qu'il aime à donner des
+               <desc xml:id="CAT_000001_e41_d1">Trois lettres ou <term ana="#document_type_6">billets</term> aut. sig. de son paraphe, à M. Lombard ; ensemble, <measure type="length" unit="p" n="5">5 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note> Dans la lettre du 5 octobre 1839, il lui dit qu'aulanl qu'il aime à donner des
                   éloges à M. Ch-Durand quand il se livre a son talent, autant il croit de son
                   devoir de lui exprimer sa désapprobation quand il lit dans un journal auquel il
                   s'intéresse des articles aussi inconvenants que celui qui y était inséré dans le
@@ -829,7 +858,7 @@
             </item>
             <item n="62" xml:id="CAT_000001_e62">
                <num type="lot">62</num>
-               <name type="author">CARNOT,</name>
+               <name type="author">CARNOT</name>
                <trait>
                   <p> convention et minist. N. 1753. M. 1823</p>
                </trait>
@@ -865,7 +894,7 @@
                <desc xml:id="CAT_000001_e65_d1"><term ana="#document_type_7">L. aut. sig.</term>, au maréchal Fabert, gouverneur de Sédan. De la Cassine, <date when="1552-09-15">15 septembre 1552</date>. Détails militaires. <measure type="length" unit="p" n="7">7 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc></item>
             <item n="66" xml:id="CAT_000001_e66">
                <num type="lot">66</num>
-               <name type="author">CATHERINE DE MÉDICIS,</name>
+               <name type="author">CATHERINE DE MÉDICIS</name>
                <trait>
                   <p>reine de France, femme de Henri II. N. 1519. M. 1589</p>
                </trait>
@@ -1032,7 +1061,7 @@
                <trait>
                   <p>seign. de Chastillon, l'amiral. N. 1517. M. assassiné en 1572</p>
                </trait>
-               <desc xml:id="CAT_000001_e84_d1">Précieuse lettre adressée au comte de Rcingeau, datée de Caen, <date when="1562-03-16">16 mars 1562</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure> avec cachet</desc><note>On y remarque le passage suivant, écrit entièrement de la main de l'amiral , et
+               <desc xml:id="CAT_000001_e84_d1">Précieuse <term ana="#document_type_8">lettre a</term>dressée au comte de Rcingeau, datée de Caen, <date when="1562-03-16">16 mars 1562</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure> avec cachet</desc><note>On y remarque le passage suivant, écrit entièrement de la main de l'amiral , et
                   signé (le commencement de la lettre étant d'un secrétaire ï. « Il me samble que
                   \ous ne scauries mieulx faire que de vous acheminer à Orleans, ou iespere que
                   iaure le moien de vous venir, et ce pendant asseures vous quil ne tiendra point en
@@ -1303,7 +1332,7 @@
                   <p>duc de Ferraie, frère d'Eléonore, dont le Tasse fut amoureux. N. 1532. M.
                      1597</p>
                </trait>
-               <desc xml:id="CAT_000001_e110_d1">Sa signature et le compliment autog. au bas d'une lettre au card. de Sainte-Croix. Ferrare, <date when="1540-05-10">10 mai 1540</date>. Très-belle pièce <measure type="format" unit="f" ana="#document_format_1">in-folio</measure></desc><note>Relative à un bénéfice qu'un certain Géminiano aurait acquis par des voies peu
+               <desc xml:id="CAT_000001_e110_d1">Sa signature et le compliment autog. au bas d'une <term ana="#document_type_8">lettre au</term> card. de Sainte-Croix. Ferrare, <date when="1540-05-10">10 mai 1540</date>. Très-belle pièce <measure type="format" unit="f" ana="#document_format_1">in-folio</measure></desc><note>Relative à un bénéfice qu'un certain Géminiano aurait acquis par des voies peu
                   légitimes. L'accusé prétend avoir des raisons justificatives de sa conduite. Il
                   voudrait donc savoir ce qu'il doit faire, car il ne désire rien tant que de se
                   conformer à sa volonté, etc.</note>
@@ -1627,7 +1656,7 @@
             <item n="141" xml:id="CAT_000001_e141">
                <num type="lot">141</num>
                <name type="author">GUERRIERS DIVERS, 6 lettres signées sur papier</name>
-               <desc xml:id="CAT_000001_e141_d1">GONZAGUE (Louis de), duc de Nevers. Sig., et le compliment autog. al. sig. Triolo Ursino, 22 juillet 1662 CHARLES-AMÉDÉE DE SAVOYE, duc de Nemours. Sig , et le compl. aulog. à MM. les consuls et échevins de la ville de Lyon. Du 6 décembre. SCÉPEAUX (François de), sieur de Vielleville, maréchal de France. Sig., et le compl. autog. Metz, 24 mai 1557. ESTOUTEVILLE (Villebon, seigneur d'). prévôt de Paris sous Henri II. Sig., et le compl. aut. De Saint-Germain, 24 lévrier 1567. CONDÉ (Henri de Bourbon, prince de). Sig., et le compl. autog. Paris, 12 janvier 1606. VENDOME (César, duc de). Sig , et le compi. autog. Paris, <date when="1008-08-08">8 août 1008</date></desc></item>
+               <desc xml:id="CAT_000001_e141_d1">GONZAGUE (Louis de), duc de Nevers. Sig., et le compliment autog. al. sig. Triolo Ursino, 22 juillet 1662 CHARLES-AMÉDÉE DE SAVOYE, duc de Nemours. Sig , et le comp<term ana="#document_type_8">l. au</term>log. à MM. les consuls et échevins de la ville de Lyon. Du 6 décembre. SCÉPEAUX (François de), sieur de Vielleville, maréchal de France. Sig., et le comp<term ana="#document_type_8">l. au</term>tog. Metz, 24 mai 1557. ESTOUTEVILLE (Villebon, seigneur d'). prévôt de Paris sous Henri II. Sig., et le comp<term ana="#document_type_8">l. au</term>t. De Saint-Germain, 24 lévrier 1567. CONDÉ (Henri de Bourbon, prince de). Sig., et le comp<term ana="#document_type_8">l. au</term>tog. Paris, 12 janvier 1606. VENDOME (César, duc de). Sig , et le compi. autog. Paris, <date when="1008-08-08">8 août 1008</date></desc></item>
             <item n="142" xml:id="CAT_000001_e142">
                <num type="lot">142</num>
                <name type="author">GUERRIERS DIVERS</name>
@@ -1676,11 +1705,11 @@
             <item n="146" xml:id="CAT_000001_e146">
                <num type="lot">146</num>
                <name type="author">GUISE</name>
-               <desc xml:id="CAT_000001_e146_d1">(François de Lorraine, duc de) et Charles de Guise, cardinal de Lorraine. Leurs sig. et le compl. aut. au bas d'une lettre, à M. de Noailles, ambassadeur en Angleterre. De Saint-Germain-en-Laye, <date when="1659-08-18">18 août 1659</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc></item>
+               <desc xml:id="CAT_000001_e146_d1">(François de Lorraine, duc de) et Charles de Guise, cardinal de Lorraine. Leurs sig. et le comp<term ana="#document_type_8">l. aut.</term> au bas d'une lettre, à M. de Noailles, ambassadeur en Angleterre. De Saint-Germain-en-Laye, <date when="1659-08-18">18 août 1659</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure></desc></item>
             <item n="146bis" xml:id="CAT_000001_e146bis">
                <num type="lot">146 bis</num>
                <name type="author">Guise (Louis II de Lorraine, cardinal de)</name>
-               <desc xml:id="CAT_000001_e146bis_d1">Sa sig. et le compl. aut. au bas d'une lettre au roi. De Plombières, <date when="1572-05-15">15 mai 1572</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure></desc></item>
+               <desc xml:id="CAT_000001_e146bis_d1">Sa sig. et le comp<term ana="#document_type_8">l. aut.</term> au bas d'une lettre au roi. De Plombières, <date when="1572-05-15">15 mai 1572</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure></desc></item>
             <item n="147" xml:id="CAT_000001_e147">
                <num type="lot">147</num>
                <name type="author">GUISE (Henri de Lorraine, duc de)</name>
@@ -1833,7 +1862,7 @@
                <desc xml:id="CAT_000001_e163_d1">Morceau littéraire. Aut sig., <measure type="length" unit="p" n="7">7 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> , dans lequel il développe sa manière de traduire les tragiques. Il donne pour exemple une traduction du troisième acte de Faust.</desc></item>
             <item n="164" xml:id="CAT_000001_e164">
                <num type="lot">164</num>
-               <name>JACQUES II,</name>
+               <name>JACQUES II</name>
                <trait>
                   <p>roi d'Angleterre. N. 1633. M. 1701.</p>
                </trait>
@@ -2011,7 +2040,7 @@
                <trait>
                   <p>Idem</p>
                </trait>
-               <desc xml:id="CAT_000001_e181_d1">Fable. <term ana="#document_type_8">L. a.</term> Fôrest et le Bûcheron. Aut. sig., <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Pour madame la duchesse de Bouillon. « Un bûcheron venoit de rompre ou d'égarer
+               <desc xml:id="CAT_000001_e181_d1">Fable. La Fôrest et le Bûcheron. <term ana="#document_type_15">Aut. sig.</term>, <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Pour madame la duchesse de Bouillon. « Un bûcheron venoit de rompre ou d'égarer
                   Le bois dont il avait eininenché sa coignée, « Cette perte ne put silost se
                   réparer Que la forest n'en fust quelque temps épargnée.</note>
             </item>
@@ -2411,7 +2440,7 @@
             </item>
             <item n="223" xml:id="CAT_000001_e223">
                <num type="lot">223</num>
-               <name type="author">MARÉCHAUX DE FRANCE,</name>
+               <name type="author">MARÉCHAUX DE FRANCE</name>
                <desc xml:id="CAT_000001_e223_d1">4 lett. autog. signées</desc><note>D'AUMONT DE VILLEQUIER. 17 avril 1651. 1 page in-folio. ESTRADES (Godefroy,
                   comte d'). 24 nov. 1673. 2 pages in-4. LA MELLERAYE (Leduc de). 25 mars 1641. 1
                   pages in-4. DU PLESSIS-PRASLIN. 20 janvier 1651. 1 page in-4. Cachets</note>
@@ -2644,7 +2673,7 @@
             <item n="247" xml:id="CAT_000001_e247">
                <num type="lot">247</num>
                <name type="author">MINISTRES ET HOMMES D'ÉTAT; 4 lettres</name>
-               <desc xml:id="CAT_000001_e247_d1">CHAULNES (Mich.-Ferd.-d'Albert d'Ailly, <date when="1670">duc de). <term ana="#document_type_7">L. aut. sig.</term> 21 janvier 1670</date>. <measure type="length" unit="p" n="3">3 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000001_e247_d2"><date when="1650">LE TELLIER (Michel). ministre. <term ana="#document_type_7">L. aut. sig.</term> 1650</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000001_e247_d3">SAINT-SIMON (Le duc de), <date when="1634">père de l'historien. <term ana="#document_type_7">L. aut. sig.</term> 1634</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000001_e247_d4">SULLY (Maximilien , <date when="1614">duc de). <term ana="#document_type_9">L. sig.</term> et le compl. aut. à M. l'évêque de Luçon 23 juin 1614</date>. Pièce très-curieuse</desc></item>
+               <desc xml:id="CAT_000001_e247_d1">CHAULNES (Mich.-Ferd.-d'Albert d'Ailly, <date when="1670">duc de). <term ana="#document_type_7">L. aut. sig.</term> 21 janvier 1670</date>. <measure type="length" unit="p" n="3">3 pages</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000001_e247_d2"><date when="1650">LE TELLIER (Michel). ministre. <term ana="#document_type_7">L. aut. sig.</term> 1650</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000001_e247_d3">SAINT-SIMON (Le duc de), <date when="1634">père de l'historien. <term ana="#document_type_7">L. aut. sig.</term> 1634</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000001_e247_d4">SULLY (Maximilien , <date when="1614">duc de). L. sig. et le comp<term ana="#document_type_8">l. aut.</term> à M. l'évêque de Luçon 23 juin 1614</date>. Pièce très-curieuse</desc></item>
             <item n="248" xml:id="CAT_000001_e248">
                <num type="lot">248</num>
                <name type="author">MINISTRES ET ORATEURS ANGLAIS; 2 lettres</name>
@@ -2865,7 +2894,7 @@
             </item>
             <item n="271" xml:id="CAT_000001_e271">
                <num type="lot">271</num>
-               <name type="author">ORDELAFFI (Pino Degli),</name>
+               <name type="author">ORDELAFFI (Pino Degli)</name>
                <trait>
                   <p>souverain de Forli, grand capitaine, et prolecteur des arts et des lettres. M.
                      en 1480. (Biog. de Michaud, t. XXXII, p. 53.)</p>
@@ -2880,7 +2909,7 @@
                <trait>
                   <p>N. 1608. M. 1660</p>
                </trait>
-               <desc xml:id="CAT_000001_e272_d1"><term ana="#document_type_7">L. aut. sig.</term>, au cardinal de L. a. Valette. Paris, <date when="1637-08-03">3 août 1637</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets et soies</desc><note>II le remercie et lui témoigne sa joie de la nouvelle qu'il lui donne de la
+               <desc xml:id="CAT_000001_e272_d1"><term ana="#document_type_7">L. aut. sig.</term>, au cardinal de La Valette. Paris, <date when="1637-08-03">3 août 1637</date>. <measure type="length" unit="p" n="1">1 page</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets et soies</desc><note>II le remercie et lui témoigne sa joie de la nouvelle qu'il lui donne de la
                   prise de Landrecy</note>
             </item>
             <item n="273" xml:id="CAT_000001_e273">
@@ -3008,7 +3037,7 @@
             </item>
             <item n="285" xml:id="CAT_000001_e285">
                <num type="lot">285</num>
-               <name type="author">PICHEGRU,</name>
+               <name type="author">PICHEGRU</name>
                <trait>
                   <p>général de la Répub. N. 1761. M. 1804</p>
                </trait>
@@ -3238,7 +3267,7 @@
                <trait>
                   <p>N. 1696. M. 1788</p>
                </trait>
-               <desc xml:id="CAT_000001_e305_d1"><term ana="#document_type_7">L. aut. sig.</term>, <date when="2020-12-14">à M… 1736</date>. <measure type="length" unit="p" n="4">4 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Curieuse lettre, au sujet des poursuites exercées contre lui par ses
+               <desc xml:id="CAT_000001_e305_d1"><term ana="#document_type_7">L. aut. sig.</term>, <date when="2021-05-06">à M… 1736</date>. <measure type="length" unit="p" n="4">4 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Curieuse lettre, au sujet des poursuites exercées contre lui par ses
                   créanciers; et surtout par une mégère infernale qui le persécute et a mis le
                   bouleversement dans ses affaires, et qui, tenant depuis six mois tout son bien, a
                   encore été sonner le tocsin parmi ses autres créanciers, qui veulent aussi le
@@ -3277,7 +3306,7 @@
             </item>
             <item n="309" xml:id="CAT_000001_e309">
                <num type="lot">309</num>
-               <name type="author">REINES DE FRANCE ET D'ESPAGNE,</name>
+               <name type="author">REINES DE FRANCE ET D'ESPAGNE</name>
                <desc xml:id="CAT_000001_e309_d1">4 lettres <measure type="format" unit="f" ana="#document_format_1">in-folio</measure></desc><note>CATHERINE DE MÉDICIS. L. sig. et le compliment aut., au grand duc de Toscane.
                   Fontainebleau, 6 février 1548. MARIE DE MÉDICIS. L. sig. et compl. aut, à son
                   neveu le grand-duc de Toscane. Londres, 5 août 1639. ELISABETH DE FRANCE, femme de
@@ -3298,7 +3327,7 @@
                <trait>
                   <p>femme du minisire. N. 1754. Mise à mort en 1793</p>
                </trait>
-               <desc xml:id="CAT_000001_e311_d1"><term ana="#document_type_7">L. aut. sig.</term> de son paraphe, à M. Lanthenas, datée de Lyon, <date when="1790-07-02">le 2 juillet 1790</date>. <measure type="length" unit="p" n="3">3 pages</measure> pleines petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle et intéressante lettre. L. a. première page est relative à l'inquiétude qu elle éprouve sur le sort de sa chère Agathe; les deux autres sont toutes consacrées à la politique, principalement sur les affaires de Lyon, « qui sont, dit-elle, dans un terrible cahos, le peuple n'y est pas si violent qu'on le dit, mais la municipalité y fait des inconséquences sans nombre… » Et plus loin elle ajoute «…, Tous vos ministres sont des fripons, mais le premier me semble le pire de tous…l'homme de paille a été mal conseillé pour le grand jour ; et sa femme me semble la plus cruelle ennemie de la révolution; je déteste le Pce…et vos lâches députés courtisans, etc.</desc></item>
+               <desc xml:id="CAT_000001_e311_d1"><term ana="#document_type_7">L. aut. sig.</term> de son paraphe, à M. Lanthenas, datée de Lyon, <date when="1790-07-02">le 2 juillet 1790</date>. <measure type="length" unit="p" n="3">3 pages</measure> pleines petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle et intéressante lettre. La première page est relative à l'inquiétude qu elle éprouve sur le sort de sa chère Agathe; les deux autres sont toutes consacrées à la politique, principalement sur les affaires de Lyon, « qui sont, dit-elle, dans un terrible cahos, le peuple n'y est pas si violent qu'on le dit, mais la municipalité y fait des inconséquences sans nombre… » Et plus loin elle ajoute «…, Tous vos ministres sont des fripons, mais le premier me semble le pire de tous…l'homme de paille a été mal conseillé pour le grand jour ; et sa femme me semble la plus cruelle ennemie de la révolution; je déteste le Pce…et vos lâches députés courtisans, etc.</desc></item>
             <item n="312" xml:id="CAT_000001_e312">
                <num type="lot">312</num>
                <name type="author">ROUSSEAU (Jean-Jacques</name>
@@ -3321,7 +3350,7 @@
                <trait>
                   <p>Idem</p>
                </trait>
-               <desc xml:id="CAT_000001_e313_d1">8 lettres aut., à M. Lenieps, toutes datées de Montmorency, du 2 décembre 1759, au 24 avril 1702. Plus 3 fragments ou notes détachées, autog. En tout, <measure type="length" unit="p" n="16">16 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8 ; plusieurs avec cachet. On y a joint une quittance signée d'une rente viagère que la veuve Duchêne et son mari lui ont faite, datée de Paris, <date when="1772-01-01">1er janvier 1772</date></desc></item>
+               <desc xml:id="CAT_000001_e313_d1">8 lettres aut., à M. Lenieps, toutes datées de Montmorency, du 2 décembre 1759, au 24 avril 1702. Plus 3 fragments ou notes détachées, autog. En tout, <measure type="length" unit="p" n="16">16 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8 ; plusieurs avec cachet. On y a joint une <term ana="#document_type_12">quitt</term>ance signée d'une rente viagère que la veuve Duchêne et son mari lui ont faite, datée de Paris, <date when="1772-01-01">1er janvier 1772</date></desc></item>
             <item n="314" xml:id="CAT_000001_e314">
                <num type="lot">314</num>
                <name type="author">ROUSSEAU (Jean-Jacques)</name>
@@ -3617,7 +3646,7 @@
             </item>
             <item n="347" xml:id="CAT_000001_e347">
                <num type="lot">347</num>
-               <name type="author">SOUVERAINES ETRANGERES,</name>
+               <name type="author">SOUVERAINES ETRANGERES</name>
                <desc xml:id="CAT_000001_e347_d1">4 lettres signées, d'une parfaite conservation.</desc><note>MARIE D'AUTRICHE, soeur de Charles-Quint, reine de Hongrie et de Bohême, au
                   cardinal Salviati. Du 4 octobre 1524. MARIE, fille aîné de Charles-Quint, et femme
                   de l'empereur Maximilien II. au grand-duc de Toscane. Ralisbonne, 4 août 1576.

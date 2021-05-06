@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000174">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000174</title>
+            <title>RDA, N°164 (Mars 1894)</title>
             <respStmt>
-               <persName ref="#COL_000001">Matthias Gille Levenson</persName>
+               <persName ref="#COL_000006">Matthias Gille Levenson</persName>
                <resp>
                   <date when="2020">2020</date>
                </resp>
@@ -22,13 +22,13 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num>174</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris,8 quai du Louvre</pubPlace>
-               <date when="1893-02">Mars 1894</date>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>164</num>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
+               <date when="1894-03">Mars 1894</date>
             </bibl>
             <listEvent>
                <event>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,6 +206,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -496,7 +524,7 @@
                      diplomate, ambassadeur en Ecosse, frère puiné du duc de Sully, né en 1561, mort
                      en 1649.</p>
                </trait>
-               <desc xml:id="CAT_000174_e26_d1">Lel. sig. avec la souscript. et 5 lig. aut. à l'abbé de Marcillac (Silvestre de Cruzy, depuis évêque de Mende); Rome, <date when="1626-09-18">18 sept. 1626</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Légèrement tachée.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000174_e26_d1">Le<term ana="#document_type_9">l. sig.</term> avec la souscript. et 5 lig. aut. à l'abbé de Marcillac (Silvestre de Cruzy, depuis évêque de Mende); Rome, <date when="1626-09-18">18 sept. 1626</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Légèrement tachée.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Curieuse lettre. Il n'a pu obtenir du pape Urbain VIII le bénéfice sollicité
                   par l'abbé: il a aussi mal réussi pour l'affaire de l'évéché de Sarlat ; il lui
                   adresse un paquet pour le cardinal de Richelieu. Intéressants détails.</note>
@@ -1191,7 +1219,7 @@
                   <p>un des créateurs de la science géologique, de l'Institut, né près de La
                      Tour-du-Pin (Isère) en 1750, mort en 1801.</p>
                </trait>
-               <desc xml:id="CAT_000174_e92_d1">Important dossier composé de 14 pièces, toutes relatives à la captivité de Dolomieu à Messine.</desc><desc xml:id="CAT_000174_e92_d2">-1° <term ana="#document_type_4">Pièce sig</term>.; <date when="1797">1797</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Passeport à lui délivré contenant son signalement.</desc><desc xml:id="CAT_000174_e92_d3">2° <term ana="#document_type_7">L. a. s.</term> de Dolomieu, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d4">3° <term ana="#document_type_7">L. a. s.</term> du chevalier Alphonse Gratet de Dolomieu, son frère, au naturaliste Jos. Banks; Brunswick, <date when="1799-10-15">15 octobre 1799</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d5">4° <term ana="#document_type_7">L. a. s.</term> de Mme de Drée, née de Dolomieu, sa soeur, à Banks; Paris, <date when="1800-01-03">13 nivôse an VIII</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d6">5° 3 let. sig. de Jos. Niou, commissaire du Gouvernement français en Angleterre (ancien conventionnel), à Banks; Londres, <date when="1799">1799-1800</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d7">6° <term ana="#document_type_9">Let. sig.</term> de L.-G. Otto, comte de Mosloy, à Banks, avec la minute aut. de la réponse de celui-ci; Londres, <date when="1800-06-09">9 juin 1800</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d8">7° Copie d'une lettre de Banks à Dolomieu; Londres, <date when="1801">1801</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d9">8° <term ana="#document_type_7">L. a. s.</term> de Fay, ami de Dolomieu, à lord Hamilton; L. a. Valette, 8 mai 1800, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-9° 3 copies de lettres de Dolomieu, écrites pendant sa captivité, et une note sur son arrestation; <date when="1799">1799-1800</date>, 9 p. in-fol. et in-4.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000174_e92_d1">Important dossier composé de 14 pièces, toutes relatives à la captivité de Dolomieu à Messine.</desc><desc xml:id="CAT_000174_e92_d2">-1° <term ana="#document_type_4">Pièce sig</term>.; <date when="1797">1797</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Passeport à lui délivré contenant son signalement.</desc><desc xml:id="CAT_000174_e92_d3">2° <term ana="#document_type_7">L. a. s.</term> de Dolomieu, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d4">3° <term ana="#document_type_7">L. a. s.</term> du chevalier Alphonse Gratet de Dolomieu, son frère, au naturaliste Jos. Banks; Brunswick, <date when="1799-10-15">15 octobre 1799</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d5">4° <term ana="#document_type_7">L. a. s.</term> de Mme de Drée, née de Dolomieu, sa soeur, à Banks; Paris, <date when="1800-01-03">13 nivôse an VIII</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000174_e92_d6">5° 3 <term ana="#document_type_9">let. sig.</term> de Jos. Niou, commissaire du Gouvernement français en Angleterre (ancien conventionnel), à Banks; Londres, <date when="1799">1799-1800</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d7">6° <term ana="#document_type_9">Let. sig.</term> de L.-G. Otto, comte de Mosloy, à Banks, avec la minute aut. de la réponse de celui-ci; Londres, <date when="1800-06-09">9 juin 1800</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d8">7° Copie d'une lettre de Banks à Dolomieu; Londres, <date when="1801">1801</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><desc xml:id="CAT_000174_e92_d9">8° <term ana="#document_type_7">L. a. s.</term> de Fay, ami de Dolomieu, à lord Hamilton; La Valette, 8 mai 1800, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-9° 3 copies de lettres de Dolomieu, écrites pendant sa captivité, et une note sur son arrestation; <date when="1799">1799-1800</date>, 9 p. in-fol. et in-4.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
             </item>
             <item n="93" xml:id="CAT_000174_e93">
                <num type="lot">93</num>
@@ -1272,7 +1300,7 @@
             <item n="99" xml:id="CAT_000174_e99">
                <num type="lot">99</num>
                <name type="author">Dupanloup (Félix)</name>
-               <desc xml:id="CAT_000174_e99_d1">4 l. <term ana="#document_type_15">a. s.</term> de sa mère à lui adressées (<date when="1842">1842</date>-48); <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000174_e99_d1">4 <term ana="#document_type_7">l. a. s.</term> de sa mère à lui adressées (<date when="1842">1842</date>-48); <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Très belles lettres toutes remplies de témoignages de tendresse et où elle lui
                   raconte les évènements qui se passent à Paris, l'enterrement de Mgr Affre,
                   l'élévation de Mgr Sibour à l'archevêché de Paris, etc.</note>
@@ -2480,7 +2508,7 @@
                <trait>
                   <p>l'illustre anatomiste italien, né en 1682, mort en 1771.</p>
                </trait>
-               <desc xml:id="CAT_000174_e211_d1">26 l. <term ana="#document_type_15">a. s.</term>, en latin, à Sauveur Morand (chirurgien, membre de l'Acad. des Sciences); Padoue, <date when="1732">1732</date>-62, <measure type="length" unit="p" n="40">40 p.</measure> in--4, cachets.</desc><measure commodity="currency" unit="FRF" quantity="80">80</measure>
+               <desc xml:id="CAT_000174_e211_d1">26 <term ana="#document_type_7">l. a. s.</term>, en latin, à Sauveur Morand (chirurgien, membre de l'Acad. des Sciences); Padoue, <date when="1732">1732</date>-62, <measure type="length" unit="p" n="40">40 p.</measure> in--4, cachets.</desc><measure commodity="currency" unit="FRF" quantity="80">80</measure>
                <note>Précieuse correspondance scientifique dont voici une courte analyse : Padoue,
                   1er janvier 1732. Le médecin Michelotti a dû lui rendre compte de l'opération de
                   la pierre pratiquée sur Jacques Beaulieu; plusieurs nobles Vénitiens ont été
@@ -2688,7 +2716,7 @@
                <trait>
                   <p>célèbre écrivain italien, auteur de Mes Prisons, né en 1789, mort en 1854. </p>
                </trait>
-               <desc xml:id="CAT_000174_e230_d1"><term ana="#document_type_3">Pièce aut.</term>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> L. a. signature a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000174_e230_d1"><term ana="#document_type_3">Pièce aut.</term>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> La signature a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Critique d'un ouvrage intitulé : Hommes de transition. -« A m'en croire, une
                   telle classification n'est pas admissible, en représentant les fauteurs de
                   révolutions comme des hommes qui, bien que dangereux, sont supérieurs; ce serait
@@ -3276,7 +3304,7 @@
                      de Belle-Isle en 1761 et au siège de Savannah en 1779, il fortifia le fort
                      William. appelé depuis le Gibraltar de l'Inde, né vers 1737, mort en 1780. </p>
                </trait>
-               <desc xml:id="CAT_000174_e285_d1">7 let. aut., dout 1 sig. et 5 sig. de ses initiales à Warren-Hastings, gouverneur des Indes; <date when="1783">Fort William (près Calcutta). 1783-1785</date>, <measure type="length" unit="p" n="14">14 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-Au dos de plusieurs lettres, analyses et apostilles de Warren-Hastings.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000174_e285_d1">7 <term ana="#document_type_8">let. aut.</term>, dout 1 sig. et 5 sig. de ses initiales à Warren-Hastings, gouverneur des Indes; <date when="1783">Fort William (près Calcutta). 1783-1785</date>, <measure type="length" unit="p" n="14">14 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-Au dos de plusieurs lettres, analyses et apostilles de Warren-Hastings.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Intéressantes lettres relatives à la protection des navires de commerce qui
                   mouillaient à l'embouchure du Gange; au commerce de l'opium; aux résidents
                   européens déplacés et envoyés à Bénarès, aux cipahis mahrattes.</note>

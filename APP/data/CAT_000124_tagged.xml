@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000124">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000124</title>
+            <title>RDA, N°121 (Avril 1889)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">121</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>121</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -1675,7 +1707,7 @@
                <trait>
                   <p>amiral, troisième fils du roi Louis-Philippe, né en 1818</p>
                </trait>
-               <desc xml:id="CAT_000124_e150_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Baudin; à bord de L. a. Créole, <date when="1838-10-15">15 octobre 1838</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Avec apostille aut. sig. de l'amiral Baudin.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000124_e150_d1"><term ana="#document_type_7">L. a. s.</term> à l'amiral Baudin; à bord de La Créole, <date when="1838-10-15">15 octobre 1838</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Avec apostille aut. sig. de l'amiral Baudin.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="151" xml:id="CAT_000124_e151">
                <num type="lot">151</num>
@@ -1816,7 +1848,7 @@
                <trait>
                   <p>ministre de la guerre de Louis XVI, né en 1730, guillotiné en 1794</p>
                </trait>
-               <desc xml:id="CAT_000124_e165_d1">2 l. <term ana="#document_type_15">a. s.</term> à M. de Saint-Léger, exempt de la maréchaussée, à Nogent-sur-Seine; Brienne, <date when="1771">1771</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Les feuillets détachés.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000124_e165_d1">2 <term ana="#document_type_7">l. a. s.</term> à M. de Saint-Léger, exempt de la maréchaussée, à Nogent-sur-Seine; Brienne, <date when="1771">1771</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Les feuillets détachés.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Au sujet d'un procès en succession entre les Guérapin et les Jacquand, ou M. et
                   Mme de Saint-Léger ne voulaient pas accepter de compromis</note>
             </item>
@@ -2045,7 +2077,7 @@
                   <p>petit-fils du Régent, grand-père du roi Louis-Philippe, qui épousa secrètement
                      Mme de Montesson, né en 1725, mort en 1786</p>
                </trait>
-               <desc xml:id="CAT_000124_e187_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par le comte de L. a. Marche (L.-F. de Bourbon, prince de Conti); P'aris, <date when="1752">20 jaillet 1752</date>, <measure type="length" unit="p" n="19.5">19 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000124_e187_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par le comte de La Marche (L.-F. de Bourbon, prince de Conti); P'aris, <date when="1752">20 jaillet 1752</date>, <measure type="length" unit="p" n="19.5">19 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Règlement des comptes de tutelle du comte de la Marche et de Diane d'Orléans,
                   fille du Régent. Le duc d'Orléans était légataire universel de sa grand'mère, Mlle
                   de Blois ; de là l'intervention des princes signataires; l'un, à cause de son
@@ -2126,7 +2158,7 @@
                <trait>
                   <p>homme d'Etat et érudit, de l'Acad fr., né à Marseille en 1756, mort en 1840</p>
                </trait>
-               <desc xml:id="CAT_000124_e194_d1">L. a. Pluralité des Mondes, ode « M. de la Lande, célèbre astronome, <term ana="#document_type_3">pièce aut.</term>; (<date when="1805">1805</date>), <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000124_e194_d1">La Pluralité des Mondes, ode « M. de la Lande, célèbre astronome, <term ana="#document_type_3">pièce aut.</term>; (<date when="1805">1805</date>), <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Très belle pièce écrite à propos d'une nouvelle édition de Fontenelle</note>
             </item>
             <item n="195" xml:id="CAT_000124_e195">

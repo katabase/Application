@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000075">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000075</title>
+            <title>RDA, N°88 (Février 1885)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>88</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -323,7 +356,7 @@
                   <p>fils de Gracchus, à la mort de son père adopté par Le Peletier de
                      Saint-Fargeau, libraire et journaliste, ne en 1785</p>
                </trait>
-               <desc xml:id="CAT_000075_e12_d1">10 lettres à lui adressées par Choron, le baron Méchain, Etienne Lenoir, <term ana="#document_type_8">L. a.</term> Rochefoucauld-Liancourt, etc.; <date when="1817">1817</date>-22, <measure type="length" unit="p" n="17">17 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8 o</measure>u in-4.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000075_e12_d1">10 lettres à lui adressées par Choron, le baron Méchain, Etienne Lenoir, La Rochefoucauld-Liancourt, etc.; <date when="1817">1817</date>-22, <measure type="length" unit="p" n="17">17 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8 o</measure>u in-4.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="13" xml:id="CAT_000075_e13">
                <num type="lot">13</num>
@@ -333,7 +366,7 @@
                      servit pour des procès intentés à Bussy-Rabutin et aux Grignan, exilé à
                      Château-Thierry par Mazarin</p>
                </trait>
-               <desc xml:id="CAT_000075_e13_d1">2 l. <term ana="#document_type_15">a. s.</term> (à Dirois); <date when="1681">1681</date>-85, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000075_e13_d1">2 <term ana="#document_type_7">l. a. s.</term> (à Dirois); <date when="1681">1681</date>-85, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Belles lettres : (1681). Il parle de la nomination de Jean d'Estrées comme
                   maréchal de France et demande des nouvelles de l'affaire de la régale. -(1685).
                   Recommandation en faveur d'un écossais de ses parents, O'Daly, qui a du goût pour
@@ -387,7 +420,7 @@
                <trait>
                   <p>spirituel et fécond vaudevilliste, né à Charolles</p>
                </trait>
-               <desc xml:id="CAT_000075_e18_d1">12 l. <term ana="#document_type_15">a. s.</term> à Sauvage, directeur de l'Odéon; <date when="1839">1839</date>-50; <measure type="length" unit="p" n="20">20 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000075_e18_d1">12 <term ana="#document_type_7">l. a. s.</term> à Sauvage, directeur de l'Odéon; <date when="1839">1839</date>-50; <measure type="length" unit="p" n="20">20 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belles lettres, toutes relatives à ses ouvrages</note>
             </item>
             <item n="19" xml:id="CAT_000075_e19">
@@ -637,7 +670,7 @@
                <trait>
                   <p>spirituel vaudevilliste, né à Lyon</p>
                </trait>
-               <desc xml:id="CAT_000075_e42_d1">12 let. <term ana="#document_type_15">a. s.</term> à Sauvage, directeur de l'Odéon; <date when="1827">1827</date>-57, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000075_e42_d1">12 <term ana="#document_type_7">let. a. s.</term> à Sauvage, directeur de l'Odéon; <date when="1827">1827</date>-57, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Intéressante correspondance sur la représentation de ses ouvrages à
                   l'Odéon</note>
             </item>
@@ -812,7 +845,7 @@
                <trait>
                   <p>littérateur de l'école romantique, traducteur de la Divine Comédie</p>
                </trait>
-               <desc xml:id="CAT_000075_e59_d1">20 l. <term ana="#document_type_15">a. s.</term> ; <date when="1854">1854</date>-60, <measure type="length" unit="p" n="20">20 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000075_e59_d1">20 <term ana="#document_type_7">l. a. s.</term> ; <date when="1854">1854</date>-60, <measure type="length" unit="p" n="20">20 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Lettres d'amour dont plusieurs sont fort piquantes</note>
             </item>
             <item n="60" xml:id="CAT_000075_e60">
@@ -848,7 +881,7 @@
                <trait>
                   <p>la grande tragédienne du Théâtre-Français, née dans le Nord</p>
                </trait>
-               <desc xml:id="CAT_000075_e63_d1"><term ana="#document_type_7">L. a. s.</term> (au vicomte de L. a. Rochefoucauld), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000075_e63_d1"><term ana="#document_type_7">L. a. s.</term> (au vicomte de La Rochefoucauld), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Elle lui annonce qu'elle va reprendre son service et qu'il peut compter sur
                   elle pour le rôle d'Aménaïde : « Je suis trop heureuse de jouer à la Cour pour
                   manquer cette occasion de paraître devant Sa Majesté.</note>
@@ -1854,7 +1887,7 @@
                   <p>maréchal de France, fameux par ses bonnes fortunes, membre de l'Académie
                      française, né en 1706, mort en 1788</p>
                </trait>
-               <desc xml:id="CAT_000075_e158_d1">3 let. aut. à M. Pinel, procureursyndic, à Bordeaux; <date when="1768">1768</date>-74, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000075_e158_d1">3 <term ana="#document_type_8">let. aut.</term> à M. Pinel, procureursyndic, à Bordeaux; <date when="1768">1768</date>-74, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Importantes lettres pour l'histoire de la ville de Bordeaux : Paris, 3 avril
                   176N. Il va avoir une conférence avec le contrôleur général au sujet des
                   patrouilles du sieur Pechot. Il y a différence entre guet et garde, quoi qu'en
@@ -2103,7 +2136,7 @@
                <trait>
                   <p>le grand tragédien</p>
                </trait>
-               <desc xml:id="CAT_000075_e182_d1">1° l. <term ana="#document_type_15">a. s.</term> T. à Mme Kreutzer, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000075_e182_d2">2° pièce de 3 lignes <term ana="#document_type_15">a. s.</term>, <date when="1824">1824</date>, <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000075_e182_d1">1° <term ana="#document_type_7">l. a. s.</term> T. à Mme Kreutzer, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000075_e182_d2">2° pièce de 3 lignes <term ana="#document_type_15">a. s.</term>, <date when="1824">1824</date>, <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="183" xml:id="CAT_000075_e183">
                <num type="lot">183</num>

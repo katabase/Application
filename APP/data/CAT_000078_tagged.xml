@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000078">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000078</title>
+            <title>RDA, N°91 (Mai 1885)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>91</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -372,7 +405,7 @@
                <num type="lot">16</num>
                <name type="author">Dangeau (Philippe de Courcillon, marquis de)</name>
                <trait>
-                  <p>général, auteur de Mémoires, membre de l'Acad. franc</p>
+                  <p>général, auteur de Mémoires, membre de l'Acad. franc.</p>
                </trait>
                <desc xml:id="CAT_000078_e16_d1">Piece sig. sur vélin, <date when="1710">1710</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, oblong. Rare.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Reçu de la somme de 1,200 livres pour ses gages comme chevalier d'honneur de la
@@ -450,7 +483,7 @@
                <num type="lot">23</num>
                <name type="author">Duclos (Charles Pinot)</name>
                <trait>
-                  <p>littérateur et historien du XVIIIe siècle, membre de l'Acad. franc</p>
+                  <p>littérateur et historien du XVIIIe siècle, membre de l'Acad. franc.</p>
                </trait>
                <desc xml:id="CAT_000078_e23_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1770-02-06">6 février 1770</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Belle lettre relative à l'Académie française; il y parle du portrait du roi que
@@ -1158,7 +1191,7 @@
                      la comtesse de Moret, ancienne maîtresse de Henri IV, qu'il épousa en 1617. Il
                      fut condamné à mort par contumace en 1636 pour avoir mal défendu La Capelle</p>
                </trait>
-               <desc xml:id="CAT_000078_e86_d1">Quittance sig. sur velin; <term ana="#document_type_8">L. a.</term> Capelle, <date when="1603-09-30">30 septembre 1603</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000078_e86_d1"><term ana="#document_type_12">Quitt</term>ance sig. sur velin; La Capelle, <date when="1603-09-30">30 septembre 1603</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Reçu de 100 livres pour un mois de ses gages comme gouverneur de la
                   Capelle</note>
             </item>
@@ -1167,7 +1200,7 @@
                <name type="author">Verjus (Louis de)</name>
                <trait>
                   <p>comte de Crécy, célèbre ambassadeur en Portugal et en Allemagne, membre do
-                     l'Acad. franc</p>
+                     l'Acad. franc.</p>
                </trait>
                <desc xml:id="CAT_000078_e87_d1"><term ana="#document_type_9">Let. sig.</term>, avec la souscription aut., à M. de Feuquières, ambassadeur de France en Suède ; Ratisbonne, <date when="1680-03">mars 1680</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettre historique. Il regrette de n'avoir pas près de lui, comme représentant
@@ -1214,7 +1247,7 @@
                <trait>
                   <p>acteur célèbre, né a Bordeaux en 1761, mort en 1835</p>
                </trait>
-               <desc xml:id="CAT_000078_e91_d1">5 l. <term ana="#document_type_15">a. s.</term> au baron Taylor, <date when="1822">1822</date>-25, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> dont 1 in-4.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000078_e91_d1">5 <term ana="#document_type_7">l. a. s.</term> au baron Taylor, <date when="1822">1822</date>-25, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> dont 1 in-4.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Lettres intéressantes pour la biographie de cet artiste</note>
             </item>
             <item n="92" xml:id="CAT_000078_e92">
@@ -1231,7 +1264,7 @@
                <trait>
                   <p>poète et auteur dramatique, né a Aurillac en 1792, mort en 1860</p>
                </trait>
-               <desc xml:id="CAT_000078_e93_d1">14 l. <term ana="#document_type_15">a. s.</term> au baron Taylor, <date when="1827">1827</date>-47, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4. Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000078_e93_d1">14 <term ana="#document_type_7">l. a. s.</term> au baron Taylor, <date when="1827">1827</date>-47, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4. Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="94" xml:id="CAT_000078_e94">
                <num type="lot">94</num>
@@ -1250,7 +1283,7 @@
                <trait>
                   <p>acteur distingué de la Comédie-Française, né en 1782, mort en 1852</p>
                </trait>
-               <desc xml:id="CAT_000078_e95_d1">7 l. <term ana="#document_type_15">a. s.</term> au baron Taylor, <date when="1837">1837</date>-47, <measure type="length" unit="p" n="10.5">10 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000078_e95_d1">7 <term ana="#document_type_7">l. a. s.</term> au baron Taylor, <date when="1837">1837</date>-47, <measure type="length" unit="p" n="10.5">10 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="96" xml:id="CAT_000078_e96">
                <num type="lot">96</num>
@@ -1303,7 +1336,7 @@
                      lord-chambellan, protecteur des arts, fils de Georgina Spencer, la célèbre
                      duchesse de Devonshire, né en 1790</p>
                </trait>
-               <desc xml:id="CAT_000078_e100_d1">L. s., en français, au vicomte de <term ana="#document_type_8">L. a.</term> Rochefoucauld ; Londres, <date when="1827-11-13">13 nov. 1827</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000078_e100_d1"><term ana="#document_type_9">L. s.</term>, en français, au vicomte de La Rochefoucauld ; Londres, <date when="1827-11-13">13 nov. 1827</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Intéressante lettre relative au Théâtre-Français de Londres</note>
             </item>
             <item n="101" xml:id="CAT_000078_e101">
@@ -1383,7 +1416,7 @@
                <trait>
                   <p>peintre anglais, aquarelliste et lithographe, né en 1798, mort en 1863</p>
                </trait>
-               <desc xml:id="CAT_000078_e108_d1">18 l. <term ana="#document_type_15">a. s.</term>, en français et en anglais au baron Taylor; <date when="1827">1827</date>-41, <measure type="length" unit="p" n="39">39 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000078_e108_d1">18 <term ana="#document_type_7">l. a. s.</term>, en français et en anglais au baron Taylor; <date when="1827">1827</date>-41, <measure type="length" unit="p" n="39">39 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Très-intéressante correspondance sur les arts</note>
             </item>
             <item n="109" xml:id="CAT_000078_e109">
@@ -1431,7 +1464,7 @@
                <trait>
                   <p>reine des Belges.</p>
                </trait>
-               <desc xml:id="CAT_000078_e112_d1">Fragment de lettre aut., <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Taché. Plus une enveloppe aut. avec cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000078_e112_d1">Fragment de <term ana="#document_type_8">lettre aut.</term>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Taché. Plus une enveloppe aut. avec cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="113" xml:id="CAT_000078_e113">
                <num type="lot">113</num>

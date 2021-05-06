@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000170">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000170</title>
+            <title>RDA, N°160 (Novembre 1893)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>160</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, 8 quai du Louvre</pubPlace>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1893-11">Novembre 1893</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -234,7 +266,7 @@
                <trait>
                   <p>illustre savant et philosophe du XVIIIe siècle, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000170_e3_d1">9 let. aut. dont 5 sig. à l'abbé Roussier (auteur d'ouvrages sur l'harmonie), né à Marseille en 1716, mort en 1790 ; Paris, <date when="1731">marsaoût 1731</date>, <measure type="length" unit="p" n="18">18 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4 o</measure>u in-8.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
+               <desc xml:id="CAT_000170_e3_d1">9 <term ana="#document_type_8">let. aut.</term> dont 5 sig. à l'abbé Roussier (auteur d'ouvrages sur l'harmonie), né à Marseille en 1716, mort en 1790 ; Paris, <date when="1731">marsaoût 1731</date>, <measure type="length" unit="p" n="18">18 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4 o</measure>u in-8.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
                <note>Intéressante correspondance. D'Alembert avait envoyé à l'abbé Roussier le
                   manuscrit de ses Eléments ce musique théorique et pratique, suivant les principes
                   de Rameau. Il accepte ou réfute les modifications que lui adressait l'abbé : «
@@ -550,7 +582,7 @@
                   <p>maréchal de France, fils naturel de Jacques II, roi d'Angleterre, né en 1660,
                      tué au siège de Philipsbourg en 1734.</p>
                </trait>
-               <desc xml:id="CAT_000170_e32_d1">Let. sig. avec 3 lig. aut. au duc de <term ana="#document_type_8">L. a.</term> Vrillière; Nice, janvier 170 , <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000170_e32_d1"><term ana="#document_type_9">Let. sig.</term> avec 3 lig. aut. au duc de La Vrillière; Nice, janvier 170 , <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Relative à la capitulation de la citadelle et du château de Nice, qui avait eu
                   lieu l'avant-veille.</note>
             </item>
@@ -662,7 +694,7 @@
                <trait>
                   <p>peintre orientaliste très distingué, né à Marseille en 1823.</p>
                </trait>
-               <desc xml:id="CAT_000170_e42_d1"><term ana="#document_type_7">L. a. s.</term>; (<date when="1875">1875</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> L. a. seconde page contient un croquis à la plume sig. d'un de ses tableaux.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000170_e42_d1"><term ana="#document_type_7">L. a. s.</term>; (<date when="1875">1875</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> La seconde page contient un croquis à la plume sig. d'un de ses tableaux.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
             </item>
             <item n="43" xml:id="CAT_000170_e43">
                <num type="lot">43</num>
@@ -824,7 +856,7 @@
                   <p>peintre célèbre par ses croquis des types militaires de la Révolution et de
                      l'Empire, né en 1792, mort en 1845.</p>
                </trait>
-               <desc xml:id="CAT_000170_e59_d1">1° <term ana="#document_type_7">L. a. s.</term> à M. Renzy, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><desc xml:id="CAT_000170_e59_d2">2° 3 l. <term ana="#document_type_15">a. s.</term> des peintres Lalaisse, Canon et Eug. Ginain ; <date when="1857">1857-1863</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000170_e59_d1">1° <term ana="#document_type_7">L. a. s.</term> à M. Renzy, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><desc xml:id="CAT_000170_e59_d2">2° 3 <term ana="#document_type_7">l. a. s.</term> des peintres Lalaisse, Canon et Eug. Ginain ; <date when="1857">1857-1863</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Belles lettres relatives à Charlet, leur maître et ami.</note>
             </item>
             <item n="60" xml:id="CAT_000170_e60">
@@ -1210,7 +1242,7 @@
                   <p>célèbre critique et érudit, de l'Acad. des inscriptions, né à Rennes en 1760,
                      mort en 1838.</p>
                </trait>
-               <desc xml:id="CAT_000170_e96_d1"><term ana="#document_type_7">L. a. s.</term> à Mme de L. a. Grange; 11 ventose, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> -On a joint une curieuse brochure de 16 pages in-4 en français et en italien, <date when="1793">relatant les événements de janvier 1793</date> à Rome, où Bassville fut assassiné et où Amaury, Duval faillit perdre la vie.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000170_e96_d1"><term ana="#document_type_7">L. a. s.</term> à Mme de La Grange; 11 ventose, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> -On a joint une curieuse brochure de 16 pages in-4 en français et en italien, <date when="1793">relatant les événements de janvier 1793</date> à Rome, où Bassville fut assassiné et où Amaury, Duval faillit perdre la vie.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="97" xml:id="CAT_000170_e97">
                <num type="lot">97</num>
@@ -2122,7 +2154,7 @@
                <trait>
                   <p>le célèbre graveur de portraits, né à Reims vers 1623, mort en 1678.</p>
                </trait>
-               <desc xml:id="CAT_000170_e185_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par François de Harlay, archevêque de Paris; Jules Hardouin-Mansart, le célèbre architecte ; Jacques Lemasson, seigneur de L. a. Fontaine; Madeleine d'Angennes, femme du précédent; Nicole-Geneviève Nanteuil, etc. ; Paris, <date when="1670">1670-1674</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très rare.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000170_e185_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par François de Harlay, archevêque de Paris; Jules Hardouin-Mansart, le célèbre architecte ; Jacques Lemasson, seigneur de La Fontaine; Madeleine d'Angennes, femme du précédent; Nicole-Geneviève Nanteuil, etc. ; Paris, <date when="1670">1670-1674</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très rare.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note>Vente par le seigneur de la Fontaine d'une maison sise au faubourg
                   Saint-Antoine, acquise de Michel Hardouin et de Jules Hardouin-Mansart.
                   Approbation par Robert Nanteuil, père de Nicole-Geneviève Nanteuil, femme de
@@ -2134,7 +2166,7 @@
                <trait>
                   <p>empereur des Français.</p>
                </trait>
-               <desc xml:id="CAT_000170_e186_d1">7 l. <term ana="#document_type_15">a. s.</term> à Mme Bure, sa nourrice; <date when="1822">1822</date>-30, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
+               <desc xml:id="CAT_000170_e186_d1">7 <term ana="#document_type_7">l. a. s.</term> à Mme Bure, sa nourrice; <date when="1822">1822</date>-30, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
                <note>Précieuse correspondance de sa jeunesse. En voici une courte analyse :
                   Arenenberg, 6 octobre 1822. Annonce du mariage de Mlle Cochelet. — Rome, 7 avril
                   1826. Détails sur les péripéties de son voyage à Rome. — Rome, 3 avril (1827). Il
@@ -2161,7 +2193,7 @@
                   <p>un des plus célèbres mathématiciens du XVIIe siècle, ami de Gassendi, né à.
                      Loudun vers le commencement du XVIIe siècle, mort en 1677.</p>
                </trait>
-               <desc xml:id="CAT_000170_e188_d1">P. a. s., en latin, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> <term ana="#document_type_8">L. a.</term> moitié du feuillet de l'adresse manque. Très rare.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000170_e188_d1">P. <term ana="#document_type_15">a. s.</term>, en latin, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> La moitié du feuillet de l'adresse manque. Très rare.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Eloge envers adressé à Ménage pour ses étrennes. Il servait de préface à un
                   mémoire intitulé : Conjuratio Fridlandica detecta (Friedland en Prusse), vers
                   adressé à Ménage pour ses étrennes. Il servait de préface à un mémoire intitulé :
@@ -2175,7 +2207,7 @@
                <trait>
                   <p>ancien capucin, évêque de Ruremonde.</p>
                </trait>
-               <desc xml:id="CAT_000170_e189_d1">2 l. <term ana="#document_type_15">a. s.</term> (au duc d'Ormond) ; Ruremonde, <date when="1712">1712</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000170_e189_d1">2 <term ana="#document_type_7">l. a. s.</term> (au duc d'Ormond) ; Ruremonde, <date when="1712">1712</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Curieuses lettres. Il lui demande de faire payer au plus tôt les 3 écus par
                   cavalier et par mois que la reine d'Angleterre accorde aux habitants du pays de
                   Gueldre. « Peut estre que vous me ferés l'honneur de vous souvenir encor du
@@ -2847,7 +2879,7 @@
                      Talleyrand et d'Anne-Marie de la Trémoille, depuis princesse des Ursins,
                      gouverneur de la Bastille.</p>
                </trait>
-               <desc xml:id="CAT_000170_e256_d1">2 l. <term ana="#document_type_15">a. s.</term> au marquis d'Argenson; Paris, <date when="1712">1712-1713</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000170_e256_d1">2 <term ana="#document_type_7">l. a. s.</term> au marquis d'Argenson; Paris, <date when="1712">1712-1713</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="257" xml:id="CAT_000170_e257">
                <num type="lot">257</num>

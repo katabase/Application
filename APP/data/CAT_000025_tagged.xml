@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000025">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000025</title>
+            <title>RDA, N°31 (Mai-Juin 1872)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>31</num>
                <editor>Gabriel Charavay</editor>
                <publisher>Gabriel Charavay</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936 <ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -237,7 +270,7 @@
                <num type="lot">4</num>
                <name type="author">Alembert (J. Lerond d')</name>
                <trait>
-                  <p>illustre savant et philosophe du XVIIIe siècle, de l'Acad. fr</p>
+                  <p>illustre savant et philosophe du XVIIIe siècle, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000025_e4_d1"><term ana="#document_type_7">L. a. s.</term> à Malhesherbes, (<date when="1775">1775</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> (Pièce de la vente Lajarriette).</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
                <note>Jolie et curieuse lettre, par laquelle il l'invite, au nom de l'Académie
@@ -443,7 +476,7 @@
                   <p>constituant, général en chef des armées de la République, premier mari de
                      l'impératrice Joséphine, guillotiné en 1793</p>
                </trait>
-               <desc xml:id="CAT_000025_e21_d1"><term ana="#document_type_7">L. a. s.</term> à Guys, de Marseille; L. a. Rocheguyon, 16 mai <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000025_e21_d1"><term ana="#document_type_7">L. a. s.</term> à Guys, de Marseille; La Rocheguyon, 16 mai <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="22" xml:id="CAT_000025_e22">
                <num type="lot">22</num>
@@ -821,7 +854,7 @@
                <num type="lot">56</num>
                <name type="author">Florian (J.-P. Claris de)</name>
                <trait>
-                  <p>célèbre littérateur, un de nos meilleurs fabulistes, membre do l'Acad. fr</p>
+                  <p>célèbre littérateur, un de nos meilleurs fabulistes, membre do l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000025_e56_d1">Compte de ses ouvrages fournis à Didot, avec 5 lignes <term ana="#document_type_15">aut. sig.</term>; <date when="1787">1787</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Jolie pièce pour l'illustration des oeuvres de Florian</note>
@@ -929,7 +962,7 @@
                <num type="lot">66</num>
                <name type="author">Janin (Jules)</name>
                <trait>
-                  <p>le célèbre critique, do l'Acad. fr</p>
+                  <p>le célèbre critique, do l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000025_e66_d1"><term ana="#document_type_7">L. a. s.</term> à Jules Tardieu, <date when="1843">1843</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Relative à sa Normandie historique, pittoresque et monumentale</note>
@@ -1705,7 +1738,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie</p>
                </trait>
-               <desc xml:id="CAT_000025_e150_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen L. a. Varenne ; Paris, chez le citoyen Didot, <date when="1795-12-24">3 nivôse an IV</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000025_e150_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen La Varenne ; Paris, chez le citoyen Didot, <date when="1795-12-24">3 nivôse an IV</date>. <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Relative à une contrefaçon de ses Etudes de la Nature, par le libraire
                   Barba</note>
             </item>
@@ -1724,7 +1757,7 @@
                <trait>
                   <p>bourreau de Paris, qui exécuta Louis XVI</p>
                </trait>
-               <desc xml:id="CAT_000025_e152_d1"><term ana="#document_type_7">L. a. s.</term> (à Mathon de L. a. Varenne); <date when="1790-06-05">5 juin 1790</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000025_e152_d1"><term ana="#document_type_7">L. a. s.</term> (à Mathon de La Varenne); <date when="1790-06-05">5 juin 1790</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="153" xml:id="CAT_000025_e153">
                <num type="lot">153</num>
@@ -1845,7 +1878,7 @@
                      de grêve, où sa tête fut promenée au bout d'une pique, ainsi que celle de
                      Foullon, son beau-père</p>
                </trait>
-               <desc xml:id="CAT_000025_e165_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Millière; Sens, <date when="1788-09-04">4 sept. 1788</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare autographe signé.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000025_e165_d1"><term ana="#document_type_7">L. a. s.</term> à La Millière; Sens, <date when="1788-09-04">4 sept. 1788</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare autographe signé.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="166" xml:id="CAT_000025_e166">
                <num type="lot">166</num>
@@ -1863,7 +1896,7 @@
                <trait>
                   <p>fondateur et primat de l'Eglise française, né à Gannat</p>
                </trait>
-               <desc xml:id="CAT_000025_e167_d1"><term ana="#document_type_7">L. a. s.</term> au journal L. a. Tribune; Paris, <date when="1833">11 av. 1833</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000025_e167_d1"><term ana="#document_type_7">L. a. s.</term> au journal La Tribune; Paris, <date when="1833">11 av. 1833</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Relative à une messe en musique qu'il fait célébrer dans les églises françaises
                   au profit de la souscription Lafitte</note>
             </item>

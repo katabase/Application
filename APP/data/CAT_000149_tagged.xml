@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000149">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000149</title>
+            <title>RDA, N°146 (Juin 1892)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">146</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>146</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1892-06">Juin 1892</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -226,7 +258,7 @@
                      perpétuelle pour ses intrigues avec la marquise de Verneuil, né en 1573, mort
                      en 1650</p>
                </trait>
-               <desc xml:id="CAT_000149_e2_d1"><term ana="#document_type_7">L. a. s.</term> à M. de Pompadour; <date when="1628">1628</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets à ses armes. Un peu fatiguée. Recommandation en faveur de M. de L. a. Ramée.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000149_e2_d1"><term ana="#document_type_7">L. a. s.</term> à M. de Pompadour; <date when="1628">1628</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets à ses armes. Un peu fatiguée. Recommandation en faveur de M. de La Ramée.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="3" xml:id="CAT_000149_e3">
                <num type="lot">3</num>
@@ -537,7 +569,7 @@
                <trait>
                   <p>marin et administrateur, né au Falga (Haute-Garonne) en 1760, mort en 1845</p>
                </trait>
-               <desc xml:id="CAT_000149_e37_d1"><term ana="#document_type_7">L. a. s.</term> au général de L. a. Borde, à Rennes : Brest, <date when="1806-07-07">7 juillet 1806</date>, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000149_e37_d1"><term ana="#document_type_7">L. a. s.</term> au général de La Borde, à Rennes : Brest, <date when="1806-07-07">7 juillet 1806</date>, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="38" xml:id="CAT_000149_e38">
                <num type="lot">38</num>
@@ -752,7 +784,7 @@
                <trait>
                   <p>célèbre général de l'Empire, né à Saliès (Haute-Garonne), en 1769, mort en 1845</p>
                </trait>
-               <desc xml:id="CAT_000149_e61_d1">1° 3 l. <term ana="#document_type_15">a. s.</term>, <date when="1834">an XIV-1834</date>. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000149_e61_d2">2° 8 let. sig.; <date when="1808">1808-1811</date>. <measure type="length" unit="p" n="8">8 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000149_e61_d1">1° 3 <term ana="#document_type_7">l. a. s.</term>, <date when="1834">an XIV-1834</date>. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000149_e61_d2">2° 8 <term ana="#document_type_9">let. sig.</term>; <date when="1808">1808-1811</date>. <measure type="length" unit="p" n="8">8 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="62" xml:id="CAT_000149_e62">
                <num type="lot">62</num>
@@ -1006,7 +1038,7 @@
                <trait>
                   <p>célèbre général et orateur parlementaire, né à Ham en 1775, mort en 1825</p>
                </trait>
-               <desc xml:id="CAT_000149_e88_d1">1° 12 l. <term ana="#document_type_15">a. s.</term>; <date when="1814">1814-1825</date>, <measure type="length" unit="p" n="17">17 p.</measure> in-fol., <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> et in-8.</desc><desc xml:id="CAT_000149_e88_d2">2° <term ana="#document_type_9">Let. sig.</term> ; <date when="1819">1819</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000149_e88_d3">3° <term ana="#document_type_3">Pièce aut.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000149_e88_d4">4° <term ana="#document_type_4">Pièce sig</term>.; Avila, <date when="1813">1813</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000149_e88_d1">1° 12 <term ana="#document_type_7">l. a. s.</term>; <date when="1814">1814-1825</date>, <measure type="length" unit="p" n="17">17 p.</measure> in-fol., <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> et in-8.</desc><desc xml:id="CAT_000149_e88_d2">2° <term ana="#document_type_9">Let. sig.</term> ; <date when="1819">1819</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000149_e88_d3">3° <term ana="#document_type_3">Pièce aut.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000149_e88_d4">4° <term ana="#document_type_4">Pièce sig</term>.; Avila, <date when="1813">1813</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
             </item>
             <item n="89" xml:id="CAT_000149_e89">
                <num type="lot">89</num>
@@ -1040,7 +1072,7 @@
                <trait>
                   <p>. -18 pièces</p>
                </trait>
-               <desc xml:id="CAT_000149_e92_d1">1° let. sig. de Ph.-Ch., comte de Furstenberg, chanoine de Cologne; Mosskerque (Mosskirch), <date when="1676-03-13">13 mars 1676</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Au dos, généalogie, en latin, des ducs de Wurtemberg au XVIIe siècle.</desc><desc xml:id="CAT_000149_e92_d2">2° <term ana="#document_type_9">Let. sig.</term>, en latin, de Ferdinand de Furstenberg, évéque de Paderborn et de Munster, au père René Rapin, le célèbre poète latin, Neuhaus, <date when="1680-11-28">28 novembre 1680</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000149_e92_d3">3° 11 l. <term ana="#document_type_15">a. s.</term>, en français, de Mme de Merveld, née de Furstenberg; <date when="1762">1762</date>, <measure type="length" unit="p" n="22">22 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, etc., etc. Important dossier.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000149_e92_d1">1° <term ana="#document_type_9">let. sig.</term> de Ph.-Ch., comte de Furstenberg, chanoine de Cologne; Mosskerque (Mosskirch), <date when="1676-03-13">13 mars 1676</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Au dos, généalogie, en latin, des ducs de Wurtemberg au XVIIe siècle.</desc><desc xml:id="CAT_000149_e92_d2">2° <term ana="#document_type_9">Let. sig.</term>, en latin, de Ferdinand de Furstenberg, évéque de Paderborn et de Munster, au père René Rapin, le célèbre poète latin, Neuhaus, <date when="1680-11-28">28 novembre 1680</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000149_e92_d3">3° 11 <term ana="#document_type_7">l. a. s.</term>, en français, de Mme de Merveld, née de Furstenberg; <date when="1762">1762</date>, <measure type="length" unit="p" n="22">22 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, etc., etc. Important dossier.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="93" xml:id="CAT_000149_e93">
                <num type="lot">93</num>
@@ -1056,7 +1088,7 @@
                <trait>
                   <p>roi d'Angleterre</p>
                </trait>
-               <desc xml:id="CAT_000149_e94_d1">Let. sig. avec la souscri<term ana="#document_type_3">p. aut.</term>, en allemand, au roi de Prusse FrédéricGuillaume; Londres, <date when="1716-11-18">18 nov. 1716</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> L. a. partie blanche du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000149_e94_d1">Let. sig. avec la souscri<term ana="#document_type_3">p. aut.</term>, en allemand, au roi de Prusse FrédéricGuillaume; Londres, <date when="1716-11-18">18 nov. 1716</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> La partie blanche du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Il lui recommande le sous-lieutenant Ludolf Henning von Eltz et l'invite à le
                   mettre en possession du comté de Wernigerode</note>
             </item>
@@ -1105,7 +1137,7 @@
                <trait>
                   <p>roi d Anglelerre</p>
                </trait>
-               <desc xml:id="CAT_000149_e99_d1"><term ana="#document_type_4">Pièce sig</term>., comme prince d'Orange, L. a. Haye, <date when="1678">1678</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000149_e99_d1"><term ana="#document_type_4">Pièce sig</term>., comme prince d'Orange, La Haye, <date when="1678">1678</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="100" xml:id="CAT_000149_e100">
                <num type="lot">100</num>
@@ -2142,7 +2174,7 @@
                   <p>femme célèbre, auteur des Mémoires d'une Contemporaine, née en 1778, morle en
                      1845</p>
                </trait>
-               <desc xml:id="CAT_000149_e211_d1">1 10 <term ana="#document_type_7">L. a. s.</term>, dont 5 sig. Ida Saint-Elme. et 5 sig. L. a. Contemporaine; <date when="1826">1826-1832</date>, <measure type="length" unit="p" n="21">21 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.-2° 2 piéces a. s., 1 p. in-8. Très-curieuses lettres toutes relatives à ses ouvriiges et à ses embarras d'argent. Intéressants détails.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000149_e211_d1">1 10 <term ana="#document_type_7">L. a. s.</term>, dont 5 sig. Ida Saint-Elme. et 5 sig. La Contemporaine; <date when="1826">1826-1832</date>, <measure type="length" unit="p" n="21">21 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.-2° 2 piéces a. s., 1 p. in-8. Très-curieuses lettres toutes relatives à ses ouvriiges et à ses embarras d'argent. Intéressants détails.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="212" xml:id="CAT_000149_e212">
                <num type="lot">212</num>
@@ -2334,7 +2366,7 @@
             <item n="232" xml:id="CAT_000149_e232">
                <num type="lot">232</num>
                <name type="author">Tour et Taxis (Famille de la)</name>
-               <desc xml:id="CAT_000149_e232_d0">9 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000149_e232_d1">1° <term ana="#document_type_7">L. a. s.</term> et let. sig. avec post-scriptum aut. du comte Eug. Alex. de la Tour et Taxis; Bruxelles, <date when="1677">1677</date>-78, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Relatives à son mariage avec la comtesse Amélie de Furstemberg.</desc><desc xml:id="CAT_000149_e232_d2">2 <term ana="#document_type_7">L. a. s.</term> du prince régnant de la Tour et Taxis; <date when="1791-04-10">10 avril 1791</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000149_e232_d3">3° 4 l. <term ana="#document_type_15">a. s.</term> de la princesse Thérèse de la Tour et Taxis; <date when="1813">1813</date>-18, <measure type="length" unit="p" n="11.5">11 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes, etc.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000149_e232_d0">9 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000149_e232_d1">1° <term ana="#document_type_7">L. a. s.</term> et let. sig. avec post-scriptum aut. du comte Eug. Alex. de la Tour et Taxis; Bruxelles, <date when="1677">1677</date>-78, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Relatives à son mariage avec la comtesse Amélie de Furstemberg.</desc><desc xml:id="CAT_000149_e232_d2">2 <term ana="#document_type_7">L. a. s.</term> du prince régnant de la Tour et Taxis; <date when="1791-04-10">10 avril 1791</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000149_e232_d3">3° 4 <term ana="#document_type_7">l. a. s.</term> de la princesse Thérèse de la Tour et Taxis; <date when="1813">1813</date>-18, <measure type="length" unit="p" n="11.5">11 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes, etc.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="233" xml:id="CAT_000149_e233">
                <num type="lot">233</num>
@@ -2565,7 +2597,7 @@
             <item n="257" xml:id="CAT_000149_e257">
                <num type="lot">257</num>
                <name type="author">. Bretagne. -Saint -Malo</name>
-               <desc xml:id="CAT_000149_e257_d0">26 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000149_e257_d1">1° <term ana="#document_type_4">Pièce sig</term>. par M. de Maupertuis, capitaine des mousquetaires à cheval; <date when="1692">1692</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure>, cachet à ses armes.</desc><desc xml:id="CAT_000149_e257_d2">2° <term ana="#document_type_7">L. a. s.</term> de François Nepveu, jésuite, célèbre écrivain ascétique, au père Ch. de la Rue ; Rouen, <date when="1699">1699</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> cachet.</desc><desc xml:id="CAT_000149_e257_d3">3° Let. aut. et <term ana="#document_type_3">pièce aut.</term> de Julien Offray de L. a. Mettrie; Beilin, <date when="1751">1751</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><desc xml:id="CAT_000149_e257_d4">4° Envoi <term ana="#document_type_15">aut. sig.</term> de Lamennais sur un exemplaire de l'ouvrage de son compatriote Maupertuis, intitulé : Discours sur les différentes figures des Astres, <date when="1742">1742</date>, 1 vol. <measure type="format" unit="f" ana="#document_format_8">in-8</measure> rel.</desc><desc xml:id="CAT_000149_e257_d5">5° Envoi <term ana="#document_type_15">aut. sig.</term> de Lamennais sur un exemplaire de l'ouvrage intitulé : Le Saint Concile de Trente, <date when="1674">1674</date>, 1 vol. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, rel., etc.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000149_e257_d0">26 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000149_e257_d1">1° <term ana="#document_type_4">Pièce sig</term>. par M. de Maupertuis, capitaine des mousquetaires à cheval; <date when="1692">1692</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure>, cachet à ses armes.</desc><desc xml:id="CAT_000149_e257_d2">2° <term ana="#document_type_7">L. a. s.</term> de François Nepveu, jésuite, célèbre écrivain ascétique, au père Ch. de la Rue ; Rouen, <date when="1699">1699</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> cachet.</desc><desc xml:id="CAT_000149_e257_d3">3° Let. aut. et <term ana="#document_type_3">pièce aut.</term> de Julien Offray de La Mettrie; Beilin, <date when="1751">1751</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><desc xml:id="CAT_000149_e257_d4">4° Envoi <term ana="#document_type_15">aut. sig.</term> de Lamennais sur un exemplaire de l'ouvrage de son compatriote Maupertuis, intitulé : Discours sur les différentes figures des Astres, <date when="1742">1742</date>, 1 vol. <measure type="format" unit="f" ana="#document_format_8">in-8</measure> rel.</desc><desc xml:id="CAT_000149_e257_d5">5° Envoi <term ana="#document_type_15">aut. sig.</term> de Lamennais sur un exemplaire de l'ouvrage intitulé : Le Saint Concile de Trente, <date when="1674">1674</date>, 1 vol. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, rel., etc.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="258" xml:id="CAT_000149_e258">
                <num type="lot">258</num>
@@ -2589,7 +2621,7 @@
             <item n="261" xml:id="CAT_000149_e261">
                <num type="lot">261</num>
                <name type="author">Dauphiné</name>
-               <desc xml:id="CAT_000149_e261_d0">3 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000149_e261_d1">1° <term ana="#document_type_7">L. a. s.</term> du chevalier de Saint-André, maréchal de camp ; Virieu (Isère), <date when="1745-11-25">25 nov. 1745</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><desc xml:id="CAT_000149_e261_d2">2° 2 let. sig. de M. d'Albon, maire de Lyon; <date when="1814">Lyon 1er avril 1814</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000149_e261_d0">3 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000149_e261_d1">1° <term ana="#document_type_7">L. a. s.</term> du chevalier de Saint-André, maréchal de camp ; Virieu (Isère), <date when="1745-11-25">25 nov. 1745</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><desc xml:id="CAT_000149_e261_d2">2° 2 <term ana="#document_type_9">let. sig.</term> de M. d'Albon, maire de Lyon; <date when="1814">Lyon 1er avril 1814</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="262" xml:id="CAT_000149_e262">
                <num type="lot">262</num>
@@ -2667,7 +2699,7 @@
             <item n="270" xml:id="CAT_000149_e270">
                <num type="lot">270</num>
                <name type="author">Poitou</name>
-               <desc xml:id="CAT_000149_e270_d1">Pièce originale; <term ana="#document_type_8">L. a.</term> Merlatière (Vendée), <date when="1518-04-18">18 avril 1518</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000149_e270_d1">Pièce originale; La Merlatière (Vendée), <date when="1518-04-18">18 avril 1518</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Aveu rendu au prince Jacques Ier, de Rohan et de Léon, Sgr de la Garnache, par
                   Jacquette de Sle-Flavye, veuve de Guyon de Rezay, seigneur de la Merlatière et de
                   la Jarrye, à cause du fief de la Prévoyerie en la paroisse de Soullans (Vendée).

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000026">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000026</title>
+            <title>RDA, N°32 (Mai-Juin 1872)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>32</num>
                <editor>Gabriel Charavay</editor>
                <publisher>Gabriel Charavay</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936 <ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -645,7 +678,7 @@
                <num type="lot">48</num>
                <name type="author">Feuillet (Octave)</name>
                <trait>
-                  <p>célèbre romancier et auteur dramatique, de l'Acad. fr</p>
+                  <p>célèbre romancier et auteur dramatique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000026_e48_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_18">in-18</measure>, charmante épître sur une de ses comédies.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
@@ -824,7 +857,7 @@
                <num type="lot">68</num>
                <name type="author">Lacordaire (J.-B.-H.)</name>
                <trait>
-                  <p>illustre prédicateur, de l'Acad. fr</p>
+                  <p>illustre prédicateur, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000026_e68_d1"><term ana="#document_type_7">L. a. s.</term>, à Pons-de-l'Hérault ; Sorèze, <date when="1858">1858</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
@@ -1619,7 +1652,7 @@
                <name type="author">Target (G.-J.-B.)</name>
                <trait>
                   <p>avocat célèbre du XVIIIe siècle, qui refusa de défendre Louis XVI, le principal
-                     auteur de la constitution de 1791, membre do l'Acad. fr</p>
+                     auteur de la constitution de 1791, membre do l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000026_e150_d1"><term ana="#document_type_7">L. a. s.</term> au président de l'Assemblée électorale de Paris; <date when="1790-11-27">27 nov. 1790</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Relative à son élection aux fonctions du juge au trilunal civil de Paris. « Je
@@ -1770,7 +1803,7 @@
                <num type="lot">166</num>
                <name type="author">Vigny (Alfred de)</name>
                <trait>
-                  <p>illustre littérateur et auteur dram., de l'Acad. fr</p>
+                  <p>illustre littérateur et auteur dram., de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000026_e166_d1"><term ana="#document_type_7">L. a. s.</term> au docteur Brière de Boismont, <date when="1837">1837</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Délicieux billet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>

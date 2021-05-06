@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000226">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -22,7 +22,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>175</num>
                <editor>Eugène Charavay fils</editor>
@@ -146,7 +146,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -199,6 +199,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -480,7 +500,7 @@
                   <p>célèbre critique d'art, de l'Acad. fr., né à Castres en 1813, mort en 1882.
                     </p>
                </trait>
-               <desc xml:id="CAT_000226_e28_d1">3 l. <term ana="#document_type_15">a. s.</term> au peintre Jules Goddé; Evreux, <date when="1843">1843</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Très curieuses lettres artistiques.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000226_e28_d1">3 <term ana="#document_type_7">l. a. s.</term> au peintre Jules Goddé; Evreux, <date when="1843">1843</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Très curieuses lettres artistiques.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="29" xml:id="CAT_000226_e29">
                <num type="lot">29</num>
@@ -1515,7 +1535,7 @@
                <trait>
                   <p>fils, célèbre peintre de marines, né en 1804.</p>
                </trait>
-               <desc xml:id="CAT_000226_e135_d1">10 l. <term ana="#document_type_15">a. s.</term> à divers, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. On a joint 2 portraits.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000226_e135_d1">10 <term ana="#document_type_7">l. a. s.</term> à divers, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. On a joint 2 portraits.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="136" xml:id="CAT_000226_e136">
                <num type="lot">136</num>
@@ -2204,7 +2224,7 @@
                <trait>
                   <p>éminent écrivain, de l'Acad. fr., né à Besançon.</p>
                </trait>
-               <desc xml:id="CAT_000226_e206_d1"><term ana="#document_type_7">L. a. s.</term> (au comte de L. a. Boulaye) ; Paris, <date when="1818-01-08">8 janvier 1818</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000226_e206_d1"><term ana="#document_type_7">L. a. s.</term> (au comte de La Boulaye) ; Paris, <date when="1818-01-08">8 janvier 1818</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Très curieuse lettre qu'il signe Charles de Nodier. Elle contient un état de sa
                   triste situation qui l'oblige à s'éloigner de son pays et à partir pour la
                   Tartarie. S'il s'adresse au comte, c'est qu'il l'a toujours considéré comme la
@@ -2290,7 +2310,7 @@
                <trait>
                   <p>le libérateur de la Corse, né en 1726, mort en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000226_e214_d1">7 l. <term ana="#document_type_15">a. s.</term> à Giampetri, lieutenant-colonel de la garde nationale de Bastia; <date when="1793">1793</date>-94, <measure type="length" unit="p" n="19">19 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-fol.</desc><measure commodity="currency" unit="FRF" quantity="120">120</measure>
+               <desc xml:id="CAT_000226_e214_d1">7 <term ana="#document_type_7">l. a. s.</term> à Giampetri, lieutenant-colonel de la garde nationale de Bastia; <date when="1793">1793</date>-94, <measure type="length" unit="p" n="19">19 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-fol.</desc><measure commodity="currency" unit="FRF" quantity="120">120</measure>
                <note anchored="true">Précieuse correspondance historique dont voici une analyse sommaire : Corte, 16
                   avril 1793. Il ne voit le salut de la Corse que dans l'affermissement de la
                   République en France; le triomphe des royalistes aménerait l'asservissement et la
@@ -2472,7 +2492,7 @@
                <trait>
                   <p>célèbre général d'artillerie, né en 1716, mort en prison en 1793.</p>
                </trait>
-               <desc xml:id="CAT_000226_e233_d1">7 l. <term ana="#document_type_15">a. s.</term> au marquis et au comte de Langeron; <date when="1776">1776-1784</date>, <measure type="length" unit="p" n="23">23 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000226_e233_d1">7 <term ana="#document_type_7">l. a. s.</term> au marquis et au comte de Langeron; <date when="1776">1776-1784</date>, <measure type="length" unit="p" n="23">23 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note anchored="true">Très intéressantes lettres relatives à ses recherches sur l'artillerie.</note>
             </item>
             <item n="234" xml:id="CAT_000226_e234">
@@ -2658,7 +2678,7 @@
                   <p>littérateur distingué, ami et correspondant de Voltaire, né en 1696, mort en
                      1772.</p>
                </trait>
-               <desc xml:id="CAT_000226_e251_d1"><term ana="#document_type_8">Let. aut.</term>, prose et vers, à Devaux; L. a. Haye, <date when="1744-04-17">17 avril 1744</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000226_e251_d1"><term ana="#document_type_8">Let. aut.</term>, prose et vers, à Devaux; La Haye, <date when="1744-04-17">17 avril 1744</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Très importante lettre toute relative à Voltaire. Voltaire parle de la physique
                   de Newton, sans la comprendre; il a peu d'originalité et emprunte ses idées à
                   Bayle, à Montaigne, aux Anglais ; comme poete, « il n'a ni le génie de Corneille,
@@ -2825,7 +2845,7 @@
                <trait>
                   <p>l'illustre écrivain.</p>
                </trait>
-               <desc xml:id="CAT_000226_e267_d1">-<term ana="#document_type_8">Let. aut.</term> à Mme de Grafigny; L. a. Haye, <date when="1740-10-30">30 oct. 1740</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000226_e267_d1">-<term ana="#document_type_8">Let. aut.</term> à Mme de Grafigny; La Haye, <date when="1740-10-30">30 oct. 1740</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note anchored="true">Belle lettre. (Probablement inédite). Il déplore avec elle la mort de Mme de
                   Richelieu . « sa mémoire me sera toujours d'autant plus chère qu'elle a mieux
                   senti notre mérite qu'une autre. Je me flatte qu'elle vous a laissé de quoy
@@ -3319,7 +3339,7 @@
             <item n="312" xml:id="CAT_000226_e312">
                <num type="lot">312</num>
                <name type="author">Protestants. -Bresse</name>
-               <desc xml:id="CAT_000226_e312_d1">5 let. sig. par le marquis de Châteauneuf, secrétaire d'Etat, à M. Parisot, à Bourg ; Versailles, <date when="1684">1684</date>-87, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000226_e312_d1">5 <term ana="#document_type_9">let. sig.</term> par le marquis de Châteauneuf, secrétaire d'Etat, à M. Parisot, à Bourg ; Versailles, <date when="1684">1684</date>-87, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Intéressantes lettres où il est dit que les protestants du pays de Gex, d'après
                   l'arrêt du Conseil du 10 septembre 1664, ne peuvent sortir du royaume « pour faire
                   les exercices de leur religion ». -Elles sont aussi relatives aux religionnaires

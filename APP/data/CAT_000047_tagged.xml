@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000047">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000047</title>
+            <title>RDA, N°58 (Novembre 1879)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>58</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -271,7 +304,7 @@
                   <p>restaurateur du Palais épiscopal, dernier évêque de Belley avant la Révolution,
                      mort en 1791</p>
                </trait>
-               <desc xml:id="CAT_000047_e8_d1">1° 2 l. <term ana="#document_type_15">a. s.</term>, <date when="1768">1768</date>-80, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et 2 p. in-f. Curieuses;</desc><desc xml:id="CAT_000047_e8_d2">2° 3 let. sig., <date when="1766">1766</date>-80, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, au sujet de l'abbaye de Conches qui lui avait été donnée par le Roi.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000047_e8_d1">1° 2 <term ana="#document_type_7">l. a. s.</term>, <date when="1768">1768</date>-80, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et 2 p. in-f. Curieuses;</desc><desc xml:id="CAT_000047_e8_d2">2° 3 <term ana="#document_type_9">let. sig.</term>, <date when="1766">1766</date>-80, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, au sujet de l'abbaye de Conches qui lui avait été donnée par le Roi.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="9" xml:id="CAT_000047_e9">
                <num type="lot">9</num>
@@ -458,7 +491,7 @@
                <trait>
                   <p>curé d'Arbigneaux, antiquaire</p>
                </trait>
-               <desc xml:id="CAT_000047_e31_d1">3 l. <term ana="#document_type_15">a. s.</term>, <date when="1842">1842</date>-51, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000047_e31_d1">3 <term ana="#document_type_7">l. a. s.</term>, <date when="1842">1842</date>-51, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Relatives à sa Notice sur Sainte-Agnés et au Mémoire sur les voyages de l'Emp.
                   Hadrien, par l'abbé Greppo</note>
             </item>
@@ -500,7 +533,7 @@
                <trait>
                   <p>poète, né à Seyssel.</p>
                </trait>
-               <desc xml:id="CAT_000047_e36_d1">1° Ode au Roi, <date when="1814-08-25">25 août 1814</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>;</desc><desc xml:id="CAT_000047_e36_d2">2° l. <term ana="#document_type_15">a. s.</term> au duc d'Angoulême, en le priant de remettre la pièce qui précède à Louis XVIII, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000047_e36_d1">1° Ode au Roi, <date when="1814-08-25">25 août 1814</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>;</desc><desc xml:id="CAT_000047_e36_d2">2° <term ana="#document_type_7">l. a. s.</term> au duc d'Angoulême, en le priant de remettre la pièce qui précède à Louis XVIII, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="37" xml:id="CAT_000047_e37">
                <num type="lot">37</num>
@@ -641,7 +674,7 @@
                <trait>
                   <p>général de la République, pacificateur de la Chouannerie, né à Laon</p>
                </trait>
-               <desc xml:id="CAT_000047_e54_d1">1° <date when="none">2 let. sig. , an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>;</desc><desc xml:id="CAT_000047_e54_d2">2° notice biographique sur lui.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000047_e54_d1">1° <date when="none">2 <term ana="#document_type_9">let. sig.</term> , an V</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>;</desc><desc xml:id="CAT_000047_e54_d2">2° notice biographique sur lui.</desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="55" xml:id="CAT_000047_e55">
                <num type="lot">55</num>
@@ -824,7 +857,7 @@
             <item n="76" xml:id="CAT_000047_e76">
                <num type="lot">76</num>
                <name type="author">COLONISATION DE L'ALGERIE</name>
-               <desc xml:id="CAT_000047_e76_d1">100 lettres ou pièces, <date when="0190">de 1830 à 1848</date>.-Dossier important sur cette question capitale pour l'avenir de notre belle colonie.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000047_e76_d1">100 lettres ou pièces, <date when="0191">de 1830 à 1848</date>.-Dossier important sur cette question capitale pour l'avenir de notre belle colonie.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="77" xml:id="CAT_000047_e77">
                <num type="lot">77</num>
@@ -960,7 +993,7 @@
                   <p>jurisconsulte français, auteur de plusieurs ouvrages, bailli des villes et
                      marquisat de La Palisse</p>
                </trait>
-               <desc xml:id="CAT_000047_e93_d1"><term ana="#document_type_7">L. a. s.</term> ; L. a. Palisse, <date when="1756">1756</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000047_e93_d1"><term ana="#document_type_7">L. a. s.</term> ; La Palisse, <date when="1756">1756</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="94" xml:id="CAT_000047_e94">
                <num type="lot">94</num>
@@ -1122,7 +1155,7 @@
                <trait>
                   <p>commissaire du Gouvernement à Gap, en 1848</p>
                </trait>
-               <desc xml:id="CAT_000047_e112_d1">2 l. <term ana="#document_type_15">a. s.</term>, <date when="1848">1848</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Sur les élections.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000047_e112_d1">2 <term ana="#document_type_7">l. a. s.</term>, <date when="1848">1848</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Sur les élections.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="113" xml:id="CAT_000047_e113">
                <num type="lot">113</num>
@@ -1295,7 +1328,7 @@
                <trait>
                   <p>fils du comte d'Entraigues et de Mme Saint-Huberty</p>
                </trait>
-               <desc xml:id="CAT_000047_e132_d1">1° 10 l. <term ana="#document_type_15">a. s.</term> adressées à M. Coste;</desc><desc xml:id="CAT_000047_e132_d2">2° 53 pièces relatives à la succession du comte d'Entraigues et de Mme Saint-Huberty. Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000047_e132_d1">1° 10 <term ana="#document_type_7">l. a. s.</term> adressées à M. Coste;</desc><desc xml:id="CAT_000047_e132_d2">2° 53 pièces relatives à la succession du comte d'Entraigues et de Mme Saint-Huberty. Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="133" xml:id="CAT_000047_e133">
                <num type="lot">133</num>
@@ -1496,7 +1529,7 @@
                <trait>
                   <p>ministre du commerce, député des Ardennes, né à Sedan</p>
                </trait>
-               <desc xml:id="CAT_000047_e155_d1">1° 6 l. <term ana="#document_type_15">a. s.</term>, <date when="1827">1827</date>-17.</desc><desc xml:id="CAT_000047_e155_d2">2° 15 let. sig.</desc><desc xml:id="CAT_000047_e155_d3">3° 15 let. de Bernard Gridaine, <date when="1831">1831</date>-40.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000047_e155_d1">1° 6 <term ana="#document_type_7">l. a. s.</term>, <date when="1827">1827</date>-17.</desc><desc xml:id="CAT_000047_e155_d2">2° 15 <term ana="#document_type_9">let. sig.</term></desc><desc xml:id="CAT_000047_e155_d3">3° 15 let. de Bernard Gridaine, <date when="1831">1831</date>-40.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="156" xml:id="CAT_000047_e156">
                <num type="lot">156</num>
@@ -1648,7 +1681,7 @@
                <trait>
                   <p>publiciste, évêque de Pamiers, né en 1749</p>
                </trait>
-               <desc xml:id="CAT_000047_e174_d1"><date when="1789">1° l. <term ana="#document_type_15">a. sig.</term> à la 3e pers. 1789</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>;</desc><desc xml:id="CAT_000047_e174_d2">2° <term ana="#document_type_4">pièce sig</term>., <date when="1814">1814</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000047_e174_d1"><date when="1789">1° <term ana="#document_type_7">l. a. sig.</term> à la 3e pers. 1789</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>;</desc><desc xml:id="CAT_000047_e174_d2">2° <term ana="#document_type_4">pièce sig</term>., <date when="1814">1814</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="175" xml:id="CAT_000047_e175">
                <num type="lot">175</num>
@@ -1956,7 +1989,7 @@
                   <p>représentant du peuble, envoyé par la Convention dans le département de
                      l'Aube</p>
                </trait>
-               <desc xml:id="CAT_000047_e212_d1">2 let. sig. : Nogent-sur-Seine, an <date when="1794-1795">III</date>. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
+               <desc xml:id="CAT_000047_e212_d1">2 <term ana="#document_type_9">let. sig.</term> : Nogent-sur-Seine, an <date when="1794-1795">III</date>. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="213" xml:id="CAT_000047_e213">
                <num type="lot">213</num>
@@ -2016,7 +2049,7 @@
                <trait>
                   <p>littérateur distingué, né en Provence</p>
                </trait>
-               <desc xml:id="CAT_000047_e219_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Garde, près Toulon, <date when="1874">1874</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Envoi des Poêmes de Provence.</desc><measure commodity="currency" unit="FRF" quantity=".3"> 3</measure>
+               <desc xml:id="CAT_000047_e219_d1"><term ana="#document_type_7">L. a. s.</term>; La Garde, près Toulon, <date when="1874">1874</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Envoi des Poêmes de Provence.</desc><measure commodity="currency" unit="FRF" quantity=".3"> 3</measure>
             </item>
             <item n="220" xml:id="CAT_000047_e220">
                <num type="lot">220</num>
@@ -2040,7 +2073,7 @@
                <num type="lot">222</num>
                <name type="author">Augier (Emile)</name>
                <trait>
-                  <p>auteur dramatique, de l'Acad. fr</p>
+                  <p>auteur dramatique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000047_e222_d1"><term ana="#document_type_7">L. a. s.</term> à un journaliste, <date when="1852">1852</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre par laquelle il proteste contre un toast à la tyrannie, qu'on
@@ -2116,7 +2149,7 @@
                <num type="lot">231</num>
                <name type="author">Caro (Em.)</name>
                <trait>
-                  <p>philosophe, de l'Acad. fr</p>
+                  <p>philosophe, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000047_e231_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1863">1863</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
@@ -2148,7 +2181,7 @@
                <num type="lot">235</num>
                <name type="author">Cuvillier-Fleury</name>
                <trait>
-                  <p>célèbre critique, de l'Acad. fr</p>
+                  <p>célèbre critique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000047_e235_d1"><term ana="#document_type_7">L. a. s.</term> à un littérateur, <date when="1867">1867</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Curieuse lettre par laquelle il annonce qu'il s'occupe d'une étude sur « le
@@ -2174,7 +2207,7 @@
                <num type="lot">238</num>
                <name type="author">Feuillet (Octave)</name>
                <trait>
-                  <p>célèbre auteur dramatique, de l'Acad. fr</p>
+                  <p>célèbre auteur dramatique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000047_e238_d1"><term ana="#document_type_7">L. a. s.</term> à M. Aubert, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Charmante épitre par laquelle il annonce son mariage. Il renonce à ses droits
@@ -2256,7 +2289,7 @@
                <num type="lot">248</num>
                <name type="author">Janin (Jules)</name>
                <trait>
-                  <p>le prince des critiques, membre de l'Acad. fr</p>
+                  <p>le prince des critiques, membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000047_e248_d1"><term ana="#document_type_7">L. a. s.</term> à un critique, <date when="1846">1846</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Relative à sa traduction de Clarisse Harlowe</note>
@@ -2329,7 +2362,7 @@
                <num type="lot">256</num>
                <name type="author">Sardou (Victorien)</name>
                <trait>
-                  <p>spirituel et fécond auteur dramatique, de l'Acad. fr</p>
+                  <p>spirituel et fécond auteur dramatique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000047_e256_d1"><term ana="#document_type_7">L. a. s.</term> à un de ses collaborateurs, <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Consulté sur la valeur d'une pièce dont on lui a envoyé le manuscrit, il donne
@@ -2347,7 +2380,7 @@
                <num type="lot">258</num>
                <name type="author">Vigny (Alfred de)</name>
                <trait>
-                  <p>célèbre poète, de l'Acad. fr</p>
+                  <p>célèbre poète, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000047_e258_d1"><term ana="#document_type_7">L. a. s.</term> à un poète, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>

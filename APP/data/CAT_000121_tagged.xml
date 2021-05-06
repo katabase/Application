@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000121">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000121</title>
+            <title>RDA, N°118 (Février 1889)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">118</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>118</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -338,7 +370,7 @@
                      qui après trente-trois années de service fut victime de la haine du prince
                      Maurice et périt sur l'échafaud en 1619</p>
                </trait>
-               <desc xml:id="CAT_000121_e16_d1">Let. sig. avec la souscript. et un post-criptum de 5 lignes aut. à Pierre Scharp, conseiller de l'Amirauté, à Middelbourg; <term ana="#document_type_8">L. a.</term> Haye, <date when="1602-11-23">23 nov. 1602</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000121_e16_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. et un post-criptum de 5 lignes aut. à Pierre Scharp, conseiller de l'Amirauté, à Middelbourg; La Haye, <date when="1602-11-23">23 nov. 1602</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Il lui annonce que les objets d'importation étrangère ne doivent être admis en
                   Hollande que s'ils sont introduits par des bâtiments nationaux, convoyés par des
                   navires de guerre</note>
@@ -772,7 +804,7 @@
                   <p>brave général, gouverneur de Vincennes en 1815 et en 1830, surnomné la
                      Jambede-Bois, né à Périgueux en 1777, mort en 1832</p>
                </trait>
-               <desc xml:id="CAT_000121_e61_d1"><term ana="#document_type_9">Let. sig.</term>; Vincennes, 30 août 1830, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-On a joint une l. a. s., <date when="1834">1834</date>, 1 p. in-4, de la baronne Daumesnil, relative à la bourse accordée à son fils (MartinCharles-Léon).</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000121_e61_d1">Let. sig.; Vincennes, 30 août 1830, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-On a joint une <term ana="#document_type_7">l. a. s.</term>, <date when="1834">1834</date>, 1 p. in-4, de la baronne Daumesnil, relative à la bourse accordée à son fils (MartinCharles-Léon).</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="62" xml:id="CAT_000121_e62">
                <num type="lot">62</num>
@@ -1251,7 +1283,7 @@
                <trait>
                   <p>célèbre amiral, de l'Acad. fr., né en 1812.</p>
                </trait>
-               <desc xml:id="CAT_000121_e112_d1"><term ana="#document_type_7">L. a. s.</term> au romancier de L. a. Landelle, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000121_e112_d1"><term ana="#document_type_7">L. a. s.</term> au romancier de La Landelle, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="113" xml:id="CAT_000121_e113">
                <num type="lot">113</num>
@@ -1347,7 +1379,7 @@
                <trait>
                   <p>l'illustre tragédien français, né en 1728, mort en 1778</p>
                </trait>
-               <desc xml:id="CAT_000121_e123_d1"><term ana="#document_type_7">L. a. s.</term> à M. Deschamps, à Toulouse; Paris, <date when="1771-06-06">6 juin 1771</date>, 1 p.1/4 <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, écornée. L. a. moitié du feuillet blanc de l'adresse manque.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000121_e123_d1"><term ana="#document_type_7">L. a. s.</term> à M. Deschamps, à Toulouse; Paris, <date when="1771-06-06">6 juin 1771</date>, 1 p.1/4 <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, écornée. La moitié du feuillet blanc de l'adresse manque.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Sur ses projets de voyage en Provence. Quant à Toulouse, il a de puissantes
                   raisons pour ne pas se frotter de nouveau aux coulisses du théâtre de cette ville.
                   « Messieurs les actionnaires les ont enduites d'un vernis qui m'est antipathique,
@@ -1581,7 +1613,7 @@
                   <p>célèbre philologue hollandais, précepteur des enfants de Jean Barneveldt, né
                      près de La Haye en 1579, mort en 1639</p>
                </trait>
-               <desc xml:id="CAT_000121_e147_d1"><term ana="#document_type_7">L. a. s.</term>, en latin, à Vulcanius, à Leyde ; L. a. Haye, <date when="1602">1602</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000121_e147_d1"><term ana="#document_type_7">L. a. s.</term>, en latin, à Vulcanius, à Leyde ; La Haye, <date when="1602">1602</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Il lui adresse des corrections pour son édition d'Apulée</note>
             </item>
             <item n="148" xml:id="CAT_000121_e148">
@@ -1790,7 +1822,7 @@
                <trait>
                   <p>le célèbre romancier populaire, auteur de Rocambole</p>
                </trait>
-               <desc xml:id="CAT_000121_e169_d1"><term ana="#document_type_7">L. a. s.</term> au romancier de L. a. Landelle, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000121_e169_d1"><term ana="#document_type_7">L. a. s.</term> au romancier de La Landelle, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="170" xml:id="CAT_000121_e170">
                <num type="lot">170</num>
@@ -2227,7 +2259,7 @@
                <trait>
                   <p>célèbre peintre d'animaux, le Rosa Bonheur de la Belgique, né en 1799</p>
                </trait>
-               <desc xml:id="CAT_000121_e213_d1"><term ana="#document_type_7">L. a. s.</term> à M. le colonel de Ceva, à L. a. Haye; Bruxelles, <date when="1833-03-01">1er mars 1833</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000121_e213_d1"><term ana="#document_type_7">L. a. s.</term> à M. le colonel de Ceva, à La Haye; Bruxelles, <date when="1833-03-01">1er mars 1833</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
                <note>Au sujet d'un échange avec des tableaux, de Schelfont</note>
             </item>
             <item n="214" xml:id="CAT_000121_e214">
@@ -2349,7 +2381,7 @@
                <trait>
                   <p>le héros de la bataille de Saint-Aubin, mort en 1499</p>
                </trait>
-               <desc xml:id="CAT_000121_e228_d1"><term ana="#document_type_9">Let. sig.</term>, avec la souscription aut. ; Auxonne, 9 août, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8. obl.</measure> Fatiguée et tachée. Rare comme lettre avec la souscription aut.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000121_e228_d1">Let. sig., avec la souscription aut. ; Auxonne, 9 août, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8. obl.</measure> Fatiguée et tachée. Rare comme <term ana="#document_type_8">lettre a</term>vec la souscription aut.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="229" xml:id="CAT_000121_e229">
                <num type="lot">229</num>

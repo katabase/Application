@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000100">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000100</title>
+            <title>RDA, N°97 (Février 1886)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>97</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -539,7 +571,7 @@
                   <p>médecin de Louis XV, illustre par son dévouement pendant la peste de Marseille
                      né à Montpellier en 1672, mort en 1752</p>
                </trait>
-               <desc xml:id="CAT_000100_e37_d1"><term ana="#document_type_7">L. a. s.</term>, à Sauvages de L. a. Croix, à Alais; Marly, <date when="1732">1732</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000100_e37_d1"><term ana="#document_type_7">L. a. s.</term>, à Sauvages de La Croix, à Alais; Marly, <date when="1732">1732</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="38" xml:id="CAT_000100_e38">
                <num type="lot">38</num>
@@ -1303,7 +1335,7 @@
                </trait>
                <desc xml:id="CAT_000100_e122_d1"><term ana="#document_type_7">L. a. s.</term>, <date when="1880">1880</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Curieuse lettre adressée à un homme politique roumain. « Je
-                  serai particulière- ment heureux de savoir quel est votre sentiment sur le
+                  serai particulièrement heureux de savoir quel est votre sentiment sur le
                   mouvement qui pousse l'une vers l'autre la Bulgarie et la Roumélie et sur
                   l'intérêt de la France dans cette question.</note>
             </item>
@@ -2583,7 +2615,7 @@
                   <p>littérateur et bel esprit, un des meilleurs écrivains français du XVIIe siècle,
                      né près de Coutances en 1613, mort dans l'exil en Angleterre en 1703</p>
                </trait>
-               <desc xml:id="CAT_000100_e263_d1">Fin de lettre aut. sig., <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> <term ana="#document_type_7">L. a. sign</term>ature et le compliment sont barrés mais lisibles.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000100_e263_d1">Fin de <term ana="#document_type_7">lettre aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La signature et le compliment sont barrés mais lisibles.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="264" xml:id="CAT_000100_e264">
                <num type="lot">264</num>
@@ -2739,7 +2771,7 @@
                <trait>
                   <p>en 1696</p>
                </trait>
-               <desc xml:id="CAT_000100_e280_d1">. P. S., signée aussi par son mari Henri, marquis de Sévigné, Marie de <term ana="#document_type_8">L. a.</term> Croix, veuve de Gabriel de Guénégaud, Claude de Guénégaud, trésorier du Roi, Philippe de Coulanges (oncle de Madame de Sévigné), Léonor de Rabutin, comte de Bussy, lieutenant-général, et l'abbé Christophe de Coulanges; Paris, <date when="1644">8 février 1644 et 30 janvier 1645</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Tachée d'humidité et raccommodée.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000100_e280_d1">. P. S., signée aussi par son mari Henri, marquis de Sévigné, Marie de La Croix, veuve de Gabriel de Guénégaud, Claude de Guénégaud, trésorier du Roi, Philippe de Coulanges (oncle de Madame de Sévigné), Léonor de Rabutin, comte de Bussy, lieutenant-général, et l'abbé Christophe de Coulanges; Paris, <date when="1644">8 février 1644 et 30 janvier 1645</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Tachée d'humidité et raccommodée.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note anchored="true">Précieux document. Philippe de Coulanges, tuteur de sa nièce
                   mineure Marie de Rabutin-Chantal, achète, le 8 février 1644, pour celle-ci, de la
                   veuve de Gabriel de Guénégaud, une rente annuelle de sept cent soixante-dix-sept

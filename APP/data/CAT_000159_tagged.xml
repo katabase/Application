@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000159">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000159</title>
+            <title>RDA, N°156 (Juin 1893)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>156</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1893-06">Juin 1893</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -270,7 +302,7 @@
                   <p>poète et littérateur distingué, auteur des Poêmes de Provence, né à Toulon en
                      1848</p>
                </trait>
-               <desc xml:id="CAT_000159_e6_d1"><term ana="#document_type_7">L. a. s.</term> ; L. a. Garde, près Toulon, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000159_e6_d1"><term ana="#document_type_7">L. a. s.</term> ; La Garde, près Toulon, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="7" xml:id="CAT_000159_e7">
                <num type="lot">7</num>
@@ -397,7 +429,7 @@
                      grande part à la guerre de l'Indépendance américaine, né dans la Louisiane en
                      1759, mort en 1797</p>
                </trait>
-               <desc xml:id="CAT_000159_e18_d1">2 let. sig., dont l'une avec un post-script. aut., au général de Hédouville ; 6-<date when="1796-01-02">12 nivôse an IV</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tètes imp.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000159_e18_d1">2 <term ana="#document_type_9">let. sig.</term>, dont l'une avec un post-script. aut., au général de Hédouville ; 6-<date when="1796-01-02">12 nivôse an IV</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tètes imp.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettres historiques. Il lui annonce la réunion des trois armées de l'Ouest, des
                   côtes de Brest et de Cherbourg, sous les ordres du général Hoche. « En réunissant
                   ainsi trois grandes armées, Hoche et moi, nous avons pensé que vous ne refuseriez
@@ -444,7 +476,7 @@
                   <p>épouse en premières noces de Jean-Gabriel Le Pleure, intendant de La Rochelle,
                      puis de Ch.-Aug. de la Cour, comte de Balleroy, lieutenant-général</p>
                </trait>
-               <desc xml:id="CAT_000159_e22_d1">15 let. aut. à la comtesse de Laage (l'amie de la princesse de Lamballe, auteur de Mémoires); <date when="1792">1792-1800</date>, <measure type="length" unit="p" n="35">35 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Plusieurs sont incomplètes.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
+               <desc xml:id="CAT_000159_e22_d1">15 <term ana="#document_type_8">let. aut.</term> à la comtesse de Laage (l'amie de la princesse de Lamballe, auteur de Mémoires); <date when="1792">1792-1800</date>, <measure type="length" unit="p" n="35">35 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Plusieurs sont incomplètes.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
                <note>Importante correspondance intime et politique de l'époque de l'émigration.
                   Beaucoup de personnages célèbres sont cités, mais sous des noms de convention.
                   Voici un extrait de la lettre du 19 février 1800 : On parle d'une attaque de Paul
@@ -1057,7 +1089,7 @@
                   <p>évêque de Rennes, puis de Verdun, né à Ernée (Mayenne) en 1716, mort en
                      1793</p>
                </trait>
-               <desc xml:id="CAT_000159_e77_d1">9 1. <term ana="#document_type_15">a. s.</term> et 1 let. sig. ; <date when="1764">1764</date>-75, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000159_e77_d1">9 1. a. s. et 1 <term ana="#document_type_9">let. sig.</term> ; <date when="1764">1764</date>-75, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="78" xml:id="CAT_000159_e78">
                <num type="lot">78</num>
@@ -1135,7 +1167,7 @@
                <num type="lot">84</num>
                <name type="author">Dumas (Alexandre)</name>
                <trait>
-                  <p>fils. le célèbre auteur dramatique, de l'Acad. fr</p>
+                  <p>fils. le célèbre auteur dramatique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000159_e84_d1"><term ana="#document_type_7">L. a. s.</term> (à Edmond About; <date when="1859-11">nov. 1859</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Belle lettre. Il lui adresse son manuscrit du « Père Prodigue »; il est plein
@@ -1809,7 +1841,7 @@
                      dont il laissa le manuscrit à dom Calmet qui le publia, mort à Nancy en
                      1699</p>
                </trait>
-               <desc xml:id="CAT_000159_e142_d1">2 let. sig. avec les souscript. aut. à dom Calmet; Vienne (Autriche), <date when="1697">1697</date>, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000159_e142_d1">2 <term ana="#document_type_9">let. sig.</term> avec les souscript. aut. à dom Calmet; Vienne (Autriche), <date when="1697">1697</date>, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Importantes lettres. Il lui parle d'une suite de portraits des ducs de
                   Lorraine, avec un abrégé de leur vie au dos, qu'il a proposé à l'abbé Fournier et
                   à M. Morison ; il discute sur les origines de la maison de Lorraine, sur
@@ -2571,7 +2603,7 @@
                <trait>
                   <p>prince de</p>
                </trait>
-               <desc xml:id="CAT_000159_e210_d1">1°L . <term ana="#document_type_15">a. s.</term>; Vienne (Autriche), <date when="1702">1702</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000159_e210_d2">2° 2 let. sig. avec les souscript. aut., en français; <date when="1702">1702-1703</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000159_e210_d1">1°L . <term ana="#document_type_15">a. s.</term>; Vienne (Autriche), <date when="1702">1702</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000159_e210_d2">2° 2 <term ana="#document_type_9">let. sig.</term> avec les souscript. aut., en français; <date when="1702">1702-1703</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="211" xml:id="CAT_000159_e211">
                <num type="lot">211</num>
@@ -2740,7 +2772,7 @@
                <num type="lot">226</num>
                <name type="author">Sardou (Victorien)</name>
                <trait>
-                  <p>le célèbre auteur dramatique, de l'Acad. fr</p>
+                  <p>le célèbre auteur dramatique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000159_e226_d1"><term ana="#document_type_7">L. a. s.</term>; <measure type="length" unit="p" n="1">1 p.</measure> petit <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
                <note>Belle lettre où il parle de Fécora, de Patrie et de Divorçons</note>

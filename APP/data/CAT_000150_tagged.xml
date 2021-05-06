@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000150">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000150</title>
+            <title>RDA, N°147 (Septembre 1892)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">147</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>147</num>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1892-06">Septembre 1892</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -919,7 +951,7 @@
                <trait>
                   <p>dit le Grand</p>
                </trait>
-               <desc xml:id="CAT_000150_e78_d1">Let. sig. au comte de <term ana="#document_type_8">L. a.</term> Suze, à Belfort; Rocroy, <date when="1663-11-06">6 nov. 1663</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachel.Un peu tachée, légères déchirures.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000150_e78_d1"><term ana="#document_type_9">Let. sig.</term> au comte de La Suze, à Belfort; Rocroy, <date when="1663-11-06">6 nov. 1663</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachel.Un peu tachée, légères déchirures.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="79" xml:id="CAT_000150_e79">
                <num type="lot">79</num>
@@ -1560,7 +1592,7 @@
                <trait>
                   <p>roi de France</p>
                </trait>
-               <desc xml:id="CAT_000150_e147_d1">ièce sig. sur vélin ; <term ana="#document_type_8">L. a.</term> Fère en Tardenois, <date when="1557">1557</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure> Incomplète des bouts de lignes. Un peu tachée et fripée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000150_e147_d1">ièce sig. sur vélin ; La Fère en Tardenois, <date when="1557">1557</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure> Incomplète des bouts de lignes. Un peu tachée et fripée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="148" xml:id="CAT_000150_e148">
                <num type="lot">148</num>
@@ -1667,7 +1699,7 @@
                <trait>
                   <p>impératrice des Français, première femme de Napoléon 1er</p>
                </trait>
-               <desc xml:id="CAT_000150_e158_d1"><term ana="#document_type_4">Pièce sig</term>. ; L. a. Malmaison, <date when="1809-12-31">31 déc. 1809</date>. <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000150_e158_d1"><term ana="#document_type_4">Pièce sig</term>. ; La Malmaison, <date when="1809-12-31">31 déc. 1809</date>. <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Elle autorise le peintre Redouté à remettre à Mlle Raucourt un exemplaire de
                   son ouvrage : Les Liliacées et la Flore de la Malmaison</note>
             </item>
@@ -1758,7 +1790,7 @@
                   <p>homme politique, savant et littérateur, de l'Acad. des Inscriptions, né en
                      1774, mort en 1842</p>
                </trait>
-               <desc xml:id="CAT_000150_e168_d1">1° 9 l. <term ana="#document_type_15">a. s.</term>; <date when="1806">1806</date>-28, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><desc xml:id="CAT_000150_e168_d2">2° 4 pièces sig. ; <date when="1814">1814</date>-20, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Traités avec ses éditeurs.</desc><desc xml:id="CAT_000150_e168_d3">3° 9 l. <term ana="#document_type_15">a. s.</term> ou sig. des initiales du comte Léon de Laborde; <date when="1836">1836-1848</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante réunion.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000150_e168_d1">1° 9 <term ana="#document_type_7">l. a. s.</term>; <date when="1806">1806</date>-28, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><desc xml:id="CAT_000150_e168_d2">2° 4 pièces sig. ; <date when="1814">1814</date>-20, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Traités avec ses éditeurs.</desc><desc xml:id="CAT_000150_e168_d3">3° 9 <term ana="#document_type_7">l. a. s.</term> ou sig. des initiales du comte Léon de Laborde; <date when="1836">1836-1848</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante réunion.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="169" xml:id="CAT_000150_e169">
                <num type="lot">169</num>
@@ -1847,7 +1879,7 @@
                      Coligny et de Henri IV, né près de Nantes en 1531, mort à Montcontour d'une
                      blessure reçue au siège de Lamballe en 1591</p>
                </trait>
-               <desc xml:id="CAT_000150_e177_d1"><term ana="#document_type_7">L. a. s.</term> à M. de Gadagne ; <date when="1573-01">L. a. Rochelle (janvier 1573</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très rare.</desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
+               <desc xml:id="CAT_000150_e177_d1"><term ana="#document_type_7">L. a. s.</term> à M. de Gadagne ; <date when="1573-01">La Rochelle (janvier 1573</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Très rare.</desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
                <note>Lettre historique très importante. Les Rochelais, dont il est à la fois le
                   capitaine et l'ambassadeur près de l'armée royale, ne veulent plus conférer avec
                   les catholiques: « Ayant entendu l'accidant de Sancerre (qui a failli à estre
@@ -2660,7 +2692,7 @@
                      son compatriote, fut au service de l'Angleterre, puis de la Russie, né près
                      d'Ajaccio en 1764, mort en 1842.</p>
                </trait>
-               <desc xml:id="CAT_000150_e267_d1">2 l. <term ana="#document_type_15">a. s.</term> et 1 let. sig.. en français; <date when="1819">1819</date>-20. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000150_e267_d1">2 <term ana="#document_type_7">l. a. s.</term> et 1 let. sig.. en français; <date when="1819">1819</date>-20. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="268" xml:id="CAT_000150_e268">
                <num type="lot">268</num>
@@ -3441,7 +3473,7 @@
             <item n="349" xml:id="CAT_000150_e349">
                <num type="lot">349</num>
                <name type="author">Vendée</name>
-               <desc xml:id="CAT_000150_e349_d0">7 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000150_e349_d1">1° <term ana="#document_type_9">Let. sig.</term> de M. de Lescure; <date when="1782">1782</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><desc xml:id="CAT_000150_e349_d2">2° 2 l. <term ana="#document_type_15">a. s.</term> de la marquise Donissan de la Rochejaquelein; <date when="1825">1825</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><desc xml:id="CAT_000150_e349_d3">3° <term ana="#document_type_7">L. a. s.</term> de la comtesse de Suzannet; <date when="1826">1826</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000150_e349_d4">4° <term ana="#document_type_7">L. a. s.</term> du baron de Charette, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, etc.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000150_e349_d0">7 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000150_e349_d1">1° <term ana="#document_type_9">Let. sig.</term> de M. de Lescure; <date when="1782">1782</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><desc xml:id="CAT_000150_e349_d2">2° 2 <term ana="#document_type_7">l. a. s.</term> de la marquise Donissan de la Rochejaquelein; <date when="1825">1825</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><desc xml:id="CAT_000150_e349_d3">3° <term ana="#document_type_7">L. a. s.</term> de la comtesse de Suzannet; <date when="1826">1826</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000150_e349_d4">4° <term ana="#document_type_7">L. a. s.</term> du baron de Charette, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, etc.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="350" xml:id="CAT_000150_e350">
                <num type="lot">350</num>
@@ -3503,7 +3535,7 @@
             <item n="354" xml:id="CAT_000150_e354">
                <num type="lot">354</num>
                <name type="author">Révolution. -Corse</name>
-               <desc xml:id="CAT_000150_e354_d1">5 l. <term ana="#document_type_15">a. s.</term>, en ilalien, de Sébastien Valeri; <date when="1792">1792</date>-96, <measure type="length" unit="p" n="16">16 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000150_e354_d1">5 <term ana="#document_type_7">l. a. s.</term>, en ilalien, de Sébastien Valeri; <date when="1792">1792</date>-96, <measure type="length" unit="p" n="16">16 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Correspondance d'un grand intérêt pour l'histoire de la Révolution ; en voici
                   une analyse sommaire : Porta (arr. de Sastia), 20 août 1792. La Corse est comme
                   renouvelée; les électeurs qui nommeront les membres de l'Assemblée générale de la

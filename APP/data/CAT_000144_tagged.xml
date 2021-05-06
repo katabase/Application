@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000144">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000144</title>
+            <title>RDA, N°141 (Décembre 1891)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">141</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>141</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1891-12">Décembre 1891</date>
             </bibl>
             <listEvent>
@@ -54,7 +54,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +145,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +198,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -825,12 +849,12 @@
                   <p>célèbre avocat et homme d'Etut, membre du Gouvernement provisoire en 1848 et du
                      Gouvernement de la Défense nationale en 1871</p>
                </trait>
-               <desc xml:id="CAT_000144_e60_d1">13 l. <term ana="#document_type_15">a. s.</term>, dont une à la 3er personne ; <date when="1832">1832-1863</date>, <measure type="length" unit="p" n="20">20 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. On a joint deux portraits, dont un au crayon. Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
+               <desc xml:id="CAT_000144_e60_d1">13 <term ana="#document_type_7">l. a. s.</term>, dont une à la 3er personne ; <date when="1832">1832-1863</date>, <measure type="length" unit="p" n="20">20 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. On a joint deux portraits, dont un au crayon. Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
             </item>
             <item n="61" xml:id="CAT_000144_e61">
                <num type="lot">61</num>
                <name type="author">Creuzé de Lesser (Aug., barou)</name>
-               <desc xml:id="CAT_000144_e61_d1">poète et auteur dramatique distingué, préfet de l'Hérault, né en 1771, mort en 1830. 7 l. <term ana="#document_type_15">a. s.</term> dont une de sa femme ; <date when="1812">1812-1828</date>, <measure type="length" unit="p" n="10.5">10 pages 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante réunion.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000144_e61_d1">poète et auteur dramatique distingué, préfet de l'Hérault, né en 1771, mort en 1830. 7 <term ana="#document_type_7">l. a. s.</term> dont une de sa femme ; <date when="1812">1812-1828</date>, <measure type="length" unit="p" n="10.5">10 pages 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante réunion.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="62" xml:id="CAT_000144_e62">
                <num type="lot">62</num>
@@ -1414,7 +1438,7 @@
                <trait>
                   <p>archevêque de Narbonne, de Toulouse, puis de Rouen, né en 1562, mort en 1615.</p>
                </trait>
-               <desc xml:id="CAT_000144_e124_d1"><term ana="#document_type_4">Pièce sig</term>., signée aussi : 1° par J.-L. de Nogaret, duc de L. a. Valette et d'Epernon : 2e par Jean de Bertier, évêque de Rieux; <date when="1611-03-15">15 mars 1611</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000144_e124_d1"><term ana="#document_type_4">Pièce sig</term>., signée aussi : 1° par J.-L. de Nogaret, duc de La Valette et d'Epernon : 2e par Jean de Bertier, évêque de Rieux; <date when="1611-03-15">15 mars 1611</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Transmission par le cardinal Joyeuse, archevêque de Rouen, au duc d'Epernon,
                   agissant pour son troisième fils Louis, dit depuis cardinal de la Valette, alors
                   abbé cistersien de Grand-Selve, de l'archevêché de Toulouse ; l'acte énumère les
@@ -2125,7 +2149,7 @@
                      1711 Charlotte de Mailly Néelle, fille de Louis de Mailly, marquis de Néelle
                      et de Marie de Coligny</p>
                </trait>
-               <desc xml:id="CAT_000144_e194_d1">2 l. <term ana="#document_type_15">a. s.</term> (à son futur beau-frère le marquis de Mailly); <date when="1711-02-11">11-22 fév. 1711</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000144_e194_d1">2 <term ana="#document_type_7">l. a. s.</term> (à son futur beau-frère le marquis de Mailly); <date when="1711-02-11">11-22 fév. 1711</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Il lui annonce le rétablissement de sa mère. Isabelle-Claire-Eugénie de Puget
                   de la Serre et se recommande au souvenir de l'archevêque de Reims (cardinal de MI
                   illy. de la marquise de Mailly (Marie de Coligny) et de sa fille Charlotte de
@@ -2615,7 +2639,7 @@
                      d'Espeisses, carmélite à Saint-Denys en France sous le nom de Marie de la
                      Trinité</p>
                </trait>
-               <desc xml:id="CAT_000144_e246_d1">4 l. <term ana="#document_type_15">a. s.</term> à la présidente de Pontac (Louise de Thou, mariée a Arnaud de Pontac, président au Parlement de Bordeaux, fille de l'historien et de Gasparde de la Châtre, soeur de François-Auguste, décapité en 1642); <date when="1631">1631</date>-58, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000144_e246_d1">4 <term ana="#document_type_7">l. a. s.</term> à la présidente de Pontac (Louise de Thou, mariée a Arnaud de Pontac, président au Parlement de Bordeaux, fille de l'historien et de Gasparde de la Châtre, soeur de François-Auguste, décapité en 1642); <date when="1631">1631</date>-58, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Intéressantes lettres : (Saint-Denis), 13 mars 1658. « Nous avons Madame de Brienne (Louise de Béon de Masses, femme
                   de HenriAuguste de Lomenie, comte de Brienne) icy depuis plusieurs jours, qui
                   nous parle souvent de vous.» (Saint-Denis), 18 mai 1658,« Il ne tiendra pas à nous toutes cependant que nous ne vous la (Mme de
@@ -2652,7 +2676,7 @@
                   <p>diplomate et homme d'Etat, ministre des affures étrangères de Napoléon III, né
                      en 1823, mort en 1871</p>
                </trait>
-               <desc xml:id="CAT_000144_e249_d1">4 l. <term ana="#document_type_15">a. s.</term> au comte Walewski; Berlin, <date when="1862">1862</date>, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000144_e249_d1">4 <term ana="#document_type_7">l. a. s.</term> au comte Walewski; Berlin, <date when="1862">1862</date>, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Intéressante lettre : Berlin 25 juin 1862. Meyerbeer étant aux eaux d'Ems, il
                   n'a pu conférer avec lui pour décider « l'illustre compositeur a produire
                   l'Africaine sur notre théâtre du Grand-Opéra. » -Berlin, 30 octobre 1862. Il a

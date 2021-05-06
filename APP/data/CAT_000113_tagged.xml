@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000113">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000113</title>
+            <title>RDA, N°110 (Décembre 1887)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">110</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>110</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -532,7 +564,7 @@
                <trait>
                   <p>chef de l'école communiste dite Icarienne, né à Dijon en 1788, mort en 1856</p>
                </trait>
-               <desc xml:id="CAT_000113_e38_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> L. a. date a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000113_e38_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La date a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Au sujet de son procès avec le National. « Je ne pouvais prévoir un pareil
                   excès d'indignité et une pareille folie. Mais je déclare que ces bruits sont
                   d'odieuses calomnies; je défie qui que ce soit d'en rapporter la preuve; et je
@@ -1289,7 +1321,7 @@
                <trait>
                   <p>célèbre poète romantique, né à Rouen en 1785, mort en 1866</p>
                </trait>
-               <desc xml:id="CAT_000113_e126_d1">L'habit et la robe de chambre, fable aut. sig., <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> <term ana="#document_type_8">L. a.</term> partie blanche du second feuillet manque.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000113_e126_d1">L'habit et la robe de chambre, fable <term ana="#document_type_15">aut. sig.</term>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La partie blanche du second feuillet manque.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="127" xml:id="CAT_000113_e127">
                <num type="lot">127</num>
@@ -3251,7 +3283,7 @@
             <item n="341" xml:id="CAT_000113_e341">
                <num type="lot">341</num>
                <name type="author">Wagnière (J.-)</name>
-               <desc xml:id="CAT_000113_e341_d1">L.), littérateur français, secrétaire de Vollaire, sur le quel il publia des Mémoires, né en Suisse en 1739.-5 l. <term ana="#document_type_15">a. s.</term> et 1 let. aut. à Decroix ; Ferney, <date when="1787">1787</date>-90, 10 p., 1/2 <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets armoriés.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000113_e341_d1">L.), littérateur français, secrétaire de Vollaire, sur le quel il publia des Mémoires, né en Suisse en 1739.-5 <term ana="#document_type_7">l. a. s.</term> et 1 let. aut. à Decroix ; Ferney, <date when="1787">1787</date>-90, 10 p., 1/2 <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets armoriés.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Très curieuses lettres, toutes relatives à l'édition de Kehl. Il se plaint d'y
                   être maltraité ; il n'est ni un malhonnête homme, ni un fripon; il n'a rien
                   soustrait à Mme Denis, ni à Voltaire. Ces lettres pourraient servir pour une
@@ -3289,7 +3321,7 @@
                      français qui essayèrent de nous faire connaître les beautés de la langue
                      anglaise, né à Rouen en 1709, mort au Saussay, dont il était curé, en 1791</p>
                </trait>
-               <desc xml:id="CAT_000113_e345_d1">3 l. <term ana="#document_type_15">a. s.</term> à Decroix ; Le Saussay, <date when="1780">1780</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000113_e345_d1">3 <term ana="#document_type_7">l. a. s.</term> à Decroix ; Le Saussay, <date when="1780">1780</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Epîtres très intéressantes sur M. de Cideville, membre du parlement de Rouen,
                   sur les lettres que lui adressa Voltaire, sur des vers inédits de ce dernier, sur
                   un exemplaire de La Henriade annoté de sa main. Tous ces renseignements minutieux
@@ -3424,7 +3456,7 @@
             <item n="361" xml:id="CAT_000113_e361">
                <num type="lot">361</num>
                <name type="author">Maine. -</name>
-               <desc xml:id="CAT_000113_e361_d1">Pièce sur vélin; <term ana="#document_type_8">L. a.</term> Fontaine Saint-Martin (Sarthe), 21 février 1409 (<date when="1410">1410</date>), <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000113_e361_d1">Pièce sur vélin; La Fontaine Saint-Martin (Sarthe), 21 février 1409 (<date when="1410">1410</date>), <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Quittance de Catherine de Tucé, prieure de La Fontaine
                   Saint-Martin, au vicomte de Caen, de 28 livres tournois sur les fiefs et
                   aumônes de sa vicomté.</note>

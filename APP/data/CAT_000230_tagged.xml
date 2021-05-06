@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000230">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -22,7 +22,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>179</num>
                <editor>Eugène Charavay fils</editor>
@@ -145,7 +145,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,6 +198,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -406,7 +426,7 @@
                <trait>
                   <p>le savant général et écrivain militaire, né en 1693, mort en 1761.</p>
                </trait>
-               <desc xml:id="CAT_000230_e20_d1"><term ana="#document_type_7">L. a. s.</term>, L. a. Fère, <date when="1738-02-26">26 févr. 1738</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet bien conservé. Très belle lettre scientifique. Rare.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000230_e20_d1"><term ana="#document_type_7">L. a. s.</term>, La Fère, <date when="1738-02-26">26 févr. 1738</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet bien conservé. Très belle lettre scientifique. Rare.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="21" xml:id="CAT_000230_e21">
                <num type="lot">21</num>
@@ -863,7 +883,7 @@
                <trait>
                   <p>le célèbre compositeur, auteur du Désert.-Le Jugement dernier.</p>
                </trait>
-               <desc xml:id="CAT_000230_e65_d1">L'Eden.-<term ana="#document_type_8">L. a.</term> Danse des Astres, morceaux de musique (fragments) avec paroles aut., <measure type="length" unit="p" n="24">24 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000230_e65_d1">L'Eden.-La Danse des Astres, morceaux de musique (fragments) avec paroles aut., <measure type="length" unit="p" n="24">24 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="66" xml:id="CAT_000230_e66">
                <num type="lot">66</num>
@@ -1350,7 +1370,7 @@
                <trait>
                   <p>empereur d'Allemagne.</p>
                </trait>
-               <desc xml:id="CAT_000230_e116_d1"><term ana="#document_type_9">Let. sig.</term> ; Berlin, <date when="1877-04-14">14 avril 1877</date>. <measure type="length" unit="p" n="0.66">2/3 de p</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie let tre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000230_e116_d1"><term ana="#document_type_9">Let. sig.</term> ; Berlin, <date when="1877-04-14">14 avril 1877</date>. <measure type="length" unit="p" n="0.66">2/3 de p</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie let. tre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="117" xml:id="CAT_000230_e117">
                <num type="lot">117</num>
@@ -1568,7 +1588,7 @@
                   <p>célèbre horloger et mécanicien, né à Saint-Claude (Jura) en 1751, mort en
                      1835.</p>
                </trait>
-               <desc xml:id="CAT_000230_e138_d1">3 let. aut., dont 2 sig. de son prénom, à François Arago; <date when="1825">1825</date>-32, <measure type="length" unit="p" n="9.5">9 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000230_e138_d1">3 <term ana="#document_type_8">let. aut.</term>, dont 2 sig. de son prénom, à François Arago; <date when="1825">1825</date>-32, <measure type="length" unit="p" n="9.5">9 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note anchored="true">Intéressantes lettres dont voici une courte analyse : (1825). Il est privé des
                   faveurs de la Cour; c'est peut-être parce qu'il appartient à la société des
                   Trinosophes, cependant il ne s'est pas rendu au Grand-Orient depuis la mort de
@@ -1718,7 +1738,7 @@
                      législatif en 1809, lieutenant général sous la Restauration, né en Anjou en
                      1742, mort en 1828.</p>
                </trait>
-               <desc xml:id="CAT_000230_e151_d1"><term ana="#document_type_7">L. a. s.</term> à Desbordes frères, à Brest; Nantes, 16 juin 1774, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-On a joint une l. a. s. de son frère le marquis de La Galis-sonnière à Desbordes frères, à Brest; L. a. Galissonnière (Anjou), <date when="1782-03-04">4 mars 1782</date>, 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000230_e151_d1"><term ana="#document_type_7">L. a. s.</term> à Desbordes frères, à Brest; Nantes, 16 juin 1774, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-On a joint une l. a. s. de son frère le marquis de La Galis-sonnière à Desbordes frères, à Brest; La Galissonnière (Anjou), <date when="1782-03-04">4 mars 1782</date>, 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="152" xml:id="CAT_000230_e152">
                <num type="lot">152</num>
@@ -2505,7 +2525,7 @@
                <trait>
                   <p>célèbre poète grivois.</p>
                </trait>
-               <desc xml:id="CAT_000230_e230_d1">L'Ours et l'Hermine.-L. a. Noblesse, fables, 2 <term ana="#document_type_3">pièces de vers aut.</term>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000230_e230_d1">L'Ours et l'Hermine.-La Noblesse, fables, 2 <term ana="#document_type_3">pièces de vers aut.</term>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="231" xml:id="CAT_000230_e231">
                <num type="lot">231</num>
@@ -2545,7 +2565,7 @@
                <trait>
                   <p>savant géologue, de l'Institut, né à Strasbourg en 1755, mort en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000230_e234_d1">7 l. <term ana="#document_type_15">a. s.</term> à M. de Saint-Amand; Tarbes et Baguères, an <date when="1797-1798">VI</date>-an XI, . pages <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachets.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000230_e234_d1">7 <term ana="#document_type_7">l. a. s.</term> à M. de Saint-Amand; Tarbes et Baguères, an <date when="1797-1798">VI</date>-an XI, . pages <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachets.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true"> Intéressantecorrespondance politique et scientifique</note>
             </item>
             <item n="235" xml:id="CAT_000230_e235">
@@ -2567,7 +2587,7 @@
                   <p>l'auteur de la Géographie aniverselle, né à Sainte-Foy- la-Grande (Gironde) en
                      1830.</p>
                </trait>
-               <desc xml:id="CAT_000230_e236_d1"><term ana="#document_type_7">L. a. s.</term>, L. a. Haye, 11 déc., <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000230_e236_d1"><term ana="#document_type_7">L. a. s.</term>, La Haye, 11 déc., <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Relative à la rédaction du journal le Travailleur.</note>
             </item>
             <item n="237" xml:id="CAT_000230_e237">
@@ -2738,7 +2758,7 @@
                <trait>
                   <p>le célèbre économiste, né à Lyon en 1767, mort en 1832.</p>
                </trait>
-               <desc xml:id="CAT_000230_e253_d1">15 l. <term ana="#document_type_15">a. s.</term>; <date when="1829">an III-1829</date>, <measure type="length" unit="p" n="19">19 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. Cachets.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
+               <desc xml:id="CAT_000230_e253_d1">15 <term ana="#document_type_7">l. a. s.</term>; <date when="1829">an III-1829</date>, <measure type="length" unit="p" n="19">19 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. Cachets.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
                <note anchored="true">Très intéressante correspondance en grande partie relative à sa Brochure sur
                   les Anglais et à son Traité d'économie politique.</note>
             </item>
@@ -2749,7 +2769,7 @@
                   <p>économiste distingué, de l'Institut, fils du précédent, né en 1794, mort en
                      1860.</p>
                </trait>
-               <desc xml:id="CAT_000230_e254_d1">20 l. <term ana="#document_type_15">a. s.</term>; <date when="1830">1830</date>-54, <measure type="length" unit="p" n="26">26 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000230_e254_d1">20 <term ana="#document_type_7">l. a. s.</term>; <date when="1830">1830</date>-54, <measure type="length" unit="p" n="26">26 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Curieuses lettres sur ses travaux d'économie politique et où il rappelle ceux
                   de son père.</note>
             </item>
@@ -2759,7 +2779,7 @@
                <trait>
                   <p>célèbre diplomaie, ami de Mirabeau, né en 1759, mort en 1839.</p>
                </trait>
-               <desc xml:id="CAT_000230_e255_d1">1° 23 l. <term ana="#document_type_15">a. s.</term> ou sig. en abrégé au baron Mounier; Versailles et Grand-pré (Ardennes), 1821-39.-2° 30 let. sig., <date when="1814">1814</date>-39, ensemble environ <measure type="length" unit="p" n="100">100 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000230_e255_d1">1° 23 <term ana="#document_type_7">l. a. s.</term> ou sig. en abrégé au baron Mounier; Versailles et Grand-pré (Ardennes), 1821-39.-2° 30 let. sig., <date when="1814">1814</date>-39, ensemble environ <measure type="length" unit="p" n="100">100 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note anchored="true">Importante correspondance contenant des détails fort curieux sur les évènements
                   politiques de cette époque, et qui pourrait être publiée.</note>
             </item>
@@ -3168,7 +3188,7 @@
             <item n="300" xml:id="CAT_000230_e300">
                <num type="lot">300</num>
                <name type="author">Périgord</name>
-               <desc xml:id="CAT_000230_e300_d1">2 l. <term ana="#document_type_15">a. s</term> du marquis de Verteillac à son père, à Dourdan; <date when="1773">1773</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000230_e300_d1">2 <term ana="#document_type_7">l. a. s</term> du marquis de Verteillac à son père, à Dourdan; <date when="1773">1773</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Il lui donne son avis sur la manière de célébrer la naissance du duc de Valois
                   (Louis- Philippe, né le 6 octobre 1773); il lui conseille de faire allumer
                   quelques lampions et tirer quelques fusées; les journaux répèteront qu'il a fait
@@ -3180,7 +3200,7 @@
             <item n="301" xml:id="CAT_000230_e301">
                <num type="lot">301</num>
                <name type="author">Poitou.</name>
-               <desc xml:id="CAT_000230_e301_d1">Pièce originale; <term ana="#document_type_8">L. a.</term> Merlatière (Vendée), <date when="1518-04-18">18 avril 1518</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000230_e301_d1">Pièce originale; La Merlatière (Vendée), <date when="1518-04-18">18 avril 1518</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Aveu rendu au prince Jacques Ier de Rohan et de Léon, sgr de la Garnache, par
                   Jacquette de Sie-Flavye, veuve de Guyon de Rezay, seigneur de la Merlatière et de
                   la Jarrye, à cause du fief de la Prévoyerie en la paroisse de Soullans (Vendée).
@@ -3209,7 +3229,7 @@
             <item n="304" xml:id="CAT_000230_e304">
                <num type="lot">304</num>
                <name type="author">Pologne</name>
-               <desc xml:id="CAT_000230_e304_d1">4 l. <term ana="#document_type_15">a. s.</term>, en français, de J.-P. Sapieha; <date when="1798">1798-1800</date>, <measure type="length" unit="p" n="8">8 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000230_e304_d1">4 <term ana="#document_type_7">l. a. s.</term>, en français, de J.-P. Sapieha; <date when="1798">1798-1800</date>, <measure type="length" unit="p" n="8">8 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="305" xml:id="CAT_000230_e305">
                <num type="lot">305</num>

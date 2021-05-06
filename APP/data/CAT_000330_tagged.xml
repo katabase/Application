@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../../../../programmes/GROBID_Dictionaries/_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../../../../programmes/GROBID_Dictionaries/_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000330">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000330</title>
+            <title>RDA, N°202 (Septembre 1897)</title>
             <respStmt>
                <persName ref="#COL_000001">Matthias Gille Levenson</persName>
                <resp>
@@ -22,13 +22,13 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">202</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris,8 quai du Louvre</pubPlace>
-               <date when="1893-02" instant="false">Septembre 1897</date>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>202</num>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
+               <date when="1897-09" instant="false">Septembre 1897</date>
             </bibl>
             <listEvent>
                <event>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -563,7 +595,7 @@
                      description du jardin de Marie-Antoinette, à Trianon, sous le titre de Jardin
                      d'Eden, né à Metz en 1731, mort en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000330_e36_d1">2 l. <term ana="#document_type_15">a. s.</term>; ans VIII-IX, <measure type="length" unit="p" n="4.25">4 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><num type="price">15</num>
+               <desc xml:id="CAT_000330_e36_d1">2 <term ana="#document_type_7">l. a. s.</term>; ans VIII-IX, <measure type="length" unit="p" n="4.25">4 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><num type="price">15</num>
             </item>
             <item n="37" xml:id="CAT_000330_e37">
                <num type="lot">37</num>
@@ -624,7 +656,7 @@
                   <p>médecin, ami de Mirabeau, chef des Idéologues sous Napoléon Ier, de l'Acad.
                      fr., né à Cosnac (Corrèze) en 1757, mort en 1808.</p>
                </trait>
-               <desc xml:id="CAT_000330_e42_d1">7 l. <term ana="#document_type_15">a. s.</term> au citoyen Ch. Dumont; Auteuil, 26 thermidor ans IX-X, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig., têtes imp. Intéressante correspondance.</desc><num type="price">25</num>
+               <desc xml:id="CAT_000330_e42_d1">7 <term ana="#document_type_7">l. a. s.</term> au citoyen Ch. Dumont; Auteuil, 26 thermidor ans IX-X, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vig., têtes imp. Intéressante correspondance.</desc><num type="price">25</num>
             </item>
             <item n="43" xml:id="CAT_000330_e43">
                <num type="lot">43</num>
@@ -816,7 +848,7 @@
                <trait>
                   <p>femme du précédent.</p>
                </trait>
-               <desc xml:id="CAT_000330_e60_d1">3 let. aut., dont 2 sig., à l'abbé de Boismont, de l'Acad. fr., avec 2 lig. <term ana="#document_type_15">aut. sig.</term> des initiales de celui-ci; <date when="1760">1760-1761</date>, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Intéressantes.</desc><num type="price">15</num>
+               <desc xml:id="CAT_000330_e60_d1">3 <term ana="#document_type_8">let. aut.</term>, dont 2 sig., à l'abbé de Boismont, de l'Acad. fr., avec 2 lig. aut. sig. des initiales de celui-ci; <date when="1760">1760-1761</date>, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Intéressantes.</desc><num type="price">15</num>
             </item>
             <item n="61" xml:id="CAT_000330_e61">
                <num type="lot">61</num>
@@ -832,7 +864,7 @@
                <trait>
                   <p>le célèbre romancier réaliste, né à Montaubin en 1835, mort en 1892.</p>
                </trait>
-               <desc xml:id="CAT_000330_e62_d1"><term ana="#document_type_8">L. a.</term> Très-Belle, sonnet aut. sig., <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Montée. Curieuse pièce.</desc><num type="price">12</num>
+               <desc xml:id="CAT_000330_e62_d1">La Très-Belle, sonnet <term ana="#document_type_15">aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Montée. Curieuse pièce.</desc><num type="price">12</num>
             </item>
             <item n="63" xml:id="CAT_000330_e63">
                <num type="lot">63</num>
@@ -977,7 +1009,7 @@
                   <p>palatin de la Russie rouge, lieutenant général de l'armée de la couronne, né en
                      1697, mort à Varsovie en 1782.</p>
                </trait>
-               <desc xml:id="CAT_000330_e76_d1">2 l. <term ana="#document_type_15">a. s.</term> en français, à M. de Somery; Varsovie, <date when="1729">1729</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><desc xml:id="CAT_000330_e76_d2">On a joint une l. <term ana="#document_type_15">a. s.</term> en français de la princesse Czartoryska, grand'mère du roi de Pologne Stanislas Poniatowski, à M. de Somery ; Varsovie, <date when="1726-11-26">26 nov. 1726</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Fatiguée.</desc><num type="price">30</num>
+               <desc xml:id="CAT_000330_e76_d1">2 <term ana="#document_type_7">l. a. s.</term> en français, à M. de Somery; Varsovie, <date when="1729">1729</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><desc xml:id="CAT_000330_e76_d2">On a joint une <term ana="#document_type_7">l. a. s.</term> en français de la princesse Czartoryska, grand'mère du roi de Pologne Stanislas Poniatowski, à M. de Somery ; Varsovie, <date when="1726-11-26">26 nov. 1726</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Fatiguée.</desc><num type="price">30</num>
             </item>
             <item n="77" xml:id="CAT_000330_e77">
                <num type="lot">77</num>
@@ -1639,7 +1671,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000330_e145_d1">L. a. latte parisienne, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><num type="price">5</num>
+               <desc xml:id="CAT_000330_e145_d1">La latte parisienne, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><num type="price">5</num>
             </item>
             <item n="146" xml:id="CAT_000330_e146">
                <num type="lot">146</num>
@@ -2026,7 +2058,7 @@
                <trait>
                   <p>la célèbre comédienne</p>
                </trait>
-               <desc xml:id="CAT_000330_e185_d1"><term ana="#document_type_7">L. a. s.</term> à Jouslin de L. a. Salle, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><num type="price">5</num>
+               <desc xml:id="CAT_000330_e185_d1"><term ana="#document_type_7">L. a. s.</term> à Jouslin de La Salle, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><num type="price">5</num>
             </item>
             <item n="186" xml:id="CAT_000330_e186">
                <num type="lot">186</num>
@@ -2703,7 +2735,7 @@
                   <p>l'illustre architecte du Panthéon, né près d'Auxerre en 1713, mort en 1780.
                   </p>
                </trait>
-               <desc xml:id="CAT_000330_e257_d1">1° Réponse de 11 lig. <term ana="#document_type_15">aut. sig.</term> au bas d'une lettre adressée à M. le marquis de Marigny ; <date when="1767-03-04">4 mars 1767</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000330_e257_d2">2° 2 pièces le concernant.</desc><num type="price">20</num>
+               <desc xml:id="CAT_000330_e257_d1">1° Réponse de 11 lig. aut. sig. au bas d'une <term ana="#document_type_8">lettre a</term>dressée à M. le marquis de Marigny ; <date when="1767-03-04">4 mars 1767</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000330_e257_d2">2° 2 pièces le concernant.</desc><num type="price">20</num>
             </item>
             <item n="258" xml:id="CAT_000330_e258">
                <num type="lot">258</num>
@@ -2995,7 +3027,7 @@
             <item n="288" xml:id="CAT_000330_e288">
                <num type="lot">288</num>
                <name type="author">Tonkin</name>
-               <desc xml:id="CAT_000330_e288_d1">3 l. <term ana="#document_type_15">a. s.</term> de Jean Dupuis (célèbre voyageur au Tonkin, né à Saint-Just-la-Pendue (Loire), en 1829), à Gros et à Le Prévost ; Paris, 1880; Haïphong et Hong-Kong, <date when="1883">1883</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><num type="price">40</num>
+               <desc xml:id="CAT_000330_e288_d1">3 <term ana="#document_type_7">l. a. s.</term> de Jean Dupuis (célèbre voyageur au Tonkin, né à Saint-Just-la-Pendue (Loire), en 1829), à Gros et à Le Prévost ; Paris, 1880; Haïphong et Hong-Kong, <date when="1883">1883</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><num type="price">40</num>
                <note>Importantes lettres toutes relatives à la conquête du Tonkin, dont voici un
                   extrait : « Un de ces derniers jours, nous sommes allés, M. Millot et moi, voir le
                   capitaine Vlavéanos; il nous a montré son contrat avec le général Bonet, ainsi
@@ -3111,7 +3143,7 @@
             <item n="299" xml:id="CAT_000330_e299">
                <num type="lot">299</num>
                <name type="author">Guerre de Crimée.</name>
-               <desc xml:id="CAT_000330_e299_d1">2 l. <term ana="#document_type_15">a. s.</term> du général Ferri-Pisani, aide de camp du prince Jérôme Napoléon, à la comtesse de Flahaut, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">40</num>
+               <desc xml:id="CAT_000330_e299_d1">2 <term ana="#document_type_7">l. a. s.</term> du général Ferri-Pisani, aide de camp du prince Jérôme Napoléon, à la comtesse de Flahaut, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><num type="price">40</num>
                <note>Importantes lettres historiques dont voici une analyse sommaire ; Devant
                   Sébastopol, 22 déc. 1854. -Il lui parle des généraux Pajol, Bouat, Bourbaki,
                   Espinasse, Morris et Bosquet, dont il vante le noble coeur et l'excellent estomac,
@@ -3306,7 +3338,7 @@
             <item n="312" xml:id="CAT_000330_e312">
                <num type="lot">312</num>
                <name>Académie Française</name>
-               <desc xml:id="CAT_000330_e312_d1">Académie française. — Ancelol, Arnault, Auger, Barante (le baron de), Berryer, Blanc (Ch.), Caro, Champagny (le comte Franz de), Cousin (Victor), Cuvillier-Fleury, Doucet (Camille), Du Camp (Maxime), Dufaure (J.), Dumas (J.-B.), Dupanloup (Mgr, let. sig.), Dupin aîné, Empis, Falloux (A. de), Favre (Jules), Flourens. Guizot, Halévy (Ludovic), Janin (Jules), Jouy, Lainé (le vicomte), Legouvé (Ernest), Martin (Henri), Meilhac (Henri), Mézières (A.), Molé (le comte), Montalembert, Nisard, Patin (H.), Prévost-Paradol, Rémusat (Ch.-de), Roger, Silvestre de Sacy, Sainte-Beuve, Saint-Marc-Girardin Sandeau (Jules), Vatout, Vitet, etc. Acteurs et actrices. — Achard (Léon), Alizard, Arnould-Plessy</desc></item>
+               <desc xml:id="CAT_000330_e312_d1">Académie française. — Ancelol, Arnault, Auger, Barante (le baron de), Berryer, Blanc (Ch.), Caro, Champagny (le comte Franz de), Cousin (Victor), Cuvillier-Fleury, Doucet (Camille), Du Camp (Maxime), Dufaure (J.), Dumas (J.-B.), Dupanloup (Mgr, <term ana="#document_type_9">let. sig.</term>), Dupin aîné, Empis, Falloux (A. de), Favre (Jules), Flourens. Guizot, Halévy (Ludovic), Janin (Jules), Jouy, Lainé (le vicomte), Legouvé (Ernest), Martin (Henri), Meilhac (Henri), Mézières (A.), Molé (le comte), Montalembert, Nisard, Patin (H.), Prévost-Paradol, Rémusat (Ch.-de), Roger, Silvestre de Sacy, Sainte-Beuve, Saint-Marc-Girardin Sandeau (Jules), Vatout, Vitet, etc. Acteurs et actrices. — Achard (Léon), Alizard, Arnould-Plessy</desc></item>
             <item n="313" xml:id="CAT_000330_e313">
                <num type="lot">313</num>
                <name>Acteurs et actrices.</name>
@@ -3318,7 +3350,7 @@
             <item n="315" xml:id="CAT_000330_e315">
                <num type="lot">315</num>
                <name>Littérateurs.</name>
-               <desc xml:id="CAT_000330_e315_d1">Alhoy (Maurice), Aiglemont (Ed. d’), Arlincourt (le vicomte d’), Asseline (Louis), Aubryet (Xavier), Barbier (P.-J.), Barrière (Th), Belot (Ad., let. sig.), Berrier (Constant), Bertin (Armand), Bonnelier (H.), Bourgeois (Anicet), Buloz, Burette (Th.), Claudin (G.), Delord (Taxile), Elzéar (Pierre), Ennery (A. d’), Feydeau (F.), Fournier (E.), Girardin (Em. de), Granier de Cassagnac, Joubert (Léon), Karr (Alph.), Kock (Paul de), <term ana="#document_type_8">L. a.</term> Bédolière, Lambert-Thiboust, Lermina, Lescure (M. de), Masson (Michel), Mazières, Mire-court (Eug. de), Monselet (Ch.), Musset (Paul de), Poujade (Eug.), Pyat (Félix), Romey (Ch.), Silvestre (Arm.), Sué (Eug.), des initiales, Véron (Louis), Vitu (Aug.), Wey (Francis), etc.</desc></item>
+               <desc xml:id="CAT_000330_e315_d1">Alhoy (Maurice), Aiglemont (Ed. d’), Arlincourt (le vicomte d’), Asseline (Louis), Aubryet (Xavier), Barbier (P.-J.), Barrière (Th), Belot (Ad., <term ana="#document_type_9">let. sig.</term>), Berrier (Constant), Bertin (Armand), Bonnelier (H.), Bourgeois (Anicet), Buloz, Burette (Th.), Claudin (G.), Delord (Taxile), Elzéar (Pierre), Ennery (A. d’), Feydeau (F.), Fournier (E.), Girardin (Em. de), Granier de Cassagnac, Joubert (Léon), Karr (Alph.), Kock (Paul de), La Bédolière, Lambert-Thiboust, Lermina, Lescure (M. de), Masson (Michel), Mazières, Mire-court (Eug. de), Monselet (Ch.), Musset (Paul de), Poujade (Eug.), Pyat (Félix), Romey (Ch.), Silvestre (Arm.), Sué (Eug.), des initiales, Véron (Louis), Vitu (Aug.), Wey (Francis), etc.</desc></item>
          </list>
       </body>
       <gap/>

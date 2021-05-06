@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000065">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000065</title>
+            <title>RDA, N°78 (Avril 1883)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>78</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -314,7 +347,7 @@
                <num type="lot">12</num>
                <name type="author">Berryer (A.-P.)</name>
                <trait>
-                  <p>illustre avocat et orateur parlementaire, de l'Acad. fr</p>
+                  <p>illustre avocat et orateur parlementaire, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000065_e12_d1"><term ana="#document_type_7">L. a. s.</term> à M. Gournaud; Angerville, <date when="1868-08-29">29 août 1868</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Curieuse lettre politique sur les élections dans le département du Var</note>
@@ -340,7 +373,7 @@
                <num type="lot">15</num>
                <name type="author">Boismont (Nic. Thyrel, abbé de)</name>
                <trait>
-                  <p>prédicateur célèbre du xviiie siècle, poète, membre de l'Acad. fr</p>
+                  <p>prédicateur célèbre du xviiie siècle, poète, membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000065_e15_d1"><term ana="#document_type_7">L. a. s.</term> à la 3e pers. à Mme Necker; Paris, 13 mars, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet. Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
@@ -420,7 +453,7 @@
                <num type="lot">23</num>
                <name type="author">Buffon (G.-L. Leclerc, comte de)</name>
                <trait>
-                  <p>illustre naturaliste, de l'Acad. fr</p>
+                  <p>illustre naturaliste, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000065_e23_d1"><term ana="#document_type_4">Pièce sig</term>.: <date when="1779">1779</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
@@ -772,7 +805,7 @@
                <num type="lot">58</num>
                <name type="author">Fénelon (François de Salignac de)</name>
                <trait>
-                  <p>l'illustre archevêque de Cambrai, ae l'Acad. fr</p>
+                  <p>l'illustre archevêque de Cambrai, ae l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000065_e58_d1"><term ana="#document_type_8">Let. aut.</term> (àMmode Montberon); Cambrai, <date when="1701-07-26">26 juillet 1701</date>, <measure type="length" unit="p" n="2">2 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Timbre de collectionneur. Des noms propres ont été coupés dans trois endroits du corps de la lettre.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
@@ -851,7 +884,7 @@
                <trait>
                   <p>l'illustre évêque de Genève</p>
                </trait>
-               <desc xml:id="CAT_000065_e66_d1"><term ana="#document_type_7">L. a. s.</term> à M. de L. a. Porte, surintendant de la duchesse de Mercoeur; <date when="1603-02-02">2 février 1603</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets. L. a. marge blanche du haut de la lettre a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="130">130</measure>
+               <desc xml:id="CAT_000065_e66_d1"><term ana="#document_type_7">L. a. s.</term> à M. de La Porte, surintendant de la duchesse de Mercoeur; <date when="1603-02-02">2 février 1603</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets. La marge blanche du haut de la lettre a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="130">130</measure>
                <note>Précieuse lettre. Il attend une occasion pour faire passer de l'argent à Lyon ;
                   ce n'est pas facile, Genève étant entièrement fermée et les soldats occupant
                   toutes les frontières</note>
@@ -934,7 +967,7 @@
                <name type="author">Gros de Boze (Cl.)</name>
                <trait>
                   <p>trésorier de France, garde des médailles de la bibliothèque du roi, membre de
-                     l'Acad. fr</p>
+                     l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000065_e75_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1714-03-30">30 mars 1714</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Très belle lettre, intéressante pour la ville de Lyon où il est né</note>
@@ -1122,7 +1155,7 @@
                <trait>
                   <p>évêque de Nantes</p>
                </trait>
-               <desc xml:id="CAT_000065_e95_d1">1° Minute originale de son testament, <date when="1709">1709</date>, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4..</measure></desc><desc xml:id="CAT_000065_e95_d2">2° <term ana="#document_type_7">L. a. s.</term> d'André-Daniel Beaupoil de Sainte-Aulaire, évêque de Tulle, au marquis de L. a. Vallière. Il lui annonce la mort de son oncle etlui envoie les deux minutes ci-dessus</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000065_e95_d1">1° Minute originale de son testament, <date when="1709">1709</date>, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4..</measure></desc><desc xml:id="CAT_000065_e95_d2">2° <term ana="#document_type_7">L. a. s.</term> d'André-Daniel Beaupoil de Sainte-Aulaire, évêque de Tulle, au marquis de La Vallière. Il lui annonce la mort de son oncle etlui envoie les deux minutes ci-dessus</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="96" xml:id="CAT_000065_e96">
                <num type="lot">96</num>
@@ -1307,7 +1340,7 @@
                   <p>compositeur de musique distingué, savant auteur sur son art, né en 1766, mort
                      en 1838</p>
                </trait>
-               <desc xml:id="CAT_000065_e113_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Bouisse-Rochefort; Paris, <date when="1805">27 av. 1805</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante .</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000065_e113_d1"><term ana="#document_type_7">L. a. s.</term> à La Bouisse-Rochefort; Paris, <date when="1805">27 av. 1805</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante .</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="114" xml:id="CAT_000065_e114">
                <num type="lot">114</num>
@@ -1380,7 +1413,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000065_e122_d1"><term ana="#document_type_9">Let. sig.</term> Napol. au roi d'Espagne (Charles IV); Paris, 1er mars, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets et soies. 30 t. Superbe pièce. Il</desc><note>le remercie des félicitations qu'il lui a adressées sur son retour à
+               <desc xml:id="CAT_000065_e122_d1">Let. sig. Napo<term ana="#document_type_8">l. au</term> roi d'Espagne (Charles IV); Paris, 1er mars, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets et soies. 30 t. Superbe pièce. Il</desc><note>le remercie des félicitations qu'il lui a adressées sur son retour à
                   Paris.</note>
             </item>
             <item n="123" xml:id="CAT_000065_e123">
@@ -1420,7 +1453,7 @@
                <num type="lot">127</num>
                <name type="author">Pailleron (Ed.)</name>
                <trait>
-                  <p>célèbre auteur dramatique, membre de l'Acad. fr</p>
+                  <p>célèbre auteur dramatique, membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000065_e127_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Spirituelle épitre qu'il termine ainsi : « Je finis en laissant après moi cette
@@ -1613,7 +1646,7 @@
                   <p>célèbre philologue, garde des manuscrits de la bibliothèque du roi, membre de
                      l'Académie des Inscriptions, né à Villeneuve-le-Roi en 1682, mort en 1741</p>
                </trait>
-               <desc xml:id="CAT_000065_e145_d1">2 l. <term ana="#document_type_15">a. s.</term> (à Malesherbes), <date when="1728">1728</date>-29, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000065_e145_d1">2 <term ana="#document_type_7">l. a. s.</term> (à Malesherbes), <date when="1728">1728</date>-29, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Curieuses lettres où il lui rend compte de ses recherches de manuscrits à
                   Constantinople pour la bibliothèque du roi.</note>
             </item>

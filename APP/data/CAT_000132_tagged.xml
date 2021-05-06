@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000132">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000132</title>
+            <title>RDA, N°129 (Juin 1890)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">129</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>129</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -468,7 +500,7 @@
             <item n="31" xml:id="CAT_000132_e31">
                <num type="lot">31</num>
                <name type="author">Feuillet (Octave)</name>
-               <desc xml:id="CAT_000132_e31_d1">Sa carte de visite avec 10 lig. aul. sig.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000132_e31_d1">Sa carte de visite avec 10 lig. au<term ana="#document_type_9">l. sig.</term></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="32" xml:id="CAT_000132_e32">
                <num type="lot">32</num>
@@ -689,7 +721,7 @@
                      1795, morte en 1863. Elle savait peindre, dessiner et sculpter; elle servait de
                      secrétaire à son mari, imitant à la fois son style et son écriture</p>
                </trait>
-               <desc xml:id="CAT_000132_e54_d1">57 let. <term ana="#document_type_15">aut. sig.</term> en toutes lettres ou seulement de ses initiales, au peintre Decaisne; <date when="1838">1838</date>-52 ; environ <measure type="length" unit="p" n="150">150 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="85">85</measure>
+               <desc xml:id="CAT_000132_e54_d1">57 <term ana="#document_type_7">let. aut. sig.</term> en toutes lettres ou seulement de ses initiales, au peintre Decaisne; <date when="1838">1838</date>-52 ; environ <measure type="length" unit="p" n="150">150 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="85">85</measure>
                <note>Correspondance inédite des plus intéressantes par la variété des détails comme
                   par l'élégance du style. Elle y parle des tableaux que le peintre expose aux
                   Salons, d'une copie du Giotto, faite par Decaisne, etc. - A Saint-Point, elle a
@@ -750,7 +782,7 @@
                <trait>
                   <p>le principal fondateur de la chimie moderne, né en 1743, guillotiné en 1794</p>
                </trait>
-               <desc xml:id="CAT_000132_e57_d1">Fin de let. <term ana="#document_type_15">a. s.</term>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000132_e57_d1">Fin de <term ana="#document_type_7">let. a. s.</term>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="58" xml:id="CAT_000132_e58">
                <num type="lot">58</num>
@@ -1040,7 +1072,7 @@
                   <p>célèbre poète, traducteur de Shakespeare, théoricien de l'école romantique
                      allemande, ami de Mme de Staël, né en 1767, mort en 1845</p>
                </trait>
-               <desc xml:id="CAT_000132_e85_d1">2 l. <term ana="#document_type_15">a. s.</term> au diplomate comte Reinhardt; Bonn, <date when="1819">1819</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000132_e85_d1">2 <term ana="#document_type_7">l. a. s.</term> au diplomate comte Reinhardt; Bonn, <date when="1819">1819</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Belles et intéressantes lettres. Appréciation de la Panhypocrisiade de
                   Népomucène Lemercier; nouvelles du marquis Lucchesini, de Goethe, etc</note>
             </item>
@@ -2445,7 +2477,7 @@
             <item n="308" xml:id="CAT_000132_e308">
                <num type="lot">308</num>
                <name type="author">Rouergue.</name>
-               <desc xml:id="CAT_000132_e308_d1">Pièce sur vélin ; <term ana="#document_type_8">L. a.</term> Guépie (Tarn-et-Garonne), <date when="1587-12-16">16 déc. 1587</date>, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000132_e308_d1">Pièce sur vélin ; La Guépie (Tarn-et-Garonne), <date when="1587-12-16">16 déc. 1587</date>, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Montre de la garnison de la Guépie, composée de six arquebusiers à pied, reçue
                   au nom des trois états de Rouergue, par Jean de Sabatier (qui a signé), juge
                   ordinaire dudit la Guépie, et par les deux consuls du même lieu.</note>
@@ -2453,7 +2485,7 @@
             <item n="309" xml:id="CAT_000132_e309">
                <num type="lot">309</num>
                <name type="author">Roussillon.</name>
-               <desc xml:id="CAT_000132_e309_d1">Pièce sur vélin ; <term ana="#document_type_8">L. a.</term> Roque d'Albères (Pyrénées-Orientales), 23-26 mars 1486 (<date when="1487">1487</date>), <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000132_e309_d1">Pièce sur vélin ; La Roque d'Albères (Pyrénées-Orientales), 23-26 mars 1486 (<date when="1487">1487</date>), <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Montre de la garnison de la Roque, composée de dix hommes aux ordres de
                   Foucault de Bonneval, reçue par Sébastien de Coursa, (qui a signé), conseiller et
                   maître d'hôtel du roi Charies VIII</note>
@@ -2569,7 +2601,7 @@
             <item n="324" xml:id="CAT_000132_e324">
                <num type="lot">324</num>
                <name type="author">Antilles</name>
-               <desc xml:id="CAT_000132_e324_d1">47 l. <term ana="#document_type_15">a. s.</term> de M. Botereau, directeur général du domaine à la Martinique, adressées à M. Le Couteulx du Moley, secrétaire du roi et député du commerce ; Saint-Pierre de la Martinique, <date when="1763">1763</date>-80, <measure type="length" unit="p" n="136">136 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
+               <desc xml:id="CAT_000132_e324_d1">47 <term ana="#document_type_7">l. a. s.</term> de M. Botereau, directeur général du domaine à la Martinique, adressées à M. Le Couteulx du Moley, secrétaire du roi et député du commerce ; Saint-Pierre de la Martinique, <date when="1763">1763</date>-80, <measure type="length" unit="p" n="136">136 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
                <note>Précieuse correspondance pour l'histoire du commerce dans les Antilles
                   françaises durant cette longue période de calme qui s'etend entre la guerre de
                   sept ans et celle d'Amérique. Dans les dernières lettres, datées de 1780,
@@ -2728,7 +2760,7 @@
                <trait>
                   <p>né en 1626, morte en 1689.</p>
                </trait>
-               <desc xml:id="CAT_000132_e339_d1"><term ana="#document_type_4">Pièce sig</term>., en latin, sur vélin, par Gabriel Oxenstiern, Jacques de L. a. Gardie, Charles Gultdenhielm, Pierre Bauner et Gabriel Oxenstiern jeune; Stockholm, <date when="1634-09-25">25 sept. 1634</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
+               <desc xml:id="CAT_000132_e339_d1"><term ana="#document_type_4">Pièce sig</term>., en latin, sur vélin, par Gabriel Oxenstiern, Jacques de La Gardie, Charles Gultdenhielm, Pierre Bauner et Gabriel Oxenstiern jeune; Stockholm, <date when="1634-09-25">25 sept. 1634</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
                <note>Important document historique. Nomination faite par le Conseil de Régence,
                   composé de cinq membres, au nom de la Reine, qui n'avait alors que huit ans, des
                   ambassadeurs chargés de conclure la paix avec la Pologne. Ils sont au nombre de
@@ -2866,7 +2898,7 @@
             <item n="352" xml:id="CAT_000132_e352">
                <num type="lot">352</num>
                <name type="author">Artois</name>
-               <desc xml:id="CAT_000132_e352_d1"><term ana="#document_type_4">Pièce sig</term>. par G. van Wichen, missionnaire apostolique et premier aumônier de l'Ambassade de France, à la Have, et par M. Desrivaux, chargé d'affaires de France, à L. a. Haye; <date when="1767">1767</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000132_e352_d1"><term ana="#document_type_4">Pièce sig</term>. par G. van Wichen, missionnaire apostolique et premier aumônier de l'Ambassade de France, à la Have, et par M. Desrivaux, chargé d'affaires de France, à La Haye; <date when="1767">1767</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Ils déclarent certifier que le Mle d'Havrincourt (Louis de Cardevac),
                   lieutenant-général des Armées du roi de France, gouverneur de la ville d'Hesdin et
                   son ambassadeur auprès des Etats-Généraux des Provinces Unies, est décédé à La
@@ -2875,7 +2907,7 @@
             <item n="353" xml:id="CAT_000132_e353">
                <num type="lot">353</num>
                <name type="author">Bretagne</name>
-               <desc xml:id="CAT_000132_e353_d1">Let. sig. de Marchais, intendant, à <term ana="#document_type_8">L. a.</term> Pérouse; Brest, <date when="1770-10-30">30 oct. 1770</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000132_e353_d1"><term ana="#document_type_9">Let. sig.</term> de Marchais, intendant, à La Pérouse; Brest, <date when="1770-10-30">30 oct. 1770</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il va examiner son projet de vigies et sémaphores à placer aux environs de
                   Brest; il sait qu'un vaisseau vénitien est mouillé dans la baie de Douarnenez, en
                   face de Morgat; il a entendu parler d'une canonnade au large de Camaret. Il parle
@@ -2928,7 +2960,7 @@
             <item n="360" xml:id="CAT_000132_e360">
                <num type="lot">360</num>
                <name type="author">Languedoc</name>
-               <desc xml:id="CAT_000132_e360_d1">2 l. <term ana="#document_type_15">a. s.</term> de Granier, prieur de Saint-Julien, à M. de Jossaud, juge au présidial de Nîmes; Uzès, <date when="1666-07-05">2-5 juil. 1666</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000132_e360_d1">2 <term ana="#document_type_7">l. a. s.</term> de Granier, prieur de Saint-Julien, à M. de Jossaud, juge au présidial de Nîmes; Uzès, <date when="1666-07-05">2-5 juil. 1666</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Intéressantes lettres au sujet du prieuré d'Aramon que les Minimes d'Avignon,
                   soutenus par leur archevêque, avaient enlevé au curé Vitalis : « Les moines ont
                   quitté les déserts et les solitudes pour venir dans les villes et lieux habités
@@ -3054,7 +3086,7 @@
             <item n="372" xml:id="CAT_000132_e372">
                <num type="lot">372</num>
                <name type="author">Suède et Danemarck.</name>
-               <desc xml:id="CAT_000132_e372_d1">2 l. a s., de Ch. Boit, adressées au célèbre médecin Spon, à Lyon ; Elseneur, <date when="1659">1659</date>-60, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> in-fol. et 1 p. 1/2 <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000132_e372_d1">2 <term ana="#document_type_7">l. a s.</term>, de Ch. Boit, adressées au célèbre médecin Spon, à Lyon ; Elseneur, <date when="1659">1659</date>-60, <measure type="length" unit="p" n="3.25">3 p. 1/4</measure> in-fol. et 1 p. 1/2 <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettres historiques. Il lui raconte son voyage de France en Danemarck par
                   Calais, Amsterdam, le Sleswig et les îles de la Baltique, et lui donne de précieux
                   renseignements sur la guerre de Charles X Gustave avec Frédéric III. « Le bruit

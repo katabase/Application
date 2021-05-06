@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000077">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000077</title>
+            <title>RDA, N°90 (Avril 1885)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>90</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -453,7 +486,7 @@
                <trait>
                   <p>femme auteur, poète et romancière distinguée, née à Semur en 1780</p>
                </trait>
-               <desc xml:id="CAT_000077_e25_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Bouisse-Rochefort, <date when="1827-09-10">10 sept. 1827</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000077_e25_d1"><term ana="#document_type_7">L. a. s.</term> à La Bouisse-Rochefort, <date when="1827-09-10">10 sept. 1827</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre. Elle ne peut lui donner les renseignements qu'il lui demande :
                   « Ma tête fatiguée et douloureuse sollicite le repos; avant peu, j'en aurai un qui
                   sera bien long et peut-être en jouirai-je quand cette lettre vous
@@ -508,7 +541,7 @@
                <trait>
                   <p>reine de Suède, née en 1626, morte en 1689.</p>
                </trait>
-               <desc xml:id="CAT_000077_e30_d1"><term ana="#document_type_4">Pièce sig</term>., en latin, sur vélin, par Gabriel Oxenstiern, Jacques de L. a. Gardie, Charles Gulldenhielm, Pierre Bauner et Gabriel Oxenstiern jeune ; Stockholm, <date when="1634-09-25">25 sept. 1634</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000077_e30_d1"><term ana="#document_type_4">Pièce sig</term>., en latin, sur vélin, par Gabriel Oxenstiern, Jacques de La Gardie, Charles Gulldenhielm, Pierre Bauner et Gabriel Oxenstiern jeune ; Stockholm, <date when="1634-09-25">25 sept. 1634</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Important document historique. Nomination faite par le Conseil de Régence,
                   composé de cinq membres, au nom de la Reine, qui n'avait alors que huit ans, des
                   ambassadeurs chargés de conclure la paix avec la Pologne Ils sont au nombre de six
@@ -616,7 +649,7 @@
                   <p>savant astronome, de l'Académie des sciences, né à Amiens en 1749, mort en
                      1822</p>
                </trait>
-               <desc xml:id="CAT_000077_e41_d1">12 l. <term ana="#document_type_15">a. s.</term> à Antoine Cagnoli, à Vérone; Paris, <date when="1786">1786-1810</date>, <measure type="length" unit="p" n="40">40 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
+               <desc xml:id="CAT_000077_e41_d1">12 <term ana="#document_type_7">l. a. s.</term> à Antoine Cagnoli, à Vérone; Paris, <date when="1786">1786-1810</date>, <measure type="length" unit="p" n="40">40 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
                <note>Correspondance scientifique d'un grand intérêt. En voici une analyse sommaire :
                   Eloge de l'astronome Oriani. Résultats de ses recherches sur les planètes. Travail
                   qu'il vient de terminer sur les tables du soleil. Les savants anglais Flamsteed et
@@ -693,7 +726,7 @@
                   <p>célèbre député libéral, président du Conseil des ministres en 1830 et du
                      Gouvernement provisoire en 1848, né en 1767, mort en 1855.</p>
                </trait>
-               <desc xml:id="CAT_000077_e47_d1">29 l. <term ana="#document_type_15">a. s.</term> à M. Dubois, sous-préfet de Bernay; Paris, Neubourg et Evreux, <date when="1819">1819</date>-31, <measure type="length" unit="p" n="76">76 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000077_e47_d1">29 <term ana="#document_type_7">l. a. s.</term> à M. Dubois, sous-préfet de Bernay; Paris, Neubourg et Evreux, <date when="1819">1819</date>-31, <measure type="length" unit="p" n="76">76 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Très-intéressante correspondance politique avec un de ses amis et compatriotes.
                   Détails sur une séance de la Chambre (16 mars 1820) où les libéraux ont été battus
                   sur une question touchant à la liberté individuelle ; ce résultat l'a navré. « Je
@@ -774,7 +807,7 @@
                   <p>abbé des Relecqs, en Bretagne, grand doyen de Verdun, ami de Mme de Sévigné,
                      fils du marquis de Feuquières, né en 1616, mort en 1691.</p>
                </trait>
-               <desc xml:id="CAT_000077_e52_d1">-Lettre à lui adressée ; <date when="1674">Port-Louis (Morbihan) 7 mars 1674</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet. 30 » Lettre des plus intéressantes pour éclaircir la correspondance de Mme de Sévigné.-On le félicite d'être à Rennes, dans un réduit assez doux, près de Mme de Tonquedec, où il y a « Sylvie, demoiselle très-bien faicte » (Mme de Sévigné appelle cette Sylvie « la Tonquedette ; » son fils en était amoureux et ne voulait plus quitter la maison de Rengo de Tonquedec). D'après M. de Molac, M. de Kercado aura le gouvernement de Dinan (Mme de Sévigné parle de ce Barthélemy-HyacintheAnne Le Sénéchal, marquis de Kercado).-Il y parle encore de don Rogon, de la famille de Trevigne, etc</desc></item>
+               <desc xml:id="CAT_000077_e52_d1">-Lettre à lui adressée ; <date when="1674">Port-Louis (Morbihan) 7 mars 1674</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet. 30 » Lettre des plus intéressantes pour éclaircir la correspondance de Mme de Sévigné.-On le félicite d'être à Rennes, dans un réduit assez doux, près de Mme de Tonquedec, où il y a « Sylvie, demoiselle très-bien faicte » (Mme de Sévigné appelle cette Sylvie « la Tonquedette ; » son fils en était amoureux et ne voulait plus <term ana="#document_type_12">quitte</term>r la maison de Rengo de Tonquedec). D'après M. de Molac, M. de Kercado aura le gouvernement de Dinan (Mme de Sévigné parle de ce Barthélemy-HyacintheAnne Le Sénéchal, marquis de Kercado).-Il y parle encore de don Rogon, de la famille de Trevigne, etc</desc></item>
             <item n="53" xml:id="CAT_000077_e53">
                <num type="lot">53</num>
                <name type="author">Feuquières (l'abbé de)</name>
@@ -824,7 +857,7 @@
                   <p>l'illustre peintre</p>
                </trait>
                <desc xml:id="CAT_000077_e58_d1">1° <term ana="#document_type_9">Let. sig.</term> du comte de Rambuteau, préfet de la Seine, au sculpteur Etex; Paris, <date when="1846-07-07">7 juillet 1846</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><date xml:id="CAT_000077_e58_d2">2° L. a. s. d'Etex, 18 août 1846, 1 p. in-8.</date>
-               <desc xml:id="CAT_000077_e58_d3">3° 2 pièces, dont la copie d'une lettre adressée au maire de Rouen.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000077_e58_d3">3° 2 pièces, dont la copie d'une <term ana="#document_type_8">lettre a</term>dressée au maire de Rouen.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Curieux dossier relatif au monument de Géricault, fait par Etex, pour orner la
                   tombe de cet artiste au Père-Lachaise, et qui a été transporté depuis au Musée de
                   Rouen</note>
@@ -1063,7 +1096,7 @@
                <trait>
                   <p>le célèbre fabuliste</p>
                </trait>
-               <desc xml:id="CAT_000077_e82_d1"><term ana="#document_type_8">L. a.</term> M… et le Cochon, fable aut. sig., <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000077_e82_d1">La M… et le Cochon, fable <term ana="#document_type_15">aut. sig.</term>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Curieuse pièce probablement inédite</note>
             </item>
             <item n="83" xml:id="CAT_000077_e83">
@@ -1205,7 +1238,7 @@
                <trait>
                   <p>savant astronome, de l'Académie des sciences, d'une famille de Normandie</p>
                </trait>
-               <desc xml:id="CAT_000077_e96_d1">4 l. <term ana="#document_type_15">a. s.</term> à Lalande; Paris, <date when="1751">19 juillet 1751-2 juillet 1752</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000077_e96_d1">4 <term ana="#document_type_7">l. a. s.</term> à Lalande; Paris, <date when="1751">19 juillet 1751-2 juillet 1752</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Très-intéressantes lettres scientifiques écrites à Lalande dont il était le
                   professeur, et qui n'avait alors que dix-neuf ans. Elles sont relatives à sa
                   mission à Berlin, où il avait été envoyé aux frais du roi pour faire des
@@ -1398,7 +1431,7 @@
                   <p>comte de Thorigny, gouverneur de Normandie, qui se distingua à Pavie en 1625 et
                      au siège de La Rochelle en 1628, mort en 1675</p>
                </trait>
-               <desc xml:id="CAT_000077_e115_d1">2 l. <term ana="#document_type_15">a. s.</term>; <date when="1648">1648-1658</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000077_e115_d1">2 <term ana="#document_type_7">l. a. s.</term>; <date when="1648">1648-1658</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>1° 1618. Relative à la mort de son père, le maréchal Charles de Mâtignon,
                   décédé le 8 juin; -2° 1658. Curieux détails sur les sentiments de la noblesse aux
                   Etats provinciaux de Rouen</note>
@@ -1485,7 +1518,7 @@
                   <p>troisième fils du comte de Miollens, lieutenant-général en 1651, gouverneur
                      d'Arras en 1665, mort en avril 1677</p>
                </trait>
-               <desc xml:id="CAT_000077_e125_d1">Fin de lettre <term ana="#document_type_15">aut. sig.</term>; Paris, <date when="1652-12-20">20 décembre 1652</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000077_e125_d1">Fin de <term ana="#document_type_7">lettre aut. sig.</term>; Paris, <date when="1652-12-20">20 décembre 1652</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Curieuse lettre sur le cardinal de Retz, écrite au lendemain de son
                   arrestation. « Le cardinal a chanté par les chemins, parlé du combat de
                   Saint-Antoine, du siège d'Etampes ; il a demandé des livres...</note>
@@ -1535,7 +1568,7 @@
                <trait>
                   <p>empereur des Français</p>
                </trait>
-               <desc xml:id="CAT_000077_e130_d1"><term ana="#document_type_9">Let. sig.</term> Nupol. au roi d'Espagne (Charles IV) ; Paris, <date when="1813-03-01">1er mars 1813</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets et soies.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000077_e130_d1">Let. sig. Nupo<term ana="#document_type_8">l. au</term> roi d'Espagne (Charles IV) ; Paris, <date when="1813-03-01">1er mars 1813</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets et soies.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Magnifique lettre. Il le remercie des félicitations qu'il lui a adressées sur
                   son retour à Paris</note>
             </item>
@@ -1704,7 +1737,7 @@
                   <p>savant écossais du XVIIIe siècle, archéologue et géographe distingué, auteur
                      d'une Histoire d'Ecosse, né à Edimbourg en 1758, mort en 1826</p>
                </trait>
-               <desc xml:id="CAT_000077_e147_d1">6 let. aut. dont 5 sig. à Walkenaer; <date when="1815">1815</date>-17. <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000077_e147_d1">6 <term ana="#document_type_8">let. aut.</term> dont 5 sig. à Walkenaer; <date when="1815">1815</date>-17. <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Intéressantes lettres littéraires sur ses ouvrages</note>
             </item>
             <item n="148" xml:id="CAT_000077_e148">

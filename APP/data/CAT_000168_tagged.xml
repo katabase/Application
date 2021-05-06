@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000168">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000168</title>
+            <title>Vente Etienne Charavay, 12 juillet 1879</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
-                  <date when="2019">2019</date>
+                  <date when="2020">2020</date>
                </resp>
             </respStmt>
          </titleStmt>
@@ -22,14 +22,14 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
+            <bibl ana="RDA">
                <title>Catalogue d’une intéressante collection de LETTRES AUTOGRAPHES</title>
                <editor>Etienne Charavay</editor>
                <publisher>Librairie Charavay frères</publisher>
                <publisher>Frédéric Naylor</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date>1879</date>
+               <date when="1879">1879</date>
             </bibl>
             <listEvent>
                <event>
@@ -46,7 +46,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -56,7 +64,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -147,7 +155,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -200,7 +208,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -577,7 +609,7 @@
                <trait>
                   <p>père du grand Condé.</p>
                </trait>
-               <desc xml:id="CAT_000168_e41_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de L. a. Vallette; Dijon, <date when="1636-08-21">21 août 1636</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets et soies. Superbe pièce</desc><note>Instructions sur les mouvements militaires, pour servir le roi avec bonne union
+               <desc xml:id="CAT_000168_e41_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de La Vallette; Dijon, <date when="1636-08-21">21 août 1636</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets et soies. Superbe pièce</desc><note>Instructions sur les mouvements militaires, pour servir le roi avec bonne union
                   et mettre le duc Charles en la plus grande peine où il ait jamais été.</note>
             </item>
             <item n="42" xml:id="CAT_000168_e42">
@@ -770,7 +802,7 @@
                <trait>
                   <p>évêque de Grasse, poète, un des membres fondateurs de l'Académie française.</p>
                </trait>
-               <desc xml:id="CAT_000168_e62_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de L. a. Vallette; Dreux, <date when="1636-11-03">3 nov. 1636</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet. Rare</desc><note>Très-belle lettre d'envoi d'une églogue et d'une hymne sur la naissance de
+               <desc xml:id="CAT_000168_e62_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de La Vallette; Dreux, <date when="1636-11-03">3 nov. 1636</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet. Rare</desc><note>Très-belle lettre d'envoi d'une églogue et d'une hymne sur la naissance de
                   Notre-Seigneur. « Lisez cet ouvrage avec des yeux préocupez et ne vous souvenez,
                   s'il vous plaist, ni de Virgile ni d'Horace, car vous trouverez qu'auprès d'eux je
                   ne sçay pas bien bégayer.»</note>
@@ -1418,7 +1450,7 @@
             <item n="134" xml:id="CAT_000168_e134">
                <num type="lot">134</num>
                <name type="author">Saint-Pierre (Bernardin de)</name>
-               <desc xml:id="CAT_000168_e134_d1">60 l. <term ana="#document_type_15">a. s.</term> à sa femme ; <date when="1813">an II-1813</date>, <measure type="length" unit="p" n="96">96 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8 o</measure>u in-4</desc><note>Précieuse correspondance intime, des plus intéressantes.</note>
+               <desc xml:id="CAT_000168_e134_d1">60 <term ana="#document_type_7">l. a. s.</term> à sa femme ; <date when="1813">an II-1813</date>, <measure type="length" unit="p" n="96">96 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8 o</measure>u in-4</desc><note>Précieuse correspondance intime, des plus intéressantes.</note>
             </item>
             <item n="135" xml:id="CAT_000168_e135">
                <num type="lot">135</num>
@@ -1443,7 +1475,7 @@
                <trait>
                   <p>un des plus grands capitaines de son temps.</p>
                </trait>
-               <desc xml:id="CAT_000168_e137_d1">L. s., en français, avec la souscript. aut., au cardinal de <term ana="#document_type_8">L. a.</term> Vallette; <date when="1635-07">27 (juillet 1635</date>?), <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets et soies</desc><note>Envoi d'un gentilhomme qui lui fera connaître l'état de ses troupes.</note>
+               <desc xml:id="CAT_000168_e137_d1"><term ana="#document_type_9">L. s.</term>, en français, avec la souscript. aut., au cardinal de La Vallette; <date when="1635-07">27 (juillet 1635</date>?), <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets et soies</desc><note>Envoi d'un gentilhomme qui lui fera connaître l'état de ses troupes.</note>
             </item>
             <item n="138" xml:id="CAT_000168_e138">
                <num type="lot">138</num>
@@ -1531,7 +1563,7 @@
                <trait>
                   <p>le grand tragédien.</p>
                </trait>
-               <desc xml:id="CAT_000168_e147_d1"><term ana="#document_type_8">L. a.</term> Méprise, comédie, manuscrit autographe, avec ratures et corrections, <measure type="length" unit="p" n="37">37 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> rel. Très intéressant manuscrit</desc></item>
+               <desc xml:id="CAT_000168_e147_d1">La Méprise, comédie, <term ana="#document_type_13">manuscrit autographe</term>, avec ratures et corrections, <measure type="length" unit="p" n="37">37 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> rel. Très intéressant manuscrit</desc></item>
             <item n="148" xml:id="CAT_000168_e148">
                <num type="lot">148</num>
                <name type="author">Talon (Omner)</name>
@@ -1580,7 +1612,7 @@
                <trait>
                   <p>fils du précédent, ami de Cinq-Mars, avec lequel il fut décapité.</p>
                </trait>
-               <desc xml:id="CAT_000168_e152_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de L. a. Vallette; <date when="1637-01">16 (janv. 1637</date>), <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets et soies</desc><note>Pièce historique, où il narre une entrevue qu'il a eue avec le cardinal de
+               <desc xml:id="CAT_000168_e152_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de La Vallette; <date when="1637-01">16 (janv. 1637</date>), <measure type="length" unit="p" n="3">3 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets et soies</desc><note>Pièce historique, où il narre une entrevue qu'il a eue avec le cardinal de
                   Richelieu.</note>
             </item>
             <item n="153" xml:id="CAT_000168_e153">
@@ -1589,7 +1621,7 @@
                <trait>
                   <p>illustre maréchal de France, tué en 1636.</p>
                </trait>
-               <desc xml:id="CAT_000168_e153_d1"><term ana="#document_type_7">L. a. s.</term> au duc de L. a. Rochefoucauld ; citadelle de Ré, <date when="1627-08-04">4 août 1627</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Les ennemis du roi ne prendront pas avantage sur cette place. Ils menacent de
+               <desc xml:id="CAT_000168_e153_d1"><term ana="#document_type_7">L. a. s.</term> au duc de La Rochefoucauld ; citadelle de Ré, <date when="1627-08-04">4 août 1627</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Les ennemis du roi ne prendront pas avantage sur cette place. Ils menacent de
                   la battre de 60 pièces de canon. Cela ne fera pas grand effet. Depuis qu'ils ont
                   commencé à ouvrir les tranchées, on s'est avancé sur eux.</note>
             </item>
@@ -1680,13 +1712,13 @@
             <item n="162" xml:id="CAT_000168_e162">
                <num type="lot">162</num>
                <name type="author">Voltaire (F.-M. Arquet de)</name>
-               <desc xml:id="CAT_000168_e162_d1">6 l. aut., sig. V., à Moncrif; <date when="1732">1732-1754</date>, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8 o</measure>u in-4</desc><note>Lettres des plus curieuses, où il parle des candidatures à l'Académie française
+               <desc xml:id="CAT_000168_e162_d1">6 <term ana="#document_type_8">l. aut.</term>, sig. V., à Moncrif; <date when="1732">1732-1754</date>, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8 o</measure>u in-4</desc><note>Lettres des plus curieuses, où il parle des candidatures à l'Académie française
                   et du libelle de Roy contre lui.</note>
             </item>
             <item n="163" xml:id="CAT_000168_e163">
                <num type="lot">163</num>
                <name type="author">Voltaire (F.-M. Arouet de)</name>
-               <desc xml:id="CAT_000168_e163_d1">28 l. aut., la plupart sig. V., et 4 lettres écrites par Wa» gnière, à Helvétius; <date when="1738">1738-1766</date>, <measure type="length" unit="p" n="89">89 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Précieuse correspondance, d'un haut intérêt.</note>
+               <desc xml:id="CAT_000168_e163_d1">28 <term ana="#document_type_8">l. aut.</term>, la plupart sig. V., et 4 lettres écrites par Wa» gnière, à Helvétius; <date when="1738">1738-1766</date>, <measure type="length" unit="p" n="89">89 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Précieuse correspondance, d'un haut intérêt.</note>
             </item>
             <item n="164" xml:id="CAT_000168_e164">
                <num type="lot">164</num>
@@ -1708,12 +1740,12 @@
             <item n="167" xml:id="CAT_000168_e167">
                <num type="lot">167</num>
                <name type="author">Voltaire (F.-M. Arquet de)</name>
-               <desc xml:id="CAT_000168_e167_d1">Minute de lettre autographe à Amelot; <term ana="#document_type_8">L. a.</term> Haye, <date when="1743-08-11">11 août 1743</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Superbe lettre sur le roi de Prusse et les événements du temps.</note>
+               <desc xml:id="CAT_000168_e167_d1">Minute de <term ana="#document_type_8">lettre autographe</term> à Amelot; La Haye, <date when="1743-08-11">11 août 1743</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Superbe lettre sur le roi de Prusse et les événements du temps.</note>
             </item>
             <item n="168" xml:id="CAT_000168_e168">
                <num type="lot">168</num>
                <name type="author">Voltaire (F.-M. Arouet de)</name>
-               <desc xml:id="CAT_000168_e168_d1">3 l. <term ana="#document_type_15">aut. sig.</term> V. et 6 lettres écrites par Colini ou par Wagnière à Ximenez; <date when="1751">1751-1769</date>, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Intéressante correspondance littéraire. Cinq de ces lettres sont
+               <desc xml:id="CAT_000168_e168_d1">3 <term ana="#document_type_7">l. aut. sig.</term> V. et 6 lettres écrites par Colini ou par Wagnière à Ximenez; <date when="1751">1751-1769</date>, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Intéressante correspondance littéraire. Cinq de ces lettres sont
                   inédites.</note>
             </item>
             <item n="169" xml:id="CAT_000168_e169">
@@ -1730,7 +1762,7 @@
             <item n="171" xml:id="CAT_000168_e171">
                <num type="lot">171</num>
                <name type="author">Voltaire (F.-M. Arouet de)</name>
-               <desc xml:id="CAT_000168_e171_d1">Minute de lettre autographe aux membres de l'Académie française; Ferney, <date when="1771-03-04">4 mars 1771</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Curieuse lettre où il leur recommande l'abbé Delille pour une place à
+               <desc xml:id="CAT_000168_e171_d1">Minute de <term ana="#document_type_8">lettre autographe</term> aux membres de l'Académie française; Ferney, <date when="1771-03-04">4 mars 1771</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Curieuse lettre où il leur recommande l'abbé Delille pour une place à
                   l'Académie française.</note>
             </item>
             <item n="172" xml:id="CAT_000168_e172">

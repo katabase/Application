@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000236">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -22,7 +22,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>185</num>
                <editor>Eugène Charavay fils</editor>
@@ -145,7 +145,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,6 +198,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -232,7 +252,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000236_e3_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Garde, près Toulon, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000236_e3_d1"><term ana="#document_type_7">L. a. s.</term>; La Garde, près Toulon, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="4" xml:id="CAT_000236_e4">
                <num type="lot">4</num>
@@ -450,7 +470,7 @@
                <trait>
                   <p>célèbre physicien et mathématicien suisse, né en 1700, mort en 1782.</p>
                </trait>
-               <desc xml:id="CAT_000236_e25_d1">2 l. a. s. en latin à Christophe Goldbach, à Berlin; Venise, <date when="1724">1724</date>, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, jaunies. <term ana="#document_type_7">L. a. s.</term> de Christophe Goldbach, en latin, à Daniel Bernouilli; Berlin, <date when="1724">1724</date>, 3 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000236_e25_d1">2 <term ana="#document_type_7">l. a. s.</term> en latin à Christophe Goldbach, à Berlin; Venise, <date when="1724">1724</date>, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, jaunies. L. a. s. de Christophe Goldbach, en latin, à Daniel Bernouilli; Berlin, <date when="1724">1724</date>, 3 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">entre ces deux savants au sujet de divers problèmes d'algèbre.</note>
             </item>
             <item n="26" xml:id="CAT_000236_e26">
@@ -459,7 +479,7 @@
                <trait>
                   <p>savant astronome et mathématicien suisse, né en 1744, mort en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000236_e26_d1">40 l. <term ana="#document_type_15">a. s.</term> au libraire Tillard, à Paris ; Berlin, <date when="1784">1784-1805</date>, environ <measure type="length" unit="p" n="100">100 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes. Un peu tachées.</desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
+               <desc xml:id="CAT_000236_e26_d1">40 <term ana="#document_type_7">l. a. s.</term> au libraire Tillard, à Paris ; Berlin, <date when="1784">1784-1805</date>, environ <measure type="length" unit="p" n="100">100 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes. Un peu tachées.</desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
                <note anchored="true">Importante correspondance scientifique.</note>
             </item>
             <item n="27" xml:id="CAT_000236_e27">
@@ -478,7 +498,7 @@
                   <p>le chef de la conspiration de Saumur, né à Francheval (Ardennes) en 1769,
                      décapité à Poitiers en 1822.</p>
                </trait>
-               <desc xml:id="CAT_000236_e28_d1">2 l. <term ana="#document_type_15">a. s.</term>, <date when="1818">1818</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000236_e28_d1">2 <term ana="#document_type_7">l. a. s.</term>, <date when="1818">1818</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Relatives à un travail dont il s'occupe sur la bataille de Waterloo, où il a
                   assisté. Il demande des détails sur le moment où ils ont évacué le terrain, le
                   nombre de pièces de canon prises par l'ennemi, comment on pouvait l'éviter,
@@ -844,7 +864,7 @@
                <trait>
                   <p>le célèbre sculpteur, né à Valenciennes.</p>
                </trait>
-               <desc xml:id="CAT_000236_e62_d1">Billet. <term ana="#document_type_15">aut. sig.</term> à une dame; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000236_e62_d1">Bil<term ana="#document_type_7">let. aut. sig.</term> à une dame; <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="63" xml:id="CAT_000236_e63">
                <num type="lot">63</num>
@@ -940,7 +960,7 @@
                   <p>brave maréchal de France, le héros des Lettres portugaises, né à Chamilly
                      (Saône-et-Loire) en 1636, mort en 1715.</p>
                </trait>
-               <desc xml:id="CAT_000236_e71_d1"><term ana="#document_type_7">L. a. s.</term> (au marquis de la Coste); L. a. Rochelle, <date when="1706-08-03">3 août 1706</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000236_e71_d1"><term ana="#document_type_7">L. a. s.</term> (au marquis de la Coste); La Rochelle, <date when="1706-08-03">3 août 1706</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Belle lettre où il parle de la flotte ennemie et de la noblesse du Poitou : «
                   Je vous prie d'exhorter toute votre noblesse à un peu de patience, et qu'il n'en
                   sorte pas un du quartier, car je conte sur elle, persuadé que pas un ne voudrêt me
@@ -1317,7 +1337,7 @@
                <trait>
                   <p>le célèbre évêque d'Orléans, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000236_e111_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Chapelle, <date when="1858-08-07">7 août 1858</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000236_e111_d1"><term ana="#document_type_7">L. a. s.</term>; La Chapelle, <date when="1858-08-07">7 août 1858</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="112" xml:id="CAT_000236_e112">
                <num type="lot">112</num>
@@ -1972,7 +1992,7 @@
                   <p>fameux critique, ennemi de Voltaire, né à Vallerangue (Gard) en 1726, mort en
                      1773.</p>
                </trait>
-               <desc xml:id="CAT_000236_e176_d1">P. a. s. 4 fois; <term ana="#document_type_8">L. a.</term> Bastille, <date when="1756">1756</date>-57, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000236_e176_d1">P. <term ana="#document_type_15">a. s.</term> 4 fois; La Bastille, <date when="1756">1756</date>-57, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="177" xml:id="CAT_000236_e177">
                <num type="lot">177</num>
@@ -2446,7 +2466,7 @@
                   <p>homme d'Etat et diplomate hanovrien, ambassadeur en Russie et en Angleterre, né
                      en 1766, mort en 1839.</p>
                </trait>
-               <desc xml:id="CAT_000236_e223_d1">2 l. <term ana="#document_type_15">a. s.</term>, dont une à la 3e pers., en anglais, à Henri Bone; <date when="1813">1813-1815</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000236_e223_d1">2 <term ana="#document_type_7">l. a. s.</term>, dont une à la 3e pers., en anglais, à Henri Bone; <date when="1813">1813-1815</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Curieuses lettres. Il lui adresse un portrait sur émail de l'impératrice de
                   Russie (Elisabeth, née Louise de Bade) que le tzar Alexandre lui a envoyé dans une
                   boite enrichie de diamants; la comtesse Liéven en désire une copie. Il lui fait
@@ -2500,7 +2520,7 @@
             <item n="230" xml:id="CAT_000236_e230">
                <num type="lot">230</num>
                <name type="author">Ney (Michel)</name>
-               <desc xml:id="CAT_000236_e230_d1">1° <term ana="#document_type_9">Let. sig.</term> avec la souscript. aut. ; Montreuil-sur-Mer. <date when="1804-11-15">24 brumaire an XIII</date>, tête impr.-2° 2 l. a. s. de la maréchale Ney, <measure type="length" unit="p" n="3">3 p.</measure> petit <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-3° Lettre imprimée de faire part de la naissance d'un fils, 2 floréal an XII, 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000236_e230_d1">1° Let. sig. avec la souscript. aut. ; Montreuil-sur-Mer. <date when="1804-11-15">24 brumaire an XIII</date>, tête impr.-2° 2 <term ana="#document_type_7">l. a. s.</term> de la maréchale Ney, <measure type="length" unit="p" n="3">3 p.</measure> petit <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-3° Lettre imprimée de faire part de la naissance d'un fils, 2 floréal an XII, 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="231" xml:id="CAT_000236_e231">
                <num type="lot">231</num>
@@ -2508,7 +2528,7 @@
                <trait>
                   <p>contrôleur général des finances, né à Troyes en 1689, mort en 1747.</p>
                </trait>
-               <desc xml:id="CAT_000236_e231_d1"><term ana="#document_type_7">L. a. s.</term> à M. de L. a. Rallière; <date when="1738-12-26">26 déc. 1738</date>,<measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000236_e231_d1"><term ana="#document_type_7">L. a. s.</term> à M. de La Rallière; <date when="1738-12-26">26 déc. 1738</date>,<measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Il lui demande de lui apporter le plan de Vincennes.</note>
             </item>
             <item n="232" xml:id="CAT_000236_e232">
@@ -3207,14 +3227,14 @@
             <item n="300" xml:id="CAT_000236_e300">
                <num type="lot">300</num>
                <name type="author">Roussillon</name>
-               <desc xml:id="CAT_000236_e300_d1">4 let. sig. par Louis, duc de Noailles, maréchal de France. au comte de Thorenc; Saint-Germain-en-Laye, <date when="1768">1768-1769</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000236_e300_d1">4 <term ana="#document_type_9">let. sig.</term> par Louis, duc de Noailles, maréchal de France. au comte de Thorenc; Saint-Germain-en-Laye, <date when="1768">1768-1769</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Curieuses lettres écrites comme gouverneur général de Roussillon, sur
                   l'administration militaire de la ville de Perpignan.</note>
             </item>
             <item n="301" xml:id="CAT_000236_e301">
                <num type="lot">301</num>
                <name type="author">Saintonge</name>
-               <desc xml:id="CAT_000236_e301_d1">18 l. <term ana="#document_type_15">a. s.</term> du baron Chaudruc de Crazannes, archéologue, à M. de Saint-Amans : Aiguillon et Saintes, <date when="1826">1826</date>-32, <measure type="length" unit="p" n="80">80 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000236_e301_d1">18 <term ana="#document_type_7">l. a. s.</term> du baron Chaudruc de Crazannes, archéologue, à M. de Saint-Amans : Aiguillon et Saintes, <date when="1826">1826</date>-32, <measure type="length" unit="p" n="80">80 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Très intéressante correspondance scientifique..</note>
             </item>
             <item n="302" xml:id="CAT_000236_e302">
@@ -3236,7 +3256,7 @@
             <item n="304" xml:id="CAT_000236_e304">
                <num type="lot">304</num>
                <name type="author">Danemarck</name>
-               <desc xml:id="CAT_000236_e304_d1">3 let. sig. du chevalier Hugues de Terlon, diplomate, ambassadeur, correspondant de la reine Christine de Suède, au marquis de Feuquières ; Copenhague, <date when="1673">1673</date>-74, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000236_e304_d1">3 <term ana="#document_type_9">let. sig.</term> du chevalier Hugues de Terlon, diplomate, ambassadeur, correspondant de la reine Christine de Suède, au marquis de Feuquières ; Copenhague, <date when="1673">1673</date>-74, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Importantes lettres politiques. Une alliance est possible entre la Suède et le
                   Danemarck; mais elle viserait plutôt les intérêts commerciaux des contractants que
                   le salut des Hollandais. Le comte de Windwgraetz excite les Danois à entrer dans
@@ -3289,7 +3309,7 @@
                   <p>cardinal, premier ministre de Louis XV, membre de l'Académie française, né à
                      Lodève en 1653, mort en 1743.</p>
                </trait>
-               <desc xml:id="CAT_000236_e310_d1">37 let. aut. à M. de Valincourt, membre de l'Acad. fr. ; <date when="1726">1726</date>-29, <measure type="length" unit="p" n="37">37 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="350">350</measure>
+               <desc xml:id="CAT_000236_e310_d1">37 <term ana="#document_type_8">let. aut.</term> à M. de Valincourt, membre de l'Acad. fr. ; <date when="1726">1726</date>-29, <measure type="length" unit="p" n="37">37 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="350">350</measure>
                <note anchored="true">Importante correspondance inédite, dont voici quelques extraits. -Au sujet de
                   l'élection de Montesquieu à l'Académie française : « Je suis effraié de l'extrait
                   (des lettres Persanes) que vous m'avés envoié, et si je l'avois sçû plutôt,
@@ -3354,7 +3374,7 @@
                   <p>empereur d'Allemagne, époux de la grande Marie-Thérèse, père de
                      Marie-Antoinette, né en 1708, mort en 1765.</p>
                </trait>
-               <desc xml:id="CAT_000236_e311_d1">15 l. <term ana="#document_type_15">a. s.</term>, dont 7 de son pararaphe, en français, avec un post-scriptum de 8 lig. aut. de l'impératrice Marie-Thérèse, à la comtesse de Ligniville; Vienne, <date when="1740">1740</date>-63, <measure type="length" unit="p" n="45">45 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="500">500</measure>
+               <desc xml:id="CAT_000236_e311_d1">15 <term ana="#document_type_7">l. a. s.</term>, dont 7 de son pararaphe, en français, avec un post-scriptum de 8 lig. aut. de l'impératrice Marie-Thérèse, à la comtesse de Ligniville; Vienne, <date when="1740">1740</date>-63, <measure type="length" unit="p" n="45">45 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="500">500</measure>
                <note anchored="true">Précieuse correspondance dont voici une analyse sommaire : « Ma mouattié
                   (Marie-Thérèse) vous fet bien des compliment et vous assure de son amittié, se
                   resouvenan souvan de vous : pour mes jeune (enfants), ne vous dise rien ne vous

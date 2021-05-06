@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000114">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000114</title>
+            <title>RDA, N°111 (Février 1888)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">111</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>111</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -973,7 +1005,7 @@
                   <p>célèbre poète, surnommé le La Fontaine hollandais, grand pensionnaire de
                      Hollande, ambassadeur en Angleterre, né en 1577, mort en 1660</p>
                </trait>
-               <desc xml:id="CAT_000114_e79_d1"><term ana="#document_type_7">L. a. s.</term> à Vorst; L. a. Haye, <date when="1640">1640</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Superbe lettre.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000114_e79_d1"><term ana="#document_type_7">L. a. s.</term> à Vorst; La Haye, <date when="1640">1640</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Superbe lettre.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="80" xml:id="CAT_000114_e80">
                <num type="lot">80</num>
@@ -1280,7 +1312,7 @@
                   <p>célèbre compositeur de musique, auteur du Désert, né en Provence en 1810, mort
                      en 1876</p>
                </trait>
-               <desc xml:id="CAT_000114_e111_d1"><term ana="#document_type_8">L. a.</term> Perle du Brésil, manuscril aut., <measure type="length" unit="p" n="23">23 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Fragment de ce célèbre opéra.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000114_e111_d1">La Perle du Brésil, manuscril aut., <measure type="length" unit="p" n="23">23 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Fragment de ce célèbre opéra.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="112" xml:id="CAT_000114_e112">
                <num type="lot">112</num>
@@ -1688,7 +1720,7 @@
                <trait>
                   <p>le célèbre publiciste, né en 1806, mort en 1881</p>
                </trait>
-               <desc xml:id="CAT_000114_e155_d1">Que veut la France? Article aut. sig., <date when="1879">paru dans le journal <term ana="#document_type_8">L. a.</term> France du 9 mars 1879</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 2 feuillets ont été déchirés puis recollés.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000114_e155_d1">Que veut la France? Article <term ana="#document_type_15">aut. sig.</term>, <date when="1879">paru dans le journal La France du 9 mars 1879</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 2 feuillets ont été déchirés puis recollés.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Cet article débute ainsi : « Ce que veulent impatiemment tous les travailleurs,
                   qui sont l'immense majorité de la France, c'est que la Chambre des Députés en
                   finisse sans retard avec les questions de personnes qui passionnent les esprits,
@@ -2079,7 +2111,7 @@
                   <p>gouverneur et amiral de Bretagne, qui accompagna Louis XII en Italie et battit
                      les Anglais sur mer en 1517</p>
                </trait>
-               <desc xml:id="CAT_000114_e196_d1">Let. sig., avec la souscript. aut., à M. d'Acigné, seigneur de <term ana="#document_type_8">L. a.</term> RocheJagu; Vitré, <date when="1528-01-01">1er janvier 1528</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère déchirure.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000114_e196_d1"><term ana="#document_type_9">Let. sig.</term>, avec la souscript. aut., à M. d'Acigné, seigneur de La RocheJagu; Vitré, <date when="1528-01-01">1er janvier 1528</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Légère déchirure.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Relative à la terre de Quimperguegenec, ayant appartenu à sa tante Catherine
                   d'Alençon</note>
             </item>
@@ -2174,7 +2206,7 @@
                   <p>littérateur et auteur dramatique distingué, né à Orléans en 1799, mort en
                      1873</p>
                </trait>
-               <desc xml:id="CAT_000114_e207_d1">Méphistophêlés ou le diable et la jeune fille, drame en 3 actes en vers, <term ana="#document_type_13">manuscrit aut.</term>, <date when="1829">1829</date>, <measure type="length" unit="p" n="150">150 pages</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> On a joint une lettre aut. sig. de Lesguillon à Fréd. Lemaître au sujet de son Méphistophélés.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000114_e207_d1">Méphistophêlés ou le diable et la jeune fille, drame en 3 actes en vers, manuscrit aut., <date when="1829">1829</date>, <measure type="length" unit="p" n="150">150 pages</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> On a joint une <term ana="#document_type_7">lettre aut. sig.</term> de Lesguillon à Fréd. Lemaître au sujet de son Méphistophélés.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="208" xml:id="CAT_000114_e208">
                <num type="lot">208</num>
@@ -2576,7 +2608,7 @@
                      Bastille de 1726 à 1728 pour ses intrigues contre le cardinal de Fleury, né en
                      1684, mort en 1770</p>
                </trait>
-               <desc xml:id="CAT_000114_e251_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Bastille, <date when="1727-04-18">18 avril 1727</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000114_e251_d1"><term ana="#document_type_7">L. a. s.</term>; La Bastille, <date when="1727-04-18">18 avril 1727</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Curieuse lettre. Comme le motif de sa détention est d'être accusé d'avoir
                   intérêt dans une affaire (il réclamait avec Bouret et Barême des sommes immenses à
                   la succession Le Blanc) qui a été renvoyée au Parlement pour y être jugée (le
@@ -2644,7 +2676,7 @@
                <trait>
                   <p>archevêque-électeur de Trêves de 1768 à 1802, né en 1739, mort en 1812</p>
                </trait>
-               <desc xml:id="CAT_000114_e258_d1">3 l. <term ana="#document_type_15">a. s.</term>, en français, au baron d'Oxenstierne, envoyé de Suède ; (<date when="1792">1792</date>), 3p. 1/2 <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000114_e258_d1">3 <term ana="#document_type_7">l. a. s.</term>, en français, au baron d'Oxenstierne, envoyé de Suède ; (<date when="1792">1792</date>), 3p. 1/2 <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Lettres historiques. Il regrette l'assassinat du roi de Suède, Gustave III, et
                   se recommande au souvenir du régent et frère du roi décédé (Charles XIII).
                   Nouvelles de Xavier de Saxe. Il annonce l'arrivée de troupes prussiennes et se

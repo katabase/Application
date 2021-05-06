@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000129">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000129</title>
+            <title>RDA, N°126 (Mars 1890)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">126</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>126</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -303,7 +335,7 @@
                <trait>
                   <p>le célèbre révolutionnaire, né à la Guadeloupe en 1809. mort en 1870</p>
                </trait>
-               <desc xml:id="CAT_000129_e8_d1"><term ana="#document_type_7">L. a. sig.</term> en abrégé; L. a. Haye, 26 janvier, <date when="1862">1862</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000129_e8_d1"><term ana="#document_type_7">L. a. sig.</term> en abrégé; La Haye, 26 janvier, <date when="1862">1862</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Touchante épître adressée à un ami qu'il cherche à consoler de la mort de sa
                   femme: « Si, comme j'aime à le croire, l'être d'aucun de nous ne périt avec
                   l'enveloppe que l'on met en terre, c'est moi qui reverrai sans doute le premier
@@ -645,7 +677,7 @@
                      travaux sur l'Inoculation, membre associé de l'Académie des Sciences de Paris,
                      né à Parme en 1690, mort en 1769</p>
                </trait>
-               <desc xml:id="CAT_000129_e38_d1">3 l. <term ana="#document_type_15">a. s.</term>, en français, à Maupertuis ; Pise, <date when="1746">1746</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000129_e38_d1">3 <term ana="#document_type_7">l. a. s.</term>, en français, à Maupertuis ; Pise, <date when="1746">1746</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
                <note>Très belles lettres. Il lui recommande des Italiens qui se rendent à Berlin, et
                   le félicite d'être appelé à diriger l'Académie des sciences de cette ville ; il
                   s'y rencontrera avec Euler, Liberkiin, Schach, prédicateur de la Cour Hoffmann, le
@@ -863,7 +895,7 @@
                   <p>duc de Parme, un des premiers capitaines de son temps, né en 1546, mort en
                      1592</p>
                </trait>
-               <desc xml:id="CAT_000129_e62_d1">Let. sig. en français, à M. de la Motte, gouverneur de Gravelines; Beugen, <date when="1578-11-19">19 nov. 1578</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> <term ana="#document_type_8">L. a.</term> marge du bas a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000129_e62_d1"><term ana="#document_type_9">Let. sig.</term> en français, à M. de la Motte, gouverneur de Gravelines; Beugen, <date when="1578-11-19">19 nov. 1578</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La marge du bas a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Importante lettre historique. Il lui accuse réception d'une réponse à ses deux
                   lettres « tant sur la griefve maladie de feu monsdon Juan (d'Autriche que sa mort,
                   laquelle est vrayment à regretter pour la perte que Sa Majesté (Philippe II), la
@@ -1260,7 +1292,7 @@
                   <p>ministre de la guerre sous Louis XVI, député de la noblesse de
                      Saintes en 1789, né à Grenoble en 1727, mort sur l'échafaud en 1794.</p>
                </trait>
-               <desc xml:id="CAT_000129_e97_d1">4 l. <term ana="#document_type_15">a. s.</term> et l. s. au président de Ruffev; Dijon et Paris, <date when="1765">1765</date>-77, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, déchirure atteignant le texte.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000129_e97_d1">4 <term ana="#document_type_7">l. a. s.</term> et l. s. au président de Ruffev; Dijon et Paris, <date when="1765">1765</date>-77, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, déchirure atteignant le texte.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Dijon, 20 sept. 1765 Il le remercie de l'envoi d'un poisson qui « sera croqué
                   demain par des Hongrois de bon appétit; corsaires et hussard sont sinonimes. »
                   -Paris, 15 mai 1767. Il a remis les lettres et les mémoires de l'Académie de Dijon
@@ -1310,7 +1342,7 @@
                      fondateur du Jardin botanique et membre de l'Académie de Dijon, ami du président
                      de Brosses et de Piron, né en 1695, mort en 1774.</p>
                </trait>
-               <desc xml:id="CAT_000129_e101_d1">4 let. aut. dont 2 sig. au président de Ruffey ; Hyères, <date when="1761">1761</date>-67, <measure type="length" unit="p" n="13.5">13 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000129_e101_d1">4 <term ana="#document_type_8">let. aut.</term> dont 2 sig. au président de Ruffey ; Hyères, <date when="1761">1761</date>-67, <measure type="length" unit="p" n="13.5">13 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Très curieuses lettres, prose et vers : 1761-1762. Piquants détails our la
                   frégate que les élus de Bourgogne ont offerte au roi. Il plaisante les filles de
                   l'Opéra et les chirurgiens. Hyères, 12 février 1767. Il approuve l'admission du
@@ -1674,7 +1706,7 @@
                   <p>industriel et homme politique, député de 1827 à 1831, frère de Casimir Périer,
                      né à Grenoble en 1773, mort en 1833</p>
                </trait>
-               <desc xml:id="CAT_000129_e134_d1">2 l. <term ana="#document_type_15">a. s.</term> et 11, aut. (incomplète de la fin)</desc><note>à Mme Dupin (épouse de Dupin aîné); 1827-31, 8 p. 1/2 in-8 20 » Curieuses
+               <desc xml:id="CAT_000129_e134_d1">2 <term ana="#document_type_7">l. a. s.</term> et 11, aut. (incomplète de la fin)</desc><note>à Mme Dupin (épouse de Dupin aîné); 1827-31, 8 p. 1/2 in-8 20 » Curieuses
                   lettres politiques ; Girenoble, 10 décembre 1827. Il se félicite du succès des
                   libéraux et de sa triple élection ; c'est le coup de grâce pour le ministère
                   Villèle. - Paris, 20 mars 1830. Il espère que Dupin aîné réussira dans ses
@@ -1811,7 +1843,7 @@
                   <p>comte de Jouy, homme d'Etat, ministre de la marine, et grand maître des postes,
                      né en 1689, mort en 1761</p>
                </trait>
-               <desc xml:id="CAT_000129_e146_d1">Let. sig. à M. de <term ana="#document_type_8">L. a.</term> Villehelier, à Vannes ; Versailles, <date when="1754-03-21">21 mars 1754</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000129_e146_d1"><term ana="#document_type_9">Let. sig.</term> à M. de La Villehelier, à Vannes ; Versailles, <date when="1754-03-21">21 mars 1754</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="147" xml:id="CAT_000129_e147">
                <num type="lot">147</num>
@@ -1879,7 +1911,7 @@
                   <p>maréchal de France, qui prit une grande part aux campagnes de Flandre et
                      d'Italie, né en 1685</p>
                </trait>
-               <desc xml:id="CAT_000129_e152_d1">Let. sig. avec 2 lig. aut.: <term ana="#document_type_8">L. a.</term> Rochelle, <date when="1761-07-27">27 juillet 1761</date>, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000129_e152_d1"><term ana="#document_type_9">Let. sig.</term> avec 2 lig. aut.: La Rochelle, <date when="1761-07-27">27 juillet 1761</date>, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="153" xml:id="CAT_000129_e153">
                <num type="lot">153</num>
@@ -1951,7 +1983,7 @@
                   <p>écrivain distingué, auteur de Tragaldabas, né à Villequier (Seine-Inférieure)
                      en 1819.</p>
                </trait>
-               <desc xml:id="CAT_000129_e159_d1">5 l. <term ana="#document_type_15">a. s.</term>; <date when="1849">1849</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000129_e159_d1">5 <term ana="#document_type_7">l. a. s.</term>; <date when="1849">1849</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Intéressantes lettres relatives à Tragaldabas</note>
             </item>
             <item n="160" xml:id="CAT_000129_e160">

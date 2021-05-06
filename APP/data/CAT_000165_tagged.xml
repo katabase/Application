@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000165">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000165</title>
+            <title>RDA, N°158 (Août-Septembre 1893)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -21,12 +21,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>158</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, 34 rue du Faubourg Poissonière</pubPlace>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1893-08">Août-Septembre 1893</date>
             </bibl>
             <listEvent>
@@ -43,7 +43,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +61,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -142,7 +150,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -194,7 +202,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -287,7 +319,7 @@
                <num type="lot">12</num>
                <name type="author">Armaignac (Jean d')</name>
                <trait>
-                  <p>gentilhomme français, premier valet de chambre de Henri IV, qu'il aida à fuir de Saint- Germain le 20 février 1576.</p>
+                  <p>gentilhomme français, premier valet de chambre de Henri IV, qu'il aida à fuir de Saint-Germain le 20 février 1576.</p>
                </trait>
                <desc xml:id="CAT_000165_e12_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin, <date when="1611">1611</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> 8</desc></item>
             <item n="13" xml:id="CAT_000165_e13">
@@ -341,7 +373,7 @@
                <trait>
                   <p>le célèbre révolutionnaire.</p>
                </trait>
-               <desc xml:id="CAT_000165_e19_d1"><term ana="#document_type_7">L. a. s.</term> à une dame; L. a. Haye, <date when="1865">1865</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 6</desc><note>Très belle lettre où il lui mande qu'ayant été très peu valide depuis quelque temps, il a profité de quelques heures d'amélioration pour aller au Doèlen, à Amsterdam. Curieux détails..</note>
+               <desc xml:id="CAT_000165_e19_d1"><term ana="#document_type_7">L. a. s.</term> à une dame; La Haye, <date when="1865">1865</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 6</desc><note>Très belle lettre où il lui mande qu'ayant été très peu valide depuis quelque temps, il a profité de quelques heures d'amélioration pour aller au Doèlen, à Amsterdam. Curieux détails..</note>
             </item>
             <item n="20" xml:id="CAT_000165_e20">
                <num type="lot">20</num>
@@ -426,7 +458,7 @@
                <trait>
                   <p>célèbre peintre militaire, né en 1800, mort en 1866.</p>
                </trait>
-               <desc xml:id="CAT_000165_e30_d1"><term ana="#document_type_7">L. a. s.</term>, (au colonel L. a. Combe) ; Paris, <date when="1857-01-27">27 janvier 1857</date> , <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 4</desc><note>Très belle lettre où il exprime toute son admiration pour Charlet.</note>
+               <desc xml:id="CAT_000165_e30_d1"><term ana="#document_type_7">L. a. s.</term>, (au colonel La Combe) ; Paris, <date when="1857-01-27">27 janvier 1857</date> , <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 4</desc><note>Très belle lettre où il exprime toute son admiration pour Charlet.</note>
             </item>
             <item n="31" xml:id="CAT_000165_e31">
                <num type="lot">31</num>
@@ -998,7 +1030,7 @@
                <trait>
                   <p>prieur de Saint-Sernin, dont la charité était proverbiale, surnommé l'évêque des Petits Savoyards, né en 1714, décapité le 19 messidor an II.</p>
                </trait>
-               <desc xml:id="CAT_000165_e106_d1">8 let. aut., dont 5 signées, à l'auteur dramatique Quétant; <date when="1768">1768</date>-69, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes. 33</desc><note>Spirituelles lettres sur la Littérature et le Théâtre.</note>
+               <desc xml:id="CAT_000165_e106_d1">8 <term ana="#document_type_8">let. aut.</term>, dont 5 signées, à l'auteur dramatique Quétant; <date when="1768">1768</date>-69, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes. 33</desc><note>Spirituelles lettres sur la Littérature et le Théâtre.</note>
             </item>
             <item n="107" xml:id="CAT_000165_e107">
                <num type="lot">107</num>
@@ -1037,7 +1069,7 @@
                <trait>
                   <p>conseiller d'Etat et trésorier de l'épargne.</p>
                </trait>
-               <desc xml:id="CAT_000165_e111_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin; Paris, <date when="1631-04-24">24 avril 1631</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> L. a. signature a été coupée en deux endroits, mais est restée intacte. 5</desc><note>Ordre de payer 16,800 livres à Messieurs de Beaulieu, de Chambres, de Joyeuse, de Carlincas, de Tircourt, de Leymon, de Barnevay de Bourgongne, de Saint-Cyr Rochechouart, de Palais, d'Antragues de Daulphiné, de la Varenne Nagut, de Saint-Surin, de Malicy, de Moncolins, maistres de camp en l'infanterie française, pour leurs appointements d'un semestre de 1630.</note>
+               <desc xml:id="CAT_000165_e111_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin; Paris, <date when="1631-04-24">24 avril 1631</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> La signature a été coupée en deux endroits, mais est restée intacte. 5</desc><note>Ordre de payer 16,800 livres à Messieurs de Beaulieu, de Chambres, de Joyeuse, de Carlincas, de Tircourt, de Leymon, de Barnevay de Bourgongne, de Saint-Cyr Rochechouart, de Palais, d'Antragues de Daulphiné, de la Varenne Nagut, de Saint-Surin, de Malicy, de Moncolins, maistres de camp en l'infanterie française, pour leurs appointements d'un semestre de 1630.</note>
             </item>
             <item n="112" xml:id="CAT_000165_e112">
                <num type="lot">112</num>
@@ -1150,7 +1182,7 @@
                <trait>
                   <p>ministre de la Justice en 1793, membre du Directoire, auteur de Mémoires, né à Semblançay (Indreet-Loire) en 1746, mort en 1830.</p>
                </trait>
-               <desc xml:id="CAT_000165_e126_d1"><term ana="#document_type_7">L. a. s.</term> à l'abbé L. a. Bouderie; <date when="1827">Paris 5 décembre 1827</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 15</desc><note>Très-curieuse lettre où il le félicite sur son Panésyrique de saint Louis : « Il serait à désirer que le clergé actuel fût bien pénétré des sentimens que vous exprimés si bien sur les regrets inutiles qui le tourmentent, et que ceux qui nous gouvernent fussent comme vous bien persuadés que la plupart de nos maux nous viennent de l'ignorance et que les grands désordres qui affligent l'espèce humaine ont pris leur source dans la profondeur des ténèbres de l'âme.»</note>
+               <desc xml:id="CAT_000165_e126_d1"><term ana="#document_type_7">L. a. s.</term> à l'abbé La Bouderie; <date when="1827">Paris 5 décembre 1827</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 15</desc><note>Très-curieuse lettre où il le félicite sur son Panésyrique de saint Louis : « Il serait à désirer que le clergé actuel fût bien pénétré des sentimens que vous exprimés si bien sur les regrets inutiles qui le tourmentent, et que ceux qui nous gouvernent fussent comme vous bien persuadés que la plupart de nos maux nous viennent de l'ignorance et que les grands désordres qui affligent l'espèce humaine ont pris leur source dans la profondeur des ténèbres de l'âme.»</note>
             </item>
             <item n="127" xml:id="CAT_000165_e127">
                <num type="lot">127</num>
@@ -1500,7 +1532,7 @@
                <trait>
                   <p>général distingué, député de la noblesse du Puy aux Etats généraux, ami et compagnon de Lafayette, dont il partagea la captivité à Magdebourg et à Olmutz, né en 1758, mort en 1831.</p>
                </trait>
-               <desc xml:id="CAT_000165_e172_d1">-2 let. aut. (à son frère, le marquis Marie-Victor de Fay de <term ana="#document_type_8">L. a.</term> Tour-Maulbourg), <date when="1791">1791</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 12</desc><note>Curieuses lettres sur les débuts de la Révolution. Il recommande à son frère de maintenir la discipline dans son régiment de chasseurs : « Je conçois que le travail d'hiver, quelque peu fatigant qu'il soit, ait excité un peu de fermentation, parce qu'il y a longtemps que la machine est relâchée et que les chasseurs ont toujours été menés par compliments... J'aurais voulu que, sans leur (aux anciens) parler durement, tu eus mis dans tes phrases un ton ferme et décidé qui leur eut fait voir que tu ne les craignois pas. » La guerre civile agite le Haut Vivarais et il a dû s'évader de Maubourg ; on lui écrit cependant du Puy de demeurer en France; il espère, avec ses chasseurs, tirer l'épée contre les émigrants; il lui recommande de faire faire des armes à son fils Charles ; il lui parle aussi de MM. de Montrond et de Montbrun. -Ordres pour l'exercice de ses trois escadrons; il parle de MM. de Birague, de Bournazel et de la Ferté.</note>
+               <desc xml:id="CAT_000165_e172_d1">-2 <term ana="#document_type_8">let. aut.</term> (à son frère, le marquis Marie-Victor de Fay de La Tour-Maulbourg), <date when="1791">1791</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 12</desc><note>Curieuses lettres sur les débuts de la Révolution. Il recommande à son frère de maintenir la discipline dans son régiment de chasseurs : « Je conçois que le travail d'hiver, quelque peu fatigant qu'il soit, ait excité un peu de fermentation, parce qu'il y a longtemps que la machine est relâchée et que les chasseurs ont toujours été menés par compliments... J'aurais voulu que, sans leur (aux anciens) parler durement, tu eus mis dans tes phrases un ton ferme et décidé qui leur eut fait voir que tu ne les craignois pas. » La guerre civile agite le Haut Vivarais et il a dû s'évader de Maubourg ; on lui écrit cependant du Puy de demeurer en France; il espère, avec ses chasseurs, tirer l'épée contre les émigrants; il lui recommande de faire faire des armes à son fils Charles ; il lui parle aussi de MM. de Montrond et de Montbrun. -Ordres pour l'exercice de ses trois escadrons; il parle de MM. de Birague, de Bournazel et de la Ferté.</note>
             </item>
             <item n="173" xml:id="CAT_000165_e173">
                <num type="lot">173</num>
@@ -1555,7 +1587,7 @@
                <trait>
                   <p>le principal fondateur de la chimie moderne, né en 1743, guillotiné en 1794.</p>
                </trait>
-               <desc xml:id="CAT_000165_e179_d1"><term ana="#document_type_4">Pièce sig</term>. ; Paris, <date when="1784">1784</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-On a joint une notice imprimée sur L. a. voisier, avec fac-similé, par J.-J.-N. Huot, 14 p. in-4. 5</desc></item>
+               <desc xml:id="CAT_000165_e179_d1"><term ana="#document_type_4">Pièce sig</term>. ; Paris, <date when="1784">1784</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-On a joint une notice imprimée sur La voisier, avec fac-similé, par J.-J.-N. Huot, 14 p. in-4. 5</desc></item>
             <item n="180" xml:id="CAT_000165_e180">
                <num type="lot">180</num>
                <name type="author">Lawrence (sir Thomas)</name>
@@ -1591,7 +1623,7 @@
                <num type="lot">184</num>
                <name type="author">Lemaire (Madeleine)</name>
                <trait>
-                  <p>célèbre femme peintre contemporaine, née à Sainte- Rosteline (Var).</p>
+                  <p>célèbre femme peintre contemporaine, née à Sainte-Rosteline (Var).</p>
                </trait>
                <desc xml:id="CAT_000165_e184_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre. 4</desc></item>
             <item n="185" xml:id="CAT_000165_e185">
@@ -1684,7 +1716,7 @@
                <trait>
                   <p>célèbre écrivain et érudit suisse du XVIIIe siècle, ami de Voltaire, né en 1749, mort en Angleterre en 1800.</p>
                </trait>
-               <desc xml:id="CAT_000165_e196_d1">21 let. aut. dont 3 sig. à J. Mounier; Paris, Genève, etc., <date when="1786">1786</date>-99, <measure type="length" unit="p" n="82">82 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>, cachets. Deux lettres sont incomplètes. 150</desc><note>Importante correspondance d'un grand intérêt pour l'histoire de la Révolution. En voici une analyse sommaire : 17 septembre 1789. Il parle de l'anarchie actuelle et prévoit la chute de la Royauté; critique du gouvernement; inexpérience des démocrates. Eloge du gouvernement anglais. - 14 mars 1790. L'Assemblée nationale n'est qu'un club, mû par un comité secret. Les Jacobins et les Impartiaux. Succès de la démagogie due à l'ignorance « française » de Paris. Necker et l'état des finances; les financiers menacés, traités d'accapareurs. - 28 avril 1790. Anéantissement du clergé; le pouvoir absorbé par l'Assemblée nationale. -24 juin 1790. Défense de Bergasse. Fédération du 14 juillet, enthousiasme qu'elle produit, son but; Rabaut et les protestants. L'agitation en province. Le pacte de famine.21 juillet (1790). Curieux détails sur les journaux paraissant à Paris. Il appelle Necker « ministre du club de 1789 ». La Fédération a été très royaliste. Refus de payer les taxes. Les Jacobins et les 1789. Le duc d'Orléans proposé comme maire de Paris. -14 octobre 1790. Violente diatribe contre Necker. -4 décembre 1790. Menaces dirigées contre lui; il s'attend à tout. La Fayette et le club monarchique. La terreur à l'ordre du jour. Les clubs jacobites ; etc., etc</note>
+               <desc xml:id="CAT_000165_e196_d1">21 <term ana="#document_type_8">let. aut.</term> dont 3 sig. à J. Mounier; Paris, Genève, etc., <date when="1786">1786</date>-99, <measure type="length" unit="p" n="82">82 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>, cachets. Deux lettres sont incomplètes. 150</desc><note>Importante correspondance d'un grand intérêt pour l'histoire de la Révolution. En voici une analyse sommaire : 17 septembre 1789. Il parle de l'anarchie actuelle et prévoit la chute de la Royauté; critique du gouvernement; inexpérience des démocrates. Eloge du gouvernement anglais. - 14 mars 1790. L'Assemblée nationale n'est qu'un club, mû par un comité secret. Les Jacobins et les Impartiaux. Succès de la démagogie due à l'ignorance « française » de Paris. Necker et l'état des finances; les financiers menacés, traités d'accapareurs. - 28 avril 1790. Anéantissement du clergé; le pouvoir absorbé par l'Assemblée nationale. -24 juin 1790. Défense de Bergasse. Fédération du 14 juillet, enthousiasme qu'elle produit, son but; Rabaut et les protestants. L'agitation en province. Le pacte de famine.21 juillet (1790). Curieux détails sur les journaux paraissant à Paris. Il appelle Necker « ministre du club de 1789 ». La Fédération a été très royaliste. Refus de payer les taxes. Les Jacobins et les 1789. Le duc d'Orléans proposé comme maire de Paris. -14 octobre 1790. Violente diatribe contre Necker. -4 décembre 1790. Menaces dirigées contre lui; il s'attend à tout. La Fayette et le club monarchique. La terreur à l'ordre du jour. Les clubs jacobites ; etc., etc</note>
             </item>
             <item n="197" xml:id="CAT_000165_e197">
                <num type="lot">197</num>
@@ -1996,7 +2028,7 @@
                <trait>
                   <p>célèbre graveur et dessinateur contemporain.</p>
                </trait>
-               <desc xml:id="CAT_000165_e237_d1"><term ana="#document_type_7">L. a. s.</term> Félic.. explorateur, au crayon, à un écrivain; paquebot-poste L. a. Bretagne, le 28 sept. ; en mer, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 20</desc><note>Très belle et curieuse lettre humoristique où il lui décrit ses compagnons de voyage. « Des cabotins, des banquiers qui ont mangé toutes les grenouilles de France, des colonels de West-Point, des demoiselles très enceintes, des professeurs de danses mortes, des pharmaciens à poisons internationaux et transatlantiques, des inventeurs d'explosifs et de panclastiques, et tout cela avec le mal de mer... On sent ici le modernisme à outrance. Le sentiment des canailleries internationales est dans l'air. et l'on rêve en pensant aux soixante-dix mille péchés capitaux que porte ce bachot de cent et soixante-dix mêtres de long !»</note>
+               <desc xml:id="CAT_000165_e237_d1"><term ana="#document_type_7">L. a. s.</term> Félic.. explorateur, au crayon, à un écrivain; paquebot-poste La Bretagne, le 28 sept. ; en mer, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 20</desc><note>Très belle et curieuse lettre humoristique où il lui décrit ses compagnons de voyage. « Des cabotins, des banquiers qui ont mangé toutes les grenouilles de France, des colonels de West-Point, des demoiselles très enceintes, des professeurs de danses mortes, des pharmaciens à poisons internationaux et transatlantiques, des inventeurs d'explosifs et de panclastiques, et tout cela avec le mal de mer... On sent ici le modernisme à outrance. Le sentiment des canailleries internationales est dans l'air. et l'on rêve en pensant aux soixante-dix mille péchés capitaux que porte ce bachot de cent et soixante-dix mêtres de long !»</note>
             </item>
             <item n="238" xml:id="CAT_000165_e238">
                <num type="lot">238</num>
@@ -2033,7 +2065,7 @@
                <trait>
                   <p>l'illustre auteur des Mémoires.</p>
                </trait>
-               <desc xml:id="CAT_000165_e242_d1"><term ana="#document_type_7">L. a. s.</term> (au comte de Maurepas); Paris, <date when="1726-03-27">27 mars 1726</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 100</desc><note>Très belle et curieuse lettre écrite dans le style mordant des Mémoires, relative au chevalier d'Espoy, qui se plaint que Saint- Simon l'empêche d'entrer à la Trappe. « Le ch. d'Espoy est un chevalier d'industrie de dévotion et qui par cette voye a vesçu au despends d'autruy depuis plus de 30 ans. » Intéressants détails.</note>
+               <desc xml:id="CAT_000165_e242_d1"><term ana="#document_type_7">L. a. s.</term> (au comte de Maurepas); Paris, <date when="1726-03-27">27 mars 1726</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 100</desc><note>Très belle et curieuse lettre écrite dans le style mordant des Mémoires, relative au chevalier d'Espoy, qui se plaint que Saint-Simon l'empêche d'entrer à la Trappe. « Le ch. d'Espoy est un chevalier d'industrie de dévotion et qui par cette voye a vesçu au despends d'autruy depuis plus de 30 ans. » Intéressants détails.</note>
             </item>
             <item n="243" xml:id="CAT_000165_e243">
                <num type="lot">243</num>
@@ -2321,7 +2353,7 @@
                <trait>
                   <p>le célèbre écrivain naturaliste.</p>
                </trait>
-               <desc xml:id="CAT_000165_e280_d1">Sa carte de visite avec 4 lig. <term ana="#document_type_15">aut. sig.</term>-On a joint 2 let. aut., dont une sig. de Mlle Charlotte Mortier secrétaire de Mme de Rute, contenant de curieuses appréciations sur l'oeuvre de Zola, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 6</desc></item>
+               <desc xml:id="CAT_000165_e280_d1">Sa carte de visite avec 4 lig. aut. sig.-On a joint 2 <term ana="#document_type_8">let. aut.</term>, dont une sig. de Mlle Charlotte Mortier secrétaire de Mme de Rute, contenant de curieuses appréciations sur l'oeuvre de Zola, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> 6</desc></item>
             <item n="281" xml:id="CAT_000165_e281">
                <num type="lot">281</num>
                <name type="author">Zola (Emile)</name>

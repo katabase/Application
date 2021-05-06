@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000117">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000117</title>
+            <title>RDA, N°114 (Août 1888)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">114</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>114</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -350,7 +382,7 @@
                   <p>romancier célèbre, auteur des Epreuves du sentiment, né en 1718, mort en
                      1805</p>
                </trait>
-               <desc xml:id="CAT_000117_e13_d1">L. a. Saxe, <term ana="#document_type_2">pièce de vers, aut. sig.</term>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000117_e13_d1">La Saxe, <term ana="#document_type_2">pièce de vers, aut. sig.</term>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="14" xml:id="CAT_000117_e14">
                <num type="lot">14</num>
@@ -412,7 +444,7 @@
                <trait>
                   <p>célèbre poète romantique, auteur des Odes funambulesques</p>
                </trait>
-               <desc xml:id="CAT_000117_e19_d1">Lettres à Pierrot: <term ana="#document_type_8">L. a.</term> Vieillesse, article aut. sig.; <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> Découpé pour l'impression.</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000117_e19_d1">Lettres à Pierrot: La Vieillesse, article <term ana="#document_type_15">aut. sig.</term>; <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> Découpé pour l'impression.</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
             </item>
             <item n="20" xml:id="CAT_000117_e20">
                <num type="lot">20</num>
@@ -1264,7 +1296,7 @@
                   <p>célèbre historien et archéologue hollandais, membre de l'Acad. des
                      Inscriptions, né en 1644, mort en 1716</p>
                </trait>
-               <desc xml:id="CAT_000117_e100_d1">Let. sig. aux bourgmestre et Conseil de Ville de Bergop-Zoom ; <term ana="#document_type_8">L. a.</term> Haye, <date when="1692-11-10">10 nov. 1692</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, sceau.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000117_e100_d1"><term ana="#document_type_9">Let. sig.</term> aux bourgmestre et Conseil de Ville de Bergop-Zoom ; La Haye, <date when="1692-11-10">10 nov. 1692</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, sceau.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Pièce historique. Il leur donne l'ordre de recevoir dans leurs murs les troupes
                   alliées envoyées par le roi de la Grande-Bretagne (Guillaume III), pour renforcer
                   la garnison</note>
@@ -1832,7 +1864,7 @@
                <trait>
                   <p>roi d'Angleterre</p>
                </trait>
-               <desc xml:id="CAT_000117_e156_d1">Let. sig. avec la souscript. aut., en allemand, au roi de Prusse FrédéricGuillaume; Londres, <date when="1716-11-18">18 nov. 1716</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> <term ana="#document_type_8">L. a.</term> partie blanche du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000117_e156_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut., en allemand, au roi de Prusse FrédéricGuillaume; Londres, <date when="1716-11-18">18 nov. 1716</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> La partie blanche du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Illui recommande le sous-lieutenant Ludolf Henning von Eltz et l'invite à le
                   mettre en possession du comté de Werningerode</note>
             </item>
@@ -2898,7 +2930,7 @@
                <trait>
                   <p>célèbre littérateur et auteur dramatique contemporain</p>
                </trait>
-               <desc xml:id="CAT_000117_e262_d1"><term ana="#document_type_8">L. a.</term> Mer 2e édition, Paris, Dreyfous, <date when="1886">1886</date>, 1 voi, <measure type="format" unit="f" ana="#document_format_18">in-18 b</measure>r. Avec envoi de 2 lignes aut. sig.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000117_e262_d1">La Mer 2e édition, Paris, Dreyfous, <date when="1886">1886</date>, 1 voi, <measure type="format" unit="f" ana="#document_format_18">in-18 b</measure>r. Avec envoi de 2 lignes <term ana="#document_type_15">aut. sig.</term></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
          </list>
       </body>

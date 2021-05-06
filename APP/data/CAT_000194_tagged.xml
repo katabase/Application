@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../Users/lucierdn/Downloads/GROBID_Dictionaries-master/_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000194">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000194</title>
+            <title>RDA, N°166 (Mai 1894)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -20,12 +21,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl status="draft" ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>166</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, 34 rue du Faubourg Poissonière</pubPlace>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1894-05">Mai 1894</date>
             </bibl>
             <listEvent>
@@ -42,7 +43,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -52,7 +61,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -141,7 +150,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -193,7 +202,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -228,7 +261,7 @@
                <num type="lot">4</num>
                <name type="author">Albon (Jean d')</name>
                <trait>
-                  <p>seigneur de Saint- André, chevalier d'honneur de Catherine de Médicis, bailli de Mâcon, gouverneur du Lyonnais, du Bourbonnais et de la Marche, défenseur de Saint-Quentin contre les Anglais, père du maréchal de Saint-André, mort en 1550.</p>
+                  <p>seigneur de Saint-André, chevalier d'honneur de Catherine de Médicis, bailli de Mâcon, gouverneur du Lyonnais, du Bourbonnais et de la Marche, défenseur de Saint-Quentin contre les Anglais, père du maréchal de Saint-André, mort en 1550.</p>
                </trait>
                <desc xml:id="CAT_000194_e4_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin, <date when="1523">1523</date>, <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
@@ -491,7 +524,7 @@
                <trait>
                   <p>célèbre poète et philosophe du XVIIIe siècle, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000194_e35_d1">2 let. aut., dont une sig. L'Abbé de Boufflers, à Devaux, lecteur du roi Stanislas, ami de Mme de Graffigny, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000194_e35_d1">2 <term ana="#document_type_8">let. aut.</term>, dont une sig. L'Abbé de Boufflers, à Devaux, lecteur du roi Stanislas, ami de Mme de Graffigny, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Très curieuses lettres. « Au delà du cours de la Moselle, presque sur les bords de la Sarre, c'est là qu'il trouvera un ami tel qu'il le lui faut, à la figure près; qu'il cherche avec attention dans une plaine d'environ mille pas, entre le château d'A- membourg et le village de Grossalen, occupés tous les deux par des troupes ennemies, il y verra un jeune homme prêt à atteindre son cinquième lustre, plus occupé du silence de son ami Thersite que du bruit des fusils et des canons hanovriens, et il trouvera, au milieu des combats cet abbé de Boufflers qu'il avait inutilement cherché dans les églises.»</note>
             </item>
             <item n="36" xml:id="CAT_000194_e36">
@@ -540,7 +573,7 @@
                <trait>
                   <p>marquise de Montataire, fille ainée du second mariage de Roger de Bussy-Rabutin.</p>
                </trait>
-               <desc xml:id="CAT_000194_e41_d1"><term ana="#document_type_8">Let. aut.</term>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.-Ou a joint une l. a. s. de son mari Louis de Madaillan de l'Esparre, marquis de Montataire (au maréchal de Vivonne); Paris, <date when="1671-09-08">8 sept. 1671</date>, 3 p. in-4. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000194_e41_d1">Let. aut., <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.-Ou a joint une <term ana="#document_type_7">l. a. s.</term> de son mari Louis de Madaillan de l'Esparre, marquis de Montataire (au maréchal de Vivonne); Paris, <date when="1671-09-08">8 sept. 1671</date>, 3 p. in-4. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="42" xml:id="CAT_000194_e42">
                <num type="lot">42</num>
@@ -548,7 +581,7 @@
                <trait>
                   <p>célèbre homme d'Etat, orateur et écrivain espagnol, né en 1833.</p>
                </trait>
-               <desc xml:id="CAT_000194_e42_d1">1° <term ana="#document_type_7">L. a. s.</term>; Madrid, 7 juin <date when="1886">1886</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Un peu tachée.-2° Let. sig. de Mgr Guilbert, archevêque de Bordeaux; Bordeaux, 15 mai <date when="1886">1886</date>, 3 p. 1/2 in-4.-3° L. a. Démocratie et son avenir social et religieux, par Mgr Guilbert; <date when="1886">1886</date>, broch. in-8.-4° Traduction espagnole de la brochure précédente avec préface d'E. Castelar; <date when="1886">1886</date>, broch. in-8.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000194_e42_d1">1° <term ana="#document_type_7">L. a. s.</term>; Madrid, 7 juin <date when="1886">1886</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Un peu tachée.-2° Let. sig. de Mgr Guilbert, archevêque de Bordeaux; Bordeaux, 15 mai <date when="1886">1886</date>, 3 p. 1/2 in-4.-3° La Démocratie et son avenir social et religieux, par Mgr Guilbert; <date when="1886">1886</date>, broch. in-8.-4° Traduction espagnole de la brochure précédente avec préface d'E. Castelar; <date when="1886">1886</date>, broch. in-8.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Très curieux dossier, tout relatif à la brochure de Mgr Guilbert.</note>
             </item>
             <item n="43" xml:id="CAT_000194_e43">
@@ -566,7 +599,7 @@
                <trait>
                   <p>chef du Pouvoir executif en 1848, né en 1802, mort en 1857.</p>
                </trait>
-               <desc xml:id="CAT_000194_e44_d1"><date when="1848-06">Minute de lettre <term ana="#document_type_15">aut. sig.</term> Général E. Cav. au Président des Etats-Unis (juin 1848</date>); <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000194_e44_d1"><date when="1848-06">Minute de <term ana="#document_type_7">lettre aut. sig.</term> Général E. Cav. au Président des Etats-Unis (juin 1848</date>); <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Très belle lettre où il accrédite le citoyen Poussin cemme représentant de la République auprès des Etats-Unis. « La République française, fidèle à ses déctarations, confiante dans la torce de son droit, dans la sérénité comme dans la loyauté de ses int-ntions, répondra avec confiance aux paroles de paix et concorde, de quelque part qu'elles lui parviennent, mais elle ne peut s'empêcher de reporter sa pensée avec un sentiment particulier d'affection et de douce confiance vers la nation américaine, à laquelle, liée depuis longtemps par une étroite amitié, elle se trouve aujourd'hui unie par une confraternité nouvelle.»</note>
             </item>
             <item n="45" xml:id="CAT_000194_e45">
@@ -828,7 +861,7 @@
                <num type="lot">75</num>
                <name type="author">Dupanloup (Félix)</name>
                <trait>
-                  <p>le célèbre évêque d'Orléans, de l'Acad. fr., né à Saint- Félix (Savoie) en 1802, mort en 1878.</p>
+                  <p>le célèbre évêque d'Orléans, de l'Acad. fr., né à Saint-Félix (Savoie) en 1802, mort en 1878.</p>
                </trait>
                <desc xml:id="CAT_000194_e75_d1"><term ana="#document_type_7">L. a. s.</term>; Versailles, <date when="1874-02-05">5 février 1874</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Belle et intéressante lettre toute relative à sa polémique avec Louis Veuillot et le journal l'Univers. « Assurément rien n'est plus pénible que de se voir condamné à de pareilles polémiques, mais ici l'honneur de mon diocèse et de mon clergé était en cause : Je ne pouvais me taire. ... Ce journal fait peser sur le clergé un joug et des responsabilités dont il serait plus que temps de s'affranchir.»</note>
@@ -855,7 +888,7 @@
                <num type="lot">78</num>
                <name type="author">Durand-Brager (J.-B.-H.)</name>
                <trait>
-                  <p>célèbre peintre de marines, élève de Gudin et d'Eug. Isabey, né à Saint- Malo en 1714, mort en 1879.</p>
+                  <p>célèbre peintre de marines, élève de Gudin et d'Eug. Isabey, né à Saint-Malo en 1714, mort en 1879.</p>
                </trait>
                <desc xml:id="CAT_000194_e78_d1">Marine, dessin au crayon sig. de ses initiales, <date when="1847">1847</date>, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
@@ -891,7 +924,7 @@
                   <p>célèbre amiral, un des héros de la guerre d'Amérique, né au château de Ravel (Puy-de-Dôme) en 1729, guillotiné en 1794.</p>
                </trait>
                <desc xml:id="CAT_000194_e82_d1"><term ana="#document_type_9">Let. sig.</term> (au comte de Thorenc); Les Cayes, <date when="1764-09-08">8 sept. 1764</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
-               <note>Intéressante lettre pour l'histoire de Saint- Domingue. « M. de Barnaby, fils de l'amiral, et commandant le bâtiment du roi d'Angleterre Le Druide, doit, à ce qu'il me marque, arriver au Cap dans le mois de septembre. Je vous prie, Monsieur, de laisser tenir tous les propes qu'on voudra. Cela ne vous empêchera pas de faire examiner, sans qu'il s'en apperçoive, sa conduite; mais, à moins qu'elle ne soit poussée jusqu'au dernier degré d'indécence, il faut tolérer mêmes les indiscrétions, et ne les empêcher qu'à force de politesse.»</note>
+               <note>Intéressante lettre pour l'histoire de Saint-Domingue. « M. de Barnaby, fils de l'amiral, et commandant le bâtiment du roi d'Angleterre Le Druide, doit, à ce qu'il me marque, arriver au Cap dans le mois de septembre. Je vous prie, Monsieur, de laisser tenir tous les propes qu'on voudra. Cela ne vous empêchera pas de faire examiner, sans qu'il s'en apperçoive, sa conduite; mais, à moins qu'elle ne soit poussée jusqu'au dernier degré d'indécence, il faut tolérer mêmes les indiscrétions, et ne les empêcher qu'à force de politesse.»</note>
             </item>
             <item n="83" xml:id="CAT_000194_e83">
                <num type="lot">83</num>
@@ -1049,7 +1082,7 @@
                <trait>
                   <p>roi d'Angleterre.</p>
                </trait>
-               <desc xml:id="CAT_000194_e101_d1">Let. sig., avec la souscript. aut., en allemand, au roi de Prusse FrédéricGuillaume; Londres, <date when="1716-11-18">18 nov. 1716</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> <term ana="#document_type_8">L. a.</term> partie blanche du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000194_e101_d1"><term ana="#document_type_9">Let. sig.</term>, avec la souscript. aut., en allemand, au roi de Prusse FrédéricGuillaume; Londres, <date when="1716-11-18">18 nov. 1716</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> La partie blanche du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il lui recommande le sous-lieutenant Ludolf Henning von Eltz et l'invite à le mettre en possession du comté de Wernigerode.</note>
             </item>
             <item n="102" xml:id="CAT_000194_e102">
@@ -1083,7 +1116,7 @@
                <trait>
                   <p>célèbre peintre de marines et de paysages, né en 1802, mort en 1880.</p>
                </trait>
-               <desc xml:id="CAT_000194_e105_d1">2 l. <term ana="#document_type_15">a. s.</term> et 1 let. sig. avec 6 lig. aut.; Saint-Pierre-le-Moutier, <date when="1861">1861-1868</date>, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000194_e105_d1">2 <term ana="#document_type_7">l. a. s.</term> et 1 let. sig. avec 6 lig. aut.; Saint-Pierre-le-Moutier, <date when="1861">1861-1868</date>, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="106" xml:id="CAT_000194_e106">
                <num type="lot">106</num>
@@ -1592,7 +1625,7 @@
                <num type="lot">167</num>
                <name type="author">Noailles (Louis  duc de)</name>
                <trait>
-                  <p>maréchal de France, gouverneur de Saint- Germain-on-Lave, connu par ses bons mots, né en 1713, mort en 1793.</p>
+                  <p>maréchal de France, gouverneur de Saint-Germain-on-Lave, connu par ses bons mots, né en 1713, mort en 1793.</p>
                </trait>
                <desc xml:id="CAT_000194_e167_d1"><term ana="#document_type_7">L. a. s.</term>; Saint-Germain-en-Laye, <date when="1780-11-03">3 novembre 1780</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
@@ -1610,7 +1643,7 @@
                <trait>
                   <p>stathouder des Pays-Bas, né en 1748, mort en 1806.</p>
                </trait>
-               <desc xml:id="CAT_000194_e169_d1">Let. sig. au prince de Salm-Salm; <term ana="#document_type_8">L. a.</term> Haye, <date when="1771-11-25">25 novembre 1771</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000194_e169_d1"><term ana="#document_type_9">Let. sig.</term> au prince de Salm-Salm; La Haye, <date when="1771-11-25">25 novembre 1771</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="170" xml:id="CAT_000194_e170">
                <num type="lot">170</num>
@@ -1764,7 +1797,7 @@
                <trait>
                   <p>arrière-petit-fils de Charles II et de la duchesse de Portsmouth, né en 1735, mort le 29 décembre, 1806.</p>
                </trait>
-               <desc xml:id="CAT_000194_e187_d1">4 l. <term ana="#document_type_15">a. s.</term>, en français; Goodwood, <date when="1802">1802-1806</date>, <measure type="length" unit="p" n="10">10 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000194_e187_d1">4 <term ana="#document_type_7">l. a. s.</term>, en français; Goodwood, <date when="1802">1802-1806</date>, <measure type="length" unit="p" n="10">10 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Intéressantes lettres relatives au duché d'Aubigny (Cher). 188 Rivaud de la Raffinière (le comte Olivier Marcoux relatives au duché d'Aubigny (Cher).</note>
             </item>
             <item n="188" xml:id="CAT_000194_e188">
@@ -1773,7 +1806,7 @@
                <trait>
                   <p>célèbre général du premier Empire, qui prit une part active à la bataille de Marengo, né à Civray (Vienne) en 1766, mort en 1839.</p>
                </trait>
-               <desc xml:id="CAT_000194_e188_d1">14 l. <term ana="#document_type_15">a. s.</term> à M. Duplès Agier, conseiller à la Cour royale « Paris, son parent; Rouen, <date when="1820">1820</date>-23, <measure type="length" unit="p" n="21">21 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000194_e188_d1">14 <term ana="#document_type_7">l. a. s.</term> à M. Duplès Agier, conseiller à la Cour royale « Paris, son parent; Rouen, <date when="1820">1820</date>-23, <measure type="length" unit="p" n="21">21 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Correspondance politique des plus curieuses. Il s'y montre ultra-royaliste, déplore les progrès du libéralisme, et donne de curieux détails sur le sentiment intime des hauts dignitaires de l'armée sous le ministère Villèle.</note>
             </item>
             <item n="189" xml:id="CAT_000194_e189">
@@ -1885,7 +1918,7 @@
                   <p>maréchal de France, gouverneur du Languedoc, vainqueur des Anglais à l'île de Ré et des protestants à La Rochelle.</p>
                </trait>
                <desc xml:id="CAT_000194_e201_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par J.-B. de Gondi, introducteur des ambassadeurs; Paris, <date when="1607-10-17">17 octobre 1607</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
-               <note>Ils reconnaissent, l'un comme héritier de Jérôme de Gondi, gentilhomme ordinaire de la chambre, chevalier d'honneur de la Reine, l'autre comme héritier d'Annibal de Schomberg, seigneur de Milly (Oise). Saint- Front, et Oulchy-le-Château (Aisne), s'accorder au sujet d'une dette contractée par le feu Gaspard de Schomberg envers feu Jérôme de Gondi.</note>
+               <note>Ils reconnaissent, l'un comme héritier de Jérôme de Gondi, gentilhomme ordinaire de la chambre, chevalier d'honneur de la Reine, l'autre comme héritier d'Annibal de Schomberg, seigneur de Milly (Oise). Saint-Front, et Oulchy-le-Château (Aisne), s'accorder au sujet d'une dette contractée par le feu Gaspard de Schomberg envers feu Jérôme de Gondi.</note>
             </item>
             <item n="202" xml:id="CAT_000194_e202">
                <num type="lot">202</num>
@@ -1934,7 +1967,7 @@
                <trait>
                   <p>la célèbre épistolaire.</p>
                </trait>
-               <desc xml:id="CAT_000194_e207_d1">Fin de lettre aut. à sa fille Mme de Grignan; aux Rochers, <date when="1685-08-12">12 août 1685</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, suivie de 2 pages aut. d'Emmanuel de Coulanges.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000194_e207_d1">Fin de <term ana="#document_type_8">lettre aut.</term> à sa fille Mme de Grignan; aux Rochers, <date when="1685-08-12">12 août 1685</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, suivie de 2 pages aut. d'Emmanuel de Coulanges.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note>Précieuse pièce où elle parle longuement de son séjour aux Rochers, en compagnie d'Emmanuel de Coulanges, et du prochain départ de ce dernier avec Charles de Sévigné pour les Etats de Bretagne. « Mon fils a une petite lanternerie d'émotion qui l'a empêché d'aller aux Etats. Il prend de cette tisane des capucins que vous connoissez, et dont je me suis si bien trouvée; il compte cependant de partir demain avec M. de Coulanges.»</note>
             </item>
             <item n="208" xml:id="CAT_000194_e208">
@@ -2042,7 +2075,7 @@
                <num type="lot">220</num>
                <name type="author">Taine (H.)</name>
                <trait>
-                  <p>célèbre philosophe et littérateur contemporain, de l'Acad fr</p>
+                  <p>célèbre philosophe et littérateur contemporain, de l'Acad fr.</p>
                </trait>
                <desc xml:id="CAT_000194_e220_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
@@ -2069,7 +2102,7 @@
                <trait>
                   <p>célèbre antiquaire et artiste, né à Marseille en 1736, mort en 1819.</p>
                </trait>
-               <desc xml:id="CAT_000194_e223_d1">1° 9 l. <term ana="#document_type_15">a. s.</term> et 7 let. aut. au comte de Thorenc, 1771-1778, <date when="1773"><measure type="length" unit="p" n="44">44 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très intéressante correspondance toute relative aux estampes et dont voici une analyse sommaire : 1771. Liste d'estampes anciennes. (M. de Thorenc en était amateur.)-12 octobre 1773</date>. « Je perds l'en¬</desc><note>vie d'attendre le jugement de la commission des Invalides sur le fait des quatre cent soixante mille fusils livrés à vil prix pour le compte du Roy par M. de Bellegarde à M. de Montieux, entrepreneur de la manufacture de Saint-Etienne. Les autres lettrès sont relatives à la vente de la collection d'estampes de Mariette et à la rédaction du catalogue. Elles sont des plus intéressantes pour l'histoire de la curiosité en général, de la gravure en particulier; curieux détails sur la vente faite par Basan ; la Grandz Nativité du Biscaino est achetée trois louis, par M. Saint-Yves, estampes de Poilly, proportions du corps humain de de Witt, cartes de d'Anville, etc. 2° 3 pièces aut. du comte de Thorenc adressées à l'abbé de Tersan; 1776, 16 p. in-4. 50 » Au sujet de la vente des estampes du libraire-graveur Pierre-Jean Mariette. M. de Thorenc se plaint qu'on lui ait envoyé ce qu'il n'avait pas demandé et gardé les pièces pour lesquelles il donnait commission. -Liste des estampes qu'il compte garder.</note>
+               <desc xml:id="CAT_000194_e223_d1">1° 9 <term ana="#document_type_7">l. a. s.</term> et 7 let. aut. au comte de Thorenc, 1771-1778, <date when="1773"><measure type="length" unit="p" n="44">44 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très intéressante correspondance toute relative aux estampes et dont voici une analyse sommaire : 1771. Liste d'estampes anciennes. (M. de Thorenc en était amateur.)-12 octobre 1773</date>. « Je perds l'en¬</desc><note>vie d'attendre le jugement de la commission des Invalides sur le fait des quatre cent soixante mille fusils livrés à vil prix pour le compte du Roy par M. de Bellegarde à M. de Montieux, entrepreneur de la manufacture de Saint-Etienne. Les autres lettrès sont relatives à la vente de la collection d'estampes de Mariette et à la rédaction du catalogue. Elles sont des plus intéressantes pour l'histoire de la curiosité en général, de la gravure en particulier; curieux détails sur la vente faite par Basan ; la Grandz Nativité du Biscaino est achetée trois louis, par M. Saint-Yves, estampes de Poilly, proportions du corps humain de de Witt, cartes de d'Anville, etc. 2° 3 pièces aut. du comte de Thorenc adressées à l'abbé de Tersan; 1776, 16 p. in-4. 50 » Au sujet de la vente des estampes du libraire-graveur Pierre-Jean Mariette. M. de Thorenc se plaint qu'on lui ait envoyé ce qu'il n'avait pas demandé et gardé les pièces pour lesquelles il donnait commission. -Liste des estampes qu'il compte garder.</note>
             </item>
             <item n="224" xml:id="CAT_000194_e224">
                <num type="lot">224</num>
@@ -2196,7 +2229,7 @@
                <trait>
                   <p>l'illustre écrivain.</p>
                </trait>
-               <desc xml:id="CAT_000194_e238_d1">3 l. <term ana="#document_type_15">a. s.</term> V. à Mme de Graffigny, à Paris; <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="250">250</measure>
+               <desc xml:id="CAT_000194_e238_d1">3 <term ana="#document_type_7">l. a. s.</term> V. à Mme de Graffigny, à Paris; <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="250">250</measure>
                <note>Très intéressantes lettres où il parle de sa manière de vivre. «Nous avons une autre troupe à Lausanne, c'est la trouppe d'hiver; madame Denis joue les grands rôles et surtout ceux de mère. Il y a un fils du général Constant, excellent acteur, et un autre encor, et un fils de ce fameux marquis de Langalerie, et quatre actrices belles comme Madame de Pompadour qui ne gâtent rien. Je me tire des rôles de vieillard comme je peux. Si j'avais eu chez moy votre protégé il y a un mois, je l'aurais fait jouer dans notre grenier sans dire qui il est. Notre trouppe est très supérieure sans vanité à toutes celles qui courent le monde. Il faut bien s'âmuser tandis qu'on s'égorge ailleurs sans savoir pourquoy. J'ay choisi le pays de la terre le plus tranquile et la plus belle situation. La vue du Bosphore de Constantinople n'est pas plus singulière. J'ajuste des maisons, je plante des arbres, je jouis d'une société douce et de la plus grande liberté. Madame Denis s'entend en bonne chère et en meubles comme en habits de teatre. » Très curieux détails.</note>
             </item>
             <item n="239" xml:id="CAT_000194_e239">
@@ -2254,7 +2287,7 @@
                <trait>
                   <p>fille d'Auguste, duc de Brunswick-Wolfembuttel et de Dorothée d'Anhalt Zerbst, mariée en 1663 à Christian, duc de Hoistein Glucksbourg, morte en 1671.</p>
                </trait>
-               <desc xml:id="CAT_000194_e245_d1">2 l. <term ana="#document_type_15">a. s.</term> à Mlle de Scudéry; Wolfembuttel, 30 septembre, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000194_e245_d1">2 <term ana="#document_type_7">l. a. s.</term> à Mlle de Scudéry; Wolfembuttel, 30 septembre, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Très belles lettres d'amitié, dans lesquelles elle parle de la clélie.</note>
             </item>
             <item n="246" xml:id="CAT_000194_e246">

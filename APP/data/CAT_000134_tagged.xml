@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000134">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000134</title>
+            <title>RDA, N°131 (Novembre 1890)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>131</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -615,7 +647,7 @@
                <trait>
                   <p>mère de Charles-Albert, roi de Sardaigne</p>
                </trait>
-               <desc xml:id="CAT_000134_e43_d1">2 l. <term ana="#document_type_15">a. s.</term>, en français, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000134_e43_d1">2 <term ana="#document_type_7">l. a. s.</term>, en français, an <date when="1800-1801">IX</date>, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="44" xml:id="CAT_000134_e44">
                <num type="lot">44</num>
@@ -734,7 +766,7 @@
                <trait>
                   <p>belle-mère de Bernadotte et grand'mère du roi Oscar de Suède</p>
                </trait>
-               <desc xml:id="CAT_000134_e55_d1"><term ana="#document_type_7">L. a. s.</term> à M. Chiappe, à L. a. Rochelle; Paris, 28 floréal, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000134_e55_d1"><term ana="#document_type_7">L. a. s.</term> à M. Chiappe, à La Rochelle; Paris, 28 floréal, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Charmante lettre intime où elle parle de son gendre et de sa fille . «
                   Embrassés bien tendrement le cher Oscar pour sa bonne maman, et dites lui de ma
                   part qu'il batte souvent son tambour, mais jamais sa nourrice »</note>
@@ -828,7 +860,7 @@
                   <p>célèbre peintre, chef de l'école réaliste, membre de la Commune de 1871, né en
                      1819, mort en 1877</p>
                </trait>
-               <desc xml:id="CAT_000134_e64_d1">Let. sig. à Ch. Monselet; <term ana="#document_type_8">L. a.</term> Tour de Peilz, près Vevey, <date when="1873">(vers 1873</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="7.15">7 15</measure>
+               <desc xml:id="CAT_000134_e64_d1"><term ana="#document_type_9">Let. sig.</term> à Ch. Monselet; La Tour de Peilz, près Vevey, <date when="1873">(vers 1873</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="7.15">7 15</measure>
                <note>Il le remercie de l'avoir défendu dans l'Evénement et d'avoir conspué « ce
                   procés inique qui n'a d'autre tendance que de m'éloigner de vous et de la France.
                   » Qu'il essaie d'intéresser Carjat à son sort, il pourrait faire pencher la
@@ -1229,7 +1261,7 @@
                <trait>
                   <p>comte de Cely, intendant de Pau, puis de Metz, né en 1678, mort en 1739</p>
                </trait>
-               <desc xml:id="CAT_000134_e103_d1">2 l. <term ana="#document_type_15">a. s.</term> 7 let. sig. à M. de Jossaud, commandant de Landau ; Strasbourg, <date when="1727">1727</date>-29, <measure type="length" unit="p" n="10">10 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000134_e103_d1">2 <term ana="#document_type_7">l. a. s.</term> 7 let. sig. à M. de Jossaud, commandant de Landau ; Strasbourg, <date when="1727">1727</date>-29, <measure type="length" unit="p" n="10">10 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Intéressantes lettres. Réponses à des recommandations de l'Ele teur Palatin; le
                   maréchal du Bourg est mécontent de la réception d'un calviniste parmi les
                   bourgeois de Landau ; il parle aussi de la mort de la princesse Palatine,
@@ -1303,7 +1335,7 @@
                   <p>célèbre mécanicien, un des inventeurs des bateaux à vapeur, né en 1751, mort en
                      1832</p>
                </trait>
-               <desc xml:id="CAT_000134_e110_d1">1° <term ana="#document_type_7">L. a. s.</term> à M. Dat; Bercy, <date when="1817-01-01">1er janvier 1817</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre.</desc><desc xml:id="CAT_000134_e110_d2">2° 2 l. <term ana="#document_type_15">a. s.</term> d'Achille Jouffroy, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000134_e110_d1">1° <term ana="#document_type_7">L. a. s.</term> à M. Dat; Bercy, <date when="1817-01-01">1er janvier 1817</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre.</desc><desc xml:id="CAT_000134_e110_d2">2° 2 <term ana="#document_type_7">l. a. s.</term> d'Achille Jouffroy, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="111" xml:id="CAT_000134_e111">
                <num type="lot">111</num>
@@ -1320,7 +1352,7 @@
                   <p>homme politique et publiciste distingué, député de l'Oise, pair de France, né
                      en 1769, mort en 1856</p>
                </trait>
-               <desc xml:id="CAT_000134_e112_d1">Fragment historique, par le comte Florian de Kergorlay, <term ana="#document_type_2">pièce aut. sig.</term> ; <date when="1842">1842</date>, <measure type="length" unit="p" n="11">11 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> L. a. moitié d'une page manque par suite d'une déchirure.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000134_e112_d1">Fragment historique, par le comte Florian de Kergorlay, <term ana="#document_type_2">pièce aut. sig.</term> ; <date when="1842">1842</date>, <measure type="length" unit="p" n="11">11 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> La moitié d'une page manque par suite d'une déchirure.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il remercie Crétineau Joly de l'avoir cité dans son Histoire de la Vendée
                   Militaire, et lui rend compte de ses négociations avec le duc de Blacas, en
                   Italie, pour amener la nomination de la duchesse de Berry comme régente et son
@@ -1369,7 +1401,7 @@
                <trait>
                   <p>illustre général et patriote, né en Auvergne en 1757, mort en 1834</p>
                </trait>
-               <desc xml:id="CAT_000134_e117_d1"><term ana="#document_type_7">L. a. s.</term> à Boissy d'Anglas; L. a. Grange, <date when="1826-09-12">12 septembre 1826</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000134_e117_d1"><term ana="#document_type_7">L. a. s.</term> à Boissy d'Anglas; La Grange, <date when="1826-09-12">12 septembre 1826</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Relative à une élection à l'Académie des Inscriptions et Belles-Lettres ; il
                   lui recommande vivement son ami, M. Duponceau (littérateur distingué, né à
                   Saint-Martin-de-Ré, élu comme membre correspondant en 1827)</note>
@@ -1397,7 +1429,7 @@
                <trait>
                   <p>le célèbre astronome</p>
                </trait>
-               <desc xml:id="CAT_000134_e120_d1">2 let. sig. avec postscriptum aut. du maréchal de Maillebois, à lui adressée à Berlin; Paris et Montpellier, <date when="1752">1752</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000134_e120_d1">2 <term ana="#document_type_9">let. sig.</term> avec postscriptum aut. du maréchal de Maillebois, à lui adressée à Berlin; Paris et Montpellier, <date when="1752">1752</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuses lettres toutes relatives à la mission de Lalande à Berlin</note>
             </item>
             <item n="121" xml:id="CAT_000134_e121">
@@ -1675,7 +1707,7 @@
                <trait>
                   <p>le célèbre historien</p>
                </trait>
-               <desc xml:id="CAT_000134_e149_d1">2 l. <term ana="#document_type_15">a. s.</term> à une dame ; Saint-Georges, près Royan, <date when="1857">1857</date>, 6p. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="42">42</measure>
+               <desc xml:id="CAT_000134_e149_d1">2 <term ana="#document_type_7">l. a. s.</term> à une dame ; Saint-Georges, près Royan, <date when="1857">1857</date>, 6p. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="42">42</measure>
                <note>Piquantes épîtres adressées à une dame séparée de son mari. « Je me figure que
                   la jalousie, quand ce n'est qu'un excès d'amour, n'est pas un crime irrémissible,
                   et que, dans ce cas, une femme vertueuse et habile peut supporter bien des choses,
@@ -2021,7 +2053,7 @@
                <trait>
                   <p>littérateur distingué, né en 1728, mort en 1818</p>
                </trait>
-               <desc xml:id="CAT_000134_e180_d1"><term ana="#document_type_7">L. a. s.</term> au poète L. a. Bouisse ; Madrid, <date when="1810-07-15">15 juillet 1810</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000134_e180_d1"><term ana="#document_type_7">L. a. s.</term> au poète La Bouisse ; Madrid, <date when="1810-07-15">15 juillet 1810</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Il lui rend compte d'une course de taureaux, spectacle rétabli à Madrid par le
                   roi Joseph; il décrit la lutte du taureau contre les picadors à cheval et les
                   banderilleros à pied, sa mise à mort par le matador ; parfois on excite la bète
@@ -2065,7 +2097,7 @@
                   <p>écrivain religieux, maître des cérémonies de la chapelle du roi, né en 1764,
                      mort en 1850</p>
                </trait>
-               <desc xml:id="CAT_000134_e184_d1">19 let. ou billets <term ana="#document_type_15">aut. sig.</term>, au chevalier Roger; Rome, <date when="1814">1814-1817</date>, <measure type="length" unit="p" n="36">36 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000134_e184_d1">19 let. ou <term ana="#document_type_6">billets</term> aut. sig., au chevalier Roger; Rome, <date when="1814">1814-1817</date>, <measure type="length" unit="p" n="36">36 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Correspondance intéressante au point de vue nobiliaire; il y est parlé de M. de
                   Latil, évêque d'Amycles, du vicomte Simon de Pierre de Bernis, de M. Cortois de
                   Pressigny, ancien évêque de Saint-Malo, de MM. de Bonald et de Blacas, de M. de
@@ -2196,7 +2228,7 @@
             <item n="199" xml:id="CAT_000134_e199">
                <num type="lot">199</num>
                <name type="author">Anjou</name>
-               <desc xml:id="CAT_000134_e199_d1">Sig. : <term ana="#document_type_8">L. a.</term> Rochette, <term ana="#document_type_8">L. a.</term> Charbonnière, Boismorin, Vazat, <term ana="#document_type_8">L. a.</term> Tour, Cangé, Milot, Graveron de Monteuan, Laubepin, Rivirie et Lisle de Noë; camp de Metz, <date when="1729">1729</date>.</desc></item>
+               <desc xml:id="CAT_000134_e199_d1">Sig. : La Rochette, La Charbonnière, Boismorin, Vazat, La Tour, Cangé, Milot, Graveron de Monteuan, Laubepin, Rivirie et Lisle de Noë; camp de Metz, <date when="1729">1729</date>.</desc></item>
             <item n="200" xml:id="CAT_000134_e200">
                <num type="lot">200</num>
                <name type="author">Artois</name>
@@ -2300,7 +2332,7 @@
             <item n="225" xml:id="CAT_000134_e225">
                <num type="lot">225</num>
                <name type="author">Enghien</name>
-               <desc xml:id="CAT_000134_e225_d1">Sig. : de <term ana="#document_type_8">L. a.</term> Gardette, Morière, du Bousquet et Puginier; au Quesnoy, <date when="1752">1752</date>, cachet enlevé.</desc></item>
+               <desc xml:id="CAT_000134_e225_d1">Sig. : de La Gardette, Morière, du Bousquet et Puginier; au Quesnoy, <date when="1752">1752</date>, cachet enlevé.</desc></item>
             <item n="226" xml:id="CAT_000134_e226">
                <num type="lot">226</num>
                <name type="author">Estampes</name>
@@ -2316,7 +2348,7 @@
             <item n="229" xml:id="CAT_000134_e229">
                <num type="lot">229</num>
                <name type="author">Forez</name>
-               <desc xml:id="CAT_000134_e229_d1">Sig. : Laval; <term ana="#document_type_8">L. a.</term> Rochelle, <date when="1728">1728</date>.</desc></item>
+               <desc xml:id="CAT_000134_e229_d1">Sig. : Laval; La Rochelle, <date when="1728">1728</date>.</desc></item>
             <item n="230" xml:id="CAT_000134_e230">
                <num type="lot">230</num>
                <name type="author">Gardes-Françaises</name>
@@ -2324,7 +2356,7 @@
             <item n="231" xml:id="CAT_000134_e231">
                <num type="lot">231</num>
                <name type="author">Gâtinais</name>
-               <desc xml:id="CAT_000134_e231_d1">Sig. : <term ana="#document_type_8">L. a.</term> Devèze, Lacoste et Joyant; Tournon, <date when="1726">1726</date>, cachet enlevé.</desc></item>
+               <desc xml:id="CAT_000134_e231_d1">Sig. : La Devèze, Lacoste et Joyant; Tournon, <date when="1726">1726</date>, cachet enlevé.</desc></item>
             <item n="232" xml:id="CAT_000134_e232">
                <num type="lot">232</num>
                <name type="author">Gensac</name>
@@ -2356,7 +2388,7 @@
             <item n="239" xml:id="CAT_000134_e239">
                <num type="lot">239</num>
                <name type="author">La Gervaisais</name>
-               <desc xml:id="CAT_000134_e239_d1">Sig. : Saint-Simon, Saint-Martin, Lilencourt, Bourville, du Verdier, Gallon, Laurencin, Fouquerol., d'Hautertre Laborde, Saint-Oler. Vaucenné Vassan, Duroy, Luzy, Chabin, Lavalade, etc. ; <term ana="#document_type_8">L. a.</term> Rochelle, <date when="1733">1733</date>.</desc></item>
+               <desc xml:id="CAT_000134_e239_d1">Sig. : Saint-Simon, Saint-Martin, Lilencourt, Bourville, du Verdier, Gallon, Laurencin, Fouquerol., d'Hautertre Laborde, Saint-Oler. Vaucenné Vassan, Duroy, Luzy, Chabin, Lavalade, etc. ; La Rochelle, <date when="1733">1733</date>.</desc></item>
             <item n="240" xml:id="CAT_000134_e240">
                <num type="lot">240</num>
                <name type="author">La Marche</name>
@@ -2380,11 +2412,11 @@
             <item n="245" xml:id="CAT_000134_e245">
                <num type="lot">245</num>
                <name type="author">La Roche-Aymon</name>
-               <desc xml:id="CAT_000134_e245_d1">Sig : Chevert, <term ana="#document_type_8">L. a.</term> Roche-Aymon, Maure et de Billières; Castiglione, <date when="1747">1747</date>, cachet enlevé.</desc></item>
+               <desc xml:id="CAT_000134_e245_d1">Sig : Chevert, La Roche-Aymon, Maure et de Billières; Castiglione, <date when="1747">1747</date>, cachet enlevé.</desc></item>
             <item n="246" xml:id="CAT_000134_e246">
                <num type="lot">246</num>
                <name type="author">La Tour-du-Pia</name>
-               <desc xml:id="CAT_000134_e246_d1">Sig. : <term ana="#document_type_8">L. a.</term> Tourdu-Pin, Majainville, et de Hallebout; camp de Louvain, <date when="1747">1747</date>, cachet enlevé.</desc></item>
+               <desc xml:id="CAT_000134_e246_d1">Sig. : La Tourdu-Pin, Majainville, et de Hallebout; camp de Louvain, <date when="1747">1747</date>, cachet enlevé.</desc></item>
             <item n="247" xml:id="CAT_000134_e247">
                <num type="lot">247</num>
                <name type="author">Laval</name>
@@ -2400,7 +2432,7 @@
             <item n="250" xml:id="CAT_000134_e250">
                <num type="lot">250</num>
                <name type="author">Louvigny -Sig</name>
-               <desc xml:id="CAT_000134_e250_d1">Lucémont, <term ana="#document_type_8">L. a.</term> Motte, Reaumanoir, Duvarnez, Pomainville, de <term ana="#document_type_8">L. a.</term> Porte, Potier, Bigot, etc. ; Saint-Venant, <date when="1725">1725</date>.</desc></item>
+               <desc xml:id="CAT_000134_e250_d1">Lucémont, La Motte, Reaumanoir, Duvarnez, Pomainville, de La Porte, Potier, Bigot, etc. ; Saint-Venant, <date when="1725">1725</date>.</desc></item>
             <item n="251" xml:id="CAT_000134_e251">
                <num type="lot">251</num>
                <name type="author">Luxembourg</name>
@@ -2420,11 +2452,11 @@
             <item n="255" xml:id="CAT_000134_e255">
                <num type="lot">255</num>
                <name type="author">Marine (de la)</name>
-               <desc xml:id="CAT_000134_e255_d1">Sig. : Middelbourg, Montesquiou, Charron, de Jolian, <term ana="#document_type_8">L. a.</term> Ferté-Meun, de Coucy, Veanteuil, du Crouset, d'Escales, de Ceberet, etc. ; Besançon, <date when="1720">1720</date>.</desc></item>
+               <desc xml:id="CAT_000134_e255_d1">Sig. : Middelbourg, Montesquiou, Charron, de Jolian, La Ferté-Meun, de Coucy, Veanteuil, du Crouset, d'Escales, de Ceberet, etc. ; Besançon, <date when="1720">1720</date>.</desc></item>
             <item n="256" xml:id="CAT_000134_e256">
                <num type="lot">256</num>
                <name type="author">Meuse</name>
-               <desc xml:id="CAT_000134_e256_d1">Sig. : <term ana="#document_type_8">L. a.</term> Tour-Maubourg, Choiseul-Meuse, Saint-Vincent, Curty, Duprat, Montégut, etc.; Louai 1/22.</desc></item>
+               <desc xml:id="CAT_000134_e256_d1">Sig. : La Tour-Maubourg, Choiseul-Meuse, Saint-Vincent, Curty, Duprat, Montégut, etc.; Louai 1/22.</desc></item>
             <item n="257" xml:id="CAT_000134_e257">
                <num type="lot">257</num>
                <name type="author">Montboissier</name>
@@ -2444,7 +2476,7 @@
             <item n="261" xml:id="CAT_000134_e261">
                <num type="lot">261</num>
                <name type="author">Normandie</name>
-               <desc xml:id="CAT_000134_e261_d1">sig. : Bonnafous Hollier, Bienassise, de Fontaine, d'Hallot, d'Ardoin, Pontac, du Vivier, <term ana="#document_type_8">L. a.</term> Coudray, et d'Espeyron; Givet, <date when="1749">1749</date>, cachet.</desc></item>
+               <desc xml:id="CAT_000134_e261_d1">sig. : Bonnafous Hollier, Bienassise, de Fontaine, d'Hallot, d'Ardoin, Pontac, du Vivier, La Coudray, et d'Espeyron; Givet, <date when="1749">1749</date>, cachet.</desc></item>
             <item n="262" xml:id="CAT_000134_e262">
                <num type="lot">262</num>
                <name type="author">Orléans</name>
@@ -2496,7 +2528,7 @@
             <item n="274" xml:id="CAT_000134_e274">
                <num type="lot">274</num>
                <name type="author">Rouergue</name>
-               <desc xml:id="CAT_000134_e274_d1">Sig. : d'Haussonrille, <term ana="#document_type_8">L. a.</term> Tour du Pin, Chevillon, Velles cour et Vaudrecourt ; Thionville, <date when="1786">1786</date>, cachet enlevé.</desc></item>
+               <desc xml:id="CAT_000134_e274_d1">Sig. : d'Haussonrille, La Tour du Pin, Chevillon, Velles cour et Vaudrecourt ; Thionville, <date when="1786">1786</date>, cachet enlevé.</desc></item>
             <item n="275" xml:id="CAT_000134_e275">
                <num type="lot">275</num>
                <name type="author">Royal</name>
@@ -2524,7 +2556,7 @@
             <item n="281" xml:id="CAT_000134_e281">
                <num type="lot">281</num>
                <name type="author">Saint-Suplice</name>
-               <desc xml:id="CAT_000134_e281_d1">Sig. ; Crussol de Saint-Suplice, Lucémont, Fomblanc, Balleu, Lepinay, Du Vivier, Coëltando, <term ana="#document_type_8">L. a.</term> Brosse, du Lot, Beauregard, <term ana="#document_type_8">L. a.</term> Motte, du Chailleux, Plemarest, Servon, Vauborel, etc. ; camp de Montenarquen, <date when="1704">1704</date>.</desc></item>
+               <desc xml:id="CAT_000134_e281_d1">Sig. ; Crussol de Saint-Suplice, Lucémont, Fomblanc, Balleu, Lepinay, Du Vivier, Coëltando, La Brosse, du Lot, Beauregard, La Motte, du Chailleux, Plemarest, Servon, Vauborel, etc. ; camp de Montenarquen, <date when="1704">1704</date>.</desc></item>
             <item n="282" xml:id="CAT_000134_e282">
                <num type="lot">282</num>
                <name type="author">Saintonge</name>
@@ -2536,7 +2568,7 @@
             <item n="284" xml:id="CAT_000134_e284">
                <num type="lot">284</num>
                <name type="author">Savoie</name>
-               <desc xml:id="CAT_000134_e284_d1">Sig. ; Rosset, <term ana="#document_type_8">L. a.</term> Balme et Ferrera; Fort de Demont, <date when="1786">1786</date>, cachet.</desc></item>
+               <desc xml:id="CAT_000134_e284_d1">Sig. ; Rosset, La Balme et Ferrera; Fort de Demont, <date when="1786">1786</date>, cachet.</desc></item>
             <item n="285" xml:id="CAT_000134_e285">
                <num type="lot">285</num>
                <name type="author">Soissonnais</name>
@@ -2544,7 +2576,7 @@
             <item n="286" xml:id="CAT_000134_e286">
                <num type="lot">286</num>
                <name type="author">Soubise (Volontaires de)</name>
-               <desc xml:id="CAT_000134_e286_d1">Sig. : Wargemont, de Ludre, de Saint-Louêt, des Mazis, de Berruyer, de Beauregard, de <term ana="#document_type_8">L. a.</term> Villéon et de Chateauthibaud ; Bodenheim près Mayence, <date when="1762">1762</date>, cachet.</desc></item>
+               <desc xml:id="CAT_000134_e286_d1">Sig. : Wargemont, de Ludre, de Saint-Louêt, des Mazis, de Berruyer, de Beauregard, de La Villéon et de Chateauthibaud ; Bodenheim près Mayence, <date when="1762">1762</date>, cachet.</desc></item>
             <item n="287" xml:id="CAT_000134_e287">
                <num type="lot">287</num>
                <name type="author">Surbilly</name>
@@ -2565,7 +2597,7 @@
             <item n="291" xml:id="CAT_000134_e291">
                <num type="lot">291</num>
                <name type="author">Touraine</name>
-               <desc xml:id="CAT_000134_e291_d1">Sig. . Coucy, <term ana="#document_type_8">L. a.</term> Faliere, Mesmes de Ravignan, Mahes, Saint-Estienne, d'Organ, Varimont, Colbert; Sedan, <date when="1715">1715</date>.</desc></item>
+               <desc xml:id="CAT_000134_e291_d1">Sig. . Coucy, La Faliere, Mesmes de Ravignan, Mahes, Saint-Estienne, d'Organ, Varimont, Colbert; Sedan, <date when="1715">1715</date>.</desc></item>
             <item n="292" xml:id="CAT_000134_e292">
                <num type="lot">292</num>
                <name type="author">Trainel</name>
@@ -2597,7 +2629,7 @@
             <item n="299" xml:id="CAT_000134_e299">
                <num type="lot">299</num>
                <name type="author">Bombardiers du roi</name>
-               <desc xml:id="CAT_000134_e299_d1">Sig. : de Baudelet, <term ana="#document_type_8">L. a.</term> Roche, Helyot, Falquet, de Couture, Laperrelle, Lerac, etc. ; Toul, <date when="1715">1715</date>.</desc></item>
+               <desc xml:id="CAT_000134_e299_d1">Sig. : de Baudelet, La Roche, Helyot, Falquet, de Couture, Laperrelle, Lerac, etc. ; Toul, <date when="1715">1715</date>.</desc></item>
             <item n="300" xml:id="CAT_000134_e300">
                <num type="lot">300</num>
                <name type="author">Royal- Artillerie.</name>
@@ -2611,7 +2643,7 @@
             <item n="302" xml:id="CAT_000134_e302">
                <num type="lot">302</num>
                <name type="author">Arvers</name>
-               <desc xml:id="CAT_000134_e302_d1"><term ana="#document_type_8">L. a.</term> course au Clocher, comédie en 3 actes, en vers. Paris, <date when="1839">1839</date>, <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, couv. imp. Edition originale. Signature d'Arvers.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000134_e302_d1">La course au Clocher, comédie en 3 actes, en vers. Paris, <date when="1839">1839</date>, <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, couv. imp. Edition originale. Signature d'Arvers.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="303" xml:id="CAT_000134_e303">
                <num type="lot">303</num>
@@ -2626,12 +2658,12 @@
             <item n="305" xml:id="CAT_000134_e305">
                <num type="lot">305</num>
                <name type="author">Belot (Adolphe)</name>
-               <desc xml:id="CAT_000134_e305_d1"><term ana="#document_type_8">L. a.</term> vengeance du mart, drame en trois actes. Paris, lib. nouv., <date when="1860">1860</date>. <measure type="format" unit="f" ana="#document_format_12">in-12.</measure> Edition originale. <term ana="#document_type_8">L. a.</term> couverture manque.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000134_e305_d1">La vengeance du mart, drame en trois actes. Paris, lib. nouv., <date when="1860">1860</date>. <measure type="format" unit="f" ana="#document_format_12">in-12.</measure> Edition originale. La couverture manque.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="306" xml:id="CAT_000134_e306">
                <num type="lot">306</num>
                <name type="author">Bergerat (Emile)</name>
-               <desc xml:id="CAT_000134_e306_d1"><term ana="#document_type_8">L. a.</term> nuit bergamasque, tragi-comédie. Paris, Lemerre, <date when="1887">1887</date>, <measure type="format" unit="f" ana="#document_format_12">in-12.</measure> Env. au crayon.</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000134_e306_d1">La nuit bergamasque, tragi-comédie. Paris, Lemerre, <date when="1887">1887</date>, <measure type="format" unit="f" ana="#document_format_12">in-12.</measure> Env. au crayon.</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="307" xml:id="CAT_000134_e307">
                <num type="lot">307</num>
@@ -2656,7 +2688,7 @@
             <item n="311" xml:id="CAT_000134_e311">
                <num type="lot">311</num>
                <name type="author">Colet (Louise)</name>
-               <desc xml:id="CAT_000134_e311_d1"><term ana="#document_type_8">L. a.</term> Naples de Garibaldi. Paris, Dentu, <date when="1861">1861</date>. <measure type="format" unit="f" ana="#document_format_12">in-12</measure>, couv. imp.</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000134_e311_d1">La Naples de Garibaldi. Paris, Dentu, <date when="1861">1861</date>. <measure type="format" unit="f" ana="#document_format_12">in-12</measure>, couv. imp.</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="312" xml:id="CAT_000134_e312">
                <num type="lot">312</num>
@@ -2686,7 +2718,7 @@
             <item n="317" xml:id="CAT_000134_e317">
                <num type="lot">317</num>
                <name type="author">Laprade (Victor de)</name>
-               <desc xml:id="CAT_000134_e317_d1"><term ana="#document_type_8">L. a.</term> Tentation. Poème. Lyon, <date when="1848">1848</date>, gr. <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, non rogné. Edition originale avec envoi d'auteur : A Sainte-Beuve, hommage d'amilié. Victor de Laprade.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000134_e317_d1">La Tentation. Poème. Lyon, <date when="1848">1848</date>, gr. <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, non rogné. Edition originale avec envoi d'auteur : A Sainte-Beuve, hommage d'amilié. Victor de Laprade.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="318" xml:id="CAT_000134_e318">
                <num type="lot">318</num>
@@ -2706,7 +2738,7 @@
             <item n="321" xml:id="CAT_000134_e321">
                <num type="lot">321</num>
                <name type="author">Martin (Henri)</name>
-               <desc xml:id="CAT_000134_e321_d1"><date when="1848"><term ana="#document_type_8">L. a.</term> politique de la Révolution. Paris 1848</date>, <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000134_e321_d1"><date when="1848">La politique de la Révolution. Paris 1848</date>, <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="322" xml:id="CAT_000134_e322">
                <num type="lot">322</num>
@@ -2732,7 +2764,7 @@
             <item n="325" xml:id="CAT_000134_e325">
                <num type="lot">325</num>
                <name type="author">Plouvier (Ed.)</name>
-               <desc xml:id="CAT_000134_e325_d1">Le Mangeur de Fer drame en cinqactes, huit tableaux dont un prologue. Paris, Michel Lévy, <date when="1866">1866</date>. <measure type="format" unit="f" ana="#document_format_12">in-12.</measure> Edition originale; on lit sur le faux-titre : A mon brave ami Gustave Aimard, offrande cordiale. Edouard Plouvier. (<term ana="#document_type_8">L. a.</term> couverture manque).</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000134_e325_d1">Le Mangeur de Fer drame en cinqactes, huit tableaux dont un prologue. Paris, Michel Lévy, <date when="1866">1866</date>. <measure type="format" unit="f" ana="#document_format_12">in-12.</measure> Edition originale; on lit sur le faux-titre : A mon brave ami Gustave Aimard, offrande cordiale. Edouard Plouvier. (La couverture manque).</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="326" xml:id="CAT_000134_e326">
                <num type="lot">326</num>
@@ -2752,7 +2784,7 @@
             <item n="329" xml:id="CAT_000134_e329">
                <num type="lot">329</num>
                <name type="author">Saint-Victor (Paul de)</name>
-               <desc xml:id="CAT_000134_e329_d1"><term ana="#document_type_8">L. a.</term> Magdeleine du P Remi, de Beauvais. (Extrait du correspondant). Paris, <date when="1845">1845</date>, <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Envoi autographe sur la couverture: A Monsieur Sainte-Beuve, hommage respectueux de l'auteur.</desc><measure commodity="currency" unit="FRF" quantity="3.50">3 50</measure>
+               <desc xml:id="CAT_000134_e329_d1">La Magdeleine du P Remi, de Beauvais. (Extrait du correspondant). Paris, <date when="1845">1845</date>, <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Envoi <term ana="#document_type_15">autographe s</term>ur la couverture: A Monsieur Sainte-Beuve, hommage respectueux de l'auteur.</desc><measure commodity="currency" unit="FRF" quantity="3.50">3 50</measure>
             </item>
             <note>DOCUMENTS</note>
             <item n="330" xml:id="CAT_000134_e330">

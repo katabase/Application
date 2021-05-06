@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000042">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000042</title>
+            <title>RDA, N°53 (Février 1878)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>53</num>
                <editor>Gabriel Charavay</editor>
                <publisher>Gabriel Charavay</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -345,7 +378,7 @@
                   <p>duc de Vendôme, comte de Marle et de Soissons, grand-père de Henri IV, surnommé
                      le Magnanime</p>
                </trait>
-               <desc xml:id="CAT_000042_e16_d1"><term ana="#document_type_4">Pièce sig</term>. sur velin; L. a. Fère, <date when="1536-07-06">6 juil. 1536</date>, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Un peu fatiguée. Rare.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000042_e16_d1"><term ana="#document_type_4">Pièce sig</term>. sur velin; La Fère, <date when="1536-07-06">6 juil. 1536</date>, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Un peu fatiguée. Rare.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Déclaration par laquelle il met le monastère des Chartreux du Val-Saint-Pierre,
                   du comté de Marle, sous sa sauvegarde et celle du roi</note>
             </item>
@@ -942,7 +975,7 @@
                <trait>
                   <p>roi des Français</p>
                </trait>
-               <desc xml:id="CAT_000042_e79_d1">Minute de let. aut. à l'empereur Joseph II, <date when="1780-12-19">19 déc. 1780</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Ecriture un peu pâle.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000042_e79_d1">Minute de <term ana="#document_type_8">let. aut.</term> à l'empereur Joseph II, <date when="1780-12-19">19 déc. 1780</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Ecriture un peu pâle.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Lettre de condoléance sur la mort de l'impératrice Marie-Thérèse. Il à la
                   confiance que son successeur suivra les mêmes principes. « La franchise et la
                   sincérité, dit-il, dont vous mé parlez, sont des qualités bien essentielles dans
@@ -1222,7 +1255,7 @@
                <trait>
                   <p>un des premiers aéronautes, célèbre par sa fin tragique, né à Metz. </p>
                </trait>
-               <desc xml:id="CAT_000042_e106_d1"><date when="1784-06">Fragment d'une lettre aut. au comte de Milly (juin 1784</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 15</desc><note> Relative à l'expérience aérostatique qu'il lit à Versailles, le 24 juin 1784,
+               <desc xml:id="CAT_000042_e106_d1"><date when="1784-06">Fragment d'une <term ana="#document_type_8">lettre aut.</term> au comte de Milly (juin 1784</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> 15</desc><note> Relative à l'expérience aérostatique qu'il lit à Versailles, le 24 juin 1784,
                   par ordre de Louis XVI, en présence du comte Haga (Gustave III, roi de Suède). Une
                   note de M. Laroche-Lacarelle constate que ce feuillet a été détaché d'une lettre
                   de Pilatre de Rosier, qu'il possédait dans sa collection </note>

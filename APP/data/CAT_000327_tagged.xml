@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000327">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000327</title>
+            <title>RDA, N°199 (Juin 1897)</title>
             <respStmt>
                <persName ref="#COL_000001">Matthias Gille Levenson</persName>
                <resp>
@@ -22,13 +22,13 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">199</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris,8 quai du Louvre</pubPlace>
-               <date when="1893-02">Juin 1897</date>
+            <bibl status="draft" ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>199</num>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
+               <date when="1897-06">Juin 1897</date>
             </bibl>
             <listEvent>
                <event>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -288,7 +320,7 @@
                <trait>
                   <p>duc d').</p>
                </trait>
-               <desc xml:id="CAT_000327_e8_d1">5 l. <term ana="#document_type_15">a. s.</term> de ses initiales à Maurice Guérard; Claremont et Twickenham, <date when="1849">1849</date>-62, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
+               <desc xml:id="CAT_000327_e8_d1">5 <term ana="#document_type_7">l. a. s.</term> de ses initiales à Maurice Guérard; Claremont et Twickenham, <date when="1849">1849</date>-62, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
                <note anchored="true">Charmantes lettres adresséesà son ancien professeur. Il lui donne des nouvelles
                   de la reine, de la duchesse d'Aumale, de ses fils, de la famille royale. Il lui
                   parle d'un voyage d'Ecosse qu'il désire faire par mer et de la vente de ses
@@ -327,7 +359,7 @@
                <trait>
                   <p>le célèbre écrivain.</p>
                </trait>
-               <desc xml:id="CAT_000327_e11_d1">25 lettres <term ana="#document_type_15">aut. sig.</term>, dont 2 de ses initiales et 2 billets aut. à la comtesse de Molènes; <measure type="length" unit="p" n="31">31 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18, papier à son chiffre avec sa devise Never More, rel.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
+               <desc xml:id="CAT_000327_e11_d1">25 lettres aut. sig., dont 2 de ses initiales et 2 <term ana="#document_type_6">billets</term> aut. à la comtesse de Molènes; <measure type="length" unit="p" n="31">31 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18, papier à son chiffre avec sa devise Never More, rel.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
                <note anchored="true">Charmante, correspondance littéraire, écrite avec des encres de différentes
                   cou¬.</note>
             </item>
@@ -563,7 +595,7 @@
                <trait>
                   <p>célèbre écrivain romantique, dit le Lycanthrope.</p>
                </trait>
-               <desc xml:id="CAT_000327_e33_d1">Janiquette, <term ana="#document_type_13">manuscrit autog.</term> sig. de <measure type="length" unit="p" n="85">85 pages</measure> <measure type="format" unit="f" ana="#document_format_16">in-16</measure>; <date when="1842">vers 1842</date>, rel. Rare</desc><desc xml:id="CAT_000327_e33_d2">On a joint une lettre autog. sig. de M. Jules Claretie; <date when="1887">1887</date>, où il semble croire que Janiquette est une nouvelle inédite de Petrus Borel, <measure type="length" unit="p" n="1.5">1 page 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
+               <desc xml:id="CAT_000327_e33_d1">Janiquette, <term ana="#document_type_13">manuscrit autog.</term> sig. de <measure type="length" unit="p" n="85">85 pages</measure> <measure type="format" unit="f" ana="#document_format_16">in-16</measure>; <date when="1842">vers 1842</date>, rel. Rare</desc><desc xml:id="CAT_000327_e33_d2">On a joint une <term ana="#document_type_7">lettre autog. sig.</term> de M. Jules Claretie; <date when="1887">1887</date>, où il semble croire que Janiquette est une nouvelle inédite de Petrus Borel, <measure type="length" unit="p" n="1.5">1 page 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
             </item>
             <item n="34" xml:id="CAT_000327_e34">
                <num type="lot">34</num>
@@ -690,7 +722,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000327_e46_d1">Let. sig.; Quartier-général de <term ana="#document_type_8">L. a.</term> Haye, <date when="1799-06-03">15 prairial an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp. Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000327_e46_d1"><term ana="#document_type_9">Let. sig.</term>; Quartier-général de La Haye, <date when="1799-06-03">15 prairial an VII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp. Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="47" xml:id="CAT_000327_e47">
                <num type="lot">47</num>
@@ -844,7 +876,7 @@
                      l'Ouest pendant la guerre de 1870, avec lesquels il prit une grande part à la
                      bataille de Patay où il fut blessé, né vers 1827.</p>
                </trait>
-               <desc xml:id="CAT_000327_e62_d1"><term ana="#document_type_7">L. a. s.</term> Ch.; L. a. Contrie, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_18">in-18</measure>, un peu jaunie. On a joint son appel imp. aux volontaires de l'Ouest; <date when="1870-10">oct. 1870</date>, 2 p. in-8.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000327_e62_d1"><term ana="#document_type_7">L. a. s.</term> Ch.; La Contrie, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_18">in-18</measure>, un peu jaunie. On a joint son appel imp. aux volontaires de l'Ouest; <date when="1870-10">oct. 1870</date>, 2 p. in-8.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="63" xml:id="CAT_000327_e63">
                <num type="lot">63</num>
@@ -1068,7 +1100,7 @@
                <trait>
                   <p>le célèbre écrivain.</p>
                </trait>
-               <desc xml:id="CAT_000327_e84_d1">67 let. autog., la plupart signées de ses initiales ou d'un pseudonyme, à sa femme, Pauline Delvau, <measure type="length" unit="p" n="109">109 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-On a joint 2 curieuses lettres <term ana="#document_type_15">autographes</term> signées de Joséphin Soulary à Pauline Delvau: Lyon, <date when="1868-02">fév. 1868</date>, 5 pages 1/2 in-8 et les portraits-cartes photographies d'Alfred et de Pauline Delvau, demi-rel, chagrin rouge.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000327_e84_d1">67 <term ana="#document_type_8">let. autog.</term>, la plupart signées de ses initiales ou d'un pseudonyme, à sa femme, Pauline Delvau, <measure type="length" unit="p" n="109">109 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-On a joint 2 curieuses lettres autographes signées de Joséphin Soulary à Pauline Delvau: Lyon, <date when="1868-02">fév. 1868</date>, 5 pages 1/2 in-8 et les portraits-cartes photographies d'Alfred et de Pauline Delvau, demi-rel, chagrin rouge.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note anchored="true">Importante et très curieuse correspondance inédite, en grande partie
                   écrite-pendant son séjour en Belgique, remplie de détails sur ses travaux
                   littéraires.</note>
@@ -1319,7 +1351,7 @@
                   <p>duc de Gaëte, ministre des finances de Napoléon Ier, né en 1756, mort en 1844.
                   </p>
                </trait>
-               <desc xml:id="CAT_000327_e111_d1">2 let. sig. au préfet de la Drôme; Paris, 21 mars, <date when="1815-05-10">10 mai 1815</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000327_e111_d1">2 <term ana="#document_type_9">let. sig.</term> au préfet de la Drôme; Paris, 21 mars, <date when="1815-05-10">10 mai 1815</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Lettres écrites pendant les Cent Jours pour lui annoncer que l'Empereur vient
                   de le rappeler au ministère des finances.</note>
             </item>
@@ -1641,7 +1673,7 @@
                <trait>
                   <p>compositeur distingué, né à Bourges en 1818, mort en 1884.</p>
                </trait>
-               <desc xml:id="CAT_000327_e147_d1">6 l. <term ana="#document_type_15">a. s.</term> à Escudier et à Ballande; <date when="1848">1848-1876</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. Papier à son chiffre. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000327_e147_d1">6 <term ana="#document_type_7">l. a. s.</term> à Escudier et à Ballande; <date when="1848">1848-1876</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. Papier à son chiffre. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="148" xml:id="CAT_000327_e148">
                <num type="lot">148</num>
@@ -1670,7 +1702,7 @@
                      et d'Artois: il passe pour être l'inventeur de l'artillerie de campagne, né en
                      Italie vers 1510, mort en 1579.</p>
                </trait>
-               <desc xml:id="CAT_000327_e150_d1">3 let. sig. avec la souscript. aut., en français, à M. de Capres; Arras, <date when="1570">1570</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000327_e150_d1">3 <term ana="#document_type_9">let. sig.</term> avec la souscript. aut., en français, à M. de Capres; Arras, <date when="1570">1570</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="151" xml:id="CAT_000327_e151">
                <num type="lot">151</num>
@@ -1739,7 +1771,7 @@
                   <p>célèbre compositeur, maître de chapelle de Napoléon Ier, de l'Institut, né dans
                      la Somme en 1760, mort en 1837.</p>
                </trait>
-               <desc xml:id="CAT_000327_e157_d1">2 l. <term ana="#document_type_15">a. s.</term> à Framery; an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000327_e157_d1">2 <term ana="#document_type_7">l. a. s.</term> à Framery; an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="158" xml:id="CAT_000327_e158">
                <num type="lot">158</num>
@@ -2156,7 +2188,7 @@
                <trait>
                   <p>fils du roi Louis-Philippe, né en 1814.</p>
                </trait>
-               <desc xml:id="CAT_000327_e201_d1">6 l. <term ana="#document_type_15">a. sig.</term> de ses initiales à Maurice Guérard, son ancien professeur; <date when="1845">1845-1860</date>, <measure type="length" unit="p" n="23">23 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000327_e201_d1">6 <term ana="#document_type_7">l. a. sig.</term> de ses initiales à Maurice Guérard, son ancien professeur; <date when="1845">1845-1860</date>, <measure type="length" unit="p" n="23">23 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note anchored="true">Intéressante correspondance, où il parle du roi, de la reine, du duc d'Aumale
                   et de l'éducation des jeunes princes.</note>
             </item>
@@ -2183,7 +2215,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000327_e204_d1">2 let. sig. avec post-script. de 6 lig. aut.; Paris, <date when="1780-06-20">20 juin 1780</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-fol.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000327_e204_d1">2 <term ana="#document_type_9">let. sig.</term> avec post-script. de 6 lig. aut.; Paris, <date when="1780-06-20">20 juin 1780</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-fol.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Intéressant dossier relatif à la translation de la Chambre des Comptes de
                   Bretagne de Nantes à Redon.</note>
             </item>
@@ -2569,7 +2601,7 @@
                   <p>l'auteur du projet de Paix perpétuelle, de l'Acad. fr., né dans la Manche en
                      1658, mort en 1743.</p>
                </trait>
-               <desc xml:id="CAT_000327_e245_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de Fleury ; <date when="1730">1730</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse lettre relative aux ouvrages de M. de L. a. Tour Serran.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000327_e245_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de Fleury ; <date when="1730">1730</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse lettre relative aux ouvrages de M. de La Tour Serran.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="246" xml:id="CAT_000327_e246">
                <num type="lot">246</num>
@@ -2737,7 +2769,7 @@
                <trait>
                   <p>le célèbre poète lyonnais.</p>
                </trait>
-               <desc xml:id="CAT_000327_e262_d1">L. a. Muse au Sénat, <term ana="#document_type_2">pièce de vers autog. sig.</term>, dédiée à Laurent Pichat, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-Ou a joint deux lettres autographes signées de Laurent Pichat à Soulary; <date when="1878-01">janvier 1878</date>, 4 p. 1/2 in-8, cart.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000327_e262_d1">La Muse au Sénat, <term ana="#document_type_2">pièce de vers autog. sig.</term>, dédiée à Laurent Pichat, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-Ou a joint deux lettres autographes signées de Laurent Pichat à Soulary; <date when="1878-01">janvier 1878</date>, 4 p. 1/2 in-8, cart.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Toutes relatives à la Muse au Sénat que venait de lui envoyer son ami Soulary,
                   et dont voici un extrait. Nous diras-tu pour quelle faute, Muse on te mit Sous les
                   plombs de la Chambre haute Où l'art gémit ?</note>
@@ -2832,7 +2864,7 @@
                <trait>
                   <p>défenseur de Strasbourg en 1870, né à Phalsbourg en 1802, mort en 1886.</p>
                </trait>
-               <desc xml:id="CAT_000327_e272_d1"><term ana="#document_type_7">L. a. s.</term> au rédacteur en chef de la France; Versailles, <date when="1871-06-12">12 juin 1871</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> L. a. partie blanche de la troisième page a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000327_e272_d1"><term ana="#document_type_7">L. a. s.</term> au rédacteur en chef de la France; Versailles, <date when="1871-06-12">12 juin 1871</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> La partie blanche de la troisième page a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Intéressante lettre relative à sa candidature à l'Assemblée nationale. « Je
                   suis né à Phalsbourg (Meurthe); cette petite ville qui a fourni tant de militaires
                   à l'armée depuis 1789, a succombé après une longue et bien honorable résistance et
@@ -2872,7 +2904,7 @@
                <trait>
                   <p>le célèbre poète.</p>
                </trait>
-               <desc xml:id="CAT_000327_e276_d1">Mes hôpitaux, chapitre II, <term ana="#document_type_13">manuscrit aut.</term> sig., <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, précédé d'une let. aut. sig. datée de l'hôpital Cochin, 2 p. in-18.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000327_e276_d1">Mes hôpitaux, chapitre II, manuscrit aut. sig., <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, précédé d'une <term ana="#document_type_7">let. aut. sig.</term> datée de l'hôpital Cochin, 2 p. in-18.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Curieuse pièce écrite sur le papier administratif des hôpitaux.</note>
             </item>
             <item n="277" xml:id="CAT_000327_e277">
@@ -3211,7 +3243,7 @@
             <item n="310" xml:id="CAT_000327_e310">
                <num type="lot">310</num>
                <name type="author">Paris-La Bastille</name>
-               <desc xml:id="CAT_000327_e310_d1">2 l. <term ana="#document_type_15">a. s.</term> de Jean de Talleyrand, prince de Châlais, marquis d'Exideuil, baron de Mareuil, fils d'A.-B. de Talleyrand et d'Anne-Marie de la Trémoille, depuis princesse des Ursins, gouverneur de la Bastille, au marquis d'Argenson ; Paris, <date when="1712">1712-1713</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> cachets.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000327_e310_d1">2 <term ana="#document_type_7">l. a. s.</term> de Jean de Talleyrand, prince de Châlais, marquis d'Exideuil, baron de Mareuil, fils d'A.-B. de Talleyrand et d'Anne-Marie de la Trémoille, depuis princesse des Ursins, gouverneur de la Bastille, au marquis d'Argenson ; Paris, <date when="1712">1712-1713</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> cachets.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="311" xml:id="CAT_000327_e311">
                <num type="lot">311</num>
@@ -3240,7 +3272,7 @@
             <item n="314" xml:id="CAT_000327_e314">
                <num type="lot">314</num>
                <name type="author">Guerre d'Italie</name>
-               <desc xml:id="CAT_000327_e314_d1">-2 l. <term ana="#document_type_15">a. s.</term> de Camille Ferri-Pisani, général contemporain distingué, aide-de-camp du prince Jérôme-Napoléon, <date when="1859">à la comtesse Lehon 1859</date>: <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000327_e314_d1">-2 <term ana="#document_type_7">l. a. s.</term> de Camille Ferri-Pisani, général contemporain distingué, aide-de-camp du prince Jérôme-Napoléon, <date when="1859">à la comtesse Lehon 1859</date>: <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Curieuses lettres écrites au début de la campagne d'Italie, dont voici une
                   analyse sommaire : Gênes, 15 mai 1859. -Il l'informe de l'accueil enthousiaste
                   fait à l'empereur Napoléon III par la population de Gênes, au début de la campagne
@@ -3320,7 +3352,7 @@
             <item n="322" xml:id="CAT_000327_e322">
                <num type="lot">322</num>
                <name type="author">Restauration</name>
-               <desc xml:id="CAT_000327_e322_d1">2 let. sig. du baron de Vitrolles au baron Edouard Monnier; <date when="1814-04-27">27-29 avril 1814</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000327_e322_d1">2 <term ana="#document_type_9">let. sig.</term> du baron de Vitrolles au baron Edouard Monnier; <date when="1814-04-27">27-29 avril 1814</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Curieuses lettres relatives aux « employés de la maison Bonaparte » et à « la
                   disparition des emblèmes, chiffres et armoiries qui ont caractérisé le
                   gouvernement de Bonaparte.»</note>

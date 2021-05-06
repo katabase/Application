@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000329">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000329</title>
+            <title>RDA, N°201 (Août 1897)</title>
             <respStmt>
                <persName ref="#COL_000001">Matthias Gille Levenson</persName>
                <resp>
@@ -22,13 +22,13 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">201</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, 8 quai du Louvre</pubPlace>
-               <date when="1893-02">Août 1897</date>
+            <bibl status="draft" ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>201</num>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
+               <date when="1897-08">Août 1897</date>
             </bibl>
             <listEvent>
                <event>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -441,7 +473,7 @@
                   <p>célébre homme d'Etat, conventionnel, archi-chanchelier de l'Empire, né à
                      Montpellier en 1753, mort en 1824.</p>
                </trait>
-               <desc xml:id="CAT_000329_e26_d1">Let. sig., sig. aussi par les conventionnels Roux et <term ana="#document_type_8">L. a.</term> Porte, comme membres du Comité de Salut public, à André Dumont; Paris, <date when="1795-05-03">14 floréal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000329_e26_d1"><term ana="#document_type_9">Let. sig.</term>, sig. aussi par les conventionnels Roux et La Porte, comme membres du Comité de Salut public, à André Dumont; Paris, <date when="1795-05-03">14 floréal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="27" xml:id="CAT_000329_e27">
                <num type="lot">27</num>
@@ -699,7 +731,7 @@
                   <p>baron de Grandchamp, général d'artillerie de la Révolution et de l'Empire, né à
                      Beaumont (Sarthe) en 1763, mort en 1834.</p>
                </trait>
-               <desc xml:id="CAT_000329_e52_d1"><term ana="#document_type_7">L. a. s.</term>; Ponté de L. a. Menda (Itali?), <date when="1797-05-31">12 prairial an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000329_e52_d1"><term ana="#document_type_7">L. a. s.</term>; Ponté de La Menda (Itali?), <date when="1797-05-31">12 prairial an V</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="53" xml:id="CAT_000329_e53">
                <num type="lot">53</num>
@@ -919,7 +951,7 @@
                <trait>
                   <p>compositeur contemporain très distingué, né à Nîmes en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000329_e73_d1"><term ana="#document_type_8">L. a.</term> Marseillaise, pour quatre voix d'hommes sans accompagnement, morceau de musique avec paroles aut. sig. ; Paris, souvenir du siège, <date when="1870">1870-1871</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000329_e73_d1">La Marseillaise, pour quatre voix d'hommes sans accompagnement, morceau de musique avec paroles <term ana="#document_type_15">aut. sig.</term> ; Paris, souvenir du siège, <date when="1870">1870-1871</date>, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="74" xml:id="CAT_000329_e74">
                <num type="lot">74</num>
@@ -1382,7 +1414,7 @@
                   <p>homme d'Etat russe, ministre de l'Intérieur sous l'Empereur Alexandre, né en
                      1759, mort en 1829.</p>
                </trait>
-               <desc xml:id="CAT_000329_e114_d1">2 l. <term ana="#document_type_15">a. s.</term>, en français, Saint-Pétersbourg, <date when="1817">1817-1820</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000329_e114_d1">2 <term ana="#document_type_7">l. a. s.</term>, en français, Saint-Pétersbourg, <date when="1817">1817-1820</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="115" xml:id="CAT_000329_e115">
                <num type="lot">115</num>
@@ -1508,7 +1540,7 @@
                   <p>compagnon d'infortune de Napoléon Ier, auteur du Mémorial de Sainte-Hélène, né
                      en 1766, mort en 1842.</p>
                </trait>
-               <desc xml:id="CAT_000329_e126_d1"><term ana="#document_type_8">Let. aut.</term> à Mme la comtesse de Las Cases (née de Kergariou); (L. a. Malmaison), <date when="1815-06">29 (juin 1815</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000329_e126_d1"><term ana="#document_type_8">Let. aut.</term> à Mme la comtesse de Las Cases (née de Kergariou); (La Malmaison), <date when="1815-06">29 (juin 1815</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Importante lettre historique. « Au moment de partir, l'empereur, apprenant les
                   dangers de Paris et l'état de l'ennemi, a envoyé au gouvernement provisoire pour
                   lui dire qu'il se chargeoit de repousser Blucher qui se trouve seul, qu'il
@@ -2052,7 +2084,7 @@
                <trait>
                   <p>illustre général de la République, né à Morlaix en 1763, mort en 1813.</p>
                </trait>
-               <desc xml:id="CAT_000329_e178_d1">Apostille de 7 lig. <term ana="#document_type_15">aut. sig.</term> sur une l. a. s. de Villard, capitaine de la 3e demi-brigade; Strasbourg, <date when="1796-12-30">10 nivôse an V</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000329_e178_d1">Apostille de 7 lig. aut. sig. sur une <term ana="#document_type_7">l. a. s.</term> de Villard, capitaine de la 3e demi-brigade; Strasbourg, <date when="1796-12-30">10 nivôse an V</date>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="179" xml:id="CAT_000329_e179">
                <num type="lot">179</num>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000003">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000003</title>
+            <title>LAD, N°507 (avril 1919)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
+            <bibl ana="RDA">
                <title>LETTRES AUTOGRAPHES ET DOCUMENTS HISTORIQUES</title>
-               <num type="lot">507</num>
+               <num>507</num>
                <editor>Noël CHARAVAY</editor>
                <publisher>Noël CHARAVAY</publisher>
                <pubPlace> 3, rue de Furstenberg, à Paris</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Switzerland</country>
+                        <settlement>Genève</settlement>
+                        <institution>Bibliothèque de Genève</institution>
+                        <idno type="shelfmark">BGE Gk 408</idno>
+                     </msIdentifier>
+                  </msDesc>
+                  <ptr type="catalogue" target="http://data.rero.ch/01-R008483086"/>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,10 +206,30 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="#COL_000001" when="2020-07">Correction, adding new mark-up for price and an ID
-            for desc</change>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -810,7 +838,7 @@
             <item n="88102" xml:id="CAT_000003_e88102">
                <num type="lot">88102</num>
                <name type="author">FOREY (Élie-Frédéric)</name>
-               <desc xml:id="CAT_000003_e88102_d1">3 l. <term ana="#document_type_15">a. s.</term>; Orizaba, Mexico, <date when="1862">1862-1863</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000003_e88102_d1">3 <term ana="#document_type_7">l. a. s.</term>; Orizaba, Mexico, <date when="1862">1862-1863</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Détails sur les mesures préparatoires à l'attaque de Puebla, qui est l'af-
                   faire principale de l'expédition. -Il a été, jusqu'ici, dictateur mais il remet
                   ses pouvoirs au gouvernement provisoire qu'il vient d'organiser. Les grandeurs
@@ -1151,7 +1179,7 @@
             </item>
             <item n="88134" xml:id="CAT_000003_e88134">
                <num type="lot">88134</num>
-               <name type="author">LOUIS XVII,</name>
+               <name type="author">LOUIS XVII</name>
                <trait>
                   <p>l'infortuné fils de Louis XVI</p>
                </trait>
@@ -1245,7 +1273,7 @@
                   <p>gouverneur de Bretagne à l'époque de la Saint-Barthélemy et général en chef de
                      l'armée du Poitou, connu par ses cruautés</p>
                </trait>
-               <desc xml:id="CAT_000003_e88143_d1">L. s. avec la souscription aut. à son beau-fils (H.-R. de <term ana="#document_type_8">L. a.</term> Marck, duc de Bouillon, époux de sa fille, Françoise) ; Paris, <date when="1572-10-11">11 octobre 1572</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000003_e88143_d1"><term ana="#document_type_9">L. s.</term> avec la souscription aut. à son beau-fils (H.-R. de La Marck, duc de Bouillon, époux de sa fille, Françoise) ; Paris, <date when="1572-10-11">11 octobre 1572</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note>Importante lettre historique. Il l'engage à revenir à la religion catholique et
                   à adjurer l'hérésie qui vient de causer en France la Saint-Barthélemy ; qu'il
                   imite la confession publique du pasteur Roziers et « la profession de foy du Roy
@@ -1525,7 +1553,7 @@
                <trait>
                   <p>la célèbre épistolière</p>
                </trait>
-               <desc xml:id="CAT_000003_e88169_d1">Fin de lettre aut. à M. du Plessis, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, adresse.</desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
+               <desc xml:id="CAT_000003_e88169_d1">Fin de <term ana="#document_type_8">lettre aut.</term> à M. du Plessis, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, adresse.</desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
                <note>Elle le prie de passer voir un de ses amis et de réveiller son affection. Elle
                   annonce l'arrivée du marquis [son fils?) ; il est joli, mais il a la fièvre ; sa
                   fille en est hors [de fièvre], etc.</note>
@@ -1556,7 +1584,7 @@
                <trait>
                   <p>prince de Bénévent, le fameux diplomate</p>
                </trait>
-               <desc xml:id="CAT_000003_e88172_d1"><term ana="#document_type_8">L. aut.</term> ; Valencay, 17, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> L. a. lettre est terminée par un post-scriptum aut. de la duchesse de Dino.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000003_e88172_d1"><term ana="#document_type_8">L. aut.</term> ; Valencay, 17, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> La lettre est terminée par un post-scriptum aut. de la duchesse de Dino.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Il parle de la chasse, de la qualité de la poudre employée et fait des
                   réflexions sur l'esprit de parti, que l'on veut ranimer par tous les moyens. « Je
                   vous assure que la disposition de la France était toute autre.</note>
@@ -1621,7 +1649,7 @@
                <trait>
                   <p>célèbre écrivain et homme politique, né au Puy (Haute-Loire)</p>
                </trait>
-               <desc xml:id="CAT_000003_e88178_d1">2 l. <term ana="#document_type_15">a. s.</term> à M. Duchesne ; s. d., <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000003_e88178_d1">2 <term ana="#document_type_7">l. a. s.</term> à M. Duchesne ; s. d., <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettres relatives à l'insertion de ses articles</note>
             </item>
             <item n="88179" xml:id="CAT_000003_e88179">
@@ -1662,7 +1690,7 @@
             <item n="88182" xml:id="CAT_000003_e88182">
                <num type="lot">88182</num>
                <name type="author">PROCÈS ET JUGEMENT DE LOUIS XVI.</name>
-               <desc xml:id="CAT_000003_e88182_d1">11 pièces originales. 1° <term ana="#document_type_9">L. s.</term> d'ANAXAGORAS CHAUMETTE, procureur de la Commune de Paris; <date when="1792-12-09">9 décembre 1792</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête et vignette imprimée. Il est de l'intérêt de la République que les citoyens ramassent toutes leurs forces et toutes leurs volontés pour maintenir dans Paris la tranquillité la plus parfaite. « Il faut que nos frères des 83 autres départements se disent en voyant notre conduite à l'époque du jugement de Louis le dernier, ceux qui, depuis longtemps, déclament contre les citoyens de Paris, sont des traîtres. Les Parisiens sont toujours les mêmes, toujours nos amis. » Il appelle l'attention sur les personnages inconnus qui circulent dans les lieux publics</desc><desc xml:id="CAT_000003_e88182_d2">2° <term ana="#document_type_4">P. s.</term> (griffe) par COULOMBEAU; Paris, <date when="1792-12-11">11 décembre 1792</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure> Ordre d'envoyer aux 48 sections l'ordre d'illuminer Paris pendant le procès de Louis Capet et de sa famille.</desc><desc xml:id="CAT_000003_e88182_d3">3° <term ana="#document_type_4">P. s.</term> par MÉHÉE; Paris, <date when="1792-12-26">26 décembre 1792</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête et vignette imprimée Même ordre, sous une autre forme, que la pièce précédente.</desc><desc xml:id="CAT_000003_e88182_d4">4° <term ana="#document_type_4">P. s.</term> par Coulombeau, secrétaire greffier de la Commune de Paris ; <date when="1793-01-13">13 janvier 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête et vignette imprimée. Mesures à prendre pour assurer la sûreté de Paris le lendemain, jour où la Convention prononcera le jugement de Louis Capet.</desc><desc xml:id="CAT_000003_e88182_d5">5° <term ana="#document_type_7">L. a. s.</term> de Pache, ministre de la Guerre, à SANTERRE; 14 janvier l'an II (<date when="1793">1793</date>), <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Il l'informe qu'il va donner des ordres pour faire rentrer dans Paris l'artillerie du parc de Saint-Denis. « Je vous prie d'y concourir pour l'escorte et pour l'emplacement. »</desc><desc xml:id="CAT_000003_e88182_d6">6° <term ana="#document_type_7">L. a. s.</term> de Pache, ministre de la Guerre, à SANTERRE; Paris, 16 janvier an II (<date when="1793">1793</date>), <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Même objet que la pièce ci-dessus.</desc><desc xml:id="CAT_000003_e88182_d7">7° <term ana="#document_type_4">P. s.</term> par trois administrateurs de la section des Tuileries ; <date when="1793-01-17">17 janvier 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, vignette imprimée. Document relatif à l'arrestation de 17 canonniers à cheval, cantonnés à Saint-Germain-en-Laye, venus à Paris sans ordres.</desc><desc xml:id="CAT_000003_e88182_d8">8° <term ana="#document_type_7">L. a. s.</term> de PACHE, ministre de la guerre, à SANTERRE; 20 janvier l'an II (<date when="1793">1793</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Il lui rappelle qu'il est convenu que Pache ne donnera pas de canons sans avis de Santerre. En conséquence il lui renvoie la demande de la section des Arcis. « Si vous estimez qu'il fut utile à la République de prêter pour demain le canon de 8 qu'ils demandent vous pourriez délivrer les lettres. »</desc><desc xml:id="CAT_000003_e88182_d9">9° <term ana="#document_type_4">P. s.</term> (griffe), par COULOMBEAU, secrétaire-greffier de la Commune de Paris ; <date when="1793-01-20">20 janvier 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure> Extrait du registre des délibérations de Ia Communë de Paris concernant l'arrestation de Pariz, assassin de Le Peletier de Saint-Fargeau. « Arrête que les sections sont invitées à rester en permanence, à tenir tous les citoyens. sous les armes à ne permettre demain à qui ce soit, même aux femmes de circuler dans les rues, exception aux fonctionnaires publics ; aux employés de l'administration et à la force armée…Tous les citoyens sont invités à rester dans le calme le plus profond. »</desc><desc xml:id="CAT_000003_e88182_d10">10° <term ana="#document_type_4">P. s.</term> (griffe) par COULOMBEAU, secrétaire greffier de la Commune de Paris ; <date when="1793-01-20">20 janvier 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête imprimée. Extrait du registre des délibérations du Conseil général du département en permanence. Instruction au commandant-général pour prendre toute les mesures nécessaires afin d'empêcher que, le lendemain 21, des attroupements sortent ou entrent dans Paris. « Invite tous les citoyens à veiller à ce que les ennemis de la Liberté et de l'Égalité ne puissent rien tenter. »</desc><desc xml:id="CAT_000003_e88182_d11">11° <term ana="#document_type_4">P. s.</term> par MONESTIER (du Puy-de-Dôme), Desfieux et Debusscher, président, vice-président et secrétaire de la Société des amis de la Liberté et de l'Égalité (ex-Société des amis de la Constitution) ; <date when="1793-01-20">20 janvier 1793</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette imprimée, cachet de cire rouge. L. a. Société décide l'envoi d'une délégation de douze membres auprès du Conseil exécutif, du département, du conseil général de la commune, pour les inviter à doubler de surveillance et à prendre toutes les mesures nécessaires pour empêcher l'exécution des projets des ennemis de la Liberté et la diffusion des nouvelles alarmistes. PRÉCIEUX DOSSIER HISTORIQUE.</desc><measure commodity="currency" unit="FRF" quantity="600">600</measure>
+               <desc xml:id="CAT_000003_e88182_d1">11 pièces originales. 1° <term ana="#document_type_9">L. s.</term> d'ANAXAGORAS CHAUMETTE, procureur de la Commune de Paris; <date when="1792-12-09">9 décembre 1792</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête et vignette imprimée. Il est de l'intérêt de la République que les citoyens ramassent toutes leurs forces et toutes leurs volontés pour maintenir dans Paris la tranquillité la plus parfaite. « Il faut que nos frères des 83 autres départements se disent en voyant notre conduite à l'époque du jugement de Louis le dernier, ceux qui, depuis longtemps, déclament contre les citoyens de Paris, sont des traîtres. Les Parisiens sont toujours les mêmes, toujours nos amis. » Il appelle l'attention sur les personnages inconnus qui circulent dans les lieux publics</desc><desc xml:id="CAT_000003_e88182_d2">2° <term ana="#document_type_4">P. s.</term> (griffe) par COULOMBEAU; Paris, <date when="1792-12-11">11 décembre 1792</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure> Ordre d'envoyer aux 48 sections l'ordre d'illuminer Paris pendant le procès de Louis Capet et de sa famille.</desc><desc xml:id="CAT_000003_e88182_d3">3° <term ana="#document_type_4">P. s.</term> par MÉHÉE; Paris, <date when="1792-12-26">26 décembre 1792</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête et vignette imprimée Même ordre, sous une autre forme, que la pièce précédente.</desc><desc xml:id="CAT_000003_e88182_d4">4° <term ana="#document_type_4">P. s.</term> par Coulombeau, secrétaire greffier de la Commune de Paris ; <date when="1793-01-13">13 janvier 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête et vignette imprimée. Mesures à prendre pour assurer la sûreté de Paris le lendemain, jour où la Convention prononcera le jugement de Louis Capet.</desc><desc xml:id="CAT_000003_e88182_d5">5° <term ana="#document_type_7">L. a. s.</term> de Pache, ministre de la Guerre, à SANTERRE; 14 janvier l'an II (<date when="1793">1793</date>), <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Il l'informe qu'il va donner des ordres pour faire rentrer dans Paris l'artillerie du parc de Saint-Denis. « Je vous prie d'y concourir pour l'escorte et pour l'emplacement. »</desc><desc xml:id="CAT_000003_e88182_d6">6° <term ana="#document_type_7">L. a. s.</term> de Pache, ministre de la Guerre, à SANTERRE; Paris, 16 janvier an II (<date when="1793">1793</date>), <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Même objet que la pièce ci-dessus.</desc><desc xml:id="CAT_000003_e88182_d7">7° <term ana="#document_type_4">P. s.</term> par trois administrateurs de la section des Tuileries ; <date when="1793-01-17">17 janvier 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, vignette imprimée. Document relatif à l'arrestation de 17 canonniers à cheval, cantonnés à Saint-Germain-en-Laye, venus à Paris sans ordres.</desc><desc xml:id="CAT_000003_e88182_d8">8° <term ana="#document_type_7">L. a. s.</term> de PACHE, ministre de la guerre, à SANTERRE; 20 janvier l'an II (<date when="1793">1793</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Il lui rappelle qu'il est convenu que Pache ne donnera pas de canons sans avis de Santerre. En conséquence il lui renvoie la demande de la section des Arcis. « Si vous estimez qu'il fut utile à la République de prêter pour demain le canon de 8 qu'ils demandent vous pourriez délivrer les lettres. »</desc><desc xml:id="CAT_000003_e88182_d9">9° <term ana="#document_type_4">P. s.</term> (griffe), par COULOMBEAU, secrétaire-greffier de la Commune de Paris ; <date when="1793-01-20">20 janvier 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure> Extrait du registre des délibérations de Ia Communë de Paris concernant l'arrestation de Pariz, assassin de Le Peletier de Saint-Fargeau. « Arrête que les sections sont invitées à rester en permanence, à tenir tous les citoyens. sous les armes à ne permettre demain à qui ce soit, même aux femmes de circuler dans les rues, exception aux fonctionnaires publics ; aux employés de l'administration et à la force armée…Tous les citoyens sont invités à rester dans le calme le plus profond. »</desc><desc xml:id="CAT_000003_e88182_d10">10° <term ana="#document_type_4">P. s.</term> (griffe) par COULOMBEAU, secrétaire greffier de la Commune de Paris ; <date when="1793-01-20">20 janvier 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio</measure>, tête imprimée. Extrait du registre des délibérations du Conseil général du département en permanence. Instruction au commandant-général pour prendre toute les mesures nécessaires afin d'empêcher que, le lendemain 21, des attroupements sortent ou entrent dans Paris. « Invite tous les citoyens à veiller à ce que les ennemis de la Liberté et de l'Égalité ne puissent rien tenter. »</desc><desc xml:id="CAT_000003_e88182_d11">11° <term ana="#document_type_4">P. s.</term> par MONESTIER (du Puy-de-Dôme), Desfieux et Debusscher, président, vice-président et secrétaire de la Société des amis de la Liberté et de l'Égalité (ex-Société des amis de la Constitution) ; <date when="1793-01-20">20 janvier 1793</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, vignette imprimée, cachet de cire rouge. La Société décide l'envoi d'une délégation de douze membres auprès du Conseil exécutif, du département, du conseil général de la commune, pour les inviter à doubler de surveillance et à prendre toutes les mesures nécessaires pour empêcher l'exécution des projets des ennemis de la Liberté et la diffusion des nouvelles alarmistes. PRÉCIEUX DOSSIER HISTORIQUE.</desc><measure commodity="currency" unit="FRF" quantity="600">600</measure>
             </item>
             <item n="88183" xml:id="CAT_000003_e88183">
                <num type="lot">88183</num>

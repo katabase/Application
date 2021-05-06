@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000229">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -21,7 +21,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>178</num>
                <editor>Eugène Charavay fils</editor>
@@ -142,7 +142,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -194,6 +194,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -425,7 +445,7 @@
                <trait>
                   <p>célèbre écrivain, auteur de l'Histoire du peuple de Dieu, ouvrage qui fut condamné par le pape Clément XIII, né à Rouen en 1681, mort en 1758.</p>
                </trait>
-               <desc xml:id="CAT_000229_e27_d1"><term ana="#document_type_7">L. a. s.</term> au marquis de Thiboutot, son neveu, à L. a. Fère; Paris, <date when="1751-01-07">7 janv. 1751</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000229_e27_d1"><term ana="#document_type_7">L. a. s.</term> au marquis de Thiboutot, son neveu, à La Fère; Paris, <date when="1751-01-07">7 janv. 1751</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="28" xml:id="CAT_000229_e28">
                <num type="lot">28</num>
@@ -469,7 +489,7 @@
                <trait>
                   <p>frère aîné de Napoléon Ier, roi d'Espagne, né en 1768, mort en 1844.</p>
                </trait>
-               <desc xml:id="CAT_000229_e32_d1"><date when="1793">Apostille de 2 grandes lig. <term ana="#document_type_15">aut. sig.</term> sur une l. a. s. de Paré (ministre de l'Intérieur en 1793</date>) à Regnier, duc de Massa; Paris, 6 prairial an XI, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000229_e32_d1"><date when="1793">Apostille de 2 grandes lig. aut. sig. sur une <term ana="#document_type_7">l. a. s.</term> de Paré (ministre de l'Intérieur en 1793</date>) à Regnier, duc de Massa; Paris, 6 prairial an XI, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Intéressante lettre où Paré demande une place au Conseil des prises.</note>
             </item>
             <item n="33" xml:id="CAT_000229_e33">
@@ -607,7 +627,7 @@
                <trait>
                   <p>célèbre homme d'Etat, conventionnel, archi-chancelier de l'Empire, né à Montpellier en 1753, mort en 1824.</p>
                </trait>
-               <desc xml:id="CAT_000229_e48_d1">Let. sig., sig. aussi par les conventionnels Roux et <term ana="#document_type_8">L. a.</term> Porte, comme membres du Comité de Salut-Publie à André Dumont; Paris, <date when="1795-05-03">14 floréal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000229_e48_d1"><term ana="#document_type_9">Let. sig.</term>, sig. aussi par les conventionnels Roux et La Porte, comme membres du Comité de Salut-Publie à André Dumont; Paris, <date when="1795-05-03">14 floréal an III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="49" xml:id="CAT_000229_e49">
                <num type="lot">49</num>
@@ -691,7 +711,7 @@
                <trait>
                   <p>homme politique et administrateur, préfet de la Seine sous la Restauration, né à Riom en 1773, mort en 1843.</p>
                </trait>
-               <desc xml:id="CAT_000229_e58_d1">5 l. <term ana="#document_type_15">a. s.</term> et 2 let. sig. au baron Edouard Mounier; <date when="1809">1809-1840</date>, <measure type="length" unit="p" n="11">11 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000229_e58_d1">5 <term ana="#document_type_7">l. a. s.</term> et 2 let. sig. au baron Edouard Mounier; <date when="1809">1809-1840</date>, <measure type="length" unit="p" n="11">11 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="59" xml:id="CAT_000229_e59">
                <num type="lot">59</num>
@@ -751,7 +771,7 @@
                <trait>
                   <p>secrétaire de Voltaire.</p>
                </trait>
-               <desc xml:id="CAT_000229_e65_d1">3 l. <term ana="#document_type_15">a. s.</term> au libraire Lambert; Les Délices et Mannheim, <date when="1755">1755-1764</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000229_e65_d1">3 <term ana="#document_type_7">l. a. s.</term> au libraire Lambert; Les Délices et Mannheim, <date when="1755">1755-1764</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Curieuses lettres dont voici une analyse sommaire : Les Cramer, se plaignent de l'édition que Lambert fait des oeuvres de Voltaire. (On sait que ce philosophe aimait à se contrefaire lui-même). « Il leur a dit qu'ils devaient se contenter de débiter leur édition dans les pays étrangers, et que vous débiteriez la votre en France.» Qu'il réponde en ce sens à Voltaire. -Madame Denis et Voltaire ont décidé que l'édition de Genève paraîtrait d'abord la première; celle de Lambert ne sera mise en vente qu'après celle des Cramer; il pourra alors la contrefaire et même la corriger. -Collini, devenu secrétaire de Charles-Théodore de Neubourg, électeur palatin, propose au libraire « de débiter une cinquantaine d'exemplaires d'un abrégé de l'histoire palatine. » Il lui propose aussi de publier les oeuvres de Voltaire (sans doute, Collini, par une contrefaçon assez adroite, voulait se venger de son ancien maître qu'il n'aimait pas et qui le payait mal).</note>
             </item>
             <item n="66" xml:id="CAT_000229_e66">
@@ -868,7 +888,7 @@
                <trait>
                   <p>la célèbre nièce de Voltaire, née en 1712, morte en 1790.</p>
                </trait>
-               <desc xml:id="CAT_000229_e79_d1">3 let. aut. à Duvivier (son mari), <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="32">32</measure>
+               <desc xml:id="CAT_000229_e79_d1">3 <term ana="#document_type_8">let. aut.</term> à Duvivier (son mari), <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="32">32</measure>
                <note anchored="true">Curieuses lettres d'amour écrites dans un âge très avancé. Mme Denis ayant épousé M. Duvivier, à 70 ans</note>
             </item>
             <item n="80" xml:id="CAT_000229_e80">
@@ -901,7 +921,7 @@
                <trait>
                   <p>célèbre constituant, député des Ardennes à la Convention, général et ministre, né à Charleville en 1747, mort en 1814.</p>
                </trait>
-               <desc xml:id="CAT_000229_e83_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels J.-B. Chazal, J.-J. Breard, L. a. Porte, A.-F. Fourcroy, Lacombe Saint-Michel et P. Marec, comme membres du Comité de Salut-Public ; <date when="1795-03-16">26 ventôse an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000229_e83_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par les conventionnels J.-B. Chazal, J.-J. Breard, La Porte, A.-F. Fourcroy, Lacombe Saint-Michel et P. Marec, comme membres du Comité de Salut-Public ; <date when="1795-03-16">26 ventôse an III</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête impr., vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="84" xml:id="CAT_000229_e84">
                <num type="lot">84</num>
@@ -952,7 +972,7 @@
                <trait>
                   <p>le célèbre chansonnier.</p>
                </trait>
-               <desc xml:id="CAT_000229_e89_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1851-12-17">17 ma1851</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000229_e89_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1851-05-17">17 ma1851</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="90" xml:id="CAT_000229_e90">
                <num type="lot">90</num>
@@ -1263,7 +1283,7 @@
                <trait>
                   <p>évêque et comte de Verdun, puis évêque de Vintimille, mort en 1500.</p>
                </trait>
-               <desc xml:id="CAT_000229_e126_d1">3 let. sig. avec la souscript. aut. au bâtard de Calabre (Jean, fils de Jean de Calabre) ; Padoue, <date when="1483">1483</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000229_e126_d1">3 <term ana="#document_type_9">let. sig.</term> avec la souscript. aut. au bâtard de Calabre (Jean, fils de Jean de Calabre) ; Padoue, <date when="1483">1483</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Intéressantes lettres dont voici une analyse sommaire. Padoue, 23 mai 1483. Son cousin, messire Henry de Ligneville, est chargé de lui « déclarer au long nostre venue de deça, nostre reception et bon appointement, ensemble les haulx honneurs et triumphes qui nous ont esté faiz.» -Padoue, 6 juin (1483). « Monseigneur (le duc de Mantoue) vous escript que vous venez en toute diligence à six ou huict chevaulx... depuis le partement de messire Henry (de Ligneville) n'est riens seurvenu de nouveau sinon que mons; dedans huict ou dix jours yra en campe, et là le trouverez au plaisir de Dieu. » Padoue, 14 août 1484. Il regrette que son correspondant n'ait pas reçu la lettre de créance dont il avait chargé monsr de Citain.</note>
             </item>
             <item n="127" xml:id="CAT_000229_e127">
@@ -1297,7 +1317,7 @@
                <trait>
                   <p>roi de France.</p>
                </trait>
-               <desc xml:id="CAT_000229_e130_d1"><term ana="#document_type_4">Pièce sig</term>., comme duc d'Anjou ; camp de Nyeul (Nieul), près L. a. Rochelle, <date when="1573-02-20">20 février 1573</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000229_e130_d1"><term ana="#document_type_4">Pièce sig</term>., comme duc d'Anjou ; camp de Nyeul (Nieul), près La Rochelle, <date when="1573-02-20">20 février 1573</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Belle pièce. Nomination de Jean de Chastellier, dit le Général, comme surintendant des finances de l'armée devant La Rochelle.</note>
             </item>
             <item n="131" xml:id="CAT_000229_e131">
@@ -1765,7 +1785,7 @@
                <trait>
                   <p>grand capitaine, le chef de la Ligue, né en 1554, mort en 1611.</p>
                </trait>
-               <desc xml:id="CAT_000229_e185_d1">Let. sig. à Mme la générale de Chastellier; camp de <term ana="#document_type_8">L. a.</term> Mure, <date when="1580-11-10">10 nov. 1580</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Fripée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000229_e185_d1"><term ana="#document_type_9">Let. sig.</term> à Mme la générale de Chastellier; camp de La Mure, <date when="1580-11-10">10 nov. 1580</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Fripée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Lettre de condoléances au sujet de la mort de M. de Chastellier. « Consolez-vous, je vous prie avecq cela et de ce qu'il vous a laissé grand nombre d'amys qui vous assisteront et à vos enfants de tous les meilleurs offices que se pourront faire pour leur bien et advancement.»</note>
             </item>
             <item n="186" xml:id="CAT_000229_e186">
@@ -2019,7 +2039,7 @@
                <trait>
                   <p>célèbre naturaliste et littérateur, né à Reims en 1688, mort le 19 nov. 1761.</p>
                </trait>
-               <desc xml:id="CAT_000229_e215_d1"><term ana="#document_type_7">L. a. s.</term> à Robert Estienne ; L. a. Varenne-Saint-Maur, <date when="1761-03-09">9 mars 1761</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000229_e215_d1"><term ana="#document_type_7">L. a. s.</term> à Robert Estienne ; La Varenne-Saint-Maur, <date when="1761-03-09">9 mars 1761</date>, <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="216" xml:id="CAT_000229_e216">
                <num type="lot">216</num>
@@ -2085,7 +2105,7 @@
                <trait>
                   <p>député de la Sarthe à la Convention.</p>
                </trait>
-               <desc xml:id="CAT_000229_e223_d1"><term ana="#document_type_4">Pièce sig</term>., comme représentant près les armées du Nord et de Sambre-et-Meuse ; L. a. Haye, <date when="1795-05-12">23 floréal an III</date>, tête impr.. jolie vignette.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000229_e223_d1"><term ana="#document_type_4">Pièce sig</term>., comme représentant près les armées du Nord et de Sambre-et-Meuse ; La Haye, <date when="1795-05-12">23 floréal an III</date>, tête impr.. jolie vignette.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="224" xml:id="CAT_000229_e224">
                <num type="lot">224</num>
@@ -2168,7 +2188,7 @@
                <trait>
                   <p>femme célèbre du XVIIIe siècle, surnommée par Voltaire Papillon-philosophe, soeur du marquis de Gouvernet, gouverneur de Bourgogne.</p>
                </trait>
-               <desc xml:id="CAT_000229_e233_d1">5 let. aut. à Voltaire, qu'elle appelle mon cher patron; <date when="1770">1770-1776</date>, <measure type="length" unit="p" n="10">10 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000229_e233_d1">5 <term ana="#document_type_8">let. aut.</term> à Voltaire, qu'elle appelle mon cher patron; <date when="1770">1770-1776</date>, <measure type="length" unit="p" n="10">10 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note anchored="true">Curieuses lettres, dont voici une analyse sommaire : 31 janvier-30 avril 1770. -Elle sollicite le duc de Choiseul et le maréchal de Richelieu de s'intéresser à la fondation de Versoy, où les Gênevois persécutés devaient trouver un asile ; M. d'Argental et M. de Saint-Florentin s'en occupent aussi ; elle a lu l'Homme aux Quarante Ecus, satire que n'avait pas signée Voltaire; elle en fait néanmoins l'éloge, peut-être à dessein. -26 juin 1776. -M. et Mme de Duras n'ont pas voulu accorder de congé à l'acteur Lekain ; mais la princesse d'Hennin a sollicité la reine Marie-Antoinette, et l'affaire est en bonne voie. « La princesse d'Henuin est une des plus jollies femmes que nous aions, elle a de plus du goût, de l'esprit, elle a mis infiniment de zelle dans sa médiation, cela mérite un petit remerciment; elle est fille de M. de Monconseil et a épousé le cadet des prince Chimey qui porte celuis d'Henin; il est capitaine des garde de M. le comte d'Artois.»</note>
             </item>
             <item n="234" xml:id="CAT_000229_e234">
@@ -2226,7 +2246,7 @@
                <trait>
                   <p>maréchal de France, qui prit une grande part aux campagnes de Flandre et d'Italie, né en 1685.</p>
                </trait>
-               <desc xml:id="CAT_000229_e240_d1">Let. sig. avec 2 lig. aut.; <term ana="#document_type_8">L. a.</term> Rochelle, <date when="1761-07-27">27 juillet 1761</date>, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéres-sante.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000229_e240_d1"><term ana="#document_type_9">Let. sig.</term> avec 2 lig. aut.; La Rochelle, <date when="1761-07-27">27 juillet 1761</date>, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéres-sante.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="241" xml:id="CAT_000229_e241">
                <num type="lot">241</num>
@@ -2611,7 +2631,7 @@
             <item n="289" xml:id="CAT_000229_e289">
                <num type="lot">289</num>
                <name type="author">Paris</name>
-               <desc xml:id="CAT_000229_e289_d1">L. a. Bastille.-<term ana="#document_type_4">Pièce sig</term>. avec 3 lignes aut. sur vélin par Allain de Vauzé, « commandant pour le service du Roy au chasteau de la Bastille »; <date when="1615-04-02">2 avril 1615</date>, <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000229_e289_d1">La Bastille.-<term ana="#document_type_4">Pièce sig</term>. avec 3 lignes aut. sur vélin par Allain de Vauzé, « commandant pour le service du Roy au chasteau de la Bastille »; <date when="1615-04-02">2 avril 1615</date>, <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Quittance de 603 livres, par lui déboursées, pour la nourriture de trois prisonniers : Jean Boursier, Julien Michel, Jean du Castolet, « à raison de III livres par jour pour chacun ».</note>
             </item>
             <item n="290" xml:id="CAT_000229_e290">
@@ -2657,7 +2677,7 @@
             <item n="297" xml:id="CAT_000229_e297">
                <num type="lot">297</num>
                <name type="author">Protestants.</name>
-               <desc xml:id="CAT_000229_e297_d1">38 let. sig. de Balthazar Phélypeaux, marquis de Châteauneuf (célèbre homme d'Etat, mort en 1700). à J.-B. Le Comte, seigneur de la Tresne, premier président au Parlement de Bordeaux ; <date when="1671">1671-1697</date>. <measure type="length" unit="p" n="51">51 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="80">80</measure>
+               <desc xml:id="CAT_000229_e297_d1">38 <term ana="#document_type_9">let. sig.</term> de Balthazar Phélypeaux, marquis de Châteauneuf (célèbre homme d'Etat, mort en 1700). à J.-B. Le Comte, seigneur de la Tresne, premier président au Parlement de Bordeaux ; <date when="1671">1671-1697</date>. <measure type="length" unit="p" n="51">51 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="80">80</measure>
                <note anchored="true">Importante correspondance politique dont voici une analyse sommaire ; Fontainebleau, 16 oct. 1695 -Dans le ressort du Parle- ment de Bordeaux, les parties se purgent parfois par serment en présence du corps de Nostre Seigneur; « auquel effet les curez des paroisses, où se doivent faire lesdits serments, tirent le Saint-Ciboire du tabernacle après qu'on a sonné la cloche, pour avertir le peuple et là un officier de Justice présent, on le fait prester aux personnes à qui il a esté ordonné de le faire, mettant les mains sur les Evangiles ou sur le re lgitur; et comme il peut arriver du scandale, les parties s'échauffent les uns les autres et se disant des injures, lorsqu'une nie et rue l'autre voudroit qu'elle avouast, et que 'ailleurs ce sont quelquefois des nouveaux convertis (anciens calvinistes) dont la foy n'est pas unie ou qui n'en ont point du tout » Louis XIV désire la suppression de cette formalité religieuse. -Versailles. 22 février 1696. Au sujet de « quelques mariages de nouveaux convertis qui se sont fais dans une église, près de Nérac (Lot-et-Garonne) par un preste aposté. » -Versailles, 28 juin 1696. « Relative à la condamnation aux galeres pour un tems (à temps) rendue contre des prestres qui avoient marié des nouveaux convertis sans observer les formes avec suppositions de noms. » La sentence doit être exécutée.</note>
             </item>
             <item n="298" xml:id="CAT_000229_e298">

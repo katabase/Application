@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000122">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000122</title>
+            <title>RDA, N°119 (Mars 1889)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">119</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>119</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -454,7 +486,7 @@
                   <p>président au Parlement de Dijon, célèbre jurisconsulte et érudit, de l'Acad.
                      fr., né à Dijon en 1673, mort en 1746</p>
                </trait>
-               <desc xml:id="CAT_000122_e26_d1">2 let. sig. au président de Ruffey; <date when="1733">1733</date>, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000122_e26_d1">2 <term ana="#document_type_9">let. sig.</term> au président de Ruffey; <date when="1733">1733</date>, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Intéressantes lettres: Dijon, 12 janvier 1733. Il le remercie de l'analyse de
                   la comédie le Complaisant et le prie de lui envoyer la tragédie de Zaire, dès
                   qu'elle sera imprimée. « Nous n'avons rien de nouveau ici qu'un divertissement qui
@@ -492,7 +524,7 @@
                      langues, premier président au Parlement de Dijon où il est né en 1709, mort en
                      1777</p>
                </trait>
-               <desc xml:id="CAT_000122_e29_d1">4 let. aut., dont 2 sig. au président de Ruffey; Dijon, <date when="1755">1755</date>-75, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="80">80</measure>
+               <desc xml:id="CAT_000122_e29_d1">4 <term ana="#document_type_8">let. aut.</term>, dont 2 sig. au président de Ruffey; Dijon, <date when="1755">1755</date>-75, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="80">80</measure>
                <note>Très-curieuses lettres : (1754 ou 1755). Il l'approuve de vouloir attirer à
                   Bourbonneles-Bains « le sr Bambini, impresario des Bouffons... Ils me connoissent
                   beaucoup les uns et les autres, surtout Mlle Tonelli et le s' Guerrieri, qui
@@ -543,7 +575,7 @@
                <trait>
                   <p>duc d'Islv, né à Limoges en 1784, mort en 1849</p>
                </trait>
-               <desc xml:id="CAT_000122_e33_d1">80 let. sig. au général Bourjolly ; Alger, <date when="1843">1er mars 1843-2 déc. 1845</date>, environ <measure type="length" unit="p" n="150">150 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
+               <desc xml:id="CAT_000122_e33_d1">80 <term ana="#document_type_9">let. sig.</term> au général Bourjolly ; Alger, <date when="1843">1er mars 1843-2 déc. 1845</date>, environ <measure type="length" unit="p" n="150">150 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
                <note>Importante correspondance inédite qui commence au moment de l'arrivée du
                   général Bourjolly en Afrique jusqu'à son départ après sa promotion de lieutenant
                   géneral. Elle donne la plus haute idée des débuts militaires et administratifs du
@@ -578,7 +610,7 @@
                <trait>
                   <p>acteur distingué de la Comédie-Française, né en 1782, mort en 1852</p>
                </trait>
-               <desc xml:id="CAT_000122_e36_d1">7 l. <term ana="#document_type_15">a. s.</term> au baron Taylor, <date when="1837">1837</date>-47, <measure type="length" unit="p" n="10.5">10 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000122_e36_d1">7 <term ana="#document_type_7">l. a. s.</term> au baron Taylor, <date when="1837">1837</date>-47, <measure type="length" unit="p" n="10.5">10 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="37" xml:id="CAT_000122_e37">
                <num type="lot">37</num>
@@ -761,7 +793,7 @@
                   <p>avocat au Parlement de Dijon, maire de Montbard, frère aîné du naturaliste, né
                      en 1703, mort en 1776</p>
                </trait>
-               <desc xml:id="CAT_000122_e51_d1">13 l. <term ana="#document_type_15">a. s.</term> au président de Ruffey; Montbard, <date when="1752">1752</date>-67, <measure type="length" unit="p" n="34">34 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000122_e51_d1">13 <term ana="#document_type_7">l. a. s.</term> au président de Ruffey; Montbard, <date when="1752">1752</date>-67, <measure type="length" unit="p" n="34">34 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>14 juin 1759. « Nous avons à Montbard M. de Bernouilly, le plus grand scavant
                   de l'Europe sans contredit; nous avons aussi M. le comte de Tressan et M.
                   Clairault. » Le président de Brosses revient en Bourgogne ; Maltète se rend auprès
@@ -820,7 +852,7 @@
                <trait>
                   <p>spirituel vaudevilliste</p>
                </trait>
-               <desc xml:id="CAT_000122_e57_d1">15 l. <term ana="#document_type_15">a. s.</term> à Sauvage, directeur de l'Odéon ; <date when="1822">1822</date>-42, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000122_e57_d1">15 <term ana="#document_type_7">l. a. s.</term> à Sauvage, directeur de l'Odéon ; <date when="1822">1822</date>-42, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Intéressante correspondance sur ses ouvrages</note>
             </item>
             <item n="58" xml:id="CAT_000122_e58">
@@ -862,7 +894,7 @@
                   <p>magistrat et littérateur distingué, auteur de nombreux écrits sur la
                      Franche-Comté, né à Pontarlier en 1735, mort à Saint-Claude en 1805</p>
                </trait>
-               <desc xml:id="CAT_000122_e60_d1">11 l. <term ana="#document_type_15">a. s.</term> au président de Ruffey; Besançon, <date when="1766">1766</date>-71, <measure type="length" unit="p" n="22">22 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000122_e60_d1">11 <term ana="#document_type_7">l. a. s.</term> au président de Ruffey; Besançon, <date when="1766">1766</date>-71, <measure type="length" unit="p" n="22">22 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Besançon, 14 juin 1766. Il ne croit pas possible une correspondance gratuite
                   entre les deux Académies de Dijon et de Besançon, parce que le fermier est en
                   perte. Il lui adresse deux inscriptions se rapportant à la Bourgogne autant qu'à
@@ -934,7 +966,7 @@
                   <p>maréchal de camp, auteur d'un roman intitulé : Le Francion ou l'AntiWhisk, mari
                      de Mlle de Crussol, qui devint duchesse de Caylus</p>
                </trait>
-               <desc xml:id="CAT_000122_e66_d1">7 let. sig. au président de Ruffey; Paris, <date when="1755">1755</date>-69, <measure type="length" unit="p" n="13.5">13 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000122_e66_d1">7 <term ana="#document_type_9">let. sig.</term> au président de Ruffey; Paris, <date when="1755">1755</date>-69, <measure type="length" unit="p" n="13.5">13 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>11 février 1755. Il lui annonce la mort de Montesquieu. « C'est une grande
                   perte pour les lettres : voilà nne place vacante à l'Académie; il n'est pas
                   difficile de donner la place de tels hommes, mais il est difficile de l'occuper
@@ -1062,7 +1094,7 @@
                <trait>
                   <p>premier président au Parlement de Dijon, né en 1694, mort en 1768.</p>
                </trait>
-               <desc xml:id="CAT_000122_e77_d1">6 let. aut., dont 3 sig. au président de Ruffey; La Marche, <date when="1762">1762</date>-67, <measure type="length" unit="p" n="18.5">18 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>, cachets à ses armes</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000122_e77_d1">6 <term ana="#document_type_8">let. aut.</term>, dont 3 sig. au président de Ruffey; La Marche, <date when="1762">1762</date>-67, <measure type="length" unit="p" n="18.5">18 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>, cachets à ses armes</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Spirituelles lettres : La Marche, 28 aout 1762. Il lui rend compte d'une séance
                   de l'Académie de Dijon, où Poncet de la Rivière a charmé, où Maret à su faire
                   l'éloge de la Méridienne, où Fournier a endormi tout le monde. « Etes-vous bien
@@ -1244,7 +1276,7 @@
                   <p>savant naturaliste, ami et collaborateur de Buffon, né à Semur (Côte-d'Or) vers
                      1720, mort en 1785</p>
                </trait>
-               <desc xml:id="CAT_000122_e93_d1">7 l. <term ana="#document_type_15">a. s.</term> au président de Ruffey; Paris, Montbard et Semur, <date when="1755">1755</date>-56, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000122_e93_d1">7 <term ana="#document_type_7">l. a. s.</term> au président de Ruffey; Paris, Montbard et Semur, <date when="1755">1755</date>-56, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Belles lettres dans lesquelles il parle de l'Académie de Dijon, de Buffon,
                   Daubenton, etc</note>
             </item>
@@ -1324,7 +1356,7 @@
                <trait>
                   <p>poète contemporain très-distingué</p>
                </trait>
-               <desc xml:id="CAT_000122_e100_d1">L. a. Conque, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Très jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000122_e100_d1">La Conque, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Très jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="101" xml:id="CAT_000122_e101">
                <num type="lot">101</num>
@@ -1337,7 +1369,7 @@
             <item n="102" xml:id="CAT_000122_e102">
                <num type="lot">102</num>
                <name type="author">Hugo (Victor)</name>
-               <desc xml:id="CAT_000122_e102_d1">Marion Delorme, scènes II à X du 3e acte, manuscrit original de la main d'un copiste, <measure type="length" unit="p" n="22">22 p.</measure> in-fol. avec une page aut. de Victor Hugo, format <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000122_e102_d1">Marion Delorme, scènes II à X du 3e acte, manuscrit original de la main d'un copiste, <measure type="length" unit="p" n="22">22 p.</measure> in-fo<term ana="#document_type_8">l. a</term>vec une page aut. de Victor Hugo, format <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Très curieux manuscrit, différant pour un certain nombre de vers du texte
                   imprimé et adopté à la première représentation ; les variantes sont indiquées sur
                   des bandes de papier épinglées en marge; la page écrite de la main de Victor Hugo
@@ -1398,7 +1430,7 @@
                   <p>poète distingué, gentilhomme de la garde du roi, né à Arc-en-Barrois en
                      1728</p>
                </trait>
-               <desc xml:id="CAT_000122_e108_d1">2 l. <term ana="#document_type_15">a. s.</term> au président de Ruffey; Arc et Troyes, <date when="1767">1767</date>-68, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000122_e108_d1">2 <term ana="#document_type_7">l. a. s.</term> au président de Ruffey; Arc et Troyes, <date when="1767">1767</date>-68, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Arc-en-Barrois, 14 déc. 1767. Il soumet à ses critiques un discours de
                   remerciements à l'Académie de Dijon : « J'espère, Monsieur, que mes faibles
                   productions trouveront grâce devant vous et devant elle, par les raisons que je
@@ -1535,7 +1567,7 @@
                   <p>intendant du Languedoc, dont il fut la terreur par ses persécutions contre les
                      protestants, cité par Mme de Sévigné, né en 1648, mort en 1724</p>
                </trait>
-               <desc xml:id="CAT_000122_e120_d1">11 let. sig. à Taffoureau de Fontaine, évêque d'Alet; Anduze et Montpellier, <date when="1704">1704-1708</date>, <measure type="length" unit="p" n="30">30 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000122_e120_d1">11 <term ana="#document_type_9">let. sig.</term> à Taffoureau de Fontaine, évêque d'Alet; Anduze et Montpellier, <date when="1704">1704-1708</date>, <measure type="length" unit="p" n="30">30 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Correspondance importante pour la guerre des Camisards et celle de la
                   succession d'Espagne; en voici une analyse som naire : Anduze, 28 avrit 1704. «
                   Cavalier a encore été battu deux fois; cependant ce n'est point encor une affaire
@@ -1608,7 +1640,7 @@
                   <p>entomologiste et médecin, littérateur, correspondant de l'Acad. des
                      Sciences</p>
                </trait>
-               <desc xml:id="CAT_000122_e124_d1">2 l. <term ana="#document_type_15">a. s.</term> au prési lent de Ruffev; <date when="1753">1753</date>-66, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000122_e124_d1">2 <term ana="#document_type_7">l. a. s.</term> au prési lent de Ruffev; <date when="1753">1753</date>-66, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Il lui annonce qu'étant médecin non lauréat, il a sauvé ses enfants de la
                   petite vérole. Il le félicite de sa lettre en vers à M. Nadault; il croit que M.
                   Michaut ferait bien de ne pas se fixer à Paris. « L'ennui prend bientôt; le dégoût
@@ -2356,7 +2388,7 @@
                      adversaire des Jansénistes, exilé en Alsace, né à Paris en 1707, mort en
                      1780.</p>
                </trait>
-               <desc xml:id="CAT_000122_e194_d1">5 l. <term ana="#document_type_15">a. s.</term> dont 2 à la 3e pers. au président de Ruffey; Dijon. Fontaine-Française et Paris, <date when="1765">1765</date>-68, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="34">34</measure>
+               <desc xml:id="CAT_000122_e194_d1">5 <term ana="#document_type_7">l. a. s.</term> dont 2 à la 3e pers. au président de Ruffey; Dijon. Fontaine-Française et Paris, <date when="1765">1765</date>-68, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="34">34</measure>
             </item>
             <item n="195" xml:id="CAT_000122_e195">
                <num type="lot">195</num>
@@ -2515,7 +2547,7 @@
                <trait>
                   <p>célèbre littérateur et poète français contemporain, né à Strasbourg en 1827</p>
                </trait>
-               <desc xml:id="CAT_000122_e207_d1"><term ana="#document_type_8">L. a.</term> Plus Belle des Couleurs, sonnet aut. sig., <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000122_e207_d1">La Plus Belle des Couleurs, sonnet <term ana="#document_type_15">aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="208" xml:id="CAT_000122_e208">
                <num type="lot">208</num>
@@ -2710,7 +2742,7 @@
                      d'enluminer l'estampe posée sur toile, publié à Londres; Art de composer les
                      fusées, pluies de feu et serpenteaux, né à Paris vers 1715</p>
                </trait>
-               <desc xml:id="CAT_000122_e225_d1">3 let. aut., dont 2 sig. au président de Ruffey; <date when="1755">1755</date>-59, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000122_e225_d1">3 <term ana="#document_type_8">let. aut.</term>, dont 2 sig. au président de Ruffey; <date when="1755">1755</date>-59, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>1755. « On donne depuis 8 jours une pièce aux Italiens en deux actes, intitulée
                   le Deuit anglois. » Cette pièce de Rochon de Chabannes est mal versifiée et
                   rappelle le Malade imaginaire. On vient de publier un Voltairianisme en deux

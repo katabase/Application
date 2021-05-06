@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000116">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000116</title>
+            <title>RDA, N°112 (Mars 1887)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">113</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>113</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -827,7 +859,7 @@
                   <p>duc de Berry et de Guyenne, fils de Charles VII et frère de Louis XI,
                      instigateur de la guerre du Bien public, né en 1446, mort en 1472</p>
                </trait>
-               <desc xml:id="CAT_000116_e67_d1">Let. sig.. sur vélin; <term ana="#document_type_8">L. a.</term> Rochelle, <date when="1469-07-10">10 juillet 1469</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>, cachet. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
+               <desc xml:id="CAT_000116_e67_d1"><term ana="#document_type_9">Let. sig.</term>. sur vélin; La Rochelle, <date when="1469-07-10">10 juillet 1469</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl.</measure>, cachet. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
                <note>Précieux document historique. Renouvellement et confirmation de son alliance
                   avec le duc de Bretagne, en reconnaissance des services que celui-ci lui a rendus.
                   Il prête serment « sur nostre foy et honneur en parolle de prince, sur les
@@ -1817,7 +1849,7 @@
                <trait>
                   <p>graveur très-distingué du XVIIIe siècle, élève de Devosge, né à Besançon</p>
                </trait>
-               <desc xml:id="CAT_000116_e179_d1">3. l. <term ana="#document_type_15">a. s.</term> au baron de Joursanvault; Dijon, <date when="1777">1777</date>-80, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000116_e179_d1">3. <term ana="#document_type_7">l. a. s.</term> au baron de Joursanvault; Dijon, <date when="1777">1777</date>-80, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Correspondance intéressante relative à ses travaux artistiques, à ceux de
                   Devosge et du baron de Joursanvault</note>
             </item>
@@ -1995,7 +2027,7 @@
                   <p>stathouder de Hollande, fils de Guillaume-le-Taciturne, né à Delit en 1584,
                      mort en 1647</p>
                </trait>
-               <desc xml:id="CAT_000116_e197_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Constantin Huyghens ; L. a. Have, <date when="1642">1642</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000116_e197_d1"><term ana="#document_type_4">Pièce sig</term>., sig. aussi par Constantin Huyghens ; La Have, <date when="1642">1642</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Approbation du legs fait par Piéter Danner à la famille van Hollam</note>
             </item>
             <item n="198" xml:id="CAT_000116_e198">
@@ -2904,7 +2936,7 @@
                   <p>fils du garde des chartes sous Charles V, évêque de Poitiers en 1403, de Paris
                      en 1409, chancelier du duc de Berry, mort en 1420</p>
                </trait>
-               <desc xml:id="CAT_000116_e287_d1">Deux quittances sur vélin; Paris, <date when="1402">24 janvier-11 juin 1402</date>, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure>. cachets.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000116_e287_d1">Deux <term ana="#document_type_12">quitt</term>ances sur vélin; Paris, <date when="1402">24 janvier-11 juin 1402</date>, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure>. cachets.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="288" xml:id="CAT_000116_e288">
                <num type="lot">288</num>

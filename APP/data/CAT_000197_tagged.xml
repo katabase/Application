@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000197">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000197</title>
+            <title>RDA, N°167 (Juin 1894)</title>
             <respStmt>
-               <persName ref="#COL_000001">Matthias Gille Levenson</persName>
+               <persName ref="#COL_000006">Matthias Gille Levenson</persName>
                <resp>
                   <date when="2020">2020</date>
                </resp>
@@ -22,13 +22,13 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">167</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris,8 quai du Louvre</pubPlace>
-               <date when="1893-02">Juin 1894</date>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>167</num>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
+               <date when="1894-06">Juin 1894</date>
             </bibl>
             <listEvent>
                <event>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -211,7 +243,7 @@
                   <p>poète et littérateur contemporain, auteur des Poèmes de Procence, né à Toulon
                      en 1848.</p>
                </trait>
-               <desc xml:id="CAT_000197_e1_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Garde, près Toulon, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000197_e1_d1"><term ana="#document_type_7">L. a. s.</term>; La Garde, près Toulon, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="2" xml:id="CAT_000197_e2">
                <num type="lot">2</num>
@@ -386,7 +418,7 @@
                   <p>brave général de la République et de l'Empire, né à Fontenay-le-Comte (Vendée)
                      en 1769, mort en 1832.</p>
                </trait>
-               <desc xml:id="CAT_000197_e18_d1">12 let. aut., dont 11 sig. à son compatriote et ami Ch. Cochon de Lap¬ parent, ministre de la police, ancien conventionnel; Armée d'Italie, <date when="1796">an V (1796-1797</date>), <measure type="length" unit="p" n="29">29 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Une de ces lettres est incomplète de la fin.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000197_e18_d1">12 <term ana="#document_type_8">let. aut.</term>, dont 11 sig. à son compatriote et ami Ch. Cochon de Lap¬ parent, ministre de la police, ancien conventionnel; Armée d'Italie, <date when="1796">an V (1796-1797</date>), <measure type="length" unit="p" n="29">29 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Une de ces lettres est incomplète de la fin.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Très intéressante correspondance toute relative aux opérations de l'armée
                   d'Italie, sur lesquelles il lui donne des renseignements très détaillés.</note>
             </item>
@@ -524,7 +556,7 @@
                <trait>
                   <p>roi de Hollande, père de Napoléon III.</p>
                </trait>
-               <desc xml:id="CAT_000197_e32_d1"><term ana="#document_type_7">L. a. s.</term> (à l'impératrice Joséphine); (L. a. Haye), <date when="1807-05-20">20 mai 1807</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000197_e32_d1"><term ana="#document_type_7">L. a. s.</term> (à l'impératrice Joséphine); (La Haye), <date when="1807-05-20">20 mai 1807</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Touchante épitre toute relative à son fils Napoléon-Charles, qui avait succombé
                   au croup à l'âge de 5 ans, le 5 mai 1807. « Je n'ai qu'une pensée, qu'une
                   inquiétude depuis la fatale journée du 5 mai et c'est la santé, la conservation de
@@ -581,12 +613,12 @@
             <item n="37" xml:id="CAT_000197_e37">
                <num type="lot">37</num>
                <name type="author">Boulanger (Louis)</name>
-               <desc xml:id="CAT_000197_e37_d1"><term ana="#document_type_7">L. a. s</term>ainte Vierge tenant le Christ dans ses bras après la descente de croix, dessin à la plume sig. Louis B, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000197_e37_d1">La sainte Vierge tenant le Christ dans ses bras après la descente de croix, dessin à la plume sig. Louis B, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="38" xml:id="CAT_000197_e38">
                <num type="lot">38</num>
                <name type="author">Boulanger (Louis)</name>
-               <desc xml:id="CAT_000197_e38_d1"><term ana="#document_type_8">L. a.</term> Crêche, dessin à la plume, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000197_e38_d1">La Crêche, dessin à la plume, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="39" xml:id="CAT_000197_e39">
                <num type="lot">39</num>
@@ -777,7 +809,7 @@
                <num type="lot">58</num>
                <name type="author">Cicéri (Pierre-Luc-Ch.)</name>
                <trait>
-                  <p>célèbre peintre et aquafortiste, né à Saint- Cloud en 1782, mort en 1868.</p>
+                  <p>célèbre peintre et aquafortiste, né à Saint-Cloud en 1782, mort en 1868.</p>
                </trait>
                <desc xml:id="CAT_000197_e58_d1">Dessin original au lavis de couleur; <date when="1838">1838</date>, <measure type="format" unit="f" ana="#document_format_132">in-32 obl.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
@@ -907,7 +939,7 @@
                   <p>le célébre chansonnier lillois, auteur du P'tit Quinquin, né en 1820, mort
                      réceminent.</p>
                </trait>
-               <desc xml:id="CAT_000197_e72_d1">5 l. <term ana="#document_type_15">a. s.</term>; Lille, <date when="1889">1889</date>-91, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. Belles lettres.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000197_e72_d1">5 <term ana="#document_type_7">l. a. s.</term>; Lille, <date when="1889">1889</date>-91, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. Belles lettres.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="73" xml:id="CAT_000197_e73">
                <num type="lot">73</num>
@@ -1282,7 +1314,7 @@
                   <p>constituant, évêque constitutionnel de Paris, qui abjura solennellement, né à
                      Thann (Alsace) en 1727, guillotiné avec les Hébertistes le 14 avril 1794.</p>
                </trait>
-               <desc xml:id="CAT_000197_e109_d1">1° l. <term ana="#document_type_15">a. s.</term> (à Bavelaer syudic de Schelestadt); Porrentruy (Suisse), <date when="1786-12-20">20 déc. 1786</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><desc xml:id="CAT_000197_e109_d2">2° <measure type="length" unit="p" n="8">8 pages</measure> de notes concernant Gobel et les Rohan, évêques de Strasbourg.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000197_e109_d1">1° <term ana="#document_type_7">l. a. s.</term> (à Bavelaer syudic de Schelestadt); Porrentruy (Suisse), <date when="1786-12-20">20 déc. 1786</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><desc xml:id="CAT_000197_e109_d2">2° <measure type="length" unit="p" n="8">8 pages</measure> de notes concernant Gobel et les Rohan, évêques de Strasbourg.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Très belle lettre écrite comme évêque de Lydda. Protestation contre un arrêt du
                   conseil d'Etat du 26 août 1786 (transcrit à la fin de la lettre) supprimant
                   l'abbaye des Augustins de Marbach (ou Murbach) « pour en transférer les biens aux
@@ -1299,7 +1331,7 @@
                <trait>
                   <p>les célèbres écrivains.</p>
                </trait>
-               <desc xml:id="CAT_000197_e110_d1">1° l. <term ana="#document_type_15">a. s.</term> d'Edmond, 1/3 de p. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-2° l. <term ana="#document_type_15">a. s.</term> de Jules, <measure type="length" unit="p" n="0.5">1/2 p.</measure> in-8.-Ou a joint leur portrait-charge, par Hadol, in- fol.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000197_e110_d1">1° <term ana="#document_type_7">l. a. s.</term> d'Edmond, 1/3 de p. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure>-2° <term ana="#document_type_7">l. a. s.</term> de Jules, <measure type="length" unit="p" n="0.5">1/2 p.</measure> in-8.-Ou a joint leur portrait-charge, par Hadol, in- fol.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="111" xml:id="CAT_000197_e111">
                <num type="lot">111</num>
@@ -1310,7 +1342,7 @@
                </trait>
                <desc xml:id="CAT_000197_e111_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1747-02-25">25 février 1747</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Intéressante lettre. L'abbé Lemierre n'a pu faire imprimer les homélies de
-                  Saint- Chrysostome sur Saint-Jean ; l'avocat Cochin vient de mourir. Il souhaite
+                  Saint-Chrysostome sur Saint-Jean ; l'avocat Cochin vient de mourir. Il souhaite
                   la paix extérieure et la paix religieuse. Les oeuvres posthumes du président
                   Bouhier viennent de paraître. Il désirerait savoir si le sieur de Thémiseuil de
                   Saint-Hyacinthe, s'appelait Cordier. (On sait que cet Orléanais passait pour le
@@ -1330,7 +1362,7 @@
                   <p>célèbre conventionnel, évêque de Blois, de l'Institut, né à Vého, près
                      Lunéville, en 1750, mort en 1831.</p>
                </trait>
-               <desc xml:id="CAT_000197_e113_d1">6 l. <term ana="#document_type_15">a. s.</term> à Mme Charlotte Pichler, à Vienne (Autriche); Paris, <date when="1815">1815-1826</date>, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très intéressante correspondance politique et littéraire.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000197_e113_d1">6 <term ana="#document_type_7">l. a. s.</term> à Mme Charlotte Pichler, à Vienne (Autriche); Paris, <date when="1815">1815-1826</date>, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très intéressante correspondance politique et littéraire.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
             </item>
             <item n="114" xml:id="CAT_000197_e114">
                <num type="lot">114</num>
@@ -1422,7 +1454,7 @@
                <trait>
                   <p>roi de France.</p>
                </trait>
-               <desc xml:id="CAT_000197_e122_d1">Let. sig. à M. de <term ana="#document_type_8">L. a.</term> Chesnaye; Paris, <date when="1575-09-16">16 sept. 1575</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jaunie sur les bords.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000197_e122_d1"><term ana="#document_type_9">Let. sig.</term> à M. de La Chesnaye; Paris, <date when="1575-09-16">16 sept. 1575</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jaunie sur les bords.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Pièce historique où il lui mande que son frère, le duc d'Alençon, a quitté
                   Paris, la veille, à 6 heures du soir, et qu'on ne sait où il est allé. Il exprime
                   son regret de cette fuite et lui donne l'ordre de se mettre à la recherche de ce
@@ -1492,7 +1524,7 @@
             <item n="129" xml:id="CAT_000197_e129">
                <num type="lot">129</num>
                <name type="author">Hugo (Victor)</name>
-               <desc xml:id="CAT_000197_e129_d1">Marion Delorme, scènes II à X du 3e acte, manuscrit original de la main d'un copiste, <measure type="length" unit="p" n="22">22 p.</measure> in-fol. avec une page aut. de Victor Hugo, format <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000197_e129_d1">Marion Delorme, scènes II à X du 3e acte, manuscrit original de la main d'un copiste, <measure type="length" unit="p" n="22">22 p.</measure> in-fo<term ana="#document_type_8">l. a</term>vec une page aut. de Victor Hugo, format <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Très curieux manuscrit, différant pour un certain nombre de vers du texte
                   imprimé et adopté à la première représentation; les variantes sont indiquées sur
                   des bandes de papier épinglées en marge; la page écrite de la main de Victor Hugo
@@ -1576,7 +1608,7 @@
                      1795, morte en 1863. Elle savait peindre, dessiner et sculpter; elle servait de
                      secrétaire à son mari, imitant à la fois son style et son écriture.</p>
                </trait>
-               <desc xml:id="CAT_000197_e137_d1">6 l. <term ana="#document_type_15">a. s.</term>, écrites au nom d'Alphonse de Lamartine, à M. Dudley-Mann, colonel américain; <date when="1853">1853-1854</date>, <measure type="length" unit="p" n="20">20 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et</desc><note>in-8. Déchirure à une de ces lettres atteignant le texte. 35 » Très
+               <desc xml:id="CAT_000197_e137_d1">6 <term ana="#document_type_7">l. a. s.</term>, écrites au nom d'Alphonse de Lamartine, à M. Dudley-Mann, colonel américain; <date when="1853">1853-1854</date>, <measure type="length" unit="p" n="20">20 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et</desc><note>in-8. Déchirure à une de ces lettres atteignant le texte. 35 » Très
                   intéressantes lettres, en partie relatives à une étude sur la Vie de Washington,
                   par Lamartine.</note>
             </item>
@@ -1599,7 +1631,7 @@
                      et d'Artois; il passe pour être l'inventeur de l'artillerie de campagne, né en
                      Italie vers 1510, mort en 1579.</p>
                </trait>
-               <desc xml:id="CAT_000197_e139_d1">3 let sig. avec la souscript. aut., en français, à M. de Capres; Arras, <date when="1570">1570</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000197_e139_d1">3 <term ana="#document_type_9">let. sig.</term> avec la souscript. aut., en français, à M. de Capres; Arras, <date when="1570">1570</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="140" xml:id="CAT_000197_e140">
                <num type="lot">140</num>
@@ -1751,7 +1783,7 @@
                <num type="lot">152</num>
                <name type="author">Loti (Julien Viaud dit Pierre)</name>
                <trait>
-                  <p>célèbre écrivain contemporain, de l'Acad fr</p>
+                  <p>célèbre écrivain contemporain, de l'Acad fr.</p>
                </trait>
                <desc xml:id="CAT_000197_e152_d1"><term ana="#document_type_7">L. a. s.</term>; Formidable, 25 juin, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
@@ -1798,7 +1830,7 @@
                      Jacques de Savoie, comte de Romont, puis de François de Bourbon, comte de
                      Vendôme, morte en 1546.</p>
                </trait>
-               <desc xml:id="CAT_000197_e156_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin; L. a. Fère (Aisne), <date when="1510-10-14">14 oct. 1510</date>: <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000197_e156_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin; La Fère (Aisne), <date when="1510-10-14">14 oct. 1510</date>: <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Quittance au sieur de Gapennes (Somme), de 800 livres tournois qu'il lui devait
                   pour la levée de la terre de Bony (Aisne).</note>
             </item>
@@ -2195,7 +2227,7 @@
                <desc xml:id="CAT_000197_e197_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1803-10-24">1er brumaire an XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Belle lettre relative à sa réception à l'Institut. « La nature m'a refusé la
                   facilité de la parole et la faiblesse de ma voix ajoute à cet inconvénient. M.
-                  Regnaud de Saint- Jean d'Angely me rendra le service de lire mon discours.»</note>
+                  Regnaud de Saint-Jean d'Angely me rendra le service de lire mon discours.»</note>
             </item>
             <item n="198" xml:id="CAT_000197_e198">
                <num type="lot">198</num>
@@ -2561,7 +2593,7 @@
                <num type="lot">232</num>
                <name type="author">Vaissète (Dom.-Jos.)</name>
                <trait>
-                  <p>célèbre historien de la Congrégation de Saint- Maur, auteur d'une Histoire
+                  <p>célèbre historien de la Congrégation de Saint-Maur, auteur d'une Histoire
                      générale du Languedoc, né à Gaillac (Tarn) en 1685, mort en 1756.</p>
                </trait>
                <desc xml:id="CAT_000197_e232_d1"><term ana="#document_type_7">L. a. s.</term> à dom Jacques Portal, à l'abbaye de Saint Denis; <date when="1746">Paris. 10 juil. 1746</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
@@ -2968,7 +3000,7 @@
             <item n="273" xml:id="CAT_000197_e273">
                <num type="lot">273</num>
                <name type="author">Restauration</name>
-               <desc xml:id="CAT_000197_e273_d1">2 let. sig. du baron de Vitrolles au baron Edouard Monnier; <date when="1814-04-27">27-29 avril 1814</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000197_e273_d1">2 <term ana="#document_type_9">let. sig.</term> du baron de Vitrolles au baron Edouard Monnier; <date when="1814-04-27">27-29 avril 1814</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Curieuses lettres relatives aux « employés de la maison Bonaparte » et à « la
                   disparition des emblèmes, chiffres et armoiries qui ont caractérisé le
                   gouvernement de Bonaparte.»</note>
@@ -2982,7 +3014,7 @@
             <item n="275" xml:id="CAT_000197_e275">
                <num type="lot">275</num>
                <name type="author">Révolution. -FERMIERS-GÉNÉRAUX</name>
-               <desc xml:id="CAT_000197_e275_d1">2 <term ana="#document_type_4">pièces.</term>-1° L. a. s. de Clément de Cugnot de l'Epinay (fermier-général, guillotiné le 19 floréal an II); 1788, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-2° Let. sig. de J.-J. de Brac de Laperrière, Guillaume Couturier. Clément de Laage, E.-M. de L. a. Haye, A.-L.La¬ voisier, J.-L. Loiseau-Béranger, G.-G. Montecloux, Jacq. Paulze, F. Puissant, A.-V. de Saint-Amand et J.-Cl. Douet (fermiers-généraux guillotinés les 19 et 25 floréal an II), à Emmery, député de Metz à l'Assemblée nationale; <date when="1791-03-21">21 mars 1791</date>, 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000197_e275_d1">2 <term ana="#document_type_4">pièces.</term>-1° L. a. s. de Clément de Cugnot de l'Epinay (fermier-général, guillotiné le 19 floréal an II); 1788, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-2° Let. sig. de J.-J. de Brac de Laperrière, Guillaume Couturier. Clément de Laage, E.-M. de La Haye, A.-L.La¬ voisier, J.-L. Loiseau-Béranger, G.-G. Montecloux, Jacq. Paulze, F. Puissant, A.-V. de Saint-Amand et J.-Cl. Douet (fermiers-généraux guillotinés les 19 et 25 floréal an II), à Emmery, député de Metz à l'Assemblée nationale; <date when="1791-03-21">21 mars 1791</date>, 1 p. in-4.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Importante lettre. Ils demandent que l'exécution des décrets de l'Assemblée na¬
                   tionale relatifs à la suppression de la Ferme générale soit différée jusqu'au 1er
                   mai 1791..</note>
@@ -3151,7 +3183,7 @@
                <trait>
                   <p>. 6 lettres de députés du Nord à l'Assemblée nationale de 1789.</p>
                </trait>
-               <desc xml:id="CAT_000197_e294_d1">1° 2 l. a. s. de Jacq.-Jos. Besse; 1791-1816, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-2° <term ana="#document_type_7">L. a. s.</term> de Franç.-Jos. Bouchette; an XIII, 2 p. 2/3 in-4.-3° P. a. s. de Marie-Jos. Bracq; Paris, <date when="1790-02-28">28 février 1790</date>, 1 p. in-4.-4° <term ana="#document_type_7">L. a. s.</term> de Pierre-J. Chombart; Herlies, 4 messidor an XIII, 1 p. 3/4 in-4.-5° <term ana="#document_type_7">L. a. s.</term> de Darche; 5 floréal an XI, 2 p. 1/2 in-4. Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000197_e294_d1">1° 2 <term ana="#document_type_7">l. a. s.</term> de Jacq.-Jos. Besse; 1791-1816, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-2° L. a. s. de Franç.-Jos. Bouchette; an XIII, 2 p. 2/3 in-4.-3° P. a. s. de Marie-Jos. Bracq; Paris, <date when="1790-02-28">28 février 1790</date>, 1 p. in-4.-4° L. a. s. de Pierre-J. Chombart; Herlies, 4 messidor an XIII, 1 p. 3/4 in-4.-5° L. a. s. de Darche; 5 floréal an XI, 2 p. 1/2 in-4. Curieux dossier.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="295" xml:id="CAT_000197_e295">
                <num type="lot">295</num>

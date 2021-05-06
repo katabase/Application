@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000163">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000163</title>
+            <title>Vente Etienne Charavay, 24 mars 1879</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -21,14 +21,14 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
+            <bibl ana="RDA">
                <title>Catalogue d'une belle collection de LETTRES AUTOGRAPHES ET DE DOCUMENTS HISTORQUES SUR PARIS ET LES PROVINCES</title>
                <editor>Etienne Charavay</editor>
                <publisher>Librairie Charavay frères</publisher>
                <publisher>Frédéric Naylor</publisher>
                <pubPlace>Paris</pubPlace>
                <pubPlace>Londres</pubPlace>
-               <date>1879</date>
+               <date when="1879">1879</date>
             </bibl>
             <listEvent>
                <event>
@@ -55,7 +55,8 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+
+
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +145,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -196,7 +197,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -211,12 +236,12 @@
             <item n="2" xml:id="CAT_000163_e2">
                <num type="lot">2</num>
                <name type="author">Académie française</name>
-               <desc xml:id="CAT_000163_e2_d1">9 l. <term ana="#document_type_15">a. s.</term></desc><note>Andrieux, Barante, Cuvillier-Fleury,
+               <desc xml:id="CAT_000163_e2_d1">9 <term ana="#document_type_7">l. a. s.</term></desc><note>Andrieux, Barante, Cuvillier-Fleury,
 						Doucet, Dufaure, Jay, Nisard, Pongerville et Sardou.</note>
             </item>
             <item n="3" xml:id="CAT_000163_e3">
                <num type="lot">3</num>
-               <name type="author">Acton (Jos.),</name>
+               <name type="author">Acton (Jos.)</name>
                <trait>
                   <p>premier ministre de la reine Caroline
 						de Naples, fameux par sa haine contre la France, ami de l'ambassadeur
@@ -228,7 +253,7 @@
             <item n="4" xml:id="CAT_000163_e4">
                <num type="lot">4</num>
                <name type="author">Antin (L.-Ant. de Pardaillan de Gondrin, duc
-						d'),</name>
+						d')</name>
                <trait>
                   <p>fils de Madame de Montespan, surintendant des
 						bâtiments du Roi, qui fut le type du parfait courtisan.</p>
@@ -241,7 +266,7 @@
             </item>
             <item n="5" xml:id="CAT_000163_e5">
                <num type="lot">5</num>
-               <name type="author">Baudelaire (Ch.),</name>
+               <name type="author">Baudelaire (Ch.)</name>
                <trait>
                   <p>l'auteur des Fleurs du
 					Mal.</p>
@@ -249,7 +274,7 @@
                <desc xml:id="CAT_000163_e5_d1">Dessin original à la plume, représentant une femme, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="6" xml:id="CAT_000163_e6">
                <num type="lot">6</num>
-               <name type="author">Beauharnais (Eugène),</name>
+               <name type="author">Beauharnais (Eugène)</name>
                <trait>
                   <p>vice-roi d'Italie.</p>
                </trait>
@@ -262,7 +287,7 @@
                </item>
             <item n="7" xml:id="CAT_000163_e7">
                <num type="lot">7</num>
-               <name>eaupuy (Armand-Michel de),</name>
+               <name>eaupuy (Armand-Michel de)</name>
                <trait>
                   <p>célèbre général républicain, tué en 1796</p>
                </trait>
@@ -280,12 +305,12 @@
             </item>
             <item n="9" xml:id="CAT_000163_e9">
                <num type="lot">9</num>
-               <name type="author">Béranger (P.-J. de),</name>
+               <name type="author">Béranger (P.-J. de)</name>
                <trait>
                   <p>le célèbre
 					chansonnier.</p>
                </trait>
-               <desc xml:id="CAT_000163_e9_d1">3 l. <term ana="#document_type_15">a. s.</term> à Ledoux, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Ces lettres sont de
+               <desc xml:id="CAT_000163_e9_d1">3 <term ana="#document_type_7">l. a. s.</term> à Ledoux, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Ces lettres sont de
 						sa jeunesse, de 1814 à 1816. Dans une d'elles Béranger invite son ami à
 						dîner et ajoute : « Il faut que les gens qui sont de leur pays se voient
 						plus que jamais, en dépit des Français qui se font étrangers.»</note>
@@ -310,7 +335,7 @@
             <item n="12" xml:id="CAT_000163_e12">
                <num type="lot">12</num>
                <name type="author">Berri (Marie-Louise-Élisabeth d'ORLÉANS, duchesse
-						de),</name>
+						de)</name>
                <trait>
                   <p>fille du Régent, tristement fameuse par ses
 						débauches.</p>
@@ -318,7 +343,7 @@
                <desc xml:id="CAT_000163_e12_d1"><term ana="#document_type_9">L. s.</term> au trésorier général de sa maison; Fontainebleau, <date when="1714-09-24">24 sept. 1714</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc></item>
             <item n="13" xml:id="CAT_000163_e13">
                <num type="lot">13</num>
-               <name type="author">Biron (Armand de GONTaut, baron de),</name>
+               <name type="author">Biron (Armand de GONTaut, baron de)</name>
                <trait>
                   <p>maréchal de
 						France, un des plus illustres guerriers de son temps, tué* au siège
@@ -330,7 +355,7 @@
             </item>
             <item n="14" xml:id="CAT_000163_e14">
                <num type="lot">14</num>
-               <name type="author">Bolivar (Simon),</name>
+               <name type="author">Bolivar (Simon)</name>
                <trait>
                   <p>l'illustre dictateur de la
 						Bolivie.</p>
@@ -338,7 +363,7 @@
                <desc xml:id="CAT_000163_e14_d1"><term ana="#document_type_9">L. s.</term>, avec 14 lignes autographes, au docteur Stanislas Veragua; Guayaquil, <date when="1829-09-10">10 sept. 1829</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle et rare lettre.</desc></item>
             <item n="15" xml:id="CAT_000163_e15">
                <num type="lot">15</num>
-               <name type="author">Bonaparte (Lucien),</name>
+               <name type="author">Bonaparte (Lucien)</name>
                <trait>
                   <p>frère de Napoléon, membre de
 						l'Acad. fr.</p>
@@ -350,7 +375,7 @@
             </item>
             <item n="16" xml:id="CAT_000163_e16">
                <num type="lot">16</num>
-               <name type="author">Bossuet (J.-B.),</name>
+               <name type="author">Bossuet (J.-B.)</name>
                <trait>
                   <p>l'illustre évêque de
 					Meaux.</p>
@@ -370,26 +395,26 @@
             </item>
             <item n="18" xml:id="CAT_000163_e18">
                <num type="lot">18</num>
-               <name type="author">Bouillon (Élisabeth de Nassau, duchesse de),</name>
+               <name type="author">Bouillon (Élisabeth de Nassau, duchesse de)</name>
                <trait>
                   <p>une des
 						femmes les plus remarquables de son temps, mère du grand
 					Turenne.</p>
                </trait>
-               <desc xml:id="CAT_000163_e18_d1"><term ana="#document_type_7">L. a. s.</term> au maréchal de L. a. Force; Sedan, <date when="1632-01-13">13 janv. 1632</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets et soies. Très légère déchirure.</desc><note>Très
+               <desc xml:id="CAT_000163_e18_d1"><term ana="#document_type_7">L. a. s.</term> au maréchal de La Force; Sedan, <date when="1632-01-13">13 janv. 1632</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets et soies. Très légère déchirure.</desc><note>Très
 						intéressante lettre où elle lui recommande les affaires de ses fils. Curieux
 						détails.</note>
             </item>
             <item n="19" xml:id="CAT_000163_e19">
                <num type="lot">19</num>
-               <name type="author">Campenon (V.),</name>
+               <name type="author">Campenon (V.)</name>
                <trait>
                   <p>poète, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000163_e19_d1">1° <term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1817-01-24">24 janv. 1817</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000163_e19_d2">2° Au saule de Ducis, <term ana="#document_type_3">pièce de vers aut.</term>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="20" xml:id="CAT_000163_e20">
                <num type="lot">20</num>
-               <name type="author">Campistron (Jean GALBERt de),</name>
+               <name type="author">Campistron (Jean GALBERt de)</name>
                <trait>
                   <p>auteur dramatique,
 						membre de l'Acad. fr.</p>
@@ -397,7 +422,7 @@
                <desc xml:id="CAT_000163_e20_d1"><term ana="#document_type_8">L. aut.</term>, sig. par le duc de Vendôme (dont Campistron était secrétaire); <date when="1706-02-22">22 fév. 1706</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="21" xml:id="CAT_000163_e21">
                <num type="lot">21</num>
-               <name type="author">Canova (Ant.),</name>
+               <name type="author">Canova (Ant.)</name>
                <trait>
                   <p>le grand sculpteur
 					italien.</p>
@@ -416,7 +441,7 @@
             </item>
             <item n="23" xml:id="CAT_000163_e23">
                <num type="lot">23</num>
-               <name type="author">Catherine de Bourbon,</name>
+               <name type="author">Catherine de Bourbon</name>
                <trait>
                   <p>princesse de Navarre, duchesse
 						de Bar, soeur de Henri IV, célèbre par ses galanteries et son attachement à
@@ -431,7 +456,7 @@
             </item>
             <item n="24" xml:id="CAT_000163_e24">
                <num type="lot">24</num>
-               <name type="author">Cavaignac (Eugène),</name>
+               <name type="author">Cavaignac (Eugène)</name>
                <trait>
                   <p>célèbre général, chef du pouvoir
 						exécutif en 1848.</p>
@@ -439,7 +464,7 @@
                <desc xml:id="CAT_000163_e24_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1853-04-09">9 avril 1853</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie pièce.</desc></item>
             <item n="25" xml:id="CAT_000163_e25">
                <num type="lot">25</num>
-               <name type="author">Charles VI,</name>
+               <name type="author">Charles VI</name>
                <trait>
                   <p>roi de France.</p>
                </trait>
@@ -451,7 +476,7 @@
             <item n="26" xml:id="CAT_000163_e26">
                <num type="lot">26</num>
                <name type="author">Chateaurenault (Fr.-L. ROUSSElet, comte
-						de),</name>
+						de)</name>
                <trait>
                   <p>vice-amiral et maréchal de France, un des plus
 						célèbres marins du siècle de Louis XIV.</p>
@@ -461,7 +486,7 @@
             </item>
             <item n="27" xml:id="CAT_000163_e27">
                <num type="lot">27</num>
-               <name type="author">Chrestienne de France,</name>
+               <name type="author">Chrestienne de France</name>
                <trait>
                   <p>duchesse de Savoie, fille de
 						Henri IV.</p>
@@ -469,7 +494,7 @@
                <desc xml:id="CAT_000163_e27_d1"><term ana="#document_type_7">L. a. s.</term> à Caron ; Millefleurs, <date when="1636-07-11">11 juillet 1636</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie pièce.</desc></item>
             <item n="28" xml:id="CAT_000163_e28">
                <num type="lot">28</num>
-               <name type="author">Clairon (Hipp.-Claire de La Tude, dite),</name>
+               <name type="author">Clairon (Hipp.-Claire de La Tude, dite)</name>
                <trait>
                   <p>la célèbre
 						tragédienne.</p>
@@ -481,7 +506,7 @@
             </item>
             <item n="29" xml:id="CAT_000163_e29">
                <num type="lot">29</num>
-               <name type="author">Daschkow (Catherina-Romanofna, princesse),</name>
+               <name type="author">Daschkow (Catherina-Romanofna, princesse)</name>
                <trait>
                   <p>célèbre
 						favorite de Catherine II, à l'avènement de laquelle elle contribua
@@ -501,7 +526,7 @@
             </item>
             <item n="31" xml:id="CAT_000163_e31">
                <num type="lot">31</num>
-               <name type="author">Davy (sir Humphry),</name>
+               <name type="author">Davy (sir Humphry)</name>
                <trait>
                   <p>le grand chimiste
 					anglais.</p>
@@ -511,7 +536,7 @@
             </item>
             <item n="32" xml:id="CAT_000163_e32">
                <num type="lot">32</num>
-               <name type="author">Delacroix (Eugène),</name>
+               <name type="author">Delacroix (Eugène)</name>
                <trait>
                   <p>le grand peintre.</p>
                </trait>
@@ -520,7 +545,7 @@
             </item>
             <item n="33" xml:id="CAT_000163_e33">
                <num type="lot">33</num>
-               <name type="author">Desessarts (Denis DEchANet, dit),</name>
+               <name type="author">Desessarts (Denis DEchANet, dit)</name>
                <trait>
                   <p>célèbre acteur du
 						Théâtre-Français.</p>
@@ -531,7 +556,7 @@
             </item>
             <item n="34" xml:id="CAT_000163_e34">
                <num type="lot">34</num>
-               <name type="author">Du Boccage (Marie-Anne Le PAge),</name>
+               <name type="author">Du Boccage (Marie-Anne Le PAge)</name>
                <trait>
                   <p>célèbre femmepoète,
 						née à Rouen.</p>
@@ -541,7 +566,7 @@
             </item>
             <item n="35" xml:id="CAT_000163_e35">
                <num type="lot">35</num>
-               <name type="author">Dubois (le cardinal Guillaume),</name>
+               <name type="author">Dubois (le cardinal Guillaume)</name>
                <trait>
                   <p>fameux ministre du
 						Régent.</p>
@@ -551,7 +576,7 @@
             </item>
             <item n="36" xml:id="CAT_000163_e36">
                <num type="lot">36</num>
-               <name type="author">Dupré (Jules),</name>
+               <name type="author">Dupré (Jules)</name>
                <trait>
                   <p>le célèbre paysagiste.</p>
                </trait>
@@ -560,7 +585,7 @@
             </item>
             <item n="37" xml:id="CAT_000163_e37">
                <num type="lot">37</num>
-               <name type="author">Duret (Fr.),</name>
+               <name type="author">Duret (Fr.)</name>
                <trait>
                   <p>célèbre sculpteur, membre de
 						l'Institut.</p>
@@ -571,7 +596,7 @@
             </item>
             <item n="38" xml:id="CAT_000163_e38">
                <num type="lot">38</num>
-               <name type="author">Eon de Beaumont (la chevalière d'),</name>
+               <name type="author">Eon de Beaumont (la chevalière d')</name>
                <trait>
                   <p>personnage fameux
 						par l'incertitude de son sexe.</p>
@@ -583,7 +608,7 @@
             </item>
             <item n="39" xml:id="CAT_000163_e39">
                <num type="lot">39</num>
-               <name type="author">Fénelon (Fr. de Salignac de La Mothe),</name>
+               <name type="author">Fénelon (Fr. de Salignac de La Mothe)</name>
                <trait>
                   <p>illustre
 						archevêque de Cambrai.</p>
@@ -594,7 +619,7 @@
             </item>
             <item n="40" xml:id="CAT_000163_e40">
                <num type="lot">40</num>
-               <name type="author">Fitz-James (François, duc de),</name>
+               <name type="author">Fitz-James (François, duc de)</name>
                <trait>
                   <p>fils du maréchal de
 						Berwick, évêque de Soissons, qui décida Louis XV, malade à Metz, à renvoyer
@@ -611,7 +636,7 @@
             </item>
             <item n="41" xml:id="CAT_000163_e41">
                <num type="lot">41</num>
-               <name type="author">Fléchier (Esprit),</name>
+               <name type="author">Fléchier (Esprit)</name>
                <trait>
                   <p>évêque de Nîmes, illustre orateur
 						chrétien, de l'Acad. fr.</p>
@@ -622,7 +647,7 @@
             </item>
             <item n="42" xml:id="CAT_000163_e42">
                <num type="lot">42</num>
-               <name type="author">Fleury (A.-H., cardinal de),</name>
+               <name type="author">Fleury (A.-H., cardinal de)</name>
                <trait>
                   <p>évêque de Fréjus,
 						premier ministre de Louis XV, membre de l'Acad. fr.</p>
@@ -638,7 +663,7 @@
             </item>
             <item n="43" xml:id="CAT_000163_e43">
                <num type="lot">43</num>
-               <name type="author">Forster (François),</name>
+               <name type="author">Forster (François)</name>
                <trait>
                   <p>célèbre graveur, membre de
 						l'Institut.</p>
@@ -649,7 +674,7 @@
             </item>
             <item n="44" xml:id="CAT_000163_e44">
                <num type="lot">44</num>
-               <name type="author">François Ier,</name>
+               <name type="author">François Ier</name>
                <trait>
                   <p>roi de France.</p>
                </trait>
@@ -661,7 +686,7 @@
             </item>
             <item n="45" xml:id="CAT_000163_e45">
                <num type="lot">45</num>
-               <name type="author">François Ier,</name>
+               <name type="author">François Ier</name>
                <trait>
                   <p>empereur d'Autriche, beau-père de
 						Napoléon.</p>
@@ -675,7 +700,7 @@
                <desc xml:id="CAT_000163_e46_d1">(Balthasar), peintre et architecte flamand, qui fut employé, comme diplomate par le roi d'Angleterre Charles Ier et qui négocia avec Rubens un traité d'alliance entre l'Angleterre et les Pays-Bas. <term ana="#document_type_2">Pièce de 7 lignes aut. sig.</term> au bas d'un acte signé par le roi CHARLES Ier, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet. Très rare.</desc></item>
             <item n="47" xml:id="CAT_000163_e47">
                <num type="lot">47</num>
-               <name type="author">Guerin (le baron Pierre),</name>
+               <name type="author">Guerin (le baron Pierre)</name>
                <trait>
                   <p>célèbre peintre d'histoire,
 						membre de l'Institut.</p>
@@ -687,7 +712,7 @@
             </item>
             <item n="48" xml:id="CAT_000163_e48">
                <num type="lot">48</num>
-               <name type="author">Guise (Honorée de Glimes, duchesse de),</name>
+               <name type="author">Guise (Honorée de Glimes, duchesse de)</name>
                <trait>
                   <p>comtesse de
 						Bossut, qui épousa à Bruxelles, le 11 novembre 1641, Henri de Guise, fameux
@@ -701,7 +726,7 @@
             </item>
             <item n="49" xml:id="CAT_000163_e49">
                <num type="lot">49</num>
-               <name type="author">Hamilton (Alexandre),</name>
+               <name type="author">Hamilton (Alexandre)</name>
                <trait>
                   <p>célèbre homme d'Etat américain,
 						ami de Washington, tué en duel par le colonel Burr, en 1804.</p>
@@ -709,7 +734,7 @@
                <desc xml:id="CAT_000163_e49_d1"><term ana="#document_type_7">L. a. s.</term>; 12 octobre (<date when="1782">1782</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="50" xml:id="CAT_000163_e50">
                <num type="lot">50</num>
-               <name type="author">Hardenberg (le prince de),</name>
+               <name type="author">Hardenberg (le prince de)</name>
                <trait>
                   <p>illustre homme d'Etat
 						prussien, ennemi acharné de Napoléon.</p>
@@ -722,7 +747,7 @@
             </item>
             <item n="51" xml:id="CAT_000163_e51">
                <num type="lot">51</num>
-               <name type="author">Haydn (Joseph),</name>
+               <name type="author">Haydn (Joseph)</name>
                <trait>
                   <p>le grand compositeur de
 						musique.</p>
@@ -732,7 +757,7 @@
             </item>
             <item n="52" xml:id="CAT_000163_e52">
                <num type="lot">52</num>
-               <name type="author">Henri II,</name>
+               <name type="author">Henri II</name>
                <trait>
                   <p>roi de France.</p>
                </trait>
@@ -755,7 +780,7 @@
             </item>
             <item n="54" xml:id="CAT_000163_e54">
                <num type="lot">54</num>
-               <name type="author">Hugo (Victor),</name>
+               <name type="author">Hugo (Victor)</name>
                <trait>
                   <p>le grand poète.</p>
                </trait>
@@ -772,10 +797,10 @@
             <item n="56" xml:id="CAT_000163_e56">
                <num type="lot">56</num>
                <name type="author">Hugo (Victor)</name>
-               <desc xml:id="CAT_000163_e56_d1">2 l. <term ana="#document_type_15">a. s.</term> à Bonnaire, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolies lettres.</desc></item>
+               <desc xml:id="CAT_000163_e56_d1">2 <term ana="#document_type_7">l. a. s.</term> à Bonnaire, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolies lettres.</desc></item>
             <item n="57" xml:id="CAT_000163_e57">
                <num type="lot">57</num>
-               <name type="author">Ingres (J.-Aug.-Dom.),</name>
+               <name type="author">Ingres (J.-Aug.-Dom.)</name>
                <trait>
                   <p>le grand peintre
 						d'histoire.</p>
@@ -786,7 +811,7 @@
             </item>
             <item n="58" xml:id="CAT_000163_e58">
                <num type="lot">58</num>
-               <name type="author">Jacquemont (Victor),</name>
+               <name type="author">Jacquemont (Victor)</name>
                <trait>
                   <p>le célèbre voyageur dans
 						l'Inde.</p>
@@ -797,7 +822,7 @@
             </item>
             <item n="59" xml:id="CAT_000163_e59">
                <num type="lot">59</num>
-               <name type="author">Jacques (l'abbé Mathieu-Joseph),</name>
+               <name type="author">Jacques (l'abbé Mathieu-Joseph)</name>
                <trait>
                   <p>savant
 						mathématicien.</p>
@@ -808,7 +833,7 @@
             </item>
             <item n="60" xml:id="CAT_000163_e60">
                <num type="lot">60</num>
-               <name type="author">Joseph Ier,</name>
+               <name type="author">Joseph Ier</name>
                <trait>
                   <p>empereur d'Allemagne.</p>
                </trait>
@@ -818,7 +843,7 @@
             </item>
             <item n="61" xml:id="CAT_000163_e61">
                <num type="lot">61</num>
-               <name type="author">Jouffroy (Théodore),</name>
+               <name type="author">Jouffroy (Théodore)</name>
                <trait>
                   <p>célèbre philosophe, membre de
 						l'Institut.</p>
@@ -828,18 +853,18 @@
             </item>
             <item n="62" xml:id="CAT_000163_e62">
                <num type="lot">62</num>
-               <name type="author">Jouvenet (Jean),</name>
+               <name type="author">Jouvenet (Jean)</name>
                <trait>
                   <p>un des plus célèbres peintres
 						d'histoire du siècle de Louis XIV.</p>
                </trait>
-               <desc xml:id="CAT_000163_e62_d1">Reçu de sept lignes aut. sig. à la suite d'une <term ana="#document_type_4">pièce signée</term> par le prince de Conti et l'académicien L. a. Chappelle; Paris, <date when="1689-05-21">21 mai 1689</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rare.</desc><note>C'est un mémoire des ouvrages de marbre faits
+               <desc xml:id="CAT_000163_e62_d1">Reçu de sept lignes aut. sig. à la suite d'une <term ana="#document_type_4">pièce signée</term> par le prince de Conti et l'académicien La Chappelle; Paris, <date when="1689-05-21">21 mai 1689</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rare.</desc><note>C'est un mémoire des ouvrages de marbre faits
 						par Jean Du Chesnoy, marbrier, pour le compte du prince de
 					Conti.</note>
             </item>
             <item n="63" xml:id="CAT_000163_e63">
                <num type="lot">63</num>
-               <name type="author">Kossuth (Louis),</name>
+               <name type="author">Kossuth (Louis)</name>
                <trait>
                   <p>le chef de la révolution
 						hongroise.</p>
@@ -856,7 +881,7 @@
             </item>
             <item n="64" xml:id="CAT_000163_e64">
                <num type="lot">64</num>
-               <name type="author">La Porte (Pierre de),</name>
+               <name type="author">La Porte (Pierre de)</name>
                <trait>
                   <p>confident d'Anne d'Autriche,
 						valet de chambre de Louis XIV, auteur de Mémoires.</p>
@@ -867,7 +892,7 @@
             <item n="65" xml:id="CAT_000163_e65">
                <num type="lot">65</num>
                <name type="author">Lauraguais (L.-L.-Fél., duc de BRANcAs, comte
-						de),</name>
+						de)</name>
                <trait>
                   <p>savant et écrivain, célèbre par ses bons mots et
 						son esprit frondeur, amant de Sophie Arnould.</p>
@@ -878,15 +903,15 @@
             </item>
             <item n="66" xml:id="CAT_000163_e66">
                <num type="lot">66</num>
-               <name type="author">Laya (J.-L.),</name>
+               <name type="author">Laya (J.-L.)</name>
                <trait>
                   <p>poète dramatique, auteur de l'Ami des
 						Lois, membre de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000163_e66_d1"><term ana="#document_type_7">L. a. s.</term> au vicomte de L. a. Rochefoucauld; Paris, 7 décembre 1825, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse épître où il demande qu'on joue aux Français sa tragédie d'Athènes sauvée, <date when="1798">déjà reçue en 1798</date>, et qui n'est point une oeuvre de circonstance mais une oeuvre classique. Piquants détails.</desc></item>
+               <desc xml:id="CAT_000163_e66_d1"><term ana="#document_type_7">L. a. s.</term> au vicomte de La Rochefoucauld; Paris, 7 décembre 1825, <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse épître où il demande qu'on joue aux Français sa tragédie d'Athènes sauvée, <date when="1798">déjà reçue en 1798</date>, et qui n'est point une oeuvre de circonstance mais une oeuvre classique. Piquants détails.</desc></item>
             <item n="67" xml:id="CAT_000163_e67">
                <num type="lot">67</num>
-               <name type="author">Le Brun (Élisabeth-Louise VIgÉe),</name>
+               <name type="author">Le Brun (Élisabeth-Louise VIgÉe)</name>
                <trait>
                   <p>célèbre peintre de
 						portraits.</p>
@@ -896,7 +921,7 @@
             </item>
             <item n="68" xml:id="CAT_000163_e68">
                <num type="lot">68</num>
-               <name type="author">Le Camus de Mézières (Nicolas),</name>
+               <name type="author">Le Camus de Mézières (Nicolas)</name>
                <trait>
                   <p>architecte du XVIIIe
 						siècle, qui construisit la Halle au Blé.</p>
@@ -904,7 +929,7 @@
                <desc xml:id="CAT_000163_e68_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc></item>
             <item n="69" xml:id="CAT_000163_e69">
                <num type="lot">69</num>
-               <name type="author">Leroux (Pierre),</name>
+               <name type="author">Leroux (Pierre)</name>
                <trait>
                   <p>le célèbre écrivain
 						philosophe.</p>
@@ -916,12 +941,12 @@
             <item n="70" xml:id="CAT_000163_e70">
                <num type="lot">70</num>
                <name type="author">Littérateurs</name>
-               <desc xml:id="CAT_000163_e70_d1">7 l. <term ana="#document_type_15">a. s.</term></desc><note>Asselineau, Chatrian, Féval (Paul),
+               <desc xml:id="CAT_000163_e70_d1">7 <term ana="#document_type_7">l. a. s.</term></desc><note>Asselineau, Chatrian, Féval (Paul),
 						Gozlan, Maquet, Méry et Meurice (Paul).</note>
             </item>
             <item n="71" xml:id="CAT_000163_e71">
                <num type="lot">71</num>
-               <name type="author">Louis XI,</name>
+               <name type="author">Louis XI</name>
                <trait>
                   <p>roi de France.</p>
                </trait>
@@ -930,7 +955,7 @@
             </item>
             <item n="72" xml:id="CAT_000163_e72">
                <num type="lot">72</num>
-               <name type="author">Louis XII,</name>
+               <name type="author">Louis XII</name>
                <trait>
                   <p>roi de France.</p>
                </trait>
@@ -940,7 +965,7 @@
             </item>
             <item n="73" xml:id="CAT_000163_e73">
                <num type="lot">73</num>
-               <name type="author">Louis XIII,</name>
+               <name type="author">Louis XIII</name>
                <trait>
                   <p>roi de France.</p>
                </trait>
@@ -949,7 +974,7 @@
             </item>
             <item n="74" xml:id="CAT_000163_e74">
                <num type="lot">74</num>
-               <name type="author">Louis XV,</name>
+               <name type="author">Louis XV</name>
                <trait>
                   <p>roi de France.</p>
                </trait>
@@ -958,7 +983,7 @@
             </item>
             <item n="75" xml:id="CAT_000163_e75">
                <num type="lot">75</num>
-               <name type="author">Louis-Philippe Ier,</name>
+               <name type="author">Louis-Philippe Ier</name>
                <trait>
                   <p>roi des Français.</p>
                </trait>
@@ -967,7 +992,7 @@
             </item>
             <item n="76" xml:id="CAT_000163_e76">
                <num type="lot">76</num>
-               <name type="author">Louise de Savoie,</name>
+               <name type="author">Louise de Savoie</name>
                <trait>
                   <p>duchesse d'Angoulême, mère de
 						François Ier.</p>
@@ -978,7 +1003,7 @@
             </item>
             <item n="77" xml:id="CAT_000163_e77">
                <num type="lot">77</num>
-               <name type="author">Lucas (Paul),</name>
+               <name type="author">Lucas (Paul)</name>
                <trait>
                   <p>le célèbre voyageur.</p>
                </trait>
@@ -988,7 +1013,7 @@
             </item>
             <item n="78" xml:id="CAT_000163_e78">
                <num type="lot">78</num>
-               <name type="author">Marie d'Autriche,</name>
+               <name type="author">Marie d'Autriche</name>
                <trait>
                   <p>soeur de Charles-Quint, reine de
 						Hongrie et gouvernante des Pays-Bas, une des femmes les plus remarquables du
@@ -999,7 +1024,7 @@
             </item>
             <item n="79" xml:id="CAT_000163_e79">
                <num type="lot">79</num>
-               <name type="author">Marie-Louise de Parme,</name>
+               <name type="author">Marie-Louise de Parme</name>
                <trait>
                   <p>reine d'Espagne, femme de
 						amitié pour Godoï.</p>
@@ -1009,7 +1034,7 @@
             </item>
             <item n="80" xml:id="CAT_000163_e80">
                <num type="lot">80</num>
-               <name type="author">Marie-Christine de Bourbon,</name>
+               <name type="author">Marie-Christine de Bourbon</name>
                <trait>
                   <p>reine d'Espagne,
 						quatrième femme de Ferdinand VII, grand'mère du roi actuel.</p>
@@ -1017,7 +1042,7 @@
                <desc xml:id="CAT_000163_e80_d1"><term ana="#document_type_7">L. a. s.</term>; Rome, <date when="1859-03-26">26 mars 1859</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Très jolie lettre.</desc></item>
             <item n="81" xml:id="CAT_000163_e81">
                <num type="lot">81</num>
-               <name type="author">Marie-Josèphe d'Autriche,</name>
+               <name type="author">Marie-Josèphe d'Autriche</name>
                <trait>
                   <p>reine de Pologne,
 						grand'mère de Louis XVI.</p>
@@ -1027,7 +1052,7 @@
             </item>
             <item n="82" xml:id="CAT_000163_e82">
                <num type="lot">82</num>
-               <name type="author">Marigny (Abel-Fr. Poisson, marquis de),</name>
+               <name type="author">Marigny (Abel-Fr. Poisson, marquis de)</name>
                <trait>
                   <p>frère de Mme
 						de Pompadour, directeur général des bâtiments du Roi.</p>
@@ -1038,7 +1063,7 @@
             </item>
             <item n="83" xml:id="CAT_000163_e83">
                <num type="lot">83</num>
-               <name type="author">Maurepas (J.-Fréd. Phelypeaux, comte de),</name>
+               <name type="author">Maurepas (J.-Fréd. Phelypeaux, comte de)</name>
                <trait>
                   <p>célèbre
 						ministre de Louis XV.</p>
@@ -1046,15 +1071,15 @@
                <desc xml:id="CAT_000163_e83_d1"><term ana="#document_type_7">L. a. s.</term>; Versailles, <date when="1748-09-24">24 sept. 1748</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très belle lettre.</desc></item>
             <item n="84" xml:id="CAT_000163_e84">
                <num type="lot">84</num>
-               <name type="author">Mérimée (Prosper),</name>
+               <name type="author">Mérimée (Prosper)</name>
                <trait>
                   <p>célèbre écrivain, de l'Acad.
 						fr.</p>
                </trait>
-               <desc xml:id="CAT_000163_e84_d1">2 l. <term ana="#document_type_15">a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc></item>
+               <desc xml:id="CAT_000163_e84_d1">2 <term ana="#document_type_7">l. a. s.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc></item>
             <item n="85" xml:id="CAT_000163_e85">
                <num type="lot">85</num>
-               <name type="author">Merlin de Thionville,</name>
+               <name type="author">Merlin de Thionville</name>
                <trait>
                   <p>célèbre
 					conventionnel.</p>
@@ -1066,7 +1091,7 @@
             </item>
             <item n="86" xml:id="CAT_000163_e86">
                <num type="lot">86</num>
-               <name type="author">Monmouth (James, duc de),</name>
+               <name type="author">Monmouth (James, duc de)</name>
                <trait>
                   <p>fils naturel du roi Charles
 						II, qui voulut détrôner son oncle Jacques II et fut décapité à Londres le 25
@@ -1079,7 +1104,7 @@
             <item n="87" xml:id="CAT_000163_e87">
                <num type="lot">87</num>
                <name type="author">Montpensier (Anne-Marie-Louise d'ORLÉANS, duchesse
-						de),</name>
+						de)</name>
                <trait>
                   <p>la Grande Mademoiselle, fille de Gaston d'Orléans,
 						auteur de Mémoires.</p>
@@ -1087,21 +1112,21 @@
                <desc xml:id="CAT_000163_e87_d1"><term ana="#document_type_7">L. a. s.</term> à l'évêque de Coutances ; Orléans, <date when="1657-12-19">19 déc. 1657</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets et soies. Très belle lettre.</desc></item>
             <item n="88" xml:id="CAT_000163_e88">
                <num type="lot">88</num>
-               <name type="author">Musset (Alfred de),</name>
+               <name type="author">Musset (Alfred de)</name>
                <trait>
                   <p>l'illustre poète.</p>
                </trait>
                <desc xml:id="CAT_000163_e88_d1"><term ana="#document_type_7">L. a. s.</term> à M. Bonnaire, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Très jolie pièce.</desc></item>
             <item n="89" xml:id="CAT_000163_e89">
                <num type="lot">89</num>
-               <name type="author">Napoléon Ier,</name>
+               <name type="author">Napoléon Ier</name>
                <trait>
                   <p>empereur des Français.</p>
                </trait>
                <desc xml:id="CAT_000163_e89_d1"><term ana="#document_type_9">L. s.</term>, avec la souscript. aut., au cit. Porte ; Paris, <date when="1798-04-14">25 germinal an VI</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc></item>
             <item n="90" xml:id="CAT_000163_e90">
                <num type="lot">90</num>
-               <name type="author">Noailles (L.-Ant., cardinal de),</name>
+               <name type="author">Noailles (L.-Ant., cardinal de)</name>
                <trait>
                   <p>célèbre archevêque
 						de Paris.</p>
@@ -1109,7 +1134,7 @@
                <desc xml:id="CAT_000163_e90_d1"><term ana="#document_type_7">L. a. s.</term> à une religieuse ; <date when="1720-07-21">21 juillet 1720</date>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre sur sa communauté.</desc></item>
             <item n="91" xml:id="CAT_000163_e91">
                <num type="lot">91</num>
-               <name type="author">Orléans (Robert d'),</name>
+               <name type="author">Orléans (Robert d')</name>
                <trait>
                   <p>duc de Chartres, petit-fils de
 						Louis-Philippe, frère du comte de Paris.</p>
@@ -1117,7 +1142,7 @@
                <desc xml:id="CAT_000163_e91_d1"><term ana="#document_type_7">L. a. s.</term> ; 17 janvier, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="92" xml:id="CAT_000163_e92">
                <num type="lot">92</num>
-               <name type="author">Paisiello (Jean),</name>
+               <name type="author">Paisiello (Jean)</name>
                <trait>
                   <p>célèbre compositeur de
 						musique,</p>
@@ -1125,7 +1150,7 @@
                <desc xml:id="CAT_000163_e92_d1"><term ana="#document_type_7">L. a. s.</term> à Mme Henry; (messidor an <date when="1801-1802">X</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc></item>
             <item n="93" xml:id="CAT_000163_e93">
                <num type="lot">93</num>
-               <name type="author">Pajou (Jacques-Augustin),</name>
+               <name type="author">Pajou (Jacques-Augustin)</name>
                <trait>
                   <p>peintre d'histoire, fils du
 						sculpteur.</p>
@@ -1137,7 +1162,7 @@
             <item n="94" xml:id="CAT_000163_e94">
                <num type="lot">94</num>
                <name type="author">Peintres</name>
-               <desc xml:id="CAT_000163_e94_d1">4 quitt. sig., sur vélin.</desc><note>Charles Baco, 1711;
+               <desc xml:id="CAT_000163_e94_d1">4 <term ana="#document_type_12">quitt. sig.</term>, sur vélin.</desc><note>Charles Baco, 1711;
 						-Charles Beuille, 1713; -François Bourlier, 1679; -Pierre Moncallier, 1697.
 						Ces artistes, qui prennent le titre de peintres du roi, ne sont pas
 						mentionnés par les biographes.</note>
@@ -1145,23 +1170,23 @@
             <item n="95" xml:id="CAT_000163_e95">
                <num type="lot">95</num>
                <name type="author">Peintres</name>
-               <desc xml:id="CAT_000163_e95_d1">23 l. <term ana="#document_type_15">a. s.</term></desc><note>Anastasi, Champmartin, Ducornet, Jacque
+               <desc xml:id="CAT_000163_e95_d1">23 <term ana="#document_type_7">l. a. s.</term></desc><note>Anastasi, Champmartin, Ducornet, Jacque
 						(Ch.), Jadin, Jeanron, Jaquotot (Mme), Johannot (Tony), Ouvrié (Justin),
 						Ziegler, etc.</note>
             </item>
             <item n="96" xml:id="CAT_000163_e96">
                <num type="lot">96</num>
-               <name type="author">Peintres,</name>
+               <name type="author">Peintres</name>
                <trait>
                   <p>membres de l'Institut.</p>
                </trait>
-               <desc xml:id="CAT_000163_e96_d1">10 l. <term ana="#document_type_15">a. s.</term></desc><note>Brascassat, Couder. Girodet-Trioson,
+               <desc xml:id="CAT_000163_e96_d1">10 <term ana="#document_type_7">l. a. s.</term></desc><note>Brascassat, Couder. Girodet-Trioson,
 						certificat, Granet, Guerin (Pierre), Hersent, Lehmann, Régnault,
 						Robert-Fleury et Thévenin.</note>
             </item>
             <item n="97" xml:id="CAT_000163_e97">
                <num type="lot">97</num>
-               <name type="author">Pierre Ier,</name>
+               <name type="author">Pierre Ier</name>
                <trait>
                   <p>empereur de Russie, dit le
 					Grand.</p>
@@ -1169,7 +1194,7 @@
                <desc xml:id="CAT_000163_e97_d1"><term ana="#document_type_9">L. s.</term>; <date when="1717">1717</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_101">in-fol. obl</measure>ong, sceau. Précieuse et rare pièce.</desc></item>
             <item n="98" xml:id="CAT_000163_e98">
                <num type="lot">98</num>
-               <name type="author">Piron (Alexis),</name>
+               <name type="author">Piron (Alexis)</name>
                <trait>
                   <p>célèbre poète
 					dramatique.</p>
@@ -1179,7 +1204,7 @@
             </item>
             <item n="99" xml:id="CAT_000163_e99">
                <num type="lot">99</num>
-               <name type="author">Ponsard (Fr.),</name>
+               <name type="author">Ponsard (Fr.)</name>
                <trait>
                   <p>poète dramatique, auteur de Lucrèce,
 						membre de l'Acad. fr.</p>
@@ -1189,7 +1214,7 @@
             </item>
             <item n="100" xml:id="CAT_000163_e100">
                <num type="lot">100</num>
-               <name type="author">Portalis (J.-Et.-Marie),</name>
+               <name type="author">Portalis (J.-Et.-Marie)</name>
                <trait>
                   <p>jurisconsulte éminent, un
 						des principaux rédacteurs du Code civil, membre de l'Acad. fr.</p>
@@ -1197,7 +1222,7 @@
                <desc xml:id="CAT_000163_e100_d1">P. <term ana="#document_type_15">a. s.</term> ; Paris, <date when="1774-10-25">25 oct. 1774</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc></item>
             <item n="101" xml:id="CAT_000163_e101">
                <num type="lot">101</num>
-               <name type="author">Proudhon (P.-J.),</name>
+               <name type="author">Proudhon (P.-J.)</name>
                <trait>
                   <p>le célèbre écrivain
 						socialiste.</p>
@@ -1208,7 +1233,7 @@
             <item n="102" xml:id="CAT_000163_e102">
                <num type="lot">102</num>
                <name type="author">Puységur (Jacques-François de Chastenet, marquis
-						de),</name>
+						de)</name>
                <trait>
                   <p>maréchal de France et écrivain
 					militaire.</p>
@@ -1216,7 +1241,7 @@
                <desc xml:id="CAT_000163_e102_d1">P. <term ana="#document_type_15">a. s.</term> ; Paris, <date when="1697-12-29">29 déc. 1697</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc></item>
             <item n="103" xml:id="CAT_000163_e103">
                <num type="lot">103</num>
-               <name type="author">Quelen (H.-L., comte de),</name>
+               <name type="author">Quelen (H.-L., comte de)</name>
                <trait>
                   <p>archevêque de Paris, membre
 						de l'Acad. fr.</p>
@@ -1238,7 +1263,7 @@
             </item>
             <item n="106" xml:id="CAT_000163_e106">
                <num type="lot">106</num>
-               <name type="author">Rancé (A. Le Bouthillier de),</name>
+               <name type="author">Rancé (A. Le Bouthillier de)</name>
                <trait>
                   <p>l'illustre réformateur
 						de la Trappe.</p>
@@ -1251,7 +1276,7 @@
             </item>
             <item n="107" xml:id="CAT_000163_e107">
                <num type="lot">107</num>
-               <name type="author">Raousset-Boulbon (Gaston RAOux, comte de),</name>
+               <name type="author">Raousset-Boulbon (Gaston RAOux, comte de)</name>
                <trait>
                   <p>célèbre
 						aventurier, né à Avignon, fusillé au Mexique en 1854.</p>
@@ -1262,7 +1287,7 @@
             </item>
             <item n="108" xml:id="CAT_000163_e108">
                <num type="lot">108</num>
-               <name type="author">Redouté (P. Jos.),</name>
+               <name type="author">Redouté (P. Jos.)</name>
                <trait>
                   <p>célèbre peintre de
 					fleurs.</p>
@@ -1273,7 +1298,7 @@
             <item n="109" xml:id="CAT_000163_e109">
                <num type="lot">109</num>
                <name type="author">Regnaud de Saint-Jean d'Angely (Michel-L.-Et.,
-						comte),</name>
+						comte)</name>
                <trait>
                   <p>ministre de Napoléon Ier, membre de l'Acad.
 						fr.</p>
@@ -1284,7 +1309,7 @@
             </item>
             <item n="110" xml:id="CAT_000163_e110">
                <num type="lot">110</num>
-               <name type="author">Restif de la Bretonne (Nic.-Edme),</name>
+               <name type="author">Restif de la Bretonne (Nic.-Edme)</name>
                <trait>
                   <p>le fameux
 						romancier.</p>
@@ -1292,7 +1317,7 @@
                <desc xml:id="CAT_000163_e110_d1">Fragment autographe d'un de ses romans, <measure type="length" unit="p" n="4">4 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc></item>
             <item n="111" xml:id="CAT_000163_e111">
                <num type="lot">111</num>
-               <name type="author">Rollin (Charles),</name>
+               <name type="author">Rollin (Charles)</name>
                <trait>
                   <p>célèbre historien et
 						humaniste.</p>
@@ -1302,7 +1327,7 @@
             </item>
             <item n="112" xml:id="CAT_000163_e112">
                <num type="lot">112</num>
-               <name type="author">Saint-Pierre (Bernardin de),</name>
+               <name type="author">Saint-Pierre (Bernardin de)</name>
                <trait>
                   <p>l'auteur de Paul et Vir-
 						ginie.</p>
@@ -1319,15 +1344,15 @@
             </item>
             <item n="113" xml:id="CAT_000163_e113">
                <num type="lot">113</num>
-               <name type="author">Sainte-Beuve (Ch.-Aug.),</name>
+               <name type="author">Sainte-Beuve (Ch.-Aug.)</name>
                <trait>
                   <p>le célèbre
 					critique.</p>
                </trait>
-               <desc xml:id="CAT_000163_e113_d1">4 l. <term ana="#document_type_15">a. s.</term>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et 1 p. in-18.</desc></item>
+               <desc xml:id="CAT_000163_e113_d1">4 <term ana="#document_type_7">l. a. s.</term>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et 1 p. in-18.</desc></item>
             <item n="114" xml:id="CAT_000163_e114">
                <num type="lot">114</num>
-               <name type="author">Santerre (Ant.-Jos.),</name>
+               <name type="author">Santerre (Ant.-Jos.)</name>
                <trait>
                   <p>le célèbre général de la garde
 						nationale parisienne.</p>
@@ -1338,7 +1363,7 @@
             <item n="115" xml:id="CAT_000163_e115">
                <num type="lot">115</num>
                <name type="author">Sculpteurs</name>
-               <desc xml:id="CAT_000163_e115_d1"><measure type="length" unit="p" n="58">58 p.</measure> s.; <date when="0194">1826 à 1854</date>, 58 p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Important
+               <desc xml:id="CAT_000163_e115_d1"><measure type="length" unit="p" n="58">58 p.</measure> s.; <date when="0195">1826 à 1854</date>, 58 p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Important
 						dossier. Ce sont des quittances données par des sculpteurs pour des oeuvres
 						faites par eux pour le compte du gouvernement. Parmi ces artistes nous
 						citerons les noms suivants : De Bay. Bonheur, Cortot, Clesinger, Dantan
@@ -1347,7 +1372,7 @@
             </item>
             <item n="116" xml:id="CAT_000163_e116">
                <num type="lot">116</num>
-               <name type="author">Segrais (Jean Regnaud de),</name>
+               <name type="author">Segrais (Jean Regnaud de)</name>
                <trait>
                   <p>poète et romancier, de
 						l'acad. fr.</p>
@@ -1355,7 +1380,7 @@
                <desc xml:id="CAT_000163_e116_d1"><term ana="#document_type_3">Pièce de vers autographe</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très jolie et rare pièce.</desc></item>
             <item n="117" xml:id="CAT_000163_e117">
                <num type="lot">117</num>
-               <name type="author">Suffren (Pierre-André, dit le bailli de),</name>
+               <name type="author">Suffren (Pierre-André, dit le bailli de)</name>
                <trait>
                   <p>un des
 						marins les plus célèbres du XVIIIe siècle.</p>
@@ -1363,7 +1388,7 @@
                <desc xml:id="CAT_000163_e117_d1"><term ana="#document_type_7">L. a. s.</term> à Monseigneur…; <date when="1784-08-04">4 août 1784</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare signé.</desc></item>
             <item n="118" xml:id="CAT_000163_e118">
                <num type="lot">118</num>
-               <name type="author">Suvée (Jos.-Benoît),</name>
+               <name type="author">Suvée (Jos.-Benoît)</name>
                <trait>
                   <p>peintre d'histoire, directeur de
 						l'École de France à Rome.</p>
@@ -1371,7 +1396,7 @@
                <desc xml:id="CAT_000163_e118_d1"><term ana="#document_type_7">L. a. s.</term> à M. Malary, à Rome; ce mercredi, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> in-8. Intéressante.</desc></item>
             <item n="119" xml:id="CAT_000163_e119">
                <num type="lot">119</num>
-               <name type="author">Vendôme (César, duc de),</name>
+               <name type="author">Vendôme (César, duc de)</name>
                <trait>
                   <p>fils légitimé de Henri IV et
 						de Gabrielle d'Estrées.</p>
@@ -1381,7 +1406,7 @@
             </item>
             <item n="120" xml:id="CAT_000163_e120">
                <num type="lot">120</num>
-               <name type="author">Vendôme (Louis, duc de),</name>
+               <name type="author">Vendôme (Louis, duc de)</name>
                <trait>
                   <p>fils du précédent, vice roi
 						de Catalogne, puis cardinal.</p>
@@ -1393,7 +1418,7 @@
             </item>
             <item n="121" xml:id="CAT_000163_e121">
                <num type="lot">121</num>
-               <name type="author">Vendôme (L.-Jos., duc de),</name>
+               <name type="author">Vendôme (L.-Jos., duc de)</name>
                <trait>
                   <p>fils du précédent, le
 						grand capitaine.</p>
@@ -1403,7 +1428,7 @@
             </item>
             <item n="122" xml:id="CAT_000163_e122">
                <num type="lot">122</num>
-               <name type="author">Ventura (le Père Gioacchino),</name>
+               <name type="author">Ventura (le Père Gioacchino)</name>
                <trait>
                   <p>célèbre prédicateur,
 						disciple de La Mennais.</p>
@@ -1414,7 +1439,7 @@
             </item>
             <item n="123" xml:id="CAT_000163_e123">
                <num type="lot">123</num>
-               <name type="author">Villars (Dominique),</name>
+               <name type="author">Villars (Dominique)</name>
                <trait>
                   <p>célèbre botaniste, né en
 						Dauphiné.</p>
@@ -1431,7 +1456,7 @@
             </item>
             <item n="125" xml:id="CAT_000163_e125">
                <num type="lot">125</num>
-               <name type="author">Voltaire (F.-M. AROUET de),</name>
+               <name type="author">Voltaire (F.-M. AROUET de)</name>
                <trait>
                   <p>le plus grand écrivain du
 						XVIIIe siècle.</p>
@@ -1444,7 +1469,7 @@
             </item>
             <item n="126" xml:id="CAT_000163_e126">
                <num type="lot">126</num>
-               <name type="author">Wellington (le duc de),</name>
+               <name type="author">Wellington (le duc de)</name>
                <trait>
                   <p>l'illustre général
 						anglais.</p>
@@ -1522,7 +1547,7 @@
             <item n="136" xml:id="CAT_000163_e136">
                <num type="lot">136</num>
                <name type="author">Clergé</name>
-               <desc xml:id="CAT_000163_e136_d1">1° 5 lettres sur la Constitution Unigenitus; <date when="0289">1731 à 1759</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><desc xml:id="CAT_000163_e136_d2">2° Lettre d'un convulsionnaire de Saint-Médard ; Paris, <date when="1732">1732</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Très intéressants documents.</note>
+               <desc xml:id="CAT_000163_e136_d1">1° 5 lettres sur la Constitution Unigenitus; <date when="0290">1731 à 1759</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><desc xml:id="CAT_000163_e136_d2">2° Lettre d'un convulsionnaire de Saint-Médard ; Paris, <date when="1732">1732</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Très intéressants documents.</note>
             </item>
             <item n="137" xml:id="CAT_000163_e137">
                <num type="lot">137</num>
@@ -1568,7 +1593,7 @@
             <item n="142" xml:id="CAT_000163_e142">
                <num type="lot">142</num>
                <name type="author">Dauphiné</name>
-               <desc xml:id="CAT_000163_e142_d1">10 l. <term ana="#document_type_15">a. s.</term> du comte d'ArgOut, ministre de Louis-Philippe, né près de La Tour Du Pin (Isère) ; <date when="1841">23 août-4 oct. 1841</date>, <measure type="length" unit="p" n="51">51 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Correspondance très intéressante, pleine de
+               <desc xml:id="CAT_000163_e142_d1">10 <term ana="#document_type_7">l. a. s.</term> du comte d'ArgOut, ministre de Louis-Philippe, né près de La Tour Du Pin (Isère) ; <date when="1841">23 août-4 oct. 1841</date>, <measure type="length" unit="p" n="51">51 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><note>Correspondance très intéressante, pleine de
 						détails intimes, et où le comte d'Argout parle longuement de ses fonctions
 						de gouverneur de la Banque de France.</note>
             </item>
@@ -1624,7 +1649,7 @@
             </item>
             <item n="150" xml:id="CAT_000163_e150">
                <num type="lot">150</num>
-               <name type="author">Marie-Antoinette,</name>
+               <name type="author">Marie-Antoinette</name>
                <trait>
                   <p>reine de France.</p>
                </trait>
@@ -1648,7 +1673,7 @@
             <item n="153" xml:id="CAT_000163_e153">
                <num type="lot">153</num>
                <name type="author">Opéra</name>
-               <desc xml:id="CAT_000163_e153_d1">L. sig. par Charon, Rey, de <term ana="#document_type_8">L. a.</term> Suze, de Watteville et Francaeur, à Champein; <date when="1791-07-01">1er juillet 1791</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Ils demandent à
+               <desc xml:id="CAT_000163_e153_d1"><term ana="#document_type_9">L. sig.</term> par Charon, Rey, de La Suze, de Watteville et Francaeur, à Champein; <date when="1791-07-01">1er juillet 1791</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><note>Ils demandent à
 						Champein s'il sera en état de livrer, d'ici à un mois, la musique du
 						Seigneur bienfaisant, moyennant une rétribution de 100 livres par
 						représentation.</note>
@@ -1678,7 +1703,7 @@
             <item n="156" xml:id="CAT_000163_e156">
                <num type="lot">156</num>
                <name type="author">Opéra-Comique</name>
-               <desc xml:id="CAT_000163_e156_d1">4 l. s. par Dupaty, Paul de Kock, Planard, Étienne, Champein, Fétis, Delrieu, etc., au duc d'Aumont; <date when="1827">juillet-septembre 1827</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Intéressant dossier sur les rapports des
+               <desc xml:id="CAT_000163_e156_d1">4 <term ana="#document_type_9">l. s.</term> par Dupaty, Paul de Kock, Planard, Étienne, Champein, Fétis, Delrieu, etc., au duc d'Aumont; <date when="1827">juillet-septembre 1827</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Intéressant dossier sur les rapports des
 						auteurs dramatiques et des compositeurs de musique avec
 						l'Opéra-Comique.</note>
             </item>
@@ -1733,19 +1758,19 @@
             <item n="164" xml:id="CAT_000163_e164">
                <num type="lot">164</num>
                <name type="author">Paris : Arc de Triomphe du Carrousel</name>
-               <desc xml:id="CAT_000163_e164_d1">4 quittances sig. par les sculpteurs Petitot, Pradier et Raggi; <date when="1827">1827-1830</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl</measure>ong.</desc><note>Reçus pour l'exécution de
+               <desc xml:id="CAT_000163_e164_d1">4 <term ana="#document_type_12">quitt</term>ances sig. par les sculpteurs Petitot, Pradier et Raggi; <date when="1827">1827-1830</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl</measure>ong.</desc><note>Reçus pour l'exécution de
 						bas-reliefs destinés à l'arc de triomphe du Carrousel.</note>
             </item>
             <item n="165" xml:id="CAT_000163_e165">
                <num type="lot">165</num>
                <name type="author">Paris : Musée royal du Louvre</name>
-               <desc xml:id="CAT_000163_e165_d1">6 quittances sig. par les sculpteurs Caillouete, Fessard, Guersant, Gatteaux, Guillois et Nanteuil; <date when="1827">1827-1828</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl</measure>ong.</desc><note>Reçus pour l'exécution de statues destinées au
+               <desc xml:id="CAT_000163_e165_d1">6 <term ana="#document_type_12">quitt</term>ances sig. par les sculpteurs Caillouete, Fessard, Guersant, Gatteaux, Guillois et Nanteuil; <date when="1827">1827-1828</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl</measure>ong.</desc><note>Reçus pour l'exécution de statues destinées au
 						musée royal.</note>
             </item>
             <item n="166" xml:id="CAT_000163_e166">
                <num type="lot">166</num>
                <name type="author">Paris : Bals masqués</name>
-               <desc xml:id="CAT_000163_e166_d1">2 l. s. par le préfet de police Gisquet; Paris, <date when="1834-01-16">16 et 23 janv. 1834</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Très curieuses lettres. Dans la première
+               <desc xml:id="CAT_000163_e166_d1">2 <term ana="#document_type_9">l. s.</term> par le préfet de police Gisquet; Paris, <date when="1834-01-16">16 et 23 janv. 1834</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Très curieuses lettres. Dans la première
 						il retire au directeur de l'OpéraComique l'autorisation de donner des bals
 						masqués. La minute de la réponse du ministre est jointe. La seconde est un
 						rapport des plus piquants sur les bals masqués autorisés à Paris et sur les
@@ -1755,7 +1780,7 @@
             <item n="167" xml:id="CAT_000163_e167">
                <num type="lot">167</num>
                <name type="author">Paris : Réunion du Louvre aux Tuileries</name>
-               <desc xml:id="CAT_000163_e167_d1">13 quittances sig. par les sculpteurs Calmels, Courtet, Daumas, Desboeufs, Etex, Flandrin, Falconnier, Jaley, Moreau, Marion, Nanteuil et Robert ; <date when="1854">1854</date>-57,<measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Reçus pour des travaux
+               <desc xml:id="CAT_000163_e167_d1">13 <term ana="#document_type_12">quitt</term>ances sig. par les sculpteurs Calmels, Courtet, Daumas, Desboeufs, Etex, Flandrin, Falconnier, Jaley, Moreau, Marion, Nanteuil et Robert ; <date when="1854">1854</date>-57,<measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><note>Reçus pour des travaux
 						de sculpture exécutés pour la réunion du Louvre aux Tuileries.</note>
             </item>
             <item n="168" xml:id="CAT_000163_e168">
@@ -1775,7 +1800,7 @@
             <item n="170" xml:id="CAT_000163_e170">
                <num type="lot">170</num>
                <name type="author">Provence</name>
-               <desc xml:id="CAT_000163_e170_d1">9 l. <term ana="#document_type_15">a. s.</term> de Joseph-Alphonse Esmenard, poète, membre de l'Académie française, né à Pélissanne (Bouches-du-Rhône) ; Paris, <date when="1808">1808</date>-10, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et 4 p. in-8 Correspondance avec M. Carbonnet relativement à une commande de vin faite par M. de Metternich.</desc></item>
+               <desc xml:id="CAT_000163_e170_d1">9 <term ana="#document_type_7">l. a. s.</term> de Joseph-Alphonse Esmenard, poète, membre de l'Académie française, né à Pélissanne (Bouches-du-Rhône) ; Paris, <date when="1808">1808</date>-10, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et 4 p. in-8 Correspondance avec M. Carbonnet relativement à une commande de vin faite par M. de Metternich.</desc></item>
             <item n="171" xml:id="CAT_000163_e171">
                <num type="lot">171</num>
                <name type="author">Révolution française. Journée du 10 août</name>
@@ -1820,7 +1845,7 @@
             <item n="177" xml:id="CAT_000163_e177">
                <num type="lot">177</num>
                <name type="author">Soissons</name>
-               <desc xml:id="CAT_000163_e177_d1">5 l. <term ana="#document_type_15">a. s.</term> de Charles Bourlon, coadjuteur, puis évêque de Soissons, au R. P. Boular; Compiègne et Soissons, <date when="1682">1682</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Correspondance très intéressante.</desc></item>
+               <desc xml:id="CAT_000163_e177_d1">5 <term ana="#document_type_7">l. a. s.</term> de Charles Bourlon, coadjuteur, puis évêque de Soissons, au R. P. Boular; Compiègne et Soissons, <date when="1682">1682</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Correspondance très intéressante.</desc></item>
             <item n="178" xml:id="CAT_000163_e178">
                <num type="lot">178</num>
                <name type="author">Soissons</name>

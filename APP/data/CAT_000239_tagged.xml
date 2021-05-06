@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000239">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -21,7 +21,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>188</num>
                <editor>Eugène Charavay fils</editor>
@@ -142,7 +142,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -194,6 +194,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -374,7 +394,7 @@
                <trait>
                   <p>prince de Wagram. maréchal de France.</p>
                </trait>
-               <desc xml:id="CAT_000239_e21_d1">4 let. sig. au maréchal Victor; Koenigsberg, 12 juillet 1807.-Paris, <date when="1807-08-18">18 août 1807</date>, <measure type="length" unit="p" n="8">8 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000239_e21_d1">4 <term ana="#document_type_9">let. sig.</term> au maréchal Victor; Koenigsberg, 12 juillet 1807.-Paris, <date when="1807-08-18">18 août 1807</date>, <measure type="length" unit="p" n="8">8 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Très curieuses lettres historiques dont voici une analyse sommaire. -Koenigsberg, 13 juillet 1807. Il lui annonce que l'Empereur a décrété que 400 aigles d'argent seraient donnés à son corps d'armée. La paix étant faite avec la Prusse, son corps d'armée devra se rendre à Spandau. -Paris, 18 août 1807. Lettre écrite peu de jours après l'élévation de Victor au maréchalat, où il lui annonce sa nomination de Gouverneur général de Berlin, et lui donne des ordres très détaillés pour l'évacuation des troupes.</note>
             </item>
             <item n="22" xml:id="CAT_000239_e22">
@@ -1425,7 +1445,7 @@
                <trait>
                   <p>célèbre prédicateur, le chef des vieux catholiques, né à Orléans en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000239_e145_d1">5 l. <term ana="#document_type_15">a. s.</term> à Mme Roger-Valazé; <date when="1865">1865-1867</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante, correspon-dance.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000239_e145_d1">5 <term ana="#document_type_7">l. a. s.</term> à Mme Roger-Valazé; <date when="1865">1865-1867</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante, correspon-dance.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="146" xml:id="CAT_000239_e146">
                <num type="lot">146</num>
@@ -1441,7 +1461,7 @@
                <trait>
                   <p>roi de France.</p>
                </trait>
-               <desc xml:id="CAT_000239_e147_d1">Let. sig. avec la souscript. aut. au capitaine Mazelières . <term ana="#document_type_8">L. a.</term> Rochelle, <date when="1588-11-30">30 nov. 1588</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Un peu fatiguée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000239_e147_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut. au capitaine Mazelières . La Rochelle, <date when="1588-11-30">30 nov. 1588</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Un peu fatiguée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="148" xml:id="CAT_000239_e148">
                <num type="lot">148</num>
@@ -2473,7 +2493,7 @@
             <item n="272" xml:id="CAT_000239_e272">
                <num type="lot">272</num>
                <name type="author">Bretagne</name>
-               <desc xml:id="CAT_000239_e272_d1">1° 2 let. sig. avec un post-scriptum de 7 lig. aut. du comte de Saint-Germain, ministre de la guerre, au marquis de Langeron; <date when="1776">1776</date>-77, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>-2° 2 pièces manuscrites; <date when="1776">1776</date>-77, 4 p. in-fol.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000239_e272_d1">1° 2 <term ana="#document_type_9">let. sig.</term> avec un post-scriptum de 7 lig. aut. du comte de Saint-Germain, ministre de la guerre, au marquis de Langeron; <date when="1776">1776</date>-77, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>-2° 2 pièces manuscrites; <date when="1776">1776</date>-77, 4 p. in-fol.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Curieux dossier relatif aux contructions militaires à Brest.</note>
             </item>
             <item n="273" xml:id="CAT_000239_e273">
@@ -2545,7 +2565,7 @@
             <item n="284" xml:id="CAT_000239_e284">
                <num type="lot">284</num>
                <name type="author">Malte (Ordre de)</name>
-               <desc xml:id="CAT_000239_e284_d1">4 let. sig. en français. du bailli de Spinola au chevalier de Caissac, à Lyon; Gènes, <date when="1726">1726</date>-27, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> cachets.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000239_e284_d1">4 <term ana="#document_type_9">let. sig.</term> en français. du bailli de Spinola au chevalier de Caissac, à Lyon; Gènes, <date when="1726">1726</date>-27, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> cachets.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Relatives aux affaires de l'Ordre de Malte.</note>
             </item>
             <item n="285" xml:id="CAT_000239_e285">
@@ -2563,13 +2583,13 @@
             <item n="287" xml:id="CAT_000239_e287">
                <num type="lot">287</num>
                <name type="author">Révolution de Juin 1848.</name>
-               <desc xml:id="CAT_000239_e287_d1">1° 19 l. <term ana="#document_type_15">a. s.</term> ou let. sig., 1848, <measure type="length" unit="p" n="24">24 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.-2° 11 pièces imprimées, proclamations, <date when="1848">etc. 1848</date>.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000239_e287_d1">1° 19 <term ana="#document_type_7">l. a. s.</term> ou let. sig., 1848, <measure type="length" unit="p" n="24">24 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.-2° 11 pièces imprimées, proclamations, <date when="1848">etc. 1848</date>.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true"> Très curieux dossier dans lequel on remarque des pièces aut. sig. du général Cavaignac, du général Perrot, une pièce sig. de Charras, des l. a. s. de Mgr Parisis, évêque de Langres; de Wolowski, du vicomte d'Arlincourt, etc,</note>
             </item>
             <item n="288" xml:id="CAT_000239_e288">
                <num type="lot">288</num>
                <name type="author">Protestants.</name>
-               <desc xml:id="CAT_000239_e288_d1">19 let. sig. et 4 pièces sig. du duc Antoine de Roquelaure, gouverneur de Languedoc (plus tard maréchal de France), à M. de Largentière, gouverneur du Vigan; <date when="1706">1706-1720</date>, <measure type="length" unit="p" n="51">51 pages</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="140">140</measure>
+               <desc xml:id="CAT_000239_e288_d1">19 <term ana="#document_type_9">let. sig.</term> et 4 pièces sig. du duc Antoine de Roquelaure, gouverneur de Languedoc (plus tard maréchal de France), à M. de Largentière, gouverneur du Vigan; <date when="1706">1706-1720</date>, <measure type="length" unit="p" n="51">51 pages</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="140">140</measure>
                <note anchored="true">Importante correspondance dont voici une analyse sommaire : -Montpellier, 24 octobre 1713. Défense des « assemblées illicites ». des prêches au désert. -Montpellier, 5 novembre 1713. Défense aux soldats « de commettre le faux saunage, ni de faire commerce de faux tabac ». - Montpellier, 26 avril 1714. « Le nommé Sabatier, revenu du païs étranger, me rendit vostre lettre; je l'adressay à M. l'abbé Joubert pour l'examiner, et comme il ne luy parut pas suspect, ny estre dans le cas de faire abjuration, je le renvoyay à Aulas, où je luy ai permis de demeurer tranquille, à condition d'y vivre en bon catholique. » -Montpellier, le 16 juin 1714. Défeuse de laisser pénétrer dans le royaumes les toiles peintes et étoffes provenant des Indes, de la Chine ou du Levant. -Montpellier, 21 juillet 1714. Défense aux soldats licenciés de passer à l'étranger. -Nîmes, 4 novembre 1714. Ordre de désarmer les nouveaux convertis. -Montpellier, 8 janvier 1715. Ordre de faire saisir un prédicant « revenu depuis peu du pays étranger et qu'on m'assure même avoir déjà tenu quelque assemblée dans les Cévenes. » A la lettre est joint le signalement du pasteur. -Dans la lettre suivante (13 avril 1715) on voit que ce prédicateur avait tenu assemblée à Saint-André de Valborgne. -Montpellier, 6 mars 1716. Ordre de faire saisir le prédicant Gaubertet qui a tenu deux assemblées du côté de Vigan.-Montpellier, 12 mars 1716. Comme les nouveaux convertis se réunissent dans la nuit du samedi au dimanche, et du dimanche au lundi, des détachements feront des rondes à ces deux moments. Ils s'embusqueront dans les campagnes aux endroits suspects.</note>
             </item>
             <item n="289" xml:id="CAT_000239_e289">

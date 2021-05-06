@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000147">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000147</title>
+            <title>RDA, N°144 (Avril 1892)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">144</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>144</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1892-04">Avril 1892</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -218,7 +250,7 @@
                <trait>
                   <p>célèbre romancier, né près de Versailles en 1789, mort en 1856</p>
                </trait>
-               <desc xml:id="CAT_000147_e2_d1">L. a. Piété, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000147_e2_d1">La Piété, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Jolie pièce d'album dont voici le commencement : Il est des malheureux : Oui,
                   tel est sur la terre, Des destins l'arrêt redouté. Mais Dieu près du malheur place
                   la piété, Appui consolation de l'humaine misère. En nos coeurs raniment la foi,
@@ -674,7 +706,7 @@
                      elle entra en 1605 aux Carmélites, morte en 1652. La mère Agnès a publié sa
                      Vie</p>
                </trait>
-               <desc xml:id="CAT_000147_e40_d1">2 let. aut., dont 1 sig. au président de la Tresne, à Bordeaux; <date when="1651">1651</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000147_e40_d1">2 <term ana="#document_type_8">let. aut.</term>, dont 1 sig. au président de la Tresne, à Bordeaux; <date when="1651">1651</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="41" xml:id="CAT_000147_e41">
                <num type="lot">41</num>
@@ -1429,7 +1461,7 @@
                   <p>médecin anglais, éditeur du Système de philosophie morale de son père, le
                      célèbre philosophe</p>
                </trait>
-               <desc xml:id="CAT_000147_e109_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Beaumelle; Dublin, <date when="1768-01-29">29 janvier 1768</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000147_e109_d1"><term ana="#document_type_7">L. a. s.</term> à La Beaumelle; Dublin, <date when="1768-01-29">29 janvier 1768</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Très curieuse épitre où il parle de l'expulsion des Jésuites de France : « Les
                   procèdures contre les Jésuites par toute l'Euope peuvent avoir, et je crois,
                   auront néessairement des conséquences très importantes. Peut-être furent elles
@@ -1864,7 +1896,7 @@
                <trait>
                   <p>. ministre de Louis XVI, né en 1723, mort en 1796</p>
                </trait>
-               <desc xml:id="CAT_000147_e149_d1">3 let. sig. à M. de Malartic, premier président du Conseil souverain de Roussillon ; <date when="1778">1778-1780</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000147_e149_d1">3 <term ana="#document_type_9">let. sig.</term> à M. de Malartic, premier président du Conseil souverain de Roussillon ; <date when="1778">1778-1780</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="150" xml:id="CAT_000147_e150">
                <num type="lot">150</num>
@@ -2667,7 +2699,7 @@
             <item n="228" xml:id="CAT_000147_e228">
                <num type="lot">228</num>
                <name type="author">Richard (J.-E.)</name>
-               <desc xml:id="CAT_000147_e228_d1">P. a. s., comme représentant du peuple près les armées du Nord et de Sambre-et-Meuse ; <term ana="#document_type_8">L. a.</term> Haye, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tôté impr., curieuse vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000147_e228_d1">P. <term ana="#document_type_15">a. s.</term>, comme représentant du peuple près les armées du Nord et de Sambre-et-Meuse ; La Haye, an <date when="1794-1795">III</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tôté impr., curieuse vignette.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="229" xml:id="CAT_000147_e229">
                <num type="lot">229</num>

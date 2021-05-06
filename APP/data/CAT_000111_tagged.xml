@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000111">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000111</title>
+            <title>RDA, N°108 (Octobre 1887)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">108</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>108</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -507,7 +539,7 @@
                   <p>l'illustre réformateur calviniste, né à Vézelay (Yonne) en 1519, mort en
                      1605</p>
                </trait>
-               <desc xml:id="CAT_000111_e32_d1"><term ana="#document_type_7">L. a. s.</term>, en latin, à Maclou Pomponius, à Padoue; Paris, <date when="0481">3 des ides de mai (de 1539 à 1544</date>), <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> (Les autographes de Théodore de Bèze datant de sa jeunesse sont très-rares).</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000111_e32_d1"><term ana="#document_type_7">L. a. s.</term>, en latin, à Maclou Pomponius, à Padoue; Paris, <date when="0482">3 des ides de mai (de 1539 à 1544</date>), <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> (Les autographes de Théodore de Bèze datant de sa jeunesse sont très-rares).</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note>Très curieuse lettre, écrite pendant la période de jeunesse où
                   il mena à Paris une vie libertine. Il se plaint de ne pas recevoir plus souvent
                   des nouvelles de son ami. A-til donc pris déjà les moeurs italiennes, qui sont de
@@ -769,7 +801,7 @@
                   <p>célèbre poète, surnommé le La Fontaine hollandais, grand pensionnaire de
                      Hollande, ambassadeur en Angleterre, né en 1577, mort en 1660</p>
                </trait>
-               <desc xml:id="CAT_000111_e56_d1"><term ana="#document_type_7">L. a. s.</term> à Vorst; L. a. Haye, <date when="1640">1640</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Superbe lettre.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000111_e56_d1"><term ana="#document_type_7">L. a. s.</term> à Vorst; La Haye, <date when="1640">1640</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Superbe lettre.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="57" xml:id="CAT_000111_e57">
                <num type="lot">57</num>
@@ -791,7 +823,7 @@
                   <p>maréchal de Savoie, célèbre diplomate du XVIe siècle, l'un des négociateurs de
                      la paix entre la France et son pays, après le traité de Cateau-Cambrésis</p>
                </trait>
-               <desc xml:id="CAT_000111_e58_d1">3 let. sig., sig. aussi par Ant. de Gorrevod, évêque de Lausanne et M. de la Chambre, en italien, au comte de Languisola ; Chambéry,; <date when="1562">1562</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets. Un peu tachées d'eau.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000111_e58_d1">3 <term ana="#document_type_9">let. sig.</term>, sig. aussi par Ant. de Gorrevod, évêque de Lausanne et M. de la Chambre, en italien, au comte de Languisola ; Chambéry,; <date when="1562">1562</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachets. Un peu tachées d'eau.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Lettres historiques importantes : Chambéry, 17 août 1562. Il
                   lui annonce que ses soldats s'avanceront par le val de Maurienne, séjourneront à
                   Saint-Jean, puis à Chambéry; la Savoie est peu fertile et ne pourra nourrir ses
@@ -980,7 +1012,7 @@
                   <p>le célèbre publiciste et orateur libéral, né à Lausanne en 1767, mort en
                      1830</p>
                </trait>
-               <desc xml:id="CAT_000111_e77_d1">1° 3 l. <term ana="#document_type_15">a. s.</term> à l'éditeur Bossange; <date when="1823">1823</date>, <measure type="length" unit="p" n="8.5">8 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000111_e77_d2">2° 3 projets de traités, dont un en partie aut., <date when="1823">1823</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000111_e77_d1">1° 3 <term ana="#document_type_7">l. a. s.</term> à l'éditeur Bossange; <date when="1823">1823</date>, <measure type="length" unit="p" n="8.5">8 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000111_e77_d2">2° 3 projets de traités, dont un en partie aut., <date when="1823">1823</date>, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Correspondance et projets de traités relatifs à la publication
                   de son ouvrage : De la religion considérée dans sa source, ses formes et ses
                   développements</note>
@@ -1176,7 +1208,7 @@
                <trait>
                   <p>le plus grand bibliographe de l'Angleterre, né en 1770, mort en 1847</p>
                </trait>
-               <desc xml:id="CAT_000111_e98_d1">Fin de lettre <term ana="#document_type_15">aut. sig.</term>, <date when="1832">1832</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000111_e98_d1">Fin de <term ana="#document_type_7">lettre aut. sig.</term>, <date when="1832">1832</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="99" xml:id="CAT_000111_e99">
                <num type="lot">99</num>
@@ -1325,7 +1357,7 @@
                      déploya dans ses missions aux armées, né en 1764, massacré dans le sein de la
                      Convention le 26 mai 1795</p>
                </trait>
-               <desc xml:id="CAT_000111_e114_d1">Fin de lettre <term ana="#document_type_15">aut. sig.</term>; (<date when="none">17 pluviôse, an II</date>), <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rapport sur la situation des esprits à Oléron.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000111_e114_d1">Fin de <term ana="#document_type_7">lettre aut. sig.</term>; (<date when="none">17 pluviôse, an II</date>), <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Rapport sur la situation des esprits à Oléron.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="115" xml:id="CAT_000111_e115">
                <num type="lot">115</num>
@@ -1592,7 +1624,7 @@
                   <p>célèbre peintre d'histoire, de l'Académie des Beaux-Arts, né en 1774, mort en
                      1833</p>
                </trait>
-               <desc xml:id="CAT_000111_e142_d1"><date when="1812">2 let. aut. dont 1 sig. à Mlle Lacazette (vers 1812</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000111_e142_d1"><date when="1812">2 <term ana="#document_type_8">let. aut.</term> dont 1 sig. à Mlle Lacazette (vers 1812</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Charmantes lettres où il loue sa beauté et l'appelle « une
                   grande et jolie dame »; il parle des portraits de Madame de la Rochejacquelin et
                   de sa mère, de leur amie commune, Madame Auzon (qui a peint Marie Louise)</note>
@@ -2052,7 +2084,7 @@
                   <p>procureur de la Commune de Paris, membre de la Convention, né à Montargis en
                      1731, guillotiné en 1793</p>
                </trait>
-               <desc xml:id="CAT_000111_e187_d1">2 let. aut.; Paris, <date when="1792-12-25">5 nivôse an II (25 déc. 1792</date>), <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000111_e187_d1">2 <term ana="#document_type_8">let. aut.</term>; Paris, <date when="1792-12-25">5 nivôse an II (25 déc. 1792</date>), <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Curieuses épîtres adressées à sa maîtresse. Il lui parle des
                   troubles de Nancy « Est-ce bien vrai tout ce qui se passe à Nancy? Que les hommes
                   sont meschans de se battre, de se tuer, sans s'entendre. Encore quand on perd la
@@ -2216,7 +2248,7 @@
                <trait>
                   <p>le célèbre bénédictin</p>
                </trait>
-               <desc xml:id="CAT_000111_e205_d1">Minute de lettre <term ana="#document_type_15">aut. sig.</term>; Paris, <date when="1708">1708</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000111_e205_d1">Minute de <term ana="#document_type_7">lettre aut. sig.</term>; Paris, <date when="1708">1708</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Très belle lettre de compliments sur une dissertation touchant
                   l'origine des lettres grecques et latines</note>
             </item>
@@ -2453,7 +2485,7 @@
                   <p>célèbre littérateur du XVIIIe siècle, auteur des Philosophes et de la Dunciade,
                      né à Nancy en 1730, mort en 1814</p>
                </trait>
-               <desc xml:id="CAT_000111_e231_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Bouisse Rochefort; Les Prés Saint-Gervais, <date when="1810-07-29">29 juillet 1810</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="17">17</measure>
+               <desc xml:id="CAT_000111_e231_d1"><term ana="#document_type_7">L. a. s.</term> à La Bouisse Rochefort; Les Prés Saint-Gervais, <date when="1810-07-29">29 juillet 1810</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="17">17</measure>
             </item>
             <item n="232" xml:id="CAT_000111_e232">
                <num type="lot">232</num>
@@ -2688,7 +2720,7 @@
                <trait>
                   <p>célèbre poète provençal, né à Saint-Remy (Bouches-du-Rhône) en 1818</p>
                </trait>
-               <desc xml:id="CAT_000111_e255_d1"><term ana="#document_type_8">L. a.</term> Campano Mountado, pouémo en sèt cant; Avignon, <date when="1857">1857</date>, 1 vol. <measure type="format" unit="f" ana="#document_format_18">in-18</measure> rel. Avec dédicace aut. sig., en laigue provençale, à Ant. de Latour.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000111_e255_d1">La Campano Mountado, pouémo en sèt cant; Avignon, <date when="1857">1857</date>, 1 vol. <measure type="format" unit="f" ana="#document_format_18">in-18</measure> rel. Avec dédicace <term ana="#document_type_15">aut. sig.</term>, en laigue provençale, à Ant. de Latour.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="256" xml:id="CAT_000111_e256">
                <num type="lot">256</num>
@@ -3036,7 +3068,7 @@
                   <p>écrivain distingué, auteur de Tragaldabas, né à Villequier (Seine-Inférieure)
                      en 1819</p>
                </trait>
-               <desc xml:id="CAT_000111_e288_d1">5 l. <term ana="#document_type_15">a. s.</term>; <date when="1849">1849</date>. <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes lettres relatives à Tragaldabas.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000111_e288_d1">5 <term ana="#document_type_7">l. a. s.</term>; <date when="1849">1849</date>. <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes lettres relatives à Tragaldabas.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="289" xml:id="CAT_000111_e289">
                <num type="lot">289</num>
@@ -3105,7 +3137,7 @@
                   <p>femme célèbre par sa beauté, nièce de Voltaire qui l'avait surnommée Belle et
                      Bonne, née à Pougny (Ain) en 1757, morte en 1822</p>
                </trait>
-               <desc xml:id="CAT_000111_e296_d1">2 l. <term ana="#document_type_15">a. s.</term> dont une à la 3e pers. à Decroix; <date when="1817">1817</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et 1 p. in-8.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000111_e296_d1">2 <term ana="#document_type_7">l. a. s.</term> dont une à la 3e pers. à Decroix; <date when="1817">1817</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et 1 p. in-8.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Elle le prie de transmettre à M. Hunoud, qui a rédigé la
                   première page de sa lettre et qui est l'un des co-éditeurs de Voltaire, tout ce
                   qu'il possède d'inédit sur le philosophe</note>
@@ -3117,7 +3149,7 @@
                   <p>l'illustre chef de l'école des violonistes modernes, né à Fontanetto en 1753,
                      mort en 1824</p>
                </trait>
-               <desc xml:id="CAT_000111_e297_d1"><term ana="#document_type_7">L. a. s.</term>, en français, au baron de L. a. Ferté, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000111_e297_d1"><term ana="#document_type_7">L. a. s.</term>, en français, au baron de La Ferté, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="298" xml:id="CAT_000111_e298">
                <num type="lot">298</num>

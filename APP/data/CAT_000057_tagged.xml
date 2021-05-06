@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000057">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000057</title>
+            <title>RDA, N°69 (Octobre 1881)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>69</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -218,7 +251,7 @@
             <item n="3" xml:id="CAT_000057_e3">
                <num type="lot">3</num>
                <name type="author">Angleterre</name>
-               <desc xml:id="CAT_000057_e3_d0">13 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000057_e3_d1">1° Manifeste cle Guillaume III, roi d'Angleterre, copie du temps, <date when="1697"><measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Document politique se rapportant à l'époque qui a suivi son élévation au trône et qui a précédé la conclusion du traité de Riswick en 1697</date>;</desc><desc xml:id="CAT_000057_e3_d2">2° Copie d'une lettre signée Armand, ahhé de la Trappe, <date when="1690">1690</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, fatiguée. Relative à Jacques II.</desc><desc xml:id="CAT_000057_e3_d3">3° <term ana="#document_type_9">Lettre sig.</term> avec un long post-criptum aut. de Puységur, membre du Conseil de guerre, 18 mars (<date when="1719">1719</date>), <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Relative à la réunion des troupes que le Régent tenait à la disposition de l'Angleterre en guerre avec l'Espagne.</desc><desc xml:id="CAT_000057_e3_d4">4° Lettre datée d'Ostende, <date when="1758">du mois d'octobre 1758</date>, sur les préparatifs que font les Anglais pour une descente sur les côtes de Bretagne.</desc><desc xml:id="CAT_000057_e3_d5">5° Capitulation de la place de Cattaro entre le général français Gauthier et le commandant des forces navales anglaises, <date when="1814-01-06">Je 6 janvier 1814</date>, pièce originale signée par les généraux français et anglais; etc.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000057_e3_d0">13 <term ana="#document_type_4">pièces.</term></desc><desc xml:id="CAT_000057_e3_d1">1° Manifeste cle Guillaume III, roi d'Angleterre, copie du temps, <date when="1697"><measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Document politique se rapportant à l'époque qui a suivi son élévation au trône et qui a précédé la conclusion du traité de Riswick en 1697</date>;</desc><desc xml:id="CAT_000057_e3_d2">2° Copie d'une <term ana="#document_type_9">lettre signée</term> Armand, ahhé de la Trappe, <date when="1690">1690</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, fatiguée. Relative à Jacques II.</desc><desc xml:id="CAT_000057_e3_d3">3° <term ana="#document_type_9">Lettre sig.</term> avec un long post-criptum aut. de Puységur, membre du Conseil de guerre, 18 mars (<date when="1719">1719</date>), <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Relative à la réunion des troupes que le Régent tenait à la disposition de l'Angleterre en guerre avec l'Espagne.</desc><desc xml:id="CAT_000057_e3_d4">4° Lettre datée d'Ostende, <date when="1758">du mois d'octobre 1758</date>, sur les préparatifs que font les Anglais pour une descente sur les côtes de Bretagne.</desc><desc xml:id="CAT_000057_e3_d5">5° Capitulation de la place de Cattaro entre le général français Gauthier et le commandant des forces navales anglaises, <date when="1814-01-06">Je 6 janvier 1814</date>, pièce originale signée par les généraux français et anglais; etc.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="4" xml:id="CAT_000057_e4">
                <num type="lot">4</num>
@@ -246,7 +279,7 @@
                <trait>
                   <p>10 pièces</p>
                </trait>
-               <desc xml:id="CAT_000057_e6_d1">Actes sur vélin, concernant les artistes suivants : Silvestre, peintre du roi de Pologne, 1751 ; J.-M. Pelletier, sculpteur, 1752; F.-C. Fresson, 1772; L.-F. Marteau, peintre, 1751; <term ana="#document_type_8">L. a.</term> Tour, le célèbre peintre, 1775; Houasse, peintre du roi et professeur de L'Académie royale de peinture, 1690; Christophe (Pierre), architecte, <date when="1784">1784</date>, etc.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000057_e6_d1">Actes sur vélin, concernant les artistes suivants : Silvestre, peintre du roi de Pologne, 1751 ; J.-M. Pelletier, sculpteur, 1752; F.-C. Fresson, 1772; L.-F. Marteau, peintre, 1751; La Tour, le célèbre peintre, 1775; Houasse, peintre du roi et professeur de L'Académie royale de peinture, 1690; Christophe (Pierre), architecte, <date when="1784">1784</date>, etc.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="7" xml:id="CAT_000057_e7">
                <num type="lot">7</num>
@@ -357,7 +390,7 @@
                <trait>
                   <p>littérateur distingué, lecteur du duc d'Orléans</p>
                </trait>
-               <desc xml:id="CAT_000057_e16_d1">Manuscrits aut.: 1° L'abbé de plâtre, comédie en 1 acte, <measure type="length" unit="p" n="39">39 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> à mi-marges.</desc><desc xml:id="CAT_000057_e16_d2">2° L'Entêté, comédie en 2 actes, <measure type="length" unit="p" n="56">56 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000057_e16_d3">3° Le Testament singulier, comédie en 1 acte, <measure type="length" unit="p" n="27">27 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, et Toujours tout de mêmeproverbe, 22 p. in-f.</desc><desc xml:id="CAT_000057_e16_d4">4° Amusement de société ou proverbes dramatiques, formant la matière d'un vol. <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> de <measure type="length" unit="p" n="193">193 p.</measure> contenant les proverbes suivants: La Guinguette, <term ana="#document_type_8">L. a.</term> robe de chambre, L'Habit neuf, le Seigneur du village amoureux, L'Asne dans le potager, la Sonnette et le Marchand de bijoux.</desc><measure commodity="currency" unit="FRF" quantity="17">17</measure>
+               <desc xml:id="CAT_000057_e16_d1">Manuscrits aut.: 1° L'abbé de plâtre, comédie en 1 acte, <measure type="length" unit="p" n="39">39 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> à mi-marges.</desc><desc xml:id="CAT_000057_e16_d2">2° L'Entêté, comédie en 2 actes, <measure type="length" unit="p" n="56">56 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000057_e16_d3">3° Le Testament singulier, comédie en 1 acte, <measure type="length" unit="p" n="27">27 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, et Toujours tout de mêmeproverbe, 22 p. in-f.</desc><desc xml:id="CAT_000057_e16_d4">4° Amusement de société ou proverbes dramatiques, formant la matière d'un vol. <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> de <measure type="length" unit="p" n="193">193 p.</measure> contenant les proverbes suivants: La Guinguette, La robe de chambre, L'Habit neuf, le Seigneur du village amoureux, L'Asne dans le potager, la Sonnette et le Marchand de bijoux.</desc><measure commodity="currency" unit="FRF" quantity="17">17</measure>
             </item>
             <item n="17" xml:id="CAT_000057_e17">
                <num type="lot">17</num>
@@ -549,7 +582,7 @@
                <trait>
                   <p>le célèbre archevêque de Cambrai, 3 pièces le concernant</p>
                </trait>
-               <desc xml:id="CAT_000057_e35_d1">1° Copie d'une lettre de lui très-curieuse relative à son ouvrage : Explications des Maximes des Saints, <date when="1697">du 3 août 1697</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000057_e35_d2">2° Copie de la lettre de Louis XIV au Pape sur le même ouvrage, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><desc xml:id="CAT_000057_e35_d3">3° Extrait d'une lettre de M. de Cambray à M. l'évêque d'Arras (copie du temps), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000057_e35_d4"> On y a joint : 1° 8 lettres de l'abbé de Fénelon, <date when="1769">de 1769</date>.</desc><desc xml:id="CAT_000057_e35_d5">2° 1 l. <term ana="#document_type_15">a. s.</term> du chevalier de Fénelon, <date when="1775">1775</date>.</desc><desc xml:id="CAT_000057_e35_d6">3° 1 let. <term ana="#document_type_15">aut. sig.</term> du comte de Salignac de La Mothe Fénelon, <date when="1794">1794</date>.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000057_e35_d1">1° Copie d'une lettre de lui très-curieuse relative à son ouvrage : Explications des Maximes des Saints, <date when="1697">du 3 août 1697</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000057_e35_d2">2° Copie de la lettre de Louis XIV au Pape sur le même ouvrage, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><desc xml:id="CAT_000057_e35_d3">3° Extrait d'une lettre de M. de Cambray à M. l'évêque d'Arras (copie du temps), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000057_e35_d4"> On y a joint : 1° 8 lettres de l'abbé de Fénelon, <date when="1769">de 1769</date>.</desc><desc xml:id="CAT_000057_e35_d5">2° 1 <term ana="#document_type_7">l. a. s.</term> du chevalier de Fénelon, <date when="1775">1775</date>.</desc><desc xml:id="CAT_000057_e35_d6">3° 1 <term ana="#document_type_7">let. aut. sig.</term> du comte de Salignac de La Mothe Fénelon, <date when="1794">1794</date>.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="36" xml:id="CAT_000057_e36">
                <num type="lot">36</num>
@@ -557,7 +590,7 @@
                <trait>
                   <p>88 pièces</p>
                </trait>
-               <desc xml:id="CAT_000057_e36_d1">Nomination des commsisaires-généraux, députés par le Roi pour la vente, aliénation et délaissement à perpétuité des domaines de la Couronne, 1679, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Parmi les commissaires, au nombre de neuf, on remarque : Colbert, d'Aligre, Dugué, Poncet, etc.-Observations sur la nouvelle déclaration du Roi concernant la Banque, et motifs de l'arrêt sur les billets de banque, <date when="1716">1716</date>, copies du temps.-Rapports de différents ministres des finances; documents sur la Banque de France et les agents de change.-Imprimés : Edits et arrêts du roi Louis XIV sur les finances.</desc><measure commodity="currency" unit="FRF" quantity="13">13</measure>
+               <desc xml:id="CAT_000057_e36_d1">Nomination des commsisaires-généraux, députés par le Roi pour la vente, aliénation et délaissement à perpétuité des domaines de la Couronne, 1679, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Parmi les commissaires, au nombre de neuf, on remarque : Colbert, d'Aligre, Dugué, Poncet, etc.-Observations sur la nouvelle déclaration du Roi concernant la Banque, et motifs de l'arrêt sur les <term ana="#document_type_6">billets</term> de banque, <date when="1716">1716</date>, copies du temps.-Rapports de différents ministres des finances; documents sur la Banque de France et les agents de change.-Imprimés : Edits et arrêts du roi Louis XIV sur les finances.</desc><measure commodity="currency" unit="FRF" quantity="13">13</measure>
             </item>
             <item n="37" xml:id="CAT_000057_e37">
                <num type="lot">37</num>
@@ -695,7 +728,7 @@
                <trait>
                   <p>impératrice des Français.</p>
                </trait>
-               <desc xml:id="CAT_000057_e50_d1">1° <term ana="#document_type_4">Pièce sig</term>. par elle et par Bonaparte; Paris, <date when="1800-10-19">27 vend, an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Curieuse pièce par laquelle elle donne l'autorisation de faire en son nom « tous échanges et acquisitions de portions de terre, prés, bois et autres immeubles tendant à l'agrandissement et arrondissement de la terre de L. a. Malmaison.</desc><desc xml:id="CAT_000057_e50_d2">2° Extrait de l'acte de mariage de Joséphine avec Napoléon; <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> D'après cet acte, Joséphine, que l'on fait naître le 23 juin 1763, serait née seulement le 23 juin 1767, et Bonaparte', qui est né le 15 août 1769, <date when="1768">ne serait né que le 5 février 1768</date>.</desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
+               <desc xml:id="CAT_000057_e50_d1">1° <term ana="#document_type_4">Pièce sig</term>. par elle et par Bonaparte; Paris, <date when="1800-10-19">27 vend, an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Curieuse pièce par laquelle elle donne l'autorisation de faire en son nom « tous échanges et acquisitions de portions de terre, prés, bois et autres immeubles tendant à l'agrandissement et arrondissement de la terre de La Malmaison.</desc><desc xml:id="CAT_000057_e50_d2">2° Extrait de l'acte de mariage de Joséphine avec Napoléon; <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> D'après cet acte, Joséphine, que l'on fait naître le 23 juin 1763, serait née seulement le 23 juin 1767, et Bonaparte', qui est né le 15 août 1769, <date when="1768">ne serait né que le 5 février 1768</date>.</desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
             </item>
             <item n="51" xml:id="CAT_000057_e51">
                <num type="lot">51</num>
@@ -973,7 +1006,7 @@
                <trait>
                   <p>sous Louis XIV</p>
                </trait>
-               <desc xml:id="CAT_000057_e78_d1">3 let. sig. du ministre Le Pelletier des Forts, au maréchal de Bezons, commandant en chef de l'armée du Rhin; Paris, <date when="1710">16 mai 1710-15 août 1713</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000057_e78_d1">3 <term ana="#document_type_9">let. sig.</term> du ministre Le Pelletier des Forts, au maréchal de Bezons, commandant en chef de l'armée du Rhin; Paris, <date when="1710">16 mai 1710-15 août 1713</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>1710. Envoi de l'état des ingénieurs choisis pour servir à la suite de l'armée
                   d'Allemagne, à Strasbourg, Marsal. Lauterbourg, Béfort et Fortlouis, avec leurs
                   noms el les chiffres de leurs appointements. -1713. Progrès des attaques de
@@ -996,7 +1029,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000057_e80_d1">1" 16 lettres à lui adressées par les personnages suivants : <term ana="#document_type_8">L. a.</term> Luzerne, curieuse lettre de 1788 où il lui annonce qu'il souscrit à 100 exemplaires du 4e volume des Etudes de la nature; Lambert, ministre de Louis XVI, intéressante lettre de 1788 sur la continuation des secours dont lui et sa soeur profitaient dans l'état des grâces du roi sur les fonds de la loterie royale; 9 let. sig. de Lacépède relatives à l'admission de sa fille Virginie comme pensionnaire de la maison d'Ecouen; Let. sig. de Montalivet à Mme Bernardin de Saint-Pierre, <date when="1814">datée de 1814</date>, sur la mort de son mari, etc.</desc><desc xml:id="CAT_000057_e80_d2">2° 2 notes autog. formant <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000057_e80_d3">3° <term ana="#document_type_9">Let. sig.</term> du ministre Laboureau, relative à sa pension de 1,000 fr., <date when="1777">1777</date>.</desc><desc xml:id="CAT_000057_e80_d4">4° 3 let. aut. dont une sig. de Boucher, employé de la Police (le bon ange de Mirabeau), à Bernardin de Saint-Pierre, sur l'emprisonnement de son frère, <date when="1781">1781</date>.</desc><desc xml:id="CAT_000057_e80_d5">5° 3 let. sig. à lui adressées par le baron de Breteuil, sur la détention de son frère et sa pension sur le Mercure, <date when="1784">1784</date>-88.</desc><desc xml:id="CAT_000057_e80_d6">6° Extrait d'une lettre adressée à Bernardin de Saint-Pierre de l'île de l'Ascension, sur son système des courants, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, plus 2 pièces concernant cette lettre, qui avait été envoyée dans une bouteille jetée à la mer.</desc><desc xml:id="CAT_000057_e80_d7">7° <term ana="#document_type_9">Let. sig.</term> du ministre Vaublanc à Virginie Bernardin de Saint-Pierre, lui annonçant que le roi lui accorde une pension de 1,000 fr., <date when="1816">1816</date>.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000057_e80_d1">1" 16 lettres à lui adressées par les personnages suivants : La Luzerne, curieuse lettre de 1788 où il lui annonce qu'il souscrit à 100 exemplaires du 4e volume des Etudes de la nature; Lambert, ministre de Louis XVI, intéressante lettre de 1788 sur la continuation des secours dont lui et sa soeur profitaient dans l'état des grâces du roi sur les fonds de la loterie royale; 9 <term ana="#document_type_9">let. sig.</term> de Lacépède relatives à l'admission de sa fille Virginie comme pensionnaire de la maison d'Ecouen; Let. sig. de Montalivet à Mme Bernardin de Saint-Pierre, <date when="1814">datée de 1814</date>, sur la mort de son mari, etc.</desc><desc xml:id="CAT_000057_e80_d2">2° 2 notes autog. formant <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000057_e80_d3">3° <term ana="#document_type_9">Let. sig.</term> du ministre Laboureau, relative à sa pension de 1,000 fr., <date when="1777">1777</date>.</desc><desc xml:id="CAT_000057_e80_d4">4° 3 <term ana="#document_type_8">let. aut.</term> dont une sig. de Boucher, employé de la Police (le bon ange de Mirabeau), à Bernardin de Saint-Pierre, sur l'emprisonnement de son frère, <date when="1781">1781</date>.</desc><desc xml:id="CAT_000057_e80_d5">5° 3 <term ana="#document_type_9">let. sig.</term> à lui adressées par le baron de Breteuil, sur la détention de son frère et sa pension sur le Mercure, <date when="1784">1784</date>-88.</desc><desc xml:id="CAT_000057_e80_d6">6° Extrait d'une <term ana="#document_type_8">lettre a</term>dressée à Bernardin de Saint-Pierre de l'île de l'Ascension, sur son système des courants, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, plus 2 pièces concernant cette lettre, qui avait été envoyée dans une bouteille jetée à la mer.</desc><desc xml:id="CAT_000057_e80_d7">7° <term ana="#document_type_9">Let. sig.</term> du ministre Vaublanc à Virginie Bernardin de Saint-Pierre, lui annonçant que le roi lui accorde une pension de 1,000 fr., <date when="1816">1816</date>.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="81" xml:id="CAT_000057_e81">
                <num type="lot">81</num>
@@ -1004,7 +1037,7 @@
                <trait>
                   <p>la grande épistolaire, 15 pièces</p>
                </trait>
-               <desc xml:id="CAT_000057_e81_d1">1° Acte sur vélin relatif à la succession du président Frémyot, <date when="1679">1679</date>, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Le nom de Mme de Sévigné se trouve mentionné deux fois comme héritière pour une part du président Frémyot. On remarque aussi les noms de Françoise de Rabutin-Chantal, fille de Sainte-Chantal et veuve d'Ântoine de Toulongeon ; Jean de Barbisey, le président Baillet, etc.</desc><desc xml:id="CAT_000057_e81_d2">2° <term ana="#document_type_9">Let. sig.</term> du duc du Maine à Mlle de Sévigné, <date when="1701">1701</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Piqûre d'humidité dans la marge.</desc><desc xml:id="CAT_000057_e81_d3">3° <term ana="#document_type_2">Pièce sur vélin avec 5 lig. aut. sig.</term> d'Anne de Sévigné; L. a. Gailleule, <date when="1644">1644</date>, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000057_e81_d4">4° 3 let. <term ana="#document_type_15">aut. sig.</term> de Mme la comtesse de Sainte-Agathe, dernière descendante de Mme de Sévigné, etc.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000057_e81_d1">1° Acte sur vélin relatif à la succession du président Frémyot, <date when="1679">1679</date>, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Le nom de Mme de Sévigné se trouve mentionné deux fois comme héritière pour une part du président Frémyot. On remarque aussi les noms de Françoise de Rabutin-Chantal, fille de Sainte-Chantal et veuve d'Ântoine de Toulongeon ; Jean de Barbisey, le président Baillet, etc.</desc><desc xml:id="CAT_000057_e81_d2">2° <term ana="#document_type_9">Let. sig.</term> du duc du Maine à Mlle de Sévigné, <date when="1701">1701</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Piqûre d'humidité dans la marge.</desc><desc xml:id="CAT_000057_e81_d3">3° <term ana="#document_type_2">Pièce sur vélin avec 5 lig. aut. sig.</term> d'Anne de Sévigné; La Gailleule, <date when="1644">1644</date>, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000057_e81_d4">4° 3 <term ana="#document_type_7">let. aut. sig.</term> de Mme la comtesse de Sainte-Agathe, dernière descendante de Mme de Sévigné, etc.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="82" xml:id="CAT_000057_e82">
                <num type="lot">82</num>

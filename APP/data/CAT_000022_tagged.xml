@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000022">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000022</title>
+            <title>RDA, N°23 (Octobre 1869)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>23</num>
                <editor>Gabriel Charavay</editor>
                <publisher>Gabriel Charavay</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> BnF, MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936 <ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -215,7 +248,7 @@
                <num type="lot">2</num>
                <name type="author">Alembert (Lerond d')</name>
                <trait>
-                  <p>célèbre philosophe du XVIIIe siècle, de l'Acad. franc</p>
+                  <p>célèbre philosophe du XVIIIe siècle, de l'Acad. franc.</p>
                </trait>
                <desc xml:id="CAT_000022_e2_d1"><term ana="#document_type_7">L. a. s.</term>; Paris, <date when="1774-11-03">3 nov. 1774</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
@@ -313,7 +346,7 @@
                <trait>
                   <p>mère du duc de Bordeaux</p>
                </trait>
-               <desc xml:id="CAT_000022_e13_d1">Fin de lettre <term ana="#document_type_15">aut. sig.</term> au comte de Rosambo, sur la mort de son beau-frère, <date when="1846-01">janv. 1846</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000022_e13_d1">Fin de <term ana="#document_type_7">lettre aut. sig.</term> au comte de Rosambo, sur la mort de son beau-frère, <date when="1846-01">janv. 1846</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="14" xml:id="CAT_000022_e14">
                <num type="lot">14</num>
@@ -527,7 +560,7 @@
                <trait>
                   <p>bénédictin, historien de Turenne</p>
                </trait>
-               <desc xml:id="CAT_000022_e37_d1">Deux l. <term ana="#document_type_15">a. s.</term>, <date when="1702">1702 et 1704</date>, cette dernière adressée à un historien de Turenne, sur un parallèle entre ce grand homme et Ruyter.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000022_e37_d1">Deux <term ana="#document_type_7">l. a. s.</term>, <date when="1702">1702 et 1704</date>, cette dernière adressée à un historien de Turenne, sur un parallèle entre ce grand homme et Ruyter.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="38" xml:id="CAT_000022_e38">
                <num type="lot">38</num>
@@ -649,7 +682,7 @@
                <num type="lot">51</num>
                <name type="author">Delavigne (Casimir)</name>
                <trait>
-                  <p>célèbre poète, de l'Acad. franc</p>
+                  <p>célèbre poète, de l'Acad. franc.</p>
                </trait>
                <desc xml:id="CAT_000022_e51_d1"><term ana="#document_type_7">L. a. s.</term> à Raynouard, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="3.3">3 3</measure>
             </item>
@@ -785,7 +818,7 @@
                <num type="lot">67</num>
                <name type="author">Florian (le chevalier de)</name>
                <trait>
-                  <p>gracieux écrivain, de l'Acad. franc</p>
+                  <p>gracieux écrivain, de l'Acad. franc.</p>
                </trait>
                <desc xml:id="CAT_000022_e67_d1"><term ana="#document_type_12">Quitt. sig.</term>, <date when="1785">1785</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 ob</measure>i.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Reçu de 623 liv. du duc de Penthièvre pour six mois de ses appointements</note>
@@ -1051,7 +1084,7 @@
                <num type="lot">97</num>
                <name type="author">La Harpe (J.-F. de)</name>
                <trait>
-                  <p>le plus grand critique du XVIIIe siècle, de l'Acad. franc</p>
+                  <p>le plus grand critique du XVIIIe siècle, de l'Acad. franc.</p>
                </trait>
                <desc xml:id="CAT_000022_e97_d1"><date when="1778"><term ana="#document_type_7">L. a. s.</term> à Palissot. 15 juin 1778</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, beau cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="10"> 10</measure>
                <note>Curieuse épître sur une lettre de Palissot, insérée par La Harpe dans le
@@ -1119,7 +1152,7 @@
                <num type="lot">104</num>
                <name type="author">Lava (J.-L.)</name>
                <trait>
-                  <p>célèbre poète dramat., auteur de l'Ami des Lois, de l'Acad. fr</p>
+                  <p>célèbre poète dramat., auteur de l'Ami des Lois, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000022_e104_d1"><term ana="#document_type_7">L. a. s.</term> à M. de Martignac, <date when="1828">1828</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
@@ -1556,7 +1589,7 @@
                <num type="lot">154</num>
                <name type="author">Parny (Evariste)</name>
                <trait>
-                  <p>célèbre poète érotique, auteur de la Guerre des Dieux, de l'Acad. fr</p>
+                  <p>célèbre poète érotique, auteur de la Guerre des Dieux, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000022_e154_d1">Note sig. de son initiale, adressée à Tissot, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="5"> 5</measure>
                <note>Examen critique d'une pièce de vers</note>
@@ -1735,7 +1768,7 @@
                <num type="lot">174</num>
                <name type="author">Rothelin (l'abbé Ch. d'Orléans de)</name>
                <trait>
-                  <p>littérateur et savant numismate, de l'Acad. fr</p>
+                  <p>littérateur et savant numismate, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000022_e174_d1"><term ana="#document_type_2">Pièce aut. sig.</term> ; Moncy, <date when="1732-11-20">20 nov. 1732</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Acte de vente de deux arpents de bois de sa garenne de Moncy-Ie-Vieux</note>
@@ -1840,7 +1873,7 @@
                <num type="lot">185</num>
                <name type="author">Saint-Pierre (Bernardin de)</name>
                <trait>
-                  <p>l'auteur de Paul et Virginie, de l'Acad. fr</p>
+                  <p>l'auteur de Paul et Virginie, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000022_e185_d1">Reçu sig. des deux premiers volumes des Harmonies de la Nature, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc></item>
             <item n="186" xml:id="CAT_000022_e186">
@@ -1891,7 +1924,7 @@
                <name type="author">Target (G.-J.-B.)</name>
                <trait>
                   <p>célèbre avocat et constituant, qui refusa de défendre Louis XVI, memb. de
-                     l'Acad. fr</p>
+                     l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000022_e191_d1">Belle <term ana="#document_type_4">pièce sig</term>., <date when="1793">1793</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>,</desc><measure commodity="currency" unit="FRF" quantity="1.50">1 50</measure>
             </item>
@@ -1906,7 +1939,7 @@
                <num type="lot">193</num>
                <name type="author">Thiers (Ad.)</name>
                <trait>
-                  <p>homme d'Etat, de l'Acad. fr</p>
+                  <p>homme d'Etat, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000022_e193_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Naradan; Paris, <date when="1822-05-09">9 mai 1822</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>C'est la plus ancienne lettre de M. Thiers que nous ayons encore vue. Il
@@ -1978,7 +2011,7 @@
                <num type="lot">201</num>
                <name type="author">Vigny (Alf. de)</name>
                <trait>
-                  <p>poète célèbre, do l'Acad. fr</p>
+                  <p>poète célèbre, do l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000022_e201_d1"><term ana="#document_type_7">L. a. s.</term> à l'imprimeur Tastu, <date when="1825">1825</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, beau cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="3"> 3</measure>
             </item>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000107">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000107</title>
+            <title>RDA, N°104 (Mars 1887)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>104</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -305,7 +337,7 @@
                   <p>célèbre compositeur, auteur de la Dame Blanche, né à Rouen en 1775, mort en
                      1834</p>
                </trait>
-               <desc xml:id="CAT_000107_e12_d1"><term ana="#document_type_7">L. a. s.</term> au baron de L. a. Ferté, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000107_e12_d1"><term ana="#document_type_7">L. a. s.</term> au baron de La Ferté, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="13" xml:id="CAT_000107_e13">
                <num type="lot">13</num>
@@ -1217,7 +1249,7 @@
                      l'évêque de Valence, qui épousa en secondes noces Diane d'Estrées, né vers
                      1545, mort en 1603</p>
                </trait>
-               <desc xml:id="CAT_000107_e107_d1"><term ana="#document_type_7">L. a. s.</term> à M de Lézignan (Louis de Saint-Gelais, baron de L. a. Mothe-Sainte-Héraye), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure>, cachet. Rare</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000107_e107_d1"><term ana="#document_type_7">L. a. s.</term> à M de Lézignan (Louis de Saint-Gelais, baron de La Mothe-Sainte-Héraye), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure>, cachet. Rare</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="108" xml:id="CAT_000107_e108">
                <num type="lot">108</num>
@@ -1550,7 +1582,7 @@
                   <p>illustre réformateur de la Trappe, dont Chauteaubriand a écrit la vie, né en
                      1626, mort à Soligny-la-Trappe en 1700</p>
                </trait>
-               <desc xml:id="CAT_000107_e136_d1">Let. sig. au R. P. prieur de Perseigne; <term ana="#document_type_8">L. a.</term> Trappe, <date when="1685-10-03">3 octobre 1685</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000107_e136_d1"><term ana="#document_type_9">Let. sig.</term> au R. P. prieur de Perseigne; La Trappe, <date when="1685-10-03">3 octobre 1685</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Belle et intéressante lettre. Il lui donne des conseils pour sa conscience
                   comme pour son régime; on peut modifier ses engagements pourvu qu'on se laisse
                   guider par la piété et la justice : « Pour le cidre vous ne devez point faire de
@@ -1997,7 +2029,7 @@
                   <p>la célèbre épistolaire, petite-fille de sainte Jeanne de Chantal, née à Paris
                      en 1626, morte au château de Grignan (Drôme) en 1696</p>
                </trait>
-               <desc xml:id="CAT_000107_e180_d1">P. S., signée aussi par son mari Henri, marquis de Sévigné, Marie de <term ana="#document_type_8">L. a.</term> Croix, veuve de Gabriel de Guénégaud. Claude de Guénégaud, trésorier du Roi, Philippe de Coulanges (oncle de Madame de Sévigné), Léonor de Rabutin, comte de Bussy, lieutenant-général, et l'abbé Christophe de Coulanges ; Paris, <date when="1644">8 fév. 1644 et 30 janv 1645</date>, <measure type="length" unit="p" n="3.5">3. p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Tachée d'humidité et raccommodée. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000107_e180_d1">P. S., signée aussi par son mari Henri, marquis de Sévigné, Marie de La Croix, veuve de Gabriel de Guénégaud. Claude de Guénégaud, trésorier du Roi, Philippe de Coulanges (oncle de Madame de Sévigné), Léonor de Rabutin, comte de Bussy, lieutenant-général, et l'abbé Christophe de Coulanges ; Paris, <date when="1644">8 fév. 1644 et 30 janv 1645</date>, <measure type="length" unit="p" n="3.5">3. p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Tachée d'humidité et raccommodée. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note>Précieux document. Philippe de Coulanges, tuteur de sa nièce mineure Marie de
                   Rabutin-Chantal, achète, le 8 février 1644, pour celle-ci, de la veuve de Gabriel
                   de Guénégaud, une rente annuelle de sept cent soixante-dix-sept livres quinze sous
@@ -2799,7 +2831,7 @@
                <trait>
                   <p>littérateur et poète, traducteur d'Horace, né en 1770, mort en 1821</p>
                </trait>
-               <desc xml:id="CAT_000107_e258_d1"><term ana="#document_type_7">L. a. s.</term> à M. de L. a. Garde ; an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000107_e258_d1"><term ana="#document_type_7">L. a. s.</term> à M. de La Garde ; an <date when="1803-1804">XII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="259" xml:id="CAT_000107_e259">
                <num type="lot">259</num>

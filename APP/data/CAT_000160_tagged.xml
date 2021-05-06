@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000160">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000160</title>
+            <title>RDA, N°157 (Juillet 1893)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>157</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1893-07">Juillet 1893</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -401,7 +433,7 @@
                   <p>écrivain philosophe, un des plus habiles critiques du XVIIIe siècle, né à
                      Ratisbonne en 1723, mort en 1807.</p>
                </trait>
-               <desc xml:id="CAT_000160_e18_d1"><term ana="#document_type_7">L. a. s.</term> , en français (à Anne-César de L. a. Luzerne, ambassadeur aux Etats-Unis) ; Paris, <date when="1779-10-12">12 octobre 1779</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000160_e18_d1"><term ana="#document_type_7">L. a. s.</term> , en français (à Anne-César de La Luzerne, ambassadeur aux Etats-Unis) ; Paris, <date when="1779-10-12">12 octobre 1779</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Très intéressante lettre. Il le remercie de ses renseignements sur M. Hartwick
                   de Philadelphie: « j'espérais vous renvoyer de nos contrées quelque grande et
                   bonne nouvelle, mais notre campagne n'a pas été fertile en événemens, et nous
@@ -630,7 +662,7 @@
                   <p>célèbre général des armées de la République, né à Arbois en 1761, mort en 1804.
                   </p>
                </trait>
-               <desc xml:id="CAT_000160_e37_d1">Let. sig. au général Lefebvre, <term ana="#document_type_8">L. a.</term> Haye, <date when="1795-02-17">29 pluviôse an III (17 février 1795</date>), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000160_e37_d1"><term ana="#document_type_9">Let. sig.</term> au général Lefebvre, La Haye, <date when="1795-02-17">29 pluviôse an III (17 février 1795</date>), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Intéressante lettre militaire. Il lui ordonne d'appuyer la gauche de sa
                   division sur celle de Vandamme vers Diepenheim (près Deventer, dans l'Over Yssel),
                   sans aller jusqu'à Bentheim (mouvements pour continuer l'occupation de la
@@ -717,7 +749,7 @@
             </item>
             <item n="45" xml:id="CAT_000160_e45">
                <num type="lot">45</num>
-               <name type="author">Saint-Pol (Louis de Luxembourg, comte de),</name>
+               <name type="author">Saint-Pol (Louis de Luxembourg, comte de)</name>
                <desc xml:id="CAT_000160_e45_d1">de Ligny et de Brienne, dit le Connétable de Saint-Pol, connétable de France, né vers 1418, mort sur l'échafaud à Paris le 19 déc. 1473. <term ana="#document_type_4">Pièce sig</term>. sur vélin; <date when="1456-03-18">18 mars 1456</date>, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Quittance de 10,000 livres tournois à René d'Anjou, roi de Sicile, pour
                   arrérages de 23,000 livres que lui doit le roi à cause de 1,200 livres de rente «
@@ -1232,7 +1264,7 @@
             <item n="128" xml:id="CAT_000160_e128">
                <num type="lot">128</num>
                <name type="author">Sallier (l'abbé Claude)</name>
-               <desc xml:id="CAT_000160_e128_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1732">1732</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> L. a. marge du bas a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000160_e128_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1732">1732</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> La marge du bas a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="129" xml:id="CAT_000160_e129">
                <num type="lot">129</num>
@@ -2020,7 +2052,7 @@
             <item n="270" xml:id="CAT_000160_e270">
                <num type="lot">270</num>
                <name type="author">Arnaud (Fr. Baculard d')</name>
-               <desc xml:id="CAT_000160_e270_d1">L. a. Saxe, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000160_e270_d1">La Saxe, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très jolie pièce.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="271" xml:id="CAT_000160_e271">
                <num type="lot">271</num>
@@ -2663,7 +2695,7 @@
             <item n="368" xml:id="CAT_000160_e368">
                <num type="lot">368</num>
                <name type="author">Emigration</name>
-               <desc xml:id="CAT_000160_e368_d1">1° 2 l. <term ana="#document_type_15">a.s.</term> de François-Simon de Pfaffenhoffen, segneur autrichien au roi Louis-Philippe et au comte Molé; Loberwerth. près Coblence, <date when="1838-11-20">20 nov 1838</date>, <measure type="length" unit="p" n="9.5">9 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000160_e368_d2">2° P. <term ana="#document_type_15">a. s.</term> du même ; <date when="1838-09-30">30 sept. 1838</date>. 1/2 p <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000160_e368_d3">3° Brochure imprimée; <date when="1833">1833</date>. <measure type="length" unit="p" n="64">64 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000160_e368_d1">1° 2 <term ana="#document_type_7">l. a.s.</term> de François-Simon de Pfaffenhoffen, segneur autrichien au roi Louis-Philippe et au comte Molé; Loberwerth. près Coblence, <date when="1838-11-20">20 nov 1838</date>, <measure type="length" unit="p" n="9.5">9 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000160_e368_d2">2° P. <term ana="#document_type_15">a. s.</term> du même ; <date when="1838-09-30">30 sept. 1838</date>. 1/2 p <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000160_e368_d3">3° Brochure imprimée; <date when="1833">1833</date>. <measure type="length" unit="p" n="64">64 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Importantes lettres pour leur rappeler les engagements pris, envers lui, par
                   Casimir) Périer, au sujet d'une créance sur l'ex-roi Charles X. Il parle des
                   procès qu'il a gagnés sur l'électeur de Bavière ; le roi d'Angleterre Georges III,

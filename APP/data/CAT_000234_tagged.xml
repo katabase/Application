@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000234">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -21,7 +21,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>183</num>
                <editor>Eugène Charavay fils</editor>
@@ -142,7 +142,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -194,6 +194,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -326,7 +346,7 @@
                <trait>
                   <p>brave général de la République et de l'Empire, qui se distingua en Italie et en Egypte, né Fontenay-le-Comte (Vendée).</p>
                </trait>
-               <desc xml:id="CAT_000234_e15_d1">9 l. <term ana="#document_type_15">a. s.</term> au général Dommartin ; quartier-général de <date when="1796-1797">V</date>érone, an <date when="1796-1797">V</date> <measure type="length" unit="p" n="9.5">9 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-fol., têtes impr.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000234_e15_d1">9 <term ana="#document_type_7">l. a. s.</term> au général Dommartin ; quartier-général de <date when="1796-1797">V</date>érone, an <date when="1796-1797">V</date> <measure type="length" unit="p" n="9.5">9 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-fol., têtes impr.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Très intéressante correspondance toute relative aux opérations de l'armée d'Italie où il se distingua sous les ordres du maréchal Augereau.</note>
             </item>
             <item n="16" xml:id="CAT_000234_e16">
@@ -629,7 +649,7 @@
                <trait>
                   <p>célèbre général de la République, né à Valence (Drôme) en 1762, mort en 1800.</p>
                </trait>
-               <desc xml:id="CAT_000234_e51_d1">2 let. sig. au général Quentin; quartiers-généraux de Nice et Marseille, 25 et <date when="1799-09-15">29 fructidor an VII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, têtes impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000234_e51_d1">2 <term ana="#document_type_9">let. sig.</term> au général Quentin; quartiers-généraux de Nice et Marseille, 25 et <date when="1799-09-15">29 fructidor an VII</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, têtes impr.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Importantes lettres où il le charge de demander aux habitants de Marseille un million et demi pour secourir l'armée d'Italie qui est dans la plus affreuse misère : « Elle ne peut s'en passer, il lui est nèces. saire pour le moment. Je ne le demande pas à titre de sacrifice. Je m'engage à le lui rembourser des premiers fonds qui doivent me rentrer sur le crédit des vingtdeux millions accordés à l'armée d'Italie.»</note>
             </item>
             <item n="52" xml:id="CAT_000234_e52">
@@ -733,7 +753,7 @@
                <trait>
                   <p>célèbre publiciste et homme politique, auteur d'Adolphe.</p>
                </trait>
-               <desc xml:id="CAT_000234_e63_d1">13 l. <term ana="#document_type_15">a. s.</term> à M. Davilliers; <date when="1820">1820</date>-26, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4 o</measure>u in-8, cachet.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000234_e63_d1">13 <term ana="#document_type_7">l. a. s.</term> à M. Davilliers; <date when="1820">1820</date>-26, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4 o</measure>u in-8, cachet.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Intéressante correspondance politique et littéraire»</note>
             </item>
             <item n="64" xml:id="CAT_000234_e64">
@@ -834,7 +854,7 @@
                <trait>
                   <p>peintre célèbre, né à Bordeaux.</p>
                </trait>
-               <desc xml:id="CAT_000234_e75_d1">6 l. <term ana="#document_type_15">a. s.</term> au peintre Bouquet; Paris, <date when="1855">1855</date>-63, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante correspondance artistique.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000234_e75_d1">6 <term ana="#document_type_7">l. a. s.</term> au peintre Bouquet; Paris, <date when="1855">1855</date>-63, <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressante correspondance artistique.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="76" xml:id="CAT_000234_e76">
                <num type="lot">76</num>
@@ -847,7 +867,7 @@
             <item n="77" xml:id="CAT_000234_e77">
                <num type="lot">77</num>
                <name type="author">Davout (Louis)</name>
-               <desc xml:id="CAT_000234_e77_d1">3 pièces sig.; Paris, 1815, <measure type="length" unit="p" n="6">6 p.</measure> in-fol.-On a joint 6 l. <term ana="#document_type_15">a. s.</term> de la maréchale Davout, princesse d'Eckmühl, <date when="1838">1838</date>-50, 13 p. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000234_e77_d1">3 pièces sig.; Paris, 1815, <measure type="length" unit="p" n="6">6 p.</measure> in-fol.-On a joint 6 <term ana="#document_type_7">l. a. s.</term> de la maréchale Davout, princesse d'Eckmühl, <date when="1838">1838</date>-50, 13 p. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="78" xml:id="CAT_000234_e78">
                <num type="lot">78</num>
@@ -897,7 +917,7 @@
                <trait>
                   <p>célèbre poète et actrice, née à Douai.</p>
                </trait>
-               <desc xml:id="CAT_000234_e83_d1">3 l. <term ana="#document_type_15">a. s.</term> à Mlle Georges Weimer; <date when="1857">1857</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Charmantes lettres.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000234_e83_d1">3 <term ana="#document_type_7">l. a. s.</term> à Mlle Georges Weimer; <date when="1857">1857</date>, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Charmantes lettres.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="84" xml:id="CAT_000234_e84">
                <num type="lot">84</num>
@@ -964,7 +984,7 @@
                <trait>
                   <p>auteur des Lettres sur l'Italie, né à La Rochelle en 1746, mort en 1788.</p>
                </trait>
-               <desc xml:id="CAT_000234_e91_d1"><term ana="#document_type_7">L. a. s.</term> à M. Target, avocat; Rouen, 2 décembre (1786), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet.-On a joint une brochure intitulée : L. a. mort de M. le Président Dupaty, <date when="1789">1789</date>, 14 p. in-8.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000234_e91_d1"><term ana="#document_type_7">L. a. s.</term> à M. Target, avocat; Rouen, 2 décembre (1786), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet.-On a joint une brochure intitulée : La mort de M. le Président Dupaty, <date when="1789">1789</date>, 14 p. in-8.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Belle lettre relative à sa plaidoirie en faveur des trois innocents condamnés à la roue. « Je suis parvenu à faire casser l'arrêt, à obtenir ensuite une sentence unanime d'absolution.»</note>
             </item>
             <item n="92" xml:id="CAT_000234_e92">
@@ -1303,7 +1323,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000234_e131_d1">4 l. <term ana="#document_type_15">a. s.</term> au baron André de MérianFalkach ; Paris, <date when="1819">1819</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000234_e131_d1">4 <term ana="#document_type_7">l. a. s.</term> au baron André de MérianFalkach ; Paris, <date when="1819">1819</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Lettres relatives à l'impression, dans la collection byzantine du Louvre, de l'histoire inédite de Léon le Diacre; M. Hase recevait des livres, des manuscrits, de l'argent du grand chancelier du tzar, Nicolas Romanzoff; de là sa correspondance avec M. de Mérian. Il le renseigne aussi sur des livres rares, comme les antiquités de Montfaucon, la collection des historiens de Dom Bouquet, des chroniques lombardes, etc.</note>
             </item>
             <item n="132" xml:id="CAT_000234_e132">
@@ -1441,7 +1461,7 @@
                <trait>
                   <p>évêque de Nancy, puis archevêque de Sens, député aux EtaisGénéraux, né à Lesson (Vendée).</p>
                </trait>
-               <desc xml:id="CAT_000234_e148_d1">2 let. sig.; Paris, <date when="1816-05-15">15 mai 1816</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000234_e148_d1">2 <term ana="#document_type_9">let. sig.</term>; Paris, <date when="1816-05-15">15 mai 1816</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note anchored="true">Curieuses lettres écrites comme évêque de Nancy.</note>
             </item>
             <item n="149" xml:id="CAT_000234_e149">
@@ -1455,7 +1475,7 @@
             <item n="150" xml:id="CAT_000234_e150">
                <num type="lot">150</num>
                <name type="author">Lafayette (le marquis de)</name>
-               <desc xml:id="CAT_000234_e150_d1"><term ana="#document_type_7">L. a. s.</term>, L. a. Grange, <date when="1809-07-23">23 juillet 1809</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000234_e150_d1"><term ana="#document_type_7">L. a. s.</term>, La Grange, <date when="1809-07-23">23 juillet 1809</date>, <measure type="length" unit="p" n="0.25">1/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="151" xml:id="CAT_000234_e151">
                <num type="lot">151</num>
@@ -1497,7 +1517,7 @@
                <trait>
                   <p>l'illustre écrivain.</p>
                </trait>
-               <desc xml:id="CAT_000234_e155_d1"><term ana="#document_type_7">L. a. s.</term> (au marquis de L. a. Maisonfort) ; Florence, <date when="1826-04-17">17avril 1826</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000234_e155_d1"><term ana="#document_type_7">L. a. s.</term> (au marquis de La Maisonfort) ; Florence, <date when="1826-04-17">17avril 1826</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Très curieuse lettre sur son séjour à Florence. « J'arrive de Pise où j'ai accompagné nos amis le marquis et la marquise de Barol. Le duc de Lucques est parti pour Vienne ex-abrupto. » Le printemps lui a donné le spleen et diminué sa verve. Il croit que son ancien ministre a « trop d'activité dans l'esprit pour sortir tout à fait de la scène.»</note>
             </item>
             <item n="156" xml:id="CAT_000234_e156">
@@ -1520,7 +1540,7 @@
                <trait>
                   <p>le célèbre écrivain.</p>
                </trait>
-               <desc xml:id="CAT_000234_e158_d1">3 let. aut. à M. Waille ; Turin, <date when="1825">1825</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000234_e158_d1">3 <term ana="#document_type_8">let. aut.</term> à M. Waille ; Turin, <date when="1825">1825</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Intéressantes lettres relatives à ses ouvrages et où il parle de l'abbé Gerbet, de MM. Robertson et Laurentie.</note>
             </item>
             <item n="159" xml:id="CAT_000234_e159">
@@ -1583,7 +1603,7 @@
                <trait>
                   <p>maréchal de France, ministre de la guerre sous Napoléon III.</p>
                </trait>
-               <desc xml:id="CAT_000234_e166_d1"><term ana="#document_type_7">L. a. s.</term> au général Valazé; L. a. Haye, <date when="1871-06-04">4 juin 1871</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000234_e166_d1"><term ana="#document_type_7">L. a. s.</term> au général Valazé; La Haye, <date when="1871-06-04">4 juin 1871</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Belle lettre de recommandation en faveur de M. Van den Broek.</note>
             </item>
             <item n="167" xml:id="CAT_000234_e167">
@@ -1636,7 +1656,7 @@
                <trait>
                   <p>général de la République et de l'Empire, né à Reims en 1768, mort en 1822.</p>
                </trait>
-               <desc xml:id="CAT_000234_e172_d1">4. l. <term ana="#document_type_15">a. s.</term> au général Dommartin ; Porto-Lignago, <date when="none">4 et 5 frimaire an V</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-fol.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000234_e172_d1">4. <term ana="#document_type_7">l. a. s.</term> au général Dommartin ; Porto-Lignago, <date when="none">4 et 5 frimaire an V</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-fol.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Intéressantes lettres sur les mouvements de l'armée d'Italie où il se distingua.</note>
             </item>
             <item n="173" xml:id="CAT_000234_e173">
@@ -1763,7 +1783,7 @@
                <trait>
                   <p>duc de Bassano, le célèbre ministre de Napoléon Ier.</p>
                </trait>
-               <desc xml:id="CAT_000234_e187_d1"><term ana="#document_type_7">L. a. s.</term> à M. de L. a. Tour-Maubourg, ministre de France, à Wurtz-bourg; Paris, <date when="1813-04-06">6 avril 1813</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000234_e187_d1"><term ana="#document_type_7">L. a. s.</term> à M. de La Tour-Maubourg, ministre de France, à Wurtz-bourg; Paris, <date when="1813-04-06">6 avril 1813</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Il lui annonce confidentiellement que l'Empereur sera à Mayence du 12 au 15 avril. </note>
             </item>
             <item n="188" xml:id="CAT_000234_e188">
@@ -2039,7 +2059,7 @@
                <trait>
                   <p>un des plus grands capitaines de son temps, fils de Guillaume-le-Taciturne.</p>
                </trait>
-               <desc xml:id="CAT_000234_e220_d1">Let. sig. avec la souscript. aut., en français, au vicomte de L'Isle; <term ana="#document_type_8">L. a.</term> Haye, <date when="1614-05-14">14 mai 1614</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000234_e220_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut., en français, au vicomte de L'Isle; La Haye, <date when="1614-05-14">14 mai 1614</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Relative à un différend entre le capitaine Everarde, sergent-major de Flessingue, et le chevalier Throckmorton, officier anglais.</note>
             </item>
             <item n="221" xml:id="CAT_000234_e221">
@@ -2232,7 +2252,7 @@
                <trait>
                   <p>l'illustre auteur des Mémoires, né en 1675, mort en 1755.</p>
                </trait>
-               <desc xml:id="CAT_000234_e243_d1"><term ana="#document_type_7">L. a. sig.</term> de ses initiales à M. de Valincourt; L. a. Ferté, <date when="1729-10-20">20 octobre 1729</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="70">70</measure>
+               <desc xml:id="CAT_000234_e243_d1"><term ana="#document_type_7">L. a. sig.</term> de ses initiales à M. de Valincourt; La Ferté, <date when="1729-10-20">20 octobre 1729</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="70">70</measure>
                <note anchored="true">Importante lettre. Il critique la politique du roi de Sardaigne, Victor-Amédée, qui résiste au Saint-Siège et ne veut pas accepter la Constitution Unigenitus; il essaye de chasser les jésuites, et, pour gagner le pape, envoie au duc de Gravina le collier de l'ordre de l'Annonciade, dont il discute longuement la valeur : « De chasser les jesuittes et de les depouiller de leurs biens, sans crime, sans felonie, cela me paroit bien fort à faire et plus encore à soustenir ; ce qui s'est passé en France à cet egard est une grande leçon. » Il discute aussi la politique de Victor-Amédée qui aurait voulu empêcher les enfants d'Elisabeth Farnèse et de Philippe V d'occuper Parme et la Toscane. « D'espouser la Palatine ; il n'en aura point d'enfans et son fils à luy a un fils. S'il la prend pour son argent, si elle en a beaucoup, il n'a besoin pour cela que d'elle; si pour des fiefs, elle ne peut avoir que des terres de particulière sans conséquence, si pour succéder au grand Duc il prend l'investiture du Pape, que dira l'Empereur, d'une part, pour son droit, l'Espagne de l'autre, pour don Carlos, et les puissances qui bien ou mal se sont là dessus engagées avec elle ». Il termine en remerciant M. de Valincourt de l'envoi de fleurs, pour lui et Mme de Saint-Simon.</note>
             </item>
             <item n="244" xml:id="CAT_000234_e244">
@@ -2536,7 +2556,7 @@
             <item n="278" xml:id="CAT_000234_e278">
                <num type="lot">278</num>
                <name type="author">René d'Anjou et Isabelle de Lorraine</name>
-               <desc xml:id="CAT_000234_e278_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin par Jean de L. a. Sale, conseiller et maître-d'hôtel du roi et de la reine de Sicile; <date when="1464-08-20">20 août 1464</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000234_e278_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin par Jean de La Sale, conseiller et maître-d'hôtel du roi et de la reine de Sicile; <date when="1464-08-20">20 août 1464</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note anchored="true">Quittance dudit Jean de la Sale à Olivier Habert, maître de la Chambre aux deniers, de 483 1. 6 s. 8 d. pour les dépenses des gens et chevaux du roi René durant un demi-mois.</note>
             </item>
             <item n="279" xml:id="CAT_000234_e279">

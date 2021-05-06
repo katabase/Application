@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000228">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -22,7 +22,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>177</num>
                <editor>Eugène Charavay fils</editor>
@@ -145,7 +145,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,6 +198,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -256,7 +276,7 @@
                <trait>
                   <p>savant littérateur, de l'Acad. fr., né à Lyon en 1800, mort en 1864.</p>
                </trait>
-               <desc xml:id="CAT_000228_e6_d1">L. a. cloche des morts, <term ana="#document_type_3">pièce de vers aut.</term>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000228_e6_d1">La cloche des morts, <term ana="#document_type_3">pièce de vers aut.</term>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="7" xml:id="CAT_000228_e7">
                <num type="lot">7</num>
@@ -521,7 +541,7 @@
                   <p>médecin, ami de Mirabeau, chef des Idéologues sous Napoléon Ier, de l'Acad.
                      fr., né à Cosnac (Corrèze) en 1757, mort en 1808.</p>
                </trait>
-               <desc xml:id="CAT_000228_e32_d1">3 l. <term ana="#document_type_15">a. s.</term> et 1 let. sig. à M. Serre, maire de Brive; Auteuil et Villette (près Meulan), <date when="1790">1790-1806</date>. <measure type="length" unit="p" n="5">5 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imprimée, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000228_e32_d1">3 <term ana="#document_type_7">l. a. s.</term> et 1 let. sig. à M. Serre, maire de Brive; Auteuil et Villette (près Meulan), <date when="1790">1790-1806</date>. <measure type="length" unit="p" n="5">5 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imprimée, cachet.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Intéressantes lettres où il parle des débuts de la Révolution dans le Limousin,
                   des fêtes de Brive pour célébrer l'avènement de Napoléon Ier au trône impérial,
                   etc. Curieu- ses considérations.</note>
@@ -878,7 +898,7 @@
                   <p>célèbre député libéral, président du Conseil des ministres en 1830, et du
                      Gouvernement provisoire en 1848, né en 1767, mort en 1855.</p>
                </trait>
-               <desc xml:id="CAT_000228_e67_d1">-13 l. <term ana="#document_type_15">a. s.</term> à Cabet (le célèbre communiste) ; <date when="1825">1825-1837</date>, <measure type="length" unit="p" n="34">34 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante correspondance.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000228_e67_d1">-13 <term ana="#document_type_7">l. a. s.</term> à Cabet (le célèbre communiste) ; <date when="1825">1825-1837</date>, <measure type="length" unit="p" n="34">34 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressante correspondance.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="68" xml:id="CAT_000228_e68">
                <num type="lot">68</num>
@@ -970,7 +990,7 @@
                   <p>célèbre par le complot ténébreux dont il fut accusé d'être le chef, né à Blois
                      en 1745, pendu le 19 février 1790.</p>
                </trait>
-               <desc xml:id="CAT_000228_e76_d1"><term ana="#document_type_7">L. a. s.</term> à sa cousine (la princesse d'Anhalt-Schaumbourg) ; prison du Châtelet, <date when="1790-01-15">15 janvier 1790</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet à ses armes. L. a. moitié du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000228_e76_d1"><term ana="#document_type_7">L. a. s.</term> à sa cousine (la princesse d'Anhalt-Schaumbourg) ; prison du Châtelet, <date when="1790-01-15">15 janvier 1790</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet à ses armes. La moitié du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
                <note anchored="true">Touchante lettre au sujet de sa triste situation. Il la prie de s'associer à sa
                   soeur « dans ce qu'elle fait pour moi ; de la voir le plus souvent que vous
                   pourrez, de voir mes conseils, de vous tenir enfin au courant de mon procès ». Sa
@@ -1371,7 +1391,7 @@
             <item n="118" xml:id="CAT_000228_e118">
                <num type="lot">118</num>
                <name type="author">Lamartine (Alph. de)</name>
-               <desc xml:id="CAT_000228_e118_d1">3 l. <term ana="#document_type_15">a. s.</term> et une carte de visite avec 3 lig. aut. à Cabet (le célèbre communiste), 16 mars, <date when="1848">17 avril et 30 mai 1848</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000228_e118_d1">3 <term ana="#document_type_7">l. a. s.</term> et une carte de visite avec 3 lig. aut. à Cabet (le célèbre communiste), 16 mars, <date when="1848">17 avril et 30 mai 1848</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note anchored="true">Très intéressantes lettres écrites au moment des manifestations
                   révolutionnaires contre le Gouvernement provisoire. En voici quelques extraits: 16
                   mars. « Ah ! que vous manquez une belle occasion de créer la République, si vous
@@ -1944,7 +1964,7 @@
                <trait>
                   <p>la grande cantatrice, née à Madrid en 1843.</p>
                </trait>
-               <desc xml:id="CAT_000228_e176_d1">Son portrait carte photographie avec sa signature aut., <measure type="format" unit="f" ana="#document_format_32">in-32.</measure>-On a joint une l. <term ana="#document_type_15">a. s.</term> du marquis de Caux; Hombourg, <date when="1872">1872</date>, <measure type="length" unit="p" n="5">5 p.</measure> in-8. Papier à son chiffre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000228_e176_d1">Son portrait carte photographie avec sa signature aut., <measure type="format" unit="f" ana="#document_format_32">in-32.</measure>-On a joint une <term ana="#document_type_7">l. a. s.</term> du marquis de Caux; Hombourg, <date when="1872">1872</date>, <measure type="length" unit="p" n="5">5 p.</measure> in-8. Papier à son chiffre.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Très curieuse lettre pleine de détails sur une tournée projetée de Mme Patti. «
                   Le total des engagements signés représente une somme de 1,700,000 francs.»</note>
             </item>
@@ -1974,7 +1994,7 @@
                   <p>célèbre général des armées de la République, né à Arbois en 1761, mort en 1804.
                     </p>
                </trait>
-               <desc xml:id="CAT_000228_e179_d1">Let. sig. au général Lefebvre; <term ana="#document_type_8">L. a.</term> Haye, <date when="1795-02-17">29 pluviôse an III (17 février 1795</date>), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000228_e179_d1"><term ana="#document_type_9">Let. sig.</term> au général Lefebvre; La Haye, <date when="1795-02-17">29 pluviôse an III (17 février 1795</date>), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> vignette.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Intéressante lettre militaire. Il lui ordonne d'appuyer la gauche de sa
                   division sur celle de Vandamme vers Diepenheim (près Deventer dans l'Over Yssel,
                   sans aller jusqu'à Bentheim (mouvements pour continuer l'occupation de la
@@ -2018,7 +2038,7 @@
                   <p>homme politique, ministre de la marine sous la Restauration, né près de
                      Montauban en 1765, mort en 1845.</p>
                </trait>
-               <desc xml:id="CAT_000228_e183_d1">37 l. <term ana="#document_type_15">a. s.</term> ou sig. en abrégé au baron Mounier ; <date when="1816">1816-1843</date>, environ <measure type="length" unit="p" n="40">40 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000228_e183_d1">37 <term ana="#document_type_7">l. a. s.</term> ou sig. en abrégé au baron Mounier ; <date when="1816">1816-1843</date>, environ <measure type="length" unit="p" n="40">40 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Intéressante correspondance.</note>
             </item>
             <item n="184" xml:id="CAT_000228_e184">
@@ -2060,7 +2080,7 @@
                   <p>diplomate et lieutenant- général, ministre des affaires étrangères, né en 1702,
                      mort vers 1771.</p>
                </trait>
-               <desc xml:id="CAT_000228_e187_d1">1° 2 l. <term ana="#document_type_15">a. s.</term>; Tongres, 1747; Sillery, 1766, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-2° 3 let. sig.; <date when="1750">1750</date>, 4 p. in-fol. et in-4. Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000228_e187_d1">1° 2 <term ana="#document_type_7">l. a. s.</term>; Tongres, 1747; Sillery, 1766, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-2° 3 let. sig.; <date when="1750">1750</date>, 4 p. in-fol. et in-4. Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="188" xml:id="CAT_000228_e188">
                <num type="lot">188</num>
@@ -2290,7 +2310,7 @@
                   <p>femme célèbre, auteur des Mémoires d'une Contemporaine, née en 1778, morte en
                      1845.</p>
                </trait>
-               <desc xml:id="CAT_000228_e210_d1">8 let. aut., dont 2 sig. Ida Saint-Elme et 6 sig. la Contemporaine, à Cabet (le célèbre communiste); <date when="1836">1836</date>. <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. On a joint 1 prospectus et 2 pièces imprimées relatives à ses publications contre Louis-Philippe. Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000228_e210_d1">8 <term ana="#document_type_8">let. aut.</term>, dont 2 sig. Ida Saint-Elme et 6 sig. la Contemporaine, à Cabet (le célèbre communiste); <date when="1836">1836</date>. <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. On a joint 1 prospectus et 2 pièces imprimées relatives à ses publications contre Louis-Philippe. Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="211" xml:id="CAT_000228_e211">
                <num type="lot">211</num>
@@ -2382,7 +2402,7 @@
                <trait>
                   <p>le spirituel publiciste.</p>
                </trait>
-               <desc xml:id="CAT_000228_e220_d1">6 l. a. s., dont 1 de ses initiales, à Anatole de <term ana="#document_type_8">L. a.</term> Forge, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Papier à son chiffre. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000228_e220_d1">6 <term ana="#document_type_7">l. a. s.</term>, dont 1 de ses initiales, à Anatole de La Forge, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Papier à son chiffre. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="221" xml:id="CAT_000228_e221">
                <num type="lot">221</num>
@@ -2465,7 +2485,7 @@
                <trait>
                   <p>homme politique, né à Aix en 1781, mort en 1846.</p>
                </trait>
-               <desc xml:id="CAT_000228_e228_d1">1° 8 l. <term ana="#document_type_15">a. s.</term> au baron Ed. Mounier; Paris et Villebon, 1835-<date when="1842">1842</date>, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.-2° 6 l. <term ana="#document_type_15">a. s.</term> de la comtesse Siméon, sa mère; <date when="1842">1842</date>,10 p. in-8. Papier à son chiffre. Intéressante correspondance en grande partie politique.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000228_e228_d1">1° 8 <term ana="#document_type_7">l. a. s.</term> au baron Ed. Mounier; Paris et Villebon, 1835-<date when="1842">1842</date>, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.-2° 6 <term ana="#document_type_7">l. a. s.</term> de la comtesse Siméon, sa mère; <date when="1842">1842</date>,10 p. in-8. Papier à son chiffre. Intéressante correspondance en grande partie politique.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="229" xml:id="CAT_000228_e229">
                <num type="lot">229</num>
@@ -2533,7 +2553,7 @@
                <trait>
                   <p>le grand romancier.</p>
                </trait>
-               <desc xml:id="CAT_000228_e235_d1">3 l. <term ana="#document_type_15">a. s.</term>, dont 2 à Cabet (le célèbre communiste; <date when="1844">1844-1849</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000228_e235_d1">3 <term ana="#document_type_7">l. a. s.</term>, dont 2 à Cabet (le célèbre communiste; <date when="1844">1844-1849</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Intéressantes lettres où il parle des Mystères de Paris et où il donne sa
                   complète adhésion aux idées de Cabet.</note>
             </item>
@@ -2870,7 +2890,7 @@
                   <p>célèbre poète et philosophe du XVIIIe siècle, de l'Acad. fr., né à Nancy en
                      1716, mort en 1803.</p>
                </trait>
-               <desc xml:id="CAT_000228_e270_d1">5 let. aut., prose et vers, à Devaux, dit Pampan, ami de Mme de Graffigny ; <date when="1734">1734-1735</date>, <measure type="length" unit="p" n="17">17 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
+               <desc xml:id="CAT_000228_e270_d1">5 <term ana="#document_type_8">let. aut.</term>, prose et vers, à Devaux, dit Pampan, ami de Mme de Graffigny ; <date when="1734">1734-1735</date>, <measure type="length" unit="p" n="17">17 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
                <note anchored="true">Intéressantes lettres dont voici une analyse : Pont-à-Mousson, 12 janvier 1734.
                   -Il lui demande les épîtres d'Héré (architecte de Stanislas); celles de Voltaire,
                   celles de son correspondant; il achève sa traduction des Psaumes de la Pénitence;
@@ -2988,7 +3008,7 @@
             <item n="278" xml:id="CAT_000228_e278">
                <num type="lot">278</num>
                <name type="author">Anjou-Vendée</name>
-               <desc xml:id="CAT_000228_e278_d1">3 <term ana="#document_type_4">pièces.</term>-1° Lettre originale de Jean Fournier, sieur de la Guérinière, chancelier d'Anjou et de Provence, à René d'Anjou ; Angers, 21 avril (vers 1460), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> Il lui demande d'intercéder auprès du roi de France pour les habitants de la Rochesur-Oyon (L. a. Roche-sur-Yon). 2° Lettre originale de M. de Chauvinière, gentilhomme vendéen, à René d'Anjou, Angers, 22 sept. (vers 1460), 1 p in-4. Il se défend d'avoir empêché les gens de la principauté de la Roche-sur-Yon de payer au roi René ce qui lui est dû. 3° Lettre originale des gens de la Chambre des Comptes d'Anjou au roi René; Angers, <date when="1460">26 avril (vers 1460</date>), 1 p. in-fol., cachet.</desc><measure commodity="currency" unit="FRF" quantity="15.">15 </measure>
+               <desc xml:id="CAT_000228_e278_d1">3 <term ana="#document_type_4">pièces.</term>-1° Lettre originale de Jean Fournier, sieur de la Guérinière, chancelier d'Anjou et de Provence, à René d'Anjou ; Angers, 21 avril (vers 1460), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> Il lui demande d'intercéder auprès du roi de France pour les habitants de la Rochesur-Oyon (La Roche-sur-Yon). 2° Lettre originale de M. de Chauvinière, gentilhomme vendéen, à René d'Anjou, Angers, 22 sept. (vers 1460), 1 p in-4. Il se défend d'avoir empêché les gens de la principauté de la Roche-sur-Yon de payer au roi René ce qui lui est dû. 3° Lettre originale des gens de la Chambre des Comptes d'Anjou au roi René; Angers, <date when="1460">26 avril (vers 1460</date>), 1 p. in-fol., cachet.</desc><measure commodity="currency" unit="FRF" quantity="15.">15 </measure>
                <note anchored="true">Relative aux empiètements d'un procureur de la Roche-sur-Yon.</note>
             </item>
             <item n="279" xml:id="CAT_000228_e279">
@@ -3111,7 +3131,7 @@
             <item n="291" xml:id="CAT_000228_e291">
                <num type="lot">291</num>
                <name type="author">Amérique.</name>
-               <desc xml:id="CAT_000228_e291_d1">-2 l. <term ana="#document_type_15">a. s.</term> de John Philips (lieutenant d'un régiment à pied fait prisonnier en se rendant à la Jamaïque, laissé en liberté sur parole de 1780 à la paix de 1783). à Joseph Bauks ; Londres, <date when="1804-12-24">24 déc. 1804</date>, <measure type="length" unit="p" n="7">7 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000228_e291_d1">-2 <term ana="#document_type_7">l. a. s.</term> de John Philips (lieutenant d'un régiment à pied fait prisonnier en se rendant à la Jamaïque, laissé en liberté sur parole de 1780 à la paix de 1783). à Joseph Bauks ; Londres, <date when="1804-12-24">24 déc. 1804</date>, <measure type="length" unit="p" n="7">7 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Curieuses lettres. Il lui demande la permission de lui dédier le récit du
                   voyage du sergent Lawrence à travers l'Amérique ; de la Californie à la Caroline
                   du Sud, il a trouvé des Indiens ressemblant aux Gallois; Philips a pu lui-même
@@ -3135,7 +3155,7 @@
             <item n="293" xml:id="CAT_000228_e293">
                <num type="lot">293</num>
                <name type="author">Etats-Unis. -Révolution</name>
-               <desc xml:id="CAT_000228_e293_d1">4 l. <term ana="#document_type_15">a. s.</term> de A.-C. Duplaine, vice-consul de France à Philadelphie, au citoyen Mangourit, ancien consul de Charlestown; Philadelphie, <date when="1794">27 avril12 juin 1794</date>, <measure type="length" unit="p" n="17">17 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000228_e293_d1">4 <term ana="#document_type_7">l. a. s.</term> de A.-C. Duplaine, vice-consul de France à Philadelphie, au citoyen Mangourit, ancien consul de Charlestown; Philadelphie, <date when="1794">27 avril12 juin 1794</date>, <measure type="length" unit="p" n="17">17 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Curieuses lettres. Il s'emporte contre les Girondins qu'il appelle des
                   Brissotins, blâme les Anglais de courir sus aux vaisseaux neutres et américains;
                   il s'étend sur les bons traitements qu'il ordonne à l'endroit des marins anglais,
@@ -3200,7 +3220,7 @@
             <item n="300" xml:id="CAT_000228_e300">
                <num type="lot">300</num>
                <name type="author">Révolution</name>
-               <desc xml:id="CAT_000228_e300_d1">2 let. sig. de Joseph Servan (ministre de la guerre sous l'Assemblée législative, né à Romans en 1741, mort en 1808); Limoges, 1er thermidor an III; Bordeaux, <date when="1795-07-19">5 thermidor an III (19-23 juillet 1795</date>). <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000228_e300_d1">2 <term ana="#document_type_9">let. sig.</term> de Joseph Servan (ministre de la guerre sous l'Assemblée législative, né à Romans en 1741, mort en 1808); Limoges, 1er thermidor an III; Bordeaux, <date when="1795-07-19">5 thermidor an III (19-23 juillet 1795</date>). <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Importantes lettres, dont voici une analyse sommaire. Limoges, 1er thermidor
                   (19 juillet). Aux traités de Bâle, la Russie a détourné le Danemark de s'allier à
                   la Prusse, à la Porte, à la Suède, ce qui était son véritable intérêt; il faudrait

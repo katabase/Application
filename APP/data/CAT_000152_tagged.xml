@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000152">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000152</title>
+            <title>RDA, N°149 (Novembre 1892)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">149</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>149</num>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1892-11">Novembre 1892</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -860,7 +892,7 @@
                   <p>brave maréchal de France, le heros des Lettres portugaises, né à Chamilly
                      (Saône-et-Loire) en 1636, mort en 1715</p>
                </trait>
-               <desc xml:id="CAT_000152_e65_d1"><term ana="#document_type_7">L. a. s.</term> (au marquis de la Coste) ; <date when="1706">L. a. Rochelle 3 août 1706</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000152_e65_d1"><term ana="#document_type_7">L. a. s.</term> (au marquis de la Coste) ; <date when="1706">La Rochelle 3 août 1706</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Belle lettre où il parle de la flotte ennemie et de la noblesse du Poitou : «Je
                   vous prie d'exhorter toute votre noblesse à un peu de patience, et qu'il n'en
                   sorte pas un du quartier, car je conte sur elle, persuadé que pas un ne voudret me
@@ -900,7 +932,7 @@
                      estampes, auteur d'un très beau portrait en émail de Mlle de Fontanges, né en
                      1639, mort en 1734</p>
                </trait>
-               <desc xml:id="CAT_000152_e68_d1">40 l. <term ana="#document_type_15">a. s.</term> a M. de Besser, grand-maître des cérémonies et introducteur des ambassadeurs du roi de Prusse, à Berlin ; Paris, <date when="1710">1710</date>-17, <measure type="length" unit="p" n="140">140 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Une de ces lettres est incomplète.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000152_e68_d1">40 <term ana="#document_type_7">l. a. s.</term> a M. de Besser, grand-maître des cérémonies et introducteur des ambassadeurs du roi de Prusse, à Berlin ; Paris, <date when="1710">1710</date>-17, <measure type="length" unit="p" n="140">140 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Une de ces lettres est incomplète.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Importante correspondance où il lui donne des renseignements détaillés sur les
                   titres, modes et usages de la cour de France. Une grande partie de cette
                   correspondance traite d'envois de livres, dont les titres et les prix sont
@@ -1128,7 +1160,7 @@
                <trait>
                   <p>le célèbre compositeur, auteur du Désert. -Le Jugement dernier</p>
                </trait>
-               <desc xml:id="CAT_000152_e92_d1">L'Eden.-<term ana="#document_type_8">L. a.</term> Danse des Astres, morceaux de musique (fragments) avec paroles aut., <measure type="length" unit="p" n="24">24 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000152_e92_d1">L'Eden.-La Danse des Astres, morceaux de musique (fragments) avec paroles aut., <measure type="length" unit="p" n="24">24 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="93" xml:id="CAT_000152_e93">
                <num type="lot">93</num>
@@ -1249,7 +1281,7 @@
                   <p>grand-maitre, des cérémonies de Louis XVI et de Louis XVIII, fameux par
                      l'apostrophe de Mirabeau, né en 1762, mort en 1829</p>
                </trait>
-               <desc xml:id="CAT_000152_e103_d1">1° <term ana="#document_type_4">Pièce sig</term>.; <date when="1790">1790</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><desc xml:id="CAT_000152_e103_d2">2° <term ana="#document_type_9">Let. sig.</term>; <date when="1821">1821</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000152_e103_d3">3° 10 l. <term ana="#document_type_15">a. s.</term>, dont une de ses initiales, du marquis Scipion de Dreux-Brézé; <date when="1832">1832</date>-43, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><desc xml:id="CAT_000152_e103_d4">4° <term ana="#document_type_9">Let. sig.</term> du même, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, etc. Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000152_e103_d1">1° <term ana="#document_type_4">Pièce sig</term>.; <date when="1790">1790</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><desc xml:id="CAT_000152_e103_d2">2° <term ana="#document_type_9">Let. sig.</term>; <date when="1821">1821</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000152_e103_d3">3° 10 <term ana="#document_type_7">l. a. s.</term>, dont une de ses initiales, du marquis Scipion de Dreux-Brézé; <date when="1832">1832</date>-43, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><desc xml:id="CAT_000152_e103_d4">4° <term ana="#document_type_9">Let. sig.</term> du même, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, etc. Intéressant dossier.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="104" xml:id="CAT_000152_e104">
                <num type="lot">104</num>
@@ -1914,7 +1946,7 @@
                   <p>duc de Montebello, illustre maréchal de l'Empire, né à Lectoure en 1769, mort
                      de blessures reçues à la bataille d'Essling le 31 mai 1809</p>
                </trait>
-               <desc xml:id="CAT_000152_e164_d1">1° <term ana="#document_type_9">Let. sig.</term> ; Paris, <date when="1801-02-02">13 pluviôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><desc xml:id="CAT_000152_e164_d2">2° 4 let. sig. de la maréchale duchesse de Montebello; <date when="1810">1810</date>-13, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000152_e164_d3">3° <term ana="#document_type_9">Let. sig.</term> du baron Lacuée; <date when="1810">Agen. 1810</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Relative au service funèbre célébré en l'honneur de Lannes.</desc><desc xml:id="CAT_000152_e164_d4">4° <term ana="#document_type_9">Let. sig.</term> des architectes Fontaine et Percier; <date when="1801-05-11">21 floréal an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette. Relative au mobilier vendu à Lannes.-On a joint 7 portraits différents du maréchal Lannes et 2 pièces le concernant.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000152_e164_d1">1° <term ana="#document_type_9">Let. sig.</term> ; Paris, <date when="1801-02-02">13 pluviôse an IX</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête impr., vignette.</desc><desc xml:id="CAT_000152_e164_d2">2° 4 <term ana="#document_type_9">let. sig.</term> de la maréchale duchesse de Montebello; <date when="1810">1810</date>-13, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000152_e164_d3">3° <term ana="#document_type_9">Let. sig.</term> du baron Lacuée; <date when="1810">Agen. 1810</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Relative au service funèbre célébré en l'honneur de Lannes.</desc><desc xml:id="CAT_000152_e164_d4">4° <term ana="#document_type_9">Let. sig.</term> des architectes Fontaine et Percier; <date when="1801-05-11">21 floréal an IX</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, vignette. Relative au mobilier vendu à Lannes.-On a joint 7 portraits différents du maréchal Lannes et 2 pièces le concernant.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
             </item>
             <item n="165" xml:id="CAT_000152_e165">
                <num type="lot">165</num>
@@ -2787,7 +2819,7 @@
                <trait>
                   <p>dame de Pompadour, femme de François, niarquis de Rochechouart</p>
                </trait>
-               <desc xml:id="CAT_000152_e249_d1">3 l. <term ana="#document_type_15">a. s.</term> à M. de Mainsac, à Tulle : Rochechouart, <date when="1711">1711</date>-16, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Une de ces lettres est un peu tachée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000152_e249_d1">3 <term ana="#document_type_7">l. a. s.</term> à M. de Mainsac, à Tulle : Rochechouart, <date when="1711">1711</date>-16, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Une de ces lettres est un peu tachée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="250" xml:id="CAT_000152_e250">
                <num type="lot">250</num>
@@ -2965,7 +2997,7 @@
                   <p>tille de Guillaume d'Auterive, baron de Villesecq, épouse d'Eustache Titus de
                      Saint-Simon, née en 1667, morte en 1723</p>
                </trait>
-               <desc xml:id="CAT_000152_e267_d1">8 let. aut. à M. Belot; <date when="1700">1700</date>, <measure type="length" unit="p" n="37">37 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000152_e267_d1">8 <term ana="#document_type_8">let. aut.</term> à M. Belot; <date when="1700">1700</date>, <measure type="length" unit="p" n="37">37 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Intéressante correspondance. Elle se plaint qu'une maison, où logeaient ses
                   domestiques et où étaient abrités ses carrosses, ait été occupée, presque de
                   force, par M. Aubert, introducteur des ambassadeurs de Monsieur. Détails sur les
@@ -3051,7 +3083,7 @@
                   <p>capucin, résidant au prieuré de Saint-Eloi (Nièvre), correspondant du duc de
                      Nevers (Philippe Mazarini Mancini) et peut-être bâtard de la maison de Savoie-Soissons</p>
                </trait>
-               <desc xml:id="CAT_000152_e276_d1">8 l. <term ana="#document_type_15">a. s.</term> au duc de Nevers ou à son premier gentilhomme, M. de Taillevent; <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4; <date when="1684">1684-1688</date>, cachets avec la devise bis do et semel recipio.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000152_e276_d1">8 <term ana="#document_type_7">l. a. s.</term> au duc de Nevers ou à son premier gentilhomme, M. de Taillevent; <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4; <date when="1684">1684-1688</date>, cachets avec la devise bis do et semel recipio.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Intéressantes lettres relatives à l'admi. nistration de son prieuré ; à la
                   distribution des aumônes; à la poursuite des faux mendiants ; elles intéressent
                   l'histoire locale du Nivernais</note>
@@ -3244,7 +3276,7 @@
                   <p>célèbre historien et homme d'Etat, premier président de la République
                      française</p>
                </trait>
-               <desc xml:id="CAT_000152_e295_d1">2 let. sig. à Soult ; Paris, <date when="1833">1833</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000152_e295_d1">2 <term ana="#document_type_9">let. sig.</term> à Soult ; Paris, <date when="1833">1833</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuses lettres. Il lui demande des canons de bronze pris sur les ennemis en
                   1805, pour couler la statue de Napoléon Ier, par Seurre</note>
             </item>
@@ -3402,7 +3434,7 @@
                      couvrit de gloire, auteur de Mémoires, cousin de Mme de Maintenon, né en 1632.
                      mort en 1707</p>
                </trait>
-               <desc xml:id="CAT_000152_e310_d1">3 let. aut., dont 2 sig. à Chrétien-François de Lamoignon (ami de Boileau) ; <date when="1695">1695</date>, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000152_e310_d1">3 <term ana="#document_type_8">let. aut.</term>, dont 2 sig. à Chrétien-François de Lamoignon (ami de Boileau) ; <date when="1695">1695</date>, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Curieuses lettres où il parle de son second mariage (avec Marie-Claire
                   Deschamps de Marsilly) et de celui de son fils (avec Marie-Louise Le Moyne) qui
                   curent lieu à cinq jours d'intervalle. Son fils ne veut pas se marier avec Mlle du

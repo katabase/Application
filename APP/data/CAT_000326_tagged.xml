@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000326">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000326</title>
+            <title>RDA, N°198 (Mai 1897)</title>
             <respStmt>
                <persName ref="#COL_000001">Matthias Gille Levenson</persName>
                <resp>
@@ -22,13 +22,13 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">198</num>
-               <editor>Eugène Charavay fils</editor>
-               <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris,8 quai du Louvre</pubPlace>
-               <date when="1893-02">Mai 1897</date>
+            <bibl status="draft" ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>198</num>
+               <editor>Mme veuve CHARAVAY</editor>
+               <publisher>Mme veuve CHARAVAY</publisher>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
+               <date when="1897-05">Mai 1897</date>
             </bibl>
             <listEvent>
                <event>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -286,7 +318,7 @@
                <trait>
                   <p>épouse en premières noces du comte 3 l. a. s., 4 p. in-8.</p>
                </trait>
-               <desc xml:id="CAT_000326_e9_d1">On a joint une l. <term ana="#document_type_15">a. s.</term> de Laure Surville, soeur de Balzac; <date when="1856">1856</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000326_e9_d1">On a joint une <term ana="#document_type_7">l. a. s.</term> de Laure Surville, soeur de Balzac; <date when="1856">1856</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="10" xml:id="CAT_000326_e10">
                <num type="lot">10</num>
@@ -630,7 +662,7 @@
                <trait>
                   <p>fille du roi Jérôme, née en 1820.</p>
                </trait>
-               <desc xml:id="CAT_000326_e45_d1">27 l. <term ana="#document_type_15">a. s.</term> au baron Larrey, <measure type="length" unit="p" n="45">45 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. Papier à son chiffre. Corres-pondance intéressante.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000326_e45_d1">27 <term ana="#document_type_7">l. a. s.</term> au baron Larrey, <measure type="length" unit="p" n="45">45 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18. Papier à son chiffre. Corres-pondance intéressante.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="46" xml:id="CAT_000326_e46">
                <num type="lot">46</num>
@@ -747,7 +779,7 @@
                      plénipotentiaire à Rome, pour négocier le Concordat, né à Nantes en 1742, mort
                      en 1805.</p>
                </trait>
-               <desc xml:id="CAT_000326_e57_d1">3 let. aut. dont 2 sig. à Joseph Bonaparte et à Reinhart; <date when="1793">1793-1800</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000326_e57_d1">3 <term ana="#document_type_8">let. aut.</term> dont 2 sig. à Joseph Bonaparte et à Reinhart; <date when="1793">1793-1800</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Intéressantes lettres 11 germinal, à Jos. Bonaparte. « J'ai raison d'adorer
                   votre frère. Je suivrai de mon mieux le haut vol du Génie du général. » Dans les
                   lettres à Reinhart, il parle longuement de Mme de Mackau.</note>
@@ -1196,7 +1228,7 @@
                   <p>célèbre marin du règne de Louis XVI, brigadier des armées navales, qui prit
                      part à la guerre d'Amérique.</p>
                </trait>
-               <desc xml:id="CAT_000326_e101_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1777-03-05">5 mars 1777</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000326_e101_d1"><term ana="#document_type_7">L. a. s.</term> ; Paris, <date when="1777-03-05">5 mars 1777</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Belle lettre.</desc><measure commodity="currency" unit="FRF" quantity=""/>
             </item>
             <item n="102" xml:id="CAT_000326_e102">
                <num type="lot">102</num>
@@ -1204,7 +1236,7 @@
                <trait>
                   <p>le grand statuaire, né en 1789, mort en 1856.</p>
                </trait>
-               <desc xml:id="CAT_000326_e102_d1">49 l. <term ana="#document_type_15">a. s.</term> au baron Larrey; <date when="1840">1840-1855</date>, <measure type="length" unit="p" n="56">56 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
+               <desc xml:id="CAT_000326_e102_d1">49 <term ana="#document_type_7">l. a. s.</term> au baron Larrey; <date when="1840">1840-1855</date>, <measure type="length" unit="p" n="56">56 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="150">150</measure>
                <note anchored="true">Importante correspondance dont voici une analyse sommaire. -Paris, 27 juillet
                   1844. Il a « travaillé excessivement pour terminer le réparage de la statue de
                   JeanBart, et deux bas-reliefs pour le monument du cardinal de Cheveurs qui doit
@@ -1551,7 +1583,7 @@
             <item n="136" xml:id="CAT_000326_e136">
                <num type="lot">136</num>
                <name type="author">Galitzin (Famille)</name>
-               <desc xml:id="CAT_000326_e136_d1">22 l. <term ana="#document_type_15">a. s.</term> ou let. sig., en français, de membres de cette famille; <date when="1764">1764-1874</date>, <measure type="length" unit="p" n="36">36 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachets.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000326_e136_d1">22 <term ana="#document_type_7">l. a. s.</term> ou let. sig., en français, de membres de cette famille; <date when="1764">1764-1874</date>, <measure type="length" unit="p" n="36">36 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachets.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note anchored="true">Intéressantes lettres où l'on remarque les signatures des princes Boris,
                   Alexandre, Théodore, Augustin, Basile, Emmanuel, et des princesses Adélaïde,
                   Théodora, Caroline, etc.</note>
@@ -1917,7 +1949,7 @@
                   <p>comte d'Evreux, colonel général de la cavalerie de France, époux de Catherine
                      Crozat.</p>
                </trait>
-               <desc xml:id="CAT_000326_e173_d1">1° 9 l. <term ana="#document_type_15">a. s.</term> à M. de Jossaud, brigadier des armées du roi et son lieutenant à Landau ; Paris, <date when="1719">1719-1728</date>, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><desc xml:id="CAT_000326_e173_d2">2° 3 let. sig. au même ; Paris, <date when="1719">1719-1720</date>. <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Curieuse correspondance.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000326_e173_d1">1° 9 <term ana="#document_type_7">l. a. s.</term> à M. de Jossaud, brigadier des armées du roi et son lieutenant à Landau ; Paris, <date when="1719">1719-1728</date>, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet.</desc><desc xml:id="CAT_000326_e173_d2">2° 3 <term ana="#document_type_9">let. sig.</term> au même ; Paris, <date when="1719">1719-1720</date>. <measure type="length" unit="p" n="3.5">3 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Curieuse correspondance.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="174" xml:id="CAT_000326_e174">
                <num type="lot">174</num>
@@ -2039,7 +2071,7 @@
                <trait>
                   <p>philosophe, auteur de la Monadologie, né à Leipzig en 1646, mort en 1716.</p>
                </trait>
-               <desc xml:id="CAT_000326_e185_d1">8 l. <term ana="#document_type_15">a. s.</term> en latin à Schmidi, abbé de Marienthal, professeur à l'Université d'Helmstadt en Bavière, <date when="1697">1697-1711</date>, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_12">in-12</measure> et in-4; cachets.</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
+               <desc xml:id="CAT_000326_e185_d1">8 <term ana="#document_type_7">l. a. s.</term> en latin à Schmidi, abbé de Marienthal, professeur à l'Université d'Helmstadt en Bavière, <date when="1697">1697-1711</date>, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_12">in-12</measure> et in-4; cachets.</desc><measure commodity="currency" unit="FRF" quantity="125">125</measure>
                <note anchored="true"> Importante correspondance.-Hanovre, 11 mai 1697. Il n'a pu le recommander au
                   conseiller Hertel, intendant du prince de Holstein, neveu de la duchesse de
                   Wolfenbûttel; il n'ose écrire au chancelier en l'absence du duc. -Berlin, 27 céc.
@@ -2367,7 +2399,7 @@
                   <p>célèbre homme d'Etait, compagnon de Lafayette pendant la guerre d'Amérique,
                      ministre de Louis XVIII, de l'Acad. fr., né en 1766, mort en 1826.</p>
                </trait>
-               <desc xml:id="CAT_000326_e216_d1"><term ana="#document_type_7">L. a. s.</term> en abrégé à Mme de la Porterie; Paris, <date when="1808-12-17">17 ect. 1808</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000326_e216_d1"><term ana="#document_type_7">L. a. s.</term> en abrégé à Mme de la Porterie; Paris, <date when="1808-05-17">17 ect. 1808</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="217" xml:id="CAT_000326_e217">
                <num type="lot">217</num>
@@ -2679,7 +2711,7 @@
                   <p>célèbre homme d’Etat russe, qui réussit en 1809 à réconcilier l’Autriche avec
                      Napoléon, né en 1754,né en 1754, mort en 1825.</p>
                </trait>
-               <desc xml:id="CAT_000326_e248_d1">-1° 4 l. <term ana="#document_type_15">a. s.</term>, en fran¬ çais; Poctenheim, 1784, Pétersbourg, <date when="1819">1819</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachet.</desc><desc xml:id="CAT_000326_e248_d2">2° 3 let. sig., en français, dont l'une avec la souscript. aut. ; Francfort, 1792, Pétersbourg, <date when="1813">1813</date>, <measure type="length" unit="p" n="3">3 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Important dossier.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000326_e248_d1">-1° 4 <term ana="#document_type_7">l. a. s.</term>, en fran¬ çais; Poctenheim, 1784, Pétersbourg, <date when="1819">1819</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8, cachet.</desc><desc xml:id="CAT_000326_e248_d2">2° 3 <term ana="#document_type_9">let. sig.</term>, en français, dont l'une avec la souscript. aut. ; Francfort, 1792, Pétersbourg, <date when="1813">1813</date>, <measure type="length" unit="p" n="3">3 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Important dossier.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
             </item>
             <item n="249" xml:id="CAT_000326_e249">
                <num type="lot">249</num>
@@ -3174,7 +3206,7 @@
             <item n="301" xml:id="CAT_000326_e301">
                <num type="lot">301</num>
                <name type="author">Russie</name>
-               <desc xml:id="CAT_000326_e301_d1">3 l. <term ana="#document_type_15">a. s.</term> de Poussin, secrétaire du cardinal de Bouillon à Rome en 1691, du comte de Tallard à Londres où il fut chargé d'affaires, résident en Danemark de 1702 à 1714, puis à Hambourg jusqu'en 1749. Il accompagna en 1715 le comte de Croissy à Stockholm, mort à l'âge de 108 ans; au maréchal d'Uxelles et à l'abbé de Polignac; <date when="1710">1710-1715</date>. <measure type="length" unit="p" n="8">8 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000326_e301_d1">3 <term ana="#document_type_7">l. a. s.</term> de Poussin, secrétaire du cardinal de Bouillon à Rome en 1691, du comte de Tallard à Londres où il fut chargé d'affaires, résident en Danemark de 1702 à 1714, puis à Hambourg jusqu'en 1749. Il accompagna en 1715 le comte de Croissy à Stockholm, mort à l'âge de 108 ans; au maréchal d'Uxelles et à l'abbé de Polignac; <date when="1710">1710-1715</date>. <measure type="length" unit="p" n="8">8 p.</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note anchored="true">Importante correspondance dont voici une analyse sommaire. Copenhague, 27 mai
                   1710. -Le roi de Danemark va reprendre les armes contre les Suédois pour débar¬
                   quer en Scanie et occuper Landscrona. Si les sujets de Charles XII sont obligés
@@ -3266,7 +3298,7 @@
             <item n="312" xml:id="CAT_000326_e312">
                <num type="lot">312</num>
                <name type="author">Révolution</name>
-               <desc xml:id="CAT_000326_e312_d1">Let. sig. de JeanFrançois Noël, chargé d'affaires à <term ana="#document_type_8">L. a.</term> Haye; <term ana="#document_type_8">L. a.</term> Haye, <date when="1796-03-26">6 germinal an IV (26 mars 1796</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000326_e312_d1"><term ana="#document_type_9">Let. sig.</term> de JeanFrançois Noël, chargé d'affaires à La Haye; La Haye, <date when="1796-03-26">6 germinal an IV (26 mars 1796</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Importante pièce. Rapport sur sa mission secrète à Altona et à Hambourg, pour
                   surveiller les agissements de Dumouriez, Valence, Lameth, le duc d'Aiguillon, avec
                   l'abbé de Saint-Farre, bâtard du duc d'Orléans. Il ne sait si William Pitt,
@@ -3276,7 +3308,7 @@
             <item n="313" xml:id="CAT_000326_e313">
                <num type="lot">313</num>
                <name type="author">Théophilanthropes</name>
-               <desc xml:id="CAT_000326_e313_d1"><term ana="#document_type_4">Pièce sig</term>. de François de Neufchâteau; <date when="1799-02-24">6 ventôse an VII</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette. 6 » Intéressante pièce. Copie d'une pétition présentée au citoyen L. a. Révellière-Lépeaux par les citoyens exerçant le culte théophilanthropique dans le Temple de l'Etre suprême. CARTES DE VISITE avec plusieurs lignes autographes Chaque pièce, au choix. 1 franc. Duc d'Aumale, Léon Bonnat, v. Cherbuliez, Oscar Comettant Fr. Coppée, Daubray, C. Doucet, Ed. Drumont, Alex. Dumas, Aug Flameng, Ed. de Goncourt, Gyp, Ludovic Halévy, J.-M. de Hérédia Alp. Karr, Jules Lefebvre, Ferd. de Lesseps, A. Mézières, Aug. Rodin Albert Sorel, Alf. Stevens, Ziem</desc></item>
+               <desc xml:id="CAT_000326_e313_d1"><term ana="#document_type_4">Pièce sig</term>. de François de Neufchâteau; <date when="1799-02-24">6 ventôse an VII</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, tête imp., vignette. 6 » Intéressante pièce. Copie d'une pétition présentée au citoyen La Révellière-Lépeaux par les citoyens exerçant le culte théophilanthropique dans le Temple de l'Etre suprême. CARTES DE VISITE avec plusieurs lignes autographes Chaque pièce, au choix. 1 franc. Duc d'Aumale, Léon Bonnat, v. Cherbuliez, Oscar Comettant Fr. Coppée, Daubray, C. Doucet, Ed. Drumont, Alex. Dumas, Aug Flameng, Ed. de Goncourt, Gyp, Ludovic Halévy, J.-M. de Hérédia Alp. Karr, Jules Lefebvre, Ferd. de Lesseps, A. Mézières, Aug. Rodin Albert Sorel, Alf. Stevens, Ziem</desc></item>
          </list>
       </body>
       <gap/>

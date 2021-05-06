@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000110">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000110</title>
+            <title>RDA, N°107 (Septembre 1887)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>107</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -354,7 +386,7 @@
                   <p>fils de Gracchus, à la mort de son père adopté par Le Peletier de
                      Saint-Fargeau, libraire et journaliste, né en 1785</p>
                </trait>
-               <desc xml:id="CAT_000110_e16_d1">10 lettres à lui adressées par Choron, le baron Méchain, Etienne Lenoir, <term ana="#document_type_8">L. a.</term> Rochefoucauld-Liancourt, etc; <date when="1817">1817</date>-22, <measure type="length" unit="p" n="17">17 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8 o</measure>u in-4.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000110_e16_d1">10 lettres à lui adressées par Choron, le baron Méchain, Etienne Lenoir, La Rochefoucauld-Liancourt, etc; <date when="1817">1817</date>-22, <measure type="length" unit="p" n="17">17 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8 o</measure>u in-4.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="17" xml:id="CAT_000110_e17">
                <num type="lot">17</num>
@@ -930,7 +962,7 @@
                <trait>
                   <p>spirituel vaudevilliste, né à Lyon</p>
                </trait>
-               <desc xml:id="CAT_000110_e71_d1">12 let. <term ana="#document_type_15">a. s.</term> à Sauvage, directeur de l'Odéon; <date when="1827">1827</date>-57, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000110_e71_d1">12 <term ana="#document_type_7">let. a. s.</term> à Sauvage, directeur de l'Odéon; <date when="1827">1827</date>-57, <measure type="length" unit="p" n="15">15 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-18.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Intéressante correspondance sur la représentation de ses
                   ouvrages à l'Odéon</note>
             </item>
@@ -948,7 +980,7 @@
                <trait>
                   <p>acteur distingué de la Comédie-Française, né en 1782, mort en 1852</p>
                </trait>
-               <desc xml:id="CAT_000110_e73_d1">7 l. <term ana="#document_type_15">a. s.</term> au baron Taylor, <date when="1837">1837</date>-47, <measure type="length" unit="p" n="10.5">10 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000110_e73_d1">7 <term ana="#document_type_7">l. a. s.</term> au baron Taylor, <date when="1837">1837</date>-47, <measure type="length" unit="p" n="10.5">10 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="74" xml:id="CAT_000110_e74">
                <num type="lot">74</num>
@@ -1018,7 +1050,7 @@
                      Bien Public, mais le sauvaà Péronne, grandmaître de France, né en 1411, mort en
                      1488</p>
                </trait>
-               <desc xml:id="CAT_000110_e79_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin ; Dammartin, <date when="1476-06-14">14 juin 1476</date>, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> L. a. signature est très-pâle et presque effacée. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000110_e79_d1"><term ana="#document_type_4">Pièce sig</term>. sur vélin ; Dammartin, <date when="1476-06-14">14 juin 1476</date>, <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure> La signature est très-pâle et presque effacée. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Mandement à son gouverneur du comté de Dammartin de la
                   réception de la foi et hommage d'Antoine des Essars, écuyer, seigneur de Thieux, «
                   pour raison de partie de l'ostel, terre et seigneurerie du dit Thieux »</note>
@@ -1038,7 +1070,7 @@
                <trait>
                   <p>femme auteur, poète et romancière distinguée, née à Semur en 1780</p>
                </trait>
-               <desc xml:id="CAT_000110_e81_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Bouisse-Rochefort, <date when="1827-09-10">10 sept. 1827</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000110_e81_d1"><term ana="#document_type_7">L. a. s.</term> à La Bouisse-Rochefort, <date when="1827-09-10">10 sept. 1827</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Curieuse lettre. Elle ne peut lui donner les renseignements
                   qu'il lui demande : « Ma tête fatiguée et douloureuse sollicite le repos; avant
                   peu, j'en aurai un qui sera bien long et peut-être en jouirai-je quand cette
@@ -1097,7 +1129,7 @@
                   <p>littérateur et archéologue distingué, correspondant de l'Académie des
                      Inscriptions, né près de Saintes en 1782, mort en 1862</p>
                </trait>
-               <desc xml:id="CAT_000110_e86_d1">4 l. <term ana="#document_type_15">a. s.</term>, <date when="1840">1840</date>-50, <measure type="length" unit="p" n="11.5">11 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes lettres sur des sujets d'archéologie.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000110_e86_d1">4 <term ana="#document_type_7">l. a. s.</term>, <date when="1840">1840</date>-50, <measure type="length" unit="p" n="11.5">11 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Intéressantes lettres sur des sujets d'archéologie.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="87" xml:id="CAT_000110_e87">
                <num type="lot">87</num>
@@ -1320,7 +1352,7 @@
                   <p>le célèbre peintre réaliste, membre de la Commune de Paris, né à Ornans en
                      1819, mort en 1877</p>
                </trait>
-               <desc xml:id="CAT_000110_e106_d1"><term ana="#document_type_7">L. a. s.</term> à Albert de L. a. Fizelière; Saintes, <date when="1863-04-23">23 avril 1863</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000110_e106_d1"><term ana="#document_type_7">L. a. s.</term> à Albert de La Fizelière; Saintes, <date when="1863-04-23">23 avril 1863</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Lettre des plus curieuses : « J'avais voulu savoir le degré de
                   liberté que nous accorde notre temps; j'avais envoyé un tableau de curés, bien
                   senti (Le Retour d'une Conférence) ; Ca correspondait pas mal avec l'insulte que
@@ -1441,7 +1473,7 @@
                <trait>
                   <p>spirituel vaudevilliste</p>
                </trait>
-               <desc xml:id="CAT_000110_e119_d1">15 l. <term ana="#document_type_15">a. s.</term> à Sauvage, directeur de l'Odéon; <date when="1822">1822</date>-42, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000110_e119_d1">15 <term ana="#document_type_7">l. a. s.</term> à Sauvage, directeur de l'Odéon; <date when="1822">1822</date>-42, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Intéressante correspondance sur ses ouvrages</note>
             </item>
             <item n="120" xml:id="CAT_000110_e120">
@@ -2033,7 +2065,7 @@
                   <p>auteur dramatique du XVIIIe siècle, collaborateur de Mme Favart pour les
                      Ensorcelés</p>
                </trait>
-               <desc xml:id="CAT_000110_e172_d1"><term ana="#document_type_7">L. a. s.</term> à Favart ; <date when="1777">Paris10 fév. 1777</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> L. a. partie blanche du second feuillet manque. Rare.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000110_e172_d1"><term ana="#document_type_7">L. a. s.</term> à Favart ; <date when="1777">Paris10 fév. 1777</date>, <measure type="length" unit="p" n="2.25">2 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La partie blanche du second feuillet manque. Rare.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Intéressante lettre où il le félicite sur le succès de Soliman
                   (Soliman II)</note>
             </item>
@@ -2217,7 +2249,7 @@
                      en 1748, mort à Brunswick en 1806. C'est contre lui qu'éclata l'insurrection de
                      1783 à 1787.</p>
                </trait>
-               <desc xml:id="CAT_000110_e192_d1"><term ana="#document_type_7">L. a. s.</term>, en français, à Starhemberg; L. a. Haye, <date when="1793-04-29">29 avril1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Déchirure atteignant légèrement le texte.</desc><measure commodity="currency" unit="FRF" quantity="28">28</measure>
+               <desc xml:id="CAT_000110_e192_d1"><term ana="#document_type_7">L. a. s.</term>, en français, à Starhemberg; La Haye, <date when="1793-04-29">29 avril1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Déchirure atteignant légèrement le texte.</desc><measure commodity="currency" unit="FRF" quantity="28">28</measure>
                <note>Il lui annonce qu'il a placé le comte Albert de Brancas dans
                   les dragons de Hesse-Cassel; il va essayer de satisfaire le prince de
                   Saxe-Cobourg, au point de vue de son artillerie.</note>
@@ -2384,7 +2416,7 @@
                <trait>
                   <p>peintre hollandais très distingué, né à Groningue en 1824</p>
                </trait>
-               <desc xml:id="CAT_000110_e208_d1"><term ana="#document_type_7">L. a. s.</term>, en français; L. a. Haye, <date when="1878-03-08">8 mars 1878</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre avec un charmant croquis encadré dans le texte.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000110_e208_d1"><term ana="#document_type_7">L. a. s.</term>, en français; La Haye, <date when="1878-03-08">8 mars 1878</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre avec un charmant croquis encadré dans le texte.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="209" xml:id="CAT_000110_e209">
                <num type="lot">209</num>
@@ -2400,7 +2432,7 @@
                <trait>
                   <p>compositeur distingué, né en 1827</p>
                </trait>
-               <desc xml:id="CAT_000110_e210_d1"><term ana="#document_type_7">L. a. s.</term> à Siraudin ; L. a. Haye, <date when="1871-02-03">3 fév. 1871</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000110_e210_d1"><term ana="#document_type_7">L. a. s.</term> à Siraudin ; La Haye, <date when="1871-02-03">3 fév. 1871</date>. <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note>Sur une pièce de Siraudin intitulée Lucrèce, dont il devait
                   faire la musique</note>
             </item>
@@ -2686,7 +2718,7 @@
                <trait>
                   <p>l'illustre tragédien français, né en 1728, mort en 1778</p>
                </trait>
-               <desc xml:id="CAT_000110_e237_d1"><term ana="#document_type_7">L. a. s.</term> à M. Deschamps, à Toulouse ; Paris, <date when="1771-06-06">6 juin 1771</date>. <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, écornée. L. a. moitié du feuillet blanc de l'adresse manque.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000110_e237_d1"><term ana="#document_type_7">L. a. s.</term> à M. Deschamps, à Toulouse ; Paris, <date when="1771-06-06">6 juin 1771</date>. <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, écornée. La moitié du feuillet blanc de l'adresse manque.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Sur ses projets de voyage en Provence. Quant à Toulouse, il a
                   de puissantes raisons pour ne pas se frotter de nouveau aux coulisses du théâtre
                   de cette ville. « Messieurs les actionnaires les ont enduites d'un vernis qui
@@ -2741,7 +2773,7 @@
                <trait>
                   <p>contrôleur général des finances sous Louis XV, de l'Académie des sciences</p>
                </trait>
-               <desc xml:id="CAT_000110_e241_d1">3 let. sig. au maréchal de Besons, commandant en chef de l'armée du Rhin; Paris, <date when="1710">16 mai 1710-15 août 1713</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000110_e241_d1">3 <term ana="#document_type_9">let. sig.</term> au maréchal de Besons, commandant en chef de l'armée du Rhin; Paris, <date when="1710">16 mai 1710-15 août 1713</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Lettres historiques. Envoi de l'état des ingénieurs choisis
                   pour servir à la suite de l'armée d'Allemagne, à Strasbourg, Marsal, Lauterbourg,
                   Belfort et Fort-Louis, avec leurs noms et les chiffres de leurs appointements
@@ -3035,7 +3067,7 @@
                   <p>troisième fils du comte de Miollens; lieutenant-général en 1651, gouverneur
                      d'Arras en 1665, mort en avril 1677</p>
                </trait>
-               <desc xml:id="CAT_000110_e270_d1">Fin de lettre <term ana="#document_type_15">aut. sig.</term>; Paris, <date when="1652-12-20">20 décembre 1652</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000110_e270_d1">Fin de <term ana="#document_type_7">lettre aut. sig.</term>; Paris, <date when="1652-12-20">20 décembre 1652</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachets.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Curieuse lettre sur le cardinal de Retz, écrite au lendemain de
                   son arrestation. « Le cardinal a chanté par les chemins, parlé du combat de
                   Saint-Antoine, du siège d'Etampes; il a demandé des livres...</note>
@@ -3255,7 +3287,7 @@
                      fit les deux campagnes de 1854-1853 contre la Russie et contribua à la
                      destruction de Bomarsund et de Sweaborg, né en 1787, mort en 1863</p>
                </trait>
-               <desc xml:id="CAT_000110_e291_d1">Let. sig. au capitaine Rivière (plus tard commandant, mort glorieusement au Tonkin), à bord de <term ana="#document_type_8">L. a.</term> Virginie; Lagskar (Iles d'Aland), <date when="1854-06-24">24 juin 1854</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000110_e291_d1"><term ana="#document_type_9">Let. sig.</term> au capitaine Rivière (plus tard commandant, mort glorieusement au Tonkin), à bord de La Virginie; Lagskar (Iles d'Aland), <date when="1854-06-24">24 juin 1854</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Lettre historique. Il lui indique ses dispositions pour bloquer
                   le golfe de Bothnie, tout en respectant les droits des neutres; il communique avec
                   l'amiral Napier, son supérieur, à l'aide de la poste suédoise; il trouve
@@ -3354,7 +3386,7 @@
                <trait>
                   <p>célèbre vaudevilliste, né à Dijon en 1752, mort en 1830</p>
                </trait>
-               <desc xml:id="CAT_000110_e300_d1">1° <term ana="#document_type_7">L. a. s.</term> à l'éditeur Fage, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Il lui annonce l'envoi de. son manuscrit l'Etourderie.</desc><desc xml:id="CAT_000110_e300_d2">2° L. a. Barbe ou les Deux Barbes, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000110_e300_d1">1° <term ana="#document_type_7">L. a. s.</term> à l'éditeur Fage, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Il lui annonce l'envoi de. son manuscrit l'Etourderie.</desc><desc xml:id="CAT_000110_e300_d2">2° La Barbe ou les Deux Barbes, <term ana="#document_type_2">pièce de vers aut. sig.</term>, <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Curieuse pièce contenant la relation d'une piquante aventure
                   entre un moine possesseur d'une longue barbe et une jeune brodeuse du nom de
                   Barbe</note>
@@ -3468,7 +3500,7 @@
                   <p>l'auteur du projet de Paix perpétuelte, de l'Acad. fr., né dans la Manche en
                      1638, mort en 1843</p>
                </trait>
-               <desc xml:id="CAT_000110_e311_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de Fleury, <date when="1830">1830</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse lettre relative aux ouvrages de M. de L. a. Tour Serran.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000110_e311_d1"><term ana="#document_type_7">L. a. s.</term> au cardinal de Fleury, <date when="1830">1830</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse lettre relative aux ouvrages de M. de La Tour Serran.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="312" xml:id="CAT_000110_e312">
                <num type="lot">312</num>
@@ -3761,7 +3793,7 @@
                      la comtesse de Moret, ancienne maîtresse de Henri IV, qu'il épousa en 1617. Il
                      fut condamné à mort par coutumace en 1636 pour avoir mal défendu La Capelle</p>
                </trait>
-               <desc xml:id="CAT_000110_e338_d1">Quittance sig. sur vélin; <term ana="#document_type_8">L. a.</term> Capelle, <date when="1603-09-30">30 septembre 1603</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000110_e338_d1"><term ana="#document_type_12">Quitt</term>ance sig. sur vélin; La Capelle, <date when="1603-09-30">30 septembre 1603</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Reçu de 100 livres pour un mois de ses gages comme gouverneur
                   de la Capelle</note>
             </item>

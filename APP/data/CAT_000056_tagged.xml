@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000056">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000056</title>
+            <title>RDA, N°68 (Mai 1881)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>68</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -518,7 +551,7 @@
                   <p>abbesse de Fontevrault, fille légitimée de Henri IV etde Charlotte des
                      Essarts</p>
                </trait>
-               <desc xml:id="CAT_000056_e31_d1"><term ana="#document_type_4">Piècesig</term>.; Fontevrault, <date when="1667-12-07">7 déc. 1667</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, sceau. Fatiguée. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6"/>
+               <desc xml:id="CAT_000056_e31_d1"><term ana="#document_type_4">Piècesig</term>.; Fontevrault, <date when="1667-12-07">7 déc. 1667</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, sceau. Fatiguée. Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="32" xml:id="CAT_000056_e32">
                <num type="lot">32</num>
@@ -1028,7 +1061,7 @@
                <trait>
                   <p>célèbre homme d'Etat légitimiste</p>
                </trait>
-               <desc xml:id="CAT_000056_e82_d1"><term ana="#document_type_8">L. a.</term> France avant la Pologne, <date when="1863">1863</date>, brochure de <measure type="length" unit="p" n="31">31 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, avec une dédicace de 2 lig. aut. sig. au comte de Kisseleff.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000056_e82_d1">La France avant la Pologne, <date when="1863">1863</date>, brochure de <measure type="length" unit="p" n="31">31 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, avec une dédicace de 2 lig. <term ana="#document_type_15">aut. sig.</term> au comte de Kisseleff.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="83" xml:id="CAT_000056_e83">
                <num type="lot">83</num>
@@ -1183,7 +1216,7 @@
                <trait>
                   <p>célèbre grammairien, de l'Acad. fr., né en 1682, mort en 1768</p>
                </trait>
-               <desc xml:id="CAT_000056_e99_d1"><term ana="#document_type_7">L. a. s.</term> à L. a. Condamine, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Charmante épître.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000056_e99_d1"><term ana="#document_type_7">L. a. s.</term> à La Condamine, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Charmante épître.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="100" xml:id="CAT_000056_e100">
                <num type="lot">100</num>
@@ -1208,7 +1241,7 @@
                <trait>
                   <p>conventionnel, célèbre pamphlétaire et patriote américain</p>
                </trait>
-               <desc xml:id="CAT_000056_e102_d1"><term ana="#document_type_7">L. a. s.</term>, en anglais, au citoyen L. a. Croix, à Paris; Versailles, <date when="1796-08-13">26 therm. an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce. Rare.</desc><measure commodity="currency" unit="FRF" quantity="58">58</measure>
+               <desc xml:id="CAT_000056_e102_d1"><term ana="#document_type_7">L. a. s.</term>, en anglais, au citoyen La Croix, à Paris; Versailles, <date when="1796-08-13">26 therm. an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle pièce. Rare.</desc><measure commodity="currency" unit="FRF" quantity="58">58</measure>
             </item>
             <item n="103" xml:id="CAT_000056_e103">
                <num type="lot">103</num>

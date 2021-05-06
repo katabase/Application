@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000018">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000018</title>
+            <title>RDA, N°37 (août 1873)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>37</num>
                <editor>Gabriel Charavay</editor>
                <publisher>Gabriel Charavay</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936 <ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,10 +206,30 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="#COL_000001" when="2020-07">Correction, adding new mark-up for price and an ID
-            for desc</change>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -289,7 +318,7 @@
                <num type="lot">9</num>
                <name type="author">Barbier (Auguste)</name>
                <trait>
-                  <p>célèbre poète satirique, auteur des Iambes, membre de l'Acad. fr</p>
+                  <p>célèbre poète satirique, auteur des Iambes, membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e9_d1"><term ana="#document_type_7">L. a. s.</term> à Mme Valmore, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Jolie pièce, contenant une charmante chanson de lui, probablement
@@ -301,7 +330,7 @@
                <trait>
                   <p>maréchal de France, commandant en chef de l'armée de Metz</p>
                </trait>
-               <desc xml:id="CAT_000018_e10_d1">Belle lettre sig.; Paris, <date when="1861">1861</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000018_e10_d1">Belle <term ana="#document_type_9">lettre sig.</term>; Paris, <date when="1861">1861</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="11" xml:id="CAT_000018_e11">
                <num type="lot">11</num>
@@ -504,7 +533,7 @@
                <num type="lot">32</num>
                <name type="author">Campistron (J. de)</name>
                <trait>
-                  <p>célèbre poète dramatique, de l'Acad. fr</p>
+                  <p>célèbre poète dramatique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e32_d1">Let. écrite de sa main, sig. par Louis de Vendôme, dont il était le secrétaire, au conseil suprême de Mantoue ; camp de la Révolte, <date when="1703-08-23">23 août 1703</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet du prince. Belle pièce.</desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
             </item>
@@ -514,7 +543,7 @@
                <trait>
                   <p>savant archéologue, directeur de l'imprimerie de la Propagande</p>
                </trait>
-               <desc xml:id="CAT_000018_e33_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Molini; Rome, <date when="1809">1809</date>, 1 p.-<measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000018_e33_d1"><term ana="#document_type_7">L. a. s.</term> au libraire Molini; Rome, <date when="1809">1809</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="34" xml:id="CAT_000018_e34">
                <num type="lot">34</num>
@@ -619,7 +648,7 @@
                <trait>
                   <p>femme du maréchal Armand de Caumont-La Force</p>
                </trait>
-               <desc xml:id="CAT_000018_e43_d1"><term ana="#document_type_4">Pièce sig</term>. d'elle et de son beau-père, le maréchal Jacques CaumontL. a. Force; <date when="1637">1637</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000018_e43_d1"><term ana="#document_type_4">Pièce sig</term>. d'elle et de son beau-père, le maréchal Jacques CaumontLa Force; <date when="1637">1637</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="44" xml:id="CAT_000018_e44">
                <num type="lot">44</num>
@@ -656,7 +685,7 @@
                <trait>
                   <p>frère du précédent</p>
                </trait>
-               <desc xml:id="CAT_000018_e47_d1"><term ana="#document_type_4">Pièce sig</term>. de lui et de sa femme, Anne-Elisabeth de Gruel de L. a. Frette, <date when="1733">1733</date>, <measure type="length" unit="p" n="2">2 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000018_e47_d1"><term ana="#document_type_4">Pièce sig</term>. de lui et de sa femme, Anne-Elisabeth de Gruel de La Frette, <date when="1733">1733</date>, <measure type="length" unit="p" n="2">2 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="48" xml:id="CAT_000018_e48">
                <num type="lot">48</num>
@@ -685,7 +714,7 @@
                <num type="lot">50</num>
                <name type="author">Champagny (le comte Franz de)</name>
                <trait>
-                  <p>littérateur, membre de l'Acad. fr</p>
+                  <p>littérateur, membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e50_d1"><term ana="#document_type_7">L. a. s.</term>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
@@ -813,7 +842,7 @@
                <trait>
                   <p>illustre poète tragique du XVIIIe siècle</p>
                </trait>
-               <desc xml:id="CAT_000018_e64_d1"><term ana="#document_type_8">L. a.</term> matrone d'Ephése, comédie avec approbation aut. sig. de Crébillon, <date when="1775">1775</date>, 1 cahier <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000018_e64_d1">La matrone d'Ephése, comédie avec approbation <term ana="#document_type_15">aut. sig.</term> de Crébillon, <date when="1775">1775</date>, 1 cahier <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="65" xml:id="CAT_000018_e65">
                <num type="lot">65</num>
@@ -936,7 +965,7 @@
                <name type="author">Fontanes (Louis de)</name>
                <trait>
                   <p>un des écrivains français les plus élégants, grand maître de l'Université,
-                     membre de l'Acad. fr</p>
+                     membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e79_d1"><term ana="#document_type_7">L. a. s.</term> à Dorat-Cubières, chez Mme de Beauharnais, an <date when="1804-1805">XIII</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
                <note>Délicieuse épître en réponse à la demande que fait Cubière d'une pension comme
@@ -1100,7 +1129,7 @@
                <num type="lot">95</num>
                <name type="author">Haussonville (le comteJos. d')</name>
                <trait>
-                  <p>littérateur et homme politique, de l'Acad. fr</p>
+                  <p>littérateur et homme politique, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e95_d1">M. de Cavour et la Crise italienne, manusc. sig., avec de nombreuses corrections aut., <measure type="length" unit="p" n="114">114 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
@@ -1193,7 +1222,7 @@
                <name type="author">Le Brun (Ch.-F.)</name>
                <trait>
                   <p>duc de Plaisance, 3e consul de la République, archi-trésorier de l'Empire,
-                     traducteur d'Homère et du Tasse, membre de l'Acad. fr</p>
+                     traducteur d'Homère et du Tasse, membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e105_d1"><term ana="#document_type_7">L. a. s.</term> à Ramel, an <date when="1795-1796">IV</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
@@ -1572,7 +1601,7 @@
                <trait>
                   <p>l'auteur de Paul et Virginie</p>
                </trait>
-               <desc xml:id="CAT_000018_e147_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen L. a. Varenne ; Paris, chez le citoyen Didot, <date when="1795-12-24">3 nivôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000018_e147_d1"><term ana="#document_type_7">L. a. s.</term> au citoyen La Varenne ; Paris, chez le citoyen Didot, <date when="1795-12-24">3 nivôse an IV</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolie lettre.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Relative à une contrefaçon de ses Etudes de la Nature, par le libraire
                   Barba</note>
             </item>
@@ -1628,7 +1657,7 @@
                <num type="lot">153</num>
                <name type="author">Séguier (Pierre III)</name>
                <trait>
-                  <p>illustre chancelier de France, fondateur et membre de l'Acad. fr</p>
+                  <p>illustre chancelier de France, fondateur et membre de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e153_d1"><term ana="#document_type_7">L. a. s.</term> à M. de Chavigny, <date when="1641">1641</date>, <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Belle et intéressante lettre, écrite vraisemblablement peu de jours avant la
@@ -1645,7 +1674,7 @@
                <name type="author">Ségur (L.-Ph. de)</name>
                <trait>
                   <p>dit l'aîné, diplomate, littérateur, grandmaitre des cérémonies, de l'Acad.
-                     fr</p>
+                     fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e154_d1">Pourquoi pas?, <term ana="#document_type_14">chanson aut.</term> sig. (sous le Consulat), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
@@ -1655,13 +1684,13 @@
                <trait>
                   <p>dit le Jeune, littérateur et chansonnier, frère du précédent</p>
                </trait>
-               <desc xml:id="CAT_000018_e155_d1"><term ana="#document_type_8">L. a.</term> Valse, chanson aut. sig., <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000018_e155_d1">La Valse, <term ana="#document_type_14">chanson aut.</term> sig., <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="156" xml:id="CAT_000018_e156">
                <num type="lot">156</num>
                <name type="author">Sicard (l'abbé)</name>
                <trait>
-                  <p>l'instituteur des Sourds-Muets, de l'Acad. fr</p>
+                  <p>l'instituteur des Sourds-Muets, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e156_d1"><term ana="#document_type_7">L. a. s.</term> à son collègue Tochon, <date when="1817">1817</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
                <note>Relative à la visite du comte de Maistre, ambassadeur en Russie, à
@@ -1854,7 +1883,7 @@
                <num type="lot">175</num>
                <name type="author">Alembert (J. Lerond d')</name>
                <trait>
-                  <p>illustre savant et écrivain du XVIIIe siècle, de l'Acad. fr</p>
+                  <p>illustre savant et écrivain du XVIIIe siècle, de l'Acad. fr.</p>
                </trait>
                <desc xml:id="CAT_000018_e175_d1"><term ana="#document_type_7">L. a. s.</term> (à Grosley), <date when="1767">1767</date>, <measure type="length" unit="p" n="3">3 p.</measure> pet. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Belle épître relative à la publication de ses Mélanges de littérature</note>
@@ -1960,9 +1989,9 @@
                <num type="lot">187</num>
                <name type="author">Nodier (Ch.)</name>
                <trait>
-                  <p>un de nos écrivains les plus originaux, de l'Acad. fr</p>
+                  <p>un de nos écrivains les plus originaux, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000018_e187_d1"><term ana="#document_type_7">L. a. s.</term> au comte de L. a. Boulaye; Paris, hôtel du Bouloy, <date when="1818-01-08">8 janv. 1818</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000018_e187_d1"><term ana="#document_type_7">L. a. s.</term> au comte de La Boulaye; Paris, hôtel du Bouloy, <date when="1818-01-08">8 janv. 1818</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Lettre fort curieuse, qu'il signe Charles de Nodier, la seule que nous ayons
                   vue offrant cette particularité, car il avait assez de bon goût pour s'abstenir du
                   de, auquel lui donnaient droit les lettres de noblesse que lui avaient accordées

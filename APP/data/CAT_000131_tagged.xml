@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000131">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000131</title>
+            <title>RDA, N°128 (Mai 1890)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>128</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -610,7 +642,7 @@
                   <p>écrivain du XVIIIe siècle, auteur de l'Etat présent de la Louisiane (1770), et
                      d'histoires du Danemarck et de l'Angleterre</p>
                </trait>
-               <desc xml:id="CAT_000131_e42_d1">2 l. aut. à l'imprimeur Ruault ; Montreuil, <date when="1789">1789</date>-93, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="33">33</measure>
+               <desc xml:id="CAT_000131_e42_d1">2 <term ana="#document_type_8">l. aut.</term> à l'imprimeur Ruault ; Montreuil, <date when="1789">1789</date>-93, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="33">33</measure>
                <note>Curieuses lettres. A propos de la publication de la correspondance de Voltaire,
                   il parle de ses rapports avec d'Argental, Choiseul, Damilaville, et s'étonne que
                   Diderot, encouragé par Voltaire, n'ait pas voulu fonder à Wésel une colonie de
@@ -735,7 +767,7 @@
                <trait>
                   <p>célèbre poète, auteur des Messéniennes, de l'Acad. fr., né au Havre</p>
                </trait>
-               <desc xml:id="CAT_000131_e54_d1">L. a. Vache perdue, ballade, dans les Apennins, <term ana="#document_type_3">pièce de vers aut.</term> ; <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
+               <desc xml:id="CAT_000131_e54_d1">La Vache perdue, ballade, dans les Apennins, <term ana="#document_type_3">pièce de vers aut.</term> ; <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="45">45</measure>
                <note>Superbe pièce dont voici un extrait : Ingrate, quand la fièvre Glaçait mes
                   doigts raidis, Otant mon poil de chèvre Sur vous je l'étendis. Faut-il que le
                   froid vienne, Néra, Pour qu'il vous en souvienne? Ah! Ah! Néra !</note>
@@ -747,7 +779,7 @@
                   <p>savant physicien et écrivain, de l'Acad. des Sciences, né à Béziers en 1678,
                      mort en 1771.</p>
                </trait>
-               <desc xml:id="CAT_000131_e55_d1">10 l. <term ana="#document_type_15">a. s.</term> à Jean Bouillet (Isavant médecin, membre de l'Acad. des Sciences, né à Béziers) ; Paris, <date when="1761">1761</date>-70, <measure type="length" unit="p" n="21.5">21 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Plusieurs de ces lettres contiennent les minutes aut. des réponses de Bouillet. Importante correspondance scientifique.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000131_e55_d1">10 <term ana="#document_type_7">l. a. s.</term> à Jean Bouillet (Isavant médecin, membre de l'Acad. des Sciences, né à Béziers) ; Paris, <date when="1761">1761</date>-70, <measure type="length" unit="p" n="21.5">21 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Plusieurs de ces lettres contiennent les minutes aut. des réponses de Bouillet. Importante correspondance scientifique.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
             </item>
             <item n="56" xml:id="CAT_000131_e56">
                <num type="lot">56</num>
@@ -1168,7 +1200,7 @@
                <trait>
                   <p>le grand métaphysicien allemand</p>
                </trait>
-               <desc xml:id="CAT_000131_e88_d1"><term ana="#document_type_7">L. a. s.</term> à un libraire; Koenigsberg, <date when="1790-04-12">12 avril 1790</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> L. a. partie blanche du feuillet a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="110">110</measure>
+               <desc xml:id="CAT_000131_e88_d1"><term ana="#document_type_7">L. a. s.</term> à un libraire; Koenigsberg, <date when="1790-04-12">12 avril 1790</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> La partie blanche du feuillet a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="110">110</measure>
                <note>Demande de 4 exemplaires de ses oeuvres, (Critique de la Raison pure, de la
                   Raison pratique, etc.)</note>
             </item>
@@ -1178,7 +1210,7 @@
                <trait>
                   <p>le célèbre romancier populaire</p>
                </trait>
-               <desc xml:id="CAT_000131_e89_d1"><term ana="#document_type_7">L. a. s.</term> au rédacteur du journal L. a. Presse ; <date when="1834-11-07">7 nov. 1834</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000131_e89_d1"><term ana="#document_type_7">L. a. s.</term> au rédacteur du journal La Presse ; <date when="1834-11-07">7 nov. 1834</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
                <note>Curieuse lettre où il annonce qu'il publie ses OEuvres complètes, dans le
                   format in-8, chez Marchant. Il reproche au libraire Barba, son ancien éditeur, de
                   transformer le format de ses romans : « Mes oeuvres complètes comprendront, outre
@@ -1372,7 +1404,7 @@
                <trait>
                   <p>le créateur de la Physiognomonie, né en 1741, mort en 1801</p>
                </trait>
-               <desc xml:id="CAT_000131_e107_d1">3 l. <term ana="#document_type_15">a. s.</term> au diplomate Reinhard ; <date when="1799">1799-1800</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
+               <desc xml:id="CAT_000131_e107_d1">3 <term ana="#document_type_7">l. a. s.</term> au diplomate Reinhard ; <date when="1799">1799-1800</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
                <note>Belles et importantes lettres: Zurick, 26 déc. 1799. Il parle de son
                   patriotisme et de son attachement à la Suisse. -Zurich, 9 janvier 1800. Il souffre
                   de sa blessure ; voeux en faveur de la paix pour la Suisse. -Zurich, 25 nov. 1800.
@@ -1845,7 +1877,7 @@
                <trait>
                   <p>le célèbre poète marseillais</p>
                </trait>
-               <desc xml:id="CAT_000131_e152_d1">9 l. <term ana="#document_type_15">a. s.</term> à Félicien David ; <date when="1846">1846</date>-60, <measure type="length" unit="p" n="17">17 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000131_e152_d1">9 <term ana="#document_type_7">l. a. s.</term> à Félicien David ; <date when="1846">1846</date>-60, <measure type="length" unit="p" n="17">17 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Très curieuses lettres dont voici une analyse sommaire : Paris, 2 janvier 1855.
                   « Je vous autorise à traiter en mon nom avec M. Emile Perrin, pour notre opéra en
                   quatre actes la Fin du Monde. » -1859. Lettres relatives au libretto de l'opéra
@@ -2358,7 +2390,7 @@
                      affaires étrangères et de la guerre à Lisbonne. Il engagea son pays dans la
                      coalition contre la France et dut céder à l'Espagne Olivença, mort en 1803</p>
                </trait>
-               <desc xml:id="CAT_000131_e203_d1">2 1 <term ana="#document_type_15">a. s.</term> et 1 1. s., en français, à lord Hamilton ; Londres, <date when="1781">1781</date>-82, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000131_e203_d1">2 l <term ana="#document_type_15">a. s.</term> et 1 1. s., en français, à lord Hamilton ; Londres, <date when="1781">1781</date>-82, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Au sujet de l'envoi de poèmes portugais, éditions du Camoéns. Il joint à l'une
                   de ces letres une liste des poèmes épiques en langue portugaise</note>
             </item>
@@ -2647,7 +2679,7 @@
                   <p>érudit, garde de la Bibliothèque royale dont il a publié un catalogue, de
                      l'Acad. fr., né à Saulieu (Côte-d'Or) en 1685, mort en 1761</p>
                </trait>
-               <desc xml:id="CAT_000131_e234_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1732">1732</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> L. a. marge du bas a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000131_e234_d1"><term ana="#document_type_7">L. a. s.</term>; <date when="1732">1732</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> La marge du bas a été coupée.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="235" xml:id="CAT_000131_e235">
                <num type="lot">235</num>
@@ -3021,7 +3053,7 @@
                <trait>
                   <p>célèbre philosophe, auteur des Ruines</p>
                </trait>
-               <desc xml:id="CAT_000131_e278_d1">Billet. <term ana="#document_type_15">aut. sig.</term>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000131_e278_d1">Bil<term ana="#document_type_7">let. aut. sig.</term>, <measure type="length" unit="p" n="0.33">1/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="279" xml:id="CAT_000131_e279">
                <num type="lot">279</num>

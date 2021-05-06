@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000073">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000073</title>
+            <title>RDA, N°86 (Novembre 1884)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>86</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +154,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +207,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -473,7 +506,7 @@
             <item n="25" xml:id="CAT_000073_e25">
                <num type="lot">25</num>
                <name type="author">Louis XIV</name>
-               <desc xml:id="CAT_000073_e25_d1">19 <term ana="#document_type_4">pièces.</term> 1° Relation du lit de justice tenu par le roi, <date when="1643">en 1643</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d2">2° Harangue de M. Talon, avocat général, en la séance du lit de justice du roy, tenue en parlement de Paris, <date when="1648-01-15">le 15 janvier 1648</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d3">3° Réflexions politiques sur le rétablissement du marquis de Châteaneuf, comme garde-des-sceaux, <date when="1660">1660</date>, <measure type="length" unit="p" n="17.25">17 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><desc xml:id="CAT_000073_e25_d4">4° Copie d'une lettre de Mme Fouquet, femme du surintendant, adressée au roi, <date when="1662">1662</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000073_e25_d5">5° Copie de pièces intéressantes pour les débuts de la guerre de Hollande, <date when="1671">1671</date>-72, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d6">6° Deux pièces importantes sur l'affaire des maréchaux (Créqui, Bellefonds, d'Humières et Turenne), <date when="1672">1672</date>-73, <measure type="length" unit="p" n="23.5">23 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d7">7° Carte manuscrite du combat de Turckheim, <date when="1675">gagnée par Turenne en 1675</date>, très-finement exécutée (XVIIIe siècle).</desc><desc xml:id="CAT_000073_e25_d8">8° Relation de la Cour de France, composée par M. Erizza, ambassadeur de la République de Venise, <measure type="length" unit="p" n="48">48 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000073_e25_d9">9° Plan imprimé avec légendé explicative du combat de Wynendale, entre le comte de <term ana="#document_type_8">L. a.</term> Motte et le major Webb, <date when="1708">1708</date>, <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d10">10° Complainte sur la duchesse de <term ana="#document_type_8">L. a.</term> Vallière, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000073_e25_d11">11° Règlement pour les filles et petites-filles de France, copie de lettres patentes du roi, <date when="1710-03-12">du 12 mars 1710</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, etc.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000073_e25_d1">19 <term ana="#document_type_4">pièces.</term> 1° Relation du lit de justice tenu par le roi, <date when="1643">en 1643</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d2">2° Harangue de M. Talon, avocat général, en la séance du lit de justice du roy, tenue en parlement de Paris, <date when="1648-01-15">le 15 janvier 1648</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d3">3° Réflexions politiques sur le rétablissement du marquis de Châteaneuf, comme garde-des-sceaux, <date when="1660">1660</date>, <measure type="length" unit="p" n="17.25">17 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><desc xml:id="CAT_000073_e25_d4">4° Copie d'une lettre de Mme Fouquet, femme du surintendant, adressée au roi, <date when="1662">1662</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000073_e25_d5">5° Copie de pièces intéressantes pour les débuts de la guerre de Hollande, <date when="1671">1671</date>-72, <measure type="length" unit="p" n="7.5">7 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d6">6° Deux pièces importantes sur l'affaire des maréchaux (Créqui, Bellefonds, d'Humières et Turenne), <date when="1672">1672</date>-73, <measure type="length" unit="p" n="23.5">23 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d7">7° Carte manuscrite du combat de Turckheim, <date when="1675">gagnée par Turenne en 1675</date>, très-finement exécutée (XVIIIe siècle).</desc><desc xml:id="CAT_000073_e25_d8">8° Relation de la Cour de France, composée par M. Erizza, ambassadeur de la République de Venise, <measure type="length" unit="p" n="48">48 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000073_e25_d9">9° Plan imprimé avec légendé explicative du combat de Wynendale, entre le comte de La Motte et le major Webb, <date when="1708">1708</date>, <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><desc xml:id="CAT_000073_e25_d10">10° Complainte sur la duchesse de La Vallière, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000073_e25_d11">11° Règlement pour les filles et petites-filles de France, copie de lettres patentes du roi, <date when="1710-03-12">du 12 mars 1710</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure>, etc.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="26" xml:id="CAT_000073_e26">
                <num type="lot">26</num>
@@ -583,7 +616,7 @@
                   <p>chancelier de France sous François Ier, emprisonné pour malversations, né à
                      Angers.</p>
                </trait>
-               <desc xml:id="CAT_000073_e34_d1">1° Minutes des lettres du roi François Ier au Parlement de Paris, <date when="1543-04">avril 1543</date>, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>;</desc><desc xml:id="CAT_000073_e34_d2">2° Minute du brevet délivré en vertu des ordres du Roi, pour faire conduire « en la tour carrée du palais et par devers Messieurs de la Cour pour y être jugé, Messire Guillaume Poyet, naguère chancelier de France et actuellement prisonnier à la Bastille»; <date when="1543-04-10">10 avril 1543</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000073_e34_d1">1° Minutes des lettres du roi François Ier au Parlement de Paris, <date when="1543-04">avril 1543</date>, <measure type="length" unit="p" n="6.5">6 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>;</desc><desc xml:id="CAT_000073_e34_d2">2° Minute du <term ana="#document_type_10">brevet</term> délivré en vertu des ordres du Roi, pour faire conduire « en la tour carrée du palais et par devers Messieurs de la Cour pour y être jugé, Messire Guillaume Poyet, naguère chancelier de France et actuellement prisonnier à la Bastille»; <date when="1543-04-10">10 avril 1543</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Pièces historiques relatives au procès du chancelier Poyet, accusé « de
                   plusieurs faultes, abbus, malversations et aultres crimes », ainsi que Louis
                   Martine, procureur au Châtelet, et Jean Le Royer, dit Cloches, conseiller au
@@ -607,7 +640,7 @@
                <trait>
                   <p>la grande épistolaire, 20 pièces.</p>
                </trait>
-               <desc xml:id="CAT_000073_e36_d2">1° Acte sur vélin relatif à la succession du président Frémyot, <date when="1679">1679</date>, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Le nom de Mme de Sévigné se trouve mentionné deux fois comme héritière pour une part du président Frémyot. On remarque aussi les noms de Françoise de Rabutin-Chantal, fille de sainte Chantal et veuve d'Antoine de Toulongéon ; Jean de Berbisey, le président Baillet, etc</desc><desc xml:id="CAT_000073_e36_d1">2° <term ana="#document_type_9">Let. sig.</term> du duc du Maine à Mlle de Sévigné, <date when="1701">1701</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Piqûre d'humidité dans la marge.</desc><desc xml:id="CAT_000073_e36_d3">3° <term ana="#document_type_2">Pièce sur vélin avec 5 lig. aut. sig.</term> d'Anne de Sévigné; L. a. Gailleule, <date when="1644">1644</date>, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-4° 3 let. aut. sig. de Mme la comtesse de Sainte-Agathe, dernière descendante de Mme de Sévigné, etc.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000073_e36_d2">1° Acte sur vélin relatif à la succession du président Frémyot, <date when="1679">1679</date>, <measure type="length" unit="p" n="14">14 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Le nom de Mme de Sévigné se trouve mentionné deux fois comme héritière pour une part du président Frémyot. On remarque aussi les noms de Françoise de Rabutin-Chantal, fille de sainte Chantal et veuve d'Antoine de Toulongéon ; Jean de Berbisey, le président Baillet, etc</desc><desc xml:id="CAT_000073_e36_d1">2° <term ana="#document_type_9">Let. sig.</term> du duc du Maine à Mlle de Sévigné, <date when="1701">1701</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet. Piqûre d'humidité dans la marge.</desc><desc xml:id="CAT_000073_e36_d3">3° <term ana="#document_type_2">Pièce sur vélin avec 5 lig. aut. sig.</term> d'Anne de Sévigné; La Gailleule, <date when="1644">1644</date>, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-4° 3 let. aut. sig. de Mme la comtesse de Sainte-Agathe, dernière descendante de Mme de Sévigné, etc.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="37" xml:id="CAT_000073_e37">
                <num type="lot">37</num>
@@ -615,7 +648,7 @@
                <trait>
                   <p>l'illustre architecte du Panthéon, né près d'Auxerre</p>
                </trait>
-               <desc xml:id="CAT_000073_e37_d1">1° Réponse de 11 lig. <term ana="#document_type_15">aut. sig.</term> au bas d'une lettre adressée à M. le marquis de Marigny, <date when="1767-03-04">4 mars 1767</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000073_e37_d2">2° 3 pièces le concernant.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000073_e37_d1">1° Réponse de 11 lig. aut. sig. au bas d'une <term ana="#document_type_8">lettre a</term>dressée à M. le marquis de Marigny, <date when="1767-03-04">4 mars 1767</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000073_e37_d2">2° 3 pièces le concernant.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="38" xml:id="CAT_000073_e38">
                <num type="lot">38</num>
@@ -623,7 +656,7 @@
                <trait>
                   <p>célèbre écrivain ultramontain, né à Boynes (Loiret) en 1813, mort récemment</p>
                </trait>
-               <desc xml:id="CAT_000073_e38_d1">Son portrait photographié en pied, avec dédicace aut. sig.; <date when="1857">1857</date>, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> <term ana="#document_type_8">L. a.</term> photographie est un peu passée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000073_e38_d1">Son portrait photographié en pied, avec dédicace <term ana="#document_type_15">aut. sig.</term>; <date when="1857">1857</date>, <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La photographie est un peu passée.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="39" xml:id="CAT_000073_e39">
                <num type="lot">39</num>
@@ -687,7 +720,7 @@
                <trait>
                   <p>peintre de paysages</p>
                </trait>
-               <desc xml:id="CAT_000073_e111_d1"><term ana="#document_type_8">L. a.</term> tombe du chevalier, au comte de Caen, dessin à la mine de plomb, signé, <date when="1872">1872</date>, <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Provenant de sa vente.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000073_e111_d1">La tombe du chevalier, au comte de Caen, dessin à la mine de plomb, signé, <date when="1872">1872</date>, <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Provenant de sa vente.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="112" xml:id="CAT_000073_e112">
                <num type="lot">112</num>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000145">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000145</title>
+            <title>RDA, N°142 (Février 1892)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,12 +22,12 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">142</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>142</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
-               <pubPlace>Paris, Rue du Faubourg Poissonière 34</pubPlace>
+               <pubPlace>Paris, 34 rue du Faubourg-Poissonnière</pubPlace>
                <date when="1892-02">Février 1892</date>
             </bibl>
             <listEvent>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -483,7 +515,7 @@
                <trait>
                   <p>spirituel et fécond vaudevilliste, né à Charolles en 1796, mort en 1853</p>
                </trait>
-               <desc xml:id="CAT_000145_e30_d1"><term ana="#document_type_7">L. a. s.</term>; Château de L. a. Bèche, <date when="1846-08-09">9 août 1846</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000145_e30_d1"><term ana="#document_type_7">L. a. s.</term>; Château de La Bèche, <date when="1846-08-09">9 août 1846</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="31" xml:id="CAT_000145_e31">
                <num type="lot">31</num>
@@ -884,7 +916,7 @@
                <trait>
                   <p>célèbre généalogiste, né à Ambonville (Haute-Marne) en 1718, mort en 1782</p>
                </trait>
-               <desc xml:id="CAT_000145_e72_d1">3 l. <term ana="#document_type_15">a. s.</term> à la comtesse (de Gramont); <date when="1771">1771</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000145_e72_d1">3 <term ana="#document_type_7">l. a. s.</term> à la comtesse (de Gramont); <date when="1771">1771</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Curieuses lettres toutes relatives à la généalogie de la famille
                   d'Ourches</note>
             </item>
@@ -1141,7 +1173,7 @@
                   <p>général, qui reprima l'insurrection de Grenoble en 1816, né à Nîmes en 1777
                      mort en 1849</p>
                </trait>
-               <desc xml:id="CAT_000145_e97_d1">1° <term ana="#document_type_9">Let. sig.</term> à Monseigneur…; Bruxelles, <date when="1815-05-16">16 mai 1815</date> <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Déchirure enlevant quelques fins de lignes.</desc><desc xml:id="CAT_000145_e97_d2"><date when="1820">2° 12 l. <term ana="#document_type_15">a. s.</term> 1820-1848</date>, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000145_e97_d1">1° <term ana="#document_type_9">Let. sig.</term> à Monseigneur…; Bruxelles, <date when="1815-05-16">16 mai 1815</date> <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Déchirure enlevant quelques fins de lignes.</desc><desc xml:id="CAT_000145_e97_d2"><date when="1820">2° 12 <term ana="#document_type_7">l. a. s.</term> 1820-1848</date>, <measure type="length" unit="p" n="18">18 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="98" xml:id="CAT_000145_e98">
                <num type="lot">98</num>
@@ -1392,7 +1424,7 @@
             <item n="122" xml:id="CAT_000145_e122">
                <num type="lot">122</num>
                <name type="author">Henri IV</name>
-               <desc xml:id="CAT_000145_e122_d1">Let. sig. avec la souscri<term ana="#document_type_3">p. aut.</term> à M. de Savaillan, gouverneur de l'Isle en Jourdain; L. a. Rochelle, <date when="1586-10-25">25 octobre 1586</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="26">26</measure>
+               <desc xml:id="CAT_000145_e122_d1">Let. sig. avec la souscri<term ana="#document_type_3">p. aut.</term> à M. de Savaillan, gouverneur de l'Isle en Jourdain; La Rochelle, <date when="1586-10-25">25 octobre 1586</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="26">26</measure>
                <note>Ordre de donner au sieur de Maraval la charge de capitaine que détenait feu La
                   Taulère</note>
             </item>
@@ -1569,7 +1601,7 @@
                <trait>
                   <p>auteur de Mémoires estimés, né en 1695, mort en 1758</p>
                </trait>
-               <desc xml:id="CAT_000145_e140_d1">2 let. sig. à M. Marchand, musicien du roi ; <date when="1751">1751</date>57. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000145_e140_d1">2 <term ana="#document_type_9">let. sig.</term> à M. Marchand, musicien du roi ; <date when="1751">1751</date>57. <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Intéressantes lettres : Dampierre, 15 sept. 1757. « Je reçois votre lettre du
                   13; je ne scavois point le jour du commencement de la musique de la chapelle, je vois
                   avec plaisir que vous y avés fait un personnage fort honorable et que vous avés
@@ -1670,7 +1702,7 @@
                <trait>
                   <p>l'illustre anatomiste italien, né en 1682, mort en 1771</p>
                </trait>
-               <desc xml:id="CAT_000145_e149_d1">26 l. <term ana="#document_type_15">a. s.</term>, en latin, à Sauveur Morand (chirurgien, membre de l'Acad. des Sciences); Padoue, 1732-1762, 40p. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. 80 » Précieuse correspondance scientifique dont voici une courte analyse : Padoue, 1er janvier 1732. Le médecin Michelotti a dû lui rendre compte de l'opération de la pierre pratiquée sur Jacques Beaulieu; plusieurs nobles Vénitiens ont été atteints de cette même maladie, Gulielmi, Zambelli. Alghisi ; il lui indique les remèdes dont il a usé à leur endroit.-Padoue, 26 septembre 1732. Il parle de lithotomie latérale.- Padoue, 30 septembre 1735. Il le remercie de des organes de la circulation. -Padoue, 1er mai 1737 Il réclame les ouvrages de Winslow et de Réaumur, publiés par l'Académie des Sciences.-Padoue, 15 octobre 1740, Mention des médecins Astruc, Berzi, Petit, de Mairan, Hunauld, Rouhault.-Padoue, 8 mars 1741. Curiosités relatives au canal de l'urêtre remarquées sur cinq cadavres qu'il a disséqués.-Padoue, <date when="1741-09-19">19 septembre 1741</date>. Nouvelles des médecins Falconet, Zanotto, Mairan, Stella.-D. <term ana="#document_type_15">a. s.</term> les</desc><note>lettres suivantes, il parle des abbés Nolet et de Bernis; il réclame des
+               <desc xml:id="CAT_000145_e149_d1">26 <term ana="#document_type_7">l. a. s.</term>, en latin, à Sauveur Morand (chirurgien, membre de l'Acad. des Sciences); Padoue, 1732-1762, 40p. <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. 80 » Précieuse correspondance scientifique dont voici une courte analyse : Padoue, 1er janvier 1732. Le médecin Michelotti a dû lui rendre compte de l'opération de la pierre pratiquée sur Jacques Beaulieu; plusieurs nobles Vénitiens ont été atteints de cette même maladie, Gulielmi, Zambelli. Alghisi ; il lui indique les remèdes dont il a usé à leur endroit.-Padoue, 26 septembre 1732. Il parle de lithotomie latérale.- Padoue, 30 septembre 1735. Il le remercie de des organes de la circulation. -Padoue, 1er mai 1737 Il réclame les ouvrages de Winslow et de Réaumur, publiés par l'Académie des Sciences.-Padoue, 15 octobre 1740, Mention des médecins Astruc, Berzi, Petit, de Mairan, Hunauld, Rouhault.-Padoue, 8 mars 1741. Curiosités relatives au canal de l'urêtre remarquées sur cinq cadavres qu'il a disséqués.-Padoue, <date when="1741-09-19">19 septembre 1741</date>. Nouvelles des médecins Falconet, Zanotto, Mairan, Stella.-D. a. s. les</desc><note>lettres suivantes, il parle des abbés Nolet et de Bernis; il réclame des
                   ouvrages nécessaires à ses études, à celles de ses élèves</note>
             </item>
             <item n="150" xml:id="CAT_000145_e150">
@@ -1696,7 +1728,7 @@
                   <p>érudit et écrivain distingué hollandais, auteur d'un glossaire resté inédit, né
                      à Dordrecht en 1508</p>
                </trait>
-               <desc xml:id="CAT_000145_e152_d1"><term ana="#document_type_7">L. a. s.</term>, en français, à du Plessis-Mornay ; L. a. Haye, <date when="1614-10-23">23 octobre 1614</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000145_e152_d1"><term ana="#document_type_7">L. a. s.</term>, en français, à du Plessis-Mornay ; La Haye, <date when="1614-10-23">23 octobre 1614</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Lettre historique. Il l'informe des négociations relatives au partage du duché
                   de Clèves et de Juliers entre l'électeur de Brandebourg et le prince de Neubourg:
                   les Hollandais favorisent l'électeur et cherchent à maintenir à l'écart les
@@ -2053,7 +2085,7 @@
                <trait>
                   <p>directeur de l'Oratoire de Paris, adversaire des Jansénistes</p>
                </trait>
-               <desc xml:id="CAT_000145_e186_d1">2 l. <term ana="#document_type_15">a. s.</term> à Chaveria, chanoine de Poligny; <date when="1752">1752</date>-53, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000145_e186_d1">2 <term ana="#document_type_7">l. a. s.</term> à Chaveria, chanoine de Poligny; <date when="1752">1752</date>-53, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Au sujet de l'éducation et du trousseau de Pernot, neveu du chanoine</note>
             </item>
             <item n="187" xml:id="CAT_000145_e187">
@@ -2239,14 +2271,14 @@
             <item n="205" xml:id="CAT_000145_e205">
                <num type="lot">205</num>
                <name type="author">Bretagne. -Anjou</name>
-               <desc xml:id="CAT_000145_e205_d1">2 l. <term ana="#document_type_15">a. s.</term> de M. de la Graverie à Chotard, intendant du prince de Con lé en Bretagne; Châteaubriant et Angers, <date when="1668">1668-1674</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000145_e205_d1">2 <term ana="#document_type_7">l. a. s.</term> de M. de la Graverie à Chotard, intendant du prince de Con lé en Bretagne; Châteaubriant et Angers, <date when="1668">1668-1674</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Lettres intéressantes pour l'histoire locale de la Bretagne et de l'Anjou; il y
                   est parlé de Julie de Bourbon, fille légitimée du duc d'Enghien.</note>
             </item>
             <item n="206" xml:id="CAT_000145_e206">
                <num type="lot">206</num>
                <name type="author">Bretagne</name>
-               <desc xml:id="CAT_000145_e206_d1">2 let. aut. du vicaire général de Saint-Pol-de-Léon; <date when="1723">1723-1726</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000145_e206_d1">2 <term ana="#document_type_8">let. aut.</term> du vicaire général de Saint-Pol-de-Léon; <date when="1723">1723-1726</date>, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Intéressantes lettres. – Oct. 1723. Il y raconte comment l'évêque, qu'il ne paraît pas aimer (Jean-Louis
                   de la Bourdonnaye), a fait expulser le professeur de philosophie du collège Le
                   Mogn, malgré les sympathies des habitants et des écoliers, pour le remplacer par
@@ -2530,7 +2562,7 @@
             <item n="238" xml:id="CAT_000145_e238">
                <num type="lot">238</num>
                <name type="author">Vexin. -Pontoise</name>
-               <desc xml:id="CAT_000145_e238_d1">1° <term ana="#document_type_7">L. a. s.</term> de l'architecte Fontaine; <date when="1804-07-02">12 mess. an XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000145_e238_d2">2° 6 l. <term ana="#document_type_15">a. s.</term> du sculpteur Landier à Fontaine; château de Montgobert, ans XII-XIII, <measure type="length" unit="p" n="12.5">12 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000145_e238_d1">1° <term ana="#document_type_7">L. a. s.</term> de l'architecte Fontaine; <date when="1804-07-02">12 mess. an XII</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000145_e238_d2">2° 6 <term ana="#document_type_7">l. a. s.</term> du sculpteur Landier à Fontaine; château de Montgobert, ans XII-XIII, <measure type="length" unit="p" n="12.5">12 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Curieux dossier relatif aux travaux du monument à élever au général Leclerc à
                   Montgobert, près Pontoise</note>
             </item>
@@ -2571,7 +2603,7 @@
             <item n="242" xml:id="CAT_000145_e242">
                <num type="lot">242</num>
                <name type="author">Pologne</name>
-               <desc xml:id="CAT_000145_e242_d1">4 l. <term ana="#document_type_15">a. s.</term>, en français, de J.-P. Sapieha; <date when="1798">1798-1800</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000145_e242_d1">4 <term ana="#document_type_7">l. a. s.</term>, en français, de J.-P. Sapieha; <date when="1798">1798-1800</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="243" xml:id="CAT_000145_e243">
                <num type="lot">243</num>
@@ -2632,7 +2664,7 @@
             <item n="250" xml:id="CAT_000145_e250">
                <num type="lot">250</num>
                <name type="author">Egypte (Expédition d')</name>
-               <desc xml:id="CAT_000145_e250_d1">5 pièces 1°<term ana="#document_type_9">Let. sig.</term> de l'adjudant-général Almeras au « général en chef Buonaparte »; Damiette, <date when="1799-04-20">1er floréal an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jolie vignette républicaine.</desc><desc xml:id="CAT_000145_e250_d2">2° <term ana="#document_type_7">L. a. s.</term> du général Destaing; Le Caire, <date when="1799-04-28">9 floréal an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><desc xml:id="CAT_000145_e250_d3">3° 2 let. sig. de Kléber; Le Caire, 9-<date when="1799-11-09">18 brumaire an VIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignettes républicaines.</desc><desc xml:id="CAT_000145_e250_d4">4° <term ana="#document_type_9">Let. sig.</term> du général Menou au citoyen Conté, chef de brigade des aérostiers: Le Caire <date when="none">12 messidor, an VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000145_e250_d1">5 pièces 1°<term ana="#document_type_9">Let. sig.</term> de l'adjudant-général Almeras au « général en chef Buonaparte »; Damiette, <date when="1799-04-20">1er floréal an VII</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Jolie vignette républicaine.</desc><desc xml:id="CAT_000145_e250_d2">2° <term ana="#document_type_7">L. a. s.</term> du général Destaing; Le Caire, <date when="1799-04-28">9 floréal an VII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><desc xml:id="CAT_000145_e250_d3">3° 2 <term ana="#document_type_9">let. sig.</term> de Kléber; Le Caire, 9-<date when="1799-11-09">18 brumaire an VIII</date>, <measure type="length" unit="p" n="1.25">1 p. 1/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignettes républicaines.</desc><desc xml:id="CAT_000145_e250_d4">4° <term ana="#document_type_9">Let. sig.</term> du général Menou au citoyen Conté, chef de brigade des aérostiers: Le Caire <date when="none">12 messidor, an VIII</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
          </list>
       </body>

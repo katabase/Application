@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000137">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000137</title>
+            <title>RDA, N°134 (Février 1891)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">134</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>134</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -812,7 +844,7 @@
                   <p>célèbre actrice de la Comédie italienne et de l'Opéra-Comique, née à Melz en
                      1747, morte en 1829</p>
                </trait>
-               <desc xml:id="CAT_000137_e58_d1"><term ana="#document_type_7">L. a. s.</term> à Mme de Vimeux; (<date when="1800">1800</date>), <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> L. a. 1/2 du feuillet de l'adresse manque. Rare.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000137_e58_d1"><term ana="#document_type_7">L. a. s.</term> à Mme de Vimeux; (<date when="1800">1800</date>), <measure type="length" unit="p" n="1.75">1 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La 1/2 du feuillet de l'adresse manque. Rare.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="59" xml:id="CAT_000137_e59">
                <num type="lot">59</num>
@@ -1015,7 +1047,7 @@
                   <p>célèbre conventionnel, jurisconsulte éminent, de l'Institut, né à Rennes en
                      1753, mort en 1827</p>
                </trait>
-               <desc xml:id="CAT_000137_e78_d1">13 l. <term ana="#document_type_15">a. s.</term> à M. Guérin, <date when="1802">1802-1812</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000137_e78_d1">13 <term ana="#document_type_7">l. a. s.</term> à M. Guérin, <date when="1802">1802-1812</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="79" xml:id="CAT_000137_e79">
                <num type="lot">79</num>
@@ -1066,7 +1098,7 @@
                <trait>
                   <p>le plus célèbre bibliophile du XVIIIe siècle, né en 1708, mort en 1780</p>
                </trait>
-               <desc xml:id="CAT_000137_e83_d1"><term ana="#document_type_8">Let. aut.</term> à L. a. Chaussée (de l'Acad. fr.); <date when="1737-01-29">29 janvier .1737</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000137_e83_d1"><term ana="#document_type_8">Let. aut.</term> à La Chaussée (de l'Acad. fr.); <date when="1737-01-29">29 janvier .1737</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Il le prie de lui envoyer le manuscrit de sa pièce qu'il désire faire lire « en
                   grand secret par gens discrets.</note>
             </item>
@@ -1129,7 +1161,7 @@
                <trait>
                   <p>célèbre peintre espagnol, associé de l'Institut, né en 1815</p>
                </trait>
-               <desc xml:id="CAT_000137_e89_d1">16 l. <term ana="#document_type_15">a. s.</term> au barou Taylor; <date when="1837">1837</date>-39, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4. Intéressante correspondance.</desc><measure commodity="currency" unit="FRF" quantity="23">23</measure>
+               <desc xml:id="CAT_000137_e89_d1">16 <term ana="#document_type_7">l. a. s.</term> au barou Taylor; <date when="1837">1837</date>-39, <measure type="length" unit="p" n="16">16 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure> et in-4. Intéressante correspondance.</desc><measure commodity="currency" unit="FRF" quantity="23">23</measure>
             </item>
             <item n="90" xml:id="CAT_000137_e90">
                <num type="lot">90</num>
@@ -1953,7 +1985,7 @@
                <trait>
                   <p>l'illustre guerrier</p>
                </trait>
-               <desc xml:id="CAT_000137_e172_d1">Fin de let. aut. (au cardinal de Bouillon, <date when="1669">1669</date>), <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000137_e172_d1">Fin de <term ana="#document_type_8">let. aut.</term> (au cardinal de Bouillon, <date when="1669">1669</date>), <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Importante lettre historique. Il est d'avis que la France doit s'allier au
                   Portugal (Marie de Savoie, duchesse de Nemours, venait de renverser son mari
                   Alphonse IV, pour le remplacer par son beau-frère Pierre, qu'elle épousa). Turenne
@@ -2166,7 +2198,7 @@
                <trait>
                   <p>illustre connétable de France</p>
                </trait>
-               <desc xml:id="CAT_000137_e193_d1">Pièce sur velin; <term ana="#document_type_8">L. a.</term> Roche-Derrien (Côtes-du-Nord), <date when="1386-09-26">26 sept. 1386</date>, <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000137_e193_d1">Pièce sur velin; La Roche-Derrien (Côtes-du-Nord), <date when="1386-09-26">26 sept. 1386</date>, <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
                <note>Quittance de Louis de Robien, écuyer, à Jean le Flament, de 180 francs d'or en
                   prêt sur ses gages et ceux de 11 écuyers, sous les ordres du connétable Olivier de
                   Clisson, pour le passage en Angleterre</note>
@@ -2243,7 +2275,7 @@
             <item n="200" xml:id="CAT_000137_e200">
                <num type="lot">200</num>
                <name type="author">Angoumois</name>
-               <desc xml:id="CAT_000137_e200_d1"><term ana="#document_type_4">Pièce sig</term>. par Ant. de L. a. Rochefoucauld, évêque d'Angoulême ; Paris, <date when="1607-03-02">2 mars 1607</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000137_e200_d1"><term ana="#document_type_4">Pièce sig</term>. par Ant. de La Rochefoucauld, évêque d'Angoulême ; Paris, <date when="1607-03-02">2 mars 1607</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note>Transport de rente par Ant. de la Rochefoucauld, agissant pour sa soeur,
                   Charlotte de la Rochefoucauld, veuve de Gaston de la Rochefoucauld, seigneur de
                   Salles, son consin, à Pierre de Foix, seigneur de Pavières. Parmi les possesseurs
@@ -2265,7 +2297,7 @@
             <item n="203" xml:id="CAT_000137_e203">
                <num type="lot">203</num>
                <name type="author">Bretagne</name>
-               <desc xml:id="CAT_000137_e203_d1">3 l. <term ana="#document_type_15">a. s.</term> par Louis-Vincent, comte de Goesbriand, lieutenant général, gouverneur du château du Taureau, au marquis d'Ossun, Oberlauterbach, Courtray et Alost, <date when="1743">1743</date>-45, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000137_e203_d1">3 <term ana="#document_type_7">l. a. s.</term> par Louis-Vincent, comte de Goesbriand, lieutenant général, gouverneur du château du Taureau, au marquis d'Ossun, Oberlauterbach, Courtray et Alost, <date when="1743">1743</date>-45, <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
             </item>
             <item n="204" xml:id="CAT_000137_e204">
                <num type="lot">204</num>
@@ -2372,7 +2404,7 @@
             <item n="217" xml:id="CAT_000137_e217">
                <num type="lot">217</num>
                <name type="author">Lyonnais</name>
-               <desc xml:id="CAT_000137_e217_d1">1° 31 lettres ou minutes aut. de l'abbé de Drée, grand sacristain de l'abbave de Saviguy (Rhône), aux abbés de Clugny et de Lasserrée; <date when="1760">1760</date>-68, <measure type="length" unit="p" n="80">80 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000137_e217_d2">2° 27 l. <term ana="#document_type_15">a. s.</term> de L de Clugny, comte de Lyon, abbé de Savigny, aumônier du roi, à l'abbé de Drée; <date when="1761">1761</date>-68, <measure type="length" unit="p" n="86">86 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets.</desc><desc xml:id="CAT_000137_e217_d3">3° <term ana="#document_type_8">Let. aut.</term> de Gabriel, comte de Clugny, à l'abbé de Drée, avec la minute aut. de la réponse de celui-ci; Lyon, <date when="1768">1768</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000137_e217_d4">4° 19 <term ana="#document_type_7">L. a. s.</term> de Mme de Clugny, prieure de Leigneux (Loire), à l'abbé de Drée; <date when="1766">1766</date>-68, <measure type="length" unit="p" n="50">50 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000137_e217_d5">5° 2 pièces relatives à la famille de Clugny; <date when="1762">1762-1822</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
+               <desc xml:id="CAT_000137_e217_d1">1° 31 lettres ou minutes aut. de l'abbé de Drée, grand sacristain de l'abbave de Saviguy (Rhône), aux abbés de Clugny et de Lasserrée; <date when="1760">1760</date>-68, <measure type="length" unit="p" n="80">80 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000137_e217_d2">2° 27 <term ana="#document_type_7">l. a. s.</term> de L de Clugny, comte de Lyon, abbé de Savigny, aumônier du roi, à l'abbé de Drée; <date when="1761">1761</date>-68, <measure type="length" unit="p" n="86">86 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets.</desc><desc xml:id="CAT_000137_e217_d3">3° <term ana="#document_type_8">Let. aut.</term> de Gabriel, comte de Clugny, à l'abbé de Drée, avec la minute aut. de la réponse de celui-ci; Lyon, <date when="1768">1768</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000137_e217_d4">4° 19 <term ana="#document_type_7">L. a. s.</term> de Mme de Clugny, prieure de Leigneux (Loire), à l'abbé de Drée; <date when="1766">1766</date>-68, <measure type="length" unit="p" n="50">50 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><desc xml:id="CAT_000137_e217_d5">5° 2 pièces relatives à la famille de Clugny; <date when="1762">1762-1822</date>, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
                <note>Très intéressante correspondance relative à l'administration et à la
                   sécularisation de l'abbaye de Savigny</note>
             </item>
@@ -2447,7 +2479,7 @@
             <item n="226" xml:id="CAT_000137_e226">
                <num type="lot">226</num>
                <name type="author">Révolution</name>
-               <desc xml:id="CAT_000137_e226_d1">2 l. a. s. par M. de <term ana="#document_type_8">L. a.</term> Morandière, lieutenant au 40e régiment d'infanterie, à son père; Barraux (Dauphiné) et Mâcon, <date when="1792">1792</date>, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000137_e226_d1">2 <term ana="#document_type_7">l. a. s.</term> par M. de La Morandière, lieutenant au 40e régiment d'infanterie, à son père; Barraux (Dauphiné) et Mâcon, <date when="1792">1792</date>, <measure type="length" unit="p" n="4.5">4 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets. Curieuses.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="227" xml:id="CAT_000137_e227">
                <num type="lot">227</num>
@@ -2468,7 +2500,7 @@
             <item n="229" xml:id="CAT_000137_e229">
                <num type="lot">229</num>
                <name type="author">Deydier (E.)</name>
-               <desc xml:id="CAT_000137_e229_d1">Apostille de 4 lig. <term ana="#document_type_15">aut. sig.</term> sur une l. a. s. de Mercier, régisseur des fonderies du canton de Bourg, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000137_e229_d1">Apostille de 4 lig. aut. sig. sur une <term ana="#document_type_7">l. a. s.</term> de Mercier, régisseur des fonderies du canton de Bourg, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="230" xml:id="CAT_000137_e230">
                <num type="lot">230</num>

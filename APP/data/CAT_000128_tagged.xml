@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000128">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000128</title>
+            <title>RDA, N°125 (Février 1890)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">125</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>125</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -578,7 +610,7 @@
             <item n="43" xml:id="CAT_000128_e43">
                <num type="lot">43</num>
                <name type="author">Beringhen (J.-L., marquis de)</name>
-               <desc xml:id="CAT_000128_e43_d1">premier écuyer du roi, gouverneur de Marseille, membre de l'Académie des Inscriptions, célèbre amateur dont la collection d'estampes est à la Bibliothèque nationale, né en 1651, mort en 1723-12 let. sig. au président Hénault; <date when="1721">1721</date>, <measure type="length" unit="p" n="13.5">13 p. 1/2</measure> in-fol. ou <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
+               <desc xml:id="CAT_000128_e43_d1">premier écuyer du roi, gouverneur de Marseille, membre de l'Académie des Inscriptions, célèbre amateur dont la collection d'estampes est à la Bibliothèque nationale, né en 1651, mort en 1723-12 <term ana="#document_type_9">let. sig.</term> au président Hénault; <date when="1721">1721</date>, <measure type="length" unit="p" n="13.5">13 p. 1/2</measure> in-fol. ou <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
                <note>Importantes lettres écrites comme directeur des Ponts-et-Chaussées; elles sont
                   toutes relatives au pavé de Paris, alignement sur les quais de l'Ecole et du
                   Louvre, pavage de la rue Grange-Batelière, etc. etc</note>
@@ -649,7 +681,7 @@
                <trait>
                   <p>le grand réformateur calviniste</p>
                </trait>
-               <desc xml:id="CAT_000128_e51_d1">Let. sig. avec la souscript. aut. à Uttembogard Le fidèle ministre de la parole de Dieu à <term ana="#document_type_8">L. a.</term> Haye; » Genève, <date when="1593-05-18">18 mai 1593</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet camée.</desc><measure commodity="currency" unit="FRF" quantity="140">140</measure>
+               <desc xml:id="CAT_000128_e51_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut. à Uttembogard Le fidèle ministre de la parole de Dieu à La Haye; » Genève, <date when="1593-05-18">18 mai 1593</date>, <measure type="length" unit="p" n="1.33">1 p. 1/3</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet camée.</desc><measure commodity="currency" unit="FRF" quantity="140">140</measure>
                <note>Superbe lettre. « Je suis trop asseuré de vostre très synpère et cordiale
                   affection envers nous pour user de beaucoup d'exhortations à vous y employer.
                   Seulement, je prierai Nestre Seigneur qu'il lui plaise de bénir la peine que vous
@@ -1002,7 +1034,7 @@
                   <p>jésuite, écrivain et théologien, né à Vernon en 1652, mort à Orléans en
                      1726</p>
                </trait>
-               <desc xml:id="CAT_000128_e86_d1">2 let. aut. dont 1 sig. de ses initiales à Bayle, à Rotterdam ; <date when="1699">1699</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000128_e86_d1">2 <term ana="#document_type_8">let. aut.</term> dont 1 sig. de ses initiales à Bayle, à Rotterdam ; <date when="1699">1699</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Intéressantes lettres où il lui demande si les ouvrages nouveaux, qui
                   paraissent en France, arrivent jusqu'à lui. Il lui envoie par Rouen 100
                   exemplaires de son histoire du Nestorianisme ; et se rappelle au souvenir des
@@ -1173,7 +1205,7 @@
                <trait>
                   <p>archevêque d'Arles de 1711 à 1741, fils de Laurent de Forbin-Janson</p>
                </trait>
-               <desc xml:id="CAT_000128_e103_d1">2 l. <term ana="#document_type_15">a. s.</term> à M. de Jossaud, commandant à Landau ; Arles, <date when="1735">1735</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belles lettres.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000128_e103_d1">2 <term ana="#document_type_7">l. a. s.</term> à M. de Jossaud, commandant à Landau ; Arles, <date when="1735">1735</date>, <measure type="length" unit="p" n="5.5">5 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belles lettres.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="104" xml:id="CAT_000128_e104">
                <num type="lot">104</num>
@@ -1361,7 +1393,7 @@
                      Anglais, le 13, janvier 1797, à bord du vaisseau Les Droits de l'homme, né à
                      Meilhan (Lot-et-Garonne), en 1765, mort en 1829</p>
                </trait>
-               <desc xml:id="CAT_000128_e122_d1">Let. sig. au général Lefebvre (plus tard maréchal); <term ana="#document_type_8">L. a.</term> Basse-Terre, <date when="1802-09-12">25 fructidor an X (12 septembre 1802</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000128_e122_d1"><term ana="#document_type_9">Let. sig.</term> au général Lefebvre (plus tard maréchal); La Basse-Terre, <date when="1802-09-12">25 fructidor an X (12 septembre 1802</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Vignette républicaine.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Il lui annonce la mort du général Kichepanse, gouverneur de la Guadeloupe,
                   décédé le 16 fructidor (3 sept) et enterré au fort Charles, près la Basse-Terre ;
                   le général Ménard lui succède et le général Gobert rentre en France</note>
@@ -2419,12 +2451,12 @@
                <trait>
                   <p>célèbre poète de l'Acad. fr., né à Béziers en 1777, mort en 1868</p>
                </trait>
-               <desc xml:id="CAT_000128_e225_d1">1° <term ana="#document_type_7">L. a. s.</term> aux rédacteurs de L. a. Décade; Lorient, <date when="1803-07-09">20 messidor an XI (9 juillet 1803</date>), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="38">38</measure>
+               <desc xml:id="CAT_000128_e225_d1">1° <term ana="#document_type_7">L. a. s.</term> aux rédacteurs de La Décade; Lorient, <date when="1803-07-09">20 messidor an XI (9 juillet 1803</date>), <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="38">38</measure>
                <note>Curieuse lettre d'envoi des poésies suivantes : « Il fut un temps où j'avais la
                   rage de me faire imprimer, de vous envoyer de très mauvais vers, et où vous aviez
                   la sage précaution de ne jamais me répondre. Après trois ans de silence et de
                   travail, j'ai la présomption de croire valoir quelque chose de plus.</note>
-               <desc xml:id="CAT_000128_e225_d2">2° <term ana="#document_type_3">Pièces de vers aut.</term>, intitulées: Les Larmes, épître à Legouvé; Epître à Vivant Denon sur son voyage d'Egypte pendant les campaqnes de Bonaparte, <measure type="length" unit="p" n="11">11 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Voici un extrait de cette dernière : L. a. gloire de la France avait rempli la [terre, Les dieux devaient alors l'Egypte à son [tonnerre, Mais pourquoi de l'état l'infaillible malheur A-t-il si promptement rappelé le vainiqueur ? On l'eût vu, sans relâche, aux sables de [Lybie, D'Isis et de Memnon disputer la patrie. Thèbes eût réparu ; l'Africain étonné Aux temps de Sésostris eût été ramené ; Et placé quelque jour au niveau de ses [maîtres</desc></item>
+               <desc xml:id="CAT_000128_e225_d2">2° <term ana="#document_type_3">Pièces de vers aut.</term>, intitulées: Les Larmes, épître à Legouvé; Epître à Vivant Denon sur son voyage d'Egypte pendant les campaqnes de Bonaparte, <measure type="length" unit="p" n="11">11 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Voici un extrait de cette dernière : La gloire de la France avait rempli la [terre, Les dieux devaient alors l'Egypte à son [tonnerre, Mais pourquoi de l'état l'infaillible malheur A-t-il si promptement rappelé le vainiqueur ? On l'eût vu, sans relâche, aux sables de [Lybie, D'Isis et de Memnon disputer la patrie. Thèbes eût réparu ; l'Africain étonné Aux temps de Sésostris eût été ramené ; Et placé quelque jour au niveau de ses [maîtres</desc></item>
             <item n="226" xml:id="CAT_000128_e226">
                <num type="lot">226</num>
                <name type="author">Viennet (J.-P.-G.)</name>
@@ -2481,7 +2513,7 @@
             <item n="231" xml:id="CAT_000128_e231">
                <num type="lot">231</num>
                <name type="author">Voisenon (l'abbé Cl.-H. de Fusée de)</name>
-               <desc xml:id="CAT_000128_e231_d1"><term ana="#document_type_8">L. a.</term> Fille mal gardée, parodie de la Provencale, manuscrit aut. ; <measure type="length" unit="p" n="25">25 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
+               <desc xml:id="CAT_000128_e231_d1">La Fille mal gardée, parodie de la Provencale, <term ana="#document_type_13">manuscrit aut.</term> ; <measure type="length" unit="p" n="25">25 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
             </item>
             <item n="232" xml:id="CAT_000128_e232">
                <num type="lot">232</num>
@@ -2500,7 +2532,7 @@
                   <p>célèbre chancelier de France, rédacteur du testament de Louis XIV, né en 1655,
                      mort en 1717</p>
                </trait>
-               <desc xml:id="CAT_000128_e233_d1">1° 2 l. <term ana="#document_type_15">a. s.</term> ; Mons, 1694, et Paris, <date when="1706">1706</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> in-fol. et 1 p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><desc xml:id="CAT_000128_e233_d2">2° <term ana="#document_type_4">P. s.</term> sur vélin, <date when="1703">1703</date>, <measure type="format" unit="f" ana="#document_format_108">in-8. obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000128_e233_d1">1° 2 <term ana="#document_type_7">l. a. s.</term> ; Mons, 1694, et Paris, <date when="1706">1706</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> in-fol. et 1 p. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuses.</desc><desc xml:id="CAT_000128_e233_d2">2° <term ana="#document_type_4">P. s.</term> sur vélin, <date when="1703">1703</date>, <measure type="format" unit="f" ana="#document_format_108">in-8. obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
             </item>
             <item n="234" xml:id="CAT_000128_e234">
                <num type="lot">234</num>

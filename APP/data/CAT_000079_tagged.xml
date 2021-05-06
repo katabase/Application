@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000079">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000079</title>
+            <title>RDA, N°92 (Septembre-octobre 1885)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>92</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936<ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -583,7 +616,7 @@
                   <p>maréchal de France, gouverneur de Bourgogne, le héros de la bataille de
                      Saint-Aubin, mort en 1499</p>
                </trait>
-               <desc xml:id="CAT_000079_e39_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscription aut. ; Auxonne, 9 août, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> Fatiguée et tachée. Rare comme lettre avec la souscription aut.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000079_e39_d1">Let. sig. avec la souscription aut. ; Auxonne, 9 août, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_108">in-8 obl.</measure> Fatiguée et tachée. Rare comme <term ana="#document_type_8">lettre a</term>vec la souscription aut.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="40" xml:id="CAT_000079_e40">
                <num type="lot">40</num>
@@ -876,7 +909,7 @@
                <trait>
                   <p>savant botaniste et voyageur, né à La Rochelle</p>
                </trait>
-               <desc xml:id="CAT_000079_e69_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Malmaison, <date when="1813-03-12">12 mars 1813</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000079_e69_d1"><term ana="#document_type_7">L. a. s.</term>; La Malmaison, <date when="1813-03-12">12 mars 1813</date>, <measure type="length" unit="p" n="0.5">1/2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
                <note>Relative à des travaux à exécuter à la Malmaison pour le service de
                   l'impératrice Joséphine</note>
             </item>
@@ -1133,7 +1166,7 @@
                   <p>femme du maréchal, très-maltraitée par Tallemant des Réaux dans ses
                      Historiettes, amie de Mme de Sévigné, morte à plus de 80 ans, en 1696</p>
                </trait>
-               <desc xml:id="CAT_000079_e96_d1"><term ana="#document_type_7">L. a. s.</term> à M. de L. a. Loubère (le célèbre géomètre) ; Paris, <date when="1659-07-19">19 juil. 1659</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets et soies.</desc><measure commodity="currency" unit="FRF" quantity="23">23</measure>
+               <desc xml:id="CAT_000079_e96_d1"><term ana="#document_type_7">L. a. s.</term> à M. de La Loubère (le célèbre géomètre) ; Paris, <date when="1659-07-19">19 juil. 1659</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets et soies.</desc><measure commodity="currency" unit="FRF" quantity="23">23</measure>
                <note>Très-belle lettre, curieuse par son orthographe fantaisiste, et relative au
                   portrait du maréchal de Castelnau, que de La Loubère lui avait demandé.</note>
             </item>
@@ -1722,7 +1755,7 @@
                   <p>jurisconsulte, négociateur du XVIe siècle, conseiller au Parlement, ami du
                      président de Thou, né en 1545, mort en 1594</p>
                </trait>
-               <desc xml:id="CAT_000079_e156_d1"><term ana="#document_type_7">L. a. s.</term> à M. Plasat, procureur de la princesse de L. a. Roche-sur-Yon (Catherine-Marie de Lorraine, duchesse de Montpensier), à Argenton-sur-Creuse, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000079_e156_d1"><term ana="#document_type_7">L. a. s.</term> à M. Plasat, procureur de la princesse de La Roche-sur-Yon (Catherine-Marie de Lorraine, duchesse de Montpensier), à Argenton-sur-Creuse, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
             </item>
             <item n="157" xml:id="CAT_000079_e157">
                <num type="lot">157</num>
@@ -1769,7 +1802,7 @@
                   <p>fils du roi Pierre II, qui prit une part active à la guerre contre les Turcs,
                      né en 1697</p>
                </trait>
-               <desc xml:id="CAT_000079_e161_d1">3 l. <term ana="#document_type_15">a. s.</term>, dont 2 en français et une en espagnol, à Charles-Jean Guicciardi; Madrid, Gênes et Lisbonne, <date when="1728">1728</date>-38, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belles lettres.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000079_e161_d1">3 <term ana="#document_type_7">l. a. s.</term>, dont 2 en français et une en espagnol, à Charles-Jean Guicciardi; Madrid, Gênes et Lisbonne, <date when="1728">1728</date>-38, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belles lettres.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
             </item>
             <item n="162" xml:id="CAT_000079_e162">
                <num type="lot">162</num>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000118">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000118</title>
+            <title>RDA, N°115 (Octobre 1888)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">115</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>115</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -291,7 +323,7 @@
                   <p>savant astronome, de l'Acad. fr., premier maire de Paris, guillotiné en
                      1793</p>
                </trait>
-               <desc xml:id="CAT_000118_e10_d1"><term ana="#document_type_4">Pièce sig</term>., signée aussi par L. a. Fayette; Paris, <date when="1789-09-28">28 septembre 1789</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette et cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000118_e10_d1"><term ana="#document_type_4">Pièce sig</term>., signée aussi par La Fayette; Paris, <date when="1789-09-28">28 septembre 1789</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Vignette et cachet.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note>Brevet d'une médaille en or décernée à Jean-Julien Daguet, soldat aux
                   gardes-françaises, en reconnaissance des services signalés rendus à la cause
                   publique. (Prise de la Bastille.)</note>
@@ -1415,7 +1447,7 @@
                <trait>
                   <p>le promoteur du percement des isthmes de Suez et de Panama, de l'Acad. fr.</p>
                </trait>
-               <desc xml:id="CAT_000118_e137_d1"><term ana="#document_type_7">L. a. s.</term> à un journaliste; L. a. Chénaie, <date when="1887">1887</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000118_e137_d1"><term ana="#document_type_7">L. a. s.</term> à un journaliste; La Chénaie, <date when="1887">1887</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="138" xml:id="CAT_000118_e138">
                <num type="lot">138</num>
@@ -2070,7 +2102,7 @@
                   <p>le célèbre romancier, auteur du Juif Errant, représentant de la Seine en
                      1851</p>
                </trait>
-               <desc xml:id="CAT_000118_e207_d1">22 let. aut., la plupart sig., à l'éditeur Coquebert; <date when="1839">1839</date> 40. <measure type="length" unit="p" n="28">28 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000118_e207_d1">22 <term ana="#document_type_8">let. aut.</term>, la plupart sig., à l'éditeur Coquebert; <date when="1839">1839</date> 40. <measure type="length" unit="p" n="28">28 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Correspondance des plus intéressantes toute relative à ses ouvrages</note>
             </item>
             <item n="208" xml:id="CAT_000118_e208">
@@ -2650,7 +2682,7 @@
                <trait>
                   <p>roi de France</p>
                </trait>
-               <desc xml:id="CAT_000118_e260_d1"><term ana="#document_type_4">Pièce sig</term>. par Louis de Bourbon, comte de Soissons, grand maître de France; Anne de Montafié, sa mère; Vincent Voiture, marchand de vin suivant la Cour, père du célèbre écrivain; Fr. Coignet de L. a. Thuillerie, contrôleur général; Paris, <date when="1615-12-11">11 déc. 1615</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000118_e260_d1"><term ana="#document_type_4">Pièce sig</term>. par Louis de Bourbon, comte de Soissons, grand maître de France; Anne de Montafié, sa mère; Vincent Voiture, marchand de vin suivant la Cour, père du célèbre écrivain; Fr. Coignet de La Thuillerie, contrôleur général; Paris, <date when="1615-12-11">11 déc. 1615</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Très-intéressant document sur les dépenses de bouche de la maison de Louis
                   XIII. Promesse par Vincent Voiture et d'autres marchands de vin au comte de
                   Soissons et aux maîtres d'hôtel de Louis XIII, « de fournir et livrer
@@ -2732,7 +2764,7 @@
                <trait>
                   <p>88 pièces</p>
                </trait>
-               <desc xml:id="CAT_000118_e268_d1">1° Nomination des commissaires généraux, députés par le Roi pour la vente, aliénation et délaissement à perpétuité des domaines de la Couronne, <date when="1679">1679</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Parmi les commissaires, au nombre de neuf, on remarque : Colbert, d'Aligre, Dugué, Poncet, etc.</desc><desc xml:id="CAT_000118_e268_d2">2° Observations sur la nouvelle déclaration du Roi concernant la Banque et motifs de l'arrêt sur les billets de banque, <date when="1716">1716</date>; copies du temps.-Rapports de différents ministres des finances; documents sur la Banque de France et les agents de change.-Imprimés : Edits et arrêts du roi Louis XIV, sur les finances.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000118_e268_d1">1° Nomination des commissaires généraux, députés par le Roi pour la vente, aliénation et délaissement à perpétuité des domaines de la Couronne, <date when="1679">1679</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Parmi les commissaires, au nombre de neuf, on remarque : Colbert, d'Aligre, Dugué, Poncet, etc.</desc><desc xml:id="CAT_000118_e268_d2">2° Observations sur la nouvelle déclaration du Roi concernant la Banque et motifs de l'arrêt sur les <term ana="#document_type_6">billets</term> de banque, <date when="1716">1716</date>; copies du temps.-Rapports de différents ministres des finances; documents sur la Banque de France et les agents de change.-Imprimés : Edits et arrêts du roi Louis XIV, sur les finances.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
             </item>
             <item n="269" xml:id="CAT_000118_e269">
                <num type="lot">269</num>
@@ -2881,7 +2913,7 @@
             <item n="285" xml:id="CAT_000118_e285">
                <num type="lot">285</num>
                <name type="author">Bresse</name>
-               <desc xml:id="CAT_000118_e285_d1">5 let. sig. par le marquis de Châteauneuf, secrétaire d'Etat, à M. Parisot, à Bourg; Versailles, <date when="1684">1684</date>-87, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000118_e285_d1">5 <term ana="#document_type_9">let. sig.</term> par le marquis de Châteauneuf, secrétaire d'Etat, à M. Parisot, à Bourg; Versailles, <date when="1684">1684</date>-87, <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Intéressantes lettres où il est dit que les protestants du pays de Gex, d'après
                   l'arrêt du Conseil du 10 septembre 1664, ne peuvent sortir du royaume « pour faire
                   les exercices de leur religion ». -Elles sont aussi relatives aux religionnaires

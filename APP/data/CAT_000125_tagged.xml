@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000125">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000125</title>
+            <title>RDA, N°122 (Avril 1889)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">122</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>122</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -389,7 +421,7 @@
                <trait>
                   <p>le célèbre archevêque de Paris</p>
                </trait>
-               <desc xml:id="CAT_000125_e21_d1">Let. sig.; <term ana="#document_type_8">L. a.</term> Trappe, <date when="1764-04-17">17 avril 1764</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000125_e21_d1"><term ana="#document_type_9">Let. sig.</term>; La Trappe, <date when="1764-04-17">17 avril 1764</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="22" xml:id="CAT_000125_e22">
                <num type="lot">22</num>
@@ -554,7 +586,7 @@
                <trait>
                   <p>célèbre acteur des Variétés, créateur du rôle du Gamin de Paris</p>
                </trait>
-               <desc xml:id="CAT_000125_e40_d1">16 l. <term ana="#document_type_15">a. s.</term> ; <date when="1839">1839</date>-83, <measure type="length" unit="p" n="22">22 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000125_e40_d1">16 <term ana="#document_type_7">l. a. s.</term> ; <date when="1839">1839</date>-83, <measure type="length" unit="p" n="22">22 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Très intéressant dossier pouvant servir à la biographie de cet artiste</note>
             </item>
             <item n="41" xml:id="CAT_000125_e41">
@@ -1756,7 +1788,7 @@
                <trait>
                   <p>fils du duc d'Orléans</p>
                </trait>
-               <desc xml:id="CAT_000125_e176_d1">Fin de l. <term ana="#document_type_15">a. s.</term> à M. de Scitivaux ; (Londres, <date when="1861-06">juin 1861</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000125_e176_d1">Fin de <term ana="#document_type_7">l. a. s.</term> à M. de Scitivaux ; (Londres, <date when="1861-06">juin 1861</date>), <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
                <note>Toute relative à la chasse. Il rend compte de la prise d'un cerf après une
                   course de plus de 18 milles. Il a assisté au steeplechase de Cheltenham. « Quand
                   on a vu les obstacles que les chevaux franchissent dans ces courses, toutes les
@@ -2126,7 +2158,7 @@
                <trait>
                   <p>pape illustre, né en 1521, mort en 1590</p>
                </trait>
-               <desc xml:id="CAT_000125_e218_d1">Let. sig. à Castellino et J.-A. Pinelli ; Roine, <date when="1586-06-20">20 juin 1586</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> <term ana="#document_type_7">L. a. sign</term>ature est un peu endommagée par suite de la mauvaise qualité de l'encre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000125_e218_d1"><term ana="#document_type_9">Let. sig.</term> à Castellino et J.-A. Pinelli ; Roine, <date when="1586-06-20">20 juin 1586</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La signature est un peu endommagée par suite de la mauvaise qualité de l'encre.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Ordre de verser entre les mains de GluliaUrsina Rangona, femme du marquis
                   Baldassano, une partie de l'argent déposé aux mains d'Olgrati, pour recouvrer le
                   château de Savignano</note>
@@ -2684,7 +2716,7 @@
                <trait>
                   <p>né à Aix en 1775, mort en 1849.</p>
                </trait>
-               <desc xml:id="CAT_000125_e292_d1"><date when="1836">1836</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><measure commodity="currency" unit="FRF" quantity=""/>
+               <desc xml:id="CAT_000125_e292_d1"><date when="1836">1836</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure></desc><measure commodity="currency" unit="FRF" quantity="2">2</measure>
             </item>
             <item n="293" xml:id="CAT_000125_e293">
                <num type="lot">293</num>
@@ -3114,7 +3146,7 @@
             <item n="350" xml:id="CAT_000125_e350">
                <num type="lot">350</num>
                <name type="author">Charles VI.</name>
-               <desc xml:id="CAT_000125_e350_d1">Pièce sur vélin; <term ana="#document_type_8">L. a.</term> Rochelle (Charente-Infre), 11 mars 1387 (<date when="1388">1388</date>), <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000125_e350_d1">Pièce sur vélin; La Rochelle (Charente-Infre), 11 mars 1387 (<date when="1388">1388</date>), <measure type="format" unit="f" ana="#document_format_104">in-4 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note>Quittance de Roys Goutières, chevalier, de 720 francs d'or « en prest sur les
                   gaiges de nous, patron de la gallée nommée Sainte-Croiz de dix-huit hommes
                   d'armes, trante arbaletriers, trois commitres, neuf nochièles, ung remolat et huit

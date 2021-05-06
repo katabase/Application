@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000227">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -21,7 +21,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>176</num>
                <editor>Eugène Charavay fils</editor>
@@ -142,7 +142,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -194,6 +194,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -495,7 +515,7 @@
                <trait>
                   <p>maréchal de France, né à Brive (Corrèze) en 1763, assassiné à Avignon en 1815.</p>
                </trait>
-               <desc xml:id="CAT_000227_e35_d1"><term ana="#document_type_9">Let. sig.</term> avec la souscript. aut. au général Radet; Paris, <date when="1801-12-18">27 frimaire an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, tête impr.-On a joint une l. a. s. de Serre, camarade d'enfance de Brune, 9 prairial an VIII, 3 p. in-4. Très intéressante pour la biographie de Brune.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000227_e35_d1">Let. sig. avec la souscript. aut. au général Radet; Paris, <date when="1801-12-18">27 frimaire an X</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, tête impr.-On a joint une <term ana="#document_type_7">l. a. s.</term> de Serre, camarade d'enfance de Brune, 9 prairial an VIII, 3 p. in-4. Très intéressante pour la biographie de Brune.</desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
             </item>
             <item n="36" xml:id="CAT_000227_e36">
                <num type="lot">36</num>
@@ -776,7 +796,7 @@
                <trait>
                   <p>célèbre poète, auteur des Messéniennes, de l'Acad. fr., né au Havre en 1793, mort en 1843.</p>
                </trait>
-               <desc xml:id="CAT_000227_e68_d1"><term ana="#document_type_7">L. a. s.</term> à M. A. Passy, préfet de l'Eure; L. a. Madeleine (près Nonancourt), <date when="1836-10-08">8 oct. 1836</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000227_e68_d1"><term ana="#document_type_7">L. a. s.</term> à M. A. Passy, préfet de l'Eure; La Madeleine (près Nonancourt), <date when="1836-10-08">8 oct. 1836</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Très belle lettre de recommandation pour le docteur Vallée qui désirait obtenir la place de médecin-adjoint, vacante à l'Hôtel-Dieu de Vernon.</note>
             </item>
             <item n="69" xml:id="CAT_000227_e69">
@@ -1315,7 +1335,7 @@
                <trait>
                   <p>grand prévôt de l'hôtel de Louis XIII.</p>
                </trait>
-               <desc xml:id="CAT_000227_e131_d1"><term ana="#document_type_7">L. a. s.</term> ; camp de L. a. Rochelle, <date when="1623-12-23">23 déc. 1623</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000227_e131_d1"><term ana="#document_type_7">L. a. s.</term> ; camp de La Rochelle, <date when="1623-12-23">23 déc. 1623</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Belle lettre relative à la charge de grand arpenteur de France dont le roi vient de l'honorer.</note>
             </item>
             <item n="132" xml:id="CAT_000227_e132">
@@ -1625,7 +1645,7 @@
                <trait>
                   <p>l'illustre ministre de Louis XIV, né en 1602, mort en 1661.</p>
                </trait>
-               <desc xml:id="CAT_000227_e167_d1">Let. sig. au marquis de Poyanne ; Saint-Germain-en-Laye, <date when="1749-02-18">18 février 1749</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet et soie. <term ana="#document_type_8">L. a.</term> partie blanche du feuillet de l'adresse est enlevée.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000227_e167_d1"><term ana="#document_type_9">Let. sig.</term> au marquis de Poyanne ; Saint-Germain-en-Laye, <date when="1749-02-18">18 février 1749</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, cachet et soie. La partie blanche du feuillet de l'adresse est enlevée.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
             </item>
             <item n="168" xml:id="CAT_000227_e168">
                <num type="lot">168</num>
@@ -1849,7 +1869,7 @@
                <trait>
                   <p>l'introducteur de la pomme de terre en France, né à Montdidier en 1737, mort en 1813.</p>
                </trait>
-               <desc xml:id="CAT_000227_e194_d1">1° <term ana="#document_type_8">Let. aut.</term> , <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-2° L. a. Patate, manuscrit sig. avec d'importantes et nombreuses corrections aut., 22 p. in-fol.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000227_e194_d1">1° <term ana="#document_type_8">Let. aut.</term> , <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>-2° La Patate, manuscrit sig. avec d'importantes et nombreuses corrections aut., 22 p. in-fol.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="195" xml:id="CAT_000227_e195">
                <num type="lot">195</num>
@@ -2166,7 +2186,7 @@
                <trait>
                   <p>l'illustre auteur de Mémoires, né en 1675, mort en 1755.</p>
                </trait>
-               <desc xml:id="CAT_000227_e231_d1"><term ana="#document_type_7">L. a. sig.</term> de son paraphe à M. de Valin-cour (de l'Acad. des Sciences) ; L. a. Ferté-Alais, <date when="1726-09-15">15 sept. 1726</date>, <measure type="length" unit="p" n="1">1 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000227_e231_d1"><term ana="#document_type_7">L. a. sig.</term> de son paraphe à M. de Valin-cour (de l'Acad. des Sciences) ; La Ferté-Alais, <date when="1726-09-15">15 sept. 1726</date>, <measure type="length" unit="p" n="1">1 p.</measure> petit <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note anchored="true">Très curieuse lettre relative aux pourparlers pour l'élévation du ministre Fleury au cardinalat. « Je ne croy pas ce chapeau prochain... Dieu pardonne aux chapeliers et à ceux qui permettent de porter chapeaux, et non moins à qui les porte. » Il termine par une allusion à la disgrâce du duc de Bourbon, exilé à Chantilly. Intéressants détails.</note>
             </item>
             <item n="232" xml:id="CAT_000227_e232">
@@ -2260,7 +2280,7 @@
                <trait>
                   <p>célèbre archéologue, membre correspondant de l'Institut, auteur des Antiquités de l'Alsace, né à Strasbourg en 1776, mort en 1844.</p>
                </trait>
-               <desc xml:id="CAT_000227_e242_d1">8 l. <term ana="#document_type_15">a. s.</term>, en français; Strasbourg, <date when="1813">1813-1825</date>, 17p. <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000227_e242_d1">8 <term ana="#document_type_7">l. a. s.</term>, en français; Strasbourg, <date when="1813">1813-1825</date>, 17p. <measure type="format" unit="f" ana="#document_format_4">in-4</measure> et in-8. Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="243" xml:id="CAT_000227_e243">
                <num type="lot">243</num>
@@ -2420,7 +2440,7 @@
                <trait>
                   <p>officier distingué, frère de Mme de Caylus, cousin de Mme de Maintenon, exilé par suite de son duel avec M. de Jonzac, tué à la bataille de Belgrade en 1717.</p>
                </trait>
-               <desc xml:id="CAT_000227_e261_d1">2 let. aut., dont une sig. à sa mère, Temeswar, 24 septembre 1716-Vienne; <date when="1717-03-21">21 mars 1717</date>. <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000227_e261_d1">2 <term ana="#document_type_8">let. aut.</term>, dont une sig. à sa mère, Temeswar, 24 septembre 1716-Vienne; <date when="1717-03-21">21 mars 1717</date>. <measure type="length" unit="p" n="7">7 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Belles et intéressantes lettres. A Temeswar devant laquelle les Autrichiens ont ouvert la tranchée, le duc d'Aremberg vient d'être blessé à la joue. Ce personnage étant blessé, il tâchera « de se fourrer avec quelqu'autre général. Coquille son valet, peut témoigner de son économie, de son peu de dépense au jeu ; il comprend maintenant le proverbe qui dit que les voyages forment bien les gens. » Curieux détails.</note>
             </item>
             <item n="262" xml:id="CAT_000227_e262">
@@ -2429,7 +2449,7 @@
                <trait>
                   <p>l'illustre écrivain.</p>
                </trait>
-               <desc xml:id="CAT_000227_e262_d1">Fin de billet <term ana="#document_type_15">aut. sig.</term> V. à Cramer, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000227_e262_d1">Fin de <term ana="#document_type_5">billet aut. sig.</term> V. à Cramer, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Curieuse pièce. « Il y a bien longtemps que nous n'avons bu ensemble... Je suis bien malade.»</note>
             </item>
             <item n="263" xml:id="CAT_000227_e263">
@@ -2500,7 +2520,7 @@
                <trait>
                   <p>le célèbre amiral.</p>
                </trait>
-               <desc xml:id="CAT_000227_e270_d1">2 let. sig. de M. de Saint-Césaire au comte de Thorenc ; Grasse, <date when="1782-08-04">4-20 août 1782</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
+               <desc xml:id="CAT_000227_e270_d1">2 <term ana="#document_type_9">let. sig.</term> de M. de Saint-Césaire au comte de Thorenc ; Grasse, <date when="1782-08-04">4-20 août 1782</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="12">12</measure>
                <note anchored="true">Curieux documents tout relatifs à la défaite du comte de Grasse par l'amiral Rodney. « Il a été lâchement abandonné, que d'ailleurs personnellement il s'est battu comme un héros, qu'il n'avait plus de boulets quand il s'est rendu, et qu'il n'a amené son pavillon que sur les représentations qui lui ont été faites qu'en prolongeant une deffense inutile il ferait prendre le vaisseau de M. de Vaudreuil.»</note>
             </item>
             <item n="271" xml:id="CAT_000227_e271">
@@ -2556,7 +2576,7 @@
             <item n="278" xml:id="CAT_000227_e278">
                <num type="lot">278</num>
                <name type="author">Napoléon Ier (statue de)</name>
-               <desc xml:id="CAT_000227_e278_d1">2 let. sig. de M. Thiers à Soult; Paris, <date when="1833">1833</date>, <measure type="length" unit="p" n="2.33">2 p. 1/3</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000227_e278_d1">2 <term ana="#document_type_9">let. sig.</term> de M. Thiers à Soult; Paris, <date when="1833">1833</date>, <measure type="length" unit="p" n="2.33">2 p. 1/3</measure> in-fol. et <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Curieuses lettres.Il lui demande des canons de bronze pris sur les ennemis en 1805, pour couler la statue de Napoléon Ier, par Seurre.</note>
             </item>
             <item n="279" xml:id="CAT_000227_e279">
@@ -2616,7 +2636,7 @@
             <item n="288" xml:id="CAT_000227_e288">
                <num type="lot">288</num>
                <name type="author">Protestants</name>
-               <desc xml:id="CAT_000227_e288_d1">7 l. <term ana="#document_type_15">a. s.</term> et 16 let. sig. avec la souscript. aut. de Henri Ier, duc de Rohan, le grand capitaine protestant, à M. de Montmezart, premier consul du Vigan, etc.; <date when="1621">1621</date>-29, <measure type="length" unit="p" n="23">23 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
+               <desc xml:id="CAT_000227_e288_d1">7 <term ana="#document_type_7">l. a. s.</term> et 16 let. sig. avec la souscript. aut. de Henri Ier, duc de Rohan, le grand capitaine protestant, à M. de Montmezart, premier consul du Vigan, etc.; <date when="1621">1621</date>-29, <measure type="length" unit="p" n="23">23 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="200">200</measure>
                <note anchored="true">Très importante correspondance. Castres : 25 sept. 1625. Il envoie à la Rochelle, MM. de la Milletière et de Madiane « pour mettre la dernière main à la paix tant désirée. » Cette paix fut signée à la Rochelle en 1626. -En Italie, le duc de Savoie et Lesdignières ont dû évacuer la Ligurie; le légat fort mécontent se retire; le maréchal de Thémines assiège le Maz d'Azil (Ariège); mais Rohan a fait passer des Cévenols dans le comté de Foix pour s'opposer à tous progrès de sa part. -Anduze, 10 nov. 1625. Sur les différends des sieurs de Lespinasse et du Fesq. Dans les lettres suivantes datées de 1627, il parle d'un synode réuni à Nîmes -Le Pouzin, 6 avril 1628. Il a passé l'Ardèche, est entré dans Privas, dans le château de Chomeyras et marche sur Bays; que M. d'Assas garde le Rouergue et que M. de Montmezart fasse fortifier Alais, Anduze, Gange, le Vigan, etc. -Castres, 10 janvier 1629. Comme il est sur le point de convoquer l'Assemblée générale, il désire savoir si le Vivarais a « fait » sa députation ; à Montauban, les nouveaux consuls ne feront pas une paix particulière. -Nîmes, 14 mars 1629. Nouvelles sur la situation dans le comté de Foix. Nouvelles militaires; ordre de fortifier les villes des Cévennes; invitation à se rendre au synode; dans la lettre datée de Vezenobre, 16 juin 1628, il demande des renforts aux viguiers du Vigan pour enlever le château de Vezenobre : « Sy nous avons M. le prince (de Condé) sur le bras à Merucys, nous avons ici M. de Montmorenci; ce que vous avez fait pour esloigner l'un faites le pour esloigner l'autre. » Qu'ils lui envoient des miliciens capables de porter les armes..</note>
             </item>
             <item n="289" xml:id="CAT_000227_e289">

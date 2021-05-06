@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000005">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000005</title>
+            <title>Catalogue Laverdet, N°3 (octobre 1856)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,16 +22,29 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
+            <bibl ana="RDA">
                <title>Catalogue de lettres autographes, manuscrits, documents historiques, etc. de A. Laverdet</title>
-               <num type="lot">3</num>
+               <num>3</num>
                <editor>Auguste Laverdet</editor>
                <publisher>Auguste Laverdet</publisher>
                <pubPlace>Paris, 24 rue Saint-Lazare</pubPlace>
                <date when="1856-10">Octobre 1856</date>
             </bibl>
             <listWit>
-               <witness>BnF, NUMM-9687751 <ptr target="ark:/12148/bpt6k9687751c"/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">DELTA-9995</idno>
+                        <altIdentifier>
+                           <idno>NUMM-9687751</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+                  <ptr target="http://catalogue.bnf.fr/ark:/12148/cb30755439z"/>
                </witness>
             </listWit>
             <listBibl>
@@ -41,7 +54,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -132,7 +145,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -185,10 +198,30 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="#COL_000001" when="2020-07">Correction, adding new mark-up for price and an ID
-            for desc</change>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -299,7 +332,7 @@
                <trait>
                   <p>antiquaire, membre de l'Académie des sciences</p>
                </trait>
-               <desc xml:id="CAT_000005_e158_d1">Fin d'une lettre <term ana="#document_type_15">aut. sig.</term>, relative à la danse des anciens. <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3"> 3</measure>
+               <desc xml:id="CAT_000005_e158_d1">Fin d'une <term ana="#document_type_7">lettre aut. sig.</term>, relative à la danse des anciens. <measure type="length" unit="p" n="2">2 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="3"> 3</measure>
             </item>
             <item n="159" xml:id="CAT_000005_e159">
                <num type="lot">159</num>
@@ -643,7 +676,7 @@
                <trait>
                   <p>seigneur de La Mauvissière, ambassadeur</p>
                </trait>
-               <desc xml:id="CAT_000005_e199_d1">Né à <term ana="#document_type_8">L. a.</term> Mauvissière, M…1592. Pièce notariée, <date when="1586">2 fois signée. 25 août 1586</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. et demie <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000005_e199_d1">Né à La Mauvissière, M…1592. Pièce notariée, <date when="1586">2 fois signée. 25 août 1586</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. et demie <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="200" xml:id="CAT_000005_e200">
                <num type="lot">200</num>
@@ -780,7 +813,7 @@
                      principaux rédacteurs de la collection des mémoires sur les Chinois, en 14
                      vol</p>
                </trait>
-               <desc xml:id="CAT_000005_e216_d1">in-4, mathématicien. b. <term ana="#document_type_15">aut. sig.</term>, à M. de Frémonville. Paris, <date when="1809-08-14">14 août 1809</date>. <measure type="length" unit="p" n="3">3 p.</measure> pl. in-4.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000005_e216_d1">in-4, mathématicien. <term ana="#document_type_5">b. aut. sig.</term>, à M. de Frémonville. Paris, <date when="1809-08-14">14 août 1809</date>. <measure type="length" unit="p" n="3">3 p.</measure> pl. in-4.</desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="217" xml:id="CAT_000005_e217">
                <num type="lot">217</num>
@@ -1234,7 +1267,7 @@
                <trait>
                   <p>maréchal de France</p>
                </trait>
-               <desc xml:id="CAT_000005_e270_d1"><term ana="#document_type_7">L. aut. sig.</term> L. a. Fère, <date when="1842-07-10">10 juillet 1842</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
+               <desc xml:id="CAT_000005_e270_d1"><term ana="#document_type_7">L. aut. sig.</term> La Fère, <date when="1842-07-10">10 juillet 1842</date>. <measure type="length" unit="p" n="1">1 p.</measure> pl. <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet.</desc><measure commodity="currency" unit="FRF" quantity="2.50">2 50</measure>
             </item>
             <item n="271" xml:id="CAT_000005_e271">
                <num type="lot">271</num>

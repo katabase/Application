@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000004">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000004</title>
+            <title>Vente Etienne Charavay, 30 mai 1986</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,14 +22,14 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
+            <bibl ana="RDA">
                <title>CATALOGUE d'une précieuse collection de LETTRES AUTOGRAPHES COMPOSANT EN PARTIE LE CABINET D'UN AMATEUR ÉTRANGER (...) dont la vente aura lieu le 30 mai 1986</title>
                <editor>Etienne Charavay</editor>
                <publisher>Etienne Charavay</publisher>
                <pubPlace>3 rue de Furstenberg, Paris</pubPlace>
                <publisher>J. Pearson &amp;co</publisher>
                <pubPlace>5, Pall Mall Place, S.W., Londres</pubPlace>
-               <date>1896</date>
+               <date when="1896">1896</date>
             </bibl>
             <listEvent>
                <event>
@@ -45,9 +45,21 @@
                </event>
             </listEvent>
             <listWit>
-               <witness>BnF, CV-11669<ptr target="http://catalogue.bnf.fr/ark:/12148/cb45023474z"/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Richelieu</repository>
+                        <idno type="shelfmark">CV-11669</idno>
+                        <altIdentifier>
+                           <idno>NUMM-314682</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+                  <ptr target="http://catalogue.bnf.fr/ark:/12148/cb45023474z"/>
                </witness>
-               <witness>BnF, NUMM-314682</witness>
             </listWit>
             <listBibl>
                <bibl/>
@@ -56,7 +68,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -147,7 +159,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -200,10 +212,30 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="#COL_000001" when="2020-07">Correction, adding new mark-up for price and an ID
-            for desc</change>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -261,7 +293,7 @@
                <desc xml:id="CAT_000004_e6_d1"><term ana="#document_type_7">L. a. s.</term> (au duc de Lorraine?); Verdun, <date when="1625-05-05">5 mai 1625</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-folio.</measure> SUPERBE LETTRE toute relative au ravitaillement de ses troupes.</desc></item>
             <item n="7" xml:id="CAT_000004_e7">
                <num type="lot">7</num>
-               <name type="author">ANNE D'AUTRICHE,</name>
+               <name type="author">ANNE D'AUTRICHE</name>
                <trait>
                   <p>reine de France, femme Louis XIII, n. 1601, m. 1666</p>
                </trait>
@@ -565,7 +597,7 @@
             <item n="41" xml:id="CAT_000004_e41">
                <num type="lot">41</num>
                <name type="author">FLORIAN (Jean-Pierre Claris de)</name>
-               <desc xml:id="CAT_000004_e41_d1"><term ana="#document_type_8">L. a.</term> Sauterelle, fable autographe, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Très jolie pièce</desc></item>
+               <desc xml:id="CAT_000004_e41_d1">La Sauterelle, fable autographe, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Très jolie pièce</desc></item>
             <item n="42" xml:id="CAT_000004_e42">
                <num type="lot">42</num>
                <name type="author">FLOTOW (Friedrich-Ferdinand de)</name>
@@ -876,7 +908,7 @@
                <trait>
                   <p>frère et compagnon d'armes du précédent</p>
                </trait>
-               <desc xml:id="CAT_000004_e73_d1"><term ana="#document_type_7">L. a. s.</term> à Nicolas Thoynard; L. a. Rochelle, <date when="1700-10-03">3 octobre 1700</date> <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très rare</desc><note>Intéressante lettre où il lui fait part de la maladie de son frère
+               <desc xml:id="CAT_000004_e73_d1"><term ana="#document_type_7">L. a. s.</term> à Nicolas Thoynard; La Rochelle, <date when="1700-10-03">3 octobre 1700</date> <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Très rare</desc><note>Intéressante lettre où il lui fait part de la maladie de son frère
                   d'Iberville</note>
             </item>
             <item n="74" xml:id="CAT_000004_e74">

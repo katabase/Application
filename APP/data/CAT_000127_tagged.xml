@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000127">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000127</title>
+            <title>RDA, N°124 (Décembre 1889)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">124</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>124</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -1710,7 +1742,7 @@
                   <p>illustre astronome, de l'Acad. des Sciences, né à Bourg (Ain) en 1732, mort en
                      1807</p>
                </trait>
-               <desc xml:id="CAT_000127_e136_d1">3 l. <term ana="#document_type_15">a. s.</term>, <date when="1802">1802-1806</date>, 1/4 et <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000127_e136_d1">3 <term ana="#document_type_7">l. a. s.</term>, <date when="1802">1802-1806</date>, 1/4 et <measure type="length" unit="p" n="0.66">2/3 de p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="137" xml:id="CAT_000127_e137">
                <num type="lot">137</num>
@@ -1768,7 +1800,7 @@
                   <p>dit LebrunPindare, célèbre poète lyrique, de l'Acad. fr., né en 1729, mort en
                      1807</p>
                </trait>
-               <desc xml:id="CAT_000127_e142_d1"><term ana="#document_type_7">L. a. sig.</term> en abrégé (minute) à M. (de Chassiron, à L. a. Rochelle) ; <date when="1760-11-26">26 novembre 1760</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="26">26</measure>
+               <desc xml:id="CAT_000127_e142_d1"><term ana="#document_type_7">L. a. sig.</term> en abrégé (minute) à M. (de Chassiron, à La Rochelle) ; <date when="1760-11-26">26 novembre 1760</date>, <measure type="length" unit="p" n="2.5">2 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="26">26</measure>
                <note>Il lui adresse l'un de ses ouvrages, le félicite sur les mémoires insérés au
                   recueil de l'Académie de la Rochelle et lui parle de la générosité de Voltaire
                   recueillant la petite nièce du grand Corneille, etc</note>
@@ -1899,7 +1931,7 @@
                   <p>poète calviniste distingué du XVIIe siècle, conseiller au Parlement de Rouen,
                      né à Caen en 1607, mort en 1657</p>
                </trait>
-               <desc xml:id="CAT_000127_e154_d1">2 l. <term ana="#document_type_15">a. s.</term> à Ménage; Rouen, <date when="1656">1656</date>-57, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000127_e154_d1">2 <term ana="#document_type_7">l. a. s.</term> à Ménage; Rouen, <date when="1656">1656</date>-57, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Intéressantes lettres littéraires. Il félicite Ménage de posséder quatre
                   langues, lui demande de corriger ses vers et lui parle de Moisant de Brieux, de
                   l'abbé de Villeloin, de l'helléniste Emery Bigot, etc</note>
@@ -2109,7 +2141,7 @@
                   <p>célèbre publiciste, rédacteur en chef du National, président de l'Assemblée
                      constituante en 1848, né à Saint-Gaudens en 1801, mort en 1852</p>
                </trait>
-               <desc xml:id="CAT_000127_e171_d1">3 l. <term ana="#document_type_15">a. s.</term> au général Cavaignac ; Paris, <date when="1848-06-25">25-26 juin 1848</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Un peu tachées.</desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
+               <desc xml:id="CAT_000127_e171_d1">3 <term ana="#document_type_7">l. a. s.</term> au général Cavaignac ; Paris, <date when="1848-06-25">25-26 juin 1848</date>, <measure type="length" unit="p" n="5">5 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Un peu tachées.</desc><measure commodity="currency" unit="FRF" quantity="75">75</measure>
                <note>Lettres historiques importantes dont voici une analyse sommaire :
                   Hôtel-de-Ville. 9 h. du matin (25 juin 1848). Le général Duvivier vient d'être
                   blessé au pied ; le général Reynaud le remplace; il demande « encore un général
@@ -2234,7 +2266,7 @@
                <trait>
                   <p>le grand diplomate autrichien</p>
                </trait>
-               <desc xml:id="CAT_000127_e180_d1">2 let. sig., en français, à Fouché, duc d'Otrante; Vienne, <date when="1817">1817</date>-19, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000127_e180_d1">2 <term ana="#document_type_9">let. sig.</term>, en français, à Fouché, duc d'Otrante; Vienne, <date when="1817">1817</date>-19, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Curieuses lettres. Le Gouvernemant autrichien veut bien l'autoriser à acquérir
                   des terres en Hongrie ou dans les provinces allemandes de la monarchie ; mais il
                   lui conseille de renoncer à acheter « des terres dans le voisinage de celles de Mr
@@ -2298,7 +2330,7 @@
                <trait>
                   <p>écrivain et orateur parlementaire, de l'Acad fr., né en 1810, mort en 1870</p>
                </trait>
-               <desc xml:id="CAT_000127_e186_d1"><term ana="#document_type_7">L. a. s.</term> à un archevêque ; L. a. Roche-en-Breny (Côte-d'Or), <date when="1844-06-15">15 juin 1844</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000127_e186_d1"><term ana="#document_type_7">L. a. s.</term> à un archevêque ; La Roche-en-Breny (Côte-d'Or), <date when="1844-06-15">15 juin 1844</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note>Curieuse lettre politique. Il veut continuer à la Chambre des Députés
                   l'opposition qu'il a faite au Sénat à la loi de Villemain et de Cousin sur
                   l'enseignement secondaire ; mais il craint un rapport analogue à celui du duc de
@@ -2669,7 +2701,7 @@
                   <p>docteur de Sorbonne, fougueux moliniste, official de Paris, né à Ingrande en
                      Anjou</p>
                </trait>
-               <desc xml:id="CAT_000127_e221_d1">2 l. <term ana="#document_type_15">a. s.</term> à Languet de Gergy; Rouen, <date when="1721">1721</date>-23, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
+               <desc xml:id="CAT_000127_e221_d1">2 <term ana="#document_type_7">l. a. s.</term> à Languet de Gergy; Rouen, <date when="1721">1721</date>-23, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure>, cachets.</desc><measure commodity="currency" unit="FRF" quantity="22">22</measure>
                <note>Intéressantes lettres. Il y parle d'une traduction de la Bulle Unigenitus, du
                   catéchisme de l'évêque d'Amiens (Sabathier), de l'opposition des jansénistes au
                   Jubilé, de l'intronisation de Lavergne de Tressan, comme archevêque de Rouen,

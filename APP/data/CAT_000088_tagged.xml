@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000088">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000088</title>
+            <title>RDA, N°95 (Décembre 1885)</title>
             <respStmt>
                <persName ref="#COL_000002">Lucie Rondeau du Noyer</persName>
                <resp>
@@ -22,8 +22,8 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>95</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
@@ -43,7 +43,16 @@
                </event>
             </listEvent>
             <listWit>
-               <witness> MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936 <ptr/>
+               <witness>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -53,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -144,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -197,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -211,7 +244,7 @@
                      de Barneveldt, comparé à Oxenstierne par lo cardinal Richelieu, ambassadeur en
                      France en 1624, né en 1572, mort en 1641</p>
                </trait>
-               <desc xml:id="CAT_000088_e1_d1"><term ana="#document_type_7">L. a. s.</term>, en français, à Butrinckhausen, conseiller du duc de Wurtemberg; L. a. Haye, <date when="1619-08-08">8 août 1619</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Cachet. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000088_e1_d1"><term ana="#document_type_7">L. a. s.</term>, en français, à Butrinckhausen, conseiller du duc de Wurtemberg; La Haye, <date when="1619-08-08">8 août 1619</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Cachet. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Précieuse lettre d'une grande importance historique. Les Hollandais sont
                   décidés à « s'opposer avec courage, effort et conduite, contre les moiens et
                   entreprinses de la Maison d'Austriche dans l'Empire ». Ils aideront l'Union
@@ -406,7 +439,7 @@
                   <p>un des plus braves maréchaux du règne de Louis XIV, membre du conseil de
                      Régence, né en 1646, mort en 1733</p>
                </trait>
-               <desc xml:id="CAT_000088_e17_d1"><term ana="#document_type_7">L. a. s.</term> (au duc de Noailles); Saragosse, 29 mai (<date when="1709">1709</date>), <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> L. a. signature a été biffée légèrement.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000088_e17_d1"><term ana="#document_type_7">L. a. s.</term> (au duc de Noailles); Saragosse, 29 mai (<date when="1709">1709</date>), <measure type="length" unit="p" n="2.75">2 p. 3/4</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> La signature a été biffée légèrement.</desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note>Pièce historique. Minute de lettre écrite peu de temps après son élévation au
                   maréchalat. Il le remercie de l'avoir recommandé au duc d'Orléans et lui souhaite
                   la même dignité. Il a des vivres pour 130 jours, mais pas de fourrage pour les
@@ -531,7 +564,7 @@
                   <p>célèbre poète hollandais, ambassadeur en Angleterre, né en 1577, mort en
                      1660</p>
                </trait>
-               <desc xml:id="CAT_000088_e27_d1"><term ana="#document_type_7">L. a. s.</term> au stathouder Frédéric-Henri; L. a. Haye, <date when="1646-06-15">15 juin 1646</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000088_e27_d1"><term ana="#document_type_7">L. a. s.</term> au stathouder Frédéric-Henri; La Haye, <date when="1646-06-15">15 juin 1646</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
             </item>
             <item n="28" xml:id="CAT_000088_e28">
                <num type="lot">28</num>
@@ -578,7 +611,7 @@
                <trait>
                   <p>le célèbre médecin de Louis XI, né en Franche-Comté, mort vers 1505</p>
                </trait>
-               <desc xml:id="CAT_000088_e32_d1">Let. sig. avec la sousc. aut.; <term ana="#document_type_8">L. a.</term> Motte d'Egry (Loiret), 14 juil. (<date when="1480">1480</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Montée. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="110">110</measure>
+               <desc xml:id="CAT_000088_e32_d1"><term ana="#document_type_9">Let. sig.</term> avec la sousc. aut.; La Motte d'Egry (Loiret), 14 juil. (<date when="1480">1480</date>), <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Montée. Très-rare.</desc><measure commodity="currency" unit="FRF" quantity="110">110</measure>
                <note>Il annonce que le roi lui a donné en récompense des cinq cents livres tournois
                   « que je dévoyé avoir et prandre sur Arnault Luillier, trésorier de Carcassonne,
                   la moitié de la somme de deniers que peut ou pourra devoir Anthoine Biboteau,
@@ -892,7 +925,7 @@
                <trait>
                   <p>célèbre érudit, historiographe de France, né en 1615, mort à Lille en 1681</p>
                </trait>
-               <desc xml:id="CAT_000088_e60_d1"><term ana="#document_type_7">L. a. s.</term> à M. Schaep, à L. a. Haye; Paris, <date when="1650-04-23">23 avril 1650</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Cachets et soies. Légères déchirures.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000088_e60_d1"><term ana="#document_type_7">L. a. s.</term> à M. Schaep, à La Haye; Paris, <date when="1650-04-23">23 avril 1650</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> Cachets et soies. Légères déchirures.</desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note>Il lui explique que Grossus Turonus désigne une monnaie de Tours sur la Loire
                   et non de Troyes en Champagne. -On a joint la minute aut. sig., en français, de la
                   réponse de M. Schaep</note>
@@ -1101,7 +1134,7 @@
                <trait>
                   <p>grand érudit, bibliothécaire du Vatican, né en 1596, mort en 1661</p>
                </trait>
-               <desc xml:id="CAT_000088_e80_d1">-2 l. <term ana="#document_type_15">a. s.</term> et 1 let. aut. en latin, à Ferdinand de Furstenberg et au cardinal Ghisi; <date when="1653">1653</date>, <measure type="length" unit="p" n="4">4 p.</measure> in-fol. et 2 p. 1/2 <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
+               <desc xml:id="CAT_000088_e80_d1">-2 <term ana="#document_type_7">l. a. s.</term> et 1 let. aut. en latin, à Ferdinand de Furstenberg et au cardinal Ghisi; <date when="1653">1653</date>, <measure type="length" unit="p" n="4">4 p.</measure> in-fol. et 2 p. 1/2 <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Intéressantes.</desc><measure commodity="currency" unit="FRF" quantity="18">18</measure>
             </item>
             <item n="81" xml:id="CAT_000088_e81">
                <num type="lot">81</num>
@@ -1471,7 +1504,7 @@
                <trait>
                   <p>amie de Mmes de Sévigné et de Grignan</p>
                </trait>
-               <desc xml:id="CAT_000088_e118_d1">-2 l. <term ana="#document_type_15">a. s.</term> au marquis de la Garde; <date when="1697">1697</date>-98, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000088_e118_d1">-2 <term ana="#document_type_7">l. a. s.</term> au marquis de la Garde; <date when="1697">1697</date>-98, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note>Belles lettres dans lesquelles elle parle de Mme de Grignan</note>
             </item>
             <item n="119" xml:id="CAT_000088_e119">
@@ -1563,7 +1596,7 @@
                   <p>illustre connétable de France, né en 1492, tué à la bataille de Saint-Denis en
                      1567</p>
                </trait>
-               <desc xml:id="CAT_000088_e127_d1">Let. sig., avec la souscription aut., à sa fille Eléonore (femme de François de <term ana="#document_type_8">L. a.</term> Tour, vicomte de Turenne); Fontainebleau, <date when="1547-12-10">10 déc. 1547</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Légères taches de rouille.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000088_e127_d1"><term ana="#document_type_9">Let. sig.</term>, avec la souscription aut., à sa fille Eléonore (femme de François de La Tour, vicomte de Turenne); Fontainebleau, <date when="1547-12-10">10 déc. 1547</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-f.</measure> Légères taches de rouille.</desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
             </item>
             <item n="128" xml:id="CAT_000088_e128">
                <num type="lot">128</num>

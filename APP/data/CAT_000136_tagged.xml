@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000136">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
          <titleStmt>
-            <title>CAT_000136</title>
+            <title>RDA, N°133 (Janvier 1891)</title>
             <respStmt>
                <persName ref="#COL_000001">Simon Gabay</persName>
                <resp>
@@ -22,9 +22,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
-               <num type="lot">133</num>
+            <bibl ana="RDA">
+               <title>REVUE DES AUTOGRAPHES, DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
+               <num>133</num>
                <editor>Eugène Charavay fils</editor>
                <publisher>Eugène Charavay fils</publisher>
                <pubPlace>Paris, 8 quai du Louvre</pubPlace>
@@ -44,7 +44,15 @@
             </listEvent>
             <listWit>
                <witness>
-                  <ptr/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Tolbiac</repository>
+                        <idno type="shelfmark">MICROFILM M-4961 Récolement : 01/03/1870-31/12/1936</idno>
+                     </msIdentifier>
+                  </msDesc>
                </witness>
             </listWit>
             <listBibl>
@@ -54,7 +62,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="fr">french</language>
+            <language ident="fr"/>
          </langUsage>
       </profileDesc>
       <encodingDesc>
@@ -145,7 +153,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -198,7 +206,31 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change who="#COL_000001" when="2020-07">Correction, improving bibliography, adding new mark-up (<gi>measure</gi>) for price and an ID
+            for <gi>desc</gi></change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -1144,7 +1176,7 @@
                   <p>dominicain, général de son ordre pendant quarante ans ami de Saint-Simon qui en
                      parle souvent dans ses Mémoires, mort en 1720</p>
                </trait>
-               <desc xml:id="CAT_000136_e96_d1">1° <term ana="#document_type_7">L. a. s.</term>; Rome, <date when="1679-12-13">13 1679</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000136_e96_d2">2° <term ana="#document_type_4">Pièce sig</term>.; <date when="1708">Rome 4 octobre 1708</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> cachet.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
+               <desc xml:id="CAT_000136_e96_d1">1° <term ana="#document_type_7">L. a. s.</term>; Rome, <date when="1679-05-13">13 1679</date>, <measure type="length" unit="p" n="1.5">1 p. 1/2</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><desc xml:id="CAT_000136_e96_d2">2° <term ana="#document_type_4">Pièce sig</term>.; <date when="1708">Rome 4 octobre 1708</date>, <measure type="length" unit="p" n="1">1 p.</measure> double <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure> cachet.</desc><measure commodity="currency" unit="FRF" quantity="40">40</measure>
                <note>Brevet associant Vicenzo Lini à toutes les prières de l'ordre de saint
                   Dominique. Très curieuse pièce imprimée avec encadrement repi ésentant les plus
                   grands personnages de l'ordre, des scènes de martyre, etc</note>
@@ -1665,7 +1697,7 @@
                <trait>
                   <p>évêque de Condom, frère du maréchal, mort en 1685</p>
                </trait>
-               <desc xml:id="CAT_000136_e144_d1">11 l. <term ana="#document_type_15">a. s.</term> au R. P. Blanchard, abbé de Sainte-Geneviève, à Paris; <date when="1653">1653</date>-70, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses arines.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
+               <desc xml:id="CAT_000136_e144_d1">11 <term ana="#document_type_7">l. a. s.</term> au R. P. Blanchard, abbé de Sainte-Geneviève, à Paris; <date when="1653">1653</date>-70, <measure type="length" unit="p" n="13">13 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachets à ses arines.</desc><measure commodity="currency" unit="FRF" quantity="35">35</measure>
                <note>Il l'entretient de son désir d'abandonner l'épiscopat, de transmettre à son
                   frère une partie de ses revenus. Il s'intéresse à la congrégation de
                   Sainte-Geneviève</note>
@@ -1726,7 +1758,7 @@
                   <p>célèbre par le complot ténébreux dont il fut accusé d'être le chef, né à Blois
                      en 1745, pendu le 19 février 1790</p>
                </trait>
-               <desc xml:id="CAT_000136_e150_d1"><term ana="#document_type_7">L. a. s.</term> à sa cousine (la princesse d'Anhalt-Schaumbourg); prison du Châtelet, <date when="1790">15 jauvier 1790</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet à ses armes L. a. moitié du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
+               <desc xml:id="CAT_000136_e150_d1"><term ana="#document_type_7">L. a. s.</term> à sa cousine (la princesse d'Anhalt-Schaumbourg); prison du Châtelet, <date when="1790">15 jauvier 1790</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8</measure>, cachet à ses armes La moitié du feuillet de l'adresse a été enlevée.</desc><measure commodity="currency" unit="FRF" quantity="60">60</measure>
                <note>Touchante lettre au sujet de sa triste situation. Il la prie de s'associer à sa
                   soeur « dans ce qu'elle fait pour moi ; de la voir le plus souvent que vous
                   pourrez, de voir mes conseils, de vous tenir enfin au courant de mon procès ». Sa
@@ -2168,7 +2200,7 @@
                <trait>
                   <p>le célèbre écrivain, né à Saint-Malo en 1782, mort en 1854</p>
                </trait>
-               <desc xml:id="CAT_000136_e192_d1"><term ana="#document_type_7">L. a. s.</term> ; L. a. Chenaie, <date when="1833">1833</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000136_e192_d1"><term ana="#document_type_7">L. a. s.</term> ; La Chenaie, <date when="1833">1833</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Curieuse.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="193" xml:id="CAT_000136_e193">
                <num type="lot">193</num>
@@ -2292,7 +2324,7 @@
                <trait>
                   <p>romancier réaliste belge contemporain, auteur d'Un Mâle</p>
                </trait>
-               <desc xml:id="CAT_000136_e205_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Hulpe, <date when="1888">1888</date>, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle et intéressante lettre.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000136_e205_d1"><term ana="#document_type_7">L. a. s.</term>; La Hulpe, <date when="1888">1888</date>, <measure type="length" unit="p" n="2.66">2 p. 2/3</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Belle et intéressante lettre.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="206" xml:id="CAT_000136_e206">
                <num type="lot">206</num>
@@ -2572,7 +2604,7 @@
                   <p>homme d'Etat, ministre du roi Louis-Philippe, membre libre de l'Acad. des
                      Beaux-Arts, né à Valence (Drôme) en 1801, mort en 1880</p>
                </trait>
-               <desc xml:id="CAT_000136_e234_d1"><term ana="#document_type_7">L. a. s.</term>; L. a. Grange (Cher), (<date when="1850">1850</date>), <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
+               <desc xml:id="CAT_000136_e234_d1"><term ana="#document_type_7">L. a. s.</term>; La Grange (Cher), (<date when="1850">1850</date>), <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="16">16</measure>
                <note>Relative à la mort de Louis-Philippe. Retenu à la campagne par un accès de
                   goutte, il ne pourra se rendre à Paris pour assister à l'ouverture de deux
                   codiciles du Roi : « Comment ne vous êtes vous pas dit que ma santé devait être
@@ -2625,7 +2657,7 @@
                <trait>
                   <p>le roi et l'historien de la Bohême</p>
                </trait>
-               <desc xml:id="CAT_000136_e238_d1">L. a. mission, <term ana="#document_type_2">pièce de vers aut. sig.</term> ; <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
+               <desc xml:id="CAT_000136_e238_d1">La mission, <term ana="#document_type_2">pièce de vers aut. sig.</term> ; <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Légère tache.</desc><measure commodity="currency" unit="FRF" quantity="55">55</measure>
                <note>Très belle pièce dont voicitun extrait : « Mais gloire à l'apôtre intrépide Qui
                   reut marcher le front levé Dont le seul talent soit l'égide Qui du malheur l'ait
                   préservé. A celui qui, pendant la route, Plein de foi repoussa le doute Qui le
@@ -2697,7 +2729,7 @@
                <trait>
                   <p>savant littérateur, né en 1751, mort en 1838</p>
                </trait>
-               <desc xml:id="CAT_000136_e244_d1"><term ana="#document_type_7">L. a. s.</term> à Michaud aîné; L. a. Charité, <date when="1827-07-28">28 juil. 1827</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
+               <desc xml:id="CAT_000136_e244_d1"><term ana="#document_type_7">L. a. s.</term> à Michaud aîné; La Charité, <date when="1827-07-28">28 juil. 1827</date>, <measure type="length" unit="p" n="3">3 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="7">7</measure>
                <note>Intéressante lettre littéraire relative à des mémoires historiques sur le
                   département de la Nièvre</note>
             </item>

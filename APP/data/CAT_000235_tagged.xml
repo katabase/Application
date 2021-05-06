@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../_schemas/odd_editiones.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000235">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -21,7 +21,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl status="draft">
+            <bibl status="draft" ana="RDA">
                <title>REVUE DES CURIOSITÉS DE L'HISTOIRE ET DE LA BIOGRAPHIE</title>
                <num>184</num>
                <editor>Eugène Charavay fils</editor>
@@ -142,7 +142,7 @@
               <catDesc>Apostille autographe signée</catDesc>
            </category>
            <category xml:id="document_type_2">
-              <catDesc>Apostille autographe</catDesc>
+              <catDesc>Pièce autographe signée</catDesc>
            </category>
            <category xml:id="document_type_3">
               <catDesc>Pièce autographe</catDesc>
@@ -194,6 +194,26 @@
                <ptr target="https://github.com/MedKhem/grobid-dictionaries"/>
             </application>
          </appInfo>
+<classDecl>
+                    <taxonomy xml:id="catalogue_type">
+                        <desc>Type of catalogues</desc>
+                        <category xml:id="RDA">
+                            <catDesc>Revue des autographes, des curiosités de l'histoire et de la biographie</catDesc>
+                        </category>
+                        <category xml:id="LAD">
+                            <catDesc>Lettres autographes et documents historiques</catDesc>
+                        </category>
+                        <category xml:id="AUC">
+                            <catDesc>Vente aux enchères</catDesc>
+                        </category>
+                        <category xml:id="LAV">
+                            <catDesc>Ventes Laverdet</catDesc>
+                        </category>
+                        <category xml:id="OTH">
+                            <catDesc>Divers/inconnu</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
       </encodingDesc>
    </teiHeader>
    <text>
@@ -283,7 +303,7 @@
                <trait>
                   <p>célèbre penseur mystique et éloquent prosateur, de l'Acad. fr., né à Lyon.</p>
                </trait>
-               <desc xml:id="CAT_000235_e10_d1">2 l. <term ana="#document_type_15">a. s.</term>; Paris, <date when="1837">1837</date>-45, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Relatives à Mme Récamier.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
+               <desc xml:id="CAT_000235_e10_d1">2 <term ana="#document_type_7">l. a. s.</term>; Paris, <date when="1837">1837</date>-45, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Relatives à Mme Récamier.</desc><measure commodity="currency" unit="FRF" quantity="6">6</measure>
             </item>
             <item n="11" xml:id="CAT_000235_e11">
                <num type="lot">11</num>
@@ -670,7 +690,7 @@
                <trait>
                   <p>célèbre historien et archéologue holla dais, né en 1644, mort en 1716.</p>
                </trait>
-               <desc xml:id="CAT_000235_e55_d1">1° <term ana="#document_type_7">L. a. s.</term>; Deventer, 29 août 1697, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.-2° Let. sig. par lui et par Fagel; L. a. Haye, <date when="1692-11-16">16 novembre 1692</date>, 2 p. 1/2 in-fol. Sceau.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000235_e55_d1">1° <term ana="#document_type_7">L. a. s.</term>; Deventer, 29 août 1697, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure> Belle lettre.-2° Let. sig. par lui et par Fagel; La Haye, <date when="1692-11-16">16 novembre 1692</date>, 2 p. 1/2 in-fol. Sceau.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Document historique. Ordre très détaillé d'un jour de prières et de jeûne à observer dans les églises protestantes à la fin de la campagne de 1692.</note>
             </item>
             <item n="56" xml:id="CAT_000235_e56">
@@ -792,7 +812,7 @@
                <trait>
                   <p>célèbre général français qui prit part à la guerre d'Amérique, né à Montpellier.</p>
                </trait>
-               <desc xml:id="CAT_000235_e69_d1">2 let. sig. au baron Bignon, résident de France à Varsovie; Posen, <date when="1812-05-20">20 mai 1812</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
+               <desc xml:id="CAT_000235_e69_d1">2 <term ana="#document_type_9">let. sig.</term> au baron Bignon, résident de France à Varsovie; Posen, <date when="1812-05-20">20 mai 1812</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="8">8</measure>
                <note anchored="true">Intéressantes lettres écrites pendant la campagne de Russie et où il lui annonce la marche en avant de la Grande-Armée.</note>
             </item>
             <item n="70" xml:id="CAT_000235_e70">
@@ -856,7 +876,7 @@
                <trait>
                   <p>femme de lettres très distinguée, auteur d'Ouriha, née à Brest.</p>
                </trait>
-               <desc xml:id="CAT_000235_e77_d1"><term ana="#document_type_7">L. a. s.</term> au vicomte de L. a. Landelle; Paris, <date when="1822-03-03">3 mars 1822</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
+               <desc xml:id="CAT_000235_e77_d1"><term ana="#document_type_7">L. a. s.</term> au vicomte de La Landelle; Paris, <date when="1822-03-03">3 mars 1822</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="5">5</measure>
             </item>
             <item n="78" xml:id="CAT_000235_e78">
                <num type="lot">78</num>
@@ -1037,7 +1057,7 @@
                <trait>
                   <p>peintre de paysages très distingué.</p>
                </trait>
-               <desc xml:id="CAT_000235_e99_d1">4 l. <term ana="#document_type_15">a. s.</term> à Delaunay; Pau (Basses-Pyrénées), <date when="1840">1840</date>-42, <measure type="length" unit="p" n="10">10 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolies lettre artistiques.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000235_e99_d1">4 <term ana="#document_type_7">l. a. s.</term> à Delaunay; Pau (Basses-Pyrénées), <date when="1840">1840</date>-42, <measure type="length" unit="p" n="10">10 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Jolies lettre artistiques.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
             </item>
             <item n="100" xml:id="CAT_000235_e100">
                <num type="lot">100</num>
@@ -1336,7 +1356,7 @@
                <trait>
                   <p>illustre général et patriote.</p>
                </trait>
-               <desc xml:id="CAT_000235_e134_d1"><term ana="#document_type_7">L. a. s.</term> à Berthier; L. a. Grange, <date when="1802-03-16">25 ventôse an X</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000235_e134_d1"><term ana="#document_type_7">L. a. s.</term> à Berthier; La Grange, <date when="1802-03-16">25 ventôse an X</date>, <measure type="length" unit="p" n="0.75">3/4 de p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Document historique. « Associé dès l'origine aux institutions qui ont triomphé de l'Europe, uni de coeur à la gloire des généraux de la République, je n'ai jamais cessé d'être leur camarade, et je ne prétends pas, après tant de victoires, être leur concurrent. Je vous prie donc, si vous pensez que je doive obtenir ma retraite, de vouloir bien la demander au Premier Consul. » </note>
             </item>
             <item n="135" xml:id="CAT_000235_e135">
@@ -1348,7 +1368,7 @@
             <item n="136" xml:id="CAT_000235_e136">
                <num type="lot">136</num>
                <name type="author">Lafayette (le marquis de)</name>
-               <desc xml:id="CAT_000235_e136_d1"><term ana="#document_type_5">Billet aut. sig.</term> ; L. a. Grange, <date when="1829-11-18">18 nov. 1829</date>, <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
+               <desc xml:id="CAT_000235_e136_d1"><term ana="#document_type_5">Billet aut. sig.</term> ; La Grange, <date when="1829-11-18">18 nov. 1829</date>, <measure type="format" unit="f" ana="#document_format_118">in-18 obl.</measure></desc><measure commodity="currency" unit="FRF" quantity="3">3</measure>
             </item>
             <item n="137" xml:id="CAT_000235_e137">
                <num type="lot">137</num>
@@ -1506,7 +1526,7 @@
                <trait>
                   <p>comte de). général qui se distingua en Crimée, commandant au Mexique, né dans la Meuse en 1814.</p>
                </trait>
-               <desc xml:id="CAT_000235_e155_d1">3 l. <term ana="#document_type_15">a. s.</term> au général Valazé; <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
+               <desc xml:id="CAT_000235_e155_d1">3 <term ana="#document_type_7">l. a. s.</term> au général Valazé; <measure type="length" unit="p" n="8">8 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="30">30</measure>
                <note anchored="true">Importantes lettres écrites comme commandant au Mexique. -Cordova, 23 mars 1862. -Malgré la convention de la Soledad par le général Almonte, il continue sa marche sur Orizaba et Tchuacan, en passant le Chiquihuita; il ne veut pas, comme le général Prim et les Anglais conférer avec Juarez, La présence de M. de Saligny devient indispensable. -Tchuacan, 28 mars 1862. -Le général Prim est très décontenancé de la résolution de l'amiral Jurien au sujet de la convention de la Soledad : « Comment admettre que la convention puisse être regardée comme exécutée, si les Français repassant le Tchiquihuita, les Espagnols restent de ce côtéci.» Il évacue des malades sur Orizaba et demande du vin, de la quinine. -Orizaba, 7 août 1862. -Il regrette que M. de Valazé ait nommé Lehelloco aux fonctions de chef du bureau politique ; la présence du capitaine Capitan et de M. de Chabannes l'a empêché de lui témoigner « son improbation.»</note>
             </item>
             <item n="156" xml:id="CAT_000235_e156">
@@ -1694,7 +1714,7 @@
                <trait>
                   <p>le grand historien.</p>
                </trait>
-               <desc xml:id="CAT_000235_e177_d1">2 l. <term ana="#document_type_15">a. s.</term> à une dame; Saint-Georges, près Royan, <date when="1859">1859</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
+               <desc xml:id="CAT_000235_e177_d1">2 <term ana="#document_type_7">l. a. s.</term> à une dame; Saint-Georges, près Royan, <date when="1859">1859</date>, <measure type="length" unit="p" n="6">6 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="20">20</measure>
                <note anchored="true">Piquantes épîtres adressées à une dame. « Je me figure que la jalousie, quand ce n'est qu'un excès d'amour, n'est pas un crime irrémissible, et que, dans ce cas, une femme vertueuse et habile peut supporter bien des choses, sûre qu'elle est de régner sur son tyran. J'écris sur l'éducation, cette haute maternité, cette forme supérieure de l'amour... Si pourtant votre mari aime, ne serait-il pas heureux de revenir?... Nulle position ne vaut un mariage adouci par l'expérience et dégagé de ses premiers orages ». (Michelet, qui venait d'écrire la Femme et l'Amour, recevait les confidences de mécontentes ou de délaissées.)</note>
             </item>
             <item n="178" xml:id="CAT_000235_e178">
@@ -1720,7 +1740,7 @@
                <trait>
                   <p/>
                </trait>
-               <desc xml:id="CAT_000235_e180_d1">7 let. aut. au pasteur Marron; <date when="1787">1787</date>-9.), <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
+               <desc xml:id="CAT_000235_e180_d1">7 <term ana="#document_type_8">let. aut.</term> au pasteur Marron; <date when="1787">1787</date>-9.), <measure type="length" unit="p" n="9">9 p.</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure> Cachet à ses armes.</desc><measure commodity="currency" unit="FRF" quantity="100">100</measure>
                <note anchored="true">Très intéressante correspondance au sujet de la publication d'uu de ses ouvrages intitulé : Aux Bataves sur le Stathoudérat. En voici un extrait : « Vous êtes trop inconcevables, vous autres Hollandois avec votre manière de subordonner les plus grandz intérêts aux plus petites fantaisies; la patrie ou ce qui peut la sauver passe juste après une partie de campagne. » Pourquoi ne rédige-t-il pas lui-même les articles Petit et Zoutman. Dans les notes de son ouvrage, il veut insérer « un précis chaud et rapide sur Barneveldt et sur les de Witt.» Il veut aussi parler du renversement tout récent de Guillaume V, rétabli par la Prusse et l'Autriche « semblable a l'abbé de Choisi, après avoir fait l'histoire de la Hollande, je l'étudie. » Il parle de sa mauvaise santé qui l'empêche de se rendre à la Constituante « mes yeux me tracassent plus que jamais, et la necessité de se ménager pour n'être pas tout a fait et longtemps hors de combat, m'imposant de la résignation aux ordres de la Faculté.</note>
             </item>
             <item n="181" xml:id="CAT_000235_e181">
@@ -2012,7 +2032,7 @@
                <trait>
                   <p>célèbre instituteur suisse, inventeur d'une méthode d'instruction qui porte son nom, né à Zurich en 1746, mort en 1827.</p>
                </trait>
-               <desc xml:id="CAT_000235_e215_d1">3 l. <term ana="#document_type_15">a. s.</term> et 3 let. sig. à Jullien de Paris; Yverdun, <date when="1811">1811</date>-25, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
+               <desc xml:id="CAT_000235_e215_d1">3 <term ana="#document_type_7">l. a. s.</term> et 3 let. sig. à Jullien de Paris; Yverdun, <date when="1811">1811</date>-25, <measure type="length" unit="p" n="12">12 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4.</measure></desc><measure commodity="currency" unit="FRF" quantity="25">25</measure>
                <note anchored="true">Intéressante correspondance où il s'entretient des progrès de sa méthode d'éducation. -On a joint trois lettres de J. Niederer, E. Mieg et Hofman, disciples de Pestalozzi, adressées à Jullien de Paris, 1810-14, 9 p. in-4. -Ces lettres renferment de curieux détails sur la méthode de Pestalozzi et sur l'impossibilité de l'introduire en Italie..</note>
             </item>
             <item n="216" xml:id="CAT_000235_e216">
@@ -2185,7 +2205,7 @@
                <trait>
                   <p>célèbre graveur et dessinateur contemporain,</p>
                </trait>
-               <desc xml:id="CAT_000235_e235_d1">let. <term ana="#document_type_15">aut. sig.</term> de son prénom à un ami ; Paris, <date when="1881">1881</date>-88, <measure type="length" unit="p" n="17">17 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
+               <desc xml:id="CAT_000235_e235_d1"><term ana="#document_type_7">let. aut. sig.</term> de son prénom à un ami ; Paris, <date when="1881">1881</date>-88, <measure type="length" unit="p" n="17">17 pages</measure> <measure type="format" unit="f" ana="#document_format_8">in-8.</measure></desc><measure commodity="currency" unit="FRF" quantity="50">50</measure>
                <note anchored="true">Très curieuse correspondance intime et artistique, en grande partie relative à la rentation de Saint-Antoine. Il lui parle aussi des dessins de Germinie Lacerteux. du frontis- pice des OEuvres de Stéphane Mallarmé, etc.</note>
             </item>
             <item n="236" xml:id="CAT_000235_e236">
@@ -2290,7 +2310,7 @@
                <trait>
                   <p>célèbre général de la garde nationale pendant la Révolution.</p>
                </trait>
-               <desc xml:id="CAT_000235_e247_d1">Let. sig. au citoyen <term ana="#document_type_8">L. a.</term> Saulsaye; <date when="1793-04-04">4 avril 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp. Portrait.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000235_e247_d1"><term ana="#document_type_9">Let. sig.</term> au citoyen La Saulsaye; <date when="1793-04-04">4 avril 1793</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure>, tête imp. Portrait.</desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Belle lettre écrite comme général de la garde nationale parisienne.</note>
             </item>
             <item n="248" xml:id="CAT_000235_e248">
@@ -2408,7 +2428,7 @@
                <trait>
                   <p>célèbre avocat, défenseur de Marie-An- toinette, déporté après le 18 fructidor, né à Reims.</p>
                </trait>
-               <desc xml:id="CAT_000235_e261_d1">3 billets aut. dont un sig. de ses initiales à la citoyenne Lagrange; (<date when="1791">1791</date>), <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
+               <desc xml:id="CAT_000235_e261_d1">3 <term ana="#document_type_6">billets</term> aut. dont un sig. de ses initiales à la citoyenne Lagrange; (<date when="1791">1791</date>), <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_18">in-18.</measure> Rare.</desc><measure commodity="currency" unit="FRF" quantity="15">15</measure>
                <note anchored="true">Curieux billets de l'époque de la Révolution et où il parle d'un de ses procès.</note>
             </item>
             <item n="262" xml:id="CAT_000235_e262">
@@ -2637,7 +2657,7 @@
                <trait>
                   <p>mère du comte de Chambord.</p>
                </trait>
-               <desc xml:id="CAT_000235_e288_d1"><term ana="#document_type_7">L. a. s.</term> du général de Bouvet, au marquis de L. a. Tour Maubourg ; Nevers, <date when="1821-08-31">31 août 1821</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000235_e288_d1"><term ana="#document_type_7">L. a. s.</term> du général de Bouvet, au marquis de La Tour Maubourg ; Nevers, <date when="1821-08-31">31 août 1821</date>, <measure type="length" unit="p" n="1">1 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Curieuse lettre relative au séjour de la duchesse de Berri à Nevers.</note>
             </item>
             <item n="289" xml:id="CAT_000235_e289">
@@ -2694,7 +2714,7 @@
             <item n="296" xml:id="CAT_000235_e296">
                <num type="lot">296</num>
                <name type="author">Franche-Comté</name>
-               <desc xml:id="CAT_000235_e296_d1">Let. sig. par A. de Clermont, Adrien de Salins, M. de Boisset, L. de Boisset et J. de <term ana="#document_type_8">L. a.</term> Tour, à Marguerite d'Autriche ; Dôle, <date when="1517-03-15">15 mars 1517</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
+               <desc xml:id="CAT_000235_e296_d1"><term ana="#document_type_9">Let. sig.</term> par A. de Clermont, Adrien de Salins, M. de Boisset, L. de Boisset et J. de La Tour, à Marguerite d'Autriche ; Dôle, <date when="1517-03-15">15 mars 1517</date>, <measure type="length" unit="p" n="4">4 p.</measure> <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="10">10</measure>
                <note anchored="true">Intéressante pièce. Adresse des susdits, conseillers au parlement de Dôle, pour défendre leur président contre les allégations des Etats de Franche-Comté. </note>
             </item>
             <item n="297" xml:id="CAT_000235_e297">
