@@ -98,6 +98,8 @@ def get_metadata(file):
         metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns)[0]
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns):
         metadata["norm_date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns)[0]
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@to', namespaces=ns):
+        metadata["norm_date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@to', namespaces=ns)[0]
 
     # Information about the digital publication.
     if file.xpath('//tei:titleStmt//tei:respStmt/tei:persName/text()', namespaces=ns):
@@ -144,10 +146,11 @@ def get_metadata(file):
                 ptrs_list = []
                 for ptr in ptrs:
                     ptr_dict = {}
-                    if ptr.xpath('./@type', namespaces=ns)[0] == "digit":
-                        ptr_dict["ptr_type"] = "digital version"
-                    else:
-                        ptr_dict["ptr_type"] = ptr.xpath('./@type', namespaces=ns)[0]
+                    if ptr.xpath('./@type', namespaces=ns):
+                        if ptr.xpath('./@type', namespaces=ns)[0] == "digit":
+                            ptr_dict["ptr_type"] = "digital version"
+                        else:
+                            ptr_dict["ptr_type"] = ptr.xpath('./@type', namespaces=ns)[0]
                     if ptr.xpath('./@target', namespaces=ns):
                         ptr_dict["ptr_target"] = ptr.xpath('./@target', namespaces=ns)[0]
                     ptrs_list.append(ptr_dict)
