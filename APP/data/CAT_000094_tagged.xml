@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href=https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href=https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000094">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
       <fileDesc>
@@ -267,7 +267,7 @@
                <trait>
                   <p>évêque de Paris.</p>
                </trait>
-               <desc xml:id="CAT_000094_e_d18">Ligne. S.</desc></item>
+               <desc xml:id="CAT_000094_e18_d1">Ligne. S.</desc></item>
             <item n="19" xml:id="CAT_000094_e19">
                <name>Fénelon</name>
                <desc xml:id="CAT_000094_e19_d1"><date when="1695-01-26">26 janvier 1695</date>. Lettre. 4 pages.</desc></item>

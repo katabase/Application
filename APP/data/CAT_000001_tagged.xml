@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href=https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href=https://raw.githubusercontent.com/katabase/Data_extraction/master/_schemas/odd_katabase.rng type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CAT_000001">
    <teiHeader>
       <fileDesc>
@@ -3267,7 +3267,7 @@
                <trait>
                   <p>N. 1696. M. 1788</p>
                </trait>
-               <desc xml:id="CAT_000001_e305_d1"><term ana="#document_type_7">L. aut. sig.</term>, <date when="2021-05-06">à M… 1736</date>. <measure type="length" unit="p" n="4">4 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Curieuse lettre, au sujet des poursuites exercées contre lui par ses
+               <desc xml:id="CAT_000001_e305_d1"><term ana="#document_type_7">L. aut. sig.</term>, <date when="2021-05-10">à M… 1736</date>. <measure type="length" unit="p" n="4">4 pages</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure></desc><note>Curieuse lettre, au sujet des poursuites exercées contre lui par ses
                   créanciers; et surtout par une mégère infernale qui le persécute et a mis le
                   bouleversement dans ses affaires, et qui, tenant depuis six mois tout son bien, a
                   encore été sonner le tocsin parmi ses autres créanciers, qui veulent aussi le
