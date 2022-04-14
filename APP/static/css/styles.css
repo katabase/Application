@@ -50,15 +50,17 @@
   font-style: normal;
 }
 
-
-/* malheureusement pas d'accents dispo
+/*
 @font-face {
   font-family: 'gaveliana';
   src: url('../fonts/Gaveliana.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
-}*/
+}
+*/
 
+
+/* root elements */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -115,16 +117,16 @@
   --custom-font-display: "sewakadisplay", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --custom-font-general: "urlaub", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* custom colors */
-  --hlink-text: color: #FF99FF;
-  --custom-blue-bg: #0000ef;
+  --custom-blue: #0000ef; /* hyperlink electric blue */
   --custom-light-pink: #ffb0ff;
-  --custom-dark-pink: #ff99ed;
-  --custom-plum: #bd148b;
-  --custom-darkgreen: #2e7d6b;
-  --custom-burgundy: #7c0b43;
-  --custom-cream: #fcf8f7;
+  --custom-pink: #ff94c9; /* hyperlink hover color */
+  --custom-main1: #890c0c/*#9b0000*/; /* burgundy, primary background and font color */
+  --custom-main2: #a41a6a/*#a11867*/; /* pink-ish burgundy, secondary background and font color color */
+  --custom-cream: #fcf8f7;  /* main cream color */
 }
 
+
+/* general rules: body, fonts, main container */
 body {
   display: flex;
   font-family: var(--custom-font-general);
@@ -132,8 +134,9 @@ body {
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   flex-direction: column;
-  color: var(--custom-burgundy);
-  background-color: var(--custom-burgundy);
+  color: var(--custom-main1);
+  background-image: linear-gradient(0deg, var(--custom-main1), var(--custom-main2) 80%);
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -146,12 +149,83 @@ h1, h2, h3, h4, h5, h6, a, .btn {
   padding: 2vh;
 }
 
+
+/* additional rules for the body */
 #corps {
   flex-grow: 1;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: max(5vh, 100px);
+  margin-bottom: max(3vh, 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
+/* navbar */
+nav {
+  z-index: 1;
+  position: fixed !important;
+  height: 55px;
+  top: 0;
+  width: 100%;
+  background-color: var(--custom-cream);
+}
+
+.navbar-light .navbar-brand {
+  color: var(--custom-main);
+}
+
+
+/* footer */
+footer {
+  background-color: var(--custom-cream); /* #ad2b1d; */
+  width:100%;
+  flex-shrink: 0;
+  color: var(--custom-main);
+  bottom: 0;
+}
+
+
+/* colors and behaviour of hyperlinks, buttons and form colors */
+a {
+  color: var(--custom-blue);
+}
+
+.btn {
+  background-color: var(--custom-main1);
+  color: var(--custom-cream);
+}
+
+a:hover {
+  color: var(--custom-pink);
+}
+
+.btn:hover {
+  background-color: var(--custom-pink);
+}
+
+nav a:hover {
+  color: var(--custom-pink) !important;
+}
+
+#pills-sell-tab {
+  background-color: var(--custom-main1);
+  color: var(--custom-cream);
+}
+
+#pills-sell-tab:hover, #pills-manuscript-tab:hover {
+  border: 1px solid;
+  border-color: var(--custom-main1);
+  background-color: var(--custom-pink);
+  color: var(--custom-cream);
+}
+
+.text-muted {
+  color: var(--custom-main2);
+}
+
+
+/* other elements */
 button.btn {
   margin: 3%;
 }
@@ -163,23 +237,6 @@ form.right{
 div.results {
   margin-top: 3%;
   margin-bottom: 3%;
-}
-
-
-nav.header {
-  background-color: var(--custom-cream); /* #962d21 */
-}
-
-.navbar-light .navbar-brand {
-  /*color: white;*/
-  color: var(--custom-burgundy);
-}
-
-footer {
-  background-color: var(--custom-cream); /* #ad2b1d; */
-  width:100%;
-  flex-shrink: 0;
-  color: var(--custom-burgundy);
 }
 
 p.right-margin {
