@@ -1,52 +1,159 @@
-.container {
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-color: #fcf8f7
+/* defining fonts */
+@font-face {
+  font-family: 'libertinus';
+    src: url('../fonts/LibertinusSans-Regular.woff2') format("woff2"),
+    url('../fonts/LibertinusSans-Italic.woff2') format("woff2"),
+    url('../fonts/LibertinusSans-Bold.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+@font-face {
+  font-family: 'rustica';
+  src: url('../fonts/rustica-regularitalic.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'alata';
+  src: url('../fonts/Alata-Regular.ttf') format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josephinebold';
+  src: url('../fonts/JosefinSansBold-OVA7o.ttf') format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'josephinelight';
+  src: url('../fonts/JosefinSansLight-ZVEII.ttf') format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: 000000;
+  --bs-body-bg: #fff;
+  /* cutom fonts */
+  --custom-font-sans-serif: "libertinus", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --custom-font-family: var(--custom-font-sans-serif);
+  /* custom colors */
+  --hlink-text: color: #FF99FF;
+  --custom-blue-bg: #0000ef;
+  --custom-light-pink: #ffb0ff;
+  --custom-dark-pink: #ff99ed;
+  --custom-plum: #bd148b;
+  --custom-darkgreen: #2e7d6b;
+  --custom-burgundy: #7c0b43;
+  --custom-cream: #fcf8f7;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  font-family: var(--custom-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  flex-direction: column;
+  color: var(--custom-burgundy);
+  background-color: var(--custom-burgundy);
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--custom-cream);
+  padding: 2vh;
 }
 
 #corps {
-    flex-grow: 1;
+  flex-grow: 1;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 button.btn {
-    margin: 3%;
+  margin: 3%;
 }
 
 form.right{
-    float: right;
+  float: right;
 }
 
 div.results {
-    margin-top: 3%;
-    margin-bottom: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 
 nav.header {
-    background-color: #962d21
+  background-color: var(--custom-cream); /* #962d21 */
 }
 
 .navbar-light .navbar-brand {
-    color: white;
+  /*color: white;*/
+  color: var(--custom-burgundy);
 }
 
 footer {
-    background-color: #ad2b1d;
-    width:100%;
-    flex-shrink: 0;
-    color: white;
+  background-color: var(--custom-cream); /* #ad2b1d; */
+  width:100%;
+  flex-shrink: 0;
+  color: var(--custom-burgundy);
 }
 
 p.right-margin {
-    margin-right: 2%;
+  margin-right: 2%;
 }
-
-
-
-
