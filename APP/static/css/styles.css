@@ -118,7 +118,6 @@
   --custom-font-general: "urlaub", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* custom colors */
   --custom-blue: #0000ef; /* hyperlink electric blue */
-  --custom-light-pink: #ffb0ff;
   --custom-pink: #ff94c9; /* hyperlink hover color */
   --custom-main1: #890c0c/*#9b0000*/; /* burgundy, primary background and font color */
   --custom-main2: #a41a6a/*#a11867*/; /* pink-ish burgundy, secondary background and font color color */
@@ -186,12 +185,14 @@ footer {
 }
 
 
-/* colors and behaviour of hyperlinks, buttons and form colors */
+/* colors and behaviour of hyperlinks, buttons, muted text colors */
 a {
   color: var(--custom-blue);
 }
 
 .btn {
+  border: 1px solid;
+  border-color: var(--custom-main1);
   background-color: var(--custom-main1);
   color: var(--custom-cream);
 }
@@ -208,20 +209,16 @@ nav a:hover {
   color: var(--custom-pink) !important;
 }
 
-#pills-sell-tab {
-  background-color: var(--custom-main1);
-  color: var(--custom-cream);
+a:focus a:active {
+  color: var(--custom-main2) !important;
 }
 
-#pills-sell-tab:hover, #pills-manuscript-tab:hover {
-  border: 1px solid;
-  border-color: var(--custom-main1);
-  background-color: var(--custom-pink);
-  color: var(--custom-cream);
+.btn:focus .btn:active {
+  background-color: var(--custom-main2) !important;
 }
 
 .text-muted {
-  color: var(--custom-main2);
+  color: var(--custom-main2) !important;
 }
 
 
