@@ -1,6 +1,6 @@
 from flask import render_template, request
 from .app import app
-from APP.main_functions import *
+from .main_functions import *
 from .reconciliator import *
 
 

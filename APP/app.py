@@ -11,4 +11,4 @@ app = Flask(
     static_folder=statics
 )
 
-import APP.path
+from . import path
