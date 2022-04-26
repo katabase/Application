@@ -27,7 +27,7 @@
                <editor>Auguste Laverdet</editor>
                <publisher>Auguste Laverdet</publisher>
                <pubPlace>Paris, rue Saint-Lazare, 24</pubPlace>
-               <date/>
+               <date when="1857">Décembre 1857</date>
             </bibl>
             <listEvent>
                <event>
@@ -777,7 +777,7 @@
                <trait>
                   <p>premier médecin de l'armée du Nord, rédacteur de la Gazette de santé</p>
                </trait>
-               <desc xml:id="CAT_000384_e2399_d1"><term ana="#document_type_7">L. aut. sig.</term>, <date when="2022-04-25">à M…1811</date>. 3 gr. p. pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
+               <desc xml:id="CAT_000384_e2399_d1"><term ana="#document_type_7">L. aut. sig.</term>, <date when="2022-04-26">à M…1811</date>. 3 gr. p. pl. <measure type="format" unit="f" ana="#document_format_1">in-fol.</measure></desc><measure commodity="currency" unit="FRF" quantity="4">4</measure>
             </item>
             <item n="2400" xml:id="CAT_000384_e2400">
                <num type="lot">2400</num>

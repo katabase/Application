@@ -1,6 +1,7 @@
 from lxml import etree
 import os
 import glob
+import traceback
 import re
 import urllib.parse
 
@@ -63,7 +64,11 @@ def create_index():
         opened_file = open_file(file_id)
         metadata = get_metadata(opened_file)
         file_info["title"] = metadata["main_title"]
-        file_info["date"] = metadata["date"]
+        try:
+            file_info["date"] = metadata["date"]
+        except:
+            print(file)
+            print(traceback.format_exc())
         if 'publisher' in metadata:
             file_info["publisher"] = metadata["publisher"]
         index.append(file_info)
@@ -94,8 +99,16 @@ def get_metadata(file):
         metadata["publisher"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:publisher/text()', namespaces=ns)[0]
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns):
         metadata["pubPlace"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns)[0]
-    if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns):
-        metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns)[0]
+    # ORIGINAL
+    #if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns):
+    #    metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date', namespaces=ns)[0]
+    # CORRECTION
+    if file.xpath('//tei:sourceDesc//tei:bibl/tei:date', namespaces=ns):
+        try:
+            metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns)[0]
+        except:
+            metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns)[0]
+    # SUITE DU CODE
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns):
         metadata["norm_date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns)[0]
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@to', namespaces=ns):
