@@ -1,0 +1,6294 @@
+{
+    "CAT_000362": {
+        "title": "Vente Jacques Charavay, ao\u00fbt 1875, n\u00ba 185",
+        "date": "1875",
+        "item count": 106,
+        "currency": "FRF",
+        "total price": 1019,
+        "low price": 2,
+        "high price": 12,
+        "mean price": 9.617924528301886,
+        "median price": 4.5,
+        "mode price": 3,
+        "variance price": 186.7419900320399,
+        "high price items": {
+            "CAT_000362_e27096": 100
+        }
+    },
+    "CAT_000352": {
+        "title": "Vente Jacques Charavay, septembre-octobre 1867, n\u00ba 152",
+        "date": "1867",
+        "item count": 236,
+        "currency": "FRF",
+        "total price": 1800,
+        "low price": 8,
+        "high price": 3,
+        "mean price": 7.726394849785407,
+        "median price": 3.5,
+        "mode price": 3,
+        "variance price": 221.77948571533827,
+        "high price items": {
+            "CAT_000352_e21978": 180
+        }
+    },
+    "CAT_000327": {
+        "title": "RDA, N\u00b0199 (Juin 1897)",
+        "date": "1897-06",
+        "item count": 323,
+        "currency": "FRF",
+        "total price": 4692,
+        "low price": 15,
+        "high price": 12,
+        "mean price": 14.6625,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 363.35484375,
+        "high price items": {
+            "CAT_000327_e84": 200
+        }
+    },
+    "CAT_000333": {
+        "title": "Vente Jacques Charavay, 15 janvier 1846, n\u00ba 4",
+        "date": "1846",
+        "item count": 35,
+        "currency": "FRF",
+        "total price": 204,
+        "low price": 6.5,
+        "high price": 7,
+        "mean price": 5.85,
+        "median price": 4.5,
+        "mode price": 3,
+        "variance price": 16.189999999999998,
+        "high price items": {
+            "CAT_000333_e151": 24
+        }
+    },
+    "CAT_000376": {
+        "title": "Catalogue Laverdet, d\u00e9cembre 1856, n\u00ba 5",
+        "date": "1856-12",
+        "item count": 204,
+        "currency": "FRF",
+        "total price": 1519,
+        "low price": 5,
+        "high price": 5,
+        "mean price": 7.447303921568627,
+        "median price": 3.5,
+        "mode price": 2.5,
+        "variance price": 174.65500498606306,
+        "high price items": {
+            "CAT_000376_e723": 150
+        }
+    },
+    "CAT_000340": {
+        "title": "Vente Jacques Charavay, septembre 1856, n\u00ba 81",
+        "date": "1856",
+        "item count": 148,
+        "currency": "FRF",
+        "total price": 524,
+        "low price": 2,
+        "high price": 2.25,
+        "mean price": 3.5924657534246576,
+        "median price": 3.0,
+        "mode price": 2,
+        "variance price": 9.90326515293676,
+        "high price items": {
+            "CAT_000340_e7971": 30
+        }
+    },
+    "CAT_000312": {
+        "title": "Vente No\u00ebl Charavay, 15 d\u00e9cembre 1906",
+        "date": "1906",
+        "item count": 187,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000311": {
+        "title": "Vente No\u00ebl Charavay, 19 novembre 1906, collection Bouvrain",
+        "date": "1906",
+        "item count": 126,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000344": {
+        "title": "Vente Jacques Charavay, juin 1865, n\u00ba 140",
+        "date": "1865",
+        "item count": 121,
+        "currency": "FRF",
+        "total price": 648,
+        "low price": 10,
+        "high price": 3.5,
+        "mean price": 5.402083333333334,
+        "median price": 3.5,
+        "mode price": 2.5,
+        "variance price": 25.495099826388888,
+        "high price items": {
+            "CAT_000344_e19423": 30
+        }
+    },
+    "CAT_000382": {
+        "title": "Catalogue Laverdet, juillet-ao\u00fbt 1857, n\u00ba 11",
+        "date": "juillet-ao\u00fbt 1857",
+        "item count": 50,
+        "currency": "FRF",
+        "total price": 194,
+        "low price": 10,
+        "high price": 7.5,
+        "mean price": 3.884,
+        "median price": 3.0,
+        "mode price": 2,
+        "variance price": 17.299343999999998,
+        "high price items": {
+            "CAT_000382_e1983": 30
+        }
+    },
+    "CAT_000353": {
+        "title": "Vente Jacques Charavay, janvier 1868, n\u00ba 153",
+        "date": "1868",
+        "item count": 263,
+        "currency": "FRF",
+        "total price": 2141,
+        "low price": 15,
+        "high price": 3,
+        "mean price": 8.140684410646388,
+        "median price": 4,
+        "mode price": 3,
+        "variance price": 133.37136759241858,
+        "high price items": {
+            "CAT_000353_e22158": 100
+        }
+    },
+    "CAT_000399": {
+        "title": "Catalogue Laverdet, avril-ao\u00fbt 1860, n\u00ba 28",
+        "date": "avril-ao\u00fbt 1860",
+        "item count": 172,
+        "currency": "FRF",
+        "total price": 1289,
+        "low price": 7.5,
+        "high price": 7.5,
+        "mean price": 7.538888888888889,
+        "median price": 4.5,
+        "mode price": 5,
+        "variance price": 545.6670402858999,
+        "high price items": {
+            "CAT_000399_e5235": 300
+        }
+    },
+    "CAT_000313": {
+        "title": "Vente No\u00ebl Charavay, 14 d\u00e9cembre 1908",
+        "date": "1908",
+        "item count": 165,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000324": {
+        "title": "Vente \u00c9tienne Charavay, 17-19 f\u00e9vrier 1881",
+        "date": "1881",
+        "item count": 77,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000364": {
+        "title": "Vente Jacques Charavay a\u00een\u00e9, janvier 1876, n\u00ba 187",
+        "date": "1876",
+        "item count": 275,
+        "currency": "FRF",
+        "total price": 3264,
+        "low price": 3,
+        "high price": 5,
+        "mean price": 11.871818181818181,
+        "median price": 3.5,
+        "mode price": 3,
+        "variance price": 1453.5133421487603,
+        "high price items": {
+            "CAT_000364_e27289": 550
+        }
+    },
+    "CAT_000348": {
+        "title": "Vente Jacques Charavay, avril 1866, n\u00ba 145",
+        "date": "1866",
+        "item count": 258,
+        "currency": "FRF",
+        "total price": 2568,
+        "low price": 1.25,
+        "high price": 2.5,
+        "mean price": 10.0351171875,
+        "median price": 3.0,
+        "mode price": 3,
+        "variance price": 1214.474431236267,
+        "high price items": {
+            "CAT_000348_e20442": 450
+        }
+    },
+    "CAT_000321": {
+        "title": "Vente No\u00ebl Charavay, 24 mai 1913",
+        "date": "1913",
+        "item count": 147,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000389": {
+        "title": "Catalogue Laverdet, septembre 1858, n\u00ba 18",
+        "date": "1858-09",
+        "item count": 200,
+        "currency": "FRF",
+        "total price": 1196,
+        "low price": 30,
+        "high price": 5,
+        "mean price": 6.011306532663316,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 97.07681939850004,
+        "high price items": {
+            "CAT_000389_e3256": 100
+        }
+    },
+    "CAT_000332": {
+        "title": "Vente Jacques Charavay, 15 f\u00e9vrier 1846, n\u00ba 5",
+        "date": "1846",
+        "item count": 86,
+        "currency": "FRF",
+        "total price": 704,
+        "low price": 15,
+        "high price": 4.25,
+        "mean price": 8.194767441860465,
+        "median price": 5.125,
+        "mode price": 5,
+        "variance price": 67.709885411033,
+        "high price items": {
+            "CAT_000332_e230": 45
+        }
+    },
+    "CAT_000397": {
+        "title": "Catalogue Laverdet, novembre-d\u00e9cembre 1859, n\u00ba 26",
+        "date": "Novembre-D\u00e9cembre 1859",
+        "item count": 182,
+        "currency": "FRF",
+        "total price": 1978,
+        "low price": 100,
+        "high price": 25,
+        "mean price": 10.869505494505495,
+        "median price": 5.0,
+        "mode price": 3,
+        "variance price": 785.8486992060137,
+        "high price items": {
+            "CAT_000397_e4752": 300
+        }
+    },
+    "CAT_000315": {
+        "title": "Vente \u00c9tienne Charavay, 13 d\u00e9cembre 1871, collection Dromont et Delestre",
+        "date": "1871",
+        "item count": 123,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000398": {
+        "title": "Catalogue Laverdet, janvier-f\u00e9vrier-mars 1860, n\u00ba 27",
+        "date": "janvier-f\u00e9vrier-mars 1860",
+        "item count": 168,
+        "currency": "FRF",
+        "total price": 2203,
+        "low price": 4,
+        "high price": 15,
+        "mean price": 13.272590361445783,
+        "median price": 5.0,
+        "mode price": 2.5,
+        "variance price": 5438.8643240129195,
+        "high price items": {
+            "CAT_000398_e4968": 950
+        }
+    },
+    "CAT_000381": {
+        "title": "Catalogue Laverdet, mai-juin 1857, n\u00ba 10",
+        "date": "mai-juin 1857",
+        "item count": 212,
+        "currency": "FRF",
+        "total price": 1285,
+        "low price": 3,
+        "high price": 7.5,
+        "mean price": 6.090284360189574,
+        "median price": 3,
+        "mode price": 2,
+        "variance price": 89.16614968217246,
+        "high price items": {
+            "CAT_000381_e1804": 100
+        }
+    },
+    "CAT_000355": {
+        "title": "Vente Jacques Charavay, mars-mai 1869",
+        "date": "1869",
+        "item count": 107,
+        "currency": "FRF",
+        "total price": 1245,
+        "low price": 2.5,
+        "high price": 2.5,
+        "mean price": 11.63785046728972,
+        "median price": 6,
+        "mode price": 2.5,
+        "variance price": 523.954712201939,
+        "high price items": {
+            "CAT_000355_e23622": 200
+        }
+    },
+    "CAT_000322": {
+        "title": "Vente No\u00ebl Charavay, 16 juin 1913",
+        "date": "1913",
+        "item count": 162,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000394": {
+        "title": "Catalogue Laverdet, n\u00ba 23, avril-mai 1859",
+        "date": "avril-mai 1859",
+        "item count": 206,
+        "currency": "FRF",
+        "total price": 1270,
+        "low price": 150,
+        "high price": 6,
+        "mean price": 6.195121951219512,
+        "median price": 3.5,
+        "mode price": 3,
+        "variance price": 139.92351279000596,
+        "high price items": {
+            "CAT_000394_e4084": 150
+        }
+    },
+    "CAT_000368": {
+        "title": "Vente Jacques Charavay, octobre 1878, n\u00ba 195",
+        "date": "1878",
+        "item count": 76,
+        "currency": "FRF",
+        "total price": 1268,
+        "low price": 3.5,
+        "high price": 5,
+        "mean price": 16.906666666666666,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 364.47128888888886,
+        "high price items": {
+            "CAT_000368_e28588": 110
+        }
+    },
+    "CAT_000308": {
+        "title": "Vente No\u00ebl Charavay, 30 mai 1906, collection Bord",
+        "date": "1906",
+        "item count": 215,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000350": {
+        "title": "Vente Jacques Charavay, avril-mai 1867, n\u00ba 150",
+        "date": "1867",
+        "item count": 222,
+        "currency": "FRF",
+        "total price": 2509,
+        "low price": 3,
+        "high price": 1.75,
+        "mean price": 11.305315315315315,
+        "median price": 4.0,
+        "mode price": 3,
+        "variance price": 6433.583544720396,
+        "high price items": {
+            "CAT_000350_e21672": 1200
+        }
+    },
+    "CAT_000307": {
+        "title": "Vente No\u00ebl Charavay, 30 avril 1906",
+        "date": "1906",
+        "item count": 178,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000302": {
+        "title": "Vente No\u00ebl Charavay, 10 juin 1905 (2), collection le Baron de Pages",
+        "date": "1905",
+        "item count": 17,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000316": {
+        "title": "Vente \u00c9tienne Charavay, 1er f\u00e9vrier 1877, collection de Polignac",
+        "date": "1877",
+        "item count": 19,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000318": {
+        "title": "Vente No\u00ebl Charavay, 25 avril 1913. collections de Balzac, Berlioz, de M\u00e9dicis, Henri III, Hugo, Lamartine, Machiavel, Mirabeau, Napol\u00e9on Ier, Robespierre, etc.",
+        "date": "1913",
+        "item count": 147,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000373": {
+        "title": "Catalogue Laverdet, juillet 1856, n\u00ba 2",
+        "date": "1856-07",
+        "item count": 97,
+        "currency": "FRF",
+        "total price": 1519,
+        "low price": 5.5,
+        "high price": 6,
+        "mean price": 16.164893617021278,
+        "median price": 6.0,
+        "mode price": 6,
+        "variance price": 1522.3517994567678,
+        "high price items": {
+            "CAT_000373_e117": 300
+        }
+    },
+    "CAT_000383": {
+        "title": "Catalogue Laverdet, septembre-octobre-novembre 1857, n\u00ba 12",
+        "date": "septembre-octobre-novembre 1857",
+        "item count": 158,
+        "currency": "FRF",
+        "total price": 2136,
+        "low price": 10,
+        "high price": 3.5,
+        "mean price": 13.606687898089172,
+        "median price": 6,
+        "mode price": 3,
+        "variance price": 2389.121181386669,
+        "high price items": {
+            "CAT_000383_e2206": 600
+        }
+    },
+    "CAT_000392": {
+        "title": "Catalogue Laverdet, d\u00e9cembre 1858, n\u00ba 21",
+        "date": "1858-12",
+        "item count": 446,
+        "currency": "FRF",
+        "total price": 1125,
+        "low price": 12,
+        "high price": 4,
+        "mean price": 2.5345495495495496,
+        "median price": 1.5,
+        "mode price": 1.5,
+        "variance price": 27.433526148445743,
+        "high price items": {
+            "CAT_000392_e387132": 75,
+            "CAT_000392_e387133": 75
+        }
+    },
+    "CAT_000346": {
+        "title": "Vente Jacques Charavay, novembre 1865, n\u00ba 143",
+        "date": "1865",
+        "item count": 213,
+        "currency": "FRF",
+        "total price": 1502,
+        "low price": 3.5,
+        "high price": 5,
+        "mean price": 7.053990610328638,
+        "median price": 4.5,
+        "mode price": 3,
+        "variance price": 103.45483149286957,
+        "high price items": {
+            "CAT_000346_e19884": 100
+        }
+    },
+    "CAT_000359": {
+        "title": "Vente Jacques Charavay, janvier-f\u00e9vrier 1870",
+        "date": "1870",
+        "item count": 273,
+        "currency": "FRF",
+        "total price": 1972,
+        "low price": 8,
+        "high price": 2.5,
+        "mean price": 7.250330882352941,
+        "median price": 3.0,
+        "mode price": 3,
+        "variance price": 150.0424745228698,
+        "high price items": {
+            "CAT_000359_e24170": 110
+        }
+    },
+    "CAT_000386": {
+        "title": "Catalogue Laverdet, mars-avril 1858, n\u00ba 15",
+        "date": "mars-avril 1858",
+        "item count": 156,
+        "currency": "FRF",
+        "total price": 1087,
+        "low price": 2,
+        "high price": 1.5,
+        "mean price": 6.9698717948717945,
+        "median price": 3.0,
+        "mode price": 2.5,
+        "variance price": 373.6104063938198,
+        "high price items": {
+            "CAT_000386_e2757": 200
+        }
+    },
+    "CAT_000310": {
+        "title": "Vente No\u00ebl Charavay, 25 juin 1906, collection Dablin",
+        "date": "1906",
+        "item count": 106,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000378": {
+        "title": "Catalogue Laverdet, f\u00e9vrier 1857, n\u00ba 7",
+        "date": "1857-02",
+        "item count": 210,
+        "currency": "FRF",
+        "total price": 990,
+        "low price": 4.5,
+        "high price": 3.5,
+        "mean price": 4.7178571428571425,
+        "median price": 3.0,
+        "mode price": 2.5,
+        "variance price": 87.26831207482994,
+        "high price items": {
+            "CAT_000378_e1166": 130
+        }
+    },
+    "CAT_000306": {
+        "title": "Vente No\u00ebl Charavay, 30 mars 1906",
+        "date": "1906",
+        "item count": 249,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000337": {
+        "title": "Vente Jacques Charavay, n\u00ba 53",
+        "date": "1855",
+        "item count": 173,
+        "currency": "FRF",
+        "total price": 733,
+        "low price": 2,
+        "high price": 2.25,
+        "mean price": 4.261627906976744,
+        "median price": 2.5,
+        "mode price": 2,
+        "variance price": 45.390853163872364,
+        "high price items": {
+            "CAT_000337_e6962": 80
+        }
+    },
+    "CAT_000385": {
+        "title": "Catalogue Laverdet, janvier-f\u00e9vrier 1858, n\u00ba 14",
+        "date": "janvier-f\u00e9vrier 1858",
+        "item count": 151,
+        "currency": "FRF",
+        "total price": 1332,
+        "low price": 20,
+        "high price": 5,
+        "mean price": 8.824503311258278,
+        "median price": 3,
+        "mode price": 2,
+        "variance price": 662.3516512433665,
+        "high price items": {
+            "CAT_000385_e2533": 300
+        }
+    },
+    "CAT_000345": {
+        "title": "Vente Jacques Charavay, 25 juin 1865, n\u00ba 141",
+        "date": "1865",
+        "item count": 129,
+        "currency": "FRF",
+        "total price": 669,
+        "low price": 2,
+        "high price": 4,
+        "mean price": 5.23046875,
+        "median price": 3.625,
+        "mode price": 2.5,
+        "variance price": 20.332626342773438,
+        "high price items": {
+            "CAT_000345_e19506": 25,
+            "CAT_000345_e19541": 25
+        }
+    },
+    "CAT_000384": {
+        "title": "Catalogue Laverdet, d\u00e9cembre 1857, n\u00ba 13",
+        "date": "1857",
+        "item count": 138,
+        "currency": "FRF",
+        "total price": 1373,
+        "low price": 2,
+        "high price": 5,
+        "mean price": 9.951086956521738,
+        "median price": 4.5,
+        "mode price": 3,
+        "variance price": 416.1411763547574,
+        "high price items": {
+            "CAT_000384_e2377": 150
+        }
+    },
+    "CAT_000372": {
+        "title": "Catalogue Laverdet, avril 1856, n\u00ba 1",
+        "date": "1856-04",
+        "item count": 48,
+        "currency": "FRF",
+        "total price": 2139,
+        "low price": 165,
+        "high price": 4,
+        "mean price": 44.5625,
+        "median price": 7.5,
+        "mode price": 7.5,
+        "variance price": 14442.819010416666,
+        "high price items": {
+            "CAT_000372_e29": 800
+        }
+    },
+    "CAT_000301": {
+        "title": "Vente No\u00ebl Charavay, 10 juin 1905 (1)",
+        "date": "1905",
+        "item count": 178,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000395": {
+        "title": "Catalogue Laverdet, juin-juillet 1859, n\u00ba 24",
+        "date": "Juin-Juillet 1859",
+        "item count": 210,
+        "currency": "FRF",
+        "total price": 747,
+        "low price": 2.5,
+        "high price": 6,
+        "mean price": 3.5595238095238093,
+        "median price": 2.5,
+        "mode price": 2.5,
+        "variance price": 11.377409297052154,
+        "high price items": {
+            "CAT_000395_e4493": 30
+        }
+    },
+    "CAT_000309": {
+        "title": "Vente No\u00ebl Charavay, 6 juin 1906",
+        "date": "1906",
+        "item count": 157,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000317": {
+        "title": "Vente No\u00ebl Charavay, 23 avril 1913, collection Ch\u00e9ramy",
+        "date": "1913",
+        "item count": 134,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000357": {
+        "title": "METTRE UN TITRE COURT (par exemple code du PDF). Le code se met d\u00e9sormais dans TEI/@xml:id",
+        "date": "1869",
+        "item count": 112,
+        "currency": "FRF",
+        "total price": 811,
+        "low price": 2,
+        "high price": 5,
+        "mean price": 7.313063063063063,
+        "median price": 4,
+        "mode price": 3,
+        "variance price": 80.74489692395099,
+        "high price items": {
+            "CAT_000357_e23861": 60
+        }
+    },
+    "CAT_000305": {
+        "title": "Vente No\u00ebl Charavay, 14 f\u00e9vrier 1906",
+        "date": "1906",
+        "item count": 166,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000319": {
+        "title": "Vente No\u00ebl Charavay, 26 avril 1913, collection Detaille",
+        "date": "1913",
+        "item count": 13,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000390": {
+        "title": "Catalogue Laverdet, octobre 1858, n\u00ba 19",
+        "date": "1858-10",
+        "item count": 213,
+        "currency": "FRF",
+        "total price": 810,
+        "low price": 5,
+        "high price": 5,
+        "mean price": 3.8028169014084505,
+        "median price": 3,
+        "mode price": 1.5,
+        "variance price": 5.9417526284467375,
+        "high price items": {
+            "CAT_000390_e3379": 15
+        }
+    },
+    "CAT_000354": {
+        "title": "Vente Jacques Charavay, janvier 1869, n\u00ba 157",
+        "date": "1869",
+        "item count": 259,
+        "currency": "FRF",
+        "total price": 2099,
+        "low price": 10,
+        "high price": 3,
+        "mean price": 8.107142857142858,
+        "median price": 4,
+        "mode price": 3,
+        "variance price": 168.8454219525648,
+        "high price items": {
+            "CAT_000354_e23213": 140
+        }
+    },
+    "CAT_000380": {
+        "title": "Catalogue Laverdet, avril 1857, n\u00ba 9",
+        "date": "1857-04",
+        "item count": 255,
+        "currency": "FRF",
+        "total price": 955,
+        "low price": 9,
+        "high price": 10,
+        "mean price": 3.7928571428571427,
+        "median price": 3.0,
+        "mode price": 3,
+        "variance price": 14.295445011337867,
+        "high price items": {
+            "CAT_000380_e1704": 35
+        }
+    },
+    "CAT_000326": {
+        "title": "RDA, N\u00b0198 (Mai 1897)",
+        "date": "1897-05",
+        "item count": 314,
+        "currency": "FRF",
+        "total price": 4334,
+        "low price": 12,
+        "high price": 5,
+        "mean price": 14.025889967637541,
+        "median price": 8,
+        "mode price": 5,
+        "variance price": 377.77926498465666,
+        "high price items": {
+            "CAT_000326_e102": 150,
+            "CAT_000326_e192": 150
+        }
+    },
+    "CAT_000342": {
+        "title": "Vente Jacques Charavay, janvier et f\u00e9vrier 1857, n\u00ba 84",
+        "date": "1857",
+        "item count": 189,
+        "currency": "FRF",
+        "total price": 669,
+        "low price": 3,
+        "high price": 1.75,
+        "mean price": 3.5589893617021278,
+        "median price": 3.0,
+        "mode price": 3,
+        "variance price": 8.372733553078316,
+        "high price items": {
+            "CAT_000342_e8422": 25
+        }
+    },
+    "CAT_000328": {
+        "title": "RDA, N\u00b0200 (Juillet 1897)",
+        "date": "1897-07",
+        "item count": 323,
+        "currency": "FRF",
+        "total price": 4245,
+        "low price": 17,
+        "high price": 5,
+        "mean price": 13.476190476190476,
+        "median price": 10,
+        "mode price": 8,
+        "variance price": 260.76371882086164,
+        "high price items": {
+            "CAT_000328_e265": 200
+        }
+    },
+    "CAT_000329": {
+        "title": "RDA, N\u00b0201 (Ao\u00fbt 1897)",
+        "date": "1897-08",
+        "item count": 297,
+        "currency": "FRF",
+        "total price": 3558,
+        "low price": 20,
+        "high price": 40,
+        "mean price": 11.97979797979798,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 90.35649423528211,
+        "high price items": {
+            "CAT_000329_e53": 75
+        }
+    },
+    "CAT_000335": {
+        "title": "Vente Jacques Charavay, 1er janvier 1846, n\u00ba 3",
+        "date": "1846",
+        "item count": 106,
+        "currency": "FRF",
+        "total price": 436,
+        "low price": 1.5,
+        "high price": 1.5,
+        "mean price": 4.113207547169812,
+        "median price": 3.0,
+        "mode price": 3,
+        "variance price": 7.960061409754362,
+        "high price items": {
+            "CAT_000335_e56": 18
+        }
+    },
+    "CAT_000377": {
+        "title": "Vente Auguste Laverdet, janvier 1857, n\u00ba 6",
+        "date": "1857-01",
+        "item count": 230,
+        "currency": "FRF",
+        "total price": 1426,
+        "low price": 2,
+        "high price": 2.25,
+        "mean price": 6.228165938864628,
+        "median price": 3.5,
+        "mode price": 3,
+        "variance price": 115.93565864495338,
+        "high price items": {
+            "CAT_000377_e991": 130
+        }
+    },
+    "CAT_000387": {
+        "title": "Catalogue Laverdet, mai-juin 1858, n\u00ba 16",
+        "date": "mai-juin 1858",
+        "item count": 199,
+        "currency": "FRF",
+        "total price": 1043,
+        "low price": 2.5,
+        "high price": 3,
+        "mean price": 5.241206030150754,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 41.376493017853086,
+        "high price items": {
+            "CAT_000387_e2921": 50,
+            "CAT_000387_e2970": 50
+        }
+    },
+    "CAT_000336": {
+        "title": "Vente Jacques Charavay, ao\u00fbt 1855, n\u00ba 72",
+        "date": "1855",
+        "item count": 154,
+        "currency": "FRF",
+        "total price": 658,
+        "low price": 1.25,
+        "high price": 1.25,
+        "mean price": 4.275324675324676,
+        "median price": 3.25,
+        "mode price": 2.5,
+        "variance price": 14.725722297183337,
+        "high price items": {
+            "CAT_000336_e6752": 36
+        }
+    },
+    "CAT_000365": {
+        "title": "Vente Jacques Charavay a\u00een\u00e9, juillet 1876, n\u00ba 188",
+        "date": "1876",
+        "item count": 224,
+        "currency": "FRF",
+        "total price": 1489,
+        "low price": 6,
+        "high price": 2,
+        "mean price": 6.649553571428571,
+        "median price": 5.0,
+        "mode price": 3,
+        "variance price": 41.643928372130105,
+        "high price items": {
+            "CAT_000365_e27593": 50
+        }
+    },
+    "CAT_000303": {
+        "title": "Vente No\u00ebl Charavay, 10 juin 1905 (3), collection L\u00e9vy / Veuve L...",
+        "date": "1905",
+        "item count": 5,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000388": {
+        "title": "Catalogue Laverdet, juillet-ao\u00fbt 1858, n\u00ba 17",
+        "date": "juillet-ao\u00fbt 1858",
+        "item count": 205,
+        "currency": "FRF",
+        "total price": 935,
+        "low price": 4,
+        "high price": 2.5,
+        "mean price": 4.561219512195122,
+        "median price": 3,
+        "mode price": 2,
+        "variance price": 39.72089851279001,
+        "high price items": {
+            "CAT_000388_e3091": 60
+        }
+    },
+    "CAT_000396": {
+        "title": "Catalogue Laverdet, ao\u00fbt-septembre 1859, n\u00ba 25",
+        "date": "ao\u00fbt-septembre 1859",
+        "item count": 217,
+        "currency": "FRF",
+        "total price": 844,
+        "low price": 3,
+        "high price": 10,
+        "mean price": 3.9078703703703703,
+        "median price": 2.5,
+        "mode price": 2.5,
+        "variance price": 15.680563057270232,
+        "high price items": {
+            "CAT_000396_e4656": 30
+        }
+    },
+    "CAT_000360": {
+        "title": "Vente Jacques Charavay, avril 1874, n\u00ba 179",
+        "date": "1874",
+        "item count": 94,
+        "currency": "FRF",
+        "total price": 918,
+        "low price": 2.5,
+        "high price": 2.5,
+        "mean price": 9.870967741935484,
+        "median price": 6,
+        "mode price": 4,
+        "variance price": 163.50485605272286,
+        "high price items": {
+            "CAT_000360_e26411": 100
+        }
+    },
+    "CAT_000343": {
+        "title": "Vente Jacques Charavay, octobre 1863, n\u00ba 132",
+        "date": "1863",
+        "item count": 145,
+        "currency": "FRF",
+        "total price": 707,
+        "low price": 3,
+        "high price": 1.5,
+        "mean price": 4.877586206896551,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 26.174239001189058,
+        "high price items": {
+            "CAT_000343_e18301": 40
+        }
+    },
+    "CAT_000356": {
+        "title": "Vente Jacques Charavay, juillet 1869, n\u00ba 160",
+        "date": "1869",
+        "item count": 135,
+        "currency": "FRF",
+        "total price": 1466,
+        "low price": 5,
+        "high price": 5,
+        "mean price": 10.862962962962962,
+        "median price": 4,
+        "mode price": 3,
+        "variance price": 1594.4414060356653,
+        "high price items": {
+            "CAT_000356_e23745": 450
+        }
+    },
+    "CAT_000320": {
+        "title": "Vente No\u00ebl Charavay, 15 mai 1913, collection le Baron Roger Portalis",
+        "date": "1913",
+        "item count": 34,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000370": {
+        "title": "Vente Jacques Charavay a\u00een\u00e9, avril 1880, n\u00ba 203",
+        "date": "1880",
+        "item count": 86,
+        "currency": "FRF",
+        "total price": 728,
+        "low price": 3,
+        "high price": 5,
+        "mean price": 8.564705882352941,
+        "median price": 5,
+        "mode price": 5,
+        "variance price": 54.575224913494814,
+        "high price items": {
+            "CAT_000370_e29381": 40
+        }
+    },
+    "CAT_000330": {
+        "title": "RDA, N\u00b0202 (Septembre 1897)",
+        "date": "1897-09",
+        "item count": 315,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000349": {
+        "title": "Vente Jacques Charavay, mars 1867, n\u00ba 149",
+        "date": "1867",
+        "item count": 247,
+        "currency": "FRF",
+        "total price": 1328,
+        "low price": 1.25,
+        "high price": 2.5,
+        "mean price": 5.4234285714285715,
+        "median price": 3.5,
+        "mode price": 3,
+        "variance price": 31.635514775510202,
+        "high price items": {
+            "CAT_000349_e21423": 40
+        }
+    },
+    "CAT_000361": {
+        "title": "Vente Jacques Charavay, f\u00e9vrier 1875, n\u00ba 182",
+        "date": "1875",
+        "item count": 89,
+        "currency": "FRF",
+        "total price": 738,
+        "low price": 2.5,
+        "high price": 40,
+        "mean price": 8.292134831460674,
+        "median price": 5,
+        "mode price": 5,
+        "variance price": 107.79948870092161,
+        "high price items": {
+            "CAT_000361_e26703": 65
+        }
+    },
+    "CAT_000334": {
+        "title": "Vente Jacques Charavay, novembre 1845, n\u00ba 1",
+        "date": "1845-11",
+        "item count": 18,
+        "currency": "FRF",
+        "total price": 83,
+        "low price": 3.5,
+        "high price": 3.5,
+        "mean price": 4.611111111111111,
+        "median price": 3.5,
+        "mode price": 3.5,
+        "variance price": 7.932098765432099,
+        "high price items": {
+            "CAT_000334_e15": 12
+        }
+    },
+    "CAT_000339": {
+        "title": "Vente Jacques Charavay, juillet 1856, n\u00ba 80",
+        "date": "1856",
+        "item count": 81,
+        "currency": "FRF",
+        "total price": 331,
+        "low price": 2,
+        "high price": 3.5,
+        "mean price": 4.089506172839506,
+        "median price": 3.75,
+        "mode price": 2,
+        "variance price": 3.764365188233501,
+        "high price items": {
+            "CAT_000339_e7815": 12
+        }
+    },
+    "CAT_000363": {
+        "title": "Vente Jacques Charavay, octobre 1875, n\u00ba 186",
+        "date": "1875",
+        "item count": 75,
+        "currency": "FRF",
+        "total price": 810,
+        "low price": 2,
+        "high price": 5,
+        "mean price": 10.952702702702704,
+        "median price": 6.0,
+        "mode price": 10,
+        "variance price": 248.60249269539807,
+        "high price items": {
+            "CAT_000363_e27233": 120
+        }
+    },
+    "CAT_000379": {
+        "title": "Catalogue Laverdet, mars 1857, n\u00ba 8",
+        "date": "1857-03",
+        "item count": 258,
+        "currency": "FRF",
+        "total price": 879,
+        "low price": 2.5,
+        "high price": 1.5,
+        "mean price": 3.437109375,
+        "median price": 2.5,
+        "mode price": 2.5,
+        "variance price": 7.7850486755371096,
+        "high price items": {
+            "CAT_000379_e1476": 22
+        }
+    },
+    "CAT_000338": {
+        "title": "Vente Jacques Charavay, juin 1856, n\u00ba 79",
+        "date": "1856",
+        "item count": 170,
+        "currency": "FRF",
+        "total price": 647,
+        "low price": 2,
+        "high price": 2.75,
+        "mean price": 3.922727272727273,
+        "median price": 3,
+        "mode price": 2,
+        "variance price": 20.683801652892562,
+        "high price items": {
+            "CAT_000338_e7660": 45
+        }
+    },
+    "CAT_000393": {
+        "title": "Catalogue Laverdet, janvier-f\u00e9vrier-mars 1859, n\u00ba 22",
+        "date": "janvier-f\u00e9vrier-mars 1859",
+        "item count": 212,
+        "currency": "FRF",
+        "total price": 1591,
+        "low price": 5,
+        "high price": 2.5,
+        "mean price": 7.5773809523809526,
+        "median price": 2.5,
+        "mode price": 2.5,
+        "variance price": 1742.8097859977324,
+        "high price items": {
+            "CAT_000393_e4083": 600
+        }
+    },
+    "CAT_000366": {
+        "title": "Vente Jacques Charavay, septembre 1876, n\u00ba 189",
+        "date": "1876",
+        "item count": 101,
+        "currency": "FRF",
+        "total price": 1102,
+        "low price": 3,
+        "high price": 25,
+        "mean price": 10.913366336633663,
+        "median price": 6,
+        "mode price": 5,
+        "variance price": 154.9312322321341,
+        "high price items": {
+            "CAT_000366_e27791": 70
+        }
+    },
+    "CAT_000400": {
+        "title": "Catalogue Laverdet, septembre-octobre 1860, n\u00ba 29",
+        "date": "septembre-octobre 1860",
+        "item count": 184,
+        "currency": "FRF",
+        "total price": 1072,
+        "low price": 15,
+        "high price": 1.5,
+        "mean price": 5.826521739130435,
+        "median price": 3.0,
+        "mode price": 1.5,
+        "variance price": 110.84510311909261,
+        "high price items": {
+            "CAT_000400_e5307": 100
+        }
+    },
+    "CAT_000341": {
+        "title": "Vente Jacques Charavay, octobre 1856 n\u00ba 82",
+        "date": "1856",
+        "item count": 189,
+        "currency": "FRF",
+        "total price": 631,
+        "low price": 4.5,
+        "high price": 4,
+        "mean price": 3.377005347593583,
+        "median price": 3,
+        "mode price": 2.5,
+        "variance price": 4.057064828848409,
+        "high price items": {
+            "CAT_000341_e8128": 15
+        }
+    },
+    "CAT_000347": {
+        "title": "Vente Jacques Charavay, f\u00e9vrier 1866, n\u00ba 144",
+        "date": "1866",
+        "item count": 224,
+        "currency": "FRF",
+        "total price": 2638,
+        "low price": 3,
+        "high price": 6,
+        "mean price": 11.831838565022421,
+        "median price": 4.5,
+        "mode price": 3.5,
+        "variance price": 501.2497486376159,
+        "high price items": {
+            "CAT_000347_e20139": 140,
+            "CAT_000347_e20205": 140
+        }
+    },
+    "CAT_000351": {
+        "title": "Vente Jacques Charavay, juin-juillet 1867, n\u00ba 151",
+        "date": "1867",
+        "item count": 226,
+        "currency": "FRF",
+        "total price": 2166,
+        "low price": 2,
+        "high price": 3.25,
+        "mean price": 9.715246636771301,
+        "median price": 3.5,
+        "mode price": 3,
+        "variance price": 242.79447606024655,
+        "high price items": {
+            "CAT_000351_e21721": 120
+        }
+    },
+    "CAT_000323": {
+        "title": "Vente \u00c9tienne Charavay, 7-10 d\u00e9cembre 1874, collection Boilly",
+        "date": "1874",
+        "item count": 781,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000375": {
+        "title": "Catalogue Laverdet, novembre 1856, n\u00ba 4",
+        "date": "1856-11",
+        "item count": 200,
+        "currency": "FRF",
+        "total price": 1750,
+        "low price": 2.25,
+        "high price": 6,
+        "mean price": 8.796231155778894,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 862.662636549582,
+        "high price items": {
+            "CAT_000375_e558": 410
+        }
+    },
+    "CAT_000391": {
+        "title": "Catalogue Laverdet, novembre 1858, n\u00ba 20",
+        "date": "1858-11",
+        "item count": 188,
+        "currency": "FRF",
+        "total price": 797,
+        "low price": 2,
+        "high price": 2,
+        "mean price": 4.262032085561497,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 25.82639266207212,
+        "high price items": {
+            "CAT_000391_e3729bis": 60
+        }
+    },
+    "CAT_000367": {
+        "title": "Vente Jacques Charavay a\u00een\u00e9, janv.-avril 1877, n\u00ba 191, collection Fillon",
+        "date": "1877",
+        "item count": 174,
+        "currency": "FRF",
+        "total price": 3897,
+        "low price": 175,
+        "high price": 15,
+        "mean price": 22.65843023255814,
+        "median price": 6.5,
+        "mode price": 6,
+        "variance price": 1901.3299143962952,
+        "high price items": {
+            "CAT_000367_e28146": 300
+        }
+    },
+    "CAT_000358": {
+        "title": "Vente Jacques Charavay, septembre 1869, n\u00ba 162",
+        "date": "1869",
+        "item count": 120,
+        "currency": "FRF",
+        "total price": 913,
+        "low price": 8,
+        "high price": 3,
+        "mean price": 7.610416666666667,
+        "median price": 3.5,
+        "mode price": 3,
+        "variance price": 340.7174956597222,
+        "high price items": {
+            "CAT_000358_e23884": 200
+        }
+    },
+    "CAT_000371": {
+        "title": "Vente Jacques Charavay a\u00een\u00e9, juin 1880, n\u00ba 205",
+        "date": "1880",
+        "item count": 68,
+        "currency": "FRF",
+        "total price": 875,
+        "low price": 25,
+        "high price": 30,
+        "mean price": 12.875,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 85.6939338235294,
+        "high price items": {
+            "CAT_000371_e29544": 60
+        }
+    },
+    "CAT_000314": {
+        "title": "Vente No\u00ebl Charavay, 19 f\u00e9vrier 1913",
+        "date": "1913",
+        "item count": 188,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000369": {
+        "title": "Vente Jacques Charavay a\u00een\u00e9, f\u00e9vrier 1880, n\u00ba 202",
+        "date": "1880",
+        "item count": 140,
+        "currency": "FRF",
+        "total price": 1382,
+        "low price": 10,
+        "high price": 3,
+        "mean price": 9.875,
+        "median price": 6.0,
+        "mode price": 5,
+        "variance price": 144.68258928571427,
+        "high price items": {
+            "CAT_000369_e29308": 120
+        }
+    },
+    "CAT_000304": {
+        "title": "Vente No\u00ebl Charavay, 15 janvier 1906, collection Sapin",
+        "date": "1906",
+        "item count": 169,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000051": {
+        "title": "RDA, N\u00b063 (Juillet 1880)",
+        "date": "1880-07",
+        "item count": 167,
+        "currency": "FRF",
+        "total price": 2258,
+        "low price": 20,
+        "high price": 15,
+        "mean price": 13.768292682926829,
+        "median price": 10.0,
+        "mode price": 15,
+        "variance price": 103.11704342653184,
+        "high price items": {
+            "CAT_000051_e139": 55
+        }
+    },
+    "CAT_000056": {
+        "title": "RDA, N\u00b068 (Mai 1881)",
+        "date": "1881-05",
+        "item count": 127,
+        "currency": "FRF",
+        "total price": 1986,
+        "low price": 2,
+        "high price": 3,
+        "mean price": 15.761904761904763,
+        "median price": 6.0,
+        "mode price": 5,
+        "variance price": 408.1655328798186,
+        "high price items": {
+            "CAT_000056_e55": 125
+        }
+    },
+    "CAT_000098": {
+        "title": "Collection Dolomieu et Libri",
+        "date": "1843",
+        "item count": 4,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000036": {
+        "title": "RDA, N\u00b045 (Mai 1875)",
+        "date": "1875-05",
+        "item count": 40,
+        "currency": "FRF",
+        "total price": 1165,
+        "low price": 175,
+        "high price": 15,
+        "mean price": 29.125,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 1751.509375,
+        "high price items": {
+            "CAT_000036_e18": 200
+        }
+    },
+    "CAT_000084": {
+        "title": "RDA, N\u00b050 (Janvier 1877)",
+        "date": "1877-01",
+        "item count": 120,
+        "currency": "FRF",
+        "total price": 1164,
+        "low price": 20,
+        "high price": 4,
+        "mean price": 9.7,
+        "median price": 5.0,
+        "mode price": 4,
+        "variance price": 203.97666666666666,
+        "high price items": {
+            "CAT_000084_e76": 125
+        }
+    },
+    "CAT_000073": {
+        "title": "RDA, N\u00b086 (Novembre 1884)",
+        "date": "1884-11",
+        "item count": 73,
+        "currency": "FRF",
+        "total price": 915,
+        "low price": 4,
+        "high price": 10,
+        "mean price": 12.708333333333334,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 52.873263888888886,
+        "high price items": {
+            "CAT_000073_e25": 40
+        }
+    },
+    "CAT_000100": {
+        "title": "RDA, N\u00b097 (F\u00e9vrier 1886)",
+        "date": "1886-02",
+        "item count": 350,
+        "currency": "FRF",
+        "total price": 4375,
+        "low price": 5,
+        "high price": 20,
+        "mean price": 12.720494186046512,
+        "median price": 6.0,
+        "mode price": 5,
+        "variance price": 552.0338314418267,
+        "high price items": {
+            "CAT_000100_e229": 300
+        }
+    },
+    "CAT_000020": {
+        "title": "RDA, N\u00b021 (Mars-Avril 1869)",
+        "date": "1869-03",
+        "item count": 218,
+        "currency": "FRF",
+        "total price": 1607,
+        "low price": 2,
+        "high price": 2.5,
+        "mean price": 7.725961538461538,
+        "median price": 3.0,
+        "mode price": 2,
+        "variance price": 199.49822022928993,
+        "high price items": {
+            "CAT_000020_e4136": 125
+        }
+    },
+    "CAT_000010": {
+        "title": "Vente Simon Kra (23/05/1927)",
+        "date": "1927",
+        "item count": 1,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000097": {
+        "title": "Collection Walpole",
+        "date": "1842",
+        "item count": 1,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000066": {
+        "title": "RDA, N\u00b079 (Mai 1883)",
+        "date": "1883-05",
+        "item count": 45,
+        "currency": "FRF",
+        "total price": 883,
+        "low price": 75,
+        "high price": 35,
+        "mean price": 19.622222222222224,
+        "median price": 17,
+        "mode price": 12,
+        "variance price": 121.39061728395062,
+        "high price items": {
+            "CAT_000066_e1": 75
+        }
+    },
+    "CAT_000028": {
+        "title": "RDA, N\u00b034 (F\u00e9vrier 1873)",
+        "date": "1873-02",
+        "item count": 206,
+        "currency": "FRF",
+        "total price": 1247,
+        "low price": 6,
+        "high price": 10,
+        "mean price": 6.14384236453202,
+        "median price": 4,
+        "mode price": 3,
+        "variance price": 43.168668980077165,
+        "high price items": {
+            "CAT_000028_e160": 65
+        }
+    },
+    "CAT_000001": {
+        "title": "Vente Charon, 14 mai 1845",
+        "date": "1845",
+        "item count": 379,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000026": {
+        "title": "RDA, N\u00b032 (Mai-Juin 1872)",
+        "date": "1872-08",
+        "item count": 203,
+        "currency": "FRF",
+        "total price": 1705,
+        "low price": 4,
+        "high price": 10,
+        "mean price": 8.5295,
+        "median price": 5.0,
+        "mode price": 3,
+        "variance price": 226.47667975,
+        "high price items": {
+            "CAT_000026_e144": 150
+        }
+    },
+    "CAT_000027": {
+        "title": "RDA, N\u00b033 (Novembre 1872)",
+        "date": "1872-11",
+        "item count": 120,
+        "currency": "FRF",
+        "total price": 670,
+        "low price": 5,
+        "high price": 2,
+        "mean price": 5.677966101694915,
+        "median price": 4.0,
+        "mode price": 4,
+        "variance price": 35.845446710715315,
+        "high price items": {
+            "CAT_000027_e21": 50
+        }
+    },
+    "CAT_000092": {
+        "title": "Collection Markham Sherwill",
+        "date": "1824",
+        "item count": 21,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000088": {
+        "title": "RDA, N\u00b095 (D\u00e9cembre 1885)",
+        "date": "1885-12",
+        "item count": 141,
+        "currency": "FRF",
+        "total price": 3860,
+        "low price": 40,
+        "high price": 8,
+        "mean price": 27.971739130434784,
+        "median price": 20.0,
+        "mode price": 20,
+        "variance price": 1242.2528969754253,
+        "high price items": {
+            "CAT_000088_e47": 300
+        }
+    },
+    "CAT_000021": {
+        "title": "RDA, N\u00b022 (Mai-Juillet 1869)",
+        "date": "1869-05",
+        "item count": 207,
+        "currency": "FRF",
+        "total price": 2233,
+        "low price": 5,
+        "high price": 2,
+        "mean price": 11.224371859296483,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 370.60750902754984,
+        "high price items": {
+            "CAT_000021_e4399": 200
+        }
+    },
+    "CAT_000025": {
+        "title": "RDA, N\u00b031 (Mai-Juin 1872)",
+        "date": "1872-05",
+        "item count": 174,
+        "currency": "FRF",
+        "total price": 1978,
+        "low price": 4,
+        "high price": 10,
+        "mean price": 11.567251461988304,
+        "median price": 6,
+        "mode price": 4,
+        "variance price": 226.06711466776102,
+        "high price items": {
+            "CAT_000025_e58": 100,
+            "CAT_000025_e74": 100
+        }
+    },
+    "CAT_000077": {
+        "title": "RDA, N\u00b090 (Avril 1885)",
+        "date": "1885-04",
+        "item count": 187,
+        "currency": "FRF",
+        "total price": 2804,
+        "low price": 12,
+        "high price": 20,
+        "mean price": 15.075268817204302,
+        "median price": 10.0,
+        "mode price": 3,
+        "variance price": 245.15831309978032,
+        "high price items": {
+            "CAT_000077_e43": 100,
+            "CAT_000077_e100": 100
+        }
+    },
+    "CAT_000008": {
+        "title": "Collection Henry Fatio, troisi\u00e8me vente.",
+        "date": "1935",
+        "item count": 1,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000089": {
+        "title": "Vente Bodin, 20-21/06/2019",
+        "date": "2019",
+        "item count": 1,
+        "currency": "EUR",
+        "total price": 4500,
+        "low price": 4500,
+        "high price": 4500,
+        "mean price": 4500,
+        "median price": 4500,
+        "mode price": 4500,
+        "variance price": 0,
+        "high price items": {
+            "CAT_000089_e176": 4500
+        }
+    },
+    "CAT_000093": {
+        "title": "Collection Jacob",
+        "date": "1829",
+        "item count": 1,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000049": {
+        "title": "RDA, N\u00b061 (Mars 1880)",
+        "date": "1880-03",
+        "item count": 187,
+        "currency": "FRF",
+        "total price": 1965,
+        "low price": 5,
+        "high price": 15,
+        "mean price": 10.621621621621621,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 176.24601899196495,
+        "high price items": {
+            "CAT_000049_e114": 125
+        }
+    },
+    "CAT_000030": {
+        "title": "RDA, N\u00b038 (F\u00e9vrier 1874)",
+        "date": "1874-02",
+        "item count": 240,
+        "currency": "FRF",
+        "total price": 1191,
+        "low price": 3,
+        "high price": 8,
+        "mean price": 4.984937238493724,
+        "median price": 4,
+        "mode price": 3,
+        "variance price": 10.048978134136306,
+        "high price items": {
+            "CAT_000030_e222": 20,
+            "CAT_000030_e230": 20
+        }
+    },
+    "CAT_000041": {
+        "title": "RDA, N\u00b052 (Mai 1877)",
+        "date": "1877-05",
+        "item count": 152,
+        "currency": "FRF",
+        "total price": 1072,
+        "low price": 2,
+        "high price": 1,
+        "mean price": 7.194630872483222,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 82.50574298455025,
+        "high price items": {
+            "CAT_000041_e37": 84
+        }
+    },
+    "CAT_000071": {
+        "title": "RDA, N\u00b084 (Avril 1884)",
+        "date": "1884-04",
+        "item count": 134,
+        "currency": "FRF",
+        "total price": 2819,
+        "low price": 11,
+        "high price": 20,
+        "mean price": 21.195488721804512,
+        "median price": 16,
+        "mode price": 15,
+        "variance price": 221.5407315280683,
+        "high price items": {
+            "CAT_000071_e134": 100
+        }
+    },
+    "CAT_000035": {
+        "title": "RDA, N\u00b044 (Mars 1875)",
+        "date": "1875-03",
+        "item count": 174,
+        "currency": "FRF",
+        "total price": 1971,
+        "low price": 5,
+        "high price": 5,
+        "mean price": 11.327586206896552,
+        "median price": 5.0,
+        "mode price": 5,
+        "variance price": 1228.5306183115338,
+        "high price items": {
+            "CAT_000035_e153": 450
+        }
+    },
+    "CAT_000063": {
+        "title": "RDA, N\u00b075 (Janvier 1883)",
+        "date": "1883-01",
+        "item count": 148,
+        "currency": "FRF",
+        "total price": 1483,
+        "low price": 5,
+        "high price": 20,
+        "mean price": 10.02027027027027,
+        "median price": 8.0,
+        "mode price": 5,
+        "variance price": 50.30364317019722,
+        "high price items": {
+            "CAT_000063_e143": 55
+        }
+    },
+    "CAT_000081": {
+        "title": "RDA, N\u00b025 (Mars 1870)",
+        "date": "1870-03",
+        "item count": 167,
+        "currency": "FRF",
+        "total price": 561,
+        "low price": 8,
+        "high price": 2,
+        "mean price": 3.4,
+        "median price": 2.5,
+        "mode price": 2,
+        "variance price": 7.014242424242424,
+        "high price items": {
+            "CAT_000081_e150": 16
+        }
+    },
+    "CAT_000014": {
+        "title": "Vente Sotheby, Wilkinson & Hodge (18/07/1904)",
+        "date": "1904",
+        "item count": 1,
+        "currency": "GBP",
+        "total price": 6,
+        "low price": 6.1,
+        "high price": 6.1,
+        "mean price": 6.1,
+        "median price": 6.1,
+        "mode price": 6.1,
+        "variance price": 0.0,
+        "high price items": {
+            "CAT_000014_e26": 6.1
+        }
+    },
+    "CAT_000086": {
+        "title": "RDA, N\u00b060 (F\u00e9vrier 1877)",
+        "date": "1880-01",
+        "item count": 198,
+        "currency": "FRF",
+        "total price": 986,
+        "low price": 5,
+        "high price": 12,
+        "mean price": 5.056410256410256,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 27.1711768573307,
+        "high price items": {
+            "CAT_000086_e68": 40,
+            "CAT_000086_e137": 40
+        }
+    },
+    "CAT_000075": {
+        "title": "RDA, N\u00b088 (F\u00e9vrier 1885)",
+        "date": "1885-02",
+        "item count": 198,
+        "currency": "FRF",
+        "total price": 2080,
+        "low price": 8,
+        "high price": 15,
+        "mean price": 10.558375634517766,
+        "median price": 6,
+        "mode price": 3,
+        "variance price": 145.35319127006622,
+        "high price items": {
+            "CAT_000075_e28": 100
+        }
+    },
+    "CAT_000038": {
+        "title": "RDA, N\u00b048 (Juillet 1876)",
+        "date": "1876-07",
+        "item count": 215,
+        "currency": "FRF",
+        "total price": 1388,
+        "low price": 15,
+        "high price": 4,
+        "mean price": 6.517370892018779,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 50.02124754788512,
+        "high price items": {
+            "CAT_000038_e213": 65
+        }
+    },
+    "CAT_000023": {
+        "title": "RDA, N\u00b024 (D\u00e9cembre 1869)",
+        "date": "1869-12",
+        "item count": 166,
+        "currency": "FRF",
+        "total price": 590,
+        "low price": 1,
+        "high price": 3,
+        "mean price": 3.66583850931677,
+        "median price": 2.5,
+        "mode price": 2,
+        "variance price": 35.311565911808955,
+        "high price items": {
+            "CAT_000023_e49": 50,
+            "CAT_000023_e55": 50
+        }
+    },
+    "CAT_000072": {
+        "title": "RDA, N\u00b085 (Octobre 1884)",
+        "date": "1884-10",
+        "item count": 140,
+        "currency": "FRF",
+        "total price": 3378,
+        "low price": 15,
+        "high price": 75,
+        "mean price": 24.12857142857143,
+        "median price": 15.5,
+        "mode price": 15,
+        "variance price": 477.4263265306122,
+        "high price items": {
+            "CAT_000072_e103": 150
+        }
+    },
+    "CAT_000040": {
+        "title": "RDA, N\u00b051 (Mars 1877)",
+        "date": "1877-03",
+        "item count": 123,
+        "currency": "FRF",
+        "total price": 1581,
+        "low price": 8,
+        "high price": 2,
+        "mean price": 12.853658536585366,
+        "median price": 6,
+        "mode price": 6,
+        "variance price": 423.8485028752727,
+        "high price items": {
+            "CAT_000040_e35": 150
+        }
+    },
+    "CAT_000032": {
+        "title": "RDA, N\u00b040 (Mai 1874)",
+        "date": "1874-05",
+        "item count": 142,
+        "currency": "FRF",
+        "total price": 1168,
+        "low price": 3,
+        "high price": 6,
+        "mean price": 8.225352112676056,
+        "median price": 4.0,
+        "mode price": 3,
+        "variance price": 119.27316008728427,
+        "high price items": {
+            "CAT_000032_e94": 80
+        }
+    },
+    "CAT_000006": {
+        "title": "RDA, N\u00b024, seconde s\u00e9rie (1927)",
+        "date": "1927",
+        "item count": 461,
+        "currency": "FRF",
+        "total price": 20015,
+        "low price": 15,
+        "high price": 15,
+        "mean price": 44.97752808988764,
+        "median price": 25,
+        "mode price": 20,
+        "variance price": 7216.102865799772,
+        "high price items": {
+            "CAT_000006_e136": 1000
+        }
+    },
+    "CAT_000068": {
+        "title": "RDA, N\u00b081 (D\u00e9cembre 1883)",
+        "date": "1883-12",
+        "item count": 83,
+        "currency": "FRF",
+        "total price": 1466,
+        "low price": 25,
+        "high price": 15,
+        "mean price": 17.666265060240963,
+        "median price": 12,
+        "mode price": 15,
+        "variance price": 445.5258499056467,
+        "high price items": {
+            "CAT_000068_e62": 150
+        }
+    },
+    "CAT_000042": {
+        "title": "RDA, N\u00b053 (F\u00e9vrier 1878)",
+        "date": "1878-02",
+        "item count": 133,
+        "currency": "FRF",
+        "total price": 1864,
+        "low price": 10,
+        "high price": 4,
+        "mean price": 14.229007633587786,
+        "median price": 6,
+        "mode price": 3,
+        "variance price": 223.10786084727,
+        "high price items": {
+            "CAT_000042_e19": 65,
+            "CAT_000042_e47": 65
+        }
+    },
+    "CAT_000099": {
+        "title": "RDA, N\u00b096 (Janvier 1886)",
+        "date": "1886-01",
+        "item count": 211,
+        "currency": "FRF",
+        "total price": 4429,
+        "low price": 10,
+        "high price": 3,
+        "mean price": 21.606926829268293,
+        "median price": 15,
+        "mode price": 15,
+        "variance price": 788.866685677573,
+        "high price items": {
+            "CAT_000099_e31": 300
+        }
+    },
+    "CAT_000016": {
+        "title": "LAD, N\u00b0515 (d\u00e9cembre 1919)",
+        "date": "1919-12",
+        "item count": 1,
+        "currency": "FRF",
+        "total price": 162,
+        "low price": 162.5,
+        "high price": 162.5,
+        "mean price": 162.5,
+        "median price": 162.5,
+        "mode price": 162.5,
+        "variance price": 0.0,
+        "high price items": {
+            "CAT_000016_e89531": 162.5
+        }
+    },
+    "CAT_000057": {
+        "title": "RDA, N\u00b069 (Octobre 1881)",
+        "date": "1881-10",
+        "item count": 99,
+        "currency": "FRF",
+        "total price": 2484,
+        "low price": 30,
+        "high price": 12,
+        "mean price": 25.608247422680414,
+        "median price": 20,
+        "mode price": 20,
+        "variance price": 622.8156020831119,
+        "high price items": {
+            "CAT_000057_e13": 160,
+            "CAT_000057_e57": 160
+        }
+    },
+    "CAT_000009": {
+        "title": "Collection Henry Fatio, deuxi\u00e8me vente.",
+        "date": "1932",
+        "item count": 3,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000070": {
+        "title": "RDA, N\u00b083 (Mars 1884)",
+        "date": "1884-03",
+        "item count": 105,
+        "currency": "FRF",
+        "total price": 1035,
+        "low price": 15,
+        "high price": 10,
+        "mean price": 9.857142857142858,
+        "median price": 5,
+        "mode price": 5,
+        "variance price": 217.3986394557823,
+        "high price items": {
+            "CAT_000070_e6": 100,
+            "CAT_000070_e104": 100
+        }
+    },
+    "CAT_000005": {
+        "title": "Catalogue Laverdet, N\u00b03 (octobre 1856)",
+        "date": "1856-10",
+        "item count": 137,
+        "currency": "FRF",
+        "total price": 1412,
+        "low price": 2,
+        "high price": 5,
+        "mean price": 10.945736434108527,
+        "median price": 3.5,
+        "mode price": 2.5,
+        "variance price": 3277.8710864731684,
+        "high price items": {
+            "CAT_000005_e237": 650
+        }
+    },
+    "CAT_000044": {
+        "title": "RDA, N\u00b055 (D\u00e9cembre 1878)",
+        "date": "1878-12",
+        "item count": 212,
+        "currency": "FRF",
+        "total price": 1500,
+        "low price": 2,
+        "high price": 8,
+        "mean price": 7.142857142857143,
+        "median price": 5.0,
+        "mode price": 3,
+        "variance price": 59.772353741496595,
+        "high price items": {
+            "CAT_000044_e73": 70
+        }
+    },
+    "CAT_000091": {
+        "title": "Collection Germain Garnier",
+        "date": "1822",
+        "item count": 16,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000018": {
+        "title": "RDA, N\u00b037 (ao\u00fbt 1873)",
+        "date": "1873-08",
+        "item count": 192,
+        "currency": "FRF",
+        "total price": 1978,
+        "low price": 30,
+        "high price": 6,
+        "mean price": 10.358638743455497,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 1593.7208546914835,
+        "high price items": {
+            "CAT_000018_e144": 550
+        }
+    },
+    "CAT_000017": {
+        "title": "Collection Merlin, 31 octobre 1871",
+        "date": "1871",
+        "item count": 1,
+        "currency": "FRF",
+        "total price": 162,
+        "low price": 162.5,
+        "high price": 162.5,
+        "mean price": 162.5,
+        "median price": 162.5,
+        "mode price": 162.5,
+        "variance price": 0.0,
+        "high price items": {
+            "CAT_000017_e126": 162.5
+        }
+    },
+    "CAT_000065": {
+        "title": "RDA, N\u00b078 (Avril 1883)",
+        "date": "1883-04",
+        "item count": 163,
+        "currency": "FRF",
+        "total price": 2448,
+        "low price": 32,
+        "high price": 9,
+        "mean price": 15.11111111111111,
+        "median price": 12.0,
+        "mode price": 5,
+        "variance price": 204.7037037037037,
+        "high price items": {
+            "CAT_000065_e66": 130
+        }
+    },
+    "CAT_000019": {
+        "title": "RDA, N\u00b019 (d\u00e9cembre 1868)",
+        "date": "1868-12",
+        "item count": 163,
+        "currency": "FRF",
+        "total price": 1280,
+        "low price": 2.5,
+        "high price": 4.5,
+        "mean price": 8.210576923076923,
+        "median price": 4.0,
+        "mode price": 2,
+        "variance price": 135.775993897929,
+        "high price items": {
+            "CAT_000019_e3955": 70
+        }
+    },
+    "CAT_000055": {
+        "title": "RDA, N\u00b067 (Mars 1881)",
+        "date": "1881-03",
+        "item count": 193,
+        "currency": "FRF",
+        "total price": 2190,
+        "low price": 75,
+        "high price": 15,
+        "mean price": 11.347150259067357,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 1215.066015195039,
+        "high price items": {
+            "CAT_000055_e71": 400
+        }
+    },
+    "CAT_000090": {
+        "title": "Vente Bodin, 16/05/2018",
+        "date": "2019",
+        "item count": 1,
+        "currency": "EUR",
+        "total price": 5000,
+        "low price": 5000,
+        "high price": 5000,
+        "mean price": 5000,
+        "median price": 5000,
+        "mode price": 5000,
+        "variance price": 0,
+        "high price items": {
+            "CAT_000090_e353": 5000
+        }
+    },
+    "CAT_000069": {
+        "title": "RDA, N\u00b082 (F\u00e9vrier 1884)",
+        "date": "1884-02",
+        "item count": 217,
+        "currency": "FRF",
+        "total price": 1313,
+        "low price": 5,
+        "high price": 3,
+        "mean price": 6.050691244239632,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 24.50895113508463,
+        "high price items": {
+            "CAT_000069_e25": 40
+        }
+    },
+    "CAT_000064": {
+        "title": "RDA, N\u00b077 (Mars 1883)",
+        "date": "1883-03",
+        "item count": 167,
+        "currency": "FRF",
+        "total price": 1137,
+        "low price": 8.2,
+        "high price": 20,
+        "mean price": 6.8921212121212125,
+        "median price": 5,
+        "mode price": 5,
+        "variance price": 27.68799853076217,
+        "high price items": {
+            "CAT_000064_e103": 40
+        }
+    },
+    "CAT_000079": {
+        "title": "RDA, N\u00b092 (Septembre-octobre 1885)",
+        "date": "1885-09",
+        "item count": 185,
+        "currency": "FRF",
+        "total price": 2383,
+        "low price": 6,
+        "high price": 15,
+        "mean price": 12.951086956521738,
+        "median price": 8.0,
+        "mode price": 3,
+        "variance price": 286.7530422967864,
+        "high price items": {
+            "CAT_000079_e16": 120
+        }
+    },
+    "CAT_000046": {
+        "title": "RDA, N\u00b057 (Juillet 1879)",
+        "date": "1879-07",
+        "item count": 140,
+        "currency": "FRF",
+        "total price": 2433,
+        "low price": 45,
+        "high price": 5,
+        "mean price": 17.893382352941178,
+        "median price": 8.0,
+        "mode price": 5,
+        "variance price": 628.4537062067475,
+        "high price items": {
+            "CAT_000046_e10": 125,
+            "CAT_000046_e23": 125,
+            "CAT_000046_e48": 125
+        }
+    },
+    "CAT_000012": {
+        "title": "Collection Morrison II, 15-19 avril 1918",
+        "date": "1918",
+        "item count": 4,
+        "currency": "GBP",
+        "total price": 49,
+        "low price": 13,
+        "high price": 11,
+        "mean price": 16.333333333333332,
+        "median price": 13,
+        "mode price": 13,
+        "variance price": 38.22222222222222,
+        "high price items": {
+            "CAT_000012_e1081": 25
+        }
+    },
+    "CAT_000059": {
+        "title": "RDA, N\u00b071 (F\u00e9vrier 1882)",
+        "date": "1882-02",
+        "item count": 23,
+        "currency": "FRF",
+        "total price": 468,
+        "low price": 6,
+        "high price": 8,
+        "mean price": 20.347826086956523,
+        "median price": 15,
+        "mode price": 12,
+        "variance price": 798.8355387523628,
+        "high price items": {
+            "CAT_000059_e9": 150
+        }
+    },
+    "CAT_000058": {
+        "title": "RDA, N\u00b070 (Novembre 1881)",
+        "date": "1881-11",
+        "item count": 137,
+        "currency": "FRF",
+        "total price": 1531,
+        "low price": 4,
+        "high price": 3,
+        "mean price": 11.178832116788321,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 267.9260482710853,
+        "high price items": {
+            "CAT_000058_e122": 110
+        }
+    },
+    "CAT_000076": {
+        "title": "RDA, N\u00b089 (Mars 1885)",
+        "date": "1885-03",
+        "item count": 157,
+        "currency": "FRF",
+        "total price": 2336,
+        "low price": 2,
+        "high price": 50,
+        "mean price": 14.882165605095542,
+        "median price": 8,
+        "mode price": 5,
+        "variance price": 909.7584080490082,
+        "high price items": {
+            "CAT_000076_e19": 250
+        }
+    },
+    "CAT_000015": {
+        "title": "Collection Whitney-Hoff",
+        "date": "1949",
+        "item count": 1,
+        "currency": "FRF",
+        "total price": 18000,
+        "low price": 18000,
+        "high price": 18000,
+        "mean price": 18000,
+        "median price": 18000,
+        "mode price": 18000,
+        "variance price": 0,
+        "high price items": {
+            "CAT_000015_e94": 18000
+        }
+    },
+    "CAT_000043": {
+        "title": "RDA, N\u00b054 (Juin 1878)",
+        "date": "1878-06",
+        "item count": 179,
+        "currency": "FRF",
+        "total price": 1284,
+        "low price": 2,
+        "high price": 2,
+        "mean price": 7.257062146892656,
+        "median price": 4,
+        "mode price": 3,
+        "variance price": 55.907082894442844,
+        "high price items": {
+            "CAT_000043_e76": 45
+        }
+    },
+    "CAT_000083": {
+        "title": "RDA, N\u00b027 (Juillet 1871)",
+        "date": "1871-07",
+        "item count": 245,
+        "currency": "FRF",
+        "total price": 935,
+        "low price": 5,
+        "high price": 2,
+        "mean price": 3.831967213114754,
+        "median price": 2.5,
+        "mode price": 2,
+        "variance price": 21.584469900564365,
+        "high price items": {
+            "CAT_000083_e146": 40,
+            "CAT_000083_e210": 40
+        }
+    },
+    "CAT_000052": {
+        "title": "RDA, N\u00b064 (Octobre 1880)",
+        "date": "1880-10",
+        "item count": 210,
+        "currency": "FRF",
+        "total price": 1161,
+        "low price": 5,
+        "high price": 3,
+        "mean price": 5.5285714285714285,
+        "median price": 3.0,
+        "mode price": 3,
+        "variance price": 33.83013605442177,
+        "high price items": {
+            "CAT_000052_e210": 50
+        }
+    },
+    "CAT_000029": {
+        "title": "RDA, N\u00b035 (Mai 1873)",
+        "date": "1873-05",
+        "item count": 71,
+        "currency": "FRF",
+        "total price": 357,
+        "low price": 3,
+        "high price": 6,
+        "mean price": 5.107142857142857,
+        "median price": 4.0,
+        "mode price": 3,
+        "variance price": 11.492091836734692,
+        "high price items": {
+            "CAT_000029_e58": 20
+        }
+    },
+    "CAT_000050": {
+        "title": "RDA, N\u00b062 (Mai 1880)",
+        "date": "1880-05",
+        "item count": 180,
+        "currency": "FRF",
+        "total price": 1359,
+        "low price": 4,
+        "high price": 3.5,
+        "mean price": 7.637640449438202,
+        "median price": 4.0,
+        "mode price": 3,
+        "variance price": 114.4656056684762,
+        "high price items": {
+            "CAT_000050_e180": 100
+        }
+    },
+    "CAT_000047": {
+        "title": "RDA, N\u00b058 (Novembre 1879)",
+        "date": "1879-11",
+        "item count": 259,
+        "currency": "FRF",
+        "total price": 1411,
+        "low price": 2,
+        "high price": 3,
+        "mean price": 5.490272373540856,
+        "median price": 2,
+        "mode price": 2,
+        "variance price": 217.9152750230889,
+        "high price items": {
+            "CAT_000047_e49": 150
+        }
+    },
+    "CAT_000096": {
+        "title": "Collection Pix\u00e9r\u00e9court",
+        "date": "1840",
+        "item count": 39,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000080": {
+        "title": "RDA, N\u00b093 (Octobre 1885)",
+        "date": "1885-10",
+        "item count": 183,
+        "currency": "FRF",
+        "total price": 2496,
+        "low price": 3,
+        "high price": 10,
+        "mean price": 13.639344262295081,
+        "median price": 10,
+        "mode price": 3,
+        "variance price": 166.64588372301353,
+        "high price items": {
+            "CAT_000080_e132": 100
+        }
+    },
+    "CAT_000037": {
+        "title": "RDA, N\u00b036 (Juin 1873)",
+        "date": "1873-06",
+        "item count": 193,
+        "currency": "FRF",
+        "total price": 1408,
+        "low price": 10,
+        "high price": 3,
+        "mean price": 7.410526315789474,
+        "median price": 5.0,
+        "mode price": 4,
+        "variance price": 68.82094182825485,
+        "high price items": {
+            "CAT_000037_e152": 70
+        }
+    },
+    "CAT_000034": {
+        "title": "RDA, N\u00b043 (Janvier 1875)",
+        "date": "1875-01",
+        "item count": 181,
+        "currency": "FRF",
+        "total price": 1058,
+        "low price": 7,
+        "high price": 3,
+        "mean price": 5.943820224719101,
+        "median price": 4.0,
+        "mode price": 3,
+        "variance price": 39.232798889029155,
+        "high price items": {
+            "CAT_000034_e76": 40,
+            "CAT_000034_e161": 40,
+            "CAT_000034_e169": 40
+        }
+    },
+    "CAT_000024": {
+        "title": "RDA, N\u00b030 (Avril 1872)",
+        "date": "1872-04",
+        "item count": 175,
+        "currency": "FRF",
+        "total price": 2628,
+        "low price": 5,
+        "high price": 1818,
+        "mean price": 15.279069767441861,
+        "median price": 3.0,
+        "mode price": 3,
+        "variance price": 19026.413399134668,
+        "high price items": {
+            "CAT_000024_e2": 1818
+        }
+    },
+    "CAT_000085": {
+        "title": "RDA, N\u00b028 (Ao\u00fbt 1871)",
+        "date": "1871-08",
+        "item count": 261,
+        "currency": "FRF",
+        "total price": 836,
+        "low price": 3,
+        "high price": 2,
+        "mean price": 3.2538910505836576,
+        "median price": 2.5,
+        "mode price": 2,
+        "variance price": 7.381307816923799,
+        "high price items": {
+            "CAT_000085_e106": 30
+        }
+    },
+    "CAT_000048": {
+        "title": "RDA, N\u00b059 (D\u00e9cembre 1879)",
+        "date": "1879-12",
+        "item count": 223,
+        "currency": "FRF",
+        "total price": 1289,
+        "low price": 3,
+        "high price": 3,
+        "mean price": 5.832579185520362,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 96.50138203558487,
+        "high price items": {
+            "CAT_000048_e34": 100
+        }
+    },
+    "CAT_000078": {
+        "title": "RDA, N\u00b091 (Mai 1885)",
+        "date": "1885-05",
+        "item count": 125,
+        "currency": "FRF",
+        "total price": 3687,
+        "low price": 8,
+        "high price": 40,
+        "mean price": 29.496,
+        "median price": 20,
+        "mode price": 20,
+        "variance price": 1125.561984,
+        "high price items": {
+            "CAT_000078_e38": 200
+        }
+    },
+    "CAT_000039": {
+        "title": "RDA, N\u00b049 (Novembre 1876)",
+        "date": "1876-11",
+        "item count": 115,
+        "currency": "FRF",
+        "total price": 556,
+        "low price": 5,
+        "high price": 3,
+        "mean price": 4.87719298245614,
+        "median price": 4.0,
+        "mode price": 3,
+        "variance price": 25.791935980301634,
+        "high price items": {
+            "CAT_000039_e81": 50
+        }
+    },
+    "CAT_000022": {
+        "title": "RDA, N\u00b023 (Octobre 1869)",
+        "date": "1869-10",
+        "item count": 225,
+        "currency": "FRF",
+        "total price": 924,
+        "low price": 1.5,
+        "high price": 6,
+        "mean price": 4.259723502304148,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 40.455352918940726,
+        "high price items": {
+            "CAT_000022_e115": 50,
+            "CAT_000022_e136": 50,
+            "CAT_000022_e200": 50
+        }
+    },
+    "CAT_000045": {
+        "title": "RDA, N\u00b056 (Mars 1879)",
+        "date": "1879-03",
+        "item count": 189,
+        "currency": "FRF",
+        "total price": 1091,
+        "low price": 2,
+        "high price": 5,
+        "mean price": 5.834224598930481,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 24.373588035116818,
+        "high price items": {
+            "CAT_000045_e25": 50
+        }
+    },
+    "CAT_000067": {
+        "title": "RDA, N\u00b080 (Octobre 1883)",
+        "date": "1883-10",
+        "item count": 168,
+        "currency": "FRF",
+        "total price": 3003,
+        "low price": 8,
+        "high price": 7,
+        "mean price": 17.875,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 232.96651785714286,
+        "high price items": {
+            "CAT_000067_e43": 100,
+            "CAT_000067_e136": 100
+        }
+    },
+    "CAT_000053": {
+        "title": "RDA, N\u00b065 (Novembre 1880)",
+        "date": "1880-11",
+        "item count": 220,
+        "currency": "FRF",
+        "total price": 914,
+        "low price": 10,
+        "high price": 3,
+        "mean price": 4.175799086757991,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 12.470144909405558,
+        "high price items": {
+            "CAT_000053_e220": 35
+        }
+    },
+    "CAT_000060": {
+        "title": "RDA, N\u00b072 (Mars 1882)",
+        "date": "1882-03",
+        "item count": 38,
+        "currency": "FRF",
+        "total price": 654,
+        "low price": 8,
+        "high price": 20,
+        "mean price": 17.210526315789473,
+        "median price": 16.5,
+        "mode price": 20,
+        "variance price": 59.16620498614958,
+        "high price items": {
+            "CAT_000060_e19": 40
+        }
+    },
+    "CAT_000007": {
+        "title": "Collection Schuman, 4 et 5 mars 1965",
+        "date": "1965",
+        "item count": 1,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000094": {
+        "title": "Vente Techener, 31/01/1831",
+        "date": "1831",
+        "item count": 56,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000011": {
+        "title": "Collections Braggiotti, Hertz, Manning, Bynner\u2026 (1926)",
+        "date": "1926",
+        "item count": 1,
+        "currency": "USD",
+        "total price": 80,
+        "low price": 80,
+        "high price": 80,
+        "mean price": 80,
+        "median price": 80,
+        "mode price": 80,
+        "variance price": 0,
+        "high price items": {
+            "CAT_000007_e108": 80
+        }
+    },
+    "CAT_000031": {
+        "title": "RDA, N\u00b039 (Mars 1874)",
+        "date": "1874-03",
+        "item count": 149,
+        "currency": "FRF",
+        "total price": 1455,
+        "low price": 3,
+        "high price": 3,
+        "mean price": 9.765100671140939,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 239.34750686905994,
+        "high price items": {
+            "CAT_000031_e87": 125
+        }
+    },
+    "CAT_000013": {
+        "title": "Collection Henry Fatio, premi\u00e8re vente.",
+        "date": "1923",
+        "item count": 1,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000061": {
+        "title": "RDA, N\u00b073 (Mai 1882)",
+        "date": "1882-05",
+        "item count": 146,
+        "currency": "FRF",
+        "total price": 1828,
+        "low price": 3,
+        "high price": 3,
+        "mean price": 12.697916666666666,
+        "median price": 6.5,
+        "mode price": 3,
+        "variance price": 198.99381510416669,
+        "high price items": {
+            "CAT_000061_e110": 100
+        }
+    },
+    "CAT_000074": {
+        "title": "RDA, N\u00b087 (D\u00e9cembre 1884)",
+        "date": "1884-12",
+        "item count": 108,
+        "currency": "FRF",
+        "total price": 2335,
+        "low price": 10,
+        "high price": 11,
+        "mean price": 21.62037037037037,
+        "median price": 19.0,
+        "mode price": 20,
+        "variance price": 226.25402949245543,
+        "high price items": {
+            "CAT_000074_e48": 100,
+            "CAT_000074_e50": 100
+        }
+    },
+    "CAT_000095": {
+        "title": "Collection Bruy\u00e8res-Chalabre",
+        "date": "1833",
+        "item count": 1,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000003": {
+        "title": "LAD, N\u00b0507 (avril 1919)",
+        "date": "1919-04",
+        "item count": 183,
+        "currency": "FRF",
+        "total price": 5774,
+        "low price": 50,
+        "high price": 15,
+        "mean price": 32.438202247191015,
+        "median price": 15.0,
+        "mode price": 10,
+        "variance price": 5321.94281025123,
+        "high price items": {
+            "CAT_000003_e88182": 600
+        }
+    },
+    "CAT_000033": {
+        "title": "RDA, N\u00b041 (Juin 1874)",
+        "date": "1874-06",
+        "item count": 180,
+        "currency": "FRF",
+        "total price": 1343,
+        "low price": 3,
+        "high price": 3,
+        "mean price": 7.5027932960893855,
+        "median price": 5,
+        "mode price": 4,
+        "variance price": 63.75837208576511,
+        "high price items": {
+            "CAT_000033_e126": 70
+        }
+    },
+    "CAT_000082": {
+        "title": "RDA, N\u00b026 (Juillet 1870)",
+        "date": "1870-07",
+        "item count": 220,
+        "currency": "FRF",
+        "total price": 978,
+        "low price": 2,
+        "high price": 2.5,
+        "mean price": 4.446590909090909,
+        "median price": 3.0,
+        "mode price": 3,
+        "variance price": 60.59459065082645,
+        "high price items": {
+            "CAT_000082_e41": 100
+        }
+    },
+    "CAT_000002": {
+        "title": "RDA, N\u00b029 (septembre 1871)",
+        "date": "Septembre - Decembre 1871",
+        "item count": 189,
+        "currency": "FRF",
+        "total price": 989,
+        "low price": 3,
+        "high price": 10,
+        "mean price": 5.317204301075269,
+        "median price": 3.5,
+        "mode price": 3,
+        "variance price": 42.56604809804602,
+        "high price items": {
+            "CAT_000002_e189": 50
+        }
+    },
+    "CAT_000054": {
+        "title": "RDA, N\u00b066 (Janvier 1881)",
+        "date": "1881-01",
+        "item count": 150,
+        "currency": "FRF",
+        "total price": 607,
+        "low price": 5,
+        "high price": 15,
+        "mean price": 4.073825503355705,
+        "median price": 3,
+        "mode price": 3,
+        "variance price": 6.752939056799243,
+        "high price items": {
+            "CAT_000054_e123": 20
+        }
+    },
+    "CAT_000004": {
+        "title": "Vente Etienne Charavay, 30 mai 1986",
+        "date": "1896",
+        "item count": 133,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000087": {
+        "title": "RDA, N\u00b094 (Novembre 1885)",
+        "date": "1885-11",
+        "item count": 202,
+        "currency": "FRF",
+        "total price": 3100,
+        "low price": 10,
+        "high price": 90,
+        "mean price": 15.346534653465346,
+        "median price": 12.0,
+        "mode price": 15,
+        "variance price": 141.98882462503676,
+        "high price items": {
+            "CAT_000087_e2": 90
+        }
+    },
+    "CAT_000062": {
+        "title": "RDA, N\u00b074 (Octobre 1882)",
+        "date": "1882-10",
+        "item count": 154,
+        "currency": "FRF",
+        "total price": 2977,
+        "low price": 18,
+        "high price": 40,
+        "mean price": 19.849,
+        "median price": 17.0,
+        "mode price": 25,
+        "variance price": 176.10498099999998,
+        "high price items": {
+            "CAT_000062_e66": 100
+        }
+    },
+    "CAT_000230": {
+        "title": "CAT_000230",
+        "date": "1895-07",
+        "item count": 308,
+        "currency": "FRF",
+        "total price": 3812,
+        "low price": 8,
+        "high price": 10,
+        "mean price": 12.498360655737704,
+        "median price": 8,
+        "mode price": 5,
+        "variance price": 127.56147272238645,
+        "high price items": {
+            "CAT_000230_e51": 100
+        }
+    },
+    "CAT_000287": {
+        "title": "Vente No\u00ebl Charavay, 27 avril 1903",
+        "date": "1903",
+        "item count": 178,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000257": {
+        "title": "Vente \u00c9tienne Charavay, 13 f\u00e9vrier 1888",
+        "date": "1888",
+        "item count": 198,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000249": {
+        "title": "Vente \u00c9tienne Charavay, 25 juin 1886",
+        "date": "1886",
+        "item count": 173,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000265": {
+        "title": "Vente \u00c9tienne Charavay, 14 mai 1888, collection connue",
+        "date": "1888",
+        "item count": 189,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000296": {
+        "title": "Vente No\u00ebl Charavay, 14 juin 1904",
+        "date": "1904",
+        "item count": 181,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000211": {
+        "title": "Vente \u00c9tienne Charavay, 7 mars 1883, collection d'un amateur espagnol",
+        "date": "1883",
+        "item count": 205,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000236": {
+        "title": "CAT_000236",
+        "date": "1896-03",
+        "item count": 311,
+        "currency": "FRF",
+        "total price": 5350,
+        "low price": 10,
+        "high price": 12,
+        "mean price": 17.313915857605178,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 1469.794660717839,
+        "high price items": {
+            "CAT_000236_e311": 500
+        }
+    },
+    "CAT_000269": {
+        "title": "Vente \u00c9tienne Charavay, 13 juin 1888",
+        "date": "1888",
+        "item count": 174,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000288": {
+        "title": "Vente No\u00ebl Charavay, 25 mai 1903",
+        "date": "1903",
+        "item count": 162,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000266": {
+        "title": "Vente \u00c9tienne Charavay, 15 mai 1888, collection Lefebvre",
+        "date": "1888",
+        "item count": 211,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000238": {
+        "title": "CAT_000238",
+        "date": "1896-05",
+        "item count": 291,
+        "currency": "FRF",
+        "total price": 5366,
+        "low price": 6,
+        "high price": 10,
+        "mean price": 18.631944444444443,
+        "median price": 12.0,
+        "mode price": 10,
+        "variance price": 532.135368441358,
+        "high price items": {
+            "CAT_000238_e180": 200
+        }
+    },
+    "CAT_000293": {
+        "title": "Vente No\u00ebl Charavay, 20 janvier 1904. collection Jaques",
+        "date": "1904",
+        "item count": 161,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000284": {
+        "title": "Vente No\u00ebl Charavay, 13 mars 1903, collection D. L.-C.",
+        "date": "1903",
+        "item count": 192,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000215": {
+        "title": "Vente \u00c9tienne Charavay, 30 mai 1883, collection d'un amateur parisien",
+        "date": "1883",
+        "item count": 131,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000221": {
+        "title": "CAT_000221",
+        "date": "1894-11",
+        "item count": 296,
+        "currency": "FRF",
+        "total price": 4438,
+        "low price": 12,
+        "high price": 18,
+        "mean price": 15.198630136986301,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 253.8646556577219,
+        "high price items": {
+            "CAT_000221_e18": 150
+        }
+    },
+    "CAT_000290": {
+        "title": "Vente No\u00ebl Charavay, 14 novembre 1903, collection le Marquis de PONTOI-PONTCARR\u00c9",
+        "date": "1903",
+        "item count": 158,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000263": {
+        "title": "Vente \u00c9tienne Charavay, 25 avril 1888",
+        "date": "1888",
+        "item count": 185,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000295": {
+        "title": "Vente No\u00ebl Charavay, 28 mai 1904",
+        "date": "1904",
+        "item count": 166,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000235": {
+        "title": "CAT_000235",
+        "date": "1896-01",
+        "item count": 306,
+        "currency": "FRF",
+        "total price": 3961,
+        "low price": 8,
+        "high price": 25,
+        "mean price": 13.247491638795987,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 195.53072113287323,
+        "high price items": {
+            "CAT_000235_e101": 100,
+            "CAT_000235_e180": 100,
+            "CAT_000235_e196": 100,
+            "CAT_000235_e197": 100
+        }
+    },
+    "CAT_000274": {
+        "title": "Vente \u00c9tienne Charavay, 30 janvier 1891",
+        "date": "1891",
+        "item count": 140,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000264": {
+        "title": "Vente \u00c9tienne Charavay, 26 avril 1888",
+        "date": "1888",
+        "item count": 138,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000260": {
+        "title": "Vente \u00c9tienne Charavay, 22 mars 1888",
+        "date": "1888",
+        "item count": 225,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000283": {
+        "title": "Vente No\u00ebl Charavay, 22 janvier 1903",
+        "date": "1903",
+        "item count": 181,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000220": {
+        "title": "Vente \u00c9tienne Charavay, 10 d\u00e9cembre 1883, collection Bayl\u00e9",
+        "date": "1883",
+        "item count": 204,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000275": {
+        "title": "Vente \u00c9tienne Charavay, 25 f\u00e9vrier 1891",
+        "date": "1891",
+        "item count": 150,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000279": {
+        "title": "Vente \u00c9tienne Charavay, 8 d\u00e9cembre 1891",
+        "date": "1891",
+        "item count": 152,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000226": {
+        "title": "CAT_000226",
+        "date": "1895-03",
+        "item count": 312,
+        "currency": "FRF",
+        "total price": 4403,
+        "low price": 15,
+        "high price": 6,
+        "mean price": 14.295454545454545,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 281.27958972845335,
+        "high price items": {
+            "CAT_000226_e300": 200
+        }
+    },
+    "CAT_000213": {
+        "title": "Vente \u00c9tienne Charavay, 2 mai 1883, collection d'un amateur connu",
+        "date": "1883",
+        "item count": 171,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000243": {
+        "title": "Vente \u00c9tienne Charavay, 12 mars 1886, collection Potiquet",
+        "date": "1886",
+        "item count": 214,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000298": {
+        "title": "Vente No\u00ebl Charavay, 26 janvier 1905, collection Mazet",
+        "date": "1905",
+        "item count": 155,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000251": {
+        "title": "Vente \u00c9tienne Charavay, 17 d\u00e9cembre 1886, collection Bayl\u00e9",
+        "date": "1886",
+        "item count": 186,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000244": {
+        "title": "Vente \u00c9tienne Charavay, 21 et 22 avril 1886, collection Dubrunfaut",
+        "date": "1886",
+        "item count": 394,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000204": {
+        "title": "Vente \u00c9tienne Charavay, 30 mai 1882, collection Fillon, Potier etc.",
+        "date": "1882",
+        "item count": 203,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000234": {
+        "title": "CAT_000234",
+        "date": "1895-12",
+        "item count": 300,
+        "currency": "FRF",
+        "total price": 4132,
+        "low price": 5,
+        "high price": 15,
+        "mean price": 13.95945945945946,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 282.6402483564646,
+        "high price items": {
+            "CAT_000234_e45": 200
+        }
+    },
+    "CAT_000278": {
+        "title": "Vente \u00c9tienne Charavay, 5 juin 1891",
+        "date": "1891",
+        "item count": 188,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000250": {
+        "title": "Vente \u00c9tienne Charavay, 2 d\u00e9cembre 1886",
+        "date": "1886",
+        "item count": 178,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000242": {
+        "title": "Vente \u00c9tienne Charavay, 20 f\u00e9vrier 1886, collection baron de G\u00e9rando",
+        "date": "1886",
+        "item count": 200,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000227": {
+        "title": "CAT_000227",
+        "date": "1895-04",
+        "item count": 290,
+        "currency": "FRF",
+        "total price": 3904,
+        "low price": 8,
+        "high price": 6,
+        "mean price": 13.508650519031141,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 219.2810670370326,
+        "high price items": {
+            "CAT_000227_e288": 200
+        }
+    },
+    "CAT_000273": {
+        "title": "Vente \u00c9tienne Charavay, 5 et 6 janvier 1891, collection le marquis de Queux de Saint-Hilaire",
+        "date": "1891",
+        "item count": 335,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000254": {
+        "title": "Vente \u00c9tienne Charavay, 21 janvier 1888",
+        "date": "1888",
+        "item count": 203,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000272": {
+        "title": "Vente \u00c9tienne Charavay, 25 juin 1888, collection Dubrunfaut",
+        "date": "1888",
+        "item count": 193,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000201": {
+        "title": "Vente \u00c9tienne Charavay, 13 mai 1882",
+        "date": "1882",
+        "item count": 126,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000285": {
+        "title": "Vente No\u00ebl Charavay, 20 mars 1903",
+        "date": "1903",
+        "item count": 166,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000229": {
+        "title": "CAT_000229",
+        "date": "1895-06",
+        "item count": 300,
+        "currency": "FRF",
+        "total price": 3434,
+        "low price": 5,
+        "high price": 10,
+        "mean price": 11.48494983277592,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 79.68790058276753,
+        "high price items": {
+            "CAT_000229_e297": 80
+        }
+    },
+    "CAT_000255": {
+        "title": "Vente \u00c9tienne Charavay, 7 f\u00e9vrier 1888",
+        "date": "1888",
+        "item count": 186,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000291": {
+        "title": "Vente No\u00ebl Charavay, 25 novembre 1903",
+        "date": "1903",
+        "item count": 151,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000219": {
+        "title": "Vente \u00c9tienne Charavay, 19 juin 1883",
+        "date": "1883",
+        "item count": 199,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000223": {
+        "title": "Vente \u00c9tienne Charavay, 14 d\u00e9cembre 1883, collection de Lom\u00e9nie",
+        "date": "1883",
+        "item count": 194,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000271": {
+        "title": "Vente \u00c9tienne Charavay, 15 juin 1888",
+        "date": "1888",
+        "item count": 180,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000261": {
+        "title": "Vente \u00c9tienne Charavay, 23 mars 1888",
+        "date": "1888",
+        "item count": 160,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000207": {
+        "title": "Vente \u00c9tienne Charavay, 29 juin 1882",
+        "date": "1882",
+        "item count": 149,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000214": {
+        "title": "Vente \u00c9tienne Charavay, 5 mai 1883, colection Bayl\u00e9",
+        "date": "1883",
+        "item count": 170,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000267": {
+        "title": "Vente \u00c9tienne Charavay, 26 mai 1888. collection Fontaine",
+        "date": "1888",
+        "item count": 202,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000216": {
+        "title": "Vente \u00c9tienne Charavay, 1 juin 1883",
+        "date": "1883",
+        "item count": 182,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000222": {
+        "title": "CAT_000222",
+        "date": "1894-12",
+        "item count": 261,
+        "currency": "FRF",
+        "total price": 5392,
+        "low price": 15,
+        "high price": 25,
+        "mean price": 20.659003831417625,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 4058.9910013064987,
+        "high price items": {
+            "CAT_000222_e261": 1000
+        }
+    },
+    "CAT_000210": {
+        "title": "Vente \u00c9tienne Charavay, 12 f\u00e9vrier 1883, collection Dufaitre",
+        "date": "1883",
+        "item count": 24,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000297": {
+        "title": "Vente No\u00ebl Charavay, 24 novembre 1904",
+        "date": "1904",
+        "item count": 150,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000286": {
+        "title": "Vente No\u00ebl Charavay, 23 mars 1903, collection Dablin",
+        "date": "1903",
+        "item count": 528,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000270": {
+        "title": "Vente \u00c9tienne Charavay, 14 juin 1888, collection Lefebvre",
+        "date": "1888",
+        "item count": 180,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000276": {
+        "title": "Vente \u00c9tienne Charavay, 11 avril 1891",
+        "date": "1891",
+        "item count": 148,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000300": {
+        "title": "Vente No\u00ebl Charavay, 26 mai 1905, collection Mazet",
+        "date": "1905",
+        "item count": 107,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000225": {
+        "title": "CAT_000225",
+        "date": "1895-02",
+        "item count": 299,
+        "currency": "FRF",
+        "total price": 4834,
+        "low price": 3,
+        "high price": 4,
+        "mean price": 16.386440677966103,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 761.9387991956334,
+        "high price items": {
+            "CAT_000225_e129": 350
+        }
+    },
+    "CAT_000268": {
+        "title": "Vente \u00c9tienne Charavay, 28-30 mai 1888, collection baron de Cholet",
+        "date": "1888",
+        "item count": 11,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000218": {
+        "title": "Vente \u00c9tienne Charavay, 18 juin 1883, collection connue",
+        "date": "1883",
+        "item count": 178,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000241": {
+        "title": "Vente \u00c9tienne Charavay, 29 janvier 1886, collection de Musset",
+        "date": "1886",
+        "item count": 172,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000253": {
+        "title": "Vente \u00c9tienne Charavay, 16 janvier 1888, collection Violet d'\u00c9pagny",
+        "date": "1888",
+        "item count": 200,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000281": {
+        "title": "Vente \u00c9tienne Charavay, 22 d\u00e9cembre 1891",
+        "date": "1891",
+        "item count": 152,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000224": {
+        "title": "CAT_000224",
+        "date": "1895-01",
+        "item count": 282,
+        "currency": "FRF",
+        "total price": 5999,
+        "low price": 3,
+        "high price": 6,
+        "mean price": 21.50179211469534,
+        "median price": 12,
+        "mode price": 10,
+        "variance price": 1155.4041186521242,
+        "high price items": {
+            "CAT_000224_e134": 350
+        }
+    },
+    "CAT_000262": {
+        "title": "Vente \u00c9tienne Charavay, 29 mars 1888, collection Dubrunfaut",
+        "date": "1888",
+        "item count": 197,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000247": {
+        "title": "Vente \u00c9tienne Charavay, 9 juin 1886",
+        "date": "1886",
+        "item count": 118,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000299": {
+        "title": "Vente No\u00ebl Charavay, 24 mars 1905",
+        "date": "1905",
+        "item count": 152,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000206": {
+        "title": "Vente \u00c9tienne Charavay, 28 juin 1882, collection Bayl\u00e9",
+        "date": "1882",
+        "item count": 40,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000217": {
+        "title": "Vente \u00c9tienne Charavay, 2 juin 1883, collection de la Marini\u00e8re",
+        "date": "1883",
+        "item count": 202,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000239": {
+        "title": "CAT_000239",
+        "date": "1896-07",
+        "item count": 290,
+        "currency": "FRF",
+        "total price": 4867,
+        "low price": 10,
+        "high price": 3,
+        "mean price": 16.84083044982699,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 1370.6459453311145,
+        "high price items": {
+            "CAT_000239_e289": 450
+        }
+    },
+    "CAT_000232": {
+        "title": "CAT_000232",
+        "date": "1893-02",
+        "item count": 301,
+        "currency": "FRF",
+        "total price": 3836,
+        "low price": 3,
+        "high price": 3,
+        "mean price": 12.744186046511627,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 256.0441937726957,
+        "high price items": {
+            "CAT_000232_e18": 200
+        }
+    },
+    "CAT_000292": {
+        "title": "Vente No\u00ebl Charavay, 19 d\u00e9cembre 1903",
+        "date": "1903",
+        "item count": 160,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000289": {
+        "title": "Vente No\u00ebl Charavay, 15 juin 1903",
+        "date": "1903",
+        "item count": 171,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000246": {
+        "title": "Vente \u00c9tienne Charavay, 15 mai 1886, collection connue",
+        "date": "1886",
+        "item count": 173,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000202": {
+        "title": "Vente \u00c9tienne Charavay, 23 mai 1882, collection connue",
+        "date": "1882",
+        "item count": 64,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000233": {
+        "title": "CAT_000233",
+        "date": "1893-02",
+        "item count": 288,
+        "currency": "FRF",
+        "total price": 3687,
+        "low price": 3,
+        "high price": 4,
+        "mean price": 12.846689895470384,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 156.68729740557734,
+        "high price items": {
+            "CAT_000233_e245": 120
+        }
+    },
+    "CAT_000277": {
+        "title": "Vente \u00c9tienne Charavay, 30 mai 1891, collection diverses",
+        "date": "1891",
+        "item count": 202,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000208": {
+        "title": "Vente \u00c9tienne Charavay, 20 d\u00e9cembre 1882",
+        "date": "1882",
+        "item count": 227,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000209": {
+        "title": "Vente \u00c9tienne Charavay, 29 et 30 janvier 1883, collection Dubrunfaut",
+        "date": "1883",
+        "item count": 455,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000245": {
+        "title": "Vente \u00c9tienne Charavay, 13 mai 1886, collection d'un amateur du Nord de la France",
+        "date": "1886",
+        "item count": 292,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000294": {
+        "title": "Vente No\u00ebl Charavay, 25 f\u00e9vrier 1904",
+        "date": "1904",
+        "item count": 160,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000203": {
+        "title": "Vente \u00c9tienne Charavay, 25 mai 1882, collection d'un amateur russe",
+        "date": "1882",
+        "item count": 294,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000256": {
+        "title": "Vente \u00c9tienne Charavay, 11 f\u00e9vrier 1888",
+        "date": "1888",
+        "item count": 168,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000212": {
+        "title": "Vente \u00c9tienne Charavay, 6 avril 1883, collection de Musset",
+        "date": "1883",
+        "item count": 156,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000252": {
+        "title": "Vente \u00c9tienne Charavay, 27 d\u00e9cembre 1886",
+        "date": "1886",
+        "item count": 63,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000259": {
+        "title": "Vente \u00c9tienne Charavay, 7 mars 1888",
+        "date": "1888",
+        "item count": 185,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000248": {
+        "title": "Vente \u00c9tienne Charavay, 10 juin 1886",
+        "date": "1886",
+        "item count": 80,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000205": {
+        "title": "Vente \u00c9tienne Charavay, 27 juin 1882, collection de S***",
+        "date": "1882",
+        "item count": 131,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000258": {
+        "title": "Vente \u00c9tienne Charavay, 27 et 28 f\u00e9vrier 1888, collection T\u00e9chener",
+        "date": "1888",
+        "item count": 419,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000237": {
+        "title": "CAT_000237",
+        "date": "1896-04",
+        "item count": 294,
+        "currency": "FRF",
+        "total price": 3665,
+        "low price": 4,
+        "high price": 5,
+        "mean price": 12.465986394557824,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 125.4189111018557,
+        "high price items": {
+            "CAT_000237_e54": 80,
+            "CAT_000237_e118": 80,
+            "CAT_000237_e155": 80
+        }
+    },
+    "CAT_000280": {
+        "title": "Vente \u00c9tienne Charavay, 7 f\u00e9vrier 1894",
+        "date": "1894",
+        "item count": 114,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000228": {
+        "title": "CAT_000228",
+        "date": "1895-05",
+        "item count": 302,
+        "currency": "FRF",
+        "total price": 3997,
+        "low price": 3,
+        "high price": 12,
+        "mean price": 13.503378378378379,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 661.5337723703433,
+        "high price items": {
+            "CAT_000228_e162": 400
+        }
+    },
+    "CAT_000423": {
+        "title": "RDA, N\u00b0220 (Mars 1899)",
+        "date": "1899-03",
+        "item count": 320,
+        "currency": "FRF",
+        "total price": 4546,
+        "low price": 10,
+        "high price": 5,
+        "mean price": 14.477707006369426,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 600.905553977849,
+        "high price items": {
+            "CAT_000423_e6": 300
+        }
+    },
+    "CAT_000429": {
+        "title": "RDA, N\u00b0227 (Octobre 1899)",
+        "date": "1899-10",
+        "item count": 279,
+        "currency": "FRF",
+        "total price": 5887,
+        "low price": 6,
+        "high price": 5,
+        "mean price": 21.643382352941178,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 6401.413265030276,
+        "high price items": {
+            "CAT_000429_e32": 1000
+        }
+    },
+    "CAT_000417": {
+        "title": "DA, N\u00b0214 (Septembre 1898)",
+        "date": "1898-09",
+        "item count": 336,
+        "currency": "FRF",
+        "total price": 5055,
+        "low price": 3,
+        "high price": 10,
+        "mean price": 15.318181818181818,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 613.4290633608815,
+        "high price items": {
+            "CAT_000417_e330": 300
+        }
+    },
+    "CAT_000422": {
+        "title": "RDA, N\u00b0219 (F\u00e9vrier 1899)",
+        "date": "1899-02",
+        "item count": 300,
+        "currency": "FRF",
+        "total price": 4505,
+        "low price": 15,
+        "high price": 6,
+        "mean price": 15.219594594594595,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 1114.1713728086195,
+        "high price items": {
+            "CAT_000422_e316": 500
+        }
+    },
+    "CAT_000427": {
+        "title": "RDA, N\u00b0225 (Ao\u00fbt 1899)",
+        "date": "1899-08",
+        "item count": 291,
+        "currency": "FRF",
+        "total price": 3997,
+        "low price": 4,
+        "high price": 5,
+        "mean price": 14.123674911660778,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 279.6702168837169,
+        "high price items": {
+            "CAT_000427_e290": 175
+        }
+    },
+    "CAT_000418": {
+        "title": "RDA, N\u00b0215 (Octobre 1898)",
+        "date": "1898-10",
+        "item count": 310,
+        "currency": "FRF",
+        "total price": 5632,
+        "low price": 5,
+        "high price": 35,
+        "mean price": 18.405228758169933,
+        "median price": 10.0,
+        "mode price": 15,
+        "variance price": 1811.6723909607417,
+        "high price items": {
+            "CAT_000418_e103": 500
+        }
+    },
+    "CAT_000428": {
+        "title": "RDA, N\u00b0226 (Septembre 1899)",
+        "date": "1899-09",
+        "item count": 293,
+        "currency": "FRF",
+        "total price": 4571,
+        "low price": 20,
+        "high price": 8,
+        "mean price": 15.928571428571429,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 462.243155798905,
+        "high price items": {
+            "CAT_000428_e270": 200
+        }
+    },
+    "CAT_000419": {
+        "title": "RDA, N\u00b0216 (Novembre 1898)",
+        "date": "1898-11",
+        "item count": 327,
+        "currency": "FRF",
+        "total price": 3958,
+        "low price": 10,
+        "high price": 6,
+        "mean price": 12.178461538461539,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 110.82353609467455,
+        "high price items": {
+            "CAT_000419_e131": 125
+        }
+    },
+    "CAT_000431": {
+        "title": "RDA, N\u00b0229 (D\u00e9cembre 1899)",
+        "date": "1900-01",
+        "item count": 327,
+        "currency": "FRF",
+        "total price": 5632,
+        "low price": 5,
+        "high price": 2,
+        "mean price": 17.436532507739937,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 10115.725848038417,
+        "high price items": {
+            "CAT_000431_e183": 1812
+        }
+    },
+    "CAT_000424": {
+        "title": "RDA, N\u00b0222 (Avril 1899)",
+        "date": "1899-05",
+        "item count": 277,
+        "currency": "FRF",
+        "total price": 4674,
+        "low price": 5,
+        "high price": 3,
+        "mean price": 16.934782608695652,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 631.1334278512918,
+        "high price items": {
+            "CAT_000424_e66": 300
+        }
+    },
+    "CAT_000425": {
+        "title": "RDA, N\u00b0223 (Juin 1899)",
+        "date": "1899-06",
+        "item count": 266,
+        "currency": "FRF",
+        "total price": 4518,
+        "low price": 8,
+        "high price": 15,
+        "mean price": 17.376923076923077,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 635.0963905325444,
+        "high price items": {
+            "CAT_000425_e77": 250
+        }
+    },
+    "CAT_000430": {
+        "title": "RDA, N\u00b0229 (D\u00e9cembre 1899)",
+        "date": "1899-12",
+        "item count": 311,
+        "currency": "FRF",
+        "total price": 8849,
+        "low price": 5,
+        "high price": 5,
+        "mean price": 28.63915857605178,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 30094.915909971623,
+        "high price items": {
+            "CAT_000430_e309": 3000
+        }
+    },
+    "CAT_000421": {
+        "title": "RDA, N\u00b0218 (Janvier 1899)",
+        "date": "1899-01",
+        "item count": 316,
+        "currency": "FRF",
+        "total price": 5390,
+        "low price": 5,
+        "high price": 20,
+        "mean price": 17.275641025641026,
+        "median price": 12.0,
+        "mode price": 10,
+        "variance price": 446.6868425378041,
+        "high price items": {
+            "CAT_000421_e147": 250
+        }
+    },
+    "CAT_000401": {
+        "title": "catalogue Laverdet, novembre-d\u00e9cembre 1860, n\u00ba 30",
+        "date": "novembre-d\u00e9cembre 1860",
+        "item count": 100,
+        "currency": "FRF",
+        "total price": 1476,
+        "low price": 1.5,
+        "high price": 3.5,
+        "mean price": 14.761,
+        "median price": 6.0,
+        "mode price": 3,
+        "variance price": 1353.835729,
+        "high price items": {
+            "CAT_000401_e5489": 350
+        }
+    },
+    "CAT_000420": {
+        "title": "RDA, N\u00b0217 (D\u00e9cembre 1898)",
+        "date": "1898-12",
+        "item count": 311,
+        "currency": "FRF",
+        "total price": 6010,
+        "low price": 4,
+        "high price": 3,
+        "mean price": 19.640522875816995,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 1195.4394036481694,
+        "high price items": {
+            "CAT_000420_e140": 350
+        }
+    },
+    "CAT_000426": {
+        "title": "RDA, N\u00b0224 (juillet 1899)",
+        "date": "1899-07",
+        "item count": 277,
+        "currency": "FRF",
+        "total price": 4194,
+        "low price": 10,
+        "high price": 6,
+        "mean price": 15.591078066914498,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 356.6654966072885,
+        "high price items": {
+            "CAT_000426_e142": 200
+        }
+    },
+    "CAT_000171": {
+        "title": "RDA, N\u00b0161 (D\u00e9cembre 1893)",
+        "date": "1893-12",
+        "item count": 296,
+        "currency": "FRF",
+        "total price": 3838,
+        "low price": 35,
+        "high price": 12,
+        "mean price": 13.098976109215018,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 167.14037437826883,
+        "high price items": {
+            "CAT_000171_e126": 100,
+            "CAT_000171_e159": 100,
+            "CAT_000171_e261": 100
+        }
+    },
+    "CAT_000125": {
+        "title": "RDA, N\u00b0122 (Avril 1889)",
+        "date": "1889-10",
+        "item count": 381,
+        "currency": "FRF",
+        "total price": 3649,
+        "low price": 8,
+        "high price": 10,
+        "mean price": 9.654761904761905,
+        "median price": 5.0,
+        "mode price": 3,
+        "variance price": 109.97406462585035,
+        "high price items": {
+            "CAT_000125_e172": 75,
+            "CAT_000125_e378": 75
+        }
+    },
+    "CAT_000126": {
+        "title": "RDA, N\u00b0123 (Novembre 1889)",
+        "date": "1889-11",
+        "item count": 287,
+        "currency": "FRF",
+        "total price": 4368,
+        "low price": 2,
+        "high price": 18,
+        "mean price": 15.326315789473684,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 343.637377654663,
+        "high price items": {
+            "CAT_000126_e240": 173
+        }
+    },
+    "CAT_000158": {
+        "title": "RDA, N\u00b0155 (Mai 1893)",
+        "date": "1893-05",
+        "item count": 291,
+        "currency": "FRF",
+        "total price": 4117,
+        "low price": 8,
+        "high price": 3,
+        "mean price": 14.496478873239436,
+        "median price": 8.0,
+        "mode price": 5,
+        "variance price": 370.4330861932156,
+        "high price items": {
+            "CAT_000158_e112": 150
+        }
+    },
+    "CAT_000184": {
+        "title": "Vente \u00c9tienne Charavay, 19 f\u00e9vrier 1881",
+        "date": "1881",
+        "item count": 78,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000186": {
+        "title": "Vente \u00c9tienne Charavay, 17 mars 1881",
+        "date": "1881",
+        "item count": 269,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000115": {
+        "title": "RDA, N\u00b0113 (Avril-mai 1887)",
+        "date": "1888-03",
+        "item count": 290,
+        "currency": "FRF",
+        "total price": 3323,
+        "low price": 2,
+        "high price": 20,
+        "mean price": 11.700704225352112,
+        "median price": 8.0,
+        "mode price": 5,
+        "variance price": 175.61816851815115,
+        "high price items": {
+            "CAT_000115_e188": 150
+        }
+    },
+    "CAT_000156": {
+        "title": "RDA, N\u00b0153 (Mars 1893)",
+        "date": "1893-03",
+        "item count": 328,
+        "currency": "FRF",
+        "total price": 4176,
+        "low price": 4,
+        "high price": 10,
+        "mean price": 12.88888888888889,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 177.58024691358025,
+        "high price items": {
+            "CAT_000156_e169": 130
+        }
+    },
+    "CAT_000122": {
+        "title": "RDA, N\u00b0119 (Mars 1889)",
+        "date": "1889-03",
+        "item count": 224,
+        "currency": "FRF",
+        "total price": 5135,
+        "low price": 15,
+        "high price": 5,
+        "mean price": 23.026905829596412,
+        "median price": 16,
+        "mode price": 15,
+        "variance price": 940.707796255706,
+        "high price items": {
+            "CAT_000122_e171": 250,
+            "CAT_000122_e218": 250
+        }
+    },
+    "CAT_000164": {
+        "title": "Vente Etienne Charavay, 20 mai 1879",
+        "date": "1879",
+        "item count": 174,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000166": {
+        "title": "Vente Etienne Charavay, 13 et 14 juin 1879",
+        "date": "1879",
+        "item count": 410,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000110": {
+        "title": "RDA, N\u00b0107 (Septembre 1887)",
+        "date": "1887-09",
+        "item count": 355,
+        "currency": "FRF",
+        "total price": 7244,
+        "low price": 2,
+        "high price": 15,
+        "mean price": 20.579829545454544,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 619.2132579254907,
+        "high price items": {
+            "CAT_000110_e280": 300
+        }
+    },
+    "CAT_000176": {
+        "title": "Vente \u00c9tienne Charavay, 14 juillet 1879",
+        "date": "1879",
+        "item count": 173,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000138": {
+        "title": "RDA, N\u00b0135 (Avril 1891)",
+        "date": "1891-03",
+        "item count": 329,
+        "currency": "FRF",
+        "total price": 7336,
+        "low price": 10,
+        "high price": 15,
+        "mean price": 22.78416149068323,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 903.7958050422437,
+        "high price items": {
+            "CAT_000138_e203": 375
+        }
+    },
+    "CAT_000103": {
+        "title": "RDA, N\u00b0100 (Octobre 1886)",
+        "date": "1886-10",
+        "item count": 345,
+        "currency": "FRF",
+        "total price": 3177,
+        "low price": 3,
+        "high price": 3,
+        "mean price": 9.262390670553936,
+        "median price": 5,
+        "mode price": 5,
+        "variance price": 820.0069528852773,
+        "high price items": {
+            "CAT_000103_e194": 500
+        }
+    },
+    "CAT_000152": {
+        "title": "RDA, N\u00b0149 (Novembre 1892)",
+        "date": "1892-11",
+        "item count": 312,
+        "currency": "FRF",
+        "total price": 4537,
+        "low price": 2,
+        "high price": 3,
+        "mean price": 14.588424437299036,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 319.61195603850246,
+        "high price items": {
+            "CAT_000152_e312": 200
+        }
+    },
+    "CAT_000189": {
+        "title": "Vente \u00c9tienne Charavay, 4 juillet 1881, collection d'un amateur anglais",
+        "date": "1881",
+        "item count": 222,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000157": {
+        "title": "RDA, N\u00b0154 (Avril 1893)",
+        "date": "1893-04",
+        "item count": 299,
+        "currency": "FRF",
+        "total price": 4531,
+        "low price": 5,
+        "high price": 12,
+        "mean price": 15.307432432432432,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 517.9021069211103,
+        "high price items": {
+            "CAT_000157_e252": 250
+        }
+    },
+    "CAT_000170": {
+        "title": "RDA, N\u00b0160 (Novembre 1893)",
+        "date": "1893-11",
+        "item count": 300,
+        "currency": "FRF",
+        "total price": 4306,
+        "low price": 6,
+        "high price": 65,
+        "mean price": 14.40133779264214,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 395.79210523372217,
+        "high price items": {
+            "CAT_000170_e185": 200
+        }
+    },
+    "CAT_000196": {
+        "title": "Vente \u00c9tienne Charavay, 22 avril 1882, collection Bayl\u00e9",
+        "date": "1882",
+        "item count": 206,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000101": {
+        "title": "RDA, N\u00b098 (Mars-Avril 1886)",
+        "date": "1886-03",
+        "item count": 254,
+        "currency": "FRF",
+        "total price": 3718,
+        "low price": 5,
+        "high price": 8,
+        "mean price": 14.753968253968255,
+        "median price": 5.0,
+        "mode price": 3,
+        "variance price": 1257.7847064751827,
+        "high price items": {
+            "CAT_000101_e134": 300,
+            "CAT_000101_e210": 300
+        }
+    },
+    "CAT_000102": {
+        "title": "RDA, N\u00b099 (Mai-Juillet 1886)",
+        "date": "1886-05",
+        "item count": 291,
+        "currency": "FRF",
+        "total price": 7356,
+        "low price": 10,
+        "high price": 12,
+        "mean price": 25.36551724137931,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 1980.8732936979789,
+        "high price items": {
+            "CAT_000102_e172": 700
+        }
+    },
+    "CAT_000174": {
+        "title": "RDA, N\u00b0164 (Mars 1894)",
+        "date": "1894-03",
+        "item count": 288,
+        "currency": "FRF",
+        "total price": 4237,
+        "low price": 10,
+        "high price": 3,
+        "mean price": 14.711805555555555,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 249.60791618441357,
+        "high price items": {
+            "CAT_000174_e37": 200
+        }
+    },
+    "CAT_000182": {
+        "title": "Vente \u00c9tienne Charavay, 18 d\u00e9cembre 1880",
+        "date": "1880",
+        "item count": 249,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000195": {
+        "title": "Vente \u00c9tienne Charavay, 24 et 25 mars 1880, collection Lefebvre",
+        "date": "1880",
+        "item count": 375,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000151": {
+        "title": "RDA, N\u00b0148 (Octobre 1892)",
+        "date": "1892-10",
+        "item count": 336,
+        "currency": "FRF",
+        "total price": 5808,
+        "low price": 25,
+        "high price": 50,
+        "mean price": 17.44144144144144,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 1057.694018342667,
+        "high price items": {
+            "CAT_000151_e295": 500
+        }
+    },
+    "CAT_000107": {
+        "title": "RDA, N\u00b0104 (Mars 1887)",
+        "date": "1887-03",
+        "item count": 273,
+        "currency": "FRF",
+        "total price": 7948,
+        "low price": 15,
+        "high price": 6,
+        "mean price": 29.65671641791045,
+        "median price": 12.0,
+        "mode price": 5,
+        "variance price": 2236.611633994208,
+        "high price items": {
+            "CAT_000107_e33": 400
+        }
+    },
+    "CAT_000192": {
+        "title": "Vente \u00c9tienne Charavay, 14 mars 1882, collection d'un amateur connu",
+        "date": "1882",
+        "item count": 267,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000154": {
+        "title": "RDA, N\u00b0151 (Janvier 1893)",
+        "date": "1893-01",
+        "item count": 288,
+        "currency": "FRF",
+        "total price": 3956,
+        "low price": 30,
+        "high price": 20,
+        "mean price": 13.832167832167832,
+        "median price": 10.0,
+        "mode price": 5,
+        "variance price": 182.39840579001418,
+        "high price items": {
+            "CAT_000154_e166": 100
+        }
+    },
+    "CAT_000155": {
+        "title": "RDA, N\u00b0152 (F\u00e9vrier 1893)",
+        "date": "1893-02",
+        "item count": 317,
+        "currency": "FRF",
+        "total price": 3816,
+        "low price": 5,
+        "high price": 8,
+        "mean price": 12.23076923076923,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 204.6839250493097,
+        "high price items": {
+            "CAT_000155_e22": 150,
+            "CAT_000155_e215": 150
+        }
+    },
+    "CAT_000140": {
+        "title": "RDA, N\u00b0137 (Mai 1891)",
+        "date": "1891-05",
+        "item count": 406,
+        "currency": "FRF",
+        "total price": 6699,
+        "low price": 22,
+        "high price": 8,
+        "mean price": 16.87455919395466,
+        "median price": 15,
+        "mode price": 15,
+        "variance price": 210.79847115329707,
+        "high price items": {
+            "CAT_000140_e77": 120
+        }
+    },
+    "CAT_000105": {
+        "title": "RDA, N\u00b0102 (D\u00e9cembre 1886)",
+        "date": "1886-12",
+        "item count": 248,
+        "currency": "FRF",
+        "total price": 3904,
+        "low price": 20,
+        "high price": 15,
+        "mean price": 16.268333333333334,
+        "median price": 11.0,
+        "mode price": 15,
+        "variance price": 288.8669972222222,
+        "high price items": {
+            "CAT_000105_e186": 150
+        }
+    },
+    "CAT_000131": {
+        "title": "RDA, N\u00b0128 (Mai 1890)",
+        "date": "1890-05",
+        "item count": 281,
+        "currency": "FRF",
+        "total price": 4985,
+        "low price": 8,
+        "high price": 10,
+        "mean price": 17.8673835125448,
+        "median price": 10,
+        "mode price": 8,
+        "variance price": 778.0791870608035,
+        "high price items": {
+            "CAT_000131_e204": 300
+        }
+    },
+    "CAT_000162": {
+        "title": "Vente Etienne Charavay, 15 f\u00e9vrier 1879",
+        "date": "1879",
+        "item count": 161,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000175": {
+        "title": "RDA, N\u00b0165 (Avril 1894)",
+        "date": "1894-04",
+        "item count": 277,
+        "currency": "FRF",
+        "total price": 5045,
+        "low price": 3,
+        "high price": 5,
+        "mean price": 18.685185185185187,
+        "median price": 10.0,
+        "mode price": 5,
+        "variance price": 749.4305212620027,
+        "high price items": {
+            "CAT_000175_e90": 220
+        }
+    },
+    "CAT_000139": {
+        "title": "RDA, N\u00b0136 (Mars 1891)",
+        "date": "1891-04",
+        "item count": 402,
+        "currency": "FRF",
+        "total price": 7825,
+        "low price": 40,
+        "high price": 12,
+        "mean price": 19.56325,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 412.3284744375,
+        "high price items": {
+            "CAT_000139_e47": 200,
+            "CAT_000139_e138": 200
+        }
+    },
+    "CAT_000165": {
+        "title": "RDA, N\u00b0158 (Ao\u00fbt-Septembre 1893)",
+        "date": "1893-08",
+        "item count": 281,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000148": {
+        "title": "RDA, N\u00b0145 (Mai 1892)",
+        "date": "1892-05",
+        "item count": 278,
+        "currency": "FRF",
+        "total price": 5365,
+        "low price": 15,
+        "high price": 20,
+        "mean price": 19.944237918215613,
+        "median price": 15,
+        "mode price": 15,
+        "variance price": 783.3017233039898,
+        "high price items": {
+            "CAT_000148_e126": 400
+        }
+    },
+    "CAT_000173": {
+        "title": "RDA, N\u00b0163 (F\u00e9vrier 1894)",
+        "date": "1894-02",
+        "item count": 301,
+        "currency": "FRF",
+        "total price": 3910,
+        "low price": 5,
+        "high price": 10,
+        "mean price": 13.164983164983164,
+        "median price": 10,
+        "mode price": 5,
+        "variance price": 195.85493543742703,
+        "high price items": {
+            "CAT_000173_e252": 150
+        }
+    },
+    "CAT_000193": {
+        "title": "Vente \u00c9tienne Charavay, 3 avril 1882, collection Pochet-Deroche",
+        "date": "1882",
+        "item count": 84,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000190": {
+        "title": "Vente \u00c9tienne Charavay, 28 novembre 1881, collection d'un amateur anglais",
+        "date": "1881",
+        "item count": 248,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000132": {
+        "title": "RDA, N\u00b0129 (Juin 1890)",
+        "date": "1890-06",
+        "item count": 372,
+        "currency": "FRF",
+        "total price": 4477,
+        "low price": 6,
+        "high price": 15,
+        "mean price": 12.100810810810811,
+        "median price": 8.0,
+        "mode price": 3,
+        "variance price": 178.56467501826148,
+        "high price items": {
+            "CAT_000132_e232": 140
+        }
+    },
+    "CAT_000106": {
+        "title": "RDA, N\u00b0103 (Janvier 1887)",
+        "date": "1887-01",
+        "item count": 295,
+        "currency": "FRF",
+        "total price": 4178,
+        "low price": 3,
+        "high price": 25,
+        "mean price": 14.164406779661016,
+        "median price": 6,
+        "mode price": 5,
+        "variance price": 1033.1094110887675,
+        "high price items": {
+            "CAT_000106_e43": 400
+        }
+    },
+    "CAT_000130": {
+        "title": "RDA, N\u00b0127 (Avril 1890)",
+        "date": "1890-04",
+        "item count": 263,
+        "currency": "FRF",
+        "total price": 4702,
+        "low price": 18,
+        "high price": 20,
+        "mean price": 18.085,
+        "median price": 15.0,
+        "mode price": 10,
+        "variance price": 274.28050576923073,
+        "high price items": {
+            "CAT_000130_e93": 100
+        }
+    },
+    "CAT_000178": {
+        "title": "Vente \u00c9tienne Charavay, 4 mars 1880, collection Mah\u00e9rault",
+        "date": "1880",
+        "item count": 252,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000141": {
+        "title": "RDA, N\u00b0138 (Juin 1891)",
+        "date": "1891-06",
+        "item count": 311,
+        "currency": "FRF",
+        "total price": 6561,
+        "low price": 5,
+        "high price": 22,
+        "mean price": 21.511475409836066,
+        "median price": 15,
+        "mode price": 15,
+        "variance price": 509.3842945444773,
+        "high price items": {
+            "CAT_000141_e104": 150,
+            "CAT_000141_e133": 150
+        }
+    },
+    "CAT_000183": {
+        "title": "Vente \u00c9tienne Charavay, 24 janvier 1881, collection de Forge",
+        "date": "1881",
+        "item count": 75,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000185": {
+        "title": "Vente \u00c9tienne Charavay, 7 mars 1881, collection Chambry",
+        "date": "1881",
+        "item count": 674,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000146": {
+        "title": "RDA, N\u00b0143 (Mars 1892)",
+        "date": "1892-03",
+        "item count": 277,
+        "currency": "FRF",
+        "total price": 5295,
+        "low price": 10,
+        "high price": 15,
+        "mean price": 19.257454545454546,
+        "median price": 15,
+        "mode price": 15,
+        "variance price": 593.9654989752066,
+        "high price items": {
+            "CAT_000146_e276": 300
+        }
+    },
+    "CAT_000133": {
+        "title": "RDA, N\u00b0130 (Octobre 1890)",
+        "date": "1890-10",
+        "item count": 331,
+        "currency": "FRF",
+        "total price": 7077,
+        "low price": 18,
+        "high price": 10,
+        "mean price": 21.51063829787234,
+        "median price": 15,
+        "mode price": 20,
+        "variance price": 388.8334734527582,
+        "high price items": {
+            "CAT_000133_e299": 150
+        }
+    },
+    "CAT_000109": {
+        "title": "RDA, N\u00b0106 (Juin 1887)",
+        "date": "1887-06",
+        "item count": 384,
+        "currency": "FRF",
+        "total price": 4578,
+        "low price": 3,
+        "high price": 2,
+        "mean price": 11.954308093994777,
+        "median price": 6,
+        "mode price": 5,
+        "variance price": 1202.1630558528589,
+        "high price items": {
+            "CAT_000109_e354": 500
+        }
+    },
+    "CAT_000199": {
+        "title": "RDA, N\u00b0169 (Ao\u00fbt-septembre 1894)",
+        "date": "1894-08",
+        "item count": 301,
+        "currency": "FRF",
+        "total price": 3778,
+        "low price": 2,
+        "high price": 6,
+        "mean price": 12.806779661016948,
+        "median price": 8,
+        "mode price": 5,
+        "variance price": 236.92876759551854,
+        "high price items": {
+            "CAT_000199_e220": 150
+        }
+    },
+    "CAT_000167": {
+        "title": "Vente No\u00ebl Charavay, 5 juin 1897",
+        "date": "1897",
+        "item count": 115,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000142": {
+        "title": "RDA, N\u00b0139 (Octobre 1891)",
+        "date": "1891-10",
+        "item count": 268,
+        "currency": "FRF",
+        "total price": 5881,
+        "low price": 10,
+        "high price": 4,
+        "mean price": 22.36235741444867,
+        "median price": 18,
+        "mode price": 20,
+        "variance price": 552.8439442524831,
+        "high price items": {
+            "CAT_000142_e228": 250
+        }
+    },
+    "CAT_000112": {
+        "title": "RDA, N\u00b0109 (Novembre 1887)",
+        "date": "1887-11",
+        "item count": 262,
+        "currency": "FRF",
+        "total price": 5089,
+        "low price": 5,
+        "high price": 3,
+        "mean price": 19.801556420233464,
+        "median price": 12,
+        "mode price": 15,
+        "variance price": 725.6921376553771,
+        "high price items": {
+            "CAT_000112_e181": 200,
+            "CAT_000112_e209": 200
+        }
+    },
+    "CAT_000188": {
+        "title": "Vente \u00c9tienne Charavay, 20 juin 1881",
+        "date": "1881",
+        "item count": 251,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000134": {
+        "title": "RDA, N\u00b0131 (Novembre 1890)",
+        "date": "1890-11",
+        "item count": 333,
+        "currency": "FRF",
+        "total price": 4173,
+        "low price": 5,
+        "high price": 15,
+        "mean price": 18.467477876106194,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 224.40302416986452,
+        "high price items": {
+            "CAT_000134_e79": 100
+        }
+    },
+    "CAT_000168": {
+        "title": "Vente Etienne Charavay, 12 juillet 1879",
+        "date": "1879",
+        "item count": 173,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000116": {
+        "title": "RDA, N\u00b0112 (Mars 1887)",
+        "date": "1888-05",
+        "item count": 316,
+        "currency": "FRF",
+        "total price": 3317,
+        "low price": 3,
+        "high price": 8,
+        "mean price": 10.532380952380953,
+        "median price": 8,
+        "mode price": 10,
+        "variance price": 176.6951419501134,
+        "high price items": {
+            "CAT_000116_e67": 150
+        }
+    },
+    "CAT_000194": {
+        "title": "RDA, N\u00b0166 (Mai 1894)",
+        "date": "1894-05",
+        "item count": 283,
+        "currency": "FRF",
+        "total price": 4801,
+        "low price": 3,
+        "high price": 4,
+        "mean price": 17.085409252669038,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 748.76138853358,
+        "high price items": {
+            "CAT_000194_e238": 250,
+            "CAT_000194_e283": 250
+        }
+    },
+    "CAT_000111": {
+        "title": "RDA, N\u00b0108 (Octobre 1887)",
+        "date": "1887-10",
+        "item count": 300,
+        "currency": "FRF",
+        "total price": 6568,
+        "low price": 3,
+        "high price": 4,
+        "mean price": 22.040268456375838,
+        "median price": 12.0,
+        "mode price": 20,
+        "variance price": 1610.031935498401,
+        "high price items": {
+            "CAT_000111_e171": 500
+        }
+    },
+    "CAT_000147": {
+        "title": "RDA, N\u00b0144 (Avril 1892)",
+        "date": "1892-04",
+        "item count": 232,
+        "currency": "FRF",
+        "total price": 5023,
+        "low price": 22,
+        "high price": 15,
+        "mean price": 21.744588744588743,
+        "median price": 15,
+        "mode price": 20,
+        "variance price": 572.1468863027304,
+        "high price items": {
+            "CAT_000147_e55": 175
+        }
+    },
+    "CAT_000137": {
+        "title": "RDA, N\u00b0134 (F\u00e9vrier 1891)",
+        "date": "1891-02",
+        "item count": 275,
+        "currency": "FRF",
+        "total price": 4017,
+        "low price": 26,
+        "high price": 11,
+        "mean price": 14.822878228782288,
+        "median price": 12,
+        "mode price": 8,
+        "variance price": 142.7435356272382,
+        "high price items": {
+            "CAT_000137_e154": 85
+        }
+    },
+    "CAT_000127": {
+        "title": "RDA, N\u00b0124 (D\u00e9cembre 1889)",
+        "date": "1889-12",
+        "item count": 222,
+        "currency": "FRF",
+        "total price": 4449,
+        "low price": 8.5,
+        "high price": 15,
+        "mean price": 20.225,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 601.7982386363636,
+        "high price items": {
+            "CAT_000127_e174": 223
+        }
+    },
+    "CAT_000119": {
+        "title": "RDA, N\u00b0116 (Novembre 1888)",
+        "date": "1888-11",
+        "item count": 252,
+        "currency": "FRF",
+        "total price": 5457,
+        "low price": 15,
+        "high price": 3,
+        "mean price": 22.006491935483872,
+        "median price": 11.0,
+        "mode price": 3,
+        "variance price": 698.5934340644511,
+        "high price items": {
+            "CAT_000119_e49": 175,
+            "CAT_000119_e61": 175
+        }
+    },
+    "CAT_000200": {
+        "title": "RDA, N\u00b0170 (Octobre 1894)",
+        "date": "1894-10",
+        "item count": 290,
+        "currency": "FRF",
+        "total price": 4808,
+        "low price": 20,
+        "high price": 10,
+        "mean price": 16.87017543859649,
+        "median price": 12,
+        "mode price": 10,
+        "variance price": 348.8357771622037,
+        "high price items": {
+            "CAT_000200_e267": 200
+        }
+    },
+    "CAT_000108": {
+        "title": "RDA, N\u00b0105 (Avril 1887)",
+        "date": "1887-04",
+        "item count": 357,
+        "currency": "FRF",
+        "total price": 2547,
+        "low price": 4,
+        "high price": 3,
+        "mean price": 7.175774647887324,
+        "median price": 5,
+        "mode price": 5,
+        "variance price": 130.04814552668122,
+        "high price items": {
+            "CAT_000108_e236": 200
+        }
+    },
+    "CAT_000150": {
+        "title": "RDA, N\u00b0147 (Septembre 1892)",
+        "date": "1892-06",
+        "item count": 355,
+        "currency": "FRF",
+        "total price": 5591,
+        "low price": 5,
+        "high price": 6,
+        "mean price": 15.750704225352113,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 449.80052767308075,
+        "high price items": {
+            "CAT_000150_e122": 150,
+            "CAT_000150_e174": 150,
+            "CAT_000150_e218": 150
+        }
+    },
+    "CAT_000163": {
+        "title": "Vente Etienne Charavay, 24 mars 1879",
+        "date": "1879",
+        "item count": 180,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000124": {
+        "title": "RDA, N\u00b0121 (Avril 1889)",
+        "date": "1889-05",
+        "item count": 270,
+        "currency": "FRF",
+        "total price": 5296,
+        "low price": 30,
+        "high price": 18,
+        "mean price": 19.615925925925925,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 355.3002278463649,
+        "high price items": {
+            "CAT_000124_e130": 175
+        }
+    },
+    "CAT_000180": {
+        "title": "Vente \u00c9tienne Charavay, 21 avril 1880, collection de Villars",
+        "date": "1880",
+        "item count": 268,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000128": {
+        "title": "RDA, N\u00b0125 (F\u00e9vrier 1890)",
+        "date": "1890-02",
+        "item count": 269,
+        "currency": "FRF",
+        "total price": 5829,
+        "low price": 3,
+        "high price": 12,
+        "mean price": 22.079545454545453,
+        "median price": 12.0,
+        "mode price": 15,
+        "variance price": 2120.7304149449033,
+        "high price items": {
+            "CAT_000128_e179": 600
+        }
+    },
+    "CAT_000179": {
+        "title": "Vente \u00c9tienne Charavay, 17 avril 1880, collection banque de Saint-Georges \u00e0 G\u00eanes",
+        "date": "1880",
+        "item count": 298,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000123": {
+        "title": "RDA, N\u00b0120 (Avril 1889)",
+        "date": "1889-04",
+        "item count": 355,
+        "currency": "FRF",
+        "total price": 4211,
+        "low price": 11,
+        "high price": 22,
+        "mean price": 11.89731638418079,
+        "median price": 8.325,
+        "mode price": 3,
+        "variance price": 100.94905353266941,
+        "high price items": {
+            "CAT_000123_e37": 60
+        }
+    },
+    "CAT_000121": {
+        "title": "RDA, N\u00b0118 (F\u00e9vrier 1889)",
+        "date": "1889-02",
+        "item count": 275,
+        "currency": "FRF",
+        "total price": 3859,
+        "low price": 3,
+        "high price": 25,
+        "mean price": 14.188602941176471,
+        "median price": 8.0,
+        "mode price": 3,
+        "variance price": 426.85042157763843,
+        "high price items": {
+            "CAT_000121_e199": 225
+        }
+    },
+    "CAT_000187": {
+        "title": "Vente \u00c9tienne Charavay, 3 juin 1881, collection le baron Taylor",
+        "date": "1881",
+        "item count": 241,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000198": {
+        "title": "RDA, N\u00b0168 (Juillet 1894)",
+        "date": "1894-07",
+        "item count": 288,
+        "currency": "FRF",
+        "total price": 5688,
+        "low price": 30,
+        "high price": 6,
+        "mean price": 20.46043165467626,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 1015.5074271518038,
+        "high price items": {
+            "CAT_000198_e202": 350
+        }
+    },
+    "CAT_000160": {
+        "title": "RDA, N\u00b0157 (Juillet 1893)",
+        "date": "1893-07",
+        "item count": 382,
+        "currency": "FRF",
+        "total price": 3243,
+        "low price": 25,
+        "high price": 13,
+        "mean price": 8.556728232189974,
+        "median price": 5,
+        "mode price": 3,
+        "variance price": 141.68741515305518,
+        "high price items": {
+            "CAT_000160_e233": 150
+        }
+    },
+    "CAT_000129": {
+        "title": "RDA, N\u00b0126 (Mars 1890)",
+        "date": "1890-03",
+        "item count": 374,
+        "currency": "FRF",
+        "total price": 3702,
+        "low price": 35,
+        "high price": 5,
+        "mean price": 10.3431843575419,
+        "median price": 5.0,
+        "mode price": 3,
+        "variance price": 166.19774293249273,
+        "high price items": {
+            "CAT_000129_e371": 120
+        }
+    },
+    "CAT_000197": {
+        "title": "RDA, N\u00b0167 (Juin 1894)",
+        "date": "1894-06",
+        "item count": 298,
+        "currency": "FRF",
+        "total price": 4628,
+        "low price": 3,
+        "high price": 15,
+        "mean price": 16.295774647887324,
+        "median price": 12.0,
+        "mode price": 10,
+        "variance price": 257.5251934140051,
+        "high price items": {
+            "CAT_000197_e115": 120
+        }
+    },
+    "CAT_000117": {
+        "title": "RDA, N\u00b0114 (Ao\u00fbt 1888)",
+        "date": "1888-08",
+        "item count": 262,
+        "currency": "FRF",
+        "total price": 5287,
+        "low price": 8,
+        "high price": 10,
+        "mean price": 20.492248062015506,
+        "median price": 15.0,
+        "mode price": 15,
+        "variance price": 815.2189321555195,
+        "high price items": {
+            "CAT_000117_e241": 415
+        }
+    },
+    "CAT_000104": {
+        "title": "RDA, N\u00b0101 (Novembre 1886)",
+        "date": "1886-11",
+        "item count": 270,
+        "currency": "FRF",
+        "total price": 3617,
+        "low price": 4,
+        "high price": 20,
+        "mean price": 13.496268656716419,
+        "median price": 10.0,
+        "mode price": 5,
+        "variance price": 167.15297115170418,
+        "high price items": {
+            "CAT_000104_e68": 100
+        }
+    },
+    "CAT_000143": {
+        "title": "RDA, N\u00b0140 (Novembre 1891)",
+        "date": "1891-11",
+        "item count": 320,
+        "currency": "FRF",
+        "total price": 7066,
+        "low price": 10,
+        "high price": 30,
+        "mean price": 22.222641509433963,
+        "median price": 12.0,
+        "mode price": 20,
+        "variance price": 1749.7860911356354,
+        "high price items": {
+            "CAT_000143_e95": 550
+        }
+    },
+    "CAT_000114": {
+        "title": "RDA, N\u00b0111 (F\u00e9vrier 1888)",
+        "date": "1888-02",
+        "item count": 304,
+        "currency": "FRF",
+        "total price": 3732,
+        "low price": 6,
+        "high price": 1.5,
+        "mean price": 12.567340067340067,
+        "median price": 8,
+        "mode price": 5,
+        "variance price": 301.8035461234114,
+        "high price items": {
+            "CAT_000114_e75": 253
+        }
+    },
+    "CAT_000172": {
+        "title": "RDA, N\u00b0162 (Janvier 1894)",
+        "date": "1894-01",
+        "item count": 303,
+        "currency": "FRF",
+        "total price": 4281,
+        "low price": 4,
+        "high price": 5,
+        "mean price": 14.27,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 347.3571,
+        "high price items": {
+            "CAT_000172_e153": 255
+        }
+    },
+    "CAT_000120": {
+        "title": "RDA, N\u00b0117 (D\u00e9cembre 1888)",
+        "date": "1888-12",
+        "item count": 305,
+        "currency": "FRF",
+        "total price": 7329,
+        "low price": 3,
+        "high price": 6,
+        "mean price": 24.18910891089109,
+        "median price": 15,
+        "mode price": 20,
+        "variance price": 1084.213379734013,
+        "high price items": {
+            "CAT_000120_e137": 350
+        }
+    },
+    "CAT_000191": {
+        "title": "Vente \u00c9tienne Charavay, 30 janvier 1882, collection d'un amateur connu",
+        "date": "1882",
+        "item count": 239,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000159": {
+        "title": "RDA, N\u00b0156 (Juin 1893)",
+        "date": "1893-06",
+        "item count": 269,
+        "currency": "FRF",
+        "total price": 4502,
+        "low price": 3,
+        "high price": 6,
+        "mean price": 16.924812030075188,
+        "median price": 12.0,
+        "mode price": 15,
+        "variance price": 572.8740460172988,
+        "high price items": {
+            "CAT_000159_e196": 323
+        }
+    },
+    "CAT_000136": {
+        "title": "RDA, N\u00b0133 (Janvier 1891)",
+        "date": "1891-01",
+        "item count": 259,
+        "currency": "FRF",
+        "total price": 4886,
+        "low price": 8,
+        "high price": 10,
+        "mean price": 18.93798449612403,
+        "median price": 15.0,
+        "mode price": 10,
+        "variance price": 449.45351841836424,
+        "high price items": {
+            "CAT_000136_e240": 200
+        }
+    },
+    "CAT_000149": {
+        "title": "RDA, N\u00b0146 (Juin 1892)",
+        "date": "1892-06",
+        "item count": 281,
+        "currency": "FRF",
+        "total price": 5525,
+        "low price": 15,
+        "high price": 20,
+        "mean price": 20.018115942028984,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 1066.4815558706152,
+        "high price items": {
+            "CAT_000149_e201": 320
+        }
+    },
+    "CAT_000118": {
+        "title": "RDA, N\u00b0115 (Octobre 1888)",
+        "date": "1888-10",
+        "item count": 294,
+        "currency": "FRF",
+        "total price": 4965,
+        "low price": 3,
+        "high price": 23,
+        "mean price": 17.061855670103093,
+        "median price": 10,
+        "mode price": 5,
+        "variance price": 643.0150742197187,
+        "high price items": {
+            "CAT_000118_e277": 200
+        }
+    },
+    "CAT_000181": {
+        "title": "Vente \u00c9tienne Charavay, 17 juin 1880, collection le baron Taylor",
+        "date": "1880",
+        "item count": 199,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000145": {
+        "title": "RDA, N\u00b0142 (F\u00e9vrier 1892)",
+        "date": "1892-02",
+        "item count": 250,
+        "currency": "FRF",
+        "total price": 3665,
+        "low price": 17,
+        "high price": 12,
+        "mean price": 15.020696721311475,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 170.0106474653991,
+        "high price items": {
+            "CAT_000145_e42": 125
+        }
+    },
+    "CAT_000169": {
+        "title": "RDA, N\u00b0159 (Octobre 1893)",
+        "date": "1893-10",
+        "item count": 291,
+        "currency": "FRF",
+        "total price": 3989,
+        "low price": 5,
+        "high price": 6,
+        "mean price": 13.850694444444445,
+        "median price": 10.0,
+        "mode price": 10,
+        "variance price": 287.73812451774694,
+        "high price items": {
+            "CAT_000169_e219": 200
+        }
+    },
+    "CAT_000161": {
+        "title": "Vente Etienne Charavay, 15 f\u00e9vrier 1879",
+        "date": "1879",
+        "item count": 167,
+        "currency": "unknown",
+        "total price": "unknown",
+        "low price": "unknown",
+        "high price": "unknown",
+        "mean price": "unknown",
+        "median price": "unknown",
+        "mode price": "unknown",
+        "variance price": "unknown",
+        "high price items": "unknown"
+    },
+    "CAT_000113": {
+        "title": "RDA, N\u00b0110 (D\u00e9cembre 1887)",
+        "date": "1887-12",
+        "item count": 373,
+        "currency": "FRF",
+        "total price": 4593,
+        "low price": 4,
+        "high price": 15,
+        "mean price": 12.415135135135134,
+        "median price": 8.0,
+        "mode price": 6,
+        "variance price": 260.87241957633313,
+        "high price items": {
+            "CAT_000113_e293": 150,
+            "CAT_000113_e343": 150
+        }
+    },
+    "CAT_000135": {
+        "title": "RDA, N\u00b0132 (D\u00e9cembre 1890)",
+        "date": "1890-12",
+        "item count": 298,
+        "currency": "FRF",
+        "total price": 6201,
+        "low price": 3,
+        "high price": 8,
+        "mean price": 21.236643835616437,
+        "median price": 15.0,
+        "mode price": 20,
+        "variance price": 439.09608873616065,
+        "high price items": {
+            "CAT_000135_e15": 125,
+            "CAT_000135_e140": 125
+        }
+    },
+    "CAT_000144": {
+        "title": "RDA, N\u00b0141 (D\u00e9cembre 1891)",
+        "date": "1891-12",
+        "item count": 265,
+        "currency": "FRF",
+        "total price": 4752,
+        "low price": 15,
+        "high price": 5,
+        "mean price": 18.347490347490346,
+        "median price": 12,
+        "mode price": 15,
+        "variance price": 373.5317601109107,
+        "high price items": {
+            "CAT_000144_e121": 150
+        }
+    },
+    "CAT_000153": {
+        "title": "RDA, N\u00b0150 (D\u00e9cembre 1892)",
+        "date": "1892-12",
+        "item count": 317,
+        "currency": "FRF",
+        "total price": 4279,
+        "low price": 5,
+        "high price": 12,
+        "mean price": 13.670926517571885,
+        "median price": 10,
+        "mode price": 10,
+        "variance price": 275.0322857230348,
+        "high price items": {
+            "CAT_000153_e308": 150
+        }
+    }
+}

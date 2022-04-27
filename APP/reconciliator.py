@@ -216,7 +216,7 @@ def reconciliator(author, date):
     """
     final_results = {}
     # Loading of all the data in JSON.
-    json_file = 'data/json/export.json'
+    json_file = 'data/json/export_item.json'
     actual_path = os.path.dirname(os.path.abspath(__file__))
     file_to_open = os.path.join(actual_path, json_file)
     with open(file_to_open, 'r') as data:
