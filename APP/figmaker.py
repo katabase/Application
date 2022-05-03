@@ -1,9 +1,10 @@
 import plotly.graph_objs as go
+from plotly.colors import make_colorscale
 import json
 import re
 import os
 
-from .constantes import TEMPLATES, STATIC
+from .constantes import TEMPLATES
 
 # subplots permet de définir les subplots : les axes + la figure elle même
 # dans l'exemple en dessous, on définit la figure et les axes comme des subplots
@@ -15,13 +16,20 @@ from .constantes import TEMPLATES, STATIC
 # il faut que j'arrive à exprimer le prix en fonction de l'année
 
 
-# open the file json file
+# GLOBAL VARIABLES TO BUILD GRAPHS: json, output directory, colors
 with open("APP/data/json/export_catalog.json", mode="r") as f:
     js = json.load(f)
-
-# define the relative path for the output directory and font directory
 outdir = os.path.join(TEMPLATES, "partials")
-fontdir = os.path.join(STATIC, "fonts")
+colors = {"cream": "#fcf8f7", "blue": "#0000ef", "burgundy1": "#890c0c", "burgundy2": "#a41a6a"}
+scale = make_colorscale([colors["blue"], colors["burgundy2"]])  # create a colorscale
+
+
+# haven't found a way to change fonts yet but the basic font is ok
+# fonts = """
+#            "urlaub", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+#            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+#        """
+# fontdir = os.path.join(STATIC, "fonts")
 
 
 def plotter(avg=False):
@@ -31,7 +39,7 @@ def plotter(avg=False):
     :param avg:
     :return:
     """
-    # prepare data for the x and y axis
+    # PREPARE THE DATA
     pricedict = {}  # dictionnary linking to a year the sum of its sales
     sort = {}  # dictionnary to sort pricedict by year
     x = []  # x axis of the plot : years
@@ -59,7 +67,7 @@ def plotter(avg=False):
         sort[k] = pricedict[k]
     pricedict = sort
 
-    # populate the x and y axis
+    # BUILD THE X AND Y AXIS
     x = list(range(int(datelist[0]), int(datelist[-1])))  # every year between the extreme dates of datelist
     # loop through all the dates; if the date is a key in pricedict, it means that there
     # is a sale price associated with that year. in that case, add it to y; else,
@@ -74,26 +82,27 @@ def plotter(avg=False):
         else:
             y.append(0)
 
-    # avant avec plotly
+    # CREATE A PLOT
     if avg is True:
-        title = "Moyenne du montant des ventes par catalogue et par an"
+        title = "Average sales per catalog and per year (in french francs)"
     else:
-        title = "Somme des ventes par an"
+        title = "Total sales per year (in french francs)"
     fig = go.Figure(
-        data=[go.Bar(x=x, y=y)],
+        data=[go.Bar(x=x, y=y, marker={"color": y, "colorscale": scale})],
         layout=go.Layout(
             title=go.layout.Title(text=title),
-
+            paper_bgcolor=colors["cream"],
+            plot_bgcolor=colors["cream"],
+            margin=dict(l=30, r=5, t=30, b=5),
+            xaxis={"anchor": "x", "title": {"text": "Year"}},
+            yaxis={"anchor": "y", "title": {"text": "Total sales"}}
         )
     )
 
     # enregistrement
-    #dummy = BytesIO()  # create a dummy file-like object to store the plot and pass it to jinja
     with open(f"{outdir}/fig_idx.html", mode="w") as out:
         fig.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=300)
     return fig
-    # avant avec matplotlib
-    #fig, ax = plt.subplots()
-    #ax.plot(x, y)
-    #plt.stem(x, y)
-    #plt.show()
+
+# https://plotly.com/python-api-reference/generated/plotly.colors.html
+# https://plotly.com/python/reference/layout/coloraxis/

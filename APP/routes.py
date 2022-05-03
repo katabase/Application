@@ -1,10 +1,14 @@
 from flask import render_template, request
 from .app import app
 
-from .plotter import plotter
+from .figmaker import plotter
 from .main_functions import *
 from .reconciliator import *
 from .constantes import TEMPLATES
+
+
+# The index is generated when the app is launched.
+created_index = create_index()
 
 
 # ----- MAIN ROUTES ----- #
@@ -40,10 +44,6 @@ def search():
     return render_template('pages/Search.html')
 
 
-# The index is generated when the app is launched.
-created_index = create_index()
-
-
 @app.route("/Index")
 def index():
     plotter()
@@ -59,6 +59,7 @@ def view(id):
 
 
 # ----- AUXILIAIRY ROUTES ----- #
+
 @app.route("/fig/<key>")
 def fig_grabber(key):
     """
