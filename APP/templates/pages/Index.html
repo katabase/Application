@@ -4,6 +4,10 @@
 <div class="container" id="idx">
     <h1>Index</h1>
 
+    {% if figpath %}
+        <div><iframe src="{{ url_for('fig_grabber', key='idx') }}"></iframe></div>
+    {% endif %}
+
     <p class="lead">Click on a sale catalogue to access it. All encoded sales catalogues are available here.</p>
    <ul class="list-group">
 

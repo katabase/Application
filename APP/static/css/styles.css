@@ -239,3 +239,8 @@ div.results {
 p.right-margin {
   margin-right: 2%;
 }
+
+iframe {
+  width: 100% !important;
+  height: 320px;
+}

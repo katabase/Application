@@ -1,9 +1,13 @@
 from flask import render_template, request
 from .app import app
+
+from .plotter import plotter
 from .main_functions import *
 from .reconciliator import *
+from .constantes import TEMPLATES
 
 
+# ----- MAIN ROUTES ----- #
 @app.route("/")
 def home():
     return render_template("pages/Home.html")
@@ -42,7 +46,9 @@ created_index = create_index()
 
 @app.route("/Index")
 def index():
-    return render_template("pages/Index.html", index=created_index)
+    plotter()
+    figpath=True
+    return render_template("pages/Index.html", figpath=figpath, index=created_index)
 
 
 @app.route("/View/<id>")
@@ -50,6 +56,19 @@ def view(id):
     file = validate_id(id)
     doc = open_file(file)
     return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc), file=file)
+
+
+# ----- AUXILIAIRY ROUTES ----- #
+@app.route("/fig/<key>")
+def fig_grabber(key):
+    """
+    route to build a url pointing to a figure to render in iframe in an html page
+    :param key: key for the figure to retrieve
+    :return: a render_template object pointing to the figure
+    """
+    return render_template(f"partials/fig_{key}.html")
+
+
 
 
 """

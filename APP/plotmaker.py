@@ -1,9 +1,9 @@
-# import matplotlib
-from matplotlib import pyplot as plt
-# import numpy as np
-
+import plotly.graph_objs as go
 import json
 import re
+import os
+
+from .constantes import TEMPLATES, STATIC
 
 # subplots permet de définir les subplots : les axes + la figure elle même
 # dans l'exemple en dessous, on définit la figure et les axes comme des subplots
@@ -14,9 +14,14 @@ import re
 
 # il faut que j'arrive à exprimer le prix en fonction de l'année
 
+
 # open the file json file
-with open("./data/json/export_catalog.json", mode="r") as f:
+with open("APP/data/json/export_catalog.json", mode="r") as f:
     js = json.load(f)
+
+# define the relative path for the output directory and font directory
+outdir = os.path.join(TEMPLATES, "partials")
+fontdir = os.path.join(STATIC, "fonts")
 
 
 def plotter(avg=False):
@@ -69,9 +74,26 @@ def plotter(avg=False):
         else:
             y.append(0)
 
+    # avant avec plotly
+    if avg is True:
+        title = "Moyenne du montant des ventes par catalogue et par an"
+    else:
+        title = "Somme des ventes par an"
+    fig = go.Figure(
+        data=[go.Bar(x=x, y=y)],
+        layout=go.Layout(
+            title=go.layout.Title(text=title),
+
+        )
+    )
+
+    # enregistrement
+    #dummy = BytesIO()  # create a dummy file-like object to store the plot and pass it to jinja
+    with open(f"{outdir}/fig_idx.html", mode="w") as out:
+        fig.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=300)
+    return fig
+    # avant avec matplotlib
     #fig, ax = plt.subplots()
     #ax.plot(x, y)
-    plt.stem(x, y)
-    plt.show()
-
-plotter(True)
+    #plt.stem(x, y)
+    #plt.show()

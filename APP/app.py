@@ -1,14 +1,14 @@
 from flask import Flask
 import os
 
-chemin_actuel = os.path.dirname(os.path.abspath(__file__))
-templates = os.path.join(chemin_actuel, "templates")
-statics = os.path.join(chemin_actuel, "static")
+from .constantes import TEMPLATES, STATIC
+
 
 app = Flask(
     "Application",
-    template_folder=templates,
-    static_folder=statics
+    template_folder=TEMPLATES,
+    static_folder=STATIC
 )
 
-from . import path
+
+from . import path  # import the routes
