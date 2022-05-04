@@ -1,7 +1,7 @@
 {
     "CAT_000362": {
         "title": "Vente Jacques Charavay, ao\u00fbt 1875, n\u00ba 185",
-        "date": "1875",
+        "sell_date": "1875",
         "item count": 106,
         "currency": "FRF",
         "total price": 1019,
@@ -17,7 +17,7 @@
     },
     "CAT_000352": {
         "title": "Vente Jacques Charavay, septembre-octobre 1867, n\u00ba 152",
-        "date": "1867",
+        "sell_date": "1867",
         "item count": 236,
         "currency": "FRF",
         "total price": 1800,
@@ -33,7 +33,7 @@
     },
     "CAT_000327": {
         "title": "RDA, N\u00b0199 (Juin 1897)",
-        "date": "1897-06",
+        "sell_date": "1897-06",
         "item count": 323,
         "currency": "FRF",
         "total price": 4692,
@@ -49,7 +49,7 @@
     },
     "CAT_000333": {
         "title": "Vente Jacques Charavay, 15 janvier 1846, n\u00ba 4",
-        "date": "1846",
+        "sell_date": "1846",
         "item count": 35,
         "currency": "FRF",
         "total price": 204,
@@ -65,7 +65,7 @@
     },
     "CAT_000376": {
         "title": "Catalogue Laverdet, d\u00e9cembre 1856, n\u00ba 5",
-        "date": "1856-12",
+        "sell_date": "1856-12",
         "item count": 204,
         "currency": "FRF",
         "total price": 1519,
@@ -81,7 +81,7 @@
     },
     "CAT_000340": {
         "title": "Vente Jacques Charavay, septembre 1856, n\u00ba 81",
-        "date": "1856",
+        "sell_date": "1856",
         "item count": 148,
         "currency": "FRF",
         "total price": 524,
@@ -97,35 +97,17 @@
     },
     "CAT_000312": {
         "title": "Vente No\u00ebl Charavay, 15 d\u00e9cembre 1906",
-        "date": "1906",
-        "item count": 187,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 187
     },
     "CAT_000311": {
         "title": "Vente No\u00ebl Charavay, 19 novembre 1906, collection Bouvrain",
-        "date": "1906",
-        "item count": 126,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 126
     },
     "CAT_000344": {
         "title": "Vente Jacques Charavay, juin 1865, n\u00ba 140",
-        "date": "1865",
+        "sell_date": "1865",
         "item count": 121,
         "currency": "FRF",
         "total price": 648,
@@ -141,7 +123,7 @@
     },
     "CAT_000382": {
         "title": "Catalogue Laverdet, juillet-ao\u00fbt 1857, n\u00ba 11",
-        "date": "juillet-ao\u00fbt 1857",
+        "sell_date": "juillet-ao\u00fbt 1857",
         "item count": 50,
         "currency": "FRF",
         "total price": 194,
@@ -157,7 +139,7 @@
     },
     "CAT_000353": {
         "title": "Vente Jacques Charavay, janvier 1868, n\u00ba 153",
-        "date": "1868",
+        "sell_date": "1868",
         "item count": 263,
         "currency": "FRF",
         "total price": 2141,
@@ -173,7 +155,7 @@
     },
     "CAT_000399": {
         "title": "Catalogue Laverdet, avril-ao\u00fbt 1860, n\u00ba 28",
-        "date": "avril-ao\u00fbt 1860",
+        "sell_date": "avril-ao\u00fbt 1860",
         "item count": 172,
         "currency": "FRF",
         "total price": 1289,
@@ -189,35 +171,17 @@
     },
     "CAT_000313": {
         "title": "Vente No\u00ebl Charavay, 14 d\u00e9cembre 1908",
-        "date": "1908",
-        "item count": 165,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1908",
+        "item count": 165
     },
     "CAT_000324": {
         "title": "Vente \u00c9tienne Charavay, 17-19 f\u00e9vrier 1881",
-        "date": "1881",
-        "item count": 77,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 77
     },
     "CAT_000364": {
         "title": "Vente Jacques Charavay a\u00een\u00e9, janvier 1876, n\u00ba 187",
-        "date": "1876",
+        "sell_date": "1876",
         "item count": 275,
         "currency": "FRF",
         "total price": 3264,
@@ -233,7 +197,7 @@
     },
     "CAT_000348": {
         "title": "Vente Jacques Charavay, avril 1866, n\u00ba 145",
-        "date": "1866",
+        "sell_date": "1866",
         "item count": 258,
         "currency": "FRF",
         "total price": 2568,
@@ -249,21 +213,12 @@
     },
     "CAT_000321": {
         "title": "Vente No\u00ebl Charavay, 24 mai 1913",
-        "date": "1913",
-        "item count": 147,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1913",
+        "item count": 147
     },
     "CAT_000389": {
         "title": "Catalogue Laverdet, septembre 1858, n\u00ba 18",
-        "date": "1858-09",
+        "sell_date": "1858-09",
         "item count": 200,
         "currency": "FRF",
         "total price": 1196,
@@ -279,7 +234,7 @@
     },
     "CAT_000332": {
         "title": "Vente Jacques Charavay, 15 f\u00e9vrier 1846, n\u00ba 5",
-        "date": "1846",
+        "sell_date": "1846",
         "item count": 86,
         "currency": "FRF",
         "total price": 704,
@@ -295,7 +250,7 @@
     },
     "CAT_000397": {
         "title": "Catalogue Laverdet, novembre-d\u00e9cembre 1859, n\u00ba 26",
-        "date": "Novembre-D\u00e9cembre 1859",
+        "sell_date": "Novembre-D\u00e9cembre 1859",
         "item count": 182,
         "currency": "FRF",
         "total price": 1978,
@@ -311,21 +266,12 @@
     },
     "CAT_000315": {
         "title": "Vente \u00c9tienne Charavay, 13 d\u00e9cembre 1871, collection Dromont et Delestre",
-        "date": "1871",
-        "item count": 123,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1871",
+        "item count": 123
     },
     "CAT_000398": {
         "title": "Catalogue Laverdet, janvier-f\u00e9vrier-mars 1860, n\u00ba 27",
-        "date": "janvier-f\u00e9vrier-mars 1860",
+        "sell_date": "janvier-f\u00e9vrier-mars 1860",
         "item count": 168,
         "currency": "FRF",
         "total price": 2203,
@@ -341,7 +287,7 @@
     },
     "CAT_000381": {
         "title": "Catalogue Laverdet, mai-juin 1857, n\u00ba 10",
-        "date": "mai-juin 1857",
+        "sell_date": "mai-juin 1857",
         "item count": 212,
         "currency": "FRF",
         "total price": 1285,
@@ -357,7 +303,7 @@
     },
     "CAT_000355": {
         "title": "Vente Jacques Charavay, mars-mai 1869",
-        "date": "1869",
+        "sell_date": "1869",
         "item count": 107,
         "currency": "FRF",
         "total price": 1245,
@@ -373,21 +319,12 @@
     },
     "CAT_000322": {
         "title": "Vente No\u00ebl Charavay, 16 juin 1913",
-        "date": "1913",
-        "item count": 162,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1913",
+        "item count": 162
     },
     "CAT_000394": {
         "title": "Catalogue Laverdet, n\u00ba 23, avril-mai 1859",
-        "date": "avril-mai 1859",
+        "sell_date": "avril-mai 1859",
         "item count": 206,
         "currency": "FRF",
         "total price": 1270,
@@ -403,7 +340,7 @@
     },
     "CAT_000368": {
         "title": "Vente Jacques Charavay, octobre 1878, n\u00ba 195",
-        "date": "1878",
+        "sell_date": "1878",
         "item count": 76,
         "currency": "FRF",
         "total price": 1268,
@@ -419,21 +356,12 @@
     },
     "CAT_000308": {
         "title": "Vente No\u00ebl Charavay, 30 mai 1906, collection Bord",
-        "date": "1906",
-        "item count": 215,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 215
     },
     "CAT_000350": {
         "title": "Vente Jacques Charavay, avril-mai 1867, n\u00ba 150",
-        "date": "1867",
+        "sell_date": "1867",
         "item count": 222,
         "currency": "FRF",
         "total price": 2509,
@@ -449,63 +377,27 @@
     },
     "CAT_000307": {
         "title": "Vente No\u00ebl Charavay, 30 avril 1906",
-        "date": "1906",
-        "item count": 178,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 178
     },
     "CAT_000302": {
         "title": "Vente No\u00ebl Charavay, 10 juin 1905 (2), collection le Baron de Pages",
-        "date": "1905",
-        "item count": 17,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1905",
+        "item count": 17
     },
     "CAT_000316": {
         "title": "Vente \u00c9tienne Charavay, 1er f\u00e9vrier 1877, collection de Polignac",
-        "date": "1877",
-        "item count": 19,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1877",
+        "item count": 19
     },
     "CAT_000318": {
         "title": "Vente No\u00ebl Charavay, 25 avril 1913. collections de Balzac, Berlioz, de M\u00e9dicis, Henri III, Hugo, Lamartine, Machiavel, Mirabeau, Napol\u00e9on Ier, Robespierre, etc.",
-        "date": "1913",
-        "item count": 147,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1913",
+        "item count": 147
     },
     "CAT_000373": {
         "title": "Catalogue Laverdet, juillet 1856, n\u00ba 2",
-        "date": "1856-07",
+        "sell_date": "1856-07",
         "item count": 97,
         "currency": "FRF",
         "total price": 1519,
@@ -521,7 +413,7 @@
     },
     "CAT_000383": {
         "title": "Catalogue Laverdet, septembre-octobre-novembre 1857, n\u00ba 12",
-        "date": "septembre-octobre-novembre 1857",
+        "sell_date": "septembre-octobre-novembre 1857",
         "item count": 158,
         "currency": "FRF",
         "total price": 2136,
@@ -537,7 +429,7 @@
     },
     "CAT_000392": {
         "title": "Catalogue Laverdet, d\u00e9cembre 1858, n\u00ba 21",
-        "date": "1858-12",
+        "sell_date": "1858-12",
         "item count": 446,
         "currency": "FRF",
         "total price": 1125,
@@ -554,7 +446,7 @@
     },
     "CAT_000346": {
         "title": "Vente Jacques Charavay, novembre 1865, n\u00ba 143",
-        "date": "1865",
+        "sell_date": "1865",
         "item count": 213,
         "currency": "FRF",
         "total price": 1502,
@@ -570,7 +462,7 @@
     },
     "CAT_000359": {
         "title": "Vente Jacques Charavay, janvier-f\u00e9vrier 1870",
-        "date": "1870",
+        "sell_date": "1870",
         "item count": 273,
         "currency": "FRF",
         "total price": 1972,
@@ -586,7 +478,7 @@
     },
     "CAT_000386": {
         "title": "Catalogue Laverdet, mars-avril 1858, n\u00ba 15",
-        "date": "mars-avril 1858",
+        "sell_date": "mars-avril 1858",
         "item count": 156,
         "currency": "FRF",
         "total price": 1087,
@@ -602,21 +494,12 @@
     },
     "CAT_000310": {
         "title": "Vente No\u00ebl Charavay, 25 juin 1906, collection Dablin",
-        "date": "1906",
-        "item count": 106,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 106
     },
     "CAT_000378": {
         "title": "Catalogue Laverdet, f\u00e9vrier 1857, n\u00ba 7",
-        "date": "1857-02",
+        "sell_date": "1857-02",
         "item count": 210,
         "currency": "FRF",
         "total price": 990,
@@ -632,21 +515,12 @@
     },
     "CAT_000306": {
         "title": "Vente No\u00ebl Charavay, 30 mars 1906",
-        "date": "1906",
-        "item count": 249,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 249
     },
     "CAT_000337": {
         "title": "Vente Jacques Charavay, n\u00ba 53",
-        "date": "1855",
+        "sell_date": "1855",
         "item count": 173,
         "currency": "FRF",
         "total price": 733,
@@ -662,7 +536,7 @@
     },
     "CAT_000385": {
         "title": "Catalogue Laverdet, janvier-f\u00e9vrier 1858, n\u00ba 14",
-        "date": "janvier-f\u00e9vrier 1858",
+        "sell_date": "janvier-f\u00e9vrier 1858",
         "item count": 151,
         "currency": "FRF",
         "total price": 1332,
@@ -678,7 +552,7 @@
     },
     "CAT_000345": {
         "title": "Vente Jacques Charavay, 25 juin 1865, n\u00ba 141",
-        "date": "1865",
+        "sell_date": "1865",
         "item count": 129,
         "currency": "FRF",
         "total price": 669,
@@ -695,7 +569,7 @@
     },
     "CAT_000384": {
         "title": "Catalogue Laverdet, d\u00e9cembre 1857, n\u00ba 13",
-        "date": "1857",
+        "sell_date": "1857",
         "item count": 138,
         "currency": "FRF",
         "total price": 1373,
@@ -711,7 +585,7 @@
     },
     "CAT_000372": {
         "title": "Catalogue Laverdet, avril 1856, n\u00ba 1",
-        "date": "1856-04",
+        "sell_date": "1856-04",
         "item count": 48,
         "currency": "FRF",
         "total price": 2139,
@@ -727,21 +601,12 @@
     },
     "CAT_000301": {
         "title": "Vente No\u00ebl Charavay, 10 juin 1905 (1)",
-        "date": "1905",
-        "item count": 178,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1905",
+        "item count": 178
     },
     "CAT_000395": {
         "title": "Catalogue Laverdet, juin-juillet 1859, n\u00ba 24",
-        "date": "Juin-Juillet 1859",
+        "sell_date": "Juin-Juillet 1859",
         "item count": 210,
         "currency": "FRF",
         "total price": 747,
@@ -757,35 +622,17 @@
     },
     "CAT_000309": {
         "title": "Vente No\u00ebl Charavay, 6 juin 1906",
-        "date": "1906",
-        "item count": 157,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 157
     },
     "CAT_000317": {
         "title": "Vente No\u00ebl Charavay, 23 avril 1913, collection Ch\u00e9ramy",
-        "date": "1913",
-        "item count": 134,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1913",
+        "item count": 134
     },
     "CAT_000357": {
         "title": "METTRE UN TITRE COURT (par exemple code du PDF). Le code se met d\u00e9sormais dans TEI/@xml:id",
-        "date": "1869",
+        "sell_date": "1869",
         "item count": 112,
         "currency": "FRF",
         "total price": 811,
@@ -801,35 +648,17 @@
     },
     "CAT_000305": {
         "title": "Vente No\u00ebl Charavay, 14 f\u00e9vrier 1906",
-        "date": "1906",
-        "item count": 166,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 166
     },
     "CAT_000319": {
         "title": "Vente No\u00ebl Charavay, 26 avril 1913, collection Detaille",
-        "date": "1913",
-        "item count": 13,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1913",
+        "item count": 13
     },
     "CAT_000390": {
         "title": "Catalogue Laverdet, octobre 1858, n\u00ba 19",
-        "date": "1858-10",
+        "sell_date": "1858-10",
         "item count": 213,
         "currency": "FRF",
         "total price": 810,
@@ -845,7 +674,7 @@
     },
     "CAT_000354": {
         "title": "Vente Jacques Charavay, janvier 1869, n\u00ba 157",
-        "date": "1869",
+        "sell_date": "1869",
         "item count": 259,
         "currency": "FRF",
         "total price": 2099,
@@ -861,7 +690,7 @@
     },
     "CAT_000380": {
         "title": "Catalogue Laverdet, avril 1857, n\u00ba 9",
-        "date": "1857-04",
+        "sell_date": "1857-04",
         "item count": 255,
         "currency": "FRF",
         "total price": 955,
@@ -877,7 +706,7 @@
     },
     "CAT_000326": {
         "title": "RDA, N\u00b0198 (Mai 1897)",
-        "date": "1897-05",
+        "sell_date": "1897-05",
         "item count": 314,
         "currency": "FRF",
         "total price": 4334,
@@ -894,7 +723,7 @@
     },
     "CAT_000342": {
         "title": "Vente Jacques Charavay, janvier et f\u00e9vrier 1857, n\u00ba 84",
-        "date": "1857",
+        "sell_date": "1857",
         "item count": 189,
         "currency": "FRF",
         "total price": 669,
@@ -910,7 +739,7 @@
     },
     "CAT_000328": {
         "title": "RDA, N\u00b0200 (Juillet 1897)",
-        "date": "1897-07",
+        "sell_date": "1897-07",
         "item count": 323,
         "currency": "FRF",
         "total price": 4245,
@@ -926,7 +755,7 @@
     },
     "CAT_000329": {
         "title": "RDA, N\u00b0201 (Ao\u00fbt 1897)",
-        "date": "1897-08",
+        "sell_date": "1897-08",
         "item count": 297,
         "currency": "FRF",
         "total price": 3558,
@@ -942,7 +771,7 @@
     },
     "CAT_000335": {
         "title": "Vente Jacques Charavay, 1er janvier 1846, n\u00ba 3",
-        "date": "1846",
+        "sell_date": "1846",
         "item count": 106,
         "currency": "FRF",
         "total price": 436,
@@ -958,7 +787,7 @@
     },
     "CAT_000377": {
         "title": "Vente Auguste Laverdet, janvier 1857, n\u00ba 6",
-        "date": "1857-01",
+        "sell_date": "1857-01",
         "item count": 230,
         "currency": "FRF",
         "total price": 1426,
@@ -974,7 +803,7 @@
     },
     "CAT_000387": {
         "title": "Catalogue Laverdet, mai-juin 1858, n\u00ba 16",
-        "date": "mai-juin 1858",
+        "sell_date": "mai-juin 1858",
         "item count": 199,
         "currency": "FRF",
         "total price": 1043,
@@ -991,7 +820,7 @@
     },
     "CAT_000336": {
         "title": "Vente Jacques Charavay, ao\u00fbt 1855, n\u00ba 72",
-        "date": "1855",
+        "sell_date": "1855",
         "item count": 154,
         "currency": "FRF",
         "total price": 658,
@@ -1007,7 +836,7 @@
     },
     "CAT_000365": {
         "title": "Vente Jacques Charavay a\u00een\u00e9, juillet 1876, n\u00ba 188",
-        "date": "1876",
+        "sell_date": "1876",
         "item count": 224,
         "currency": "FRF",
         "total price": 1489,
@@ -1023,21 +852,12 @@
     },
     "CAT_000303": {
         "title": "Vente No\u00ebl Charavay, 10 juin 1905 (3), collection L\u00e9vy / Veuve L...",
-        "date": "1905",
-        "item count": 5,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1905",
+        "item count": 5
     },
     "CAT_000388": {
         "title": "Catalogue Laverdet, juillet-ao\u00fbt 1858, n\u00ba 17",
-        "date": "juillet-ao\u00fbt 1858",
+        "sell_date": "juillet-ao\u00fbt 1858",
         "item count": 205,
         "currency": "FRF",
         "total price": 935,
@@ -1053,7 +873,7 @@
     },
     "CAT_000396": {
         "title": "Catalogue Laverdet, ao\u00fbt-septembre 1859, n\u00ba 25",
-        "date": "ao\u00fbt-septembre 1859",
+        "sell_date": "ao\u00fbt-septembre 1859",
         "item count": 217,
         "currency": "FRF",
         "total price": 844,
@@ -1069,7 +889,7 @@
     },
     "CAT_000360": {
         "title": "Vente Jacques Charavay, avril 1874, n\u00ba 179",
-        "date": "1874",
+        "sell_date": "1874",
         "item count": 94,
         "currency": "FRF",
         "total price": 918,
@@ -1085,7 +905,7 @@
     },
     "CAT_000343": {
         "title": "Vente Jacques Charavay, octobre 1863, n\u00ba 132",
-        "date": "1863",
+        "sell_date": "1863",
         "item count": 145,
         "currency": "FRF",
         "total price": 707,
@@ -1101,7 +921,7 @@
     },
     "CAT_000356": {
         "title": "Vente Jacques Charavay, juillet 1869, n\u00ba 160",
-        "date": "1869",
+        "sell_date": "1869",
         "item count": 135,
         "currency": "FRF",
         "total price": 1466,
@@ -1117,21 +937,12 @@
     },
     "CAT_000320": {
         "title": "Vente No\u00ebl Charavay, 15 mai 1913, collection le Baron Roger Portalis",
-        "date": "1913",
-        "item count": 34,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1913",
+        "item count": 34
     },
     "CAT_000370": {
         "title": "Vente Jacques Charavay a\u00een\u00e9, avril 1880, n\u00ba 203",
-        "date": "1880",
+        "sell_date": "1880",
         "item count": 86,
         "currency": "FRF",
         "total price": 728,
@@ -1147,21 +958,12 @@
     },
     "CAT_000330": {
         "title": "RDA, N\u00b0202 (Septembre 1897)",
-        "date": "1897-09",
-        "item count": 315,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1897-09",
+        "item count": 315
     },
     "CAT_000349": {
         "title": "Vente Jacques Charavay, mars 1867, n\u00ba 149",
-        "date": "1867",
+        "sell_date": "1867",
         "item count": 247,
         "currency": "FRF",
         "total price": 1328,
@@ -1177,7 +979,7 @@
     },
     "CAT_000361": {
         "title": "Vente Jacques Charavay, f\u00e9vrier 1875, n\u00ba 182",
-        "date": "1875",
+        "sell_date": "1875",
         "item count": 89,
         "currency": "FRF",
         "total price": 738,
@@ -1193,7 +995,7 @@
     },
     "CAT_000334": {
         "title": "Vente Jacques Charavay, novembre 1845, n\u00ba 1",
-        "date": "1845-11",
+        "sell_date": "1845-11",
         "item count": 18,
         "currency": "FRF",
         "total price": 83,
@@ -1209,7 +1011,7 @@
     },
     "CAT_000339": {
         "title": "Vente Jacques Charavay, juillet 1856, n\u00ba 80",
-        "date": "1856",
+        "sell_date": "1856",
         "item count": 81,
         "currency": "FRF",
         "total price": 331,
@@ -1225,7 +1027,7 @@
     },
     "CAT_000363": {
         "title": "Vente Jacques Charavay, octobre 1875, n\u00ba 186",
-        "date": "1875",
+        "sell_date": "1875",
         "item count": 75,
         "currency": "FRF",
         "total price": 810,
@@ -1241,7 +1043,7 @@
     },
     "CAT_000379": {
         "title": "Catalogue Laverdet, mars 1857, n\u00ba 8",
-        "date": "1857-03",
+        "sell_date": "1857-03",
         "item count": 258,
         "currency": "FRF",
         "total price": 879,
@@ -1257,7 +1059,7 @@
     },
     "CAT_000338": {
         "title": "Vente Jacques Charavay, juin 1856, n\u00ba 79",
-        "date": "1856",
+        "sell_date": "1856",
         "item count": 170,
         "currency": "FRF",
         "total price": 647,
@@ -1273,7 +1075,7 @@
     },
     "CAT_000393": {
         "title": "Catalogue Laverdet, janvier-f\u00e9vrier-mars 1859, n\u00ba 22",
-        "date": "janvier-f\u00e9vrier-mars 1859",
+        "sell_date": "janvier-f\u00e9vrier-mars 1859",
         "item count": 212,
         "currency": "FRF",
         "total price": 1591,
@@ -1289,7 +1091,7 @@
     },
     "CAT_000366": {
         "title": "Vente Jacques Charavay, septembre 1876, n\u00ba 189",
-        "date": "1876",
+        "sell_date": "1876",
         "item count": 101,
         "currency": "FRF",
         "total price": 1102,
@@ -1305,7 +1107,7 @@
     },
     "CAT_000400": {
         "title": "Catalogue Laverdet, septembre-octobre 1860, n\u00ba 29",
-        "date": "septembre-octobre 1860",
+        "sell_date": "septembre-octobre 1860",
         "item count": 184,
         "currency": "FRF",
         "total price": 1072,
@@ -1321,7 +1123,7 @@
     },
     "CAT_000341": {
         "title": "Vente Jacques Charavay, octobre 1856 n\u00ba 82",
-        "date": "1856",
+        "sell_date": "1856",
         "item count": 189,
         "currency": "FRF",
         "total price": 631,
@@ -1337,7 +1139,7 @@
     },
     "CAT_000347": {
         "title": "Vente Jacques Charavay, f\u00e9vrier 1866, n\u00ba 144",
-        "date": "1866",
+        "sell_date": "1866",
         "item count": 224,
         "currency": "FRF",
         "total price": 2638,
@@ -1354,7 +1156,7 @@
     },
     "CAT_000351": {
         "title": "Vente Jacques Charavay, juin-juillet 1867, n\u00ba 151",
-        "date": "1867",
+        "sell_date": "1867",
         "item count": 226,
         "currency": "FRF",
         "total price": 2166,
@@ -1370,21 +1172,12 @@
     },
     "CAT_000323": {
         "title": "Vente \u00c9tienne Charavay, 7-10 d\u00e9cembre 1874, collection Boilly",
-        "date": "1874",
-        "item count": 781,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1874",
+        "item count": 781
     },
     "CAT_000375": {
         "title": "Catalogue Laverdet, novembre 1856, n\u00ba 4",
-        "date": "1856-11",
+        "sell_date": "1856-11",
         "item count": 200,
         "currency": "FRF",
         "total price": 1750,
@@ -1400,7 +1193,7 @@
     },
     "CAT_000391": {
         "title": "Catalogue Laverdet, novembre 1858, n\u00ba 20",
-        "date": "1858-11",
+        "sell_date": "1858-11",
         "item count": 188,
         "currency": "FRF",
         "total price": 797,
@@ -1416,7 +1209,7 @@
     },
     "CAT_000367": {
         "title": "Vente Jacques Charavay a\u00een\u00e9, janv.-avril 1877, n\u00ba 191, collection Fillon",
-        "date": "1877",
+        "sell_date": "1877",
         "item count": 174,
         "currency": "FRF",
         "total price": 3897,
@@ -1432,7 +1225,7 @@
     },
     "CAT_000358": {
         "title": "Vente Jacques Charavay, septembre 1869, n\u00ba 162",
-        "date": "1869",
+        "sell_date": "1869",
         "item count": 120,
         "currency": "FRF",
         "total price": 913,
@@ -1448,7 +1241,7 @@
     },
     "CAT_000371": {
         "title": "Vente Jacques Charavay a\u00een\u00e9, juin 1880, n\u00ba 205",
-        "date": "1880",
+        "sell_date": "1880",
         "item count": 68,
         "currency": "FRF",
         "total price": 875,
@@ -1464,21 +1257,12 @@
     },
     "CAT_000314": {
         "title": "Vente No\u00ebl Charavay, 19 f\u00e9vrier 1913",
-        "date": "1913",
-        "item count": 188,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1913",
+        "item count": 188
     },
     "CAT_000369": {
         "title": "Vente Jacques Charavay a\u00een\u00e9, f\u00e9vrier 1880, n\u00ba 202",
-        "date": "1880",
+        "sell_date": "1880",
         "item count": 140,
         "currency": "FRF",
         "total price": 1382,
@@ -1494,21 +1278,12 @@
     },
     "CAT_000304": {
         "title": "Vente No\u00ebl Charavay, 15 janvier 1906, collection Sapin",
-        "date": "1906",
-        "item count": 169,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1906",
+        "item count": 169
     },
     "CAT_000051": {
         "title": "RDA, N\u00b063 (Juillet 1880)",
-        "date": "1880-07",
+        "sell_date": "1880-07",
         "item count": 167,
         "currency": "FRF",
         "total price": 2258,
@@ -1524,7 +1299,7 @@
     },
     "CAT_000056": {
         "title": "RDA, N\u00b068 (Mai 1881)",
-        "date": "1881-05",
+        "sell_date": "1881-05",
         "item count": 127,
         "currency": "FRF",
         "total price": 1986,
@@ -1540,21 +1315,12 @@
     },
     "CAT_000098": {
         "title": "Collection Dolomieu et Libri",
-        "date": "1843",
-        "item count": 4,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1843",
+        "item count": 4
     },
     "CAT_000036": {
         "title": "RDA, N\u00b045 (Mai 1875)",
-        "date": "1875-05",
+        "sell_date": "1875-05",
         "item count": 40,
         "currency": "FRF",
         "total price": 1165,
@@ -1570,7 +1336,7 @@
     },
     "CAT_000084": {
         "title": "RDA, N\u00b050 (Janvier 1877)",
-        "date": "1877-01",
+        "sell_date": "1877-01",
         "item count": 120,
         "currency": "FRF",
         "total price": 1164,
@@ -1586,7 +1352,7 @@
     },
     "CAT_000073": {
         "title": "RDA, N\u00b086 (Novembre 1884)",
-        "date": "1884-11",
+        "sell_date": "1884-11",
         "item count": 73,
         "currency": "FRF",
         "total price": 915,
@@ -1602,7 +1368,7 @@
     },
     "CAT_000100": {
         "title": "RDA, N\u00b097 (F\u00e9vrier 1886)",
-        "date": "1886-02",
+        "sell_date": "1886-02",
         "item count": 350,
         "currency": "FRF",
         "total price": 4375,
@@ -1618,7 +1384,7 @@
     },
     "CAT_000020": {
         "title": "RDA, N\u00b021 (Mars-Avril 1869)",
-        "date": "1869-03",
+        "sell_date": "1869-03",
         "item count": 218,
         "currency": "FRF",
         "total price": 1607,
@@ -1634,35 +1400,17 @@
     },
     "CAT_000010": {
         "title": "Vente Simon Kra (23/05/1927)",
-        "date": "1927",
-        "item count": 1,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1927",
+        "item count": 1
     },
     "CAT_000097": {
         "title": "Collection Walpole",
-        "date": "1842",
-        "item count": 1,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1842",
+        "item count": 1
     },
     "CAT_000066": {
         "title": "RDA, N\u00b079 (Mai 1883)",
-        "date": "1883-05",
+        "sell_date": "1883-05",
         "item count": 45,
         "currency": "FRF",
         "total price": 883,
@@ -1678,7 +1426,7 @@
     },
     "CAT_000028": {
         "title": "RDA, N\u00b034 (F\u00e9vrier 1873)",
-        "date": "1873-02",
+        "sell_date": "1873-02",
         "item count": 206,
         "currency": "FRF",
         "total price": 1247,
@@ -1694,21 +1442,12 @@
     },
     "CAT_000001": {
         "title": "Vente Charon, 14 mai 1845",
-        "date": "1845",
-        "item count": 379,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1845",
+        "item count": 379
     },
     "CAT_000026": {
         "title": "RDA, N\u00b032 (Mai-Juin 1872)",
-        "date": "1872-08",
+        "sell_date": "1872-08",
         "item count": 203,
         "currency": "FRF",
         "total price": 1705,
@@ -1724,7 +1463,7 @@
     },
     "CAT_000027": {
         "title": "RDA, N\u00b033 (Novembre 1872)",
-        "date": "1872-11",
+        "sell_date": "1872-11",
         "item count": 120,
         "currency": "FRF",
         "total price": 670,
@@ -1740,21 +1479,12 @@
     },
     "CAT_000092": {
         "title": "Collection Markham Sherwill",
-        "date": "1824",
-        "item count": 21,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1824",
+        "item count": 21
     },
     "CAT_000088": {
         "title": "RDA, N\u00b095 (D\u00e9cembre 1885)",
-        "date": "1885-12",
+        "sell_date": "1885-12",
         "item count": 141,
         "currency": "FRF",
         "total price": 3860,
@@ -1770,7 +1500,7 @@
     },
     "CAT_000021": {
         "title": "RDA, N\u00b022 (Mai-Juillet 1869)",
-        "date": "1869-05",
+        "sell_date": "1869-05",
         "item count": 207,
         "currency": "FRF",
         "total price": 2233,
@@ -1786,7 +1516,7 @@
     },
     "CAT_000025": {
         "title": "RDA, N\u00b031 (Mai-Juin 1872)",
-        "date": "1872-05",
+        "sell_date": "1872-05",
         "item count": 174,
         "currency": "FRF",
         "total price": 1978,
@@ -1803,7 +1533,7 @@
     },
     "CAT_000077": {
         "title": "RDA, N\u00b090 (Avril 1885)",
-        "date": "1885-04",
+        "sell_date": "1885-04",
         "item count": 187,
         "currency": "FRF",
         "total price": 2804,
@@ -1820,21 +1550,12 @@
     },
     "CAT_000008": {
         "title": "Collection Henry Fatio, troisi\u00e8me vente.",
-        "date": "1935",
-        "item count": 1,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1935",
+        "item count": 1
     },
     "CAT_000089": {
         "title": "Vente Bodin, 20-21/06/2019",
-        "date": "2019",
+        "sell_date": "2019",
         "item count": 1,
         "currency": "EUR",
         "total price": 4500,
@@ -1850,21 +1571,12 @@
     },
     "CAT_000093": {
         "title": "Collection Jacob",
-        "date": "1829",
-        "item count": 1,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1829",
+        "item count": 1
     },
     "CAT_000049": {
         "title": "RDA, N\u00b061 (Mars 1880)",
-        "date": "1880-03",
+        "sell_date": "1880-03",
         "item count": 187,
         "currency": "FRF",
         "total price": 1965,
@@ -1880,7 +1592,7 @@
     },
     "CAT_000030": {
         "title": "RDA, N\u00b038 (F\u00e9vrier 1874)",
-        "date": "1874-02",
+        "sell_date": "1874-02",
         "item count": 240,
         "currency": "FRF",
         "total price": 1191,
@@ -1897,7 +1609,7 @@
     },
     "CAT_000041": {
         "title": "RDA, N\u00b052 (Mai 1877)",
-        "date": "1877-05",
+        "sell_date": "1877-05",
         "item count": 152,
         "currency": "FRF",
         "total price": 1072,
@@ -1913,7 +1625,7 @@
     },
     "CAT_000071": {
         "title": "RDA, N\u00b084 (Avril 1884)",
-        "date": "1884-04",
+        "sell_date": "1884-04",
         "item count": 134,
         "currency": "FRF",
         "total price": 2819,
@@ -1929,7 +1641,7 @@
     },
     "CAT_000035": {
         "title": "RDA, N\u00b044 (Mars 1875)",
-        "date": "1875-03",
+        "sell_date": "1875-03",
         "item count": 174,
         "currency": "FRF",
         "total price": 1971,
@@ -1945,7 +1657,7 @@
     },
     "CAT_000063": {
         "title": "RDA, N\u00b075 (Janvier 1883)",
-        "date": "1883-01",
+        "sell_date": "1883-01",
         "item count": 148,
         "currency": "FRF",
         "total price": 1483,
@@ -1961,7 +1673,7 @@
     },
     "CAT_000081": {
         "title": "RDA, N\u00b025 (Mars 1870)",
-        "date": "1870-03",
+        "sell_date": "1870-03",
         "item count": 167,
         "currency": "FRF",
         "total price": 561,
@@ -1977,7 +1689,7 @@
     },
     "CAT_000014": {
         "title": "Vente Sotheby, Wilkinson & Hodge (18/07/1904)",
-        "date": "1904",
+        "sell_date": "1904",
         "item count": 1,
         "currency": "GBP",
         "total price": 6,
@@ -1993,7 +1705,7 @@
     },
     "CAT_000086": {
         "title": "RDA, N\u00b060 (F\u00e9vrier 1877)",
-        "date": "1880-01",
+        "sell_date": "1880-01",
         "item count": 198,
         "currency": "FRF",
         "total price": 986,
@@ -2010,7 +1722,7 @@
     },
     "CAT_000075": {
         "title": "RDA, N\u00b088 (F\u00e9vrier 1885)",
-        "date": "1885-02",
+        "sell_date": "1885-02",
         "item count": 198,
         "currency": "FRF",
         "total price": 2080,
@@ -2026,7 +1738,7 @@
     },
     "CAT_000038": {
         "title": "RDA, N\u00b048 (Juillet 1876)",
-        "date": "1876-07",
+        "sell_date": "1876-07",
         "item count": 215,
         "currency": "FRF",
         "total price": 1388,
@@ -2042,7 +1754,7 @@
     },
     "CAT_000023": {
         "title": "RDA, N\u00b024 (D\u00e9cembre 1869)",
-        "date": "1869-12",
+        "sell_date": "1869-12",
         "item count": 166,
         "currency": "FRF",
         "total price": 590,
@@ -2059,7 +1771,7 @@
     },
     "CAT_000072": {
         "title": "RDA, N\u00b085 (Octobre 1884)",
-        "date": "1884-10",
+        "sell_date": "1884-10",
         "item count": 140,
         "currency": "FRF",
         "total price": 3378,
@@ -2075,7 +1787,7 @@
     },
     "CAT_000040": {
         "title": "RDA, N\u00b051 (Mars 1877)",
-        "date": "1877-03",
+        "sell_date": "1877-03",
         "item count": 123,
         "currency": "FRF",
         "total price": 1581,
@@ -2091,7 +1803,7 @@
     },
     "CAT_000032": {
         "title": "RDA, N\u00b040 (Mai 1874)",
-        "date": "1874-05",
+        "sell_date": "1874-05",
         "item count": 142,
         "currency": "FRF",
         "total price": 1168,
@@ -2107,7 +1819,7 @@
     },
     "CAT_000006": {
         "title": "RDA, N\u00b024, seconde s\u00e9rie (1927)",
-        "date": "1927",
+        "sell_date": "1927",
         "item count": 461,
         "currency": "FRF",
         "total price": 20015,
@@ -2123,7 +1835,7 @@
     },
     "CAT_000068": {
         "title": "RDA, N\u00b081 (D\u00e9cembre 1883)",
-        "date": "1883-12",
+        "sell_date": "1883-12",
         "item count": 83,
         "currency": "FRF",
         "total price": 1466,
@@ -2139,7 +1851,7 @@
     },
     "CAT_000042": {
         "title": "RDA, N\u00b053 (F\u00e9vrier 1878)",
-        "date": "1878-02",
+        "sell_date": "1878-02",
         "item count": 133,
         "currency": "FRF",
         "total price": 1864,
@@ -2156,7 +1868,7 @@
     },
     "CAT_000099": {
         "title": "RDA, N\u00b096 (Janvier 1886)",
-        "date": "1886-01",
+        "sell_date": "1886-01",
         "item count": 211,
         "currency": "FRF",
         "total price": 4429,
@@ -2172,7 +1884,7 @@
     },
     "CAT_000016": {
         "title": "LAD, N\u00b0515 (d\u00e9cembre 1919)",
-        "date": "1919-12",
+        "sell_date": "1919-12",
         "item count": 1,
         "currency": "FRF",
         "total price": 162,
@@ -2188,7 +1900,7 @@
     },
     "CAT_000057": {
         "title": "RDA, N\u00b069 (Octobre 1881)",
-        "date": "1881-10",
+        "sell_date": "1881-10",
         "item count": 99,
         "currency": "FRF",
         "total price": 2484,
@@ -2205,21 +1917,12 @@
     },
     "CAT_000009": {
         "title": "Collection Henry Fatio, deuxi\u00e8me vente.",
-        "date": "1932",
-        "item count": 3,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1932",
+        "item count": 3
     },
     "CAT_000070": {
         "title": "RDA, N\u00b083 (Mars 1884)",
-        "date": "1884-03",
+        "sell_date": "1884-03",
         "item count": 105,
         "currency": "FRF",
         "total price": 1035,
@@ -2236,7 +1939,7 @@
     },
     "CAT_000005": {
         "title": "Catalogue Laverdet, N\u00b03 (octobre 1856)",
-        "date": "1856-10",
+        "sell_date": "1856-10",
         "item count": 137,
         "currency": "FRF",
         "total price": 1412,
@@ -2252,7 +1955,7 @@
     },
     "CAT_000044": {
         "title": "RDA, N\u00b055 (D\u00e9cembre 1878)",
-        "date": "1878-12",
+        "sell_date": "1878-12",
         "item count": 212,
         "currency": "FRF",
         "total price": 1500,
@@ -2268,21 +1971,12 @@
     },
     "CAT_000091": {
         "title": "Collection Germain Garnier",
-        "date": "1822",
-        "item count": 16,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1822",
+        "item count": 16
     },
     "CAT_000018": {
         "title": "RDA, N\u00b037 (ao\u00fbt 1873)",
-        "date": "1873-08",
+        "sell_date": "1873-08",
         "item count": 192,
         "currency": "FRF",
         "total price": 1978,
@@ -2298,7 +1992,7 @@
     },
     "CAT_000017": {
         "title": "Collection Merlin, 31 octobre 1871",
-        "date": "1871",
+        "sell_date": "1871",
         "item count": 1,
         "currency": "FRF",
         "total price": 162,
@@ -2314,7 +2008,7 @@
     },
     "CAT_000065": {
         "title": "RDA, N\u00b078 (Avril 1883)",
-        "date": "1883-04",
+        "sell_date": "1883-04",
         "item count": 163,
         "currency": "FRF",
         "total price": 2448,
@@ -2330,7 +2024,7 @@
     },
     "CAT_000019": {
         "title": "RDA, N\u00b019 (d\u00e9cembre 1868)",
-        "date": "1868-12",
+        "sell_date": "1868-12",
         "item count": 163,
         "currency": "FRF",
         "total price": 1280,
@@ -2346,7 +2040,7 @@
     },
     "CAT_000055": {
         "title": "RDA, N\u00b067 (Mars 1881)",
-        "date": "1881-03",
+        "sell_date": "1881-03",
         "item count": 193,
         "currency": "FRF",
         "total price": 2190,
@@ -2362,7 +2056,7 @@
     },
     "CAT_000090": {
         "title": "Vente Bodin, 16/05/2018",
-        "date": "2019",
+        "sell_date": "2019",
         "item count": 1,
         "currency": "EUR",
         "total price": 5000,
@@ -2378,7 +2072,7 @@
     },
     "CAT_000069": {
         "title": "RDA, N\u00b082 (F\u00e9vrier 1884)",
-        "date": "1884-02",
+        "sell_date": "1884-02",
         "item count": 217,
         "currency": "FRF",
         "total price": 1313,
@@ -2394,7 +2088,7 @@
     },
     "CAT_000064": {
         "title": "RDA, N\u00b077 (Mars 1883)",
-        "date": "1883-03",
+        "sell_date": "1883-03",
         "item count": 167,
         "currency": "FRF",
         "total price": 1137,
@@ -2410,7 +2104,7 @@
     },
     "CAT_000079": {
         "title": "RDA, N\u00b092 (Septembre-octobre 1885)",
-        "date": "1885-09",
+        "sell_date": "1885-09",
         "item count": 185,
         "currency": "FRF",
         "total price": 2383,
@@ -2426,7 +2120,7 @@
     },
     "CAT_000046": {
         "title": "RDA, N\u00b057 (Juillet 1879)",
-        "date": "1879-07",
+        "sell_date": "1879-07",
         "item count": 140,
         "currency": "FRF",
         "total price": 2433,
@@ -2444,7 +2138,7 @@
     },
     "CAT_000012": {
         "title": "Collection Morrison II, 15-19 avril 1918",
-        "date": "1918",
+        "sell_date": "1918",
         "item count": 4,
         "currency": "GBP",
         "total price": 49,
@@ -2460,7 +2154,7 @@
     },
     "CAT_000059": {
         "title": "RDA, N\u00b071 (F\u00e9vrier 1882)",
-        "date": "1882-02",
+        "sell_date": "1882-02",
         "item count": 23,
         "currency": "FRF",
         "total price": 468,
@@ -2476,7 +2170,7 @@
     },
     "CAT_000058": {
         "title": "RDA, N\u00b070 (Novembre 1881)",
-        "date": "1881-11",
+        "sell_date": "1881-11",
         "item count": 137,
         "currency": "FRF",
         "total price": 1531,
@@ -2492,7 +2186,7 @@
     },
     "CAT_000076": {
         "title": "RDA, N\u00b089 (Mars 1885)",
-        "date": "1885-03",
+        "sell_date": "1885-03",
         "item count": 157,
         "currency": "FRF",
         "total price": 2336,
@@ -2508,7 +2202,7 @@
     },
     "CAT_000015": {
         "title": "Collection Whitney-Hoff",
-        "date": "1949",
+        "sell_date": "1949",
         "item count": 1,
         "currency": "FRF",
         "total price": 18000,
@@ -2524,7 +2218,7 @@
     },
     "CAT_000043": {
         "title": "RDA, N\u00b054 (Juin 1878)",
-        "date": "1878-06",
+        "sell_date": "1878-06",
         "item count": 179,
         "currency": "FRF",
         "total price": 1284,
@@ -2540,7 +2234,7 @@
     },
     "CAT_000083": {
         "title": "RDA, N\u00b027 (Juillet 1871)",
-        "date": "1871-07",
+        "sell_date": "1871-07",
         "item count": 245,
         "currency": "FRF",
         "total price": 935,
@@ -2557,7 +2251,7 @@
     },
     "CAT_000052": {
         "title": "RDA, N\u00b064 (Octobre 1880)",
-        "date": "1880-10",
+        "sell_date": "1880-10",
         "item count": 210,
         "currency": "FRF",
         "total price": 1161,
@@ -2573,7 +2267,7 @@
     },
     "CAT_000029": {
         "title": "RDA, N\u00b035 (Mai 1873)",
-        "date": "1873-05",
+        "sell_date": "1873-05",
         "item count": 71,
         "currency": "FRF",
         "total price": 357,
@@ -2589,7 +2283,7 @@
     },
     "CAT_000050": {
         "title": "RDA, N\u00b062 (Mai 1880)",
-        "date": "1880-05",
+        "sell_date": "1880-05",
         "item count": 180,
         "currency": "FRF",
         "total price": 1359,
@@ -2605,7 +2299,7 @@
     },
     "CAT_000047": {
         "title": "RDA, N\u00b058 (Novembre 1879)",
-        "date": "1879-11",
+        "sell_date": "1879-11",
         "item count": 259,
         "currency": "FRF",
         "total price": 1411,
@@ -2621,21 +2315,12 @@
     },
     "CAT_000096": {
         "title": "Collection Pix\u00e9r\u00e9court",
-        "date": "1840",
-        "item count": 39,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1840",
+        "item count": 39
     },
     "CAT_000080": {
         "title": "RDA, N\u00b093 (Octobre 1885)",
-        "date": "1885-10",
+        "sell_date": "1885-10",
         "item count": 183,
         "currency": "FRF",
         "total price": 2496,
@@ -2651,7 +2336,7 @@
     },
     "CAT_000037": {
         "title": "RDA, N\u00b036 (Juin 1873)",
-        "date": "1873-06",
+        "sell_date": "1873-06",
         "item count": 193,
         "currency": "FRF",
         "total price": 1408,
@@ -2667,7 +2352,7 @@
     },
     "CAT_000034": {
         "title": "RDA, N\u00b043 (Janvier 1875)",
-        "date": "1875-01",
+        "sell_date": "1875-01",
         "item count": 181,
         "currency": "FRF",
         "total price": 1058,
@@ -2685,7 +2370,7 @@
     },
     "CAT_000024": {
         "title": "RDA, N\u00b030 (Avril 1872)",
-        "date": "1872-04",
+        "sell_date": "1872-04",
         "item count": 175,
         "currency": "FRF",
         "total price": 2628,
@@ -2701,7 +2386,7 @@
     },
     "CAT_000085": {
         "title": "RDA, N\u00b028 (Ao\u00fbt 1871)",
-        "date": "1871-08",
+        "sell_date": "1871-08",
         "item count": 261,
         "currency": "FRF",
         "total price": 836,
@@ -2717,7 +2402,7 @@
     },
     "CAT_000048": {
         "title": "RDA, N\u00b059 (D\u00e9cembre 1879)",
-        "date": "1879-12",
+        "sell_date": "1879-12",
         "item count": 223,
         "currency": "FRF",
         "total price": 1289,
@@ -2733,7 +2418,7 @@
     },
     "CAT_000078": {
         "title": "RDA, N\u00b091 (Mai 1885)",
-        "date": "1885-05",
+        "sell_date": "1885-05",
         "item count": 125,
         "currency": "FRF",
         "total price": 3687,
@@ -2749,7 +2434,7 @@
     },
     "CAT_000039": {
         "title": "RDA, N\u00b049 (Novembre 1876)",
-        "date": "1876-11",
+        "sell_date": "1876-11",
         "item count": 115,
         "currency": "FRF",
         "total price": 556,
@@ -2765,7 +2450,7 @@
     },
     "CAT_000022": {
         "title": "RDA, N\u00b023 (Octobre 1869)",
-        "date": "1869-10",
+        "sell_date": "1869-10",
         "item count": 225,
         "currency": "FRF",
         "total price": 924,
@@ -2783,7 +2468,7 @@
     },
     "CAT_000045": {
         "title": "RDA, N\u00b056 (Mars 1879)",
-        "date": "1879-03",
+        "sell_date": "1879-03",
         "item count": 189,
         "currency": "FRF",
         "total price": 1091,
@@ -2799,7 +2484,7 @@
     },
     "CAT_000067": {
         "title": "RDA, N\u00b080 (Octobre 1883)",
-        "date": "1883-10",
+        "sell_date": "1883-10",
         "item count": 168,
         "currency": "FRF",
         "total price": 3003,
@@ -2816,7 +2501,7 @@
     },
     "CAT_000053": {
         "title": "RDA, N\u00b065 (Novembre 1880)",
-        "date": "1880-11",
+        "sell_date": "1880-11",
         "item count": 220,
         "currency": "FRF",
         "total price": 914,
@@ -2832,7 +2517,7 @@
     },
     "CAT_000060": {
         "title": "RDA, N\u00b072 (Mars 1882)",
-        "date": "1882-03",
+        "sell_date": "1882-03",
         "item count": 38,
         "currency": "FRF",
         "total price": 654,
@@ -2848,35 +2533,17 @@
     },
     "CAT_000007": {
         "title": "Collection Schuman, 4 et 5 mars 1965",
-        "date": "1965",
-        "item count": 1,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1965",
+        "item count": 1
     },
     "CAT_000094": {
         "title": "Vente Techener, 31/01/1831",
-        "date": "1831",
-        "item count": 56,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1831",
+        "item count": 56
     },
     "CAT_000011": {
         "title": "Collections Braggiotti, Hertz, Manning, Bynner\u2026 (1926)",
-        "date": "1926",
+        "sell_date": "1926",
         "item count": 1,
         "currency": "USD",
         "total price": 80,
@@ -2892,7 +2559,7 @@
     },
     "CAT_000031": {
         "title": "RDA, N\u00b039 (Mars 1874)",
-        "date": "1874-03",
+        "sell_date": "1874-03",
         "item count": 149,
         "currency": "FRF",
         "total price": 1455,
@@ -2908,21 +2575,12 @@
     },
     "CAT_000013": {
         "title": "Collection Henry Fatio, premi\u00e8re vente.",
-        "date": "1923",
-        "item count": 1,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1923",
+        "item count": 1
     },
     "CAT_000061": {
         "title": "RDA, N\u00b073 (Mai 1882)",
-        "date": "1882-05",
+        "sell_date": "1882-05",
         "item count": 146,
         "currency": "FRF",
         "total price": 1828,
@@ -2938,7 +2596,7 @@
     },
     "CAT_000074": {
         "title": "RDA, N\u00b087 (D\u00e9cembre 1884)",
-        "date": "1884-12",
+        "sell_date": "1884-12",
         "item count": 108,
         "currency": "FRF",
         "total price": 2335,
@@ -2955,21 +2613,12 @@
     },
     "CAT_000095": {
         "title": "Collection Bruy\u00e8res-Chalabre",
-        "date": "1833",
-        "item count": 1,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1833",
+        "item count": 1
     },
     "CAT_000003": {
         "title": "LAD, N\u00b0507 (avril 1919)",
-        "date": "1919-04",
+        "sell_date": "1919-04",
         "item count": 183,
         "currency": "FRF",
         "total price": 5774,
@@ -2985,7 +2634,7 @@
     },
     "CAT_000033": {
         "title": "RDA, N\u00b041 (Juin 1874)",
-        "date": "1874-06",
+        "sell_date": "1874-06",
         "item count": 180,
         "currency": "FRF",
         "total price": 1343,
@@ -3001,7 +2650,7 @@
     },
     "CAT_000082": {
         "title": "RDA, N\u00b026 (Juillet 1870)",
-        "date": "1870-07",
+        "sell_date": "1870-07",
         "item count": 220,
         "currency": "FRF",
         "total price": 978,
@@ -3017,7 +2666,7 @@
     },
     "CAT_000002": {
         "title": "RDA, N\u00b029 (septembre 1871)",
-        "date": "Septembre - Decembre 1871",
+        "sell_date": "Septembre - Decembre 1871",
         "item count": 189,
         "currency": "FRF",
         "total price": 989,
@@ -3033,7 +2682,7 @@
     },
     "CAT_000054": {
         "title": "RDA, N\u00b066 (Janvier 1881)",
-        "date": "1881-01",
+        "sell_date": "1881-01",
         "item count": 150,
         "currency": "FRF",
         "total price": 607,
@@ -3049,21 +2698,12 @@
     },
     "CAT_000004": {
         "title": "Vente Etienne Charavay, 30 mai 1986",
-        "date": "1896",
-        "item count": 133,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1896",
+        "item count": 133
     },
     "CAT_000087": {
         "title": "RDA, N\u00b094 (Novembre 1885)",
-        "date": "1885-11",
+        "sell_date": "1885-11",
         "item count": 202,
         "currency": "FRF",
         "total price": 3100,
@@ -3079,7 +2719,7 @@
     },
     "CAT_000062": {
         "title": "RDA, N\u00b074 (Octobre 1882)",
-        "date": "1882-10",
+        "sell_date": "1882-10",
         "item count": 154,
         "currency": "FRF",
         "total price": 2977,
@@ -3095,7 +2735,7 @@
     },
     "CAT_000230": {
         "title": "CAT_000230",
-        "date": "1895-07",
+        "sell_date": "1895-07",
         "item count": 308,
         "currency": "FRF",
         "total price": 3812,
@@ -3111,91 +2751,37 @@
     },
     "CAT_000287": {
         "title": "Vente No\u00ebl Charavay, 27 avril 1903",
-        "date": "1903",
-        "item count": 178,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 178
     },
     "CAT_000257": {
         "title": "Vente \u00c9tienne Charavay, 13 f\u00e9vrier 1888",
-        "date": "1888",
-        "item count": 198,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 198
     },
     "CAT_000249": {
         "title": "Vente \u00c9tienne Charavay, 25 juin 1886",
-        "date": "1886",
-        "item count": 173,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 173
     },
     "CAT_000265": {
         "title": "Vente \u00c9tienne Charavay, 14 mai 1888, collection connue",
-        "date": "1888",
-        "item count": 189,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 189
     },
     "CAT_000296": {
         "title": "Vente No\u00ebl Charavay, 14 juin 1904",
-        "date": "1904",
-        "item count": 181,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1904",
+        "item count": 181
     },
     "CAT_000211": {
         "title": "Vente \u00c9tienne Charavay, 7 mars 1883, collection d'un amateur espagnol",
-        "date": "1883",
-        "item count": 205,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 205
     },
     "CAT_000236": {
         "title": "CAT_000236",
-        "date": "1896-03",
+        "sell_date": "1896-03",
         "item count": 311,
         "currency": "FRF",
         "total price": 5350,
@@ -3211,49 +2797,22 @@
     },
     "CAT_000269": {
         "title": "Vente \u00c9tienne Charavay, 13 juin 1888",
-        "date": "1888",
-        "item count": 174,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 174
     },
     "CAT_000288": {
         "title": "Vente No\u00ebl Charavay, 25 mai 1903",
-        "date": "1903",
-        "item count": 162,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 162
     },
     "CAT_000266": {
         "title": "Vente \u00c9tienne Charavay, 15 mai 1888, collection Lefebvre",
-        "date": "1888",
-        "item count": 211,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 211
     },
     "CAT_000238": {
         "title": "CAT_000238",
-        "date": "1896-05",
+        "sell_date": "1896-05",
         "item count": 291,
         "currency": "FRF",
         "total price": 5366,
@@ -3269,49 +2828,22 @@
     },
     "CAT_000293": {
         "title": "Vente No\u00ebl Charavay, 20 janvier 1904. collection Jaques",
-        "date": "1904",
-        "item count": 161,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1904",
+        "item count": 161
     },
     "CAT_000284": {
         "title": "Vente No\u00ebl Charavay, 13 mars 1903, collection D. L.-C.",
-        "date": "1903",
-        "item count": 192,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 192
     },
     "CAT_000215": {
         "title": "Vente \u00c9tienne Charavay, 30 mai 1883, collection d'un amateur parisien",
-        "date": "1883",
-        "item count": 131,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 131
     },
     "CAT_000221": {
         "title": "CAT_000221",
-        "date": "1894-11",
+        "sell_date": "1894-11",
         "item count": 296,
         "currency": "FRF",
         "total price": 4438,
@@ -3327,49 +2859,22 @@
     },
     "CAT_000290": {
         "title": "Vente No\u00ebl Charavay, 14 novembre 1903, collection le Marquis de PONTOI-PONTCARR\u00c9",
-        "date": "1903",
-        "item count": 158,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 158
     },
     "CAT_000263": {
         "title": "Vente \u00c9tienne Charavay, 25 avril 1888",
-        "date": "1888",
-        "item count": 185,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 185
     },
     "CAT_000295": {
         "title": "Vente No\u00ebl Charavay, 28 mai 1904",
-        "date": "1904",
-        "item count": 166,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1904",
+        "item count": 166
     },
     "CAT_000235": {
         "title": "CAT_000235",
-        "date": "1896-01",
+        "sell_date": "1896-01",
         "item count": 306,
         "currency": "FRF",
         "total price": 3961,
@@ -3388,105 +2893,42 @@
     },
     "CAT_000274": {
         "title": "Vente \u00c9tienne Charavay, 30 janvier 1891",
-        "date": "1891",
-        "item count": 140,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1891",
+        "item count": 140
     },
     "CAT_000264": {
         "title": "Vente \u00c9tienne Charavay, 26 avril 1888",
-        "date": "1888",
-        "item count": 138,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 138
     },
     "CAT_000260": {
         "title": "Vente \u00c9tienne Charavay, 22 mars 1888",
-        "date": "1888",
-        "item count": 225,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 225
     },
     "CAT_000283": {
         "title": "Vente No\u00ebl Charavay, 22 janvier 1903",
-        "date": "1903",
-        "item count": 181,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 181
     },
     "CAT_000220": {
         "title": "Vente \u00c9tienne Charavay, 10 d\u00e9cembre 1883, collection Bayl\u00e9",
-        "date": "1883",
-        "item count": 204,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 204
     },
     "CAT_000275": {
         "title": "Vente \u00c9tienne Charavay, 25 f\u00e9vrier 1891",
-        "date": "1891",
-        "item count": 150,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1891",
+        "item count": 150
     },
     "CAT_000279": {
         "title": "Vente \u00c9tienne Charavay, 8 d\u00e9cembre 1891",
-        "date": "1891",
-        "item count": 152,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1891",
+        "item count": 152
     },
     "CAT_000226": {
         "title": "CAT_000226",
-        "date": "1895-03",
+        "sell_date": "1895-03",
         "item count": 312,
         "currency": "FRF",
         "total price": 4403,
@@ -3502,91 +2944,37 @@
     },
     "CAT_000213": {
         "title": "Vente \u00c9tienne Charavay, 2 mai 1883, collection d'un amateur connu",
-        "date": "1883",
-        "item count": 171,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 171
     },
     "CAT_000243": {
         "title": "Vente \u00c9tienne Charavay, 12 mars 1886, collection Potiquet",
-        "date": "1886",
-        "item count": 214,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 214
     },
     "CAT_000298": {
         "title": "Vente No\u00ebl Charavay, 26 janvier 1905, collection Mazet",
-        "date": "1905",
-        "item count": 155,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1905",
+        "item count": 155
     },
     "CAT_000251": {
         "title": "Vente \u00c9tienne Charavay, 17 d\u00e9cembre 1886, collection Bayl\u00e9",
-        "date": "1886",
-        "item count": 186,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 186
     },
     "CAT_000244": {
         "title": "Vente \u00c9tienne Charavay, 21 et 22 avril 1886, collection Dubrunfaut",
-        "date": "1886",
-        "item count": 394,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 394
     },
     "CAT_000204": {
         "title": "Vente \u00c9tienne Charavay, 30 mai 1882, collection Fillon, Potier etc.",
-        "date": "1882",
-        "item count": 203,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 203
     },
     "CAT_000234": {
         "title": "CAT_000234",
-        "date": "1895-12",
+        "sell_date": "1895-12",
         "item count": 300,
         "currency": "FRF",
         "total price": 4132,
@@ -3602,49 +2990,22 @@
     },
     "CAT_000278": {
         "title": "Vente \u00c9tienne Charavay, 5 juin 1891",
-        "date": "1891",
-        "item count": 188,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1891",
+        "item count": 188
     },
     "CAT_000250": {
         "title": "Vente \u00c9tienne Charavay, 2 d\u00e9cembre 1886",
-        "date": "1886",
-        "item count": 178,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 178
     },
     "CAT_000242": {
         "title": "Vente \u00c9tienne Charavay, 20 f\u00e9vrier 1886, collection baron de G\u00e9rando",
-        "date": "1886",
-        "item count": 200,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 200
     },
     "CAT_000227": {
         "title": "CAT_000227",
-        "date": "1895-04",
+        "sell_date": "1895-04",
         "item count": 290,
         "currency": "FRF",
         "total price": 3904,
@@ -3660,77 +3021,32 @@
     },
     "CAT_000273": {
         "title": "Vente \u00c9tienne Charavay, 5 et 6 janvier 1891, collection le marquis de Queux de Saint-Hilaire",
-        "date": "1891",
-        "item count": 335,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1891",
+        "item count": 335
     },
     "CAT_000254": {
         "title": "Vente \u00c9tienne Charavay, 21 janvier 1888",
-        "date": "1888",
-        "item count": 203,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 203
     },
     "CAT_000272": {
         "title": "Vente \u00c9tienne Charavay, 25 juin 1888, collection Dubrunfaut",
-        "date": "1888",
-        "item count": 193,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 193
     },
     "CAT_000201": {
         "title": "Vente \u00c9tienne Charavay, 13 mai 1882",
-        "date": "1882",
-        "item count": 126,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 126
     },
     "CAT_000285": {
         "title": "Vente No\u00ebl Charavay, 20 mars 1903",
-        "date": "1903",
-        "item count": 166,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 166
     },
     "CAT_000229": {
         "title": "CAT_000229",
-        "date": "1895-06",
+        "sell_date": "1895-06",
         "item count": 300,
         "currency": "FRF",
         "total price": 3434,
@@ -3746,147 +3062,57 @@
     },
     "CAT_000255": {
         "title": "Vente \u00c9tienne Charavay, 7 f\u00e9vrier 1888",
-        "date": "1888",
-        "item count": 186,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 186
     },
     "CAT_000291": {
         "title": "Vente No\u00ebl Charavay, 25 novembre 1903",
-        "date": "1903",
-        "item count": 151,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 151
     },
     "CAT_000219": {
         "title": "Vente \u00c9tienne Charavay, 19 juin 1883",
-        "date": "1883",
-        "item count": 199,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 199
     },
     "CAT_000223": {
         "title": "Vente \u00c9tienne Charavay, 14 d\u00e9cembre 1883, collection de Lom\u00e9nie",
-        "date": "1883",
-        "item count": 194,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 194
     },
     "CAT_000271": {
         "title": "Vente \u00c9tienne Charavay, 15 juin 1888",
-        "date": "1888",
-        "item count": 180,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 180
     },
     "CAT_000261": {
         "title": "Vente \u00c9tienne Charavay, 23 mars 1888",
-        "date": "1888",
-        "item count": 160,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 160
     },
     "CAT_000207": {
         "title": "Vente \u00c9tienne Charavay, 29 juin 1882",
-        "date": "1882",
-        "item count": 149,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 149
     },
     "CAT_000214": {
         "title": "Vente \u00c9tienne Charavay, 5 mai 1883, colection Bayl\u00e9",
-        "date": "1883",
-        "item count": 170,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 170
     },
     "CAT_000267": {
         "title": "Vente \u00c9tienne Charavay, 26 mai 1888. collection Fontaine",
-        "date": "1888",
-        "item count": 202,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 202
     },
     "CAT_000216": {
         "title": "Vente \u00c9tienne Charavay, 1 juin 1883",
-        "date": "1883",
-        "item count": 182,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 182
     },
     "CAT_000222": {
         "title": "CAT_000222",
-        "date": "1894-12",
+        "sell_date": "1894-12",
         "item count": 261,
         "currency": "FRF",
         "total price": 5392,
@@ -3902,91 +3128,37 @@
     },
     "CAT_000210": {
         "title": "Vente \u00c9tienne Charavay, 12 f\u00e9vrier 1883, collection Dufaitre",
-        "date": "1883",
-        "item count": 24,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 24
     },
     "CAT_000297": {
         "title": "Vente No\u00ebl Charavay, 24 novembre 1904",
-        "date": "1904",
-        "item count": 150,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1904",
+        "item count": 150
     },
     "CAT_000286": {
         "title": "Vente No\u00ebl Charavay, 23 mars 1903, collection Dablin",
-        "date": "1903",
-        "item count": 528,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 528
     },
     "CAT_000270": {
         "title": "Vente \u00c9tienne Charavay, 14 juin 1888, collection Lefebvre",
-        "date": "1888",
-        "item count": 180,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 180
     },
     "CAT_000276": {
         "title": "Vente \u00c9tienne Charavay, 11 avril 1891",
-        "date": "1891",
-        "item count": 148,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1891",
+        "item count": 148
     },
     "CAT_000300": {
         "title": "Vente No\u00ebl Charavay, 26 mai 1905, collection Mazet",
-        "date": "1905",
-        "item count": 107,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1905",
+        "item count": 107
     },
     "CAT_000225": {
         "title": "CAT_000225",
-        "date": "1895-02",
+        "sell_date": "1895-02",
         "item count": 299,
         "currency": "FRF",
         "total price": 4834,
@@ -4002,77 +3174,32 @@
     },
     "CAT_000268": {
         "title": "Vente \u00c9tienne Charavay, 28-30 mai 1888, collection baron de Cholet",
-        "date": "1888",
-        "item count": 11,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 11
     },
     "CAT_000218": {
         "title": "Vente \u00c9tienne Charavay, 18 juin 1883, collection connue",
-        "date": "1883",
-        "item count": 178,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 178
     },
     "CAT_000241": {
         "title": "Vente \u00c9tienne Charavay, 29 janvier 1886, collection de Musset",
-        "date": "1886",
-        "item count": 172,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 172
     },
     "CAT_000253": {
         "title": "Vente \u00c9tienne Charavay, 16 janvier 1888, collection Violet d'\u00c9pagny",
-        "date": "1888",
-        "item count": 200,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 200
     },
     "CAT_000281": {
         "title": "Vente \u00c9tienne Charavay, 22 d\u00e9cembre 1891",
-        "date": "1891",
-        "item count": 152,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1891",
+        "item count": 152
     },
     "CAT_000224": {
         "title": "CAT_000224",
-        "date": "1895-01",
+        "sell_date": "1895-01",
         "item count": 282,
         "currency": "FRF",
         "total price": 5999,
@@ -4088,77 +3215,32 @@
     },
     "CAT_000262": {
         "title": "Vente \u00c9tienne Charavay, 29 mars 1888, collection Dubrunfaut",
-        "date": "1888",
-        "item count": 197,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 197
     },
     "CAT_000247": {
         "title": "Vente \u00c9tienne Charavay, 9 juin 1886",
-        "date": "1886",
-        "item count": 118,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 118
     },
     "CAT_000299": {
         "title": "Vente No\u00ebl Charavay, 24 mars 1905",
-        "date": "1905",
-        "item count": 152,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1905",
+        "item count": 152
     },
     "CAT_000206": {
         "title": "Vente \u00c9tienne Charavay, 28 juin 1882, collection Bayl\u00e9",
-        "date": "1882",
-        "item count": 40,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 40
     },
     "CAT_000217": {
         "title": "Vente \u00c9tienne Charavay, 2 juin 1883, collection de la Marini\u00e8re",
-        "date": "1883",
-        "item count": 202,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 202
     },
     "CAT_000239": {
         "title": "CAT_000239",
-        "date": "1896-07",
+        "sell_date": "1896-07",
         "item count": 290,
         "currency": "FRF",
         "total price": 4867,
@@ -4174,7 +3256,7 @@
     },
     "CAT_000232": {
         "title": "CAT_000232",
-        "date": "1893-02",
+        "sell_date": "1893-02",
         "item count": 301,
         "currency": "FRF",
         "total price": 3836,
@@ -4190,63 +3272,27 @@
     },
     "CAT_000292": {
         "title": "Vente No\u00ebl Charavay, 19 d\u00e9cembre 1903",
-        "date": "1903",
-        "item count": 160,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 160
     },
     "CAT_000289": {
         "title": "Vente No\u00ebl Charavay, 15 juin 1903",
-        "date": "1903",
-        "item count": 171,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1903",
+        "item count": 171
     },
     "CAT_000246": {
         "title": "Vente \u00c9tienne Charavay, 15 mai 1886, collection connue",
-        "date": "1886",
-        "item count": 173,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 173
     },
     "CAT_000202": {
         "title": "Vente \u00c9tienne Charavay, 23 mai 1882, collection connue",
-        "date": "1882",
-        "item count": 64,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 64
     },
     "CAT_000233": {
         "title": "CAT_000233",
-        "date": "1893-02",
+        "sell_date": "1893-02",
         "item count": 288,
         "currency": "FRF",
         "total price": 3687,
@@ -4262,189 +3308,72 @@
     },
     "CAT_000277": {
         "title": "Vente \u00c9tienne Charavay, 30 mai 1891, collection diverses",
-        "date": "1891",
-        "item count": 202,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1891",
+        "item count": 202
     },
     "CAT_000208": {
         "title": "Vente \u00c9tienne Charavay, 20 d\u00e9cembre 1882",
-        "date": "1882",
-        "item count": 227,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 227
     },
     "CAT_000209": {
         "title": "Vente \u00c9tienne Charavay, 29 et 30 janvier 1883, collection Dubrunfaut",
-        "date": "1883",
-        "item count": 455,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 455
     },
     "CAT_000245": {
         "title": "Vente \u00c9tienne Charavay, 13 mai 1886, collection d'un amateur du Nord de la France",
-        "date": "1886",
-        "item count": 292,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 292
     },
     "CAT_000294": {
         "title": "Vente No\u00ebl Charavay, 25 f\u00e9vrier 1904",
-        "date": "1904",
-        "item count": 160,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1904",
+        "item count": 160
     },
     "CAT_000203": {
         "title": "Vente \u00c9tienne Charavay, 25 mai 1882, collection d'un amateur russe",
-        "date": "1882",
-        "item count": 294,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 294
     },
     "CAT_000256": {
         "title": "Vente \u00c9tienne Charavay, 11 f\u00e9vrier 1888",
-        "date": "1888",
-        "item count": 168,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 168
     },
     "CAT_000212": {
         "title": "Vente \u00c9tienne Charavay, 6 avril 1883, collection de Musset",
-        "date": "1883",
-        "item count": 156,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1883",
+        "item count": 156
     },
     "CAT_000252": {
         "title": "Vente \u00c9tienne Charavay, 27 d\u00e9cembre 1886",
-        "date": "1886",
-        "item count": 63,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 63
     },
     "CAT_000259": {
         "title": "Vente \u00c9tienne Charavay, 7 mars 1888",
-        "date": "1888",
-        "item count": 185,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 185
     },
     "CAT_000248": {
         "title": "Vente \u00c9tienne Charavay, 10 juin 1886",
-        "date": "1886",
-        "item count": 80,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1886",
+        "item count": 80
     },
     "CAT_000205": {
         "title": "Vente \u00c9tienne Charavay, 27 juin 1882, collection de S***",
-        "date": "1882",
-        "item count": 131,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 131
     },
     "CAT_000258": {
         "title": "Vente \u00c9tienne Charavay, 27 et 28 f\u00e9vrier 1888, collection T\u00e9chener",
-        "date": "1888",
-        "item count": 419,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1888",
+        "item count": 419
     },
     "CAT_000237": {
         "title": "CAT_000237",
-        "date": "1896-04",
+        "sell_date": "1896-04",
         "item count": 294,
         "currency": "FRF",
         "total price": 3665,
@@ -4462,21 +3391,12 @@
     },
     "CAT_000280": {
         "title": "Vente \u00c9tienne Charavay, 7 f\u00e9vrier 1894",
-        "date": "1894",
-        "item count": 114,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1894",
+        "item count": 114
     },
     "CAT_000228": {
         "title": "CAT_000228",
-        "date": "1895-05",
+        "sell_date": "1895-05",
         "item count": 302,
         "currency": "FRF",
         "total price": 3997,
@@ -4492,7 +3412,7 @@
     },
     "CAT_000423": {
         "title": "RDA, N\u00b0220 (Mars 1899)",
-        "date": "1899-03",
+        "sell_date": "1899-03",
         "item count": 320,
         "currency": "FRF",
         "total price": 4546,
@@ -4508,7 +3428,7 @@
     },
     "CAT_000429": {
         "title": "RDA, N\u00b0227 (Octobre 1899)",
-        "date": "1899-10",
+        "sell_date": "1899-10",
         "item count": 279,
         "currency": "FRF",
         "total price": 5887,
@@ -4524,7 +3444,7 @@
     },
     "CAT_000417": {
         "title": "DA, N\u00b0214 (Septembre 1898)",
-        "date": "1898-09",
+        "sell_date": "1898-09",
         "item count": 336,
         "currency": "FRF",
         "total price": 5055,
@@ -4540,7 +3460,7 @@
     },
     "CAT_000422": {
         "title": "RDA, N\u00b0219 (F\u00e9vrier 1899)",
-        "date": "1899-02",
+        "sell_date": "1899-02",
         "item count": 300,
         "currency": "FRF",
         "total price": 4505,
@@ -4556,7 +3476,7 @@
     },
     "CAT_000427": {
         "title": "RDA, N\u00b0225 (Ao\u00fbt 1899)",
-        "date": "1899-08",
+        "sell_date": "1899-08",
         "item count": 291,
         "currency": "FRF",
         "total price": 3997,
@@ -4572,7 +3492,7 @@
     },
     "CAT_000418": {
         "title": "RDA, N\u00b0215 (Octobre 1898)",
-        "date": "1898-10",
+        "sell_date": "1898-10",
         "item count": 310,
         "currency": "FRF",
         "total price": 5632,
@@ -4588,7 +3508,7 @@
     },
     "CAT_000428": {
         "title": "RDA, N\u00b0226 (Septembre 1899)",
-        "date": "1899-09",
+        "sell_date": "1899-09",
         "item count": 293,
         "currency": "FRF",
         "total price": 4571,
@@ -4604,7 +3524,7 @@
     },
     "CAT_000419": {
         "title": "RDA, N\u00b0216 (Novembre 1898)",
-        "date": "1898-11",
+        "sell_date": "1898-11",
         "item count": 327,
         "currency": "FRF",
         "total price": 3958,
@@ -4620,7 +3540,7 @@
     },
     "CAT_000431": {
         "title": "RDA, N\u00b0229 (D\u00e9cembre 1899)",
-        "date": "1900-01",
+        "sell_date": "1900-01",
         "item count": 327,
         "currency": "FRF",
         "total price": 5632,
@@ -4636,7 +3556,7 @@
     },
     "CAT_000424": {
         "title": "RDA, N\u00b0222 (Avril 1899)",
-        "date": "1899-05",
+        "sell_date": "1899-05",
         "item count": 277,
         "currency": "FRF",
         "total price": 4674,
@@ -4652,7 +3572,7 @@
     },
     "CAT_000425": {
         "title": "RDA, N\u00b0223 (Juin 1899)",
-        "date": "1899-06",
+        "sell_date": "1899-06",
         "item count": 266,
         "currency": "FRF",
         "total price": 4518,
@@ -4668,7 +3588,7 @@
     },
     "CAT_000430": {
         "title": "RDA, N\u00b0229 (D\u00e9cembre 1899)",
-        "date": "1899-12",
+        "sell_date": "1899-12",
         "item count": 311,
         "currency": "FRF",
         "total price": 8849,
@@ -4684,7 +3604,7 @@
     },
     "CAT_000421": {
         "title": "RDA, N\u00b0218 (Janvier 1899)",
-        "date": "1899-01",
+        "sell_date": "1899-01",
         "item count": 316,
         "currency": "FRF",
         "total price": 5390,
@@ -4700,7 +3620,7 @@
     },
     "CAT_000401": {
         "title": "catalogue Laverdet, novembre-d\u00e9cembre 1860, n\u00ba 30",
-        "date": "novembre-d\u00e9cembre 1860",
+        "sell_date": "novembre-d\u00e9cembre 1860",
         "item count": 100,
         "currency": "FRF",
         "total price": 1476,
@@ -4716,7 +3636,7 @@
     },
     "CAT_000420": {
         "title": "RDA, N\u00b0217 (D\u00e9cembre 1898)",
-        "date": "1898-12",
+        "sell_date": "1898-12",
         "item count": 311,
         "currency": "FRF",
         "total price": 6010,
@@ -4732,7 +3652,7 @@
     },
     "CAT_000426": {
         "title": "RDA, N\u00b0224 (juillet 1899)",
-        "date": "1899-07",
+        "sell_date": "1899-07",
         "item count": 277,
         "currency": "FRF",
         "total price": 4194,
@@ -4748,7 +3668,7 @@
     },
     "CAT_000171": {
         "title": "RDA, N\u00b0161 (D\u00e9cembre 1893)",
-        "date": "1893-12",
+        "sell_date": "1893-12",
         "item count": 296,
         "currency": "FRF",
         "total price": 3838,
@@ -4766,7 +3686,7 @@
     },
     "CAT_000125": {
         "title": "RDA, N\u00b0122 (Avril 1889)",
-        "date": "1889-10",
+        "sell_date": "1889-10",
         "item count": 381,
         "currency": "FRF",
         "total price": 3649,
@@ -4783,7 +3703,7 @@
     },
     "CAT_000126": {
         "title": "RDA, N\u00b0123 (Novembre 1889)",
-        "date": "1889-11",
+        "sell_date": "1889-11",
         "item count": 287,
         "currency": "FRF",
         "total price": 4368,
@@ -4799,7 +3719,7 @@
     },
     "CAT_000158": {
         "title": "RDA, N\u00b0155 (Mai 1893)",
-        "date": "1893-05",
+        "sell_date": "1893-05",
         "item count": 291,
         "currency": "FRF",
         "total price": 4117,
@@ -4815,35 +3735,17 @@
     },
     "CAT_000184": {
         "title": "Vente \u00c9tienne Charavay, 19 f\u00e9vrier 1881",
-        "date": "1881",
-        "item count": 78,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 78
     },
     "CAT_000186": {
         "title": "Vente \u00c9tienne Charavay, 17 mars 1881",
-        "date": "1881",
-        "item count": 269,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 269
     },
     "CAT_000115": {
         "title": "RDA, N\u00b0113 (Avril-mai 1887)",
-        "date": "1888-03",
+        "sell_date": "1888-03",
         "item count": 290,
         "currency": "FRF",
         "total price": 3323,
@@ -4859,7 +3761,7 @@
     },
     "CAT_000156": {
         "title": "RDA, N\u00b0153 (Mars 1893)",
-        "date": "1893-03",
+        "sell_date": "1893-03",
         "item count": 328,
         "currency": "FRF",
         "total price": 4176,
@@ -4875,7 +3777,7 @@
     },
     "CAT_000122": {
         "title": "RDA, N\u00b0119 (Mars 1889)",
-        "date": "1889-03",
+        "sell_date": "1889-03",
         "item count": 224,
         "currency": "FRF",
         "total price": 5135,
@@ -4892,35 +3794,17 @@
     },
     "CAT_000164": {
         "title": "Vente Etienne Charavay, 20 mai 1879",
-        "date": "1879",
-        "item count": 174,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1879",
+        "item count": 174
     },
     "CAT_000166": {
         "title": "Vente Etienne Charavay, 13 et 14 juin 1879",
-        "date": "1879",
-        "item count": 410,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1879",
+        "item count": 410
     },
     "CAT_000110": {
         "title": "RDA, N\u00b0107 (Septembre 1887)",
-        "date": "1887-09",
+        "sell_date": "1887-09",
         "item count": 355,
         "currency": "FRF",
         "total price": 7244,
@@ -4936,21 +3820,12 @@
     },
     "CAT_000176": {
         "title": "Vente \u00c9tienne Charavay, 14 juillet 1879",
-        "date": "1879",
-        "item count": 173,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1879",
+        "item count": 173
     },
     "CAT_000138": {
         "title": "RDA, N\u00b0135 (Avril 1891)",
-        "date": "1891-03",
+        "sell_date": "1891-03",
         "item count": 329,
         "currency": "FRF",
         "total price": 7336,
@@ -4966,7 +3841,7 @@
     },
     "CAT_000103": {
         "title": "RDA, N\u00b0100 (Octobre 1886)",
-        "date": "1886-10",
+        "sell_date": "1886-10",
         "item count": 345,
         "currency": "FRF",
         "total price": 3177,
@@ -4982,7 +3857,7 @@
     },
     "CAT_000152": {
         "title": "RDA, N\u00b0149 (Novembre 1892)",
-        "date": "1892-11",
+        "sell_date": "1892-11",
         "item count": 312,
         "currency": "FRF",
         "total price": 4537,
@@ -4998,21 +3873,12 @@
     },
     "CAT_000189": {
         "title": "Vente \u00c9tienne Charavay, 4 juillet 1881, collection d'un amateur anglais",
-        "date": "1881",
-        "item count": 222,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 222
     },
     "CAT_000157": {
         "title": "RDA, N\u00b0154 (Avril 1893)",
-        "date": "1893-04",
+        "sell_date": "1893-04",
         "item count": 299,
         "currency": "FRF",
         "total price": 4531,
@@ -5028,7 +3894,7 @@
     },
     "CAT_000170": {
         "title": "RDA, N\u00b0160 (Novembre 1893)",
-        "date": "1893-11",
+        "sell_date": "1893-11",
         "item count": 300,
         "currency": "FRF",
         "total price": 4306,
@@ -5044,21 +3910,12 @@
     },
     "CAT_000196": {
         "title": "Vente \u00c9tienne Charavay, 22 avril 1882, collection Bayl\u00e9",
-        "date": "1882",
-        "item count": 206,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 206
     },
     "CAT_000101": {
         "title": "RDA, N\u00b098 (Mars-Avril 1886)",
-        "date": "1886-03",
+        "sell_date": "1886-03",
         "item count": 254,
         "currency": "FRF",
         "total price": 3718,
@@ -5075,7 +3932,7 @@
     },
     "CAT_000102": {
         "title": "RDA, N\u00b099 (Mai-Juillet 1886)",
-        "date": "1886-05",
+        "sell_date": "1886-05",
         "item count": 291,
         "currency": "FRF",
         "total price": 7356,
@@ -5091,7 +3948,7 @@
     },
     "CAT_000174": {
         "title": "RDA, N\u00b0164 (Mars 1894)",
-        "date": "1894-03",
+        "sell_date": "1894-03",
         "item count": 288,
         "currency": "FRF",
         "total price": 4237,
@@ -5107,35 +3964,17 @@
     },
     "CAT_000182": {
         "title": "Vente \u00c9tienne Charavay, 18 d\u00e9cembre 1880",
-        "date": "1880",
-        "item count": 249,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1880",
+        "item count": 249
     },
     "CAT_000195": {
         "title": "Vente \u00c9tienne Charavay, 24 et 25 mars 1880, collection Lefebvre",
-        "date": "1880",
-        "item count": 375,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1880",
+        "item count": 375
     },
     "CAT_000151": {
         "title": "RDA, N\u00b0148 (Octobre 1892)",
-        "date": "1892-10",
+        "sell_date": "1892-10",
         "item count": 336,
         "currency": "FRF",
         "total price": 5808,
@@ -5151,7 +3990,7 @@
     },
     "CAT_000107": {
         "title": "RDA, N\u00b0104 (Mars 1887)",
-        "date": "1887-03",
+        "sell_date": "1887-03",
         "item count": 273,
         "currency": "FRF",
         "total price": 7948,
@@ -5167,21 +4006,12 @@
     },
     "CAT_000192": {
         "title": "Vente \u00c9tienne Charavay, 14 mars 1882, collection d'un amateur connu",
-        "date": "1882",
-        "item count": 267,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 267
     },
     "CAT_000154": {
         "title": "RDA, N\u00b0151 (Janvier 1893)",
-        "date": "1893-01",
+        "sell_date": "1893-01",
         "item count": 288,
         "currency": "FRF",
         "total price": 3956,
@@ -5197,7 +4027,7 @@
     },
     "CAT_000155": {
         "title": "RDA, N\u00b0152 (F\u00e9vrier 1893)",
-        "date": "1893-02",
+        "sell_date": "1893-02",
         "item count": 317,
         "currency": "FRF",
         "total price": 3816,
@@ -5214,7 +4044,7 @@
     },
     "CAT_000140": {
         "title": "RDA, N\u00b0137 (Mai 1891)",
-        "date": "1891-05",
+        "sell_date": "1891-05",
         "item count": 406,
         "currency": "FRF",
         "total price": 6699,
@@ -5230,7 +4060,7 @@
     },
     "CAT_000105": {
         "title": "RDA, N\u00b0102 (D\u00e9cembre 1886)",
-        "date": "1886-12",
+        "sell_date": "1886-12",
         "item count": 248,
         "currency": "FRF",
         "total price": 3904,
@@ -5246,7 +4076,7 @@
     },
     "CAT_000131": {
         "title": "RDA, N\u00b0128 (Mai 1890)",
-        "date": "1890-05",
+        "sell_date": "1890-05",
         "item count": 281,
         "currency": "FRF",
         "total price": 4985,
@@ -5262,21 +4092,12 @@
     },
     "CAT_000162": {
         "title": "Vente Etienne Charavay, 15 f\u00e9vrier 1879",
-        "date": "1879",
-        "item count": 161,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1879",
+        "item count": 161
     },
     "CAT_000175": {
         "title": "RDA, N\u00b0165 (Avril 1894)",
-        "date": "1894-04",
+        "sell_date": "1894-04",
         "item count": 277,
         "currency": "FRF",
         "total price": 5045,
@@ -5292,7 +4113,7 @@
     },
     "CAT_000139": {
         "title": "RDA, N\u00b0136 (Mars 1891)",
-        "date": "1891-04",
+        "sell_date": "1891-04",
         "item count": 402,
         "currency": "FRF",
         "total price": 7825,
@@ -5309,21 +4130,12 @@
     },
     "CAT_000165": {
         "title": "RDA, N\u00b0158 (Ao\u00fbt-Septembre 1893)",
-        "date": "1893-08",
-        "item count": 281,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1893-08",
+        "item count": 281
     },
     "CAT_000148": {
         "title": "RDA, N\u00b0145 (Mai 1892)",
-        "date": "1892-05",
+        "sell_date": "1892-05",
         "item count": 278,
         "currency": "FRF",
         "total price": 5365,
@@ -5339,7 +4151,7 @@
     },
     "CAT_000173": {
         "title": "RDA, N\u00b0163 (F\u00e9vrier 1894)",
-        "date": "1894-02",
+        "sell_date": "1894-02",
         "item count": 301,
         "currency": "FRF",
         "total price": 3910,
@@ -5355,35 +4167,17 @@
     },
     "CAT_000193": {
         "title": "Vente \u00c9tienne Charavay, 3 avril 1882, collection Pochet-Deroche",
-        "date": "1882",
-        "item count": 84,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 84
     },
     "CAT_000190": {
         "title": "Vente \u00c9tienne Charavay, 28 novembre 1881, collection d'un amateur anglais",
-        "date": "1881",
-        "item count": 248,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 248
     },
     "CAT_000132": {
         "title": "RDA, N\u00b0129 (Juin 1890)",
-        "date": "1890-06",
+        "sell_date": "1890-06",
         "item count": 372,
         "currency": "FRF",
         "total price": 4477,
@@ -5399,7 +4193,7 @@
     },
     "CAT_000106": {
         "title": "RDA, N\u00b0103 (Janvier 1887)",
-        "date": "1887-01",
+        "sell_date": "1887-01",
         "item count": 295,
         "currency": "FRF",
         "total price": 4178,
@@ -5415,7 +4209,7 @@
     },
     "CAT_000130": {
         "title": "RDA, N\u00b0127 (Avril 1890)",
-        "date": "1890-04",
+        "sell_date": "1890-04",
         "item count": 263,
         "currency": "FRF",
         "total price": 4702,
@@ -5431,21 +4225,12 @@
     },
     "CAT_000178": {
         "title": "Vente \u00c9tienne Charavay, 4 mars 1880, collection Mah\u00e9rault",
-        "date": "1880",
-        "item count": 252,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1880",
+        "item count": 252
     },
     "CAT_000141": {
         "title": "RDA, N\u00b0138 (Juin 1891)",
-        "date": "1891-06",
+        "sell_date": "1891-06",
         "item count": 311,
         "currency": "FRF",
         "total price": 6561,
@@ -5462,35 +4247,17 @@
     },
     "CAT_000183": {
         "title": "Vente \u00c9tienne Charavay, 24 janvier 1881, collection de Forge",
-        "date": "1881",
-        "item count": 75,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 75
     },
     "CAT_000185": {
         "title": "Vente \u00c9tienne Charavay, 7 mars 1881, collection Chambry",
-        "date": "1881",
-        "item count": 674,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 674
     },
     "CAT_000146": {
         "title": "RDA, N\u00b0143 (Mars 1892)",
-        "date": "1892-03",
+        "sell_date": "1892-03",
         "item count": 277,
         "currency": "FRF",
         "total price": 5295,
@@ -5506,7 +4273,7 @@
     },
     "CAT_000133": {
         "title": "RDA, N\u00b0130 (Octobre 1890)",
-        "date": "1890-10",
+        "sell_date": "1890-10",
         "item count": 331,
         "currency": "FRF",
         "total price": 7077,
@@ -5522,7 +4289,7 @@
     },
     "CAT_000109": {
         "title": "RDA, N\u00b0106 (Juin 1887)",
-        "date": "1887-06",
+        "sell_date": "1887-06",
         "item count": 384,
         "currency": "FRF",
         "total price": 4578,
@@ -5538,7 +4305,7 @@
     },
     "CAT_000199": {
         "title": "RDA, N\u00b0169 (Ao\u00fbt-septembre 1894)",
-        "date": "1894-08",
+        "sell_date": "1894-08",
         "item count": 301,
         "currency": "FRF",
         "total price": 3778,
@@ -5554,21 +4321,12 @@
     },
     "CAT_000167": {
         "title": "Vente No\u00ebl Charavay, 5 juin 1897",
-        "date": "1897",
-        "item count": 115,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1897",
+        "item count": 115
     },
     "CAT_000142": {
         "title": "RDA, N\u00b0139 (Octobre 1891)",
-        "date": "1891-10",
+        "sell_date": "1891-10",
         "item count": 268,
         "currency": "FRF",
         "total price": 5881,
@@ -5584,7 +4342,7 @@
     },
     "CAT_000112": {
         "title": "RDA, N\u00b0109 (Novembre 1887)",
-        "date": "1887-11",
+        "sell_date": "1887-11",
         "item count": 262,
         "currency": "FRF",
         "total price": 5089,
@@ -5601,21 +4359,12 @@
     },
     "CAT_000188": {
         "title": "Vente \u00c9tienne Charavay, 20 juin 1881",
-        "date": "1881",
-        "item count": 251,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 251
     },
     "CAT_000134": {
         "title": "RDA, N\u00b0131 (Novembre 1890)",
-        "date": "1890-11",
+        "sell_date": "1890-11",
         "item count": 333,
         "currency": "FRF",
         "total price": 4173,
@@ -5631,21 +4380,12 @@
     },
     "CAT_000168": {
         "title": "Vente Etienne Charavay, 12 juillet 1879",
-        "date": "1879",
-        "item count": 173,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1879",
+        "item count": 173
     },
     "CAT_000116": {
         "title": "RDA, N\u00b0112 (Mars 1887)",
-        "date": "1888-05",
+        "sell_date": "1888-05",
         "item count": 316,
         "currency": "FRF",
         "total price": 3317,
@@ -5661,7 +4401,7 @@
     },
     "CAT_000194": {
         "title": "RDA, N\u00b0166 (Mai 1894)",
-        "date": "1894-05",
+        "sell_date": "1894-05",
         "item count": 283,
         "currency": "FRF",
         "total price": 4801,
@@ -5678,7 +4418,7 @@
     },
     "CAT_000111": {
         "title": "RDA, N\u00b0108 (Octobre 1887)",
-        "date": "1887-10",
+        "sell_date": "1887-10",
         "item count": 300,
         "currency": "FRF",
         "total price": 6568,
@@ -5694,7 +4434,7 @@
     },
     "CAT_000147": {
         "title": "RDA, N\u00b0144 (Avril 1892)",
-        "date": "1892-04",
+        "sell_date": "1892-04",
         "item count": 232,
         "currency": "FRF",
         "total price": 5023,
@@ -5710,7 +4450,7 @@
     },
     "CAT_000137": {
         "title": "RDA, N\u00b0134 (F\u00e9vrier 1891)",
-        "date": "1891-02",
+        "sell_date": "1891-02",
         "item count": 275,
         "currency": "FRF",
         "total price": 4017,
@@ -5726,7 +4466,7 @@
     },
     "CAT_000127": {
         "title": "RDA, N\u00b0124 (D\u00e9cembre 1889)",
-        "date": "1889-12",
+        "sell_date": "1889-12",
         "item count": 222,
         "currency": "FRF",
         "total price": 4449,
@@ -5742,7 +4482,7 @@
     },
     "CAT_000119": {
         "title": "RDA, N\u00b0116 (Novembre 1888)",
-        "date": "1888-11",
+        "sell_date": "1888-11",
         "item count": 252,
         "currency": "FRF",
         "total price": 5457,
@@ -5759,7 +4499,7 @@
     },
     "CAT_000200": {
         "title": "RDA, N\u00b0170 (Octobre 1894)",
-        "date": "1894-10",
+        "sell_date": "1894-10",
         "item count": 290,
         "currency": "FRF",
         "total price": 4808,
@@ -5775,7 +4515,7 @@
     },
     "CAT_000108": {
         "title": "RDA, N\u00b0105 (Avril 1887)",
-        "date": "1887-04",
+        "sell_date": "1887-04",
         "item count": 357,
         "currency": "FRF",
         "total price": 2547,
@@ -5791,7 +4531,7 @@
     },
     "CAT_000150": {
         "title": "RDA, N\u00b0147 (Septembre 1892)",
-        "date": "1892-06",
+        "sell_date": "1892-06",
         "item count": 355,
         "currency": "FRF",
         "total price": 5591,
@@ -5809,21 +4549,12 @@
     },
     "CAT_000163": {
         "title": "Vente Etienne Charavay, 24 mars 1879",
-        "date": "1879",
-        "item count": 180,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1879",
+        "item count": 180
     },
     "CAT_000124": {
         "title": "RDA, N\u00b0121 (Avril 1889)",
-        "date": "1889-05",
+        "sell_date": "1889-05",
         "item count": 270,
         "currency": "FRF",
         "total price": 5296,
@@ -5839,21 +4570,12 @@
     },
     "CAT_000180": {
         "title": "Vente \u00c9tienne Charavay, 21 avril 1880, collection de Villars",
-        "date": "1880",
-        "item count": 268,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1880",
+        "item count": 268
     },
     "CAT_000128": {
         "title": "RDA, N\u00b0125 (F\u00e9vrier 1890)",
-        "date": "1890-02",
+        "sell_date": "1890-02",
         "item count": 269,
         "currency": "FRF",
         "total price": 5829,
@@ -5869,21 +4591,12 @@
     },
     "CAT_000179": {
         "title": "Vente \u00c9tienne Charavay, 17 avril 1880, collection banque de Saint-Georges \u00e0 G\u00eanes",
-        "date": "1880",
-        "item count": 298,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1880",
+        "item count": 298
     },
     "CAT_000123": {
         "title": "RDA, N\u00b0120 (Avril 1889)",
-        "date": "1889-04",
+        "sell_date": "1889-04",
         "item count": 355,
         "currency": "FRF",
         "total price": 4211,
@@ -5899,7 +4612,7 @@
     },
     "CAT_000121": {
         "title": "RDA, N\u00b0118 (F\u00e9vrier 1889)",
-        "date": "1889-02",
+        "sell_date": "1889-02",
         "item count": 275,
         "currency": "FRF",
         "total price": 3859,
@@ -5915,21 +4628,12 @@
     },
     "CAT_000187": {
         "title": "Vente \u00c9tienne Charavay, 3 juin 1881, collection le baron Taylor",
-        "date": "1881",
-        "item count": 241,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1881",
+        "item count": 241
     },
     "CAT_000198": {
         "title": "RDA, N\u00b0168 (Juillet 1894)",
-        "date": "1894-07",
+        "sell_date": "1894-07",
         "item count": 288,
         "currency": "FRF",
         "total price": 5688,
@@ -5945,7 +4649,7 @@
     },
     "CAT_000160": {
         "title": "RDA, N\u00b0157 (Juillet 1893)",
-        "date": "1893-07",
+        "sell_date": "1893-07",
         "item count": 382,
         "currency": "FRF",
         "total price": 3243,
@@ -5961,7 +4665,7 @@
     },
     "CAT_000129": {
         "title": "RDA, N\u00b0126 (Mars 1890)",
-        "date": "1890-03",
+        "sell_date": "1890-03",
         "item count": 374,
         "currency": "FRF",
         "total price": 3702,
@@ -5977,7 +4681,7 @@
     },
     "CAT_000197": {
         "title": "RDA, N\u00b0167 (Juin 1894)",
-        "date": "1894-06",
+        "sell_date": "1894-06",
         "item count": 298,
         "currency": "FRF",
         "total price": 4628,
@@ -5993,7 +4697,7 @@
     },
     "CAT_000117": {
         "title": "RDA, N\u00b0114 (Ao\u00fbt 1888)",
-        "date": "1888-08",
+        "sell_date": "1888-08",
         "item count": 262,
         "currency": "FRF",
         "total price": 5287,
@@ -6009,7 +4713,7 @@
     },
     "CAT_000104": {
         "title": "RDA, N\u00b0101 (Novembre 1886)",
-        "date": "1886-11",
+        "sell_date": "1886-11",
         "item count": 270,
         "currency": "FRF",
         "total price": 3617,
@@ -6025,7 +4729,7 @@
     },
     "CAT_000143": {
         "title": "RDA, N\u00b0140 (Novembre 1891)",
-        "date": "1891-11",
+        "sell_date": "1891-11",
         "item count": 320,
         "currency": "FRF",
         "total price": 7066,
@@ -6041,7 +4745,7 @@
     },
     "CAT_000114": {
         "title": "RDA, N\u00b0111 (F\u00e9vrier 1888)",
-        "date": "1888-02",
+        "sell_date": "1888-02",
         "item count": 304,
         "currency": "FRF",
         "total price": 3732,
@@ -6057,7 +4761,7 @@
     },
     "CAT_000172": {
         "title": "RDA, N\u00b0162 (Janvier 1894)",
-        "date": "1894-01",
+        "sell_date": "1894-01",
         "item count": 303,
         "currency": "FRF",
         "total price": 4281,
@@ -6073,7 +4777,7 @@
     },
     "CAT_000120": {
         "title": "RDA, N\u00b0117 (D\u00e9cembre 1888)",
-        "date": "1888-12",
+        "sell_date": "1888-12",
         "item count": 305,
         "currency": "FRF",
         "total price": 7329,
@@ -6089,21 +4793,12 @@
     },
     "CAT_000191": {
         "title": "Vente \u00c9tienne Charavay, 30 janvier 1882, collection d'un amateur connu",
-        "date": "1882",
-        "item count": 239,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1882",
+        "item count": 239
     },
     "CAT_000159": {
         "title": "RDA, N\u00b0156 (Juin 1893)",
-        "date": "1893-06",
+        "sell_date": "1893-06",
         "item count": 269,
         "currency": "FRF",
         "total price": 4502,
@@ -6119,7 +4814,7 @@
     },
     "CAT_000136": {
         "title": "RDA, N\u00b0133 (Janvier 1891)",
-        "date": "1891-01",
+        "sell_date": "1891-01",
         "item count": 259,
         "currency": "FRF",
         "total price": 4886,
@@ -6135,7 +4830,7 @@
     },
     "CAT_000149": {
         "title": "RDA, N\u00b0146 (Juin 1892)",
-        "date": "1892-06",
+        "sell_date": "1892-06",
         "item count": 281,
         "currency": "FRF",
         "total price": 5525,
@@ -6151,7 +4846,7 @@
     },
     "CAT_000118": {
         "title": "RDA, N\u00b0115 (Octobre 1888)",
-        "date": "1888-10",
+        "sell_date": "1888-10",
         "item count": 294,
         "currency": "FRF",
         "total price": 4965,
@@ -6167,21 +4862,12 @@
     },
     "CAT_000181": {
         "title": "Vente \u00c9tienne Charavay, 17 juin 1880, collection le baron Taylor",
-        "date": "1880",
-        "item count": 199,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1880",
+        "item count": 199
     },
     "CAT_000145": {
         "title": "RDA, N\u00b0142 (F\u00e9vrier 1892)",
-        "date": "1892-02",
+        "sell_date": "1892-02",
         "item count": 250,
         "currency": "FRF",
         "total price": 3665,
@@ -6197,7 +4883,7 @@
     },
     "CAT_000169": {
         "title": "RDA, N\u00b0159 (Octobre 1893)",
-        "date": "1893-10",
+        "sell_date": "1893-10",
         "item count": 291,
         "currency": "FRF",
         "total price": 3989,
@@ -6213,21 +4899,12 @@
     },
     "CAT_000161": {
         "title": "Vente Etienne Charavay, 15 f\u00e9vrier 1879",
-        "date": "1879",
-        "item count": 167,
-        "currency": "unknown",
-        "total price": "unknown",
-        "low price": "unknown",
-        "high price": "unknown",
-        "mean price": "unknown",
-        "median price": "unknown",
-        "mode price": "unknown",
-        "variance price": "unknown",
-        "high price items": "unknown"
+        "sell_date": "1879",
+        "item count": 167
     },
     "CAT_000113": {
         "title": "RDA, N\u00b0110 (D\u00e9cembre 1887)",
-        "date": "1887-12",
+        "sell_date": "1887-12",
         "item count": 373,
         "currency": "FRF",
         "total price": 4593,
@@ -6244,7 +4921,7 @@
     },
     "CAT_000135": {
         "title": "RDA, N\u00b0132 (D\u00e9cembre 1890)",
-        "date": "1890-12",
+        "sell_date": "1890-12",
         "item count": 298,
         "currency": "FRF",
         "total price": 6201,
@@ -6261,7 +4938,7 @@
     },
     "CAT_000144": {
         "title": "RDA, N\u00b0141 (D\u00e9cembre 1891)",
-        "date": "1891-12",
+        "sell_date": "1891-12",
         "item count": 265,
         "currency": "FRF",
         "total price": 4752,
@@ -6277,7 +4954,7 @@
     },
     "CAT_000153": {
         "title": "RDA, N\u00b0150 (D\u00e9cembre 1892)",
-        "date": "1892-12",
+        "sell_date": "1892-12",
         "item count": 317,
         "currency": "FRF",
         "total price": 4279,
