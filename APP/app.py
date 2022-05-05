@@ -19,7 +19,7 @@ def cleaner():
     function to delete the figures created when using the app
     :return: None
     """
-    figs = glob.glob(os.path.join("templates", "partials", "*.html"))
+    figs = glob.glob(os.path.join("templates", "partials", "fig*.html"))
     for f in figs:
         os.remove(f)
     return None

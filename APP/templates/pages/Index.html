@@ -1,12 +1,32 @@
 {% extends "layout.html" %}
 {% block title %} Index {% endblock %}
 {% block corps %}
-<div class="container" id="idx">
-    <h1>Index</h1>
+<div class="container">
+    <div>
+        <div id="idxfig">
+            <h1>Index</h1>
 
-    {% if figpath %}
-        <div><iframe src="{{ url_for('fig_grabber', key='idx') }}"></iframe></div>
-    {% endif %}
+            <!-- dropdown button and iframe to show the plots -->
+            {% if figpath %}
+                <div>
+                    <div>
+                        <label for="dwn" class="label">See another graph</label>
+                        <select class="btn dropdown" id="dwn" name="dwn" aria-expanded="false">
+                            <option value="1" class="dropdown-item">Total sales per year</option>
+                            <option value="2" class="dropdown-item">Average sale price per catalogue and per year</option>
+                            <option value="3" class="dropdown-item">Median sale price per catalogue and per year</option>
+                            <option value="4" class="dropdown-item">Average sale price of an item per year</option>
+                            <option value="5" class="dropdown-item">Median sale price of an item per year</option>
+                            <option value="6" class="dropdown-item">Number of items for sale per year</option>
+                        </select>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+        {% if figpath %}
+            <div id="fig"><iframe src="{{ url_for('fig_grabber', key='idx1') }}"></iframe></div>
+        {% endif %}
+    </div>
 
     <p class="lead">Click on a sale catalogue to access it. All encoded sales catalogues are available here.</p>
    <ul class="list-group">

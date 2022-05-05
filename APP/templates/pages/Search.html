@@ -191,30 +191,4 @@
    </form>
    {% endif %}
 </div>
-<!-- script to change behaviour of result buttons #pills-manuscript-tab and #pills-sell-tab -->
-<script type="text/javascript">
-   var manuscript = document.querySelector("#pills-manuscript-tab");
-   var sell = document.querySelector("#pills-sell-tab");
-
-   if (manuscript != null && sell != null){
-      // base behaviour of the buttons
-      function baseClicks() {
-         sell.setAttribute("style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-main2); color: var(--custom-cream);");
-         manuscript.setAttribute("style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);");
-      };
-      window.onload = baseClicks();
-
-      //when clicking on "View by manuscript"
-      function clickManuscript() {
-          sell.setAttribute("style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);");
-          manuscript.setAttribute("style", "background-color: var(--custom-main2); color: var(--custom-cream);");
-      };
-
-      //when clicking on "View by sale"
-      function clickSell() {
-          manuscript.setAttribute("style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);");
-          sell.setAttribute("style", "background-color: var(--custom-main2); color: var(--custom-cream);");
-      };
-   }
-</script>
 {% endblock %}

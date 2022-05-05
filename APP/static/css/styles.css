@@ -191,10 +191,10 @@ a {
 }
 
 .btn {
-  border: 1px solid;
-  border-color: var(--custom-main1);
   background-color: var(--custom-main1);
   color: var(--custom-cream);
+  border: 1px solid;
+  border-color: var(--custom-light-pink);
 }
 
 a:hover {
@@ -240,7 +240,25 @@ p.right-margin {
   margin-right: 2%;
 }
 
+
+/* index: dropdown and iframe */
 iframe {
   width: 100% !important;
-  height: 750px;
+  height: 300px;
 }
+
+
+#idxfig {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#idxfig div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
