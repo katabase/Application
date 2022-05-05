@@ -1,4 +1,5 @@
 from flask import Flask
+from fnmatch import filter
 import atexit
 import glob
 import os
@@ -19,7 +20,8 @@ def cleaner():
     function to delete the figures created when using the app
     :return: None
     """
-    figs = glob.glob(os.path.join("templates", "partials", "fig*.html"))
+    figs = glob.glob(os.path.join(TEMPLATES, "partials", "fig_*"))
+    print(figs)
     for f in figs:
         os.remove(f)
     return None
