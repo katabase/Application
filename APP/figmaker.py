@@ -14,7 +14,7 @@ with open("APP/data/json/export_catalog.json", mode="r") as f:
 with open("APP/data/json/export_item.json", mode="r") as f:
     js_item = json.load(f)
 outdir = os.path.join(TEMPLATES, "partials")
-colors = {"cream": "#fcf8f7", "blue": "#0000ef", "burgundy1": "#890c0c", "burgundy2": "#a41a6a"}
+colors = {"cream": "#fcf8f7", "blue": "#0000ef", "burgundy1": "#890c0c", "burgundy2": "#a41a6a", "pink": "#ff94c9"}
 scale = make_colorscale([colors["blue"], colors["burgundy2"]])  # create a colorscale
 
 
@@ -46,6 +46,8 @@ def plotter():
     y_q1_gpitem = []  # y axis of the plot: the first quartile of item prices per 5 year range
     y_med_gpitem = []  # y axis of the plot: the median of item prices per 5 year range
     y_q3_gpitem = []  # y axis of the plot: the third quartile of item prices per 5 year range
+    # y_lowerfence = []  # y axis of the plot: lower bar of the whisker box (minimum item price for a year)
+    # y_upperfence = []  # y axis of the plot: upper bar of the whisker box (maxium item price for a year)
     pdict_ls_cat = {}  # dictionnary mapping to a year a list of catalogue prices to calculate totals, medians + means
     pdict_ls_item = {}  # dictionnary mapping to a year a list of item prices, to calculate median and mean values
     cdict_fix_item = {}  # dictionary mapping to a year the total of fixed price items sold (cdict = count dictionary)
@@ -129,12 +131,10 @@ def plotter():
         sort_auc_item[k] = cdict_auc_item[k]
     cdict_auc_item = sort_auc_item
     cdict_fix_item = sort_fix_item
-    # create data for the box charts: group pdict_ls_item values per 5 year range + calculate quantiles for each range
-    group_ls_item = sorter(pdict_ls_item)  # dictionary mapping to a 5 year range the prices for that range
-    for k, v in pdict_ls_item.items():
+    # create data for the box charts: group pdict_ls_item values per 5 year range + calculate quartiles for each range
+    group_ls_item = sorter(pdict_ls_item)  # dictionary mapping to a 5 year range the list prices for that range
+    for k, v in group_ls_item.items():
         quart_ls_item[k] = quantiles(v)
-    print(quart_ls_item)
-
 
     print("3 DONE")
 
@@ -167,16 +167,18 @@ def plotter():
             y_fix_item.append(cdict_fix_item[str(d)])
         else:
             y_fix_item.append(0)
-        if str(d) in list(group_ls_item.keys()):
-            y_q1_gpitem.append(group_ls_item[d][0])
-            y_q3_gpitem.append(group_ls_item[d][2])
-            y_med_gpitem.append(group_ls_item[d][1])
+        if d in list(quart_ls_item.keys()):
+            y_q1_gpitem.append(quart_ls_item[d][0])
+            y_q3_gpitem.append(quart_ls_item[d][2])
+            y_med_gpitem.append(quart_ls_item[d][1])
+            # y_lowerfence.append(min(group_ls_item[d]))
+            # y_upperfence.append(max(group_ls_item[d]))
         else:
             y_q1_gpitem.append(0)
             y_q3_gpitem.append(0)
             y_med_gpitem.append(0)
-
-
+            # y_lowerfence.append(0)
+            # y_upperfence.append(0)
 
     print("4 DONE")
 
@@ -189,11 +191,11 @@ def plotter():
     title_avg_item = "Average sale price of an item per year (in french francs)"
     title_med_item = "Median sale price of an item per year (in french francs)"
     title_cnt = "Number of items for sale per year"
-    title_qnt = "Price of an item (every 5 year)"
+    title_qnt = "Evolution of the price of an item (in 5 year ranges, in quartiles)"
     layout = {
         "paper_bgcolor": colors["cream"],
         "plot_bgcolor": colors["cream"],
-        "margin": dict(l=5, r=5, t=30, b=30),
+        "margin": {"l": 5, "r": 5, "t": 30, "b": 30},
         "showlegend": False,
         "xaxis": {"anchor": "x", "title": {"text": "Year"}},
         "barmode": "overlay"  # only affects plot 6
@@ -202,35 +204,40 @@ def plotter():
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Total sales"}}
     layout["title"] = title_total
     fig1 = go.Figure(
-        data=[go.Bar(x=x, y=y_total, marker={"color": y_total, "colorscale": scale})],
+        data=[go.Bar(x=x, y=y_total, marker={"color": y_total, "colorscale": scale},
+                     hovertemplate="<i>Year</i>: %{x}<br><i>Sum of all catalogues' prices </i>: %{y:.2f} FRF")],
         layout=go.Layout(layout)
     )
     # figure 2 : average of the sum of sales in a catalogue per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Average sales per catalogue"}}
     layout["title"] = title_avg_cat
     fig2 = go.Figure(
-        data=[go.Bar(x=x, y=y_avg_cat, marker={"color": y_avg_cat, "colorscale": scale})],
+        data=[go.Bar(x=x, y=y_avg_cat, marker={"color": y_avg_cat, "colorscale": scale},
+                     hovertemplate="<i>Year</i>: %{x}<br><i>Average sum of prices per catalogue </i>: %{y:.2f} FRF")],
         layout=go.Layout(layout)
     )
     # figure 3 : median of the sum of sales in a catalogue per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Median sales per catalogue"}}
     layout["title"] = title_med_cat
     fig3 = go.Figure(
-        data=[go.Bar(x=x, y=y_med_cat, marker={"color": y_med_cat, "colorscale": scale})],
+        data=[go.Bar(x=x, y=y_med_cat, marker={"color": y_med_cat, "colorscale": scale},
+                     hovertemplate="<i>Year</i>: %{x}<br><i>Median sales per catalogue </i>: %{y:.2f} FRF")],
         layout=go.Layout(layout)
     )
     # figure 4 : average price of an item per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Average item price"}}
     layout["title"] = title_avg_item
     fig4 = go.Figure(
-        data=[go.Bar(x=x, y=y_avg_item, marker={"color": y_avg_item, "colorscale": scale})],
+        data=[go.Bar(x=x, y=y_avg_item, marker={"color": y_avg_item, "colorscale": scale},
+                     hovertemplate="<i>Year</i>: %{x}<br><i>Average item price</i>: %{y:.2f} FRF")],
         layout=go.Layout(layout)
     )
     # figure 5 : median price of an item per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Median item price"}}
     layout["title"] = title_med_item
     fig5 = go.Figure(
-        data=[go.Bar(x=x, y=y_med_item, marker={"color": y_med_item, "colorscale": scale})],
+        data=[go.Bar(x=x, y=y_med_item, marker={"color": y_med_item, "colorscale": scale},
+                     hovertemplate="<i>Year</i>: %{x}<br><i>Median item price</i>: %{y:.2f} FRF")],
         layout=go.Layout(layout)
     )
     # figure 6 : number of fixed price and auction items per year
@@ -238,20 +245,24 @@ def plotter():
     layout["title"] = title_cnt
     fig6 = go.Figure(
         data=[
-            go.Bar(x=x, y=y_fix_item, marker={"color": colors["burgundy2"], "opacity": 0.7}),
-            go.Bar(x=x, y=y_auc_item, marker={"color": colors["blue"], "opacity": 0.55})
+            go.Bar(x=x, y=y_fix_item, marker={"color": colors["burgundy2"], "opacity": 0.7},
+                   hovertemplate="<i>Year</i>: %{x}<br><i>Number of fixed-price items for sale </i>: %{y}"),
+            go.Bar(x=x, y=y_auc_item, marker={"color": colors["blue"], "opacity": 0.55},
+                   hovertemplate="<i>Year</i>: %{x}<br><i>Number of auction items for sale </i>: %{y}")
         ],
         layout=go.Layout(layout)
     )
     # figure 7 : 1 box chart per 5 year range
-    layout["yaxis"] = {"anchor": "x", "title": {"text": "Quantiles of an item's price"}}
+    layout["yaxis"] = {"anchor": "x", "title": {"text": "Price of an item (in quantiles)"}}
     layout["title"] = title_qnt
     fig7 = go.Figure(
-        data=[go.Box(x=x, q1=y_q1_gpitem, median=y_med_gpitem, q3=y_q3_gpitem)],
+        data=[go.Box(x=x, q1=y_q1_gpitem, median=y_med_gpitem, q3=y_q3_gpitem,
+                     marker={"color": colors["blue"]},
+                     fillcolor=colors["cream"],
+                     width=4)
+              ],
         layout=go.Layout(layout)
     )
-
-    # BOX OBJECTS https://plotly.com/python-api-reference/generated/plotly.graph_objects.Box.html?highlight=graph%20objects%20box
 
     print("5 DONE")
 
