@@ -1,7 +1,6 @@
-from plotly.subplots import make_subplots
 from plotly.colors import make_colorscale
 import plotly.graph_objs as go
-from statistics import median, mean
+from statistics import median, mean, quantiles
 import json
 import re
 import os
@@ -27,7 +26,7 @@ scale = make_colorscale([colors["blue"], colors["burgundy2"]])  # create a color
 # fontdir = os.path.join(STATIC, "fonts")
 
 
-def plotter(avg=False):
+def plotter():
     """
     if avg is False, we calculate the sum of sales for each year ;
     if pond is avg, we calculate revenue for each catalog
@@ -44,55 +43,44 @@ def plotter(avg=False):
     y_med_item = []  # y axis of the plot: median item price per year
     y_fix_item = []  # y axis of the plot: sum of fixed price items per year
     y_auc_item = []  # y axis of the plot: sum of non-fixed price items per year
-    pdict_total = {}  # dictionary linking to a year the sum of its sales (p = price)
-    pdict_avg_cat = {}  # dictionary linking to a year the average sales for a whole catalogue
-    pdict_med_cat = {}  # dictionary linking to a year the median sales for a whole catalogue
-    pdict_avg_item = {}  # dictionary linking to a year the average item price
-    pdict_med_item = {}  # dictionary linking to a year the median item price
-    cdict_fix_item = {}  # dictionary linking to a year the total of fixed price items sold (cdict = count dictionary)
-    cdict_auc_item = {}  # dictionary linking to a year the total of non fixed price items sold: the auction items
-    sort_total = {}  # "sort" dictionaries below are used to sort the above dicts by year
-    sort_avg_cat = {}
-    sort_avg_cat = {}
-    sort_med_cat = {}
-    sort_avg_item = {}
-    sort_med_item = {}
-    sort_fix_item = {}
+    y_q1_gpitem = []  # y axis of the plot: the first quartile of item prices per 5 year range
+    y_med_gpitem = []  # y axis of the plot: the median of item prices per 5 year range
+    y_q3_gpitem = []  # y axis of the plot: the third quartile of item prices per 5 year range
+    pdict_ls_cat = {}  # dictionnary mapping to a year a list of catalogue prices to calculate totals, medians + means
+    pdict_ls_item = {}  # dictionnary mapping to a year a list of item prices, to calculate median and mean values
+    cdict_fix_item = {}  # dictionary mapping to a year the total of fixed price items sold (cdict = count dictionary)
+    cdict_auc_item = {}  # dictionary mapping to a year the total of non fixed price items sold: the auction items
+    quart_ls_item = {}  # dictionary mapping to a 5 year range its quartiles
+    sort_fix_item = {}  # "sort" dictionaries below are used to sort the above dicts by year
     sort_auc_item = {}
+    sort_ls_item = {}
+    sort_ls_cat = {}
+
 
     # PREPARE THE DATA
     # ----------------
-    # create a three dictionnaries:
-    # - pdict_total takes years as keys and the total of sales as values
-    # - pdict_med_cat takes years as keys and as values a list containing every catalogue's
-    #   total sales price ; this list will be used to calculate the median value of the total
-    #   sales in a catalogue
-    # - pdict_avg_cat takes years as keys and as values a list containing the total
-    #   of sales as the first item and the number of sales as second item ; from that
-    #   list it is possible to build a dictionnary of average sales per year
+    # create a one dictionnary: pdict_ls_cat, a dictionnary containing the list of total catalogue
+    # prices for any given year ; from that list, we can calculate
+    # - the total price of all items sold
+    # - the median price of a full catalogue per year
+    # - the average price of a full catalogue
     for c in js_cat:  # loop over every catalogue item
         if "total price" in js_cat[c] \
                 and "currency" in js_cat[c] \
                 and js_cat[c]["currency"] == "FRF":
             date = re.findall(r"\d{4}", js_cat[c]["sell_date"])[0]  # year of the sale
             # if it is the first time a date is encountered, add it to the dictionnaries
-            if date not in list(pdict_avg_cat.keys()) and date not in list(pdict_total.keys()):
-                pdict_total[date] = js_cat[c]["total price"]
-                pdict_avg_cat[date] = [js_cat[c]["total price"], 1]
-                pdict_med_cat[date] = [js_cat[c]["total price"]]
+            if date not in list(pdict_ls_cat.keys()):
+                pdict_ls_cat[date] = [js_cat[c]["total price"]]
             else:
-                pdict_total[date] += js_cat[c]["total price"]
-                pdict_avg_cat[date][0] += js_cat[c]["total price"]
-                pdict_avg_cat[date][1] += 1
-                pdict_med_cat[date].append(js_cat[c]["total price"])
+                pdict_ls_cat[date].append(js_cat[c]["total price"])
 
     print("1 DONE")
 
-    # create two dictionnaries:
-    # - pdict_avg_item: average price per item and per year
-    # - pdict_med_item: median price per item and per year
-    # build pdict_avg_item and pdict_med_item : for every year, store as values a list of every item's
-    # price
+    # create three dictionnaries:
+    # - pdict_ls_item: list of item prices per year
+    # - cdict_fix_item: number of fixed price items sold per year
+    # - cdict_auc_item: number of non-fixed price items sold per year
     for i in js_item:  # loop over every item in the json
         if js_item[i]["sell_date"] is not None:
             date = re.findall(r"\d{4}", js_item[i]["sell_date"])[0]  # year of the sale
@@ -108,50 +96,32 @@ def plotter(avg=False):
                 else:
                     cdict_auc_item[date] += 1
 
-            # if there is price info, create pdict_avg_item and pdict_med_item
+            # if there is price info on an item, create pdict_ls_item
             if js_item[i]["price"] is not None \
                     and "currency" in js_item[i] \
                     and js_item[i]["currency"] == "FRF":
                 # at this point we should convert the price to take into accound
                 # inflation and other currencies ; we should probably create a function
                 # in a different file for that
-
-                if date not in pdict_avg_item.keys():
-                    pdict_avg_item[date] = [js_item[i]["price"]]
-                elif date in pdict_avg_item.keys():
-                    pdict_avg_item[date].append(js_item[i]["price"])
-
-                if date not in pdict_med_item.keys():
-                    pdict_med_item[date] = [js_item[i]["price"]]
-                elif date in pdict_med_item.keys():
-                    pdict_med_item[date].append(js_item[i]["price"])
+                if date not in pdict_ls_item.keys():
+                    pdict_ls_item[date] = [js_item[i]["price"]]
+                elif date in pdict_ls_item.keys():
+                    pdict_ls_item[date].append(js_item[i]["price"])
 
     print("2 DONE")
 
     # finalise the data creation ; for some reason, the lengths of catalogues vary depending on the
     # source catalogue and what is being calculated ; the keys also vary from one dictionary to another.
-    # below is a list of corresponding dictionnaries (same lengths, same keys) :
-    # - pdict_total <=> pdict_avg_cat <=> pdict_med_cat
-    # - pdict_med_item <=> pdict_avg_item
-    # - cdict_fix_item
-    # - cdict_auc_item
     # in turn, we need to loop over the different kinds of dicts separately
-    datelist = sorted(set(pdict_total.keys()))  # sorted list of dates on which we have sale info
-    # calculate average and median item price for every year
+    datelist = sorted(set(pdict_ls_cat.keys()))  # sorted list of dates on which we have sale info
     # sort the price per catalog dictionnaries
-    for k in sorted(list(pdict_total.keys())):
-        sort_total[k] = pdict_total[k]
-        sort_avg_cat[k] = pdict_avg_cat[k]
-        sort_med_cat[k] = pdict_med_cat[k]
-    pdict_total = sort_total
-    pdict_avg_cat = sort_avg_cat
-    pdict_med_cat = sort_med_cat
+    for k in sorted(list(pdict_ls_cat.keys())):
+        sort_ls_cat[k] = pdict_ls_cat[k]
+    pdict_ls_cat = sort_ls_cat
     # sort the price per item dictionnaries
-    for k in sorted(list(pdict_med_item.keys())):
-        sort_med_item[k] = pdict_med_item[k]
-        sort_avg_item[k] = pdict_avg_item[k]
-    pdict_med_item = sort_med_item
-    pdict_avg_item = sort_avg_item
+    for k in sorted(list(pdict_ls_item.keys())):
+        sort_ls_item[k] = pdict_ls_item[k]
+    pdict_ls_item = sort_ls_item
     # sort the cdict_* dictionnaires
     for k in sorted(list(cdict_fix_item.keys())):
         sort_fix_item[k] = cdict_fix_item[k]
@@ -159,6 +129,12 @@ def plotter(avg=False):
         sort_auc_item[k] = cdict_auc_item[k]
     cdict_auc_item = sort_auc_item
     cdict_fix_item = sort_fix_item
+    # create data for the box charts: group pdict_ls_item values per 5 year range + calculate quantiles for each range
+    group_ls_item = sorter(pdict_ls_item)  # dictionary mapping to a 5 year range the prices for that range
+    for k, v in pdict_ls_item.items():
+        quart_ls_item[k] = quantiles(v)
+    print(quart_ls_item)
+
 
     print("3 DONE")
 
@@ -169,18 +145,17 @@ def plotter(avg=False):
     # data associated with that year. in that case, in that case, add the data for that year to the y axis; else, add
     # 0 to y_total and y_avg_cat. in turn, the y axis are populated with data if it exists, with 0 it doesn't
     for d in x:
-        if str(d) in list(pdict_total.keys()):
-            avgcat = pdict_avg_cat[str(d)][0] / pdict_avg_cat[str(d)][1]
-            y_avg_cat.append(avgcat)
-            y_med_cat.append(median(pdict_med_cat[str(d)]))
-            y_total.append(int(pdict_total[str(d)]))
+        if str(d) in list(pdict_ls_cat.keys()):
+            y_total.append(sum(pdict_ls_cat[str(d)]))
+            y_avg_cat.append(mean(pdict_ls_cat[str(d)]))
+            y_med_cat.append(median(pdict_ls_cat[str(d)]))
         else:
             y_total.append(0)
             y_avg_cat.append(0)
             y_med_cat.append(0)
-        if str(d) in list(pdict_med_item.keys()):
-            y_avg_item.append(mean(pdict_avg_item[str(d)]))
-            y_med_item.append(median(pdict_med_item[str(d)]))
+        if str(d) in list(pdict_ls_item.keys()):
+            y_avg_item.append(mean(pdict_ls_item[str(d)]))
+            y_med_item.append(median(pdict_ls_item[str(d)]))
         else:
             y_avg_item.append(0)
             y_med_item.append(0)
@@ -192,6 +167,16 @@ def plotter(avg=False):
             y_fix_item.append(cdict_fix_item[str(d)])
         else:
             y_fix_item.append(0)
+        if str(d) in list(group_ls_item.keys()):
+            y_q1_gpitem.append(group_ls_item[d][0])
+            y_q3_gpitem.append(group_ls_item[d][2])
+            y_med_gpitem.append(group_ls_item[d][1])
+        else:
+            y_q1_gpitem.append(0)
+            y_q3_gpitem.append(0)
+            y_med_gpitem.append(0)
+
+
 
     print("4 DONE")
 
@@ -204,13 +189,14 @@ def plotter(avg=False):
     title_avg_item = "Average sale price of an item per year (in french francs)"
     title_med_item = "Median sale price of an item per year (in french francs)"
     title_cnt = "Number of items for sale per year"
+    title_qnt = "Price of an item (every 5 year)"
     layout = {
         "paper_bgcolor": colors["cream"],
         "plot_bgcolor": colors["cream"],
         "margin": dict(l=5, r=5, t=30, b=30),
         "showlegend": False,
-        "xaxis":{"anchor": "x", "title": {"text": "Year"}},
-        "barmode": "overlay"  # only affects figure6; other values: "stack", "group", relative"
+        "xaxis": {"anchor": "x", "title": {"text": "Year"}},
+        "barmode": "overlay"  # only affects plot 6
     }
     # figure 1 : sum of sales per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Total sales"}}
@@ -257,6 +243,13 @@ def plotter(avg=False):
         ],
         layout=go.Layout(layout)
     )
+    # figure 7 : 1 box chart per 5 year range
+    layout["yaxis"] = {"anchor": "x", "title": {"text": "Quantiles of an item's price"}}
+    layout["title"] = title_qnt
+    fig7 = go.Figure(
+        data=[go.Box(x=x, q1=y_q1_gpitem, median=y_med_gpitem, q3=y_q3_gpitem)],
+        layout=go.Layout(layout)
+    )
 
     # BOX OBJECTS https://plotly.com/python-api-reference/generated/plotly.graph_objects.Box.html?highlight=graph%20objects%20box
 
@@ -275,11 +268,46 @@ def plotter(avg=False):
         fig5.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
     with open(f"{outdir}/fig_idx6.html", mode="w") as out:
         fig6.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
+    with open(f"{outdir}/fig_idx7.html", mode="w") as out:
+        fig7.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
 
     print("6 DONE")
 
     # return
     return None
+
+
+def sorter(input_dict):
+    """
+    group the values of input_dict in 5 year ranges. input_dict is a dictionnary mapping to
+    each year a list of item prices. the values of input_dict must be non-nested lists containing integers
+    only (no lists within lists).
+    sorter groups the keys of input_dict in 5 year ranges (1821-1826, 1826-1830...) ;
+    the keys of output_dict are the average between floor and roof values for a
+    5 year range (1821-1826 => 1823); the values of output_dict are a list of item prices
+    for that 5 year range
+
+    :param input_dict: the input dictionary to sort
+    :return: output_dict, a dictionnary mapping to an average year the item prices for a range
+    """
+    output_dict = {}
+    for d in input_dict.keys():
+        d = int(d)
+        last = d % 10
+        if last >= 6:
+            floor = (d - last) + 6
+            roof = d + (10 - last)
+            k = mean([floor, roof])
+        else:
+            floor = (d - last) + 1
+            roof = (d - last) + 5
+            k = mean([floor, roof])
+        if k not in output_dict.keys():
+            output_dict[k] = input_dict[str(d)]
+        else:
+            for v in input_dict[str(d)]:
+                output_dict[k].append(v)
+    return output_dict
 
 # TEPLATE FOR A SINGLE FIGURE
 # fig.add_trace(go.Figure(

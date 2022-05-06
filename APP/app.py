@@ -1,5 +1,4 @@
 from flask import Flask
-from fnmatch import filter
 import atexit
 import glob
 import os
@@ -14,6 +13,7 @@ app = Flask(
     static_folder=STATIC
 )
 
+
 # delete the files created during the session when the app is exited
 def cleaner():
     """
@@ -21,7 +21,6 @@ def cleaner():
     :return: None
     """
     figs = glob.glob(os.path.join(TEMPLATES, "partials", "fig_*"))
-    print(figs)
     for f in figs:
         os.remove(f)
     return None
