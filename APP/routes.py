@@ -1,7 +1,7 @@
 from flask import render_template, request
 from .app import app
 
-from .figmaker import plotter
+from .figmaker import figmaker_idx, figmaker_cat
 from .main_functions import *
 from .reconciliator import *
 from .constantes import TEMPLATES
@@ -11,24 +11,42 @@ from .constantes import TEMPLATES
 created_index = create_index()
 
 
-# ----- MAIN ROUTES ----- #
+# ============ MAIN ROUTES ============ #
 @app.route("/")
 def home():
+    """
+    route for the homepage
+    :return: render_template for the homepage
+    """
     return render_template("pages/Home.html")
 
 
 @app.route("/About_us")
 def about_us():
+    """
+    route to see the About Us html page
+    :return: render_template for the About Us html page
+    """
     return render_template("pages/AboutUs.html")
 
 
 @app.route("/Publications")
 def publications():
+    """
+    route to see the bibliography produced by the project
+    :return: render_template for the publications page
+    """
     return render_template("pages/Publications.html")
 
 
 @app.route("/Search", methods=['GET', 'POST'])
 def search():
+    """
+    route to search the database by author name and manuscript date and see the results.
+    the results can be accessed by sale or by manuscript. the results are reconciliated
+    using reconciliator()
+    :return: render_template for the search page
+    """
     author = request.args.get('author')
     date = request.args.get('date')
     if author:
@@ -46,20 +64,34 @@ def search():
 
 @app.route("/Index")
 def index():
-    plotter()
+    """
+    route to see an index of all the catalogues in the database ; at the beginning of
+    the html page, different figures created with plotly can be accessed through a dropdown
+    menu
+    :return: render_template for the index page
+    """
+    figmaker_idx()
     figpath=True
     return render_template("pages/Index.html", figpath=figpath, index=created_index)
 
 
 @app.route("/View/<id>")
 def view(id):
+    """
+    route to see the main page of a catalogue : description, link to the encoded catalogue,
+    description and price of each item
+    :param id: the @xml:id of the catalogue
+    :return: render_template for the main catalogue
+    """
+    figmaker_cat(id)  # create the visualisations for the current catalogue
+    figpath = True
     file = validate_id(id)
     doc = open_file(file)
-    return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc), file=file)
+    return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc),
+                           file=file, figpath=figpath, id=id)
 
 
-# ----- AUXILIAIRY ROUTES ----- #
-
+# ============ AUXILIAIRY ROUTES ============ #
 @app.route("/fig/<key>")
 def fig_grabber(key):
     """

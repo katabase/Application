@@ -26,11 +26,8 @@ scale = make_colorscale([colors["blue"], colors["burgundy2"]])  # create a color
 # fontdir = os.path.join(STATIC, "fonts")
 
 
-def plotter():
+def figmaker_idx():
     """
-    if avg is False, we calculate the sum of sales for each year ;
-    if pond is avg, we calculate revenue for each catalog
-    :param avg:
     :return:
     """
     # DEFINING VARIABLES
@@ -46,8 +43,6 @@ def plotter():
     y_q1_gpitem = []  # y axis of the plot: the first quartile of item prices per 5 year range
     y_med_gpitem = []  # y axis of the plot: the median of item prices per 5 year range
     y_q3_gpitem = []  # y axis of the plot: the third quartile of item prices per 5 year range
-    # y_lowerfence = []  # y axis of the plot: lower bar of the whisker box (minimum item price for a year)
-    # y_upperfence = []  # y axis of the plot: upper bar of the whisker box (maxium item price for a year)
     pdict_ls_cat = {}  # dictionnary mapping to a year a list of catalogue prices to calculate totals, medians + means
     pdict_ls_item = {}  # dictionnary mapping to a year a list of item prices, to calculate median and mean values
     cdict_fix_item = {}  # dictionary mapping to a year the total of fixed price items sold (cdict = count dictionary)
@@ -171,14 +166,10 @@ def plotter():
             y_q1_gpitem.append(quart_ls_item[d][0])
             y_q3_gpitem.append(quart_ls_item[d][2])
             y_med_gpitem.append(quart_ls_item[d][1])
-            # y_lowerfence.append(min(group_ls_item[d]))
-            # y_upperfence.append(max(group_ls_item[d]))
         else:
             y_q1_gpitem.append(0)
             y_q3_gpitem.append(0)
             y_med_gpitem.append(0)
-            # y_lowerfence.append(0)
-            # y_upperfence.append(0)
 
     print("4 DONE")
 
@@ -267,19 +258,19 @@ def plotter():
     print("5 DONE")
 
     # saving the files ; the file will be called in an iframe using a url_for
-    with open(f"{outdir}/fig_idx1.html", mode="w") as out:
+    with open(f"{outdir}/fig_IDX1.html", mode="w") as out:
         fig1.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
-    with open(f"{outdir}/fig_idx2.html", mode="w") as out:
+    with open(f"{outdir}/fig_IDX2.html", mode="w") as out:
         fig2.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
-    with open(f"{outdir}/fig_idx3.html", mode="w") as out:
+    with open(f"{outdir}/fig_IDX3.html", mode="w") as out:
         fig3.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
-    with open(f"{outdir}/fig_idx4.html", mode="w") as out:
+    with open(f"{outdir}/fig_IDX4.html", mode="w") as out:
         fig4.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
-    with open(f"{outdir}/fig_idx5.html", mode="w") as out:
+    with open(f"{outdir}/fig_IDX5.html", mode="w") as out:
         fig5.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
-    with open(f"{outdir}/fig_idx6.html", mode="w") as out:
+    with open(f"{outdir}/fig_IDX6.html", mode="w") as out:
         fig6.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
-    with open(f"{outdir}/fig_idx7.html", mode="w") as out:
+    with open(f"{outdir}/fig_IDX7.html", mode="w") as out:
         fig7.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
 
     print("6 DONE")
@@ -287,6 +278,55 @@ def plotter():
     # return
     return None
 
+
+def figmaker_cat(id):
+    """
+
+    :return:
+    """
+    # DEFINING VARIABLES
+    # ------------------
+    x = []  # y axis of the plot: the prices of items in a catalogue
+
+    # PREPARE THE DATA
+    # ----------------
+    # select the items of the current catalogue if they have a price
+    for i in js_item:
+        if js_item[i]["price"] is not None \
+                and js_item[i]["currency"] == "FRF" \
+                and re.match(f"{id}_e\d+(_d\d+)?", i):
+            x.append(js_item[i]["price"])
+
+    # BUILD THE X AXIS
+    # ----------------------
+    layout = {
+        "paper_bgcolor": colors["cream"],
+        "plot_bgcolor": colors["cream"],
+        "margin": {"l": 5, "r": 5, "t": 30, "b": 30},
+        "showlegend": False,
+        "xaxis": {"anchor": "x", "title": {"text": "Price (in french francs)"}}
+    }
+
+    # CREATE PLOTS
+    # ------------
+    fig = go.Figure(
+        data=go.Violin(x=x, meanline={"visible": True, "color": colors["blue"]}, width=1,
+                       marker={"color": colors["burgundy2"],
+                               "outliercolor": colors["blue"]},
+                       box={"visible": True, "line": {"color": colors["blue"]}},
+                       fillcolor=colors["cream"]),
+        layout=go.Layout(layout)
+    )
+
+    # saving the files ; the file will be called in an iframe using a url_for
+    with open(f"{outdir}/fig_{id}.html", mode="w") as out:
+        fig.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
+
+    # return
+    return None
+
+def figmaker_itm():
+    pass
 
 def sorter(input_dict):
     """
