@@ -291,11 +291,13 @@ def figmaker_cat(id):
     # PREPARE THE DATA
     # ----------------
     # select the items of the current catalogue if they have a price
+    status = 0  # check if there is price info for the items in that catalogue
     for i in js_item:
         if js_item[i]["price"] is not None \
                 and js_item[i]["currency"] == "FRF" \
                 and re.match(f"{id}_e\d+(_d\d+)?", i):
             x.append(js_item[i]["price"])
+            status += 1
 
     # BUILD THE X AXIS
     # ----------------------
@@ -322,8 +324,13 @@ def figmaker_cat(id):
     with open(f"{outdir}/fig_{id}.html", mode="w") as out:
         fig.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
 
-    # return
-    return None
+    # return : if there is price data, return is true and a figure will be displayed; else, return
+    # is false and there will be no figure displayed
+    if status == 0:
+        return False
+    else:
+        return True
+
 
 def figmaker_itm():
     pass

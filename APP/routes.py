@@ -83,8 +83,9 @@ def view(id):
     :param id: the @xml:id of the catalogue
     :return: render_template for the main catalogue
     """
-    figmaker_cat(id)  # create the visualisations for the current catalogue
-    figpath = True
+    figpath = figmaker_cat(id)  # create the visualisations for the current catalogue ; if there is price
+                                # info on that catalogue, figpath is True; else, it is False
+    print(figpath)
     file = validate_id(id)
     doc = open_file(file)
     return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc),
