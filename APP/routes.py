@@ -75,21 +75,20 @@ def index():
     return render_template("pages/Index.html", figpath=figpath, index=created_index)
 
 
-@app.route("/View/<id>")
-def view(id):
+@app.route("/View/<cat_id>")
+def view(cat_id):
     """
     route to see the main page of a catalogue : description, link to the encoded catalogue,
     description and price of each item
     :param id: the @xml:id of the catalogue
     :return: render_template for the main catalogue
     """
-    figpath = figmaker_cat(id)  # create the visualisations for the current catalogue ; if there is price
-                                # info on that catalogue, figpath is True; else, it is False
-    print(figpath)
-    file = validate_id(id)
+    figpath = figmaker_cat(cat_id)  # create the visualisations for the current catalogue ; if there is price
+    #                                  info on that catalogue, figpath is True; else, it is False
+    file = validate_id(cat_id)
     doc = open_file(file)
     return render_template("pages/View.html", metadata=get_metadata(doc), content=get_entries(doc),
-                           file=file, figpath=figpath, id=id)
+                           file=file, figpath=figpath, cat_id=cat_id)
 
 
 # ============ AUXILIAIRY ROUTES ============ #

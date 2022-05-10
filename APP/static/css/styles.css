@@ -247,6 +247,10 @@ iframe {
   height: 300px;
 }
 
+iframe.cat{
+  width: 100% !important;
+  height: 670px;
+}
 
 #idxfig {
   display: flex;

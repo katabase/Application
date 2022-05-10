@@ -64,8 +64,6 @@
       const dft = $(dwn).children("[value=1]");  // default value: "Total sales per year"
       const ifr = $("#fig iframe");  // iframe
 
-      console.log(dft)
-
       // if the button exists (if we are on the index page), trigger a javascript event: when the
       // dropdown changes (when another option is selected), load the proper plotly figure
       if (dwn != null) {
@@ -77,12 +75,21 @@
           $(dwn).val("1");
 
           $(dwn).change(function() {
-            // store currently selected option's @val in a variable
-            var selected = $(dwn).children("option").filter(":selected").val();
-
-            // build the url for the new iframe
+            var selected = $(dwn).children("option").filter(":selected").val();   // currently selected option's @value
             var url = new URL(window.location.origin);  // root of the website's url
-            var dest = url.href + "fig/IDX" + selected;
+            var dest = url.href + "fig/IDX_" + selected;  // url pointing to the iframe selected in the dropdown
+
+            /**
+            // build the url for the new iframe depending on the type of page we are on: catalogue, index
+            if ($(dwn).attr("class").includes("idx")) {
+              var dest = url.href + "fig/IDX_" + selected;
+            } else if ($(dwn).attr("class").includes("cat")) {
+              // extract the catalogue's id from page URL and built a url to include the figure in an iframe
+              path = new URL(window.location.href).pathname;  // path to the current catalogue's page
+              var cat_id = path.replace("/View/", "");  // current catalogue's id
+              var dest = url.href + "fig/" + cat_id + "_" + selected;
+            }
+            **/
 
             // update the iframe element with the proper url
             $(ifr).attr("src", dest);

@@ -293,21 +293,20 @@
     </div>
 
     {% if figpath is sameas true %}
-        <div>
+        <!-- the "cat" class allows the javascript script to know what type of page we are
+        on: index page, catalogue page -->
+        <!-- <div>
             <div>
                 <label for="dwn" class="label">See another graph</label>
-                <select class="btn dropdown" id="dwn" name="dwn" aria-expanded="false">
-                    <option value="1" class="dropdown-item">Total sales per year</option>
-                    <option value="2" class="dropdown-item">Average sale price per catalogue and per year</option>
-                    <option value="3" class="dropdown-item">Median sale price per catalogue and per year</option>
-                    <option value="4" class="dropdown-item">Average sale price of an item per year</option>
-                    <option value="5" class="dropdown-item">Median sale price of an item per year</option>
-                    <option value="6" class="dropdown-item">Number of items for sale per year</option>
-                    <option value="7" class="dropdown-item">Quantiles per 5 year</option>
+                <select class="btn dropdown cat" id="dwn" name="dwn" aria-expanded="false">
+                    <option value="1" class="dropdown-item">Price distribution</option>
+                    <option value="2" class="dropdown-item">Most expensive items</option>
                 </select>
             </div>
-        </div>
-        <div id="fig"><iframe src="{{ url_for('fig_grabber', key=id) }}"></iframe></div>
+        </div> -->
+        {# {% set id1 = cat_id ~ "_1" %}
+        {% set id2 = cat_id ~ "_2" %} #}
+        <div id="fig"><iframe class="cat" src="{{ url_for('fig_grabber', key=cat_id) }}"></iframe></div>
     {% endif %}
 
     <div class="container">

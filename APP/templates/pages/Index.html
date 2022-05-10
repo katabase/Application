@@ -10,8 +10,10 @@
             {% if figpath %}
                 <div>
                     <div>
+                        <!-- the "idx" class allows the javascript script to know what
+                        type of page we are on: index page, catalogue page -->
                         <label for="dwn" class="label">See another graph</label>
-                        <select class="btn dropdown" id="dwn" name="dwn" aria-expanded="false">
+                        <select class="btn dropdown idx" id="dwn" name="dwn" aria-expanded="false">
                             <option value="1" class="dropdown-item">Total sales per year</option>
                             <option value="2" class="dropdown-item">Average sale price per catalogue and per year</option>
                             <option value="3" class="dropdown-item">Median sale price per catalogue and per year</option>
@@ -25,7 +27,7 @@
             {% endif %}
         </div>
         {% if figpath %}
-            <div id="fig"><iframe src="{{ url_for('fig_grabber', key='IDX1') }}"></iframe></div>
+            <div id="fig"><iframe src="{{ url_for('fig_grabber', key='IDX_1') }}"></iframe></div>
         {% endif %}
     </div>
 
@@ -35,7 +37,7 @@
        {% for catalogue in index %}
 
        <li class="list-group-item">
-           <a href="{{ url_for('view', id=catalogue.id) }}">
+           <a href="{{ url_for('view', cat_id=catalogue.id) }}">
             {{ catalogue.title }}</a>
            &nbsp;
            <small class="text-muted">
