@@ -27,9 +27,45 @@ scale = make_colorscale([colors["blue"], colors["burgundy2"]])  # create a color
 # fontdir = os.path.join(STATIC, "fonts")
 
 
+# TEMPLATE TO NAME THE HTML FIGURES (! VERY IMPORTANT TO BUILD URLS AND DISPLAY THEM !)
+# fig_(IDX|CAT_XXXX)(_[0-9])?
+# ^     ^     ^        ^
+# |     |     |        |_____ for the index: the identifier of the figure (7 figs are created)
+# |     |_____|______________ for the index figures: IDX ; for the catalogue figures: the cat's ID (CAT_0001...)
+# |__________________________ indicate it is a figure
+
+
 def figmaker_idx():
     """
-    :return:
+    create the figures to be displayed on the index page. 7 figures are created:
+    - total sales per year (bar graph)
+    - average sales for a whole catalogue per year (bar graph)
+    - median sales for a whole catalogue per year (bar graph)
+    - average sale price of an item per year (bar graph)
+    - median sale price of an item per year (bar graph)
+    - number of items per sale for year (2 overlayed bar graphs)
+
+    the basis of plotly is to map data on an x and y axis ; both x and y are arrays.
+    so what is needed is to create data for an x and y axis, so that the y data can
+    be properly mapped to x (the y data for year 1234 must be at the same position
+    as the year 1234 on the x axis. hope that makes sense).
+
+    the figures are created in 3 steps:
+    - the data is created by looping through the 2 json files and storing relevant
+      data in dictionaries. those dictionaries take a year as key and other data as
+      value. after that, the dictionaries are sorted and prepared to build the y axis
+    - the x and y axis are created.
+      - x = array containing every year between the two extreme dates for which there is price info
+      - y = the relevant data (prices, number of items...) ; if there is no data, for a year,
+        the value of 0 is added
+    - the figures are created ; they are saved in APP/templates/partials as html files
+
+    the figures are called within the html page using a URL : this url points to a flask route
+    that renders the html files. the urls for this flask route are built using url_for
+    (for the figure displayed by default) or javascript. the figures are displayed within an
+    iframe.
+
+    :return: figpath (boolean; True if figures are created; False if not)
     """
     # DEFINING VARIABLES
     # ------------------
@@ -276,8 +312,27 @@ def figmaker_idx():
 
 def figmaker_cat(cat_id):
     """
+    function to create the figures to be called on the catalogue pages. 2 figures are created:
+    - price distribution in the catalogue (violin plot)
+    - 10 most expensive items (bar chart)
 
-    :return:
+    the figures are created in 3 steps:
+    - data preparation:
+      - for figure 1, the price of all items in the catalogue are added to x1
+      - for figure 2, the 10 most expensive items are extracted from x1 and used
+        to build a dictionary of 10 most expensive items sorted by price (this dict
+        is basically a copy of their export_item.json version)
+    - preparing the x and y axis: this step only concerts figure 2:
+      - build y2 (height of the bars, aka the price of the items)
+      - build data for the hover templates
+    - creating the figures (the two figures are subplots, i.e. they are subfigures in a
+    single figure) and saving them as html files
+
+    the html figures are displayed on the html catalogue pages within an iframe and
+    called with a url_for pointing towards that figure
+    see the description of figmaker_idx for a few extra details
+
+    :return: figpath (boolean: True if there is price info and a price is created, false if not)
     """
     # DEFINING VARIABLES
     # ------------------
