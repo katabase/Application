@@ -3,18 +3,20 @@ import os
 import glob
 import traceback
 import re
-import urllib.parse
+
+from .constantes import DATA
+
 
 # Namespace definition :
 ns = {'tei': 'http://www.tei-c.org/ns/1.0'}
 
 
-### FUNCTIONS USED TO OPEN XML FILES
+# ======= FUNCTIONS USED TO OPEN XML FILES ======= #
 
 def validate_id(id):
     """
     This function verifies that the id matches predefined filenames for security reasons.
-    :param id: an id to be validate.
+    :param id: an id to validate.
     :return: the validated id.
     """
     # Each file starts with 'CAT_' and digits.
@@ -25,7 +27,7 @@ def validate_id(id):
 def validate_entry_id(id):
     """
     This function verifies that the id matches predefined filenames for security reasons.
-    :param id: an id to be validate.
+    :param id: an id to validate.
     :return: the validated id.
     """
     # Each file starts with 'CAT_' and digits.
@@ -39,12 +41,11 @@ def open_file(good_id):
     :param good_id: an id created before
     :return: the matching file parsed by lxml
     """
-    file = "data/" + good_id + "_tagged.xml"
-    actual_path = os.path.dirname(os.path.abspath(__file__))
-    return etree.parse(os.path.join(actual_path, file))
+    file = DATA + "/" + good_id + "_tagged.xml"
+    return etree.parse(file)
 
 
-### FUNCTIONS USED TO GENERATE AN INDEX
+# ======= FUNCTIONS USED TO GENERATE AN INDEX ======= #
 
 def create_index():
     """
@@ -53,8 +54,7 @@ def create_index():
     """
     index = []
     # Only catalogues that have been tagged are displayed.
-    ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-    files = glob.glob(os.path.join(ROOT_DIR, "data", "*_tagged.xml"))
+    files = glob.glob(os.path.join(DATA, "*_tagged.xml"))
     for file in files:
         file_info = {}
         file_id = os.path.basename(file)
@@ -77,7 +77,7 @@ def create_index():
     return index
 
 
-### FUNCTIONS USED TO GET INFORMATIONS
+# ======= FUNCTIONS USED TO GET INFORMATIONS ======= #
 
 def get_metadata(file):
     """
@@ -99,16 +99,11 @@ def get_metadata(file):
         metadata["publisher"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:publisher/text()', namespaces=ns)[0]
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns):
         metadata["pubPlace"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:pubPlace/text()', namespaces=ns)[0]
-    # ORIGINAL
-    #if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns):
-    #    metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date', namespaces=ns)[0]
-    # CORRECTION
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:date', namespaces=ns):
         try:
             metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/text()', namespaces=ns)[0]
         except:
             metadata["date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns)[0]
-    # SUITE DU CODE
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns):
         metadata["norm_date"] = file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@when', namespaces=ns)[0]
     if file.xpath('//tei:sourceDesc//tei:bibl/tei:date/@to', namespaces=ns):

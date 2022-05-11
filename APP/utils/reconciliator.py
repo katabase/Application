@@ -1,11 +1,11 @@
-import json
-from functools import lru_cache
-
-import tqdm
+from networkx.algorithms.components.connected import connected_components
 from difflib import SequenceMatcher
 import networkx
-from networkx.algorithms.components.connected import connected_components
+import json
+import tqdm
+
 from .main_functions import *
+from .constantes import DATA
 
 
 # https://stackoverflow.com/a/17388505
@@ -216,10 +216,8 @@ def reconciliator(author, date):
     """
     final_results = {}
     # Loading of all the data in JSON.
-    json_file = 'data/json/export_item.json'
-    actual_path = os.path.dirname(os.path.abspath(__file__))
-    file_to_open = os.path.join(actual_path, json_file)
-    with open(file_to_open, 'r') as data:
+    json_file = f"{DATA}/json/export_item.json"
+    with open(json_file, 'r') as data:
         all_data = json.load(data)
 
     # Only entries of the searched author are remained.

@@ -94,17 +94,17 @@
                      <p>
                         {% if descs[0].text.trait %}
                         <b>
-                        <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
+                        <a href="{{ url_for('view', cat_id=cat_id) }}#{{ entry_id }}">
                            <i class="fas fa-arrow-circle-right"></i>
                         {{ descs[0].text.author }}</a></b>, {{ descs[0].text.trait }}
                         {% elif descs[0].text.author %}
                         <b>
-                        <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
+                        <a href="{{ url_for('view', cat_id=cat_id) }}#{{ entry_id }}">
                            <i class="fas fa-arrow-circle-right"></i>
                         {{ descs[0].text.author }}</a></b>
                         {% else %}
                         <b>
-                        <a href="{{ url_for('view', id=cat_id) }}#{{ entry_id }}">
+                        <a href="{{ url_for('view', cat_id=cat_id) }}#{{ entry_id }}">
                            <i class="fas fa-arrow-circle-right"></i>
                         {{ author }}</a></b>
                         {% endif %}
@@ -144,7 +144,7 @@
                <p>
                {% for key, value in group.items() %}
                   <i class="fas fa-arrow-circle-right"></i> Sell date :
-                  <a href="{{ url_for('view', id=value.cat_id) }}#{{ value.cat_entry }}" target="_blank">{{ value.sell_date }}</a>
+                  <a href="{{ url_for('view', cat_id=value.cat_id) }}#{{ value.cat_entry }}" target="_blank">{{ value.sell_date }}</a>
                   - price : {{ entries.text.price }} - {{ entries.number_of_pages }} page(s).
                {% endfor %}
                </p>
@@ -154,7 +154,7 @@
                {% else %}
                <p>
                  <i class="fas fa-arrow-circle-right"></i> Sell date :
-                  <a href="{{ url_for('view', id=entries.cat_id) }}#{{ entries.cat_entry }}" target="_blank">{{ entries.sell_date }}</a>
+                  <a href="{{ url_for('view', cat_id=entries.cat_id) }}#{{ entries.cat_entry }}" target="_blank">{{ entries.sell_date }}</a>
                   - price : {{ entries.text.price }} - {{ entries.number_of_pages }} page(s).
                </p>
                {% endif %}

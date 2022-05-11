@@ -1,10 +1,9 @@
 from flask import render_template, request
 from .app import app
 
-from .figmaker import figmaker_idx, figmaker_cat
-from .main_functions import *
-from .reconciliator import *
-from .constantes import TEMPLATES
+from .utils.figmaker import figmaker_idx, figmaker_cat
+from .utils.main_functions import *
+from .utils.reconciliator import reconciliator
 
 
 # The index is generated when the app is launched.
@@ -70,8 +69,7 @@ def index():
     menu
     :return: render_template for the index page
     """
-    figmaker_idx()
-    figpath=True
+    figpath = figmaker_idx()
     return render_template("pages/Index.html", figpath=figpath, index=created_index)
 
 
@@ -102,8 +100,6 @@ def fig_grabber(key):
     return render_template(f"partials/fig_{key}.html")
 
 
-
-
 """
 # To check if there is any memory leak.
 from pympler import muppy, summary
@@ -112,4 +108,5 @@ def report_memory(req):
     all_objects = muppy.get_objects()
     sum1 = summary.summarize(all_objects)
     summary.print_(sum1)
-    return req"""
+    return req
+"""

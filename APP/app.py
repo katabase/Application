@@ -1,9 +1,9 @@
 from flask import Flask
+from os.path import join
+from glob import glob
 import atexit
-import glob
-import os
 
-from .constantes import TEMPLATES, STATIC
+from .utils.constantes import TEMPLATES, STATIC
 
 
 # configure the app
@@ -20,7 +20,7 @@ def cleaner():
     function to delete the figures created when using the app
     :return: None
     """
-    figs = glob.glob(os.path.join(TEMPLATES, "partials", "fig_*"))
+    figs = glob.glob(join(TEMPLATES, "partials", "fig_*"))  # join = os.path.join
     for f in figs:
         os.remove(f)
     return None

@@ -1,7 +1,7 @@
+from statistics import median, mean, quantiles
 from plotly.colors import make_colorscale
 from plotly.subplots import make_subplots
 import plotly.graph_objs as go
-from statistics import median, mean, quantiles
 import json
 import re
 import os
@@ -53,6 +53,8 @@ def figmaker_idx():
     sort_auc_item = {}
     sort_ls_item = {}
     sort_ls_cat = {}
+    figpath = False  # return value : true if figures are created and an url can be built
+    #                  in the templates pointing to those files
 
     # PREPARE THE DATA
     # ----------------
@@ -71,6 +73,7 @@ def figmaker_idx():
                 pdict_ls_cat[date] = [js_cat[c]["total price"]]
             else:
                 pdict_ls_cat[date].append(js_cat[c]["total price"])
+            figpath = True  # at this point, it is certain that figures are created
 
     # create three dictionnaries:
     # - pdict_ls_item: list of item prices per year
@@ -268,7 +271,7 @@ def figmaker_idx():
         fig7.write_html(file=out, full_html=False, include_plotlyjs="cdn", default_width="100%", default_height=275)
 
     # return
-    return None
+    return figpath
 
 
 def figmaker_cat(cat_id):
@@ -285,7 +288,7 @@ def figmaker_cat(cat_id):
     pdict_top = {}  # dictionary mapping to the 10 most expensive item's xml:id their data in export_item.json
     #                 pdict_top can have more than 10 items if several items share the same top prices
     sort_pdict_top = {}  # dictionary to sort pdict_top by item price
-    figpath = False  # variable to check if a figure will be created and if a path towards a figure for
+    figpath = False  # variable to check if a figure will be created and if a path towards a figure
     #                  will exist ; if there's price info on that catalogue, a figure will be created
 
     # PREPARE THE DATA
@@ -328,10 +331,10 @@ def figmaker_cat(cat_id):
         itlist.append(v["author"]) if v["author"] is not None else itlist.append("unknown")
         itlist.append(v["date"]) if v["date"] is not None else itlist.append("unknown")
         itlist.append(v["number_of_pages"]) if v["number_of_pages"] is not None else itlist.append("unknown")
-        if v["desc"] is not None and len(v["desc"]) <= 100:
+        if v["desc"] is not None and len(v["desc"]) <= 90:
             itlist.append(v["desc"])
-        elif v["desc"] is not None and len(v["desc"]) > 100:
-            itlist.append(v["desc"][:100] + "[...]")
+        elif v["desc"] is not None and len(v["desc"]) > 90:
+            itlist.append(v["desc"][:90] + "[...]")
         else:
             itlist.append("unknown")
         hovdata.append(itlist)
