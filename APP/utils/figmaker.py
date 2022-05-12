@@ -9,7 +9,7 @@ import os
 from .constantes import TEMPLATES
 
 
-# GLOBAL VARIABLES TO BUILD GRAPHS: json, output directory, colors
+# VARIABLES USED BY ALL FUNCTIONS: json, output directory, colors
 with open("APP/data/json/export_catalog.json", mode="r") as f:
     js_cat = json.load(f)
 with open("APP/data/json/export_item.json", mode="r") as f:
@@ -29,10 +29,10 @@ scale = make_colorscale([colors["blue"], colors["burgundy2"]])  # create a color
 
 # TEMPLATE TO NAME THE HTML FIGURES (! VERY IMPORTANT TO BUILD URLS AND DISPLAY THEM !)
 # fig_(IDX|CAT_XXXX)(_[0-9])?
-# ^     ^     ^        ^
-# |     |     |        |_____ for the index: the identifier of the figure (7 figs are created)
-# |     |_____|______________ for the index figures: IDX ; for the catalogue figures: the cat's ID (CAT_0001...)
-# |__________________________ indicate it is a figure
+#  ^    ^     ^        ^
+#  |    |     |        |_____ for the index: the identifier of the figure (7 figs are created)
+#  |    |_____|______________ for the index figures: IDX ; for the catalogue figures: the cat's ID (CAT_0001...)
+#  |_________________________ indicate it is a figure
 
 
 def figmaker_idx():
@@ -67,8 +67,7 @@ def figmaker_idx():
 
     :return: figpath (boolean; True if figures are created; False if not)
     """
-    # DEFINING VARIABLES
-    # ------------------
+    # ============== DEFINING VARIABLES ============== #
     x = []  # x axis of the plot : years
     y_total = []  # first y axis of the plot: total of the sales in a year
     y_avg_cat = []  # y axis of the plot: average sales per catalog in a year
@@ -100,15 +99,13 @@ def figmaker_idx():
     # - the median price of a full catalogue per year
     # - the average price of a full catalogue
     for c in js_cat:  # loop over every catalogue item
-        if "total price" in js_cat[c] \
-                and "currency" in js_cat[c] \
-                and js_cat[c]["currency"] == "FRF":
+        if "total_price_c" in js_cat[c] and "sell_date" in js_cat[c]:
             date = re.findall(r"\d{4}", js_cat[c]["sell_date"])[0]  # year of the sale
             # if it is the first time a date is encountered, add it to the dictionnaries
             if date not in list(pdict_ls_cat.keys()):
-                pdict_ls_cat[date] = [js_cat[c]["total price"]]
+                pdict_ls_cat[date] = [js_cat[c]["total_price_c"]]
             else:
-                pdict_ls_cat[date].append(js_cat[c]["total price"])
+                pdict_ls_cat[date].append(js_cat[c]["total_price_c"])
             figpath = True  # at this point, it is certain that figures are created
 
     # create three dictionnaries:
@@ -116,10 +113,10 @@ def figmaker_idx():
     # - cdict_fix_item: number of fixed price items sold per year
     # - cdict_auc_item: number of non-fixed price items sold per year
     for i in js_item:  # loop over every item in the json
-        if js_item[i]["sell_date"] is not None:
+        if "sell_date" in js_item[i]:
             date = re.findall(r"\d{4}", js_item[i]["sell_date"])[0]  # year of the sale
             # calculate the number of fixed price and auction items put up for sale every year
-            if js_item[i]["price"] is not None:
+            if "price_c" in list(js_item[i].keys()):
                 if date not in cdict_fix_item.keys():
                     cdict_fix_item[date] = 1
                 else:
@@ -131,16 +128,12 @@ def figmaker_idx():
                     cdict_auc_item[date] += 1
 
             # if there is price info on an item, create pdict_ls_item
-            if js_item[i]["price"] is not None \
-                    and "currency" in js_item[i] \
-                    and js_item[i]["currency"] == "FRF":
-                # at this point we should convert the price to take into accound
-                # inflation and other currencies ; we should probably create a function
-                # in a different file for that
+            if "price_c" in js_item[i] \
+                    and "currency" in js_item[i]:
                 if date not in pdict_ls_item.keys():
-                    pdict_ls_item[date] = [js_item[i]["price"]]
+                    pdict_ls_item[date] = [js_item[i]["price_c"]]
                 elif date in pdict_ls_item.keys():
-                    pdict_ls_item[date].append(js_item[i]["price"])
+                    pdict_ls_item[date].append(js_item[i]["price_c"])
 
     # finalise the data creation ; for some reason, the lengths of catalogues vary depending on the
     # source catalogue and what is being calculated ; the keys also vary from one dictionary to another.
@@ -166,8 +159,7 @@ def figmaker_idx():
     for k, v in group_ls_item.items():
         quart_ls_item[k] = quantiles(v)
 
-    # BUILD THE X AND Y AXIS
-    # ----------------------
+    # ============== BUILD THE X AND Y AXIS ============== #
     x = list(range(int(datelist[0])-1, int(datelist[-1])+1))  # years between the extremes of datelist (included)
     # loop through all the dates; if the date is a key in the dictionnaries, it means that there
     # data associated with that year. in that case, in that case, add the data for that year to the y axis; else, add
@@ -204,16 +196,15 @@ def figmaker_idx():
             y_q3_gpitem.append(0)
             y_med_gpitem.append(0)
 
-    # CREATE PLOTS
-    # ------------
+    # ============== CREATE PLOTS ============== #
     # store the titles as string and basic layout as a dictionnary
-    title_total = "Total sales per year (in french francs)"
-    title_avg_cat = "Average sales per catalogue and per year (in french francs)"
-    title_med_cat = "Median sales price per catalogue per year (in french francs)"
-    title_avg_item = "Average sale price of an item per year (in french francs)"
-    title_med_item = "Median sale price of an item per year (in french francs)"
+    title_total = "Total sales per year (in 1900 french francs)"
+    title_avg_cat = "Average sales per catalogue and per year (in 1900 french francs)"
+    title_med_cat = "Median sales price per catalogue per year (in 1900 french francs)"
+    title_avg_item = "Average sale price of an item per year (in 1900 french francs)"
+    title_med_item = "Median sale price of an item per year (in 1900 french francs)"
     title_cnt = "Number of items for sale per year"
-    title_qnt = "Evolution of the price of an item (in 5 year ranges, in quartiles)"
+    title_qnt = "Evolution of the price of an item (in 5 year ranges, in quartiles and in 1900 francs)"
     layout = {
         "paper_bgcolor": colors["cream"],
         "plot_bgcolor": colors["cream"],
@@ -225,8 +216,12 @@ def figmaker_idx():
     # figure 1 : sum of sales per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Total sales"}}
     layout["title"] = title_total
+    layout["yaxis_range"] = [0, 75000]  # cut off the excess values
+    layout["xaxis_range"] = [1844, 1955]
+    # about "marker" : the colorscale values are set to what looks best and can be changed with new data
     fig1 = go.Figure(
-        data=[go.Bar(x=x, y=y_total, marker={"color": y_total, "colorscale": scale},
+        data=[go.Bar(x=x, y=y_total, marker={"color": y_total, "colorscale": scale,
+                                             "cauto": False, "cmin": 0.00, "cmax": 65000.00},
                      hovertemplate="<b>Year</b>: %{x}<br><b>Sum of all catalogues' "
                                    + "prices </b>: %{y:.2f} FRF<extra></extra>")],
         layout=go.Layout(layout)
@@ -234,8 +229,11 @@ def figmaker_idx():
     # figure 2 : average of the sum of sales in a catalogue per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Average sales per catalogue"}}
     layout["title"] = title_avg_cat
+    layout["yaxis_range"] = [0, 10000]  # cut off the excess values
+    layout["xaxis_range"] = [1844, 1955]
     fig2 = go.Figure(
-        data=[go.Bar(x=x, y=y_avg_cat, marker={"color": y_avg_cat, "colorscale": scale},
+        data=[go.Bar(x=x, y=y_avg_cat, marker={"color": y_avg_cat, "colorscale": scale,
+                                               "cauto": False, "cmin": 0.00, "cmax": 7000},
                      hovertemplate="<b>Year</b>: %{x}<br><b>Average sum of prices per catalogue"
                                    + "</b>: %{y:.2f} FRF<extra></extra>")],
         layout=go.Layout(layout)
@@ -243,8 +241,11 @@ def figmaker_idx():
     # figure 3 : median of the sum of sales in a catalogue per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Median sales per catalogue"}}
     layout["title"] = title_med_cat
+    layout["yaxis_range"] = [0, 10000]  # cut off the excess values
+    layout["xaxis_range"] = [1844, 1955]
     fig3 = go.Figure(
-        data=[go.Bar(x=x, y=y_med_cat, marker={"color": y_med_cat, "colorscale": scale},
+        data=[go.Bar(x=x, y=y_med_cat, marker={"color": y_med_cat, "colorscale": scale,
+                                               "cauto": False, "cmin": 0.00, "cmax": 8000},
                      hovertemplate="<b>Year</b>: %{x}<br><b>Median sales per catalogue"
                                    + "</b>: %{y:.2f} FRF<extra></extra>")],
         layout=go.Layout(layout)
@@ -252,22 +253,29 @@ def figmaker_idx():
     # figure 4 : average price of an item per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Average item price"}}
     layout["title"] = title_avg_item
+    layout["yaxis_range"] = [0, 32]  # cut off the excess values
+    layout["xaxis_range"] = [1844, 1955]
     fig4 = go.Figure(
-        data=[go.Bar(x=x, y=y_avg_item, marker={"color": y_avg_item, "colorscale": scale},
+        data=[go.Bar(x=x, y=y_avg_item, marker={"color": y_avg_item, "colorscale": scale,
+                                                "cauto": False, "cmin": 0.00, "cmax": 25},
                      hovertemplate="<b>Year</b>: %{x}<br><b>Average item price</b>: %{y:.2f} FRF<extra></extra>")],
         layout=go.Layout(layout)
     )
     # figure 5 : median price of an item per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Median item price"}}
     layout["title"] = title_med_item
+    layout["yaxis_range"] = [0, 32]  # cut off the excess values
     fig5 = go.Figure(
-        data=[go.Bar(x=x, y=y_med_item, marker={"color": y_med_item, "colorscale": scale},
+        data=[go.Bar(x=x, y=y_med_item, marker={"color": y_med_item, "colorscale": scale,
+                                                "cauto": False, "cmin": 0.00, "cmax": 25},
                      hovertemplate="<b>Year</b>: %{x}<br><b>Median item price</b>: %{y:.2f} FRF<extra></extra>")],
         layout=go.Layout(layout)
     )
     # figure 6 : number of fixed price and auction items per year
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Number of items for sale"}}
     layout["title"] = title_cnt
+    layout["yaxis_range"] = [0, max(y_auc_item)]  # cut off the excess values
+    layout["xaxis_range"] = [1840, 1955]
     fig6 = go.Figure(
         data=[
             go.Bar(x=x, y=y_fix_item, marker={"color": colors["burgundy2"], "opacity": 0.7},
@@ -281,6 +289,8 @@ def figmaker_idx():
     # figure 7 : 1 box chart per 5 year range
     layout["yaxis"] = {"anchor": "x", "title": {"text": "Price of an item (in quantiles)"}}
     layout["title"] = title_qnt
+    layout["yaxis_range"] = [0, 80]  # cut off the excess values
+    layout["xaxis_range"] = [1840, 1925]
     fig7 = go.Figure(
         data=[go.Box(x=x, q1=y_q1_gpitem, median=y_med_gpitem, q3=y_q3_gpitem,
                      marker={"color": colors["blue"]},
@@ -334,8 +344,7 @@ def figmaker_cat(cat_id):
 
     :return: figpath (boolean: True if there is price info and a price is created, false if not)
     """
-    # DEFINING VARIABLES
-    # ------------------
+    # ============== DEFINING VARIABLES ============== #
     x1 = []  # x axis of the 1st plot (violin plot): the prices of all items in a catalogue
     x2 = []  # x axis of the 2nd plot: tei:name of the most expensive items
     y2 = []  # y axis of the 2nd plot: top 10 prices
@@ -343,16 +352,19 @@ def figmaker_cat(cat_id):
     pdict_top = {}  # dictionary mapping to the 10 most expensive item's xml:id their data in export_item.json
     #                 pdict_top can have more than 10 items if several items share the same top prices
     sort_pdict_top = {}  # dictionary to sort pdict_top by item price
+    nloop = 0  # count number of loops
     figpath = False  # variable to check if a figure will be created and if a path towards a figure
     #                  will exist ; if there's price info on that catalogue, a figure will be created
+    currency = ""
 
-    # PREPARE THE DATA
-    # ----------------
+    # ============== PREPARE THE DATA ============== #
     # prepare data for the x1 (the x axis of the first figure)
     for i in js_item:
         if js_item[i]["price"] is not None \
-                and js_item[i]["currency"] == "FRF" \
                 and re.match(f"{cat_id}_e\d+(_d\d+)?", i):
+            if nloop == 0:
+                currency = js_item[i]["currency"]
+                nloop += 1
             x1.append(js_item[i]["price"])
             figpath = True
 
@@ -365,7 +377,6 @@ def figmaker_cat(cat_id):
     for i in js_item:
         if re.match(f"{cat_id}_e\d+(_d\d+)?", i) \
                 and js_item[i]["price"] is not None \
-                and js_item[i]["currency"] == "FRF" \
                 and js_item[i]["price"] in top_price:
             pdict_top[i] = js_item[i]
 
@@ -376,14 +387,14 @@ def figmaker_cat(cat_id):
                 sort_pdict_top[k] = v
     pdict_top = sort_pdict_top
 
-    # BUILD THE X AND Y AXIS
-    # ----------------------
+    # ============== BUILD THE X AND Y AXIS ============== #
     # create the x2 axis, y2 axis and data for the hover template
     for v in pdict_top.values():
         y2.append(v["price"])
         x2.append(v["author"]) if v["author"] is not None else x2.append("unknown")
         itlist = []  # list of data on an item to pass to hovdata
         itlist.append(v["author"]) if v["author"] is not None else itlist.append("unknown")
+        itlist.append(v["price"]) if v["price"] is not None else itlist.append("unknown")
         itlist.append(v["date"]) if v["date"] is not None else itlist.append("unknown")
         itlist.append(v["number_of_pages"]) if v["number_of_pages"] is not None else itlist.append("unknown")
         if v["desc"] is not None and len(v["desc"]) <= 90:
@@ -412,8 +423,15 @@ def figmaker_cat(cat_id):
                 tlist.append(t)
         x2 = tlist
 
-    # CREATE PLOTS
-    # ------------
+    # ============== CREATE PLOTS ============== #
+    if currency == "FRF":
+        currinfo = "in french francs"
+    elif currency == "USD":
+        currinfo = "in US dollars"
+    elif currency == "GBP":
+        currinfo = "in pounds"
+    else:
+        currinfo = "None"
     layout = {
         "paper_bgcolor": colors["cream"],
         "plot_bgcolor": colors["cream"],
@@ -425,7 +443,7 @@ def figmaker_cat(cat_id):
         rows=2, cols=1,
         vertical_spacing=0.15,
         row_heights=[0.6, 0.4],
-        subplot_titles=("Distribution of the prices in the catalogue (in french francs)", "Ten most expensive items")
+        subplot_titles=(f"Distribution of the prices in the catalogue ({currinfo})", "Ten most expensive items")
     )
     # subplot 1: violin plot showing the price distribution in the catalogue, with quartiles and mean prices
     fig.add_trace(
@@ -442,9 +460,10 @@ def figmaker_cat(cat_id):
     fig.add_trace(
         go.Bar(y=y2, x=x2, marker={"color": y2, "colorscale": scale},
                hovertemplate="<b>Author or document's title</b>: %{customdata[0]}<br>"
-                             + "<b>Date of the document</b>: %{customdata[1]}<br>"
-                             + "<b>Number of pages</b>: %{customdata[2]}<br>"
-                             + "<b>Description</b>: %{customdata[3]}"
+                             + "<b>Price</b>: %{customdata[1]}<br>"
+                             + "<b>Date of the document</b>: %{customdata[2]}<br>"
+                             + "<b>Number of pages</b>: %{customdata[3]}<br>"
+                             + "<b>Description</b>: %{customdata[4]}"
                              + "<extra></extra>",
                customdata=hovdata),
         row=2, col=1
@@ -466,6 +485,7 @@ def figmaker_cat(cat_id):
 
 def figmaker_itm():
     pass
+
 
 def sorter(input_dict):
     """

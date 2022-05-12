@@ -27,7 +27,11 @@
             {% endif %}
         </div>
         {% if figpath %}
-            <div id="fig"><iframe src="{{ url_for('fig_grabber', key='IDX_1') }}"></iframe></div>
+            <div id="fig">
+                <iframe id="iframe" src="{{ url_for('fig_grabber', key='IDX_1') }}"></iframe>
+                <label for="iframe">To increase readability, some values are not visible. Click on the
+                    "autoscale" icon on the graph to see the full figure.</label>
+            </div>
         {% endif %}
     </div>
 
