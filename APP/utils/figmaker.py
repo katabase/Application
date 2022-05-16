@@ -19,14 +19,6 @@ colors = {"cream": "#fcf8f7", "blue": "#0000ef", "burgundy1": "#890c0c", "burgun
 scale = make_colorscale([colors["blue"], colors["burgundy2"]])  # create a colorscale
 
 
-# haven't found a way to change fonts yet but the basic font is ok
-# fonts = """
-#            "urlaub", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-#            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-#        """
-# fontdir = os.path.join(STATIC, "fonts")
-
-
 # TEMPLATE TO NAME THE HTML FIGURES (! VERY IMPORTANT TO BUILD URLS AND DISPLAY THEM !)
 # fig_(IDX|CAT_XXXX)(_[0-9])?
 #  ^    ^     ^        ^
@@ -91,8 +83,7 @@ def figmaker_idx():
     figpath = False  # return value : true if figures are created and an url can be built
     #                  in the templates pointing to those files
 
-    # PREPARE THE DATA
-    # ----------------
+    # ============== PREPARE THE DATA ============== #
     # create a one dictionnary: pdict_ls_cat, a dictionnary containing the list of total catalogue
     # prices for any given year ; from that list, we can calculate
     # - the total price of all items sold
@@ -394,7 +385,7 @@ def figmaker_cat(cat_id):
         x2.append(v["author"]) if v["author"] is not None else x2.append("unknown")
         itlist = []  # list of data on an item to pass to hovdata
         itlist.append(v["author"]) if v["author"] is not None else itlist.append("unknown")
-        itlist.append(v["price"]) if v["price"] is not None else itlist.append("unknown")
+        itlist.append(f"{v['price']} {currency}") if v["price"] is not None else itlist.append("unknown")
         itlist.append(v["date"]) if v["date"] is not None else itlist.append("unknown")
         itlist.append(v["number_of_pages"]) if v["number_of_pages"] is not None else itlist.append("unknown")
         if v["desc"] is not None and len(v["desc"]) <= 90:
@@ -443,7 +434,8 @@ def figmaker_cat(cat_id):
         rows=2, cols=1,
         vertical_spacing=0.15,
         row_heights=[0.6, 0.4],
-        subplot_titles=(f"Distribution of the prices in the catalogue ({currinfo})", "Ten most expensive items")
+        subplot_titles=(f"Distribution of the prices in the catalogue ({currinfo})",
+                        f"Ten most expensive items ({currinfo})")
     )
     # subplot 1: violin plot showing the price distribution in the catalogue, with quartiles and mean prices
     fig.add_trace(
