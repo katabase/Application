@@ -1,13 +1,30 @@
 from flask import render_template, request
-from .app import app
+import glob
+import os
 
-from .utils.figmaker import figmaker_idx, figmaker_cat
+from .app import app
 from .utils.main_functions import *
+from .utils.constantes import TEMPLATES
 from .utils.reconciliator import reconciliator
+from .utils.figmaker import figmaker_idx, figmaker_cat
 
 
 # The index is generated when the app is launched.
 created_index = create_index()
+
+@app.before_first_request
+def make_figidx():
+    """
+    create the figures to be displayed
+    :return:
+    """
+    created_index = create_index()
+    fig = figmaker_idx()
+    if fig is True:
+        print("FIRSTREQUEST")
+    else:
+        print("WEIRD")
+    return None
 
 
 # ============ MAIN ROUTES ============ #
@@ -69,7 +86,12 @@ def index():
     menu
     :return: render_template for the index page
     """
-    figpath = figmaker_idx()
+    # check if figures exist (as they should)
+    figs = glob.glob(os.path.join(TEMPLATES, "partials", "fig_IDX*.html"))
+    if len(figs) > 0:
+        figpath = True
+    else:
+        figpath = False
     return render_template("pages/Index.html", figpath=figpath, index=created_index)
 
 

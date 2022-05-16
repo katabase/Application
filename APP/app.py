@@ -13,14 +13,13 @@ app = Flask(
     static_folder=STATIC
 )
 
-
 # delete the files created during the session when the app is exited
 def cleaner():
     """
     function to delete the figures created when using the app
     :return: None
     """
-    figs = glob.glob(join(TEMPLATES, "partials", "fig_*"))  # join = os.path.join
+    figs = glob.glob(join(TEMPLATES, "partials", "fig_*.html"))
     for f in figs:
         os.remove(f)
     return None
