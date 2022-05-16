@@ -12,6 +12,7 @@ from .utils.figmaker import figmaker_idx, figmaker_cat
 # The index is generated when the app is launched.
 created_index = create_index()
 
+
 @app.before_first_request
 def make_figidx():
     """

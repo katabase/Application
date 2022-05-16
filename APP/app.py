@@ -13,6 +13,7 @@ app = Flask(
     static_folder=STATIC
 )
 
+
 # delete the files created during the session when the app is exited
 def cleaner():
     """
