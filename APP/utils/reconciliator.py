@@ -100,18 +100,41 @@ def similarity_score(desc_a, desc_b):
 def double_loop(input_dict):
     """
     This function creates pairs of matching entries.
+    the input is a subset of export_item.json filtered by author name (and possibly date)
+    returns structure:
+    filtered_list_with_score =
+        [
+            [['item1_id', 'item2_id'], "score"],
+            [['itemM_id', 'itemN_id'], "score"],
+            ...
+        ]  # couples of items with their similarity score
+    cleaned_output_list =
+        [
+            [
+                ['item1_id', 'itemN_id'],  # there can be more than 2 similar dicts
+                {'item1_id':
+                     {"slightly updated version of item1 entry in export_item.json"}
+                 },
+                {"itemN_id":
+                     {"slightly updated version of item1 entry in export_item.json"}
+                 }
+            ],
+            ["other reconciliated items"], ...
+        ]  # all similar items with, 1st: a list of all similar items, 2nd: dicts with complete data on all items
+    reconciliated_desc_list = ["item1_id", "itemN_id"]  # list of ids of all reconciliated items
     :param input_dict: a dictionary
-    :return: two lists
+    :return: 3 lists
     """
 
     output_dict1 = {}
     # First we compare each entry with each other one and give a score to each pair.
-    items = list(input_dict.items())
+    items = list(input_dict.items())  # list of tuples (id, input_dict[id])
     for i in tqdm.tqdm(range(len(items))):
         id_a, desc_a = items[i]
         desc_a["cat_id"] = validate_id(id_a)
         entry_id_a = validate_entry_id(id_a)
         desc_a["cat_entry"] = entry_id_a
+        # check for matching items in input_dict
         # We can pass items from 0 to i since we already have processed it.
         for j in range(i + 1, len(items)):
             id_b, desc_b = items[j]
@@ -124,6 +147,7 @@ def double_loop(input_dict):
                 continue
             # This dict will contain the score and the author distance.
             score_entry = {}
+            print(similarity_score(desc_a, desc_b))
             score_entry["score"] = similarity_score(desc_a, desc_b)
             try:
                 score_entry["author_distance"] = similar(desc_b["author"], desc_a["author"])
@@ -144,6 +168,7 @@ def double_loop(input_dict):
 
     # The filtered list removes all entries with a score lower or equal to 0.6
     sensibility = 0.6
+    print(final_list)
     filtered_list_with_score = [[item[1], item[0]] for item in final_list if item[0] > sensibility and item[2] >= 0.4]
 
     # Now let's create the clusters. We transform the list of pairs into a graph. The connected nodes are our clusters !
@@ -230,6 +255,7 @@ def reconciliator(author, date):
     # The dictionary containing entries of an author are remained in the final dictionary.
     final_results["filtered_data"] = author_dict
 
+    # double_loop is fed with a dict of entries filtered by author and/or date
     results_lists = double_loop(author_dict)
 
     final_results["score"] = results_lists[0]

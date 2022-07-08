@@ -1,42 +1,5 @@
 /* defining fonts */
 @font-face {
-  font-family: 'libertinus';
-    src: url('../fonts/LibertinusSans-Regular.woff2') format("woff2"),
-    url('../fonts/LibertinusSans-Italic.woff2') format("woff2"),
-    url('../fonts/LibertinusSans-Bold.woff2') format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'sirius';
-  src: url('../fonts/Sirius-Book.otf') format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'kumbh';
-  src: url('../fonts/KumbhSans-Regular.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'esperabold';
-  src: url('../fonts/Espera-Regular.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'espera';
-  src: url('../fonts/Espera-Regular.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'sewakadisplay';
   src: url('../fonts/SewakaDisplay-Regular.otf') format("opentype");
   font-weight: normal;
@@ -49,16 +12,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-/*
-@font-face {
-  font-family: 'gaveliana';
-  src: url('../fonts/Gaveliana.otf') format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-*/
-
 
 /* root elements */
 :root {
