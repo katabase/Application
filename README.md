@@ -1,6 +1,8 @@
 # Application
 
-This repository contains the web publication application of the corpus of manuscript sales catalogues.
+This repository contains the web publication application of the corpus of manuscript sales 
+catalogues. This branch stores the **first version of the app** for archival purposes. For
+the current version, see the [`main`](https://github.com/katabase/Application/tree/main) branch.
 
 ## Getting started :
 
