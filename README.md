@@ -1,6 +1,7 @@
 # Application
 
-This repository contains the web publication application of the corpus of manuscript sales catalogues.
+This repository contains the web publication application of the corpus of manuscript 
+sales catalogues.
 
 ## Getting started :
 
