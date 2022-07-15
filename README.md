@@ -1,7 +1,8 @@
 # Application
 
 This repository contains the web publication application of the corpus of manuscript 
-sales catalogues.
+sales catalogues. This branch contains the current stable version of the website. See
+`versionX.X.X` for the older versions.
 
 ## Getting started :
 
