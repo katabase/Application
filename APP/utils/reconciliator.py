@@ -147,7 +147,6 @@ def double_loop(input_dict):
                 continue
             # This dict will contain the score and the author distance.
             score_entry = {}
-            print(similarity_score(desc_a, desc_b))
             score_entry["score"] = similarity_score(desc_a, desc_b)
             try:
                 score_entry["author_distance"] = similar(desc_b["author"], desc_a["author"])
@@ -168,7 +167,6 @@ def double_loop(input_dict):
 
     # The filtered list removes all entries with a score lower or equal to 0.6
     sensibility = 0.6
-    print(final_list)
     filtered_list_with_score = [[item[1], item[0]] for item in final_list if item[0] > sensibility and item[2] >= 0.4]
 
     # Now let's create the clusters. We transform the list of pairs into a graph. The connected nodes are our clusters !

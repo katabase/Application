@@ -2,11 +2,11 @@ from flask import render_template, request
 import glob
 import os
 
-from .app import app
-from .utils.main_functions import *
-from .utils.constantes import TEMPLATES
-from .utils.reconciliator import reconciliator
-from .utils.figmaker import figmaker_idx, figmaker_cat
+from ..app import app
+from ..utils.main_functions import *
+from ..utils.constantes import TEMPLATES
+from ..utils.reconciliator import reconciliator
+from ..utils.figmaker import figmaker_idx, figmaker_cat
 
 
 # The index is generated when the app is launched.
@@ -21,10 +21,6 @@ def make_figidx():
     """
     created_index = create_index()
     fig = figmaker_idx()
-    if fig is True:
-        print("FIRSTREQUEST")
-    else:
-        print("WEIRD")
     return None
 
 

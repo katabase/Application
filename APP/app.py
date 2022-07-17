@@ -2,6 +2,7 @@ from flask import Flask
 from os.path import join
 from glob import glob
 import atexit
+import os
 
 from .utils.constantes import TEMPLATES, STATIC
 
@@ -30,4 +31,5 @@ atexit.register(cleaner)
 
 
 # import the routes
-from .routes import *
+from .routes.routes_generic import *
+from .routes.routes_api import *
