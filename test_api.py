@@ -1,3 +1,4 @@
+from lxml import etree
 import requests
 import click
 import json
@@ -22,8 +23,16 @@ def query(params=None):
     sys.exit(1)
   params = json.loads(params)
   r = requests.get(url, params=params)
-  r = r.json()
-  print(r)
+
+  if r.headers["Content-Type"] == "application/xml; charset=utf-8":
+    print(r.headers)
+    print(type(r.content))
+    print(r.status_code)
+    tree = etree.fromstring(r.content)
+    out = etree.tostring(tree)
+  else:
+    out = r.json()
+    print(out)
   return None
 
 
