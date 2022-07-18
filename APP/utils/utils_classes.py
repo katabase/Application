@@ -1,12 +1,12 @@
 import re
 
 
-# --------------------------
-# useful classes for the add
-# --------------------------
+# -------------------------------------------
+# classes containing useful stuff for the app
+# -------------------------------------------
 
 
-class Compare:
+class Match:
     """
     comparison and matching methods
     """
@@ -55,21 +55,46 @@ class Compare:
             except TypeError:
                 orig_date = None
 
-        if mode == 0 and sell_date is not None and orig_date is not None:
-            if req["name"].lower() == name and \
-                    Compare.match_date(req["sell_date"], sell_date) is True and \
-                    Compare.match_date(req["orig_date"], orig_date) is True:
+        if Match.compare(req["name"], name) is True:
+            if mode == 0 and sell_date is not None and orig_date is not None:
+                if Match.match_date(req["sell_date"], sell_date) is True and \
+                        Match.match_date(req["orig_date"], orig_date) is True:
+                    match = True
+            elif mode == 1 and orig_date is not None:
+                if Match.match_date(req["orig_date"], orig_date) is True:
+                    match = True
+            elif mode == 2 and sell_date is not None:
+                if Match.match_date(req["sell_date"], sell_date) is True:
+                    match = True
+            elif mode == 4:
                 match = True
-        elif mode == 1 and orig_date is not None:
-            if req["name"].lower() == name and Compare.match_date(req["orig_date"], orig_date) is True:
-                match = True
-        elif mode == 2 and sell_date is not None:
-            if req["name"].lower() == name and Compare.match_date(req["sell_date"], sell_date) is True:
-                match = True
-        elif mode == 4 and req["name"].lower() == name:
-            match = True
 
         return match
+
+    @staticmethod
+    def compare(input, compa):
+        """
+        for routes_api.py
+        compare two strings to check if they're the same without punctuation and
+        capitals
+        :param input: input string
+        :param compa: string to compare input with
+        :return:
+        """
+        punct = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-',
+                 '+', '=', '{', '}', '[', ']', ':', ';', '"', "'", '|',
+                 '<', '>', ',', '.', '?', '/', '~', '`']
+        input = input.lower()
+        compa = compa.lower()
+        for p in punct:
+            input = input.replace(p, "")
+            compa = compa.replace(p, "")
+        input = re.sub(r"\s+", " ", input)
+        compa = re.sub(r"\s+", " ", compa)
+        input = re.sub(r"(^\s|\s$)", "", input)
+        compa = re.sub(r"(^\s|\s$)", "", compa)
+        same = (input == compa)  # true if same, false if not
+        return same
 
 
 class ErrorHandlers:

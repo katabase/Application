@@ -16,8 +16,6 @@ def query(params=None):
   test the katabase API
   :param params: the query parameters
   """
-  print(params)
-  print(type(params))
   url = "http://127.0.0.1:5000/katapi"
   if not params:
     click.echo("you must input research parameters")

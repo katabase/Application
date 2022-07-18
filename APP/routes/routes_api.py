@@ -3,7 +3,7 @@ import json
 import re
 
 from ..app import app
-from ..utils.utils_classes import Compare, ErrorHandlers
+from ..utils.utils_classes import Match, ErrorHandlers
 from ..utils.constantes import DATA
 
 # -------------------------------------------------------------------------------------------------------------------
@@ -141,7 +141,7 @@ def katapi():
                 # loop through all items and search results using the supplied parameters
                 for k, v in data.items():
                     if v["author"] is not None:
-                        if Compare.match_entry(req, v, mode) is True:
+                        if Match.match_entry(req, v, mode) is True:
                             results[k] = v
 
     # build output
