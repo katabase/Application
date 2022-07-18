@@ -1,7 +1,10 @@
 from flask import jsonify, request
+import json
 import re
 
 from ..app import app
+from ..utils.utils_classes import Compare, ErrorHandlers
+from ..utils.constantes import DATA
 
 # -------------------------------------------------------------------------------------------------------------------
 # an API to send raw data to users
@@ -51,106 +54,98 @@ def katapi():
     # =================== VAIRABLES =================== #
     output = {
         "head": {
-            "status_code": None,
+            "status_code": 0,
             "vars": []
         },
         "results": {}
     }  # output json
     errors = []  # keys to errors that happened
     invalid_params = []  # list of invalid parameters (for certain error messages)
+    results = {}  # to store the result of a query
+    status_code = 0  # HTTP status code
 
     # =================== PROCESS THE USER INPUT =================== #
     # get arguments request
-    level = request.args.get("level")
-    format = request.args.get("format")
-    id = request.args.get("id")
-    name = request.args.get("name")
-    sell_date = request.args.get("sell_date")
-    orig_date = request.args.get("orig_date")
-    reconciliation = request.args.get("reconciliation")
+    req = dict(request.args)
+    search_params = list(req.keys())
+    # level = request.args.get("level")
+    # format = request.args.get("format")
+    # id = request.args.get("id")
+    # name = request.args.get("name")
+    # sell_date = request.args.get("sell_date")
+    # orig_date = request.args.get("orig_date")
+    # reconciliation = request.args.get("reconciliation")
 
-    # check the the (compulsory values provided) + add queried vars to the output
-    if not level:
+    # check the input (compulsory values provided + validity) + add queried vars to the output
+    output["head"]["vars"] = search_params
+    if "level" not in req.keys():
         errors.append("level")
-    else:
-        output["head"]["vars"].append("level")
-    if format:
-
-        output["head"]["vars"].append("format")
-    if id:
-        output["head"]["vars"].append("id")
-    if name:
-        output["head"]["vars"].append("name")
-    if sell_date:
-        output["head"]["vars"].append("sell_date")
-    if orig_date:
-        output["head"]["vars"].append("orig_date")
-    if reconciliation:
-        output["head"]["vars"].append("reconciliation")
-
-    if name and id:
+    elif not re.search(r"^(cat|itm)$", req["level"]):
+        errors.append("level")
+    if "name" in req.keys() and "id" in req.keys():
         errors.append("name+id")
-    if not name and not id:
-        errors.append("no_name_or_id")
-    if sell_date and not re.search(r"^\d{4}$", sell_date):
+    if "name" not in req.keys() and "id" not in req.keys():
+        errors.append("no_name+id")
+    if "sell_date" in req.keys() and not re.search(r"^\d{4}(-\d{4})?$",  req["sell_date"]):
         errors.append("sell_date")
-    if orig_date and not re.search(r"^\d{4}$", orig_date):
+    if "orig_date" in req.keys() and not re.search(r"^\d{4}(-\d{4})?$",  req["orig_date"]):
         errors.append("orig_date")
-    if level == "cat" and (name or sell_date or orig_date or reconciliation is not None):
+    if req["level"] == "cat" and (
+            "name" in req.keys() 
+            or "sell_date" in req.keys() 
+            or "orig_date" in req.keys()
+            or "reconciliation" in req.keys()):
         errors.append("cat_invalid_params")
-        if name is not None:
+        if req["name"] is not None:
             invalid_params.append("name")
-        if sell_date is not None:
+        if req["sell_date"] is not None:
             invalid_params.append("sell_date")
-        if orig_date is not None:
+        if req["orig_date"] is not None:
             invalid_params.append("orig_date")
-        if reconciliation is not None:
+        if req["reconciliation"] is not None:
             invalid_params.append("reconciliation")
 
     # define default behaviour
-    if format is None:
-        format = "json"
+    if "format" not in req.keys():
+        req["format"] = "json"
 
     # =================== RUN THE USER QUERY =================== #
-    # if there's an error, return it and stop the script. else, process and search for results
+    # if there's an error, return it and stop the script
     if len(errors) > 0:
-        output["results"], output["head"]["status_code"] = error_maker(errors, invalid_params)
-    else:
-        pass
+        results, status_code = ErrorHandlers.error_maker(errors, invalid_params)
 
-    print(output)
+    # if there's no error, proceed and try and retrieve results
+    else:
+        # if we're working at item level
+        if req["level"] == "itm":
+            with open(f"{DATA}/json/export_item.json", mode="r") as fh:
+                data = json.load(fh)
+
+            # if querying an id
+            if "id" in req.keys():
+                if req["id"] in data.keys():
+                    results[req["id"]] = data[req["id"]]
+
+            # if we're querying a name
+            else:
+                # determine on which params to query in the json
+                if "name" in req.keys() and "sell_date" in req.keys() and "orig_date" in req.keys():
+                    mode = 0
+                elif "name" in req.keys() and "orig_date" in req.keys():
+                    mode = 1
+                elif "name" in req.keys() and "sell_date" in req.keys():
+                    mode = 2
+                elif "name" in req.keys():
+                    mode = 3
+
+                # loop through all items and search results using the supplied parameters
+                for k, v in data.items():
+                    if v["author"] is not None:
+                        if Compare.match_entry(req, v, mode) is True:
+                            results[k] = v
+
+    # build output
+    output["head"]["status_code"] = status_code
+    output["results"] = results
 
     return jsonify(output)
-
-
-def error_maker(errors: list, invalid_params: list):
-    """
-    build a custom json to return error messages
-
-    return format: {"request parameter on which error happened": "error message"}
-    :param errors:
-    :param invalid_params: invalid research parameters
-    :return: 
-    """
-    status_code = 400
-    error_log = {
-        "error_type": "invalid parameters or parameters combination",
-        "error_description": {}
-    }  # output dictionnary
-    error_messages = {
-        "level": "you must specify a request level matching: (itm|cat)",
-        "format": "the format must match: (xml|json)",
-        "id": r"if level=itm, id must match CAT_\d+_e\d+_d\d+ ; if level=cat, id must match CAT_\d+",
-        "sell_date": r"the format must match: \d{4}",
-        "orig_date": r"the format must match: \d{4}",
-        "name+id": "you cannot provide both a name and an id",
-        "no_name_or_id": "you must specify at least a name or an id",
-        "cat_invalid_params": f"invalid parameters for level=cat: {str(invalid_params)}",
-        "no_params": "no request parameters were provided"
-    }
-
-    # build a dictionnary of error messages
-    for e in errors:
-        error_log["error_description"][e] = error_messages[e]
-
-    return error_log, status_code

@@ -18,12 +18,14 @@ def query(params=None):
   """
   print(params)
   print(type(params))
-  url = "127:0:5000/katapi"
+  url = "http://127.0.0.1:5000/katapi"
   if not params:
     click.echo("you must input research parameters")
     sys.exit(1)
   params = json.loads(params)
   r = requests.get(url, params=params)
+  r = r.json()
+  print(r)
   return None
 
 
