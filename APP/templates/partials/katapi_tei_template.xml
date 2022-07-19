@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KatAPI query results</title>
+                <respStmt>
+                    <resp>File created automatically by KatAPI, an API developped as part of the</resp>
+                    <orgName>
+                        <ref target="https://katabase.huma-num.fr/">MSS / Katabase project.</ref>
+                    </orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>Production of the source data:</resp>
+                    <orgName>Projet e-ditiones</orgName>
+                    <orgName>Katabase</orgName>
+                    <orgName> Manuscript SaleS Catalogue</orgName>
+                </respStmt>
+                <funder>
+                    <orgName>Université de Neuchâtel</orgName>
+                    <orgName>Université de Genève</orgName>
+                    <orgName>École normale Supérieure</orgName>
+                </funder>
+            </titleStmt>
+            <publicationStmt>
+                <ab>
+                    <table>
+                        <head>Query parameters</head>
+                    </table>
+                    <date type="file-creation-date"></date>
+                    <ref type="http-status-code"></ref>
+                    <note>Original data made available under Creative Commons Attribution 2.0 Generic (CC BY 2.0)</note>
+                </ab>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Sources may come from different documents. See the corresponding XML-TEI catalogues on 
+                    <ref target="https://github.com/katabase/Application/tree/main/APP/data">Github</ref>
+                    for detailed description of the sources.
+                </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+        </body>
+    </text>
+</TEI>

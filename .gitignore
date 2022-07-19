@@ -3,6 +3,8 @@
 
 __pycache__
 
+test_xml_response.xml
+
 # Virtual env
 my_env
 env_app/*
