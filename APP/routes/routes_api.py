@@ -329,20 +329,19 @@ def katapi():
             if response_body is None:
                 print("empty xml")
 
-        # build the complete response body
+        # build the complete response (build_response functions build a body
+        # from a template + call APIGlobal.set_headers to append headers to the body)
         # create the response body
-        if req["format"] == "tei" and req["level"] != "cat_full":
-            response_body = XmlTei.build_response_body(req, response_body, status_code)
-            with open("./test_xml_response.xml", mode="w+") as fh:
-                response_body = etree.tostring(
-                    response_body, pretty_print=True, xml_declaration=True, encoding="utf-8"
-                ).decode("utf-8")
-                fh.write(str(response_body))
-        else:
-            response_body = Json.build_response_body(req, response_body, status_code)
+        if req["format"] == "tei":
+            response = XmlTei.build_response(req, response_body, status_code)
 
-    # build the response class (set mimetype...)
-    # response = katapi_set_response(response, req["format"])
-    response = APIGlobal.build_response_full(response_body, req["format"], status_code)
+            # to check the output quality: save tei output to file
+            with open("./test_xml_response.xml", mode="w+") as fh:
+                tree = etree.fromstring(response.get_data())
+                fh.write(str(etree.tostring(
+                    tree, pretty_print=True, xml_declaration=True, encoding="utf-8"
+                ).decode("utf-8")))
+        else:
+            response = Json.build_response(req, response_body, status_code)
 
     return response

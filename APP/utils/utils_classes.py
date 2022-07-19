@@ -146,11 +146,11 @@ class Json:
     a bunch of tools to build a Json file for routes_api.py
     """
     @staticmethod
-    def build_response_body(req: dict, response_body: dict, status_code: int):
+    def build_response(req: dict, response_body: dict, status_code: int):
         """
-        build a json body to store the API output to return to the user
+        build a response (json body + header) to store the API output to return to the user
         :param req: the user's request
-        :return: template with the request added
+        :return: complete response object.
         """
         template = {
             "head": {
@@ -158,9 +158,11 @@ class Json:
                 "query": req  # user query: params and value
             },
             "results": response_body  # results returned by the server (or error message)
-        }  # output json
+        }  # response body
 
-        return template
+        response = APIGlobal.set_headers(template, req["format"], status_code)
+
+        return response
 
     # @staticmethod
     # def error_response(response_body, error_log: dict, status_code: int):
@@ -213,7 +215,7 @@ class XmlTei:
         return item
 
     @staticmethod
-    def build_response_body(req, response_body, status_code):
+    def build_response(req, response_body, status_code):
         """
         for routes_api.py
         build a tei document from a template:
@@ -261,16 +263,8 @@ class XmlTei:
         el_body = tree.xpath(".//tei:body", namespaces=XmlTei.ns)[0]
         el_body.append(response_body)
 
-        print(etree.tostring(tree))
-        return tree
-
-    # @staticmethod
-    # def error_response():
-        """
-        for error_handlers.py
-        build an XML-TEI response for a defined error (see classes below).
-        :return:
-        """
+        response = APIGlobal.set_headers(etree.tostring(tree, pretty_print=True), req["format"], 200)
+        return response
 
 
 class APIGlobal:
@@ -279,9 +273,9 @@ class APIGlobal:
     global methods for the API
     """
     @staticmethod
-    def build_response_full(response_body, response_format: str, status_code=200):
+    def set_headers(response_body, response_format: str, status_code=200):
         """
-        set the response for the API: append headers to the body (mimetype, statuscode)
+        set the response headers for the API: append headers to the body (mimetype, statuscode)
         :param response_body: the body of the repsonse object for which we'll set the headers:
                               - format, esp. mimetype
                               - http status code
@@ -291,7 +285,6 @@ class APIGlobal:
         """
         if response_format == "json":
             response = make_response(jsonify(response_body), status_code)
-            print(type(response))
         else:
             response = app.response_class(response_body, mimetype="application/xml")
         return response
@@ -318,6 +311,8 @@ class APIInvalidInput(exceptions.HTTPException):
       - (Json|XmlTei).error_response() build a valid json|tei response object
     - werkzeug kindly returns our custom error message, body and headers, to the client.
     """
+    status_code = 422
+
     def __init__(self, req: dict, errors: list, incompatible_params: list):
         """
         a valid http response object to be handled by werkzeug
@@ -327,12 +322,8 @@ class APIInvalidInput(exceptions.HTTPException):
                (argument of error_logger to pass to build_response())
         """
         self.description = "Invalid parameters or parameters combination"
-        self.status_code = 422
-        self.response = APIGlobal.build_response_full(
-            response_body=APIInvalidInput.build_response_body(req, errors, incompatible_params),
-            response_format=req["format"],
-            status_code=self.status_code
-        )  # create a full response object, with headers
+        self.status_code = APIInvalidInput.status_code
+        self.response = APIInvalidInput.build_response(req, errors, incompatible_params)  # response object w headers
 
     @staticmethod
     def error_logger(errors: list, incompatible_params: list):
@@ -370,25 +361,26 @@ class APIInvalidInput(exceptions.HTTPException):
         return error_log
 
     @staticmethod
-    def build_response_body(req, errors: list, incompatible_params: list):
+    def build_response(req, errors: list, incompatible_params: list):
         """
         build a response object that werkzeug.HTTPException will pass to the client
-        :return: response_body, a custom valid response body to which we'll add a header
+        2 steps: first, build a response body in xml|tei; then, add headers
+        :return: response, a custom valid response to which we'll add a header with headers.
         """
         if req["format"] == "tei":
-            response_body = XmlTei.build_response_body(
+            response = XmlTei.build_response(
                 req=req,
                 response_body=None,  # warning: error_logger returns JSON, we need to convert it to dict
-                status_code=422
+                status_code=APIInvalidInput.status_code
             )
         else:
-            response_body = Json.build_response_body(
+            response = Json.build_response(
                 req=req,
                 response_body=APIInvalidInput.error_logger(errors, incompatible_params),
-                status_code=422
+                status_code=APIInvalidInput.status_code
             )  # build the response body
-        print(response_body)
-        return response_body
+
+        return response
 
 
 class APIInternalServerError(Exception):
