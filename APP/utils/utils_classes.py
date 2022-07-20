@@ -1,4 +1,4 @@
-from flask import make_response, jsonify
+from flask import make_response, jsonify, Response
 from werkzeug import exceptions
 from lxml import etree
 import datetime
@@ -21,7 +21,8 @@ class Match:
         """
         for katapi.py
         set the matching mode when req["name"], req["level"]=="itm"
-        depending on whether req["sell_date"] and req["orig_date"] have been given by the user
+        depending on whether req["sell_date"] and req["orig_date"] have been given by the user.
+        this mode will be used to filter possible matching results
         :param req:
         :return:
         """
@@ -64,11 +65,16 @@ class Match:
         """
         match = False
         # if name and cat_type match,
-        # extract a year from entry["sell_date"] and try to match the dates.
-        # if they match, match is True. else false
-        if "cat_type" in entry.keys() and entry["cat_type"] == req_name:
-            if req_date is not None and "sell_date" in entry.keys():
-                match = Match.match_date(req_date, re.match(r"\d{4}", entry["sell_date"])[0])
+        # - if there's a date, filter by date: extract a year from entry["sell_date"]
+        #   and try to match the dates. if they match, match is True. else false
+        # - if there's no date, match is True
+        if "cat_type" in entry.keys() and Match.compare(entry["cat_type"], req_name):
+            match = True  # match is true by default. we add extra filtering by date below
+            if req_date is not None \
+                    and "sell_date" in entry.keys() \
+                    and entry["sell_date"] is not None:
+                match = Match.match_date(req_date, re.search(r"\d{4}", entry["sell_date"])[0])
+
         return match
 
     @staticmethod
@@ -119,8 +125,8 @@ class Match:
     def compare(input, compa):
         """
         for routes_api.py
-        compare two strings to check if they're the same without punctuation and
-        capitals
+        compare two strings to check if they're the same without punctuation,
+        accented characters and capitals
         :param input: input string
         :param compa: string to compare input with
         :return:
@@ -128,11 +134,17 @@ class Match:
         punct = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-',
                  '+', '=', '{', '}', '[', ']', ':', ';', '"', "'", '|',
                  '<', '>', ',', '.', '?', '/', '~', '`']
+        accents = {"é": "e", "è": "e", "ç": "c", "à": "a", "ê": "e",
+                   "â": "a", "ô": "o", "ò": "o", "ï": "i", "ì": "i",
+                   "ö": "o"}
         input = input.lower()
         compa = compa.lower()
         for p in punct:
             input = input.replace(p, "")
             compa = compa.replace(p, "")
+        for k, v in accents.items():
+            input = input.replace(k, v)
+            compa = compa.replace(k, v)
         input = re.sub(r"\s+", " ", input)
         compa = re.sub(r"\s+", " ", compa)
         input = re.sub(r"(^\s|\s$)", "", input)
@@ -163,25 +175,6 @@ class Json:
         response = APIGlobal.set_headers(template, req["format"], status_code)
 
         return response
-
-    # @staticmethod
-    # def error_response(response_body, error_log: dict, status_code: int):
-        """
-        for error_handlers.py
-        build a JSON response for a defined error (see classes below):
-        append the error_log and status code to response_body and
-        jsonify the response.
-        return the response object to the error handler
-        :param response_body: the response body
-        :param error_log: a dict mapping to keys (search params) values (error messages)
-        :param status_code: the http status code
-        :return: the complete response object: response + headers
-        """
-    #     response_body["head"]["status_code"] = status_code
-    #     response_body["results"] = error_log
-    #     response = katapi_set_response(response_body, "json", status_code)
-
-    #     return response
 
 
 class XmlTei:
@@ -215,20 +208,36 @@ class XmlTei:
         return item
 
     @staticmethod
-    def build_response(req, response_body, status_code):
+    def pretty_print(tree):
+        """
+        pretty print an etree object to send a ~pretty~ file to the user :3
+        :param tree: the tree to pretty print
+        :return: the pretty printed lxml etree object
+        """
+        tree = etree.tostring(tree, pretty_print=True)
+        tree = etree.fromstring(tree)
+        return tree
+
+    @staticmethod
+    def build_response(req: dict, response_body, status_code=200):
         """
         for routes_api.py
         build a tei document from a template:
         - a tei:teiHeader containing the request params
         - a tei:text/tei:body to store the results
-        :param req:
+        :param req: the user's request
+        :param response_body: the response body, an lxml tree or string representation of tree
+        :param status_code: the http status code
         :return:
         """
+        parser = etree.XMLParser(remove_blank_text=True)
         with open(f"{TEMPLATES}/partials/katapi_tei_template.xml", mode="r") as fh:
-            tree = etree.parse(fh)
+            tree = etree.parse(fh, parser)
 
         # build the table of queried data
-        el_query_table = tree.xpath(".//tei:publicationStmt//tei:table", namespaces=XmlTei.ns)[0]
+        tei_query_table = etree.Element("table", nsmap=XmlTei.ns)
+        tei_head = etree.Element("head", nsmap=XmlTei.ns)
+        tei_head.text = "Query parameters"
         row1 = etree.Element("row", nsmap=XmlTei.ns)
         row2 = etree.Element("row", nsmap=XmlTei.ns)
         for k, v in req.items():
@@ -245,26 +254,87 @@ class XmlTei:
             cell_v.set("role", "value")
             cell_v.set("corresp", k)
             row2.append(cell_v)
-        el_query_table.append(row1)
-        el_query_table.append(row2)
+        row1 = XmlTei.pretty_print(row1)
+        row2 = XmlTei.pretty_print(row2)
+        tei_query_table.append(tei_head)
+        tei_query_table.append(row1)
+        tei_query_table.append(row2)
+
+        tree.xpath(".//tei:publicationStmt/tei:ab", namespaces=XmlTei.ns)[0].append(tei_query_table)
 
         # set the status code
-        el_status = tree.xpath(".//tei:publicationStmt//tei:ref", namespaces=XmlTei.ns)[0]
-        el_status.set("target", f"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{status_code}")
-        el_status.text = str(status_code)
+        tei_status = tree.xpath(".//tei:publicationStmt//tei:ref", namespaces=XmlTei.ns)[0]
+        tei_status.set("target", f"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{status_code}")
+        tei_status.text = str(status_code)
 
         # set the date
         now = datetime.datetime.now().isoformat()
-        el_date = tree.xpath(".//tei:publicationStmt//tei:date", namespaces=XmlTei.ns)[0]
-        el_date.set("when-iso", now)
-        el_date.text = now
+        tei_date = tree.xpath(".//tei:publicationStmt//tei:date", namespaces=XmlTei.ns)[0]
+        tei_date.set("when-iso", now)
+        tei_date.text = now
 
         # set the response body
-        el_body = tree.xpath(".//tei:body", namespaces=XmlTei.ns)[0]
-        el_body.append(response_body)
+        tei_body = tree.xpath(".//tei:body", namespaces=XmlTei.ns)[0]
+        tei_body.append(response_body)
 
-        response = APIGlobal.set_headers(etree.tostring(tree, pretty_print=True), req["format"], 200)
+        tree = XmlTei.pretty_print(tree)
+
+        # to check the output quality: save tei output to file
+        with open("./test_xml_response.xml", mode="w+") as fh:
+            fh.write(str(etree.tostring(
+                tree, xml_declaration=True, encoding="utf-8"
+            ).decode("utf-8")))
+
+        response = APIGlobal.set_headers(etree.tostring(tree, pretty_print=True), req["format"], status_code)
         return response
+
+    @staticmethod
+    def build_error_teibody(error_log: dict, error_desc: str, req: dict):
+        """
+        build the tei:body containing an error message
+        if there has been an error message
+        :param error_log: the error log created by APIInvalidInput.error_logger()
+        :param error_desc: the error description
+        :param req: the user's request
+        :return:
+        """
+        results = etree.Element("div", nsmap=XmlTei.ns)
+        results.set("type", "error-message")
+
+        # build the list element and header
+        tei_list = etree.Element("list", nsmap=XmlTei.ns)
+        head = etree.Element("head", nsmap=XmlTei.ns)
+        head.text = APIInvalidInput.description
+        tei_list.append(head)
+
+        # add the errors to tei:items and append them to teilist
+        for k, v in error_log["error_description"].items():
+            itm = etree.Element("item", nsmap=XmlTei.ns)
+            # add attributes to the tei:item:
+            # - @type with k (the error type)
+            # - @corresp with k if k is in the requested keys, to
+            #   point towards the tei:header//tei:table containing
+            #   the request.
+            itm.set("ana", k)
+            if k in req.keys():
+                itm.set("corresp", k)
+
+            # build the inside of the tei:item: a label containing the
+            # error_log key + a desc containing the error_log value
+            label = etree.Element("label", nsmap=XmlTei.ns)
+            label.text = k
+            desc = etree.Element("desc", nsmap=XmlTei.ns)
+            desc.text = v
+
+            # build the complete item and append it to the list
+            itm.append(label)
+            itm.append(desc)
+            tei_list.append(itm)
+
+        # add the list to the results and return them
+        results.append(tei_list)
+        results = XmlTei.pretty_print(results)
+        return results
 
 
 class APIGlobal:
@@ -286,7 +356,11 @@ class APIGlobal:
         if response_format == "json":
             response = make_response(jsonify(response_body), status_code)
         else:
-            response = app.response_class(response_body, mimetype="application/xml")
+            response = Response(
+                response=response_body,
+                status=status_code,
+                mimetype="application/xml"
+            )
         return response
 
 
@@ -312,27 +386,31 @@ class APIInvalidInput(exceptions.HTTPException):
     - werkzeug kindly returns our custom error message, body and headers, to the client.
     """
     status_code = 422
+    description = "Invalid parameters or parameters combination"
 
-    def __init__(self, req: dict, errors: list, incompatible_params: list):
+    def __init__(self, req: dict, errors: list, incompatible_params: list, unallowed_params: list):
         """
         a valid http response object to be handled by werkzeug
         :param req: the request on which the error happened (to pass to build_response)
         :param errors: the list of errors (keys of error_logger to pass to build_response())
         :param incompatible_params: the list of incompatible parameters
                (argument of error_logger to pass to build_response())
+        :param unallowed_params: request parameters that are not allowed in the api
+                                 (argument of error_logger to pass to build_response())
         """
-        self.description = "Invalid parameters or parameters combination"
+        self.description = APIInvalidInput.description
         self.status_code = APIInvalidInput.status_code
-        self.response = APIInvalidInput.build_response(req, errors, incompatible_params)  # response object w headers
+        self.response = APIInvalidInput.build_response(req, errors, incompatible_params, unallowed_params)
 
     @staticmethod
-    def error_logger(errors: list, incompatible_params: list):
+    def error_logger(errors: list, incompatible_params: list, unallowed_params: list):
         """
         for routes_api.py
         build a custom json describing the invalid input to return error messages to the user
          return format: {"request parameter on which error happened": "error message"}
         :param errors:
-        :param incompatible_params: invalid research parameters
+        :param incompatible_params: research parameters that are not compatible within each other
+        :param unallowed_params: request parameters that are not allowed for the api
         :return:
         """
         error_log = {
@@ -350,6 +428,7 @@ class APIInvalidInput(exceptions.HTTPException):
             "no_name+id": "You must specify at least a name or an id",
             "cat_stat+name": "When level:cat_stat, name must match: ^(LAC|RDA|LAV|AUC|OTH)$",
             "id_incompatible_params": f"Invalid parameters with parameter id: {str(incompatible_params)}",
+            "unallowed_params": f"Unallowed parameters for the API: {str(unallowed_params)}",
             "cat_stat_incompatible_params": f"Invalid parameters for level=cat_stat: {str(incompatible_params)}",
             "cat_full_incompatible_params": f"Invalid parameters for level=cat_full: {str(incompatible_params)}",
             "cat_full_format": "The only valid format with level=cat_full is tei",
@@ -361,24 +440,33 @@ class APIInvalidInput(exceptions.HTTPException):
         return error_log
 
     @staticmethod
-    def build_response(req, errors: list, incompatible_params: list):
+    def build_response(req, errors: list, incompatible_params: list, unallowed_params: list):
         """
         build a response object that werkzeug.HTTPException will pass to the client
         2 steps: first, build a response body in xml|tei; then, add headers
-        :return: response, a custom valid response to which we'll add a header with headers.
+        :param req: the user's request
+        :param errors: a list of errors (keys for error_logger)
+        :param incompatible_params: a list of parameters that are not compatible with each other
+        :param unallowed_params: request parameters that are not allowed in the api
+        :return: response, a custom valid response.
         """
         if req["format"] == "tei":
+            response_body = XmlTei.build_error_teibody(
+                error_log=APIInvalidInput.error_logger(errors, incompatible_params, unallowed_params),
+                error_desc=APIInvalidInput.description,
+                req=req
+            )  # build response tei:body
             response = XmlTei.build_response(
                 req=req,
-                response_body=None,  # warning: error_logger returns JSON, we need to convert it to dict
+                response_body=response_body,
                 status_code=APIInvalidInput.status_code
-            )
+            )  # build complete response object
         else:
             response = Json.build_response(
                 req=req,
-                response_body=APIInvalidInput.error_logger(errors, incompatible_params),
+                response_body=APIInvalidInput.error_logger(errors, incompatible_params, unallowed_params),
                 status_code=APIInvalidInput.status_code
-            )  # build the response body
+            )  # build the response
 
         return response
 
@@ -388,5 +476,48 @@ class APIInternalServerError(Exception):
     for routes_api.py
     when the user query is valid but an unexpected error appears server side
     """
-    statuscode = 500
+    status_code = 500
     description = "Internal server error"
+
+    def __init__(self, req: dict):
+        """
+        build a response object that werkzeug.HTTPException will pass to the client
+        2 steps: first, build a response body in xml|tei; then, add headers
+        :param req: the user's request
+        :return: response, a custom valid response.
+        """
+        self.description = APIInternalServerError.description
+        self.status_code = APIInternalServerError.status_code
+        self.response = APIInternalServerError.build_response(req)
+
+    @staticmethod
+    def build_response(req: dict):
+        """
+        for routes_api.py
+        build a response in JSON|TEI describing the error.
+        :param req: the user's request on which the errror happened
+        """
+        error_log = {
+            "__error_type__": "Internal server error",
+            "error_description": {
+                "error_message": "An internal server error happened. Open an issue on GitHib for us to look into it."
+            }
+        }  # output dictionnary
+        if req["format"] == "tei":
+            response_body = XmlTei.build_error_teibody(
+                error_log=error_log,
+                error_desc=APIInternalServerError.description,
+                req=req
+            )
+            response = XmlTei.build_response(
+                req=req,
+                response_body=response_body,
+                status_code=APIInternalServerError.status_code
+            )  # build complete response object
+        else:
+            response = Json.build_response(
+                req=req,
+                response_body=error_log,
+                status_code=APIInternalServerError.status_code
+            )
+        return response

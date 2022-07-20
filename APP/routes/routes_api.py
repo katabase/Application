@@ -1,14 +1,12 @@
-from flask import jsonify, request
+from flask import request
 from lxml import etree
+import traceback
 import json
-import time
-import glob
 import re
 
 from ..app import app
 from ..utils.constantes import DATA
-from ..utils.utils_classes import Match, APIGlobal, APIInvalidInput, XmlTei, Json
-
+from ..utils.utils_classes import Match, APIInvalidInput, APIInternalServerError, XmlTei, Json
 
 
 # -------------------------------------------------------------------------------------------------------------------
@@ -38,7 +36,7 @@ def katapi_cat_full(req_id):
     """
     return a full tei catalogue from its id
     only iterables can be sent through WSGI => xml needs to be sent in a file with mimetype application/xml,
-    not as a parsed xml.
+    not as an etree.
     :param req_id: the id of the catalogue
     :return: results, a file object
     """
@@ -55,20 +53,30 @@ def katapi_cat_stat(req):
 
     json return format:
     -------------------
-    "CAT_id": {
-        "key": "value"
+    {
+        "CAT_id": {
+            "key": "value"
+        },
+        # other results
     }
 
     xml return format:
     ------------------
-    <list>
-        <item n=""> <!-- n: number of the element -->
-            <label><!-- title of the current item --></label>
-            <term corresp="" ><!-- value ;--></term>
-            <!-- corresp points to TEI//publicationStmt//row[position=1]/cell/@xml:id :
-                 title of the search key -->
-        </item>
-    </list>
+    <div type="search-results">
+        <list>
+            <item @ana=""> <!-- ana: reference to an external source: the catalogue's id -->
+                <label><!-- title of the current item --></label>
+                <term key="" type="" ana="" n=""><!-- value ;--></term>
+                <!--
+                    @key: the key (name of the data inside the elt): "sell_date", "total_price_c"...
+                    @type: the type of data (for numerals only): "date"|"constant_price"
+                    @ana: when @key="high_price_items_c" only: the most expensive item's @xml:id
+                -->
+            </item>
+        </list>
+    </div>
+
+    :param req: the user's request
     :return:
     """
     results = {}
@@ -87,6 +95,71 @@ def katapi_cat_stat(req):
         for k, v in data.items():
             if Match.match_cat(req_name, req_sell_date, v) is True:
                 results[k] = v
+
+    # if req["format"] == "tei", translate results to tei
+    if req["format"] == "tei":
+        tei_div = etree.Element("div", nsmap=XmlTei.ns)
+        tei_div.set("type", "search-results")
+
+        # if there are results, translate them to tei
+        if len(results.keys()) > 1:
+            tei_list = etree.Element("list", nsmap=XmlTei.ns)
+            tei_head = etree.Element("head", nsmap=XmlTei.ns)
+            tei_head.text = "Search results"
+            tei_list.append(tei_head)
+
+            for key, value in results.items():
+                # build the base of the item
+                tei_item = etree.Element("item", nsmap=XmlTei.ns)
+                tei_item.set("ana", key)
+                tei_label = etree.Element("label", nsmap=XmlTei.ns)
+                tei_label.text = key
+                tei_item.append(tei_label)
+                if "currency" in value.items() and value["currency"] == "FRF":
+                    tei_desc = etree.Element("desc", nsmap=XmlTei.ns)
+                    tei_desc.text = "Prices are expressed in constant 1900 francs"
+                    tei_item.append(tei_desc)
+
+                # build its contents: the tei:terms, containing the data on an item
+                for k, v in value.items():
+
+                    # special behaviour for that one: it contains a dict mapping item's xml:ids to their price
+                    # - as many tei:terms are created as there are items in the dict
+                    # - the item's @xml:id is containted in the @ana of the tei_term
+                    # - the item's price is the content of the tei_item
+                    if k == "high_price_items_c":
+                        n = 0
+                        for item, price in v.items():
+                            tei_term = etree.Element("term", nsmap=XmlTei.ns)
+                            tei_term.set("key", k)  # the key (type of info) is given in the @key attrib of the term
+                            n += 1
+                            tei_term.set("type", "constant-price")
+                            tei_term.set("ana", item)
+                            tei_term.text = str(price)
+                            tei_item.append(tei_term)
+
+                    # for other elements, there is only one tei:term per k-v couple, so it's easier
+                    else:
+                        tei_term = etree.Element("term", nsmap=XmlTei.ns)
+                        tei_term.set("key", k)  # the key (type of info) is given in the @key attrib of the term
+
+                        # add additional attributes and elements:
+                        # - @type (for dates and prices),
+                        # - @corresp (for keys that have been queried by the client),
+                        # - @n (for number: high_price_items_c can contain several elements)
+                        # - @ana (for high_price_items_c: to contain the most expensive item's @xml:id)
+                        if k in req.keys():
+                            tei_term.set("corresp", k)  # point to the user's query in tei:publicationStmt//tei:table
+                        if "price" in k:
+                            tei_term.set("type", "constant-price")
+                        elif "date" in k:
+                            tei_term.set("type", "date")
+                        tei_term.text = str(v)
+                        tei_item.append(tei_term)
+                tei_list.append(tei_item)  # append the complete item to the list
+            tei_div.append(tei_list)  # append the list
+        results = XmlTei.pretty_print(tei_div)
+
     return results
 
 
@@ -102,22 +175,26 @@ def katapi_itm(req):
 
     xml return format:
     ------------------
-    <item n="80" xml:id="CAT_000146_e80">
-       <num>80</num>
-       <name type="author">Cherubini (L.),</name>
-       <trait>
-          <p>l'illustre compositeur</p>
-       </trait>
-       <desc>
-          <term>L. a. s.</term>;<date>1836</date>,
-          <measure type="length" unit="p" n="1">1 p.</measure>
-          <measure unit="f" type="format" n="8">in-8</measure>.
-          <measure commodity="currency" unit="FRF" quantity="12">12</measure>
-        </desc>
-    </item>
+    <div type="search-results">
+        <list>
+            <item n="80" xml:id="CAT_000146_e80">
+               <num>80</num>
+               <name type="author">Cherubini (L.),</name>
+               <trait>
+                  <p>l'illustre compositeur</p>
+               </trait>
+               <desc>
+                  <term>L. a. s.</term>;<date>1836</date>,
+                  <measure type="length" unit="p" n="1">1 p.</measure>
+                  <measure unit="f" type="format" n="8">in-8</measure>.
+                  <measure commodity="currency" unit="FRF" quantity="12">12</measure>
+                </desc>
+            </item>
+        </list>
+    </div>
 
     :param req: the user request from which we try to match entries
-    :return:
+    :return: results, either a json or etree containing matching results
     """
     if req["format"] == "json":
         with open(f"{DATA}/json/export_item.json", mode="r") as fh:
@@ -147,27 +224,34 @@ def katapi_itm(req):
 
         # if querying a name
         else:
-            results = etree.Element("div", nsmap=XmlTei.ns)
-            results.set("type", "search-results")
             with open(f"{DATA}/json/export_item.json", mode="r") as fh:
                 data = json.load(fh)
             relevant = []  # list of relevant @xml:id
 
-            # determine on which params to query in the json
-            mode = Match.set_match_mode(req)
-
             # build a list of relevant items based on the json.
-            # retrieve the tei representation of all those items
+            mode = Match.set_match_mode(req)  # determine on which params to query in the json
             for k, v in data.items():
                 if v["author"] is not None:
                     if Match.match_item(req, v, mode) is True:
                         # add the item's id to the list of relevant ids
                         relevant.append(re.search(r"^CAT_\d+_e\d+", k)[0])
             relevant = set(relevant)  # deduplicate
+
+            # retrieve the tei representation of all those items
+            results = etree.Element("div", nsmap=XmlTei.ns)  # div to store the results. empty if no results
+            results.set("type", "search-results")
             if len(relevant) > 0:
-                results.append(etree.Element("list", nsmap=XmlTei.ns))
+                tei_list = etree.Element("list", nsmap=XmlTei.ns)
+                tei_head = etree.Element("head", nsmap=XmlTei.ns)
+                tei_head.text = "Search results"
+                tei_list.append(tei_head)
                 for r in relevant:
-                    results.append(XmlTei.get_item_from_id(r))  # add the relevant items to our tei
+                    try:
+                        tei_list.append(XmlTei.get_item_from_id(r))  # add the relevant items to our tei
+                    except TypeError:
+                        pass
+                results.append(tei_list)
+        results = XmlTei.pretty_print(results)
     return results
 
 
@@ -204,7 +288,6 @@ def katapi():
     parameters specific to level=itm
     - orig_date: the original date of the manuscript
                  values: \d{4} (aka a year in YYYY format)
-    - reconciliation: whether or not to return reconciliated items (aka, other values for the item)
 
     tl;dr - possible argument combinations:
     ---------------------------------------
@@ -217,13 +300,12 @@ def katapi():
           |______name: any string corresponding to a last name. compulsory if no id is provided
           |______sell_date: a date matching \d{4}(-\d{4})?. optional
           |______orig_date: a date matching \d{4}(-\d{4})?. optional
-          |______reconciliation: to be determined
 
     - level:cat_stat
           |______format: a value corresponding to tei|json. defaults to json
           |______id: an identifier matching CAT_\d+.
           |          if id is provided, the only other allowed params are level and format
-          |______name: a string matching (). compulsory if no id is provided
+          |______name: a string matching ^(LAC|RDA|LAV|AUC|OTH)$. compulsory if no id is provided
           |______sell_date: a date matching \d{4}(-\d{4})?. optional
 
     - level:cat_full
@@ -234,14 +316,19 @@ def katapi():
     """
     # =================== VARABLES =================== #
     errors = []  # keys to errors that happened
+    allowed_params = ["level", "orig_date", "sell_date", "name", "format"]  # list of all allowed parameters
     incompatible_params = []  # list of incompatible parameters (for certain error messages)
     status_code = 200  # HTTP status code: 200 by default. custom codes will
     #                    be added if there are errors
 
     # =================== PROCESS THE USER INPUT =================== #
     req = dict(request.args)  # get arguments request
+    unallowed_params = [p for p in req.keys() if p not in allowed_params]  # list of forbidden params
+    #                                                                        (aka, parameters that are never allowed)
 
     # check the input (compulsory values provided + validity)
+    if len(unallowed_params) > 0:
+        errors.append("unallowed_params")
     if "format" in req.keys() and not re.search(r"^(tei|json)$", req["format"]):
         errors.append("format")
     if "level" in req.keys() and not re.search(r"^(cat_full|cat_stat|itm)$", req["level"]):
@@ -249,14 +336,12 @@ def katapi():
     if "name" in req.keys() and "id" in req.keys():
         errors.append("name+id")
     if "id" in req.keys() and (
-            "orig_date" in req.keys() or "sell_date" in req.keys() or "reconciliation" in req.keys()):
+            "orig_date" in req.keys() or "sell_date" in req.keys()):
         errors.append("id_incompatible_params")
         if "sell_date" in req.keys():
             incompatible_params.append("sell_date")
         if "orig_date" in req.keys():
             incompatible_params.append("orig_date")
-        if "reconciliation" in req.keys():
-            incompatible_params.append("reconciliation")
     if "name" not in req.keys() and "id" not in req.keys():
         errors.append("no_name+id")
     if "id" in req.keys() and not re.match(r"^CAT_\d+(_e\d+_d\d+)?$", req["id"]):
@@ -272,17 +357,14 @@ def katapi():
         if "name" in req.keys() and not re.search(r"^(LAC|RDA|LAV|AUC|OTH)$", req["name"]):
             errors.append("cat_stat+name")
         # check for general invalid data
-        if "orig_date" in req.keys() or "reconciliation" in req.keys():
+        if "orig_date" in req.keys():
             errors.append("cat_stat_incompatible_params")
             if "orig_date" in req.keys():
                 incompatible_params.append("orig_date")
-            if "reconciliation" in req.keys():
-                incompatible_params.append("reconciliation")
     if "level" in req.keys() and req["level"] == "cat_full" and (
             "name" in req.keys()
             or "sell_date" in req.keys()
-            or "orig_date" in req.keys()
-            or "reconciliation" in req.keys()):
+            or "orig_date" in req.keys()):
         errors.append("cat_full_incompatible_params")
         if "name" in req.keys():
             incompatible_params.append("name")
@@ -290,8 +372,6 @@ def katapi():
             incompatible_params.append("sell_date")
         if "orig_date" in req.keys():
             incompatible_params.append("orig_date")
-        if "reconciliation" in req.keys():
-            incompatible_params.append("reconciliation")
         if "format" in req.keys() and req["format"] != "tei":
             errors.append("cat_full_format")
 
@@ -303,45 +383,45 @@ def katapi():
     if len(errors) > 0:
         if "format" in req.keys() and not re.search("^(tei|json)$", req["format"]):
             req["format"] = "json"  # set default format
-        raise APIInvalidInput(req, errors, incompatible_params)
+        raise APIInvalidInput(req, errors, incompatible_params, unallowed_params)
 
     # if there's no error, proceed and try and retrieve results
     else:
-        # define default behaviour
-        if "level" in req.keys() and req["level"] == "cat_full" and "format" not in req.keys():
-            req["format"] = "tei"
-        if "level" not in req.keys():
-            req["level"] = "itm"
-        if "format" not in req.keys():
-            req["format"] = "json"
+        # if there's an error here, throwback an unexpected server error (http 500)
+        try:
+            # define default behaviour
+            if "level" in req.keys() and req["level"] == "cat_full" and "format" not in req.keys():
+                req["format"] = "tei"
+            if "level" not in req.keys():
+                req["level"] = "itm"
+            if "format" not in req.keys():
+                req["format"] = "json"
 
-        # if we're working at item level
-        if req["level"] == "itm":
-            response_body = katapi_itm(req)
+            # if we're working at item level
+            if req["level"] == "itm":
+                response_body = katapi_itm(req)
 
-        # if we're retrieving catalogue statistics
-        elif req["level"] == "cat_stat":
-            response_body = katapi_cat_stat(req)
+            # if we're retrieving catalogue statistics
+            elif req["level"] == "cat_stat":
+                response_body = katapi_cat_stat(req)
 
-        # if we're retrieving a full catalogue in xml-tei (req_level=="cat_full")
-        else:
-            response_body = katapi_cat_full(req["id"])
-            if response_body is None:
-                print("empty xml")
+            # if we're retrieving a full catalogue in xml-tei (req_level=="cat_full")
+            else:
+                response_body = katapi_cat_full(req["id"])
+                if response_body is None:
+                    print("empty xml")
 
-        # build the complete response (build_response functions build a body
-        # from a template + call APIGlobal.set_headers to append headers to the body)
-        # create the response body
-        if req["format"] == "tei":
-            response = XmlTei.build_response(req, response_body, status_code)
+            # build the complete response (build_response functions build a body
+            # from a template + call APIGlobal.set_headers to append headers to the body)
+            if req["format"] == "tei":
+                response = XmlTei.build_response(req, response_body, status_code)
+            else:
+                response = Json.build_response(req, response_body, status_code)
 
-            # to check the output quality: save tei output to file
-            with open("./test_xml_response.xml", mode="w+") as fh:
-                tree = etree.fromstring(response.get_data())
-                fh.write(str(etree.tostring(
-                    tree, pretty_print=True, xml_declaration=True, encoding="utf-8"
-                ).decode("utf-8")))
-        else:
-            response = Json.build_response(req, response_body, status_code)
+        # raise an error that will build a valid json/tei response and return it to the user
+        except Exception:
+            error = traceback.format_exc()  # full error message
+            print(error)
+            raise APIInternalServerError(req)
 
     return response
