@@ -5,9 +5,10 @@ import json
 import sys
 
 
-# ---------------------
-# test the katapi
-# --------------------
+# --------------------------------------------------------------------------------
+# launch a quick query on the katapi with a dict containing query parameters
+# to use: `python test_api/launch_api.py -p '{"dict": "with", "query": "params"}'`
+# --------------------------------------------------------------------------------
 
 
 @click.command()
@@ -24,15 +25,20 @@ def query(params=None):
   params = json.loads(params)
   r = requests.get(url, params=params)
 
+  print(r.headers)
+  print(r.status_code)
+
+  # parsing the results allows us to check for errors
+  # for practical reasons, print the client-side mistakes
   if r.headers["Content-Type"] == "application/xml; charset=utf-8":
-    print(r.headers)
-    print(type(r.content))
-    print(r.status_code)
     tree = etree.fromstring(r.content)
     out = etree.tostring(tree)
+    if r.status_code == 422:
+      print(out)
   else:
     out = r.json()
-    print(out)
+    if r.status_code == 422:
+      print(out)
   return None
 
 

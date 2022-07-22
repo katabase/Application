@@ -1,11 +1,15 @@
 from flask import make_response, jsonify, Response
 from werkzeug import exceptions
+from io import StringIO
 from lxml import etree
-import datetime
+import traceback
+import logging
 import re
+import os
 
-from ..utils.constantes import DATA, TEMPLATES
+from ..utils.constantes import DATA, TEMPLATES, UTILS
 from ..app import app
+
 
 # -------------------------------------------
 # classes containing useful stuff for the app
@@ -158,21 +162,27 @@ class Json:
     a bunch of tools to build a Json file for routes_api.py
     """
     @staticmethod
-    def build_response(req: dict, response_body: dict, status_code: int):
+    def build_response(req: dict, response_body: dict, status_code: int, timestamp: str):
         """
         build a response (json body + header) to store the API output to return to the user
         :param req: the user's request
+        :param response_body: the body to which we'll add headers
+        :param status_code: http status code
+        :param timestamp: timestamp for when katapi was called
         :return: complete response object.
         """
         template = {
             "head": {
                 "status_code": status_code,  # status code to be changed upon response completion
+                "query_date": timestamp,  # the moment katapi is called (a query is run by a client)
                 "query": req  # user query: params and value
             },
             "results": response_body  # results returned by the server (or error message)
         }  # response body
 
-        response = APIGlobal.set_headers(template, req["format"], status_code)
+        response = APIGlobal.set_headers(response_body=template,
+                                         response_format=req["format"],
+                                         status_code=status_code)
 
         return response
 
@@ -219,22 +229,13 @@ class XmlTei:
         return tree
 
     @staticmethod
-    def build_response(req: dict, response_body, status_code=200):
+    def build_tei_query_table(req: dict, flag_cat_full=None):
         """
-        for routes_api.py
-        build a tei document from a template:
-        - a tei:teiHeader containing the request params
-        - a tei:text/tei:body to store the results
-        :param req: the user's request
-        :param response_body: the response body, an lxml tree or string representation of tree
-        :param status_code: the http status code
-        :return:
+        build the table of queried data to append to the teiHeader
+        :param req: the request
+        :param flag_cat_full: flag to change an @xml:id to keep the document valid
+        :return: tei_query_table
         """
-        parser = etree.XMLParser(remove_blank_text=True)
-        with open(f"{TEMPLATES}/partials/katapi_tei_template.xml", mode="r") as fh:
-            tree = etree.parse(fh, parser)
-
-        # build the table of queried data
         tei_query_table = etree.Element("table", nsmap=XmlTei.ns)
         tei_head = etree.Element("head", nsmap=XmlTei.ns)
         tei_head.text = "Query parameters"
@@ -245,7 +246,10 @@ class XmlTei:
             cell_k = etree.Element("cell", nsmap=XmlTei.ns)
             cell_k.text = k
             cell_k.set("role", "key")
-            cell_k.attrib["{http://www.w3.org/XML/1998/namespace}id"] = k
+            if k == "format" and flag_cat_full is True:
+                cell_k.attrib["{http://www.w3.org/XML/1998/namespace}id"] = f"output_{k}"
+            else:
+                cell_k.attrib["{http://www.w3.org/XML/1998/namespace}id"] = k
             row1.append(cell_k)
 
             # then, the values mapped to the params
@@ -260,27 +264,98 @@ class XmlTei:
         tei_query_table.append(row1)
         tei_query_table.append(row2)
 
-        tree.xpath(".//tei:publicationStmt/tei:ab", namespaces=XmlTei.ns)[0].append(tei_query_table)
+        return tei_query_table
 
-        # set the status code
-        tei_status = tree.xpath(".//tei:publicationStmt//tei:ref", namespaces=XmlTei.ns)[0]
-        tei_status.set("target", f"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{status_code}")
-        tei_status.text = str(status_code)
+    @staticmethod
+    def build_response(req: dict, response_body, timestamp: str, status_code=200, found=None):
+        """
+        for routes_api.py
+        build a tei document from a template:
+        - a tei:teiHeader containing the request params
+        - a tei:text/tei:body to store the results
+        :param req: the user's request
+        :param response_body: the response body, an lxml tree or string representation of tree
+        :param status_code: the http status code
+        :param timestamp: a timestamp in iso compliant format of when the katapi function was called
+        :param found: a flag for req["level"] == "cat_full" indicating wether
+                      a catalogue has been found for the id or not
+        :return:
+        """
 
-        # set the date
-        now = datetime.datetime.now().isoformat()
-        tei_date = tree.xpath(".//tei:publicationStmt//tei:date", namespaces=XmlTei.ns)[0]
-        tei_date.set("when-iso", now)
-        tei_date.text = now
+        # if level isn't cat full, we build a full xml document, teiheader and all
+        if ("level" in req.keys() and req["level"] != "cat_full")\
+                or ("level" in req.keys() and req["level"] == "cat_full" and found is False):
+            parser = etree.XMLParser(remove_blank_text=True)
+            with open(f"{TEMPLATES}/partials/katapi_tei_template.xml", mode="r") as fh:
+                tree = etree.parse(fh, parser)
 
-        # set the response body
-        tei_body = tree.xpath(".//tei:body", namespaces=XmlTei.ns)[0]
-        tei_body.append(response_body)
+            tei_query_table = XmlTei.build_tei_query_table(req)
 
-        tree = XmlTei.pretty_print(tree)
+            tree.xpath(".//tei:publicationStmt/tei:ab", namespaces=XmlTei.ns)[0].append(tei_query_table)
+
+            # set the status code
+            tei_status = tree.xpath(".//tei:publicationStmt//tei:ref", namespaces=XmlTei.ns)[0]
+            tei_status.set("target", f"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{status_code}")
+            tei_status.text = str(status_code)
+
+            # set the date
+            tei_date = tree.xpath(".//tei:publicationStmt//tei:date", namespaces=XmlTei.ns)[0]
+            tei_date.set("when-iso", timestamp)
+            tei_date.text = str(timestamp)
+
+            # set the response body
+            tei_body = tree.xpath(".//tei:body", namespaces=XmlTei.ns)[0]
+            tei_body.append(response_body)
+
+            tree = XmlTei.pretty_print(tree)
+
+        # if a full tei catalogue has been found
+        # append a paragraph to tei:publicationStmt//tei:availability
+        # describing the whole context of the request: query, date, status code, producer
+        elif req["level"] == "cat_full" and found is True:
+            tree = etree.parse(response_body)
+            tei_availability = tree.xpath(".//tei:publicationStmt//tei:availability", namespaces=XmlTei.ns)[0]
+
+            # 1st paragrah = general context of the query
+            tei_p = etree.Element("p", nsmap=XmlTei.ns)
+            tei_p.text = "KatAPI query results. File created automatically by KatAPI, an API developped as part of the"
+            tei_ref = etree.Element("ref", nsmap=XmlTei.ns)
+            tei_ref.set("target", "https://katabase.huma-num.fr/")
+            tei_ref.text = "Manuscript SaleS Catalogues project"
+            tei_p.append(tei_ref)
+            # tei_p = XmlTei.pretty_print(tei_p)
+            tei_availability.append(tei_p)
+
+            # 2nd paragram = date
+            tei_p = etree.Element("p", nsmap=XmlTei.ns)
+            tei_p.text = "Query run on"
+            tei_date = etree.Element("date", nsmap=XmlTei.ns)
+            tei_date.set("when-iso", timestamp)
+            tei_date.text = str(timestamp)
+            tei_p.append(tei_date)
+            # tei_p = XmlTei.pretty_print(tei_p)
+            tei_availability.append(tei_p)
+
+            # 3rd paragrah: status code
+            tei_p = etree.Element("p", nsmap=XmlTei.ns)
+            tei_p.text = "Query ran with HTTP status code:"
+            tei_ref = etree.Element("ref", nsmap=XmlTei.ns)
+            tei_ref.set("target", f"https://github.com/katabase/Application/tree/main/APP/data{status_code}")
+            tei_p.append(tei_ref)
+            # tei_p = XmlTei.pretty_print(tei_p)
+            tei_availability.append(tei_p)
+
+            # 4rth paragraph: table
+            tei_p = etree.Element("p", nsmap=XmlTei.ns)
+            tei_p.text = "The current file has been retrieved and updated as a response to the query:"
+            tei_query_table = XmlTei.build_tei_query_table(req, flag_cat_full=True)
+            tei_p.append(tei_query_table)
+            tei_p = XmlTei.pretty_print(tei_p)
+            tei_availability.append(tei_p)
+            tei_availability = XmlTei.pretty_print(tei_availability)
 
         # to check the output quality: save tei output to file
-        with open("./test_xml_response.xml", mode="w+") as fh:
+        with open("./test_api/api_xml_response.xml", mode="w+") as fh:
             fh.write(str(etree.tostring(
                 tree, xml_declaration=True, encoding="utf-8"
             ).decode("utf-8")))
@@ -378,17 +453,26 @@ class APIInvalidInput(exceptions.HTTPException):
     process:
     --------
     - this error is raised because of invalid user input.
-    - __init__() instantiates an APIInvalidInput object by defining a description
-      and creating a response object. the response object is created as follows:
+    - __init__() instantiates an APIInvalidInput object by defining a description +
+      builds a response object to return to the user. the response object is created
+      as follows:
+      - if req["format"] == "tei", a tei error body is built
       - (Json|XmlTei).build_template() builds a template for the response object
-      - error_logger() logs the errors in a dict
-      - (Json|XmlTei).error_response() build a valid json|tei response object
+      - (Json|XmlTei).build_response() build a valid json|tei response object. this function
+        calls another function APIGlobal.set_headers() that adds headers with the proper
+        status code to the response object.
     - werkzeug kindly returns our custom error message, body and headers, to the client.
+
     """
     status_code = 422
     description = "Invalid parameters or parameters combination"
 
-    def __init__(self, req: dict, errors: list, incompatible_params: list, unallowed_params: list):
+    def __init__(self,
+                 req: dict,
+                 errors: list,
+                 incompatible_params: list,
+                 unallowed_params: list,
+                 timestamp: str):
         """
         a valid http response object to be handled by werkzeug
         :param req: the request on which the error happened (to pass to build_response)
@@ -400,7 +484,7 @@ class APIInvalidInput(exceptions.HTTPException):
         """
         self.description = APIInvalidInput.description
         self.status_code = APIInvalidInput.status_code
-        self.response = APIInvalidInput.build_response(req, errors, incompatible_params, unallowed_params)
+        self.response = APIInvalidInput.build_response(req, errors, incompatible_params, unallowed_params, timestamp)
 
     @staticmethod
     def error_logger(errors: list, incompatible_params: list, unallowed_params: list):
@@ -440,7 +524,10 @@ class APIInvalidInput(exceptions.HTTPException):
         return error_log
 
     @staticmethod
-    def build_response(req, errors: list, incompatible_params: list, unallowed_params: list):
+    def build_response(req, errors: list,
+                       incompatible_params: list,
+                       unallowed_params: list,
+                       timestamp: str):
         """
         build a response object that werkzeug.HTTPException will pass to the client
         2 steps: first, build a response body in xml|tei; then, add headers
@@ -448,6 +535,7 @@ class APIInvalidInput(exceptions.HTTPException):
         :param errors: a list of errors (keys for error_logger)
         :param incompatible_params: a list of parameters that are not compatible with each other
         :param unallowed_params: request parameters that are not allowed in the api
+        :param timestamp: a timestamp of when the function katapi was called
         :return: response, a custom valid response.
         """
         if req["format"] == "tei":
@@ -459,43 +547,61 @@ class APIInvalidInput(exceptions.HTTPException):
             response = XmlTei.build_response(
                 req=req,
                 response_body=response_body,
-                status_code=APIInvalidInput.status_code
+                status_code=APIInvalidInput.status_code,
+                timestamp=timestamp
             )  # build complete response object
         else:
             response = Json.build_response(
                 req=req,
                 response_body=APIInvalidInput.error_logger(errors, incompatible_params, unallowed_params),
-                status_code=APIInvalidInput.status_code
+                status_code=APIInvalidInput.status_code,
+                timestamp=timestamp
             )  # build the response
 
         return response
 
 
-class APIInternalServerError(Exception):
+class APIInternalServerError(exceptions.HTTPException):
     """
     for routes_api.py
-    when the user query is valid but an unexpected error appears server side
+    when the user query is valid but an unexpected error appears server side.
+    process:
+    --------
+    - this error is raised because of an unexpected error on our side when using the API.
+    - when this error is called, a the error is dumped in a log file so that we can
+      access the call stack + detail on this error (see ErrorLog class below)
+    - __init__() instantiates an APIInternalServerError object. the creation of this object
+      builds a response object to return to the user. the response object is created as follows:
+      - if req["format"] == "tei", a tei error body is built
+      - (Json|XmlTei).build_template() builds a template for the response object
+      - (Json|XmlTei).build_response() build a valid json|tei response object. this function
+        calls another function APIGlobal.set_headers() that adds headers with the proper
+        status code to the response object.
+    - werkzeug kindly returns our custom error message, body and headers, to the client.
+
     """
     status_code = 500
     description = "Internal server error"
 
-    def __init__(self, req: dict):
+    def __init__(self, req: dict, timestamp: str):
         """
         build a response object that werkzeug.HTTPException will pass to the client
         2 steps: first, build a response body in xml|tei; then, add headers
         :param req: the user's request
+        :param error_msg: the error message to dump in an error file
         :return: response, a custom valid response.
         """
         self.description = APIInternalServerError.description
         self.status_code = APIInternalServerError.status_code
-        self.response = APIInternalServerError.build_response(req)
+        self.response = APIInternalServerError.build_response(req=req, timestamp=timestamp)
 
     @staticmethod
-    def build_response(req: dict):
+    def build_response(req: dict, timestamp: str):
         """
         for routes_api.py
         build a response in JSON|TEI describing the error.
         :param req: the user's request on which the errror happened
+        :param timestamp: the timestamp of when katapi was called
         """
         error_log = {
             "__error_type__": "Internal server error",
@@ -512,12 +618,68 @@ class APIInternalServerError(Exception):
             response = XmlTei.build_response(
                 req=req,
                 response_body=response_body,
-                status_code=APIInternalServerError.status_code
+                status_code=APIInternalServerError.status_code,
+                timestamp=timestamp
             )  # build complete response object
         else:
             response = Json.build_response(
                 req=req,
                 response_body=error_log,
-                status_code=APIInternalServerError.status_code
+                status_code=APIInternalServerError.status_code,
+                timestamp=timestamp
             )
         return response
+
+
+class ErrorLog:
+    """
+    currently only for routes_api.py. could be extended to other funcs
+    log errors in custom formats to file
+    """
+    logfile = f"{UTILS}/error_logs/katapi_error.log"
+
+    @staticmethod
+    def create_logger():
+        """
+        create logging instance
+        configure the logger object (only used for katapi at this point)
+        string formatting desc:
+        - asctime: log creation time ;
+        - levelname: error level (error, debug...) ;
+        - module: python module on which error happened ;
+        - message: actual error message
+        :return:
+        """
+        logfile = ErrorLog.logfile
+        if not os.path.exists(logfile):
+            with open(logfile, mode="w") as fh:
+                fh.write("")  # create file if it doesn't exist
+        root = logging.getLogger()  # create a root logger
+        root.setLevel(logging.WARNING)  # set level to which an info will be logged. debug < warning < error
+        root_filehandler = logging.FileHandler(f"{UTILS}/error_logs/error.log")  # set handler to write log to file
+        root_filehandler.setFormatter(
+            logging.Formatter(r"%(asctime)s - %(levelname)s - %(module)s - %(message)s")
+        )  # set the file formatting
+        root_filehandler.setLevel(logging.WARNING)
+        root.addHandler(root_filehandler)
+
+    @staticmethod
+    def dump_error(stack: str):
+        """
+        dump an error message to the log file:
+        get the error stack, build it by adding a timestamp
+        and combining it with the exception printing (print_exc).
+        before the print_exc part, there may be stack frams from
+        the current error logging into the log file.
+        :param stack: the error stack (list of functions that led to the error)
+        :return: None
+        """
+        # build a logger and log to file
+        # __main__ == root logger defined in create_logger; __main__ = current module (routes_api.py)
+        # => this logger will inherit from the behaviour defined in root logger. could be used elsewhere
+        # see: https://stackoverflow.com/questions/50714316/how-to-use-logging-getlogger-name-in-multiple-modules
+        logger = logging.getLogger("__main__." + __name__)
+        logger.setLevel(logging.ERROR)
+        logger.error(stack)  # write full error message to log
+
+        return None

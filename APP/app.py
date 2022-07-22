@@ -1,10 +1,11 @@
 from flask import Flask
 from os.path import join
 from glob import glob
+import logging
 import atexit
 import os
 
-from .utils.constantes import TEMPLATES, STATIC
+from .utils.constantes import TEMPLATES, STATIC, UTILS
 
 
 # configure the app
@@ -31,5 +32,5 @@ atexit.register(cleaner)
 
 
 # import the routes
-from .routes.routes_generic import *
 from .routes.routes_api import *
+from .routes.routes_generic import *

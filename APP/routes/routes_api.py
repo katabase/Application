@@ -1,12 +1,16 @@
+import logging
+
 from flask import request
+from io import StringIO
 from lxml import etree
 import traceback
+import datetime
 import json
 import re
 
 from ..app import app
 from ..utils.constantes import DATA
-from ..utils.utils_classes import Match, APIInvalidInput, APIInternalServerError, XmlTei, Json
+from ..utils.utils_classes import Match, APIInvalidInput, APIInternalServerError, XmlTei, Json, ErrorLog
 
 
 # -------------------------------------------------------------------------------------------------------------------
@@ -40,11 +44,15 @@ def katapi_cat_full(req_id):
     :param req_id: the id of the catalogue
     :return: results, a file object
     """
+    found = True  # boolean indicating wether a file has been found, which will define the
+    #               way the response object is built
     try:
         results = open(f"{DATA}/{req_id}_tagged.xml", mode="r", encoding="utf-8")
     except FileNotFoundError:
-        results = None
-    return results
+        results = etree.Element("div", nsmap=XmlTei.ns)
+        results.set("type", "search-results")
+        found = False
+    return results, found
 
 
 def katapi_cat_stat(req):
@@ -315,14 +323,15 @@ def katapi():
     :return:
     """
     # =================== VARABLES =================== #
+    timestamp = datetime.datetime.utcnow().isoformat()  # timestamp for when a request is sent
     errors = []  # keys to errors that happened
-    allowed_params = ["level", "orig_date", "sell_date", "name", "format"]  # list of all allowed parameters
+    allowed_params = ["level", "orig_date", "sell_date", "name", "format", "id"]  # list of all allowed parameters
     incompatible_params = []  # list of incompatible parameters (for certain error messages)
     status_code = 200  # HTTP status code: 200 by default. custom codes will
     #                    be added if there are errors
 
     # =================== PROCESS THE USER INPUT =================== #
-    req = dict(request.args)  # get arguments request
+    req = dict(request.args)  # get arguments requested by client
     unallowed_params = [p for p in req.keys() if p not in allowed_params]  # list of forbidden params
     #                                                                        (aka, parameters that are never allowed)
 
@@ -383,7 +392,7 @@ def katapi():
     if len(errors) > 0:
         if "format" in req.keys() and not re.search("^(tei|json)$", req["format"]):
             req["format"] = "json"  # set default format
-        raise APIInvalidInput(req, errors, incompatible_params, unallowed_params)
+        raise APIInvalidInput(req, errors, incompatible_params, unallowed_params, timestamp)
 
     # if there's no error, proceed and try and retrieve results
     else:
@@ -407,21 +416,28 @@ def katapi():
 
             # if we're retrieving a full catalogue in xml-tei (req_level=="cat_full")
             else:
-                response_body = katapi_cat_full(req["id"])
-                if response_body is None:
-                    print("empty xml")
+                response_body, found = katapi_cat_full(req["id"])
 
             # build the complete response (build_response functions build a body
             # from a template + call APIGlobal.set_headers to append headers to the body)
-            if req["format"] == "tei":
-                response = XmlTei.build_response(req, response_body, status_code)
-            else:
-                response = Json.build_response(req, response_body, status_code)
+            if "level" in req and req["level"] == "cat_full":  # full catalogue in tei
+                response = XmlTei.build_response(req, response_body, timestamp, status_code, found)
+            elif req["format"] == "tei":  # other tei formats
+                response = XmlTei.build_response(req, response_body, timestamp, status_code)
+            else:  # json formats
+                response = Json.build_response(req, response_body, status_code, timestamp)
 
         # raise an error that will build a valid json/tei response and return it to the user
-        except Exception:
-            error = traceback.format_exc()  # full error message
-            print(error)
-            raise APIInternalServerError(req)
+        except:
+            # prepare the error stack
+            dummy1 = StringIO()  # dummy file object to write the stack to
+            dummy2 = StringIO()  # dummy file object to write the exception to
+            traceback.print_stack(file=dummy1)
+            traceback.print_exc(file=dummy2)
+            stack = dummy1.getvalue() + dummy2.getvalue()  # extract the string from stack
+            stack = f"Error on {timestamp} \n" + stack
+
+            ErrorLog.dump_error(stack)
+            raise APIInternalServerError(req, timestamp)
 
     return response
