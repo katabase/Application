@@ -3,6 +3,7 @@
 
 __pycache__
 
+save.xml
 test_api/*xml
 
 # Virtual env

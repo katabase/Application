@@ -6,7 +6,7 @@ from APP.utils.api_classes import ErrorLog
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-v", "--test",
+    parser.add_argument("-t", "--test",
                         help="run a series of tests on the API.",
                         action="store_true")
     args = parser.parse_args()
@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # run tests
     if args.test:
         # extra imports to run the tests
-        from APP.api_test.api_test import run
+        from APP.test.api_test import run
         run()  # run tests
 
     # normal functionning

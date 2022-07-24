@@ -173,16 +173,23 @@ def katapi_itm(req):
     """
     return all matching items (catalogue entries) from export_item.json
 
+
     json return format:
     -------------------
+    - if there are no results: {}
+    - if there are results:
     "CAT_item_id": {
         "key": "value",
     }
 
     xml return format:
     ------------------
+    - if there are no results:
+    <div type="search-results"/>
+    - if there are results:
     <div type="search-results">
         <list>
+            <head>A descriptive list title</head>
             <item n="80" xml:id="CAT_000146_e80">
                <num>80</num>
                <name type="author">Cherubini (L.),</name>
@@ -223,10 +230,21 @@ def katapi_itm(req):
                         results[k] = v
     else:
 
-        # if querying an id, read the entry in the relevant xml file,
-        # delete irrelevant tei:descs and save it
+        # if querying an id, read the entry in the relevant xml file
+        # the relevant tei:item will be returned in a tei:div/tei:list
+        # containing a tei:head + tei:item (the entry itself)
         if "id" in req.keys():
-            results = XmlTei.get_item_from_id(req["id"])
+            results = etree.Element("div", nsmap=XmlTei.ns)
+            results.set("type", "search-results")
+            tei_item = XmlTei.get_item_from_id(re.search(r"CAT_\d+_e\d+", req["id"])[0])
+            if tei_item is not None:
+                # add the tei_item inside a tei:list with a tei:head => add the tei:list to results
+                tei_list = etree.Element("list", nsmap=XmlTei.ns)
+                tei_head = etree.Element("head", nsmap=XmlTei.ns)
+                tei_head.text = "Search results"
+                tei_list.append(tei_head)
+                tei_list.append(tei_item)
+                results.append(tei_list)
 
         # if querying a name
         else:

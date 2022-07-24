@@ -193,20 +193,21 @@ class XmlTei:
     ns = {"tei": "http://www.tei-c.org/ns/1.0"}  # tei namespace
     xmlid = {"id": "http://www.w3.org/XML/1998/namespace"}  # @xml:id namespace
     tei_rng = "https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"  # odd in .rng to validate tei files
+    parser = etree.XMLParser(remove_blank_text=True)
 
     @staticmethod
     def get_item_from_id(item_id):
         """
         find a tei:item depending on the @xml:id provided in an xml file
         :param item_id: the item's desc's id, from export_item.json
-        :return: item, a tei:item with the relevant tei:desc
+        :return: tei_item, a tei:item with the relevant tei:desc
         """
-        item = None
+        tei_item = None
         cat = re.search(r"^CAT_\d+", item_id)[0]
         try:
             with open(f"{DATA}/{cat}_tagged.xml", mode="r") as fh:
                 tree = etree.parse(fh)
-                item = tree.xpath(
+                tei_item = tree.xpath(
                     f"./tei:text//tei:item[@xml:id='{item_id}']",
                     namespaces=XmlTei.ns
                 )[0]
@@ -215,7 +216,112 @@ class XmlTei:
         except IndexError:  # if no tei:item matches the 1st xpath().
             pass
 
-        return item
+        return tei_item
+
+    @staticmethod
+    def validate_tei(tree):
+        """
+        for api_test.py
+        validate a tei returned by the API against the tei_all rng schema.
+        to do so, we write the tei to a file, open a shell subprocess
+        to run a pyjing (https://pypi.org/project/jingtrang/) validation
+        of the file, check for errors and delete the file.
+        :return: valid, a boolean: true if the file is valid, false if not
+        """
+        # save tei output to file to validate it against the schema
+        fpath = "./api_xml_response.xml"
+        XmlTei.xml_to_file(fpath=fpath, tree=tree)
+
+        # validate the file against an rng schema
+        out, err = subprocess.Popen(
+            f"pyjing {XmlTei.tei_rng} {fpath}",
+            shell=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            encoding="utf-8"
+        ).communicate()
+
+        # check if there are no errors
+        if len(out.splitlines()) == 0:
+            valid = True
+        else:
+            valid = False
+
+        os.remove(fpath)
+        return valid
+
+    @staticmethod
+    def strip_ns(tree):
+        """
+        strip all the namespaces and @xmlns attributes from tree
+        :param tree: the tree to strip namespaces from
+        :return: tree without namespaces
+        """
+        for el in tree.getiterator():
+            if not isinstance(el, etree._Comment) or isinstance(el, etree._ProcessingInstruction):
+                el.tag = etree.QName(el).localname  # strip namespaces
+                etree.strip_attributes(el, "xmlns")
+        etree.cleanup_namespaces(tree)
+        tree = etree.fromstring(
+            etree.tostring(tree).replace(b"xmlns=\"http://www.tei-c.org/ns/1.0\"", b"")
+        , parser=XmlTei.parser)  # it's ugly but i lost my mind over removing the @xmlns at the top of the tree
+        return tree
+
+    @staticmethod
+    def compare_trees(response_tree, validation_tree):
+        """
+        comparing trees (both as strings and elements) is HELL, so instead,
+        we'll compare :
+        - their tags (the element names in the trees)
+        - their textual content (spaces in the text are considered unimportant
+        cause it spaces mess up the comparison)
+        - their attributes
+        another possibility would be to use ETree.canonicalize, but i discovered it
+        too late.
+
+        :param response_tree: the tree returned from the API of which we'll check the validity
+        :param validation_tree: a tree from our database that we'll use to check that response_tree is ok
+        :return: same, a boolean indicating wether the trees are the same or not
+        """
+        response_tree = XmlTei.strip_ns(response_tree)  # strip the namespaces cause they make everything harder
+
+        r_tags = [el.tag for el in response_tree.getiterator()]  # element names
+        r_vals = []  # text inside elements
+        r_attr = []  # element values
+        for el in response_tree.getiterator():
+            if el.text is not None:
+                r_vals.append(re.sub(r"\s*", "", el.text))
+            for name, value in el.items():
+                r_attr.append({name: value})
+
+        v_tags = [el.tag for el in validation_tree.getiterator()]
+        v_vals = []
+        v_attr = []
+        for el in validation_tree.getiterator():
+            if el.text is not None:
+                v_vals.append(re.sub(r"\s*", "", el.text))
+            for name, value in el.items():
+                v_attr.append({name: value})
+
+        if r_tags == v_tags and r_vals == v_vals and r_attr == v_attr:
+            same = True
+        else:
+            same = False
+        return same
+
+    @staticmethod
+    def xml_to_file(fpath, tree):
+        """
+        write an lxml etree to file
+        :param fpath: the file path to write the tree to
+        :param tree: the tree to write to fpath
+        :return: None
+        """
+        with open(fpath, mode="w+") as fh:
+            fh.write(str(etree.tostring(
+                tree, xml_declaration=True, encoding="utf-8"
+            ).decode("utf-8")))
+        return None
 
     @staticmethod
     def pretty_print(tree):
@@ -287,9 +393,8 @@ class XmlTei:
                 "level" in req.keys() and
                 (req["level"] != "cat_full") or (req["level"] == "cat_full" and found is False)
         ):
-            parser = etree.XMLParser(remove_blank_text=True)
             with open(f"{TEMPLATES}/partials/katapi_tei_template.xml", mode="r") as fh:
-                tree = etree.parse(fh, parser)
+                tree = etree.parse(fh, XmlTei.parser)
 
             tei_query_table = XmlTei.build_tei_query_table(req)
 
@@ -358,12 +463,6 @@ class XmlTei:
             tei_availability.append(tei_p)
             tei_availability = XmlTei.pretty_print(tei_availability)
 
-        # to check the output quality: save tei output to file
-        with open("./api_xml_response.xml", mode="w+") as fh:
-            fh.write(str(etree.tostring(
-                tree, xml_declaration=True, encoding="utf-8"
-            ).decode("utf-8")))
-
         response = APIGlobal.set_headers(etree.tostring(tree, pretty_print=True), req["format"], status_code)
         return response
 
@@ -414,41 +513,6 @@ class XmlTei:
         results.append(tei_list)
         results = XmlTei.pretty_print(results)
         return results
-
-    @staticmethod
-    def validate_tei(tree):
-        """
-        for api_test.py
-        validate a tei returned by the API against the tei_all rng schema.
-        to do so, we write the tei to a file, open a shell subprocess
-        to run a pyjing (https://pypi.org/project/jingtrang/) validation
-        of the file, check for errors and delete the file.
-        :return: valid, a boolean: true if the file is valid, false if not
-        """
-        # save tei output to file to validate it against the schema
-        fpath = "./api_xml_response.xml"
-        with open(fpath, mode="w+") as fh:
-            fh.write(str(etree.tostring(
-                tree, xml_declaration=True, encoding="utf-8"
-            ).decode("utf-8")))
-
-        # validate the file against an rng schema
-        out, err = subprocess.Popen(
-            f"pyjing {XmlTei.tei_rng} {fpath}",
-            shell=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            encoding="utf-8"
-        ).communicate()
-
-        # check if there are no errors
-        if len(out.splitlines()) == 0:
-            valid = True
-        else:
-            valid = False
-
-        os.remove(fpath)
-        return valid
 
 
 class APIGlobal:
