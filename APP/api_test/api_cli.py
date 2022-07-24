@@ -15,8 +15,8 @@ import sys
 @click.option("-p", "--params", help="query parameters")
 def query(params=None):
   """
-  test the katabase API
-  :param params: the query parameters
+  launch a query on the katabase API
+  :param params: the query parameters (a dict with valid values)
   """
   url = "http://127.0.0.1:5000/katapi"
   if not params:

@@ -1,5 +1,3 @@
-import logging
-
 from flask import request
 from io import StringIO
 from lxml import etree
@@ -10,7 +8,7 @@ import re
 
 from ..app import app
 from ..utils.constantes import DATA
-from ..utils.utils_classes import Match, APIInvalidInput, APIInternalServerError, XmlTei, Json, ErrorLog
+from ..utils.api_classes import Match, APIInvalidInput, APIInternalServerError, XmlTei, Json, ErrorLog
 
 
 # -------------------------------------------------------------------------------------------------------------------
@@ -392,6 +390,8 @@ def katapi():
     if len(errors) > 0:
         if "format" in req.keys() and not re.search("^(tei|json)$", req["format"]):
             req["format"] = "json"  # set default format
+        elif "format" not in req.keys():
+            req["format"] = "json"
         raise APIInvalidInput(req, errors, incompatible_params, unallowed_params, timestamp)
 
     # if there's no error, proceed and try and retrieve results

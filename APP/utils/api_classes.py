@@ -1,8 +1,7 @@
 from flask import make_response, jsonify, Response
 from werkzeug import exceptions
-from io import StringIO
 from lxml import etree
-import traceback
+import subprocess
 import logging
 import re
 import os
@@ -12,7 +11,7 @@ from ..app import app
 
 
 # -------------------------------------------
-# classes containing useful stuff for the app
+# classes containing useful stuff for the api
 # -------------------------------------------
 
 
@@ -189,10 +188,11 @@ class Json:
 
 class XmlTei:
     """
-    a bunch of xml methods to build and manipulate XML for routes_api.py.
+    a bunch of xml methods to build and manipulate XML for routes_api.py and api_test.py.
     """
     ns = {"tei": "http://www.tei-c.org/ns/1.0"}  # tei namespace
     xmlid = {"id": "http://www.w3.org/XML/1998/namespace"}  # @xml:id namespace
+    tei_rng = "https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"  # odd in .rng to validate tei files
 
     @staticmethod
     def get_item_from_id(item_id):
@@ -283,8 +283,10 @@ class XmlTei:
         """
 
         # if level isn't cat full, we build a full xml document, teiheader and all
-        if ("level" in req.keys() and req["level"] != "cat_full")\
-                or ("level" in req.keys() and req["level"] == "cat_full" and found is False):
+        if "level" not in req.keys() or (
+                "level" in req.keys() and
+                (req["level"] != "cat_full") or (req["level"] == "cat_full" and found is False)
+        ):
             parser = etree.XMLParser(remove_blank_text=True)
             with open(f"{TEMPLATES}/partials/katapi_tei_template.xml", mode="r") as fh:
                 tree = etree.parse(fh, parser)
@@ -312,7 +314,9 @@ class XmlTei:
         # if a full tei catalogue has been found
         # append a paragraph to tei:publicationStmt//tei:availability
         # describing the whole context of the request: query, date, status code, producer
-        elif req["level"] == "cat_full" and found is True:
+        elif "level" in req.keys() \
+                and req["level"] == "cat_full" \
+                and found is True:
             tree = etree.parse(response_body)
             tei_availability = tree.xpath(".//tei:publicationStmt//tei:availability", namespaces=XmlTei.ns)[0]
 
@@ -355,7 +359,7 @@ class XmlTei:
             tei_availability = XmlTei.pretty_print(tei_availability)
 
         # to check the output quality: save tei output to file
-        with open("./test_api/api_xml_response.xml", mode="w+") as fh:
+        with open("./api_xml_response.xml", mode="w+") as fh:
             fh.write(str(etree.tostring(
                 tree, xml_declaration=True, encoding="utf-8"
             ).decode("utf-8")))
@@ -410,6 +414,41 @@ class XmlTei:
         results.append(tei_list)
         results = XmlTei.pretty_print(results)
         return results
+
+    @staticmethod
+    def validate_tei(tree):
+        """
+        for api_test.py
+        validate a tei returned by the API against the tei_all rng schema.
+        to do so, we write the tei to a file, open a shell subprocess
+        to run a pyjing (https://pypi.org/project/jingtrang/) validation
+        of the file, check for errors and delete the file.
+        :return: valid, a boolean: true if the file is valid, false if not
+        """
+        # save tei output to file to validate it against the schema
+        fpath = "./api_xml_response.xml"
+        with open(fpath, mode="w+") as fh:
+            fh.write(str(etree.tostring(
+                tree, xml_declaration=True, encoding="utf-8"
+            ).decode("utf-8")))
+
+        # validate the file against an rng schema
+        out, err = subprocess.Popen(
+            f"pyjing {XmlTei.tei_rng} {fpath}",
+            shell=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            encoding="utf-8"
+        ).communicate()
+
+        # check if there are no errors
+        if len(out.splitlines()) == 0:
+            valid = True
+        else:
+            valid = False
+
+        os.remove(fpath)
+        return valid
 
 
 class APIGlobal:
@@ -636,7 +675,7 @@ class ErrorLog:
     currently only for routes_api.py. could be extended to other funcs
     log errors in custom formats to file
     """
-    logfile = f"{UTILS}/error_logs/katapi_error.log"
+    logfile = f"{UTILS}/error_logs/error.log"
 
     @staticmethod
     def create_logger():
@@ -648,7 +687,7 @@ class ErrorLog:
         - levelname: error level (error, debug...) ;
         - module: python module on which error happened ;
         - message: actual error message
-        :return:
+        :return: None
         """
         logfile = ErrorLog.logfile
         if not os.path.exists(logfile):
@@ -656,12 +695,14 @@ class ErrorLog:
                 fh.write("")  # create file if it doesn't exist
         root = logging.getLogger()  # create a root logger
         root.setLevel(logging.WARNING)  # set level to which an info will be logged. debug < warning < error
-        root_filehandler = logging.FileHandler(f"{UTILS}/error_logs/error.log")  # set handler to write log to file
+        root_filehandler = logging.FileHandler(ErrorLog.logfile)  # set handler to write log to file
         root_filehandler.setFormatter(
             logging.Formatter(r"%(asctime)s - %(levelname)s - %(module)s - %(message)s")
         )  # set the file formatting
         root_filehandler.setLevel(logging.WARNING)
         root.addHandler(root_filehandler)
+
+        return None
 
     @staticmethod
     def dump_error(stack: str):
@@ -675,7 +716,7 @@ class ErrorLog:
         :return: None
         """
         # build a logger and log to file
-        # __main__ == root logger defined in create_logger; __main__ = current module (routes_api.py)
+        # __main__ == root logger defined in create_logger; __name__ = current module (routes_api.py)
         # => this logger will inherit from the behaviour defined in root logger. could be used elsewhere
         # see: https://stackoverflow.com/questions/50714316/how-to-use-logging-getlogger-name-in-multiple-modules
         logger = logging.getLogger("__main__." + __name__)
