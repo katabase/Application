@@ -245,9 +245,11 @@ class XmlTei:
     def build_response(req: dict, response_body, timestamp: str, status_code=200, found=None):
         """
         for routes_api.py
-        build a tei document from a template:
-        - a tei:teiHeader containing the request params
-        - a tei:text/tei:body to store the results
+        build a response object with content in tei format:
+        - build a tei document from a template:
+          - a tei:teiHeader containing the request params
+          - a tei:text/tei:body to store the results
+        - append headers
         :param req: the user's request
         :param response_body: the response body, an lxml tree or string representation of tree
         :param status_code: the http status code
@@ -265,8 +267,7 @@ class XmlTei:
                 and (
                         (req["level"] != "cat_full")
                         or (req["level"] == "cat_full" and found is False)
-                )
-        ):
+                )):
             with open(f"{TEMPLATES}/partials/katapi_tei_template.xml", mode="r") as fh:
                 tree = etree.parse(fh, XmlTei.parser)
 

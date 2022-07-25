@@ -249,7 +249,7 @@ class ErrorLog:
     @staticmethod
     def create_logger():
         """
-        create logging instance
+        create main logging instance for the API
         configure the logger object (only used for katapi at this point)
         string formatting desc:
         - asctime: log creation time ;
@@ -276,18 +276,13 @@ class ErrorLog:
     @staticmethod
     def dump_error(stack: str):
         """
-        dump an error message to the log file:
-        get the error stack, build it by adding a timestamp
-        and combining it with the exception printing (print_exc).
-        before the print_exc part, there may be stack frams from
-        the current error logging into the log file.
+        build a logger and dump an error message to a file
+        __main__ == root logger defined in create_logger; __name__ = current module (routes_api.py)
+        => this logger will inherit from the behaviour defined in root logger. could be used elsewhere
+        see: https://stackoverflow.com/questions/50714316/how-to-use-logging-getlogger-name-in-multiple-modules
         :param stack: the error stack (list of functions that led to the error)
         :return: None
         """
-        # build a logger and log to file
-        # __main__ == root logger defined in create_logger; __name__ = current module (routes_api.py)
-        # => this logger will inherit from the behaviour defined in root logger. could be used elsewhere
-        # see: https://stackoverflow.com/questions/50714316/how-to-use-logging-getlogger-name-in-multiple-modules
         logger = logging.getLogger("__main__." + __name__)
         logger.setLevel(logging.ERROR)
         logger.error(stack)  # write full error message to log
