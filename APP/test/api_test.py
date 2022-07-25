@@ -1,16 +1,13 @@
 from urllib.parse import urlencode
-from lxml import etree, objectify
-from werkzeug import Client
-from pprint import pprint
+from lxml import etree
 from io import StringIO
 import unittest
-import requests
 import json
-import re
+
 
 # modules inside ../APP must be imported from run, and thus be imported in run.py
 from ..app import app
-from ..utils.api_classes import APIInvalidInput, XmlTei
+from ..utils.api_classes import XmlTei
 
 
 # ----------------------------------------------
@@ -22,17 +19,9 @@ from ..utils.api_classes import APIInvalidInput, XmlTei
 
 class APITest(unittest.TestCase):
     """
-    to run the tests we don't use requests, but werkzeug.Client,
-    which simulates requests to a wsgi application while running
-    this wsgi app (with requests we'd need to have 2 scripts:
-    one to launch the app, the other to lauch the tests).
-    werkzeug.Client returns TestResponse objects, similar to
-    a flask Response object.
-    see:
-    - https://werkzeug.palletsprojects.com/en/2.1.x/test/
-    - https://werkzeug.palletsprojects.com/en/2.1.x/test/#werkzeug.test.TestResponse
+    to run the tests we use Flask().test_client(), a Flask util
+    which runs the app and lets you run queries as client.
     """
-    # client = Client(app)  # the client on which we'll run queries
     url = "http://127.0.0.1:5000/katapi"  # the base url of the API
 
     def setUp(self):
@@ -43,7 +32,6 @@ class APITest(unittest.TestCase):
         app.config["TESTING"] = True
         app.config["DEBUG"] = False
         self.app = app.test_client()
-        self.client = Client(self.app)
         return None
 
     def tearDown(self):
@@ -56,11 +44,11 @@ class APITest(unittest.TestCase):
     def api_invalid_input(self):
         """
         test that, given certain parameters, the API will raise an
-        APIInvalidInput error and return to the client an http 422
+        APIInvalidInput error and return to the client a http 422
         error.
         :return: None
         """
-        # ================== first test ================== #
+        # first test
         params = {
             "format": "xml",  # invalid value for format
             "api": "Durga Mahishasuraparini",  # unallowed param
@@ -71,7 +59,6 @@ class APITest(unittest.TestCase):
         query = f"/katapi?{urlencode(params)}"
 
         # check the headers
-        # self.assertRaises(APIInvalidInput, self.app.get(query))  # the proper error is raised
         r = self.app.get(query)
         self.assertEqual(r.headers["Content-Type"], "application/json")  # check the return type
         self.assertEqual(str(r.status_code), "422")  # check the http status code
@@ -85,7 +72,7 @@ class APITest(unittest.TestCase):
         for e in error_test:
             self.assertIn(e, error_keys)
 
-        # ================== second test ================== #
+        # second test
         params = {
             "format": "tei",  # allowed
             "sell_date": "2000?5000",  # incompatible with id
@@ -93,7 +80,6 @@ class APITest(unittest.TestCase):
         query = f"/katapi?{urlencode(params)}"
 
         # check the headers
-        # self.assertRaises(APIInvalidInput, self.client.get("/katapi", json=params))  # the proper error is raised
         r = self.app.get(query)
         self.assertEqual(r.headers["Content-Type"], "application/xml; charset=utf-8")  # check the return type
         self.assertEqual(str(r.status_code), "422")  # check the http status code
@@ -135,6 +121,8 @@ class APITest(unittest.TestCase):
                 v["format"] = "json"
                 query = f"/katapi?{urlencode(v)}"
                 r = self.app.get(query)
+                if str(r.status_code) == "500":
+                    print(r.get_data())  # to check the validity of error messages
                 self.assertEqual(r.headers["Content-Type"], "application/json")  # check the return type
                 self.assertEqual(str(r.status_code), "200")  # check the http status code
                 r = json.loads(r.get_data())
@@ -219,10 +207,10 @@ class APITest(unittest.TestCase):
         :return: None
         """
         params = {
-            "p1": {"level": "cat_stat", "name": "RDA", "sell_date": "1800-1900", "orig_date": "1500-1800"},
+            "p1": {"level": "cat_stat", "name": "RDA", "sell_date": "1800-1900"},
             "p2": {"level": "cat_stat", "name": "RDA", "sell_date": "1000-1100"},  # this one should return no result
             "p3": {"level": "cat_stat", "name": "RDA"},
-            "p4": {"level": "cat_stat", "id": "CAT_000153"}
+            "p4": {"level": "cat_stat", "id": "CAT_000362"}
         }
 
         for k, v in params.items():
@@ -231,12 +219,37 @@ class APITest(unittest.TestCase):
                 v["format"] = "json"
                 query = f"/katapi?{urlencode(v)}"
                 r = self.app.get(query)
+                if str(r.status_code) == "500":
+                    print(r.get_data())
                 self.assertEqual(r.headers["Content-Type"], "application/json")  # check the return type
                 self.assertEqual(str(r.status_code), "200")  # check the http status code
                 r = json.loads(r.get_data())
 
-                if k == "p3":  # check the empty return
+                if k == "p2":  # check the empty return
                     self.assertEqual(r["results"], {})
+                if k == "p4":  # check the exact return
+                    self.assertEqual(
+                        r["results"],
+                        {
+                            "CAT_000362": {
+                                "title": "Vente Jacques Charavay, ao\u00fbt 1875, n\u00ba 185",
+                                "cat_type": "LAC",
+                                "sell_date": "1875",
+                                "item_count": 106,
+                                "currency": "FRF",
+                                "total_price_c": 1039,
+                                "low_price_c": 1.27,
+                                "high_price_c": 102.0,
+                                "mean_price_c": 9.810188679245282,
+                                "median_price_c": 4.59,
+                                "mode_price_c": 3.06,
+                                "variance_price_c": 194.2879773228907,
+                                "high_price_items_c": {
+                                    "CAT_000362_e27096": 102.0
+                                }
+                            }
+                        }
+                    )
 
                 # test the tei format
                 v["format"] = "tei"
@@ -247,7 +260,89 @@ class APITest(unittest.TestCase):
                 tree = etree.fromstring(r.get_data())
                 self.assertTrue(XmlTei.validate_tei(tree))
 
-                if k == "p3":  # check the empty return
+                if k == "p2":  # check the empty return
+                    tei_div = etree.Element("div")
+                    tei_div.set("type", "search-results")
+                    self.assertEqual(
+                        tree.xpath(".//tei:body//tei:div[@type='search-results']//*", namespaces=XmlTei.ns),
+                        []
+                    )  # check that an empty tei response is a tei:div with @type="search-results" and no children
+                if k == "p4":  # check the "id" parameter
+                    t_item = etree.fromstring("""
+                        <item ana="CAT_000362">
+                            <label>CAT_000362</label>
+                            <term key="title">Vente Jacques Charavay, août 1875, nº 185</term>
+                            <term key="cat_type">LAC</term>
+                            <term key="sell_date" type="date">1875</term>
+                            <term key="item_count">106</term>
+                            <term key="currency">FRF</term>
+                            <term key="total_price_c" type="constant-price">1039</term>
+                            <term key="low_price_c" type="constant-price">1.27</term>
+                            <term key="high_price_c" type="constant-price">102.0</term>
+                            <term key="mean_price_c" type="constant-price">9.810188679245282</term>
+                            <term key="median_price_c" type="constant-price">4.59</term>
+                            <term key="mode_price_c" type="constant-price">3.06</term>
+                            <term key="variance_price_c" type="constant-price">194.2879773228907</term>
+                            <term key="high_price_items_c" type="constant-price" ana="CAT_000362_e27096">102.0</term>
+                        </item>
+                    """, parser=XmlTei.parser)
+                    r_item = tree.xpath(".//tei:body//tei:list/*[name()!='head']", namespaces=XmlTei.ns)
+                    self.assertEqual(len(r_item), 1)  # assert there's only 1 tei:item in the result
+                    self.assertTrue(XmlTei.compare_trees(r_item[0], t_item))
+
+        return None
+
+    def api_cat_full(self):
+        """
+        test that valid responses will be returned for
+        different queries run with param "level"=="cat_stat"
+        - one that will return a result
+        - one that won't.
+        :return: None
+        """
+        params = {
+            "p1": {"id": "CAT_000300", "format": "tei", "level": "cat_full"},  # will return a result
+            "p2": {"id": "CAT_000000", "format": "tei", "level": "cat_full"}   # won't return a result
+        }
+        for k, v in params.items():
+            with self.subTest(msg=f"error on {k}"):
+
+                # base tests
+                query = f"/katapi?{urlencode(v)}"
+                r = self.app.get(query)
+                if str(r.status_code) == "500":
+                    print(r.get_data())
+                tree = etree.fromstring(r.get_data())
+                self.assertEqual(str(r.status_code), "200")
+                self.assertEqual(r.headers["Content-Type"], "application/xml; charset=utf-8")
+                self.assertTrue(XmlTei.validate_tei(tree))
+
+                # check the tei:table on both
+                self.assertEqual(
+                    [t.text for t in tree.xpath(".//tei:table/tei:row[1]/tei:cell", namespaces=XmlTei.ns)],
+                    list(v.keys())
+                )  # assert that the query keys are described inside the tei:table
+                self.assertEqual(
+                    [t.text for t in tree.xpath(".//tei:table/tei:row[2]/tei:cell", namespaces=XmlTei.ns)],
+                    list(v.values())
+                )  # assert that the query values are described inside the tei:table
+
+                # p1 will return a complete catalogue (hard to verify the tei:body)
+                # => check the teiHeader//tei:availability
+                if k == "p1":
+                    tei_availability = tree.xpath(".//tei:availability", namespaces=XmlTei.ns)[0]
+                    self.assertEqual(
+                        tei_availability.xpath("count(.//tei:p)", namespaces=XmlTei.ns), 4
+                    )  # assert that there are 4 paragrams in the availability describing the request context
+                    self.assertEqual(
+                        tei_availability.xpath("count(./tei:p[tei:date/@when-iso])", namespaces=XmlTei.ns), 1
+                    )  # assert there's a tei:date inside the tei:availability
+                    self.assertEqual(
+                        tei_availability.xpath("count(./tei:p[tei:ref])", namespaces=XmlTei.ns), 2
+                    )  # assert that there are 2 links: for the mozilla documentation on http status code + for katabase
+
+                # p2 will return no results => check the body
+                if k == "p2":
                     tei_div = etree.Element("div")
                     tei_div.set("type", "search-results")
                     self.assertEqual(
@@ -257,30 +352,30 @@ class APITest(unittest.TestCase):
 
         return None
 
-    def api_cat_full(self):
-        """
-        test that valid responses will be returned for
-        different queries run with param "level"=="cat_stat"
-        - with params "id" (only allowed parameter for cat_stat)
-        :return: None
-        """
-
 
 def suite():
+    """
+    build the suite of tests
+    :return: suite
+    """
     suite = unittest.TestSuite()
     suite.addTest(APITest("setUp"))
     suite.addTest(APITest("api_invalid_input"))
     suite.addTest(APITest("api_itm"))
     suite.addTest(APITest("api_cat_stat"))
+    suite.addTest(APITest("api_cat_full"))
     suite.addTest(APITest("tearDown"))
     return suite
 
 
 def run():
-    # app.config.update({"TESTING": True})
-    # app.run(port=5000, debug=True)
+    """
+    run the tests
+    :return: None
+    """
     stream = StringIO()
     runner = unittest.TextTestRunner(stream=stream)
     result = runner.run(suite())
     stream.seek(0)
     print("test output", stream.read())
+    return None

@@ -306,6 +306,12 @@ class XmlTei:
         if r_tags == v_tags and r_vals == v_vals and r_attr == v_attr:
             same = True
         else:
+            if r_tags != v_tags:
+                print(r_tags, "\n", v_tags)
+            if r_vals != v_vals:
+                print(r_vals, "\n", v_vals)
+            if r_attr != v_attr:
+                print(r_attr, "\n", v_attr)
             same = False
         return same
 
@@ -388,10 +394,15 @@ class XmlTei:
         :return:
         """
 
-        # if level isn't cat full, we build a full xml document, teiheader and all
-        if "level" not in req.keys() or (
-                "level" in req.keys() and
-                (req["level"] != "cat_full") or (req["level"] == "cat_full" and found is False)
+        # if level isn't cat full, or if a cat hasn't been found for level==cat_full,
+        # we build a full xml document, teiheader and all
+        if "level" not in req.keys() \
+                or (
+                "level" in req.keys()
+                and (
+                        (req["level"] != "cat_full")
+                        or (req["level"] == "cat_full" and found is False)
+                )
         ):
             with open(f"{TEMPLATES}/partials/katapi_tei_template.xml", mode="r") as fh:
                 tree = etree.parse(fh, XmlTei.parser)
@@ -417,7 +428,7 @@ class XmlTei:
             tree = XmlTei.pretty_print(tree)
 
         # if a full tei catalogue has been found
-        # append a paragraph to tei:publicationStmt//tei:availability
+        # append paragraphs to tei:publicationStmt//tei:availability
         # describing the whole context of the request: query, date, status code, producer
         elif "level" in req.keys() \
                 and req["level"] == "cat_full" \
@@ -432,7 +443,6 @@ class XmlTei:
             tei_ref.set("target", "https://katabase.huma-num.fr/")
             tei_ref.text = "Manuscript SaleS Catalogues project"
             tei_p.append(tei_ref)
-            # tei_p = XmlTei.pretty_print(tei_p)
             tei_availability.append(tei_p)
 
             # 2nd paragram = date
@@ -442,16 +452,14 @@ class XmlTei:
             tei_date.set("when-iso", timestamp)
             tei_date.text = str(timestamp)
             tei_p.append(tei_date)
-            # tei_p = XmlTei.pretty_print(tei_p)
             tei_availability.append(tei_p)
 
             # 3rd paragrah: status code
             tei_p = etree.Element("p", nsmap=XmlTei.ns)
             tei_p.text = "Query ran with HTTP status code:"
             tei_ref = etree.Element("ref", nsmap=XmlTei.ns)
-            tei_ref.set("target", f"https://github.com/katabase/Application/tree/main/APP/data{status_code}")
+            tei_ref.set("target", f"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{status_code}")
             tei_p.append(tei_ref)
-            # tei_p = XmlTei.pretty_print(tei_p)
             tei_availability.append(tei_p)
 
             # 4rth paragraph: table
@@ -462,6 +470,8 @@ class XmlTei:
             tei_p = XmlTei.pretty_print(tei_p)
             tei_availability.append(tei_p)
             tei_availability = XmlTei.pretty_print(tei_availability)
+
+        XmlTei.xml_to_file(fpath="./save.xml", tree=tree)
 
         response = APIGlobal.set_headers(etree.tostring(tree, pretty_print=True), req["format"], status_code)
         return response

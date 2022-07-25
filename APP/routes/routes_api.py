@@ -108,7 +108,7 @@ def katapi_cat_stat(req):
         tei_div.set("type", "search-results")
 
         # if there are results, translate them to tei
-        if len(results.keys()) > 1:
+        if len(results.keys()) >= 1:
             tei_list = etree.Element("list", nsmap=XmlTei.ns)
             tei_head = etree.Element("head", nsmap=XmlTei.ns)
             tei_head.text = "Search results"
