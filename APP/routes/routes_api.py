@@ -8,7 +8,9 @@ import re
 
 from ..app import app
 from ..utils.constantes import DATA
-from ..utils.api_classes import Match, APIInvalidInput, APIInternalServerError, XmlTei, Json, ErrorLog
+from ..utils.classes.match import Match
+from ..utils.classes.file_formats import XmlTei, Json
+from ..utils.classes.client_server import APIInvalidInput, APIInternalServerError, ErrorLog
 
 
 # -------------------------------------------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 import argparse
 
 from APP.app import app
-from APP.utils.api_classes import ErrorLog
+from APP.utils.classes.client_server import ErrorLog
 
 
 if __name__ == "__main__":

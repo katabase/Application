@@ -7,7 +7,7 @@ import json
 
 # modules inside ../APP must be imported from run, and thus be imported in run.py
 from ..app import app
-from ..utils.api_classes import XmlTei
+from ..utils.classes.file_formats import XmlTei
 
 
 # ----------------------------------------------
