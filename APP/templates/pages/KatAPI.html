@@ -9,7 +9,11 @@
   KatAPI is an API that allows the automated retrieval of data from the project
   in <code>json</code> or <code>xml-tei</code>. It functions as a complete search
   engine that parses the user's query parameters, retrieves the proper data from
-  the project's databases and sends it back to the user. The API allows, for example,
+  the project's databases and sends it back to the user. The API allows to revtrieve 
+  catalogue entries by author, sale date and creation date of the manuscript; it also 
+  allows to retrieve a complete catalogue, or statistics on one or several catalogues. 
+  Finally, it creates custom error messages in <code>json</code> or <code>tei</code> 
+  if an error occurs.The API allows, for example,
   to retrieve the description of all manuscripts of the Marquise de Sévigné written
   between 1650 and 1690 and sold between 1880 and 1900 in a complete and valid TEI
   format.
@@ -190,6 +194,33 @@
 
 <h3>At <code>cat_stat</code> level</h3>
 
+<p>The results are contained in the
+body of the response object returned by the API. They are organised by catalogue,
+with each catalogue being identified by its <code>@xml:id</code>. Each catalogue
+is mapped to data. the meaning of the this data is specified by the following keys:</p>
+
+<ul>
+    <li><code>sell_date</code>: the year of the sale presented in the catalogue.</li>
+    <li><code>title</code>: the title of the catalogue, and, by extension, of the sale.</li>
+	<li><code>cat_type</code>: the type of catalogue. See the authorized values of the
+    name parameter for <code>level=cat_stat</code> for more information.</li>
+	<li><code>currency</code>: the currency of the prices returned. <code>FRF</code>
+	corresponds to french francs.</li>
+	<li><code>high_price_c</code>: the most expensive items in the catalogue, in constant
+	1900 francs. In the whole API, the <code>_c</code> suffix indicates that a price is
+	expressed in constant 1900 francs.</li>
+	<li><code>high_price_items_c</code>: the most expensive items in the catalogue. Each item's 
+	<code>@xml:id</code> is associated to its price, in constant francs.</li>
+	<li><code>item_count</code>: the number of manuscripts for sale in the catalogue.</li>
+	<li><code>low_price_c</code>: the least expensive item's price, in constant 1900 francs.</li>
+	<li><code>mean_price_c</code>: the average price for a catalogue item, in constant 1900 francs.</li>
+	<li><code>median_price_c</code>: the median price for a catalogue item, in constant francs.</li>
+	<li><code>mode_price_c</code>: the mode price (the price that appears the most often in a catalogue) 
+	for an item, in constant francs.</li>
+	<li><code>total_price_c</code>: the sum of each item's price, in constant francs</li>
+	<li><code>variance_price_c</code>: the variance of the prices inside the catalogue.</li>
+</ul>
+
 <p>In this case, two response formats are possible: <code>json</code> and <code>xml-tei</code>.
     The <code>json</code> response looks like this:
 </p>
@@ -209,6 +240,26 @@
     </div>
 
 <h3>At <code>itm</code> level</h3>
+
+<p>The response is ordered by catalogue entries.
+Each entry, identified by its <code>@xml:id</code>, is mapped to information about that entry. The meaning
+of this data is presented below:</p>
+
+<ul>
+	<li><code>author</code>: the manuscript's author.</li>
+	<li><code>date</code>: the date a manuscript was created.</li>
+	<li><code>sell_date</code>: the date of a manuscript's sale, as indicated by the catalogue.</li>
+	<li><code>desc</code>: the way a manuscript is described in the sales catalogues.</li>
+	<li><code>number_of_pages</code>: the number of pages inside a manuscript.</li>
+	<li><code>price</code>: the price of a manuscript, in current francs.</li>
+	<li><code>format</code>: the format of the manuscript (in-quatro...) in a normalized format.
+    The meaning of the format codes can be found <a href="https://github.com/katabase/2_CleanedData/blob/main/script/tables/conversion_tables.py">
+	here</a> (see the <code>format_types</code> dictionnary).</li>
+	<li><code>term</code>: the way a manuscript is described (Pièce authographe signée...) in a normalized
+	format. The meaning of the format codes can be found
+	<a href="https://github.com/katabase/2_CleanedData/blob/main/script/tables/conversion_tables.py">
+    here</a> (see the <code>term_types</code> dictionnary).</li>
+</ul>
 
 <p>Here's what a <code>json</code> response looks like:</p>
 
