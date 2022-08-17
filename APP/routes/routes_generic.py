@@ -1,10 +1,11 @@
 from flask import render_template, request
+import json
 import glob
 import os
 
 from ..app import app
 from ..utils.main_functions import *
-from ..utils.constantes import TEMPLATES
+from ..utils.constantes import TEMPLATES, TEST
 from ..utils.reconciliator import reconciliator
 from ..utils.figmaker import figmaker_idx, figmaker_cat
 
@@ -90,6 +91,29 @@ def index():
     else:
         figpath = False
     return render_template("pages/Index.html", figpath=figpath, index=created_index)
+
+
+@app.route("/Katapi_documentation")
+def katapi_documentation():
+    """
+    route to the API's documentation.
+    first, we parse the examples of the API output to include them inside the API
+    documentation page using jinja.
+    :return: render_template to the documentation in HTML format
+    """
+    examples = {}  # dict to contain all the examples
+    for fpath in glob.glob(f"{TEST}/api_output_examples/*"):
+        fname = os.path.basename(fpath)
+
+        with open(fpath, mode="r") as fh:
+            # if it's a json, save it as a pretty printed string
+            # if it's a xml, escape the opening and closing brackets
+            if re.search(r"\.*?$", fname) == "json":
+                examples[fname.replace(".", "_")] = json.dumps(json.load(fh), indent=4)
+            else:
+                examples[fname.replace(".", "_")] = fh.read()
+
+    return render_template("pages/KatAPI.html", examples=examples)
 
 
 @app.route("/View/<cat_id>")

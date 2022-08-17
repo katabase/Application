@@ -1,0 +1,30 @@
+{
+    "head": {
+        "query": {
+            "format": "json",
+            "id": "CAT_000362",
+            "level": "cat_stat"
+        },
+        "query_date": "2022-08-17T13:17:29.808084",
+        "status_code": 200
+    },
+    "results": {
+        "CAT_000362": {
+            "cat_type": "LAC",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000362_e27096": 102.0
+            },
+            "item_count": 106,
+            "low_price_c": 1.27,
+            "mean_price_c": 9.810188679245282,
+            "median_price_c": 4.59,
+            "mode_price_c": 3.06,
+            "sell_date": "1875",
+            "title": "Vente Jacques Charavay, ao\u00fbt 1875, n\u00ba 185",
+            "total_price_c": 1039,
+            "variance_price_c": 194.2879773228907
+        }
+    }
+}

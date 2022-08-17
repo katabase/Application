@@ -1,0 +1,268 @@
+{% extends "layout.html" %}
+{% block title %} KatAPI - Documentation {% endblock %}
+{% block corps %}
+
+<div class="container">
+<h1>KatAPI</h1>
+
+<p>KatAPI is an API that allows the automated retrieval of data from the project
+    in <code>json</code> or <code>xml-tei</code>.</p>
+
+<hr/>
+
+<h2>Quick start</h2>
+    
+<hr>    
+
+<p>The endpoint for the API is <a target="https://katabase.huma-num.fr/katapi?">
+        <code>https://katabase.huma-num.fr/katapi?</code></a>. The arguments provided by 
+    the client are added after this endpoint; the application will process
+    those arguments and send back a response in the requested format (
+    <code>json</code> or <code>xml-tei</code>, the default being <code>json</code>). If there is an 
+    error on the client side (unauthorized parameters or values) or on the server side 
+    (unexpected error), a response will be issued in <code>json</code> or 
+    <code>xml-tei</code> (depending on the client's request) describing the
+    query parameters, the time of the query and the error that occured.</p>
+
+<hr/>
+
+<h2>Methods and parameters</h2>
+    
+<hr/>    
+
+<h3>HTTP methods</h3>
+
+<p>The only authorized HTTP method is <code>GET</code>.</p>
+
+<h3>Allowed parameters</h3>
+
+<p>The possible parameters are:</p>
+<ul>
+    <li><strong><code>format</code></strong>: the format of the API's response body. Possible values are:
+        <ul>
+            <li><code>json</code>: this is the default value.</li>
+            <li><code>tei</code>: return an <code>xml-tei</code> response.</li>
+        </ul>
+    </li>    
+    <li><strong><code>level</code></strong>: the requested data's level. Possible values are:
+        <ul>    
+            <li><code>itm</code>: data is retrieved at item level. This is the default value.</li>
+            <li><code>cat_data</code>: statistical data on one or several catalogues will be retrieved.
+            This value is incompatible with the <code>orig_date</code> parameter.</li>
+            <li>
+                <code>cat_full</code>: a complete catalogue encoded in <code>xml-tei</code> will be retrieved. 
+                If this value is provided, then the only other authorized parameters are 
+                <code>format=tei</code> and <code>id</code> (with <code>id</code> matching <code>CAT-\d+</code>).
+            </li>
+        </ul>
+    </li>
+    <li><strong><code>id</code></strong>: the identifier of the item or catalogue(s) to retrieve
+      (depending on the value of <code>level</code>). If this parameter is provided, data will only
+      be retrieved for a single catalogue or catalogue entry. This parameter cannot be used
+      together with the <code>name</code> parameter. Possible values are:
+        <ul>
+            <li>if the query is at item level, a catalogue entry's <code>@xml:id</code>. This identifier
+              is a string that matches the pattern: <code>CAT_\d+_e\d+_d\d+</code>.</li>
+            <li>the query is run at catalogue level (<code>level=cat_full</code> or <code>level=cat_data</code>), a
+              catalogue's <code>@xml:id</code>. This identifier is a string that matches the pattern:
+              <code>CAT_\d+</code>.</li>
+        </ul>    
+    </li>
+    <li><strong><code>name</code></strong>: if the <code>id</code> parameter is not supplied, the name of the catalogue(s) or
+      catalogue entry(ies) to retrieve. Note that this parameter can, and will, return
+      several items. Possible values:
+        <ul>
+            <li>if <code>level=itm</code>, the <code>tei:name</code> being queried. Only the last name in
+              the <code>tei:name</code> is indexed in the search engine and only this one will yield a
+              result. If a first name and a last name are provided, no result can be yield, 
+              since the first name is not indexed.</li>
+            <li>if <code>level=cat_stat</code>, the catalogue type (to be found in
+              <code>(TEI//sourceDesc/bibl/@ana</code> in the <code>xml</code> representation of a catalogue).
+              Possible values are:
+                <ul>
+                    <li> <code>LAC</code>: Vente Jacques Charavay,</li>
+                    <li> <code>RDA</code>: Revue des Autographes,</li>
+                    <li> <code>LAV</code>: Catalogue Laveredet,</li>
+                    <li> <code>AUC</code>: Auction sale</li>
+                    <li> <code>OTH</code>: not yet in use in our dataset</li>
+                </ul>    
+            </li>
+        </ul>
+    </li>
+    <li><strong><code>sell_date</code></strong>: the sale date for a manuscript or a catalogue. Values must match
+      the regular expression <code>\d{4}(-\d{4})?</code>: a year in <code>YYYY</code> format or a year range in
+      <code>YYYY-YYYY</code> foramat.
+    </li>
+    <li><strong><code>orig_date</code></strong>: the date a manuscript item was created. This parameter is only
+      authorized if <code>level=itm</code>. Values must match  the regular expression <code>\d{4}(-\d{4})?</code>:
+      a year in <code>YYYY</code> format or a year range in <code>YYYY-YYYY</code> format.
+    </li>
+</ul>
+
+<hr/>
+
+<h2>Responses and return formats</h2>
+    
+<hr/>    
+
+<h3>HTTP status codes and response mimetypes</h3>
+
+<p>
+    HTTP status codes describe a client-server interaction and the response issued by the server.
+    For example, if all went well, the status code will be contained in the 200-299 range; a 404
+    status code indicates that the resource requested by the client does not exist. As such, they
+    can help a client programme determine the kind of response received: is it an error; if so,
+    what kind of error happened? Three HTTP status codes have been defined for the response objects
+    returned by the KatAPI. These depend on the user's input and on the server's response.
+    They are present in the HTTP headers, but also in the response body's header (see below).
+</p>
+
+<p>
+    Because we belive in the powers of communication and that an informative response is better
+    than a lack no response at all, complete error logs are provided when an error occurs (be it
+    a client-related or server-related error). The error log is issued in <code>xml-tei</code> or
+    <code>json</code>, depending on the format requested by the user. If the error is on the
+    user's end (422 status code), it contains a description of what they did wrong.
+</p>
+<p>
+    <strong>WARNING</strong>: this means that, if you wrote a script to retrieve data from the API,
+    you need to check the status code (present in the HTTP headers, but also in the response itself):
+    since the response is always a syntaxically valid <code>json</code> or <code>xml-tei</code>
+    file, your script will probably not throw an error. In turn, you must explicitly ask for the
+    script to read the status code. The upside is that will always have a descriptive response
+    from the server.
+</p>
+
+<ul>
+    <li><code>200</code>: everything went well and the response contains the data that matched the
+    user's query in the format they requested.</li>
+    <li><code>422</code>: the user's input is invalid semantically: the query is not wrong in itself,
+    but either unallowed values or incompatible parameters were provided by the user.</li>
+    <li><code>500</code>: an unexpected error has happened on the server side and a valid response
+        cannot be retrieved. In this case, you can <a href="https://github.com/katabase/Application/">
+            open an issue</a> to help us figure out what happened.
+    </li>
+</ul>
+
+<h3>Return formats in general</h3>
+<p>
+    Though the content returned when <code>level=cat_full</code> is quite different from the other
+    cases, the behaviour and return format with all <code>level</code> is always roughly the same.
+    On top of the descriptive HTTP headers (that describe the status code and the response body's
+    mimetype), extra information has been included in the response. This response object, both in
+    <code>json</code> and <code>tei</code>, is made of a header and a body.
+</p>
+<p>
+    In <code>xml-tei</code>,
+    this header is enclosed in the <code>teiHeader</code> tag; in a <code>json</code> response, this
+    header is contained by the <code>head</code> key. This header contains descriptive information
+    about the query: the requested parameters (and additional default parameters), the query date and
+    the status code. In <code>tei</code>, those informations are included inside the
+    <code>teiHeader//publicationStmt</code>. If <code>level=cat_full</code>, they are in a
+    <code>note</code> inside the publication statement; with other levels, the descriptive information
+    about the query takes up the entire publication statement. This allows the API's response body to
+    always be self-descriptive. The results in themselves are contained inside the <code>body</code>
+    of a <code>xml-tei</code> response. Inside a <code>json</code> response, the results are
+    mapped to the <code>results</code> key.
+</p>
+
+<h3>At <code>cat_full</code> level</h3>
+<p>
+    In this case, a complete catalogue encoded in <code>xml-tei</code> will be returned. It is
+    the same as <a href="https://github.com/katabase/Application/blob/main/APP/data/CAT_000148_tagged.xml">
+    any catalogue of the project</a>, except that a <code>tei:note</code> has been added to the
+    <code>TEI//sourceDesc/publicationStmt</code> in order to describe the context in which
+    the file was retrieved: the query parameters, the date and time of the query and the HTTP
+    status code of the response are added to the file. The response will look something like:
+</p>
+    <div class="codeblock">
+        <pre>
+            <code>{{ examples["api_cat_full_xml"] }}</code>
+        </pre>
+    </div>
+
+<h3>At <code>cat_stat</code> level</h3>
+
+<p>In this case, two response formats are possible: <code>json</code> and <code>xml-tei</code>.
+    The <code>json</code> response looks like this:
+</p>
+    <div class="codeblock">
+        <pre>
+            <code>{{ examples["api_cat_stat_json"] }}</code>
+        </pre>
+    </div>
+
+<p>The <code>xml</code> response is similar, but uses <code>tei</code> elements and
+    includes a more complete <code>teiHeader</code>.</p>
+
+    <div class="codeblock">
+        <pre>
+            <code>{{ examples["api_cat_stat_xml"] }}</code>
+        </pre>
+    </div>
+
+<h3>At <code>itm</code> level</h3>
+
+<p>Here's what a <code>json</code> response looks like:</p>
+
+    <div class="codeblock">
+        <pre>
+            <code>{{ examples["api_itm_json"] }}</code>
+        </pre>
+    </div>
+
+<p>The <code>xml-tei</code> response looks like this:</p>
+
+    <div class="codeblock">
+        <pre>
+            <code>{{ examples["api_itm_xml"] }}</code>
+        </pre>
+    </div>
+
+<h3>Error message formats</h3>
+
+<p>In both <code>xml</code> and <code>json</code> formats, a complete error log is contained in the response's
+body (<code>results</code> key in the <code>json</code>, <code>body</code> tag in the <code>xml</code>), while the status
+code is in the header (<code>head</code> key in the <code>json</code>, <code>teiHeader</code> tag in the <code>xml</code>).
+A <code>json</code> error response will look like this:
+</p>
+    <div class="codeblock">
+        <pre>
+            <code>{{ examples["api_error_json"] }}</code>
+        </pre>
+    </div>
+
+<p>An <code>xml-tei</code> response will look similar to this:</p>
+
+    <div class="codeblock">
+        <pre>
+            <code>{{ examples["api_error_xml"] }}</code>
+        </pre>
+    </div>
+
+<hr/>
+
+<h2>Examples</h2>
+    
+<hr/>    
+
+<p>To get started, here are some URL examples and their meaning:</p>
+<ul>
+<li><a href="katapi?level=itm&name=s%C3%A9vign%C3%A9&sell_date=1800-1900&orig_date=1500-1800&format=json">
+    <code>https://katabase.huma-num.fr/katapi?level=itm&name=s%C3%A9vign%C3%A9&sell_date=1800-1900&orig_date=1500-1800&format=json</code>
+    </a>: all catalogue items whose author is <code>Sévigné</code>, sold between 1800 and 1900 and
+  written between 1500 and 1800, in <code>json</code>.</li>
+<li><a href="{{ url_for('katapi', params='?level=itm&id=CAT_000204_e108_d1&format=tei') }}">
+    <code>https://katabase.huma-num.fr/katapi?level=itm&id=CAT_000204_e108_d1&format=tei</code></a>:
+  the catalogue item with an <code>@xml:id</code> corresponding to <code>CAT_000204_e108</code>, 
+    in <code>tei</code>.</li>
+<li><a href="{{ url_for('katapi', params='?level=cat_stat&name=RDA&format=json') }}">
+    <code>https://katabase.huma-num.fr/katapi?level=cat_stat&name=RDA&format=json</code></a>:
+    statistics about all <code>RDA</code> catalogues in <code>json</code></li>
+<li><a href="{{ url_for('katapi', params='?level=cat_stat&name=RDA&sell_date=1800-1900&format=json') }}">
+    <code>https://katabase.huma-num.fr/katapi?level=cat_stat&name=RDA&sell_date=1800-1900&format=json</code></a>:
+  statistics about all <code>RDA</code> catalogues sold between 1800 and 1900 in <code>json</code>.</li>
+</ul>
+
+</div>
+{% endblock %}

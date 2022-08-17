@@ -1,0 +1,25 @@
+{
+    "head": {
+        "query": {
+            "format": "json",
+            "level": "itm",
+            "name": "s\u00e9vign\u00e9",
+            "orig_date": "1500-1800",
+            "sell_date": "1800-1900"
+        },
+        "query_date": "2022-08-17T13:53:02.110102",
+        "status_code": 200
+    },
+    "results": {
+        "CAT_000273_e234_d1": {
+            "author": "S\u00c9VIGN\u00c9",
+            "date": "1695-08-09",
+            "desc": "L. a. s. (\u00e0 Lamoignon); Nantes, 9 ao\u00fbt 1695, 3 p. in-4",
+            "format": 4,
+            "number_of_pages": 3.0,
+            "price": null,
+            "sell_date": "1891",
+            "term": 7
+        }
+    }
+}
