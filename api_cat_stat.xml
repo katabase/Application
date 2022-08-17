@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>KatAPI query results</title>
+        <respStmt>
+          <resp>File created automatically by KatAPI, an API developped as part of the</resp>
+          <orgName>
+            <ref target="https://katabase.huma-num.fr/">MSS / Katabase project.</ref>
+          </orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Production of the source data:</resp>
+          <orgName>Projet e-ditiones</orgName>
+          <orgName>Katabase</orgName>
+          <orgName> Manuscript SaleS Catalogue</orgName>
+        </respStmt>
+        <funder>
+          <orgName>Université de Neuchâtel</orgName>
+          <orgName>Université de Genève</orgName>
+          <orgName>École normale Supérieure</orgName>
+        </funder>
+      </titleStmt>
+      <publicationStmt>
+        <ab>
+          <date type="file-creation-date" when-iso="2022-08-17T13:50:19.572738">2022-08-17T13:50:19.572738</date>
+          <ref type="http-status-code" target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200">200</ref>
+          <note>Original data made available under Creative Commons Attribution 2.0 Generic (CC BY 2.0)</note>
+          <table>
+            <head>Query parameters</head>
+            <row>
+  <cell role="key" xml:id="level">level</cell>
+  <cell role="key" xml:id="id">id</cell>
+  <cell role="key" xml:id="format">format</cell>
+</row>
+            <row>
+  <cell role="value" corresp="level">cat_stat</cell>
+  <cell role="value" corresp="id">CAT_000362</cell>
+  <cell role="value" corresp="format">tei</cell>
+</row>
+          </table>
+        </ab>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Sources may come from different documents. See the corresponding XML-TEI catalogues on 
+                    <ref target="https://github.com/katabase/Application/tree/main/APP/data">Github</ref>
+                    for detailed description of the sources.
+                </p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+        <div type="search-results">
+  <list>
+    <head>Search results</head>
+    <item ana="CAT_000362">
+      <label>CAT_000362</label>
+      <term key="title">Vente Jacques Charavay, août 1875, nº 185</term>
+      <term key="cat_type">LAC</term>
+      <term key="sell_date" type="date">1875</term>
+      <term key="item_count">106</term>
+      <term key="currency">FRF</term>
+      <term key="total_price_c" type="constant-price">1039</term>
+      <term key="low_price_c" type="constant-price">1.27</term>
+      <term key="high_price_c" type="constant-price">102.0</term>
+      <term key="mean_price_c" type="constant-price">9.810188679245282</term>
+      <term key="median_price_c" type="constant-price">4.59</term>
+      <term key="mode_price_c" type="constant-price">3.06</term>
+      <term key="variance_price_c" type="constant-price">194.2879773228907</term>
+      <term key="high_price_items_c" type="constant-price" ana="CAT_000362_e27096">102.0</term>
+    </item>
+  </list>
+</div></body>
+  </text>
+</TEI>

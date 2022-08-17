@@ -16,7 +16,6 @@ from ..utils.classes.file_formats import XmlTei
 # of the API's parameters and possible values
 # ----------------------------------------------
 
-
 class APITest(unittest.TestCase):
     """
     to run the tests we use Flask().test_client(), a Flask util
@@ -86,6 +85,7 @@ class APITest(unittest.TestCase):
 
         # check that the proper error keys are in the tei:body
         tree = etree.fromstring(r.get_data())
+
         error_test = ["sell_date", "no_name+id"]
         error_keys = tree.xpath(".//tei:body//tei:item/tei:label/text()", namespaces=XmlTei.ns)  # list of error keys
         for e in error_test:
