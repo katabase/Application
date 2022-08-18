@@ -38,9 +38,30 @@
 
 <hr/>
 
+<h2>Try it out !</h2>
+
+<p>
+    To try out the KatAPI, just write a JSON-type string in the text box and click <code>Search</code>.
+    As a reminder, a JSON string is contained within curly brackets (<code>{}</code>) and
+    is a series of comma-separated <code>"key": "value"</code> couples. Each key or
+    value must be enclosed within double or single quotes (<code>"", ''</code>)!
+    A request can take several seconds to be processed, be patient!
+</p>
+
+<div class="flex-in">
+    <input type="text" id="apiUrl" value='{"name": "sevigne", "level": "itm"}'/>
+    <button type="submit" id="sendApi" class="btn btn-outline-danger" onclick="launchRequest();">Search</button>
+</div>
+
+    <pre>
+        <code id="apiOut">Awaiting for a request...</code>
+    </pre>
+
+<hr/>
+
 <h2>Methods and parameters</h2>
     
-<hr/>    
+<hr/>
 
 <h3>HTTP methods</h3>
 

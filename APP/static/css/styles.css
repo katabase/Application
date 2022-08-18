@@ -75,6 +75,7 @@
   --custom-main1: #890c0c/*#9b0000*/; /* burgundy, primary background and font color */
   --custom-main2: #a41a6a/*#a11867*/; /* pink-ish burgundy, secondary background and font color color */
   --custom-cream: #fcf8f7;  /* main cream color */
+  --custom-code-bg: #2f1e2e;
 }
 
 
@@ -179,6 +180,25 @@ pre {
   height: 40vh;
   overflow: scroll;
   margin: 0vh 0 4vh 0;
+  background-color: var(--custom-code-bg);
+}
+
+.flex-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space between;
+  align-items: center;
+}
+
+#apiUrl {
+  flex-grow: 2;
+  height: 4vh;
+  /* width: 55vh;*/
+}
+
+#sendApi{
+  /*padding: 10vh 0 10vh 3vh;*/
+  margin: 3vh 0 3vh 3vh;
 }
 
 
