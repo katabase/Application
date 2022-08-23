@@ -41,7 +41,7 @@ def open_file(good_id):
     :param good_id: an id created before
     :return: the matching file parsed by lxml
     """
-    file = DATA + "/" + good_id + "_wd.xml"
+    file = DATA + "/" + good_id + ".xml"
     return etree.parse(file)
 
 
@@ -58,7 +58,7 @@ def create_index():
     for file in files:
         file_info = {}
         file_id = os.path.basename(file)
-        file_id = re.sub(r"_[a-z]+?\.xml$", "", file_id)
+        file_id = re.sub(r"\.xml$", "", file_id)
         file_info["id"] = file_id
         # The main title is used.
         opened_file = open_file(file_id)

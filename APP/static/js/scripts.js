@@ -2,25 +2,45 @@
 
 // CHANGE BEHAVIOUR OF #pills-manuscript-tab and #pills-sell-tab
 // defining variables
-const manuscript = document.querySelector("#pills-manuscript-tab");
-const sell = document.querySelector("#pills-sell-tab");
- if (manuscript != null && sell != null){
-  // base behaviour of the buttons
-  function baseClicks() {
-    sell.setAttribute("style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-main2); color: var(--custom-cream);");
-    manuscript.setAttribute("style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);");
-  };
-  window.onload = baseClicks();
-   // when clicking on "View by manuscript"
-  function clickManuscript() {
-    sell.setAttribute("style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);");
-    manuscript.setAttribute("style", "background-color: var(--custom-main2); color: var(--custom-cream);");
-  };
-   // when clicking on "View by sale"
-  function clickSell() {
-    manuscript.setAttribute("style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);");
-    sell.setAttribute("style", "background-color: var(--custom-main2); color: var(--custom-cream);");
-  };
+// const manuscript = $("#pills-manuscript-tab");
+// const sell = $("#pills-sell-tab");
+
+var manuscript = $("#pills-sell-tab");
+var sell = $("#pills-manuscript-tab");
+
+if (manuscript != null && sell != null){
+
+
+  $(document).ready(function() {
+    // base behaviour of the buttons
+    $(sell).attr(
+        "style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);"
+    );
+    $(manuscript).attr(
+        "style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-main2); color: var(--custom-cream);"
+    );
+
+    // when clicking the sale button
+    $(sell).click(function(){
+      manuscript.attr(
+        "style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);"
+      );
+      sell.attr(
+        "style", "background-color: var(--custom-main2); color: var(--custom-cream);"
+      );
+    });
+
+    // when clicking the manuscript button
+    $(manuscript).click(function(){
+      $(sell).attr(
+        "style", "border: 1px solid; border-color: var(--custom-main1); background-color: var(--custom-cream); color: var(--custom-main2);"
+      );
+      $(manuscript).attr(
+        "style", "background-color: var(--custom-main2); color: var(--custom-cream);"
+      );
+    });
+
+  });
 };
 
 /*****************************************************************************/
@@ -39,7 +59,7 @@ if (dwn != null) {
   // when the selected dropdown item changes
   $(document).ready(function() {
      // set dropdown value to default
-    $(dwn).val("1");
+     $(dwn).val("1");
      $(dwn).change(function() {
       var selected = $(dwn).children("option").filter(":selected").val();   // currently selected option's @value
       var url = new URL(window.location.origin);  // root of the website's url
@@ -83,6 +103,7 @@ async function launchRequest() {
   try {
     // parse user input as JSON. if this input is invalid, then catch(e) is executed;
     // else, launch an async ajax request and add its content to $("#apiOut").
+    $("#apiOut").text("Request launched. Awaiting for a response...")
     let input = $("#apiUrl").val().replaceAll("'", '"');
     //let input = i.replace("'", '"');  // replace() to process the quotes into json compliant ones
     let params = JSON.parse(input);
@@ -102,7 +123,6 @@ async function launchRequest() {
     colorApiOut();
 
   } catch(e) {
-    console.log(e);
     if (e instanceof SyntaxError) {
       // SyntaxError = Json parsing output
       $("#apiOut").text(

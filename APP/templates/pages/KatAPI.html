@@ -103,7 +103,8 @@
     </li>
     <li><strong><code>name</code></strong>: if the <code>id</code> parameter is not supplied, the name of the catalogue(s) or
       catalogue entry(ies) to retrieve. Note that this parameter can, and will, return
-      several items. Possible values:
+      several items. This parameter is <strong>case-insensitive and doesn't take punctuation or accented letters into account</strong>.
+      Possible values are:
         <ul>
             <li>if <code>level=itm</code>, the <code>tei:name</code> being queried. Only the last name in
               the <code>tei:name</code> is indexed in the search engine and only this one will yield a
@@ -204,7 +205,7 @@ presentation of return formats below follows the different values of <code>level
 <h3>At <code>cat_full</code> level</h3>
 <p>
     In this case, a complete catalogue encoded in <code>xml-tei</code> will be returned. It is
-    the same as <a href="https://github.com/katabase/Application/blob/main/APP/data/CAT_000148_tagged.xml">
+    the same as <a href="https://github.com/katabase/Application/blob/main/APP/data/CAT_000148.xml">
     any catalogue of the project</a>, except that a <code>tei:note</code> has been added to the
     <code>TEI//sourceDesc/publicationStmt</code> in order to describe the context in which
     the file was retrieved: the query parameters, the date and time of the query and the HTTP

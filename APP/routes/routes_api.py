@@ -57,7 +57,7 @@ def katapi_cat_full(req_id):
     found = True  # boolean indicating wether a file has been found, which will define the
     #               way the response object is built
     try:
-        results = open(f"{DATA}/{req_id}_wd.xml", mode="r", encoding="utf-8")
+        results = open(f"{DATA}/{req_id}.xml", mode="r", encoding="utf-8")
     except FileNotFoundError:
         results = etree.Element("div", nsmap=XmlTei.ns)
         results.set("type", "search-results")
@@ -324,7 +324,9 @@ def katapi():
     # look for invalid values specific to cat_stat and cat_full
     if "level" in req.keys() and req["level"] == "cat_stat":
         # check for invalid names
-        if "name" in req.keys() and not re.search(r"^(LAC|RDA|LAV|AUC|OTH)$", req["name"]):
+        if "name" in req.keys() and not re.search(
+                r"^([Ll][Aa][Cc]|[Rr][Dd][Aa]|[Ll][Aa][Vv]|[Aa][Uu][Cc]|[Oo][Tt][Hh])$", req["name"]
+        ):
             errors.append("cat_stat+name")
         # check for general invalid data
         if "orig_date" in req.keys():

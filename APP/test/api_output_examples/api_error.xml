@@ -24,44 +24,45 @@
       </titleStmt>
       <publicationStmt>
         <ab>
-          <date type="file-creation-date" when-iso="2022-08-23T18:28:03.929833">2022-08-23T18:28:03.929833</date>
+          <date type="file-creation-date" when-iso="2022-08-23T22:38:27.394900">2022-08-23T22:38:27.394900</date>
           <ref type="http-status-code" target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422">422</ref>
           <note>Original data made available under Creative Commons Attribution 2.0 Generic (CC BY 2.0)</note>
           <table>
             <head>Query parameters</head>
             <row>
-  <cell role="key" xml:id="format">format</cell>
-  <cell role="key" xml:id="sell_date">sell_date</cell>
-</row>
+              <cell role="key" xml:id="format">format</cell>
+              <cell role="key" xml:id="sell_date">sell_date</cell>
+            </row>
             <row>
-  <cell role="value" corresp="format">tei</cell>
-  <cell role="value" corresp="sell_date">2000?5000</cell>
-</row>
+              <cell role="value" corresp="format">tei</cell>
+              <cell role="value" corresp="sell_date">2000?5000</cell>
+            </row>
           </table>
         </ab>
       </publicationStmt>
       <sourceDesc>
         <p>Sources may come from different documents. See the corresponding XML-TEI catalogues on 
-                    <ref target="https://github.com/katabase/Application/tree/main/APP/data">Github</ref>
-                    for detailed description of the sources.
-                </p>
+          <ref target="https://github.com/katabase/Application/tree/main/APP/data">Github</ref>
+          for detailed description of the sources.
+        </p>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
   <text>
     <body>
-        <div type="error-message">
-  <list>
-    <head>Invalid parameters or parameters combination</head>
-    <item ana="no_name+id">
-      <label>no_name+id</label>
-      <desc>You must specify at least a name or an id</desc>
-    </item>
-    <item ana="sell_date" corresp="sell_date">
-      <label>sell_date</label>
-      <desc>The format must match: \d{4}(-\d{4})?</desc>
-    </item>
-  </list>
-</div></body>
+      <div type="error-message">
+        <list>
+          <head>Invalid parameters or parameters combination</head>
+          <item ana="no_name+id">
+            <label>no_name+id</label>
+            <desc>You must specify at least a name or an id</desc>
+          </item>
+          <item ana="sell_date" corresp="sell_date">
+            <label>sell_date</label>
+            <desc>The format must match: \d{4}(-\d{4})?</desc>
+          </item>
+        </list>
+      </div>
+    </body>
   </text>
 </TEI>

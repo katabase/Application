@@ -217,7 +217,7 @@ class XmlTei:
         tei_item = None
         cat = re.search(r"^CAT_\d+", item_id)[0]
         try:
-            with open(f"{DATA}/{cat}_wd.xml", mode="r") as fh:
+            with open(f"{DATA}/{cat}.xml", mode="r") as fh:
                 tree = etree.parse(fh)
                 tei_item = tree.xpath(
                     f"./tei:text//tei:item[@xml:id='{item_id}']",

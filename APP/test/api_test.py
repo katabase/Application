@@ -146,7 +146,6 @@ class APITest(unittest.TestCase):
                 if k == "p3":  # check the empty return
                     self.assertEqual(r["results"], {})
                 if k == "p4":  # check id parameter
-                    print(json.dumps(r, indent=4))
                     self.assertEqual(
                         r["results"],
                         {"CAT_000204_e108_d1": {
