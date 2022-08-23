@@ -20,6 +20,11 @@
   format.
 </p>
 
+<p>
+  The API follows the REST principles where possible, especially by using a
+  stateless architecture with a uniform interface and self descriptives responses.
+</p>
+
 <hr/>
 
 <h2>Quick start</h2>
@@ -179,14 +184,18 @@
 </ul>
 
 <h3>Return formats in general</h3>
-<p>The defining parameter for the API is the <code>level</code>: this parameter defines which other
-parameters can or cannot be used; it also determines the structure of the output format. Thus, the
-presentation of return formats below follows the different values of <code>level</code>.
+<p>
+  The defining parameter for the API is the <code>level</code>: this parameter defines which other
+  parameters can or cannot be used; it also determines the structure of the output format. Thus, the
+  presentation of return formats below follows the different values of <code>level</code>.
+</p>
 <p>
 	Every response is composed of HTTP headers and of response itself (a <code>json</code> or <code>xml-tei</code>
 	file). This file is composed of a header, describing the query context and the response
-	, and of a body, containing the results themselves. Thus, the return format with all <code>level</code> 
-	is always roughly the same (although with <code>level=cat_full</code>, the body's header is much bigger.
+	and of a body, containing the results themselves. If needed, an encoding description is added to
+    the file's header to describe the project-specific vocabulary used in the response. Thus, the return 
+    format with all <code>level</code> is always roughly the same (although with <code>level=cat_full</code>, 
+    the body's header is much bigger.
 </p>
 <p>
     In <code>xml-tei</code>,
