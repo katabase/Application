@@ -3,18 +3,23 @@ from lxml import etree
 from io import StringIO
 import unittest
 import json
+import os
 
 
 # modules inside ../APP must be imported from run, and thus be imported in run.py
 from ..app import app
-from ..utils.classes.file_formats import XmlTei
+from ..utils.constantes import TEST
+from ..utils.api_classes.representations_tei import XmlTei
 
 
-# ----------------------------------------------
+# -----------------------------------------------------
 # a bunch of tests for the API. understanding
 # what's written here implies a proper knowledge
 # of the API's parameters and possible values
-# ----------------------------------------------
+#
+# the tests also save examples of different return
+# formats for different values of `level` parameter
+# -----------------------------------------------------
 
 class APITest(unittest.TestCase):
     """
@@ -63,7 +68,7 @@ class APITest(unittest.TestCase):
         self.assertEqual(str(r.status_code), "422")  # check the http status code
 
         # check the content
-        # loading the json allows to check that it's well formed
+        # loading the json allows to check that it's well-formed
         # + that the proper error messages are present
         error_keys = json.loads(r.get_data())["results"]["error_description"].keys()
         # check for errors that should be keys to response["results"]
@@ -71,10 +76,14 @@ class APITest(unittest.TestCase):
         for e in error_test:
             self.assertIn(e, error_keys)
 
+        # write output to file
+        with open(f"{TEST}/api_output_examples/api_error.json", mode="w") as fh:
+            json.dump(json.loads(r.get_data()), fh, indent=4)
+
         # second test
         params = {
             "format": "tei",  # allowed
-            "sell_date": "2000?5000",  # incompatible with id
+            "sell_date": "2000?5000",  # invalid value
             }
         query = f"/katapi?{urlencode(params)}"
 
@@ -85,6 +94,7 @@ class APITest(unittest.TestCase):
 
         # check that the proper error keys are in the tei:body
         tree = etree.fromstring(r.get_data())
+        XmlTei.xml_to_file(fpath=f"{TEST}/api_output_examples/api_error.xml", tree=tree)  # write to file
 
         error_test = ["sell_date", "no_name+id"]
         error_keys = tree.xpath(".//tei:body//tei:item/tei:label/text()", namespaces=XmlTei.ns)  # list of error keys
@@ -127,6 +137,12 @@ class APITest(unittest.TestCase):
                 self.assertEqual(str(r.status_code), "200")  # check the http status code
                 r = json.loads(r.get_data())
 
+                # write output to file
+                if k == "p1":
+                    # write output to file
+                    with open(f"{TEST}/api_output_examples/api_itm.json", mode="w") as fh:
+                        json.dump(r, fh, indent=4)
+
                 if k == "p3":  # check the empty return
                     self.assertEqual(r["results"], {})
                 if k == "p4":  # check id parameter
@@ -164,6 +180,7 @@ class APITest(unittest.TestCase):
                         []
                     )  # check that an empty tei response is a tei:div with @type="search-results" and no children
                 if k == "p4":  # check id parameter
+                    XmlTei.xml_to_file(fpath=f"{TEST}/api_output_examples/api_itm.xml", tree=tree)  # write to file
                     t_item = etree.fromstring("""
                         <item n="108" xml:id="CAT_000204_e108">
                             <num type="lot">108</num>
@@ -225,6 +242,11 @@ class APITest(unittest.TestCase):
                 self.assertEqual(str(r.status_code), "200")  # check the http status code
                 r = json.loads(r.get_data())
 
+                # write output to file
+                if k == "p1":
+                    with open(f"{TEST}/api_output_examples/api_cat_stat.json", mode="w") as fh:
+                        json.dump(r, fh, indent=4)
+
                 if k == "p2":  # check the empty return
                     self.assertEqual(r["results"], {})
                 if k == "p4":  # check the exact return
@@ -268,6 +290,8 @@ class APITest(unittest.TestCase):
                         []
                     )  # check that an empty tei response is a tei:div with @type="search-results" and no children
                 if k == "p4":  # check the "id" parameter
+
+                    XmlTei.xml_to_file(fpath=f"{TEST}/api_output_examples/api_cat_stat.xml", tree=tree)  # write to file
                     t_item = etree.fromstring("""
                         <item ana="CAT_000362">
                             <label>CAT_000362</label>
@@ -330,6 +354,7 @@ class APITest(unittest.TestCase):
                 # p1 will return a complete catalogue (hard to verify the tei:body)
                 # => check the teiHeader//tei:availability
                 if k == "p1":
+                    XmlTei.xml_to_file(fpath=f"{TEST}/api_output_examples/api_cat_full.xml", tree=tree)  # write to file
                     tei_availability = tree.xpath(".//tei:availability", namespaces=XmlTei.ns)[0]
                     self.assertEqual(
                         tei_availability.xpath("count(.//tei:p)", namespaces=XmlTei.ns), 4
@@ -378,4 +403,5 @@ def run():
     result = runner.run(suite())
     stream.seek(0)
     print("test output", stream.read())
+    os.remove("./save.xml")
     return None

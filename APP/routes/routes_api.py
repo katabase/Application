@@ -8,16 +8,26 @@ import re
 
 from ..app import app
 from ..utils.constantes import DATA
-from ..utils.classes.match import Match
-from ..utils.classes.file_formats import XmlTei, Json
-from ..utils.classes.client_server import APIInvalidInput, APIInternalServerError, ErrorLog
+from ..utils.api_classes.match import Match
+from ..utils.api_classes.representations_tei import XmlTei
+from ..utils.api_classes.representations_json import Json
+from ..utils.api_classes.client_server import APIInvalidInput, APIInternalServerError, ErrorLog
 
 
 # -------------------------------------------------------------------------------------------------------------------
-# an API to send raw data to users
+# an API to send raw data to users. this API follows the REST standard where possible, especially the
+# `stateless` and `uniform interface` conditions (which are the only ones under our control)
 #
 # code released under gnu gpl-3.0 license. developpers:
 # - Paul Kervegan
+#
+# following the principle of separation of concerns, this API can be separarted into
+# different elements and are also separated into different functions:
+# - the interaction with the client, which happens in the `katapi()` function of this file
+# - the interaction with the database, which also happens in this file
+#   (`katapi_cat_full()`, `katapi_cat_stat()`, `katapi_itm()`)
+# - the creation of representations, or views (aka, a whole response body in xml-tei or json)
+#   to return to the client. see the `utils/classes/representations.py` file for those functions
 #
 # API documentation/tutorials:
 # https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
@@ -58,6 +68,10 @@ def katapi_cat_full(req_id):
 def katapi_cat_stat(req):
     """
     return statistical data for all matching catalogues from export_catalog.json
+
+    workflow: first, we retrieve relevant data from `data/export_catalog.json`.
+    then, if `format==tei`, we build a tei representation of those results.
+    finally, we return the whole thing to `katapi()`
 
     json return format:
     -------------------
@@ -106,75 +120,17 @@ def katapi_cat_stat(req):
 
     # if req["format"] == "tei", translate results to tei
     if req["format"] == "tei":
-        tei_div = etree.Element("div", nsmap=XmlTei.ns)
-        tei_div.set("type", "search-results")
-
-        # if there are results, translate them to tei
-        if len(results.keys()) >= 1:
-            tei_list = etree.Element("list", nsmap=XmlTei.ns)
-            tei_head = etree.Element("head", nsmap=XmlTei.ns)
-            tei_head.text = "Search results"
-            tei_list.append(tei_head)
-
-            for key, value in results.items():
-                # build the base of the item
-                tei_item = etree.Element("item", nsmap=XmlTei.ns)
-                tei_item.set("ana", key)
-                tei_label = etree.Element("label", nsmap=XmlTei.ns)
-                tei_label.text = key
-                tei_item.append(tei_label)
-                if "currency" in value.items() and value["currency"] == "FRF":
-                    tei_desc = etree.Element("desc", nsmap=XmlTei.ns)
-                    tei_desc.text = "Prices are expressed in constant 1900 francs"
-                    tei_item.append(tei_desc)
-
-                # build its contents: the tei:terms, containing the data on an item
-                for k, v in value.items():
-
-                    # special behaviour for that one: it contains a dict mapping item's xml:ids to their price
-                    # - as many tei:terms are created as there are items in the dict
-                    # - the item's @xml:id is containted in the @ana of the tei_term
-                    # - the item's price is the content of the tei_item
-                    if k == "high_price_items_c":
-                        n = 0
-                        for item, price in v.items():
-                            tei_term = etree.Element("term", nsmap=XmlTei.ns)
-                            tei_term.set("key", k)  # the key (type of info) is given in the @key attrib of the term
-                            n += 1
-                            tei_term.set("type", "constant-price")
-                            tei_term.set("ana", item)
-                            tei_term.text = str(price)
-                            tei_item.append(tei_term)
-
-                    # for other elements, there is only one tei:term per k-v couple, so it's easier
-                    else:
-                        tei_term = etree.Element("term", nsmap=XmlTei.ns)
-                        tei_term.set("key", k)  # the key (type of info) is given in the @key attrib of the term
-
-                        # add additional attributes and elements:
-                        # - @type (for dates and prices),
-                        # - @corresp (for keys that have been queried by the client),
-                        # - @n (for number: high_price_items_c can contain several elements)
-                        # - @ana (for high_price_items_c: to contain the most expensive item's @xml:id)
-                        if k in req.keys():
-                            tei_term.set("corresp", k)  # point to the user's query in tei:publicationStmt//tei:table
-                        if "price" in k:
-                            tei_term.set("type", "constant-price")
-                        elif "date" in k:
-                            tei_term.set("type", "date")
-                        tei_term.text = str(v)
-                        tei_item.append(tei_term)
-                tei_list.append(tei_item)  # append the complete item to the list
-            tei_div.append(tei_list)  # append the list
-        results = XmlTei.pretty_print(tei_div)
-
+        results = XmlTei.build_response_teibody_cat_stat(data=results, req=req)
     return results
 
 
 def katapi_itm(req):
     """
     return all matching items (catalogue entries) from export_item.json
-
+    - if `format==json`, the json is build directly from reading the data
+      and there is no need to build an extra representation
+    - if `format==tei`, data is retrieved here and then a tei representation
+      is built using `XmlTei.build_response_teibody_itm()`
 
     json return format:
     -------------------
@@ -211,6 +167,7 @@ def katapi_itm(req):
     :param req: the user request from which we try to match entries
     :return: results, either a json or etree containing matching results
     """
+    # json format
     if req["format"] == "json":
         with open(f"{DATA}/json/export_item.json", mode="r") as fh:
             data = json.load(fh)
@@ -230,31 +187,22 @@ def katapi_itm(req):
                 if v["author"] is not None:
                     if Match.match_item(req, v, mode) is True:
                         results[k] = v
-    else:
 
-        # if querying an id, read the entry in the relevant xml file
-        # the relevant tei:item will be returned in a tei:div/tei:list
-        # containing a tei:head + tei:item (the entry itself)
+    # tei format
+    else:
+        # if querying an id, read the entry in the relevant xml file and put it in a list
         if "id" in req.keys():
             results = etree.Element("div", nsmap=XmlTei.ns)
             results.set("type", "search-results")
-            tei_item = XmlTei.get_item_from_id(re.search(r"CAT_\d+_e\d+", req["id"])[0])
-            if tei_item is not None:
-                # add the tei_item inside a tei:list with a tei:head => add the tei:list to results
-                tei_list = etree.Element("list", nsmap=XmlTei.ns)
-                tei_head = etree.Element("head", nsmap=XmlTei.ns)
-                tei_head.text = "Search results"
-                tei_list.append(tei_head)
-                tei_list.append(tei_item)
-                results.append(tei_list)
+            data = [XmlTei.get_item_from_id(re.search(r"CAT_\d+_e\d+", req["id"])[0])]
 
-        # if querying a name
+        # if querying a name, build a list of relevant tei:items
         else:
+            # build a list of relevant items's @xml:id from the json in order to retrieve
+            # these elements in the xml-tei catalogues
             with open(f"{DATA}/json/export_item.json", mode="r") as fh:
                 data = json.load(fh)
             relevant = []  # list of relevant @xml:id
-
-            # build a list of relevant items based on the json.
             mode = Match.set_match_mode(req)  # determine on which params to query in the json
             for k, v in data.items():
                 if v["author"] is not None:
@@ -262,22 +210,17 @@ def katapi_itm(req):
                         # add the item's id to the list of relevant ids
                         relevant.append(re.search(r"^CAT_\d+_e\d+", k)[0])
             relevant = set(relevant)  # deduplicate
+            data = []
 
-            # retrieve the tei representation of all those items
-            results = etree.Element("div", nsmap=XmlTei.ns)  # div to store the results. empty if no results
-            results.set("type", "search-results")
-            if len(relevant) > 0:
-                tei_list = etree.Element("list", nsmap=XmlTei.ns)
-                tei_head = etree.Element("head", nsmap=XmlTei.ns)
-                tei_head.text = "Search results"
-                tei_list.append(tei_head)
-                for r in relevant:
-                    try:
-                        tei_list.append(XmlTei.get_item_from_id(r))  # add the relevant items to our tei
-                    except TypeError:
-                        pass
-                results.append(tei_list)
-        results = XmlTei.pretty_print(results)
+            # get the relevant tei:items from the tei catalogues
+            for r in relevant:
+                try:
+                    data.append(XmlTei.get_item_from_id(r))
+                except TypeError:
+                    pass
+
+        # pass the list of relevant tei:items to build the response body
+        results = XmlTei.build_response_teibody_itm(data)
     return results
 
 

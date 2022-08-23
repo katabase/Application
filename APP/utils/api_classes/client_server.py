@@ -290,4 +290,5 @@ class ErrorLog:
         return None
 
 
-from .file_formats import XmlTei, Json  # avoid circular imports
+from .representations_tei import XmlTei  # avoid circular imports
+from .representations_json import Json  # avoid circular imports

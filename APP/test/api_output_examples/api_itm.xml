@@ -24,45 +24,175 @@
       </titleStmt>
       <publicationStmt>
         <ab>
-          <date type="file-creation-date" when-iso="2022-08-17T13:40:33.769395">2022-08-17T13:40:33.769395</date>
+          <date type="file-creation-date" when-iso="2022-08-23T16:54:27.617702">2022-08-23T16:54:27.617702</date>
           <ref type="http-status-code" target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200">200</ref>
           <note>Original data made available under Creative Commons Attribution 2.0 Generic (CC BY 2.0)</note>
           <table>
             <head>Query parameters</head>
             <row>
-              <cell role="key" xml:id="level">level</cell>
-              <cell role="key" xml:id="id">id</cell>
-              <cell role="key" xml:id="format">format</cell>
-            </row>
+  <cell role="key" xml:id="level">level</cell>
+  <cell role="key" xml:id="id">id</cell>
+  <cell role="key" xml:id="format">format</cell>
+</row>
             <row>
-              <cell role="value" corresp="level">itm</cell>
-              <cell role="value" corresp="id">CAT_000204_e108_d1</cell>
-              <cell role="value" corresp="format">tei</cell>
-            </row>
+  <cell role="value" corresp="level">itm</cell>
+  <cell role="value" corresp="id">CAT_000204_e108_d1</cell>
+  <cell role="value" corresp="format">tei</cell>
+</row>
           </table>
         </ab>
       </publicationStmt>
       <sourceDesc>
         <p>Sources may come from different documents. See the corresponding XML-TEI catalogues on 
-          <ref target="https://github.com/katabase/Application/tree/main/APP/data">Github</ref>
-          for detailed description of the sources.
-        </p>
+                    <ref target="https://github.com/katabase/Application/tree/main/APP/data">Github</ref>
+                    for detailed description of the sources.
+                </p>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="wd" matchPattern="(Q[0-9]+)" replacementPattern="https://www.wikidata.org/wiki/$1">
+            </prefixDef>
+      </listPrefixDef>
+      <classDecl>
+        <taxonomy xml:id="document_format">
+          <desc>Document format</desc>
+          <category xml:id="document_format_1">
+            <catDesc>In-folio</catDesc>
+          </category>
+          <category xml:id="document_format_2">
+            <catDesc>In-2°</catDesc>
+          </category>
+          <category xml:id="document_format_3">
+            <catDesc>In-3°</catDesc>
+          </category>
+          <category xml:id="document_format_4">
+            <catDesc>In-quarto</catDesc>
+          </category>
+          <category xml:id="document_format_8">
+            <catDesc>In-octavo</catDesc>
+          </category>
+          <category xml:id="document_format_12">
+            <catDesc>In-12</catDesc>
+          </category>
+          <category xml:id="document_format_16">
+            <catDesc>In-16</catDesc>
+          </category>
+          <category xml:id="document_format_18">
+            <catDesc>In-18</catDesc>
+          </category>
+          <category xml:id="document_format_32">
+            <catDesc>In-32</catDesc>
+          </category>
+          <category xml:id="document_format_40">
+            <catDesc>In-40</catDesc>
+          </category>
+          <category xml:id="document_format_48">
+            <catDesc>In-48</catDesc>
+          </category>
+          <category xml:id="document_format_64">
+            <catDesc>In-64</catDesc>
+          </category>
+          <category xml:id="document_format_101">
+            <catDesc>In-folio oblong</catDesc>
+          </category>
+          <category xml:id="document_format_102">
+            <catDesc>In-2° oblong</catDesc>
+          </category>
+          <category xml:id="document_format_103">
+            <catDesc>In-3° oblong</catDesc>
+          </category>
+          <category xml:id="document_format_104">
+            <catDesc>In-quarto oblong</catDesc>
+          </category>
+          <category xml:id="document_format_108">
+            <catDesc>In-octavo oblong</catDesc>
+          </category>
+          <category xml:id="document_format_112">
+            <catDesc>In-12 oblong</catDesc>
+          </category>
+          <category xml:id="document_format_116">
+            <catDesc>In-16 oblong</catDesc>
+          </category>
+          <category xml:id="document_format_118">
+            <catDesc>In-18 oblong</catDesc>
+          </category>
+          <category xml:id="document_format_132">
+            <catDesc>In-32 oblong</catDesc>
+          </category>
+          <category xml:id="document_format_140">
+            <catDesc>In-40 oblong</catDesc>
+          </category>
+          <category xml:id="document_format_148">
+            <catDesc>In-48 oblong</catDesc>
+          </category>
+          <category xml:id="document_format_164">
+            <catDesc>In-64 oblong</catDesc>
+          </category>
+        </taxonomy>
+        <taxonomy xml:id="document_term">
+          <desc>Document types</desc>
+          <category xml:id="document_term_1">
+            <catDesc>Apostille autographe signée | signed autograph apostilla</catDesc>
+          </category>
+          <category xml:id="document_term_2">
+            <catDesc>Pièce autographe signée | signed autograph document</catDesc>
+          </category>
+          <category xml:id="document_term_3">
+            <catDesc>Pièce autographe | autograph document</catDesc>
+          </category>
+          <category xml:id="document_term_4">
+            <catDesc>Pièce signée | signed document</catDesc>
+          </category>
+          <category xml:id="document_term_5">
+            <catDesc>Billet autographe signé | signed autograph short document</catDesc>
+          </category>
+          <category xml:id="document_term_6">
+            <catDesc>Billet signé | signed short document</catDesc>
+          </category>
+          <category xml:id="document_term_7">
+            <catDesc>Lettre autographe signée | signed autograph letter</catDesc>
+          </category>
+          <category xml:id="document_term_8">
+            <catDesc>Lettre autographe | autograph letter</catDesc>
+          </category>
+          <category xml:id="document_term_9">
+            <catDesc>Lettre signée | signed letter</catDesc>
+          </category>
+          <category xml:id="document_term_10">
+            <catDesc>Brevet signé | signed certificate</catDesc>
+          </category>
+          <category xml:id="document_term_11">
+            <catDesc>Quittance autographe signée | signed autograph receipt</catDesc>
+          </category>
+          <category xml:id="document_term_12">
+            <catDesc>Quittance signée | signed receipt</catDesc>
+          </category>
+          <category xml:id="document_term_13">
+            <catDesc>Manuscrit autographe | autograph manuscript</catDesc>
+          </category>
+          <category xml:id="document_term_14">
+            <catDesc>Chanson autographe | autograph song</catDesc>
+          </category>
+          <category xml:id="document_term_15">
+            <catDesc>Document (?) Autographe signé | signed autograph document (?)</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <div type="search-results">
-        <list><head>Search results</head><item n="108" xml:id="CAT_000204_e108">
-          <num type="lot">108</num>
-          <name type="author">BEETHOVEN (L. van)</name>
-          <trait>
-            <p>le grand compositeur de musique.</p>
-          </trait>
-          <desc xml:id="CAT_000204_e108_d1"><term ana="#document_type_9">L. s.</term> à M. M. Schlesinger, à Berlin; Vienne, <date when="1820-05-31">31 mai 1820</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet</desc><note>Curieuse lettre sur ses ouvrages. Il leur accorde le droit de vendre ses compositions en Angleterre, y compris les airs écossais, aux conditions indiquées par lui. Il s'engage à leur livrer dans trois mois trois sonates pour le prix de 90 florins qu'ils ont fixé. C'est pour leur être agréable qu'il accepte un si petit honoraire. « Je suis habitué à faire des sacrifices, la composition de mes OEuvres n'étant pas faite seulement au point de vue du rapport des honoraires, mais surtout dans l'intention d'en tirer quelque chose de bon pour l'art.»</note>
-        </item>
-        </list>
-      </div>
-    </body>
+        <div type="search-results">
+  <list><head>Search results</head><item n="108" xml:id="CAT_000204_e108">
+               <num type="lot">108</num>
+               <name type="author">BEETHOVEN (L. van)</name>
+               <trait>
+                  <p>le grand compositeur de musique.</p>
+               </trait>
+               <desc xml:id="CAT_000204_e108_d1"><term ana="#document_type_9">L. s.</term> à M. M. Schlesinger, à Berlin; Vienne, <date when="1820-05-31">31 mai 1820</date>, <measure type="length" unit="p" n="2">2 p.</measure> <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet</desc><note>Curieuse lettre sur ses ouvrages. Il leur accorde le droit de vendre ses compositions en Angleterre, y compris les airs écossais, aux conditions indiquées par lui. Il s'engage à leur livrer dans trois mois trois sonates pour le prix de 90 florins qu'ils ont fixé. C'est pour leur être agréable qu'il accepte un si petit honoraire. « Je suis habitué à faire des sacrifices, la composition de mes OEuvres n'étant pas faite seulement au point de vue du rapport des honoraires, mais surtout dans l'intention d'en tirer quelque chose de bon pour l'art.»</note>
+            </item>
+            </list>
+</div></body>
   </text>
 </TEI>

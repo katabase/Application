@@ -1,30 +1,3275 @@
 {
     "head": {
+        "encoding_desc": {
+            "cat_type": "The type of catalogue (`LAC`|`RDA`|`AUC`|`OTH`)",
+            "currency": "The currency of the prices returned. `FRF` corresponds to french francs.",
+            "high_price_c": "The most expensive items in the catalogue, in constant 1900 francs. In the whole API, the `_c` suffix indicates that a price is expressed in constant 1900 francs.",
+            "high_price_items_c": "The most expensive items in the catalogue. Each item's `@xml:id` is associated to its price, in constant francs.",
+            "item_count": "The number of manuscripts for sale in the catalogue.",
+            "low_price_c": "The least expensive item's price, in constant 1900 francs.",
+            "mean_price_c": "The average price for a catalogue item, in constant 1900 francs.",
+            "median_price_c": "The median price for a catalogue item, in constant francs.",
+            "mode_price_c": "The mode price (the price that appears the most often in a catalogue)For an item, in constant francs.",
+            "sell_date": "The year of the sale presented in the catalogue.",
+            "title": "The title of the catalogue, and, by extension, of the sale.",
+            "total_price_c": "The sum of each item's price, in constant francs",
+            "variance_price_c": "The variance of the prices inside the catalogue."
+        },
         "query": {
             "format": "json",
-            "id": "CAT_000362",
-            "level": "cat_stat"
+            "level": "cat_stat",
+            "name": "RDA",
+            "sell_date": "1800-1900"
         },
-        "query_date": "2022-08-17T13:17:29.808084",
+        "query_date": "2022-08-23T16:54:29.850978",
         "status_code": 200
     },
     "results": {
-        "CAT_000362": {
-            "cat_type": "LAC",
+        "CAT_000001": {
+            "cat_type": "RDA",
+            "item_count": 379,
+            "sell_date": "1845",
+            "title": "Vente Charon, 14 mai 1845"
+        },
+        "CAT_000002": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 51.0,
+            "high_price_items_c": {
+                "CAT_000002_e189": 51.0
+            },
+            "item_count": 189,
+            "low_price_c": 1.53,
+            "mean_price_c": 5.4235483870967744,
+            "median_price_c": 3.57,
+            "mode_price_c": 3.06,
+            "sell_date": "Septembre - Decembre 1871",
+            "title": "RDA, N\u00b029 (septembre 1871)",
+            "total_price_c": 1008,
+            "variance_price_c": 44.285716441207086
+        },
+        "CAT_000004": {
+            "cat_type": "RDA",
+            "item_count": 133,
+            "sell_date": "1896",
+            "title": "Vente Etienne Charavay, 30 mai 1986"
+        },
+        "CAT_000005": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 663.0,
+            "high_price_items_c": {
+                "CAT_000005_e237": 663.0
+            },
+            "item_count": 137,
+            "low_price_c": 2.04,
+            "mean_price_c": 11.164651162790697,
+            "median_price_c": 3.57,
+            "mode_price_c": 2.55,
+            "sell_date": "1856-10",
+            "title": "Catalogue Laverdet, N\u00b03 (octobre 1856)",
+            "total_price_c": 1440,
+            "variance_price_c": 3410.2974357310254
+        },
+        "CAT_000017": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 165.75,
+            "high_price_items_c": {
+                "CAT_000017_e126": 165.75
+            },
+            "item_count": 1,
+            "low_price_c": 165.75,
+            "mean_price_c": 165.75,
+            "median_price_c": 165.75,
+            "mode_price_c": 165.75,
+            "sell_date": "1871",
+            "title": "Collection Merlin, 31 octobre 1871",
+            "total_price_c": 165,
+            "variance_price_c": 0.0
+        },
+        "CAT_000018": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 561.0,
+            "high_price_items_c": {
+                "CAT_000018_e144": 561.0
+            },
+            "item_count": 192,
+            "low_price_c": 1.53,
+            "mean_price_c": 10.565811518324606,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1873-08",
+            "title": "RDA, N\u00b037 (ao\u00fbt 1873)",
+            "total_price_c": 2018,
+            "variance_price_c": 1658.1071772210191
+        },
+        "CAT_000019": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 71.4,
+            "high_price_items_c": {
+                "CAT_000019_e3955": 71.4
+            },
+            "item_count": 163,
+            "low_price_c": 1.27,
+            "mean_price_c": 8.374551282051282,
+            "median_price_c": 4.08,
+            "mode_price_c": 2.04,
+            "sell_date": "1868-12",
+            "title": "RDA, N\u00b019 (d\u00e9cembre 1868)",
+            "total_price_c": 1306,
+            "variance_price_c": 141.2647106960881
+        },
+        "CAT_000020": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 127.5,
+            "high_price_items_c": {
+                "CAT_000020_e4136": 127.5
+            },
+            "item_count": 218,
+            "low_price_c": 1.02,
+            "mean_price_c": 7.88,
+            "median_price_c": 3.06,
+            "mode_price_c": 2.04,
+            "sell_date": "1869-03",
+            "title": "RDA, N\u00b021 (Mars-Avril 1869)",
+            "total_price_c": 1639,
+            "variance_price_c": 207.56430192307693
+        },
+        "CAT_000021": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000021_e4399": 204.0
+            },
+            "item_count": 207,
+            "low_price_c": 1.53,
+            "mean_price_c": 11.448844221105528,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1869-05",
+            "title": "RDA, N\u00b022 (Mai-Juillet 1869)",
+            "total_price_c": 2278,
+            "variance_price_c": 385.58023635261736
+        },
+        "CAT_000022": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 51.0,
+            "high_price_items_c": {
+                "CAT_000022_e115": 51.0,
+                "CAT_000022_e136": 51.0,
+                "CAT_000022_e200": 51.0
+            },
+            "item_count": 225,
+            "low_price_c": 0.11,
+            "mean_price_c": 4.344654377880184,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1869-10",
+            "title": "RDA, N\u00b023 (Octobre 1869)",
+            "total_price_c": 942,
+            "variance_price_c": 42.09139630911678
+        },
+        "CAT_000023": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 51.0,
+            "high_price_items_c": {
+                "CAT_000023_e49": 51.0,
+                "CAT_000023_e55": 51.0
+            },
+            "item_count": 166,
+            "low_price_c": 1.02,
+            "mean_price_c": 3.73888198757764,
+            "median_price_c": 2.55,
+            "mode_price_c": 2.04,
+            "sell_date": "1869-12",
+            "title": "RDA, N\u00b024 (D\u00e9cembre 1869)",
+            "total_price_c": 601,
+            "variance_price_c": 36.7394024767563
+        },
+        "CAT_000024": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 1854.36,
+            "high_price_items_c": {
+                "CAT_000024_e2": 1854.36
+            },
+            "item_count": 175,
+            "low_price_c": 1.02,
+            "mean_price_c": 15.584651162790697,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1872-04",
+            "title": "RDA, N\u00b030 (Avril 1872)",
+            "total_price_c": 2680,
+            "variance_price_c": 19795.080500459702
+        },
+        "CAT_000025": {
+            "cat_type": "RDA",
             "currency": "FRF",
             "high_price_c": 102.0,
             "high_price_items_c": {
-                "CAT_000362_e27096": 102.0
+                "CAT_000025_e58": 102.0,
+                "CAT_000025_e74": 102.0
             },
-            "item_count": 106,
-            "low_price_c": 1.27,
-            "mean_price_c": 9.810188679245282,
-            "median_price_c": 4.59,
+            "item_count": 174,
+            "low_price_c": 2.04,
+            "mean_price_c": 11.79859649122807,
+            "median_price_c": 6.12,
+            "mode_price_c": 4.08,
+            "sell_date": "1872-05",
+            "title": "RDA, N\u00b031 (Mai-Juin 1872)",
+            "total_price_c": 2017,
+            "variance_price_c": 235.2002261003386
+        },
+        "CAT_000026": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000026_e144": 153.0
+            },
+            "item_count": 203,
+            "low_price_c": 2.04,
+            "mean_price_c": 8.7001,
+            "median_price_c": 5.1,
             "mode_price_c": 3.06,
-            "sell_date": "1875",
-            "title": "Vente Jacques Charavay, ao\u00fbt 1875, n\u00ba 185",
-            "total_price_c": 1039,
-            "variance_price_c": 194.2879773228907
+            "sell_date": "1872-08",
+            "title": "RDA, N\u00b032 (Mai-Juin 1872)",
+            "total_price_c": 1740,
+            "variance_price_c": 235.62633499000003
+        },
+        "CAT_000027": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 51.0,
+            "high_price_items_c": {
+                "CAT_000027_e21": 51.0
+            },
+            "item_count": 120,
+            "low_price_c": 2.04,
+            "mean_price_c": 5.791525423728814,
+            "median_price_c": 4.08,
+            "mode_price_c": 4.08,
+            "sell_date": "1872-11",
+            "title": "RDA, N\u00b033 (Novembre 1872)",
+            "total_price_c": 683,
+            "variance_price_c": 37.29360275782821
+        },
+        "CAT_000028": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 66.3,
+            "high_price_items_c": {
+                "CAT_000028_e160": 66.3
+            },
+            "item_count": 206,
+            "low_price_c": 2.04,
+            "mean_price_c": 6.266699507389163,
+            "median_price_c": 4.08,
+            "mode_price_c": 3.06,
+            "sell_date": "1873-02",
+            "title": "RDA, N\u00b034 (F\u00e9vrier 1873)",
+            "total_price_c": 1272,
+            "variance_price_c": 44.91264083088645
+        },
+        "CAT_000029": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 20.4,
+            "high_price_items_c": {
+                "CAT_000029_e58": 20.4
+            },
+            "item_count": 71,
+            "low_price_c": 1.02,
+            "mean_price_c": 5.2092857142857145,
+            "median_price_c": 4.08,
+            "mode_price_c": 3.06,
+            "sell_date": "1873-05",
+            "title": "RDA, N\u00b035 (Mai 1873)",
+            "total_price_c": 364,
+            "variance_price_c": 11.956372346938775
+        },
+        "CAT_000030": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 20.4,
+            "high_price_items_c": {
+                "CAT_000030_e222": 20.4,
+                "CAT_000030_e230": 20.4
+            },
+            "item_count": 240,
+            "low_price_c": 2.04,
+            "mean_price_c": 5.084644351464435,
+            "median_price_c": 4.08,
+            "mode_price_c": 3.06,
+            "sell_date": "1874-02",
+            "title": "RDA, N\u00b038 (F\u00e9vrier 1874)",
+            "total_price_c": 1215,
+            "variance_price_c": 10.454912739622905
+        },
+        "CAT_000031": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 127.5,
+            "high_price_items_c": {
+                "CAT_000031_e87": 127.5
+            },
+            "item_count": 149,
+            "low_price_c": 2.04,
+            "mean_price_c": 9.960402684563759,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1874-03",
+            "title": "RDA, N\u00b039 (Mars 1874)",
+            "total_price_c": 1484,
+            "variance_price_c": 249.01714614656998
+        },
+        "CAT_000032": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 81.6,
+            "high_price_items_c": {
+                "CAT_000032_e94": 81.6
+            },
+            "item_count": 142,
+            "low_price_c": 2.04,
+            "mean_price_c": 8.389859154929578,
+            "median_price_c": 4.08,
+            "mode_price_c": 3.06,
+            "sell_date": "1874-05",
+            "title": "RDA, N\u00b040 (Mai 1874)",
+            "total_price_c": 1191,
+            "variance_price_c": 124.09179575481053
+        },
+        "CAT_000033": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 71.4,
+            "high_price_items_c": {
+                "CAT_000033_e126": 71.4
+            },
+            "item_count": 180,
+            "low_price_c": 2.04,
+            "mean_price_c": 7.652849162011173,
+            "median_price_c": 5.1,
+            "mode_price_c": 4.08,
+            "sell_date": "1874-06",
+            "title": "RDA, N\u00b041 (Juin 1874)",
+            "total_price_c": 1369,
+            "variance_price_c": 66.33421031803003
+        },
+        "CAT_000034": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 40.8,
+            "high_price_items_c": {
+                "CAT_000034_e161": 40.8,
+                "CAT_000034_e169": 40.8,
+                "CAT_000034_e76": 40.8
+            },
+            "item_count": 181,
+            "low_price_c": 2.04,
+            "mean_price_c": 6.062696629213483,
+            "median_price_c": 4.08,
+            "mode_price_c": 3.06,
+            "sell_date": "1875-01",
+            "title": "RDA, N\u00b043 (Janvier 1875)",
+            "total_price_c": 1079,
+            "variance_price_c": 40.81780396414594
+        },
+        "CAT_000035": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 459.0,
+            "high_price_items_c": {
+                "CAT_000035_e153": 459.0
+            },
+            "item_count": 174,
+            "low_price_c": 2.04,
+            "mean_price_c": 11.554137931034482,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1875-03",
+            "title": "RDA, N\u00b044 (Mars 1875)",
+            "total_price_c": 2010,
+            "variance_price_c": 1278.16325529132
+        },
+        "CAT_000036": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000036_e18": 204.0
+            },
+            "item_count": 40,
+            "low_price_c": 2.04,
+            "mean_price_c": 29.7075,
+            "median_price_c": 15.3,
+            "mode_price_c": 15.3,
+            "sell_date": "1875-05",
+            "title": "RDA, N\u00b045 (Mai 1875)",
+            "total_price_c": 1188,
+            "variance_price_c": 1822.27035375
+        },
+        "CAT_000037": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 71.4,
+            "high_price_items_c": {
+                "CAT_000037_e152": 71.4
+            },
+            "item_count": 193,
+            "low_price_c": 2.04,
+            "mean_price_c": 7.558736842105263,
+            "median_price_c": 5.1,
+            "mode_price_c": 4.08,
+            "sell_date": "1873-06",
+            "title": "RDA, N\u00b036 (Juin 1873)",
+            "total_price_c": 1436,
+            "variance_price_c": 71.60130787811634
+        },
+        "CAT_000038": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 66.3,
+            "high_price_items_c": {
+                "CAT_000038_e213": 66.3
+            },
+            "item_count": 215,
+            "low_price_c": 1.02,
+            "mean_price_c": 6.647699530516432,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1876-07",
+            "title": "RDA, N\u00b048 (Juillet 1876)",
+            "total_price_c": 1415,
+            "variance_price_c": 52.042309731314326
+        },
+        "CAT_000039": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 51.0,
+            "high_price_items_c": {
+                "CAT_000039_e81": 51.0
+            },
+            "item_count": 115,
+            "low_price_c": 2.04,
+            "mean_price_c": 4.974736842105263,
+            "median_price_c": 4.08,
+            "mode_price_c": 3.06,
+            "sell_date": "1876-11",
+            "title": "RDA, N\u00b049 (Novembre 1876)",
+            "total_price_c": 567,
+            "variance_price_c": 26.833930193905815
+        },
+        "CAT_000040": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000040_e35": 153.0
+            },
+            "item_count": 123,
+            "low_price_c": 2.04,
+            "mean_price_c": 13.110731707317074,
+            "median_price_c": 6.12,
+            "mode_price_c": 6.12,
+            "sell_date": "1877-03",
+            "title": "RDA, N\u00b051 (Mars 1877)",
+            "total_price_c": 1612,
+            "variance_price_c": 440.97198239143364
+        },
+        "CAT_000041": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 85.68,
+            "high_price_items_c": {
+                "CAT_000041_e37": 85.68
+            },
+            "item_count": 152,
+            "low_price_c": 1.02,
+            "mean_price_c": 7.338523489932886,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1877-05",
+            "title": "RDA, N\u00b052 (Mai 1877)",
+            "total_price_c": 1093,
+            "variance_price_c": 85.83897500112609
+        },
+        "CAT_000042": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 66.3,
+            "high_price_items_c": {
+                "CAT_000042_e19": 66.3,
+                "CAT_000042_e47": 66.3
+            },
+            "item_count": 133,
+            "low_price_c": 2.04,
+            "mean_price_c": 14.513587786259542,
+            "median_price_c": 6.12,
+            "mode_price_c": 3.06,
+            "sell_date": "1878-02",
+            "title": "RDA, N\u00b053 (F\u00e9vrier 1878)",
+            "total_price_c": 1901,
+            "variance_price_c": 232.12141842549968
+        },
+        "CAT_000043": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 45.9,
+            "high_price_items_c": {
+                "CAT_000043_e76": 45.9
+            },
+            "item_count": 179,
+            "low_price_c": 1.02,
+            "mean_price_c": 7.402203389830508,
+            "median_price_c": 4.08,
+            "mode_price_c": 3.06,
+            "sell_date": "1878-06",
+            "title": "RDA, N\u00b054 (Juin 1878)",
+            "total_price_c": 1310,
+            "variance_price_c": 58.16572904337834
+        },
+        "CAT_000044": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 71.4,
+            "high_price_items_c": {
+                "CAT_000044_e73": 71.4
+            },
+            "item_count": 212,
+            "low_price_c": 1.84,
+            "mean_price_c": 7.285714285714286,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1878-12",
+            "title": "RDA, N\u00b055 (D\u00e9cembre 1878)",
+            "total_price_c": 1529,
+            "variance_price_c": 62.18690829931973
+        },
+        "CAT_000045": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 51.0,
+            "high_price_items_c": {
+                "CAT_000045_e25": 51.0
+            },
+            "item_count": 189,
+            "low_price_c": 2.04,
+            "mean_price_c": 5.950909090909091,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1879-03",
+            "title": "RDA, N\u00b056 (Mars 1879)",
+            "total_price_c": 1112,
+            "variance_price_c": 25.358280991735533
+        },
+        "CAT_000046": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 127.5,
+            "high_price_items_c": {
+                "CAT_000046_e10": 127.5,
+                "CAT_000046_e23": 127.5,
+                "CAT_000046_e48": 127.5
+            },
+            "item_count": 140,
+            "low_price_c": 2.55,
+            "mean_price_c": 18.25125,
+            "median_price_c": 8.16,
+            "mode_price_c": 5.1,
+            "sell_date": "1879-07",
+            "title": "RDA, N\u00b057 (Juillet 1879)",
+            "total_price_c": 2482,
+            "variance_price_c": 653.8432359375
+        },
+        "CAT_000047": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000047_e49": 153.0
+            },
+            "item_count": 259,
+            "low_price_c": 0.0,
+            "mean_price_c": 5.6000778210116735,
+            "median_price_c": 2.04,
+            "mode_price_c": 2.04,
+            "sell_date": "1879-11",
+            "title": "RDA, N\u00b058 (Novembre 1879)",
+            "total_price_c": 1439,
+            "variance_price_c": 226.71905213402175
+        },
+        "CAT_000048": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000048_e34": 102.0
+            },
+            "item_count": 223,
+            "low_price_c": 2.04,
+            "mean_price_c": 5.949230769230769,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1879-12",
+            "title": "RDA, N\u00b059 (D\u00e9cembre 1879)",
+            "total_price_c": 1314,
+            "variance_price_c": 100.40003786982248
+        },
+        "CAT_000049": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 127.5,
+            "high_price_items_c": {
+                "CAT_000049_e114": 127.5
+            },
+            "item_count": 187,
+            "low_price_c": 2.04,
+            "mean_price_c": 10.834054054054054,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1880-03",
+            "title": "RDA, N\u00b061 (Mars 1880)",
+            "total_price_c": 2004,
+            "variance_price_c": 183.36635815924032
+        },
+        "CAT_000050": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000050_e180": 102.0
+            },
+            "item_count": 180,
+            "low_price_c": 2.04,
+            "mean_price_c": 7.790393258426966,
+            "median_price_c": 4.08,
+            "mode_price_c": 3.06,
+            "sell_date": "1880-05",
+            "title": "RDA, N\u00b062 (Mai 1880)",
+            "total_price_c": 1386,
+            "variance_price_c": 119.09001613748265
+        },
+        "CAT_000051": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 56.1,
+            "high_price_items_c": {
+                "CAT_000051_e139": 56.1
+            },
+            "item_count": 167,
+            "low_price_c": 2.04,
+            "mean_price_c": 14.043658536585365,
+            "median_price_c": 10.2,
+            "mode_price_c": 15.3,
+            "sell_date": "1880-07",
+            "title": "RDA, N\u00b063 (Juillet 1880)",
+            "total_price_c": 2303,
+            "variance_price_c": 107.28297198096372
+        },
+        "CAT_000052": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 51.0,
+            "high_price_items_c": {
+                "CAT_000052_e210": 51.0
+            },
+            "item_count": 210,
+            "low_price_c": 1.02,
+            "mean_price_c": 5.639142857142857,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1880-10",
+            "title": "RDA, N\u00b064 (Octobre 1880)",
+            "total_price_c": 1184,
+            "variance_price_c": 35.19687355102041
+        },
+        "CAT_000053": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 35.7,
+            "high_price_items_c": {
+                "CAT_000053_e220": 35.7
+            },
+            "item_count": 220,
+            "low_price_c": 1.02,
+            "mean_price_c": 4.259315068493151,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1880-11",
+            "title": "RDA, N\u00b065 (Novembre 1880)",
+            "total_price_c": 932,
+            "variance_price_c": 12.974166197535498
+        },
+        "CAT_000054": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 20.4,
+            "high_price_items_c": {
+                "CAT_000054_e123": 20.4
+            },
+            "item_count": 150,
+            "low_price_c": 1.02,
+            "mean_price_c": 4.155302013422819,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1881-01",
+            "title": "RDA, N\u00b066 (Janvier 1881)",
+            "total_price_c": 619,
+            "variance_price_c": 7.0257577946939325
+        },
+        "CAT_000055": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 408.0,
+            "high_price_items_c": {
+                "CAT_000055_e71": 408.0
+            },
+            "item_count": 193,
+            "low_price_c": 1.02,
+            "mean_price_c": 11.574093264248704,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1881-03",
+            "title": "RDA, N\u00b067 (Mars 1881)",
+            "total_price_c": 2233,
+            "variance_price_c": 1264.1546822089183
+        },
+        "CAT_000056": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 127.5,
+            "high_price_items_c": {
+                "CAT_000056_e55": 127.5
+            },
+            "item_count": 127,
+            "low_price_c": 2.04,
+            "mean_price_c": 16.077142857142857,
+            "median_price_c": 6.12,
+            "mode_price_c": 5.1,
+            "sell_date": "1881-05",
+            "title": "RDA, N\u00b068 (Mai 1881)",
+            "total_price_c": 2025,
+            "variance_price_c": 424.65542040816325
+        },
+        "CAT_000057": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 163.2,
+            "high_price_items_c": {
+                "CAT_000057_e13": 163.2,
+                "CAT_000057_e57": 163.2
+            },
+            "item_count": 99,
+            "low_price_c": 3.06,
+            "mean_price_c": 26.12041237113402,
+            "median_price_c": 20.4,
+            "mode_price_c": 20.4,
+            "sell_date": "1881-10",
+            "title": "RDA, N\u00b069 (Octobre 1881)",
+            "total_price_c": 2533,
+            "variance_price_c": 647.9773524072696
+        },
+        "CAT_000058": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 112.2,
+            "high_price_items_c": {
+                "CAT_000058_e122": 112.2
+            },
+            "item_count": 137,
+            "low_price_c": 2.04,
+            "mean_price_c": 11.402408759124087,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1881-11",
+            "title": "RDA, N\u00b070 (Novembre 1881)",
+            "total_price_c": 1562,
+            "variance_price_c": 278.75026062123715
+        },
+        "CAT_000059": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000059_e9": 153.0
+            },
+            "item_count": 23,
+            "low_price_c": 6.12,
+            "mean_price_c": 20.754782608695653,
+            "median_price_c": 15.3,
+            "mode_price_c": 12.24,
+            "sell_date": "1882-02",
+            "title": "RDA, N\u00b071 (F\u00e9vrier 1882)",
+            "total_price_c": 477,
+            "variance_price_c": 831.1084945179585
+        },
+        "CAT_000060": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 40.8,
+            "high_price_items_c": {
+                "CAT_000060_e19": 40.8
+            },
+            "item_count": 38,
+            "low_price_c": 7.14,
+            "mean_price_c": 17.554736842105264,
+            "median_price_c": 16.83,
+            "mode_price_c": 20.4,
+            "sell_date": "1882-03",
+            "title": "RDA, N\u00b072 (Mars 1882)",
+            "total_price_c": 667,
+            "variance_price_c": 61.556519667590024
+        },
+        "CAT_000061": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000061_e110": 102.0
+            },
+            "item_count": 146,
+            "low_price_c": 1.53,
+            "mean_price_c": 12.951875,
+            "median_price_c": 6.63,
+            "mode_price_c": 3.06,
+            "sell_date": "1882-05",
+            "title": "RDA, N\u00b073 (Mai 1882)",
+            "total_price_c": 1865,
+            "variance_price_c": 207.033165234375
+        },
+        "CAT_000062": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000062_e66": 102.0
+            },
+            "item_count": 154,
+            "low_price_c": 3.18,
+            "mean_price_c": 20.245933333333333,
+            "median_price_c": 17.34,
+            "mode_price_c": 25.5,
+            "sell_date": "1882-10",
+            "title": "RDA, N\u00b074 (Octobre 1882)",
+            "total_price_c": 3036,
+            "variance_price_c": 183.2212081288889
+        },
+        "CAT_000063": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 56.1,
+            "high_price_items_c": {
+                "CAT_000063_e143": 56.1
+            },
+            "item_count": 148,
+            "low_price_c": 3.06,
+            "mean_price_c": 10.220675675675675,
+            "median_price_c": 8.16,
+            "mode_price_c": 5.1,
+            "sell_date": "1883-01",
+            "title": "RDA, N\u00b075 (Janvier 1883)",
+            "total_price_c": 1512,
+            "variance_price_c": 52.335910354273196
+        },
+        "CAT_000064": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 40.8,
+            "high_price_items_c": {
+                "CAT_000064_e103": 40.8
+            },
+            "item_count": 167,
+            "low_price_c": 1.02,
+            "mean_price_c": 7.029939393939394,
+            "median_price_c": 5.1,
+            "mode_price_c": 5.1,
+            "sell_date": "1883-03",
+            "title": "RDA, N\u00b077 (Mars 1883)",
+            "total_price_c": 1159,
+            "variance_price_c": 28.806529087235997
+        },
+        "CAT_000065": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 132.6,
+            "high_price_items_c": {
+                "CAT_000065_e66": 132.6
+            },
+            "item_count": 163,
+            "low_price_c": 3.06,
+            "mean_price_c": 15.413333333333334,
+            "median_price_c": 12.24,
+            "mode_price_c": 5.1,
+            "sell_date": "1883-04",
+            "title": "RDA, N\u00b078 (Avril 1883)",
+            "total_price_c": 2496,
+            "variance_price_c": 212.97373333333334
+        },
+        "CAT_000066": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 76.5,
+            "high_price_items_c": {
+                "CAT_000066_e1": 76.5
+            },
+            "item_count": 45,
+            "low_price_c": 7.14,
+            "mean_price_c": 20.014666666666667,
+            "median_price_c": 17.34,
+            "mode_price_c": 12.24,
+            "sell_date": "1883-05",
+            "title": "RDA, N\u00b079 (Mai 1883)",
+            "total_price_c": 900,
+            "variance_price_c": 126.29479822222221
+        },
+        "CAT_000067": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000067_e136": 102.0,
+                "CAT_000067_e43": 102.0
+            },
+            "item_count": 168,
+            "low_price_c": 5.1,
+            "mean_price_c": 18.2325,
+            "median_price_c": 15.3,
+            "mode_price_c": 15.3,
+            "sell_date": "1883-10",
+            "title": "RDA, N\u00b080 (Octobre 1883)",
+            "total_price_c": 3063,
+            "variance_price_c": 242.3783651785714
+        },
+        "CAT_000068": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000068_e62": 153.0
+            },
+            "item_count": 83,
+            "low_price_c": 1.33,
+            "mean_price_c": 18.01963855421687,
+            "median_price_c": 12.24,
+            "mode_price_c": 10.2,
+            "sell_date": "1883-12",
+            "title": "RDA, N\u00b081 (D\u00e9cembre 1883)",
+            "total_price_c": 1495,
+            "variance_price_c": 463.52348541152566
+        },
+        "CAT_000069": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 40.8,
+            "high_price_items_c": {
+                "CAT_000069_e25": 40.8
+            },
+            "item_count": 217,
+            "low_price_c": 2.04,
+            "mean_price_c": 6.171705069124424,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1884-02",
+            "title": "RDA, N\u00b082 (F\u00e9vrier 1884)",
+            "total_price_c": 1339,
+            "variance_price_c": 25.499112760942044
+        },
+        "CAT_000070": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000070_e104": 102.0,
+                "CAT_000070_e6": 102.0
+            },
+            "item_count": 105,
+            "low_price_c": 2.04,
+            "mean_price_c": 10.054285714285713,
+            "median_price_c": 5.1,
+            "mode_price_c": 5.1,
+            "sell_date": "1884-03",
+            "title": "RDA, N\u00b083 (Mars 1884)",
+            "total_price_c": 1055,
+            "variance_price_c": 226.18154448979595
+        },
+        "CAT_000071": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000071_e134": 102.0
+            },
+            "item_count": 134,
+            "low_price_c": 5.1,
+            "mean_price_c": 21.619398496240603,
+            "median_price_c": 16.32,
+            "mode_price_c": 15.3,
+            "sell_date": "1884-04",
+            "title": "RDA, N\u00b084 (Avril 1884)",
+            "total_price_c": 2875,
+            "variance_price_c": 230.49097708180224
+        },
+        "CAT_000072": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000072_e103": 153.0
+            },
+            "item_count": 140,
+            "low_price_c": 3.06,
+            "mean_price_c": 24.611142857142855,
+            "median_price_c": 15.81,
+            "mode_price_c": 15.3,
+            "sell_date": "1884-10",
+            "title": "RDA, N\u00b085 (Octobre 1884)",
+            "total_price_c": 3445,
+            "variance_price_c": 496.714350122449
+        },
+        "CAT_000073": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 40.8,
+            "high_price_items_c": {
+                "CAT_000073_e25": 40.8
+            },
+            "item_count": 73,
+            "low_price_c": 4.08,
+            "mean_price_c": 12.9625,
+            "median_price_c": 10.2,
+            "mode_price_c": 10.2,
+            "sell_date": "1884-11",
+            "title": "RDA, N\u00b086 (Novembre 1884)",
+            "total_price_c": 933,
+            "variance_price_c": 55.009343750000006
+        },
+        "CAT_000074": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000074_e48": 102.0,
+                "CAT_000074_e50": 102.0
+            },
+            "item_count": 108,
+            "low_price_c": 6.12,
+            "mean_price_c": 22.052777777777777,
+            "median_price_c": 19.38,
+            "mode_price_c": 20.4,
+            "sell_date": "1884-12",
+            "title": "RDA, N\u00b087 (D\u00e9cembre 1884)",
+            "total_price_c": 2381,
+            "variance_price_c": 235.3946922839506
+        },
+        "CAT_000075": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000075_e28": 102.0
+            },
+            "item_count": 198,
+            "low_price_c": 2.04,
+            "mean_price_c": 10.769543147208122,
+            "median_price_c": 6.12,
+            "mode_price_c": 3.06,
+            "sell_date": "1885-02",
+            "title": "RDA, N\u00b088 (F\u00e9vrier 1885)",
+            "total_price_c": 2121,
+            "variance_price_c": 151.2254601973769
+        },
+        "CAT_000076": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 255.0,
+            "high_price_items_c": {
+                "CAT_000076_e19": 255.0
+            },
+            "item_count": 157,
+            "low_price_c": 2.04,
+            "mean_price_c": 15.179808917197452,
+            "median_price_c": 8.16,
+            "mode_price_c": 5.1,
+            "sell_date": "1885-03",
+            "title": "RDA, N\u00b089 (Mars 1885)",
+            "total_price_c": 2383,
+            "variance_price_c": 946.512647734188
+        },
+        "CAT_000077": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000077_e100": 102.0,
+                "CAT_000077_e43": 102.0
+            },
+            "item_count": 187,
+            "low_price_c": 1.53,
+            "mean_price_c": 15.376774193548387,
+            "median_price_c": 10.2,
+            "mode_price_c": 3.06,
+            "sell_date": "1885-04",
+            "title": "RDA, N\u00b090 (Avril 1885)",
+            "total_price_c": 2860,
+            "variance_price_c": 255.06270894901147
+        },
+        "CAT_000078": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000078_e38": 204.0
+            },
+            "item_count": 125,
+            "low_price_c": 3.06,
+            "mean_price_c": 30.08592,
+            "median_price_c": 20.4,
+            "mode_price_c": 20.4,
+            "sell_date": "1885-05",
+            "title": "RDA, N\u00b091 (Mai 1885)",
+            "total_price_c": 3760,
+            "variance_price_c": 1171.0346881536
+        },
+        "CAT_000079": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 122.4,
+            "high_price_items_c": {
+                "CAT_000079_e16": 122.4
+            },
+            "item_count": 185,
+            "low_price_c": 2.04,
+            "mean_price_c": 13.210108695652174,
+            "median_price_c": 8.16,
+            "mode_price_c": 3.06,
+            "sell_date": "1885-09",
+            "title": "RDA, N\u00b092 (Septembre-octobre 1885)",
+            "total_price_c": 2430,
+            "variance_price_c": 298.3378652055766
+        },
+        "CAT_000080": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000080_e132": 102.0
+            },
+            "item_count": 183,
+            "low_price_c": 2.04,
+            "mean_price_c": 13.912131147540984,
+            "median_price_c": 10.2,
+            "mode_price_c": 3.06,
+            "sell_date": "1885-10",
+            "title": "RDA, N\u00b093 (Octobre 1885)",
+            "total_price_c": 2545,
+            "variance_price_c": 173.37837742542328
+        },
+        "CAT_000081": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 16.32,
+            "high_price_items_c": {
+                "CAT_000081_e150": 16.32
+            },
+            "item_count": 167,
+            "low_price_c": 1.02,
+            "mean_price_c": 3.467878787878788,
+            "median_price_c": 2.55,
+            "mode_price_c": 2.04,
+            "sell_date": "1870-03",
+            "title": "RDA, N\u00b025 (Mars 1870)",
+            "total_price_c": 572,
+            "variance_price_c": 7.298150045913682
+        },
+        "CAT_000082": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000082_e41": 102.0
+            },
+            "item_count": 220,
+            "low_price_c": 1.02,
+            "mean_price_c": 4.535181818181818,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1870-07",
+            "title": "RDA, N\u00b026 (Juillet 1870)",
+            "total_price_c": 997,
+            "variance_price_c": 63.04483678512398
+        },
+        "CAT_000083": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 40.8,
+            "high_price_items_c": {
+                "CAT_000083_e146": 40.8,
+                "CAT_000083_e210": 40.8
+            },
+            "item_count": 245,
+            "low_price_c": 0.0,
+            "mean_price_c": 3.90844262295082,
+            "median_price_c": 2.55,
+            "mode_price_c": 2.04,
+            "sell_date": "1871-07",
+            "title": "RDA, N\u00b027 (Juillet 1871)",
+            "total_price_c": 953,
+            "variance_price_c": 22.45734675490459
+        },
+        "CAT_000084": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 127.5,
+            "high_price_items_c": {
+                "CAT_000084_e76": 127.5
+            },
+            "item_count": 120,
+            "low_price_c": 2.04,
+            "mean_price_c": 9.894,
+            "median_price_c": 5.1,
+            "mode_price_c": 4.08,
+            "sell_date": "1877-01",
+            "title": "RDA, N\u00b050 (Janvier 1877)",
+            "total_price_c": 1187,
+            "variance_price_c": 212.217324
+        },
+        "CAT_000085": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 30.6,
+            "high_price_items_c": {
+                "CAT_000085_e106": 30.6
+            },
+            "item_count": 261,
+            "low_price_c": 0.0,
+            "mean_price_c": 3.3189494163424125,
+            "median_price_c": 2.55,
+            "mode_price_c": 2.04,
+            "sell_date": "1871-08",
+            "title": "RDA, N\u00b028 (Ao\u00fbt 1871)",
+            "total_price_c": 852,
+            "variance_price_c": 7.679592281487986
+        },
+        "CAT_000086": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 40.8,
+            "high_price_items_c": {
+                "CAT_000086_e137": 40.8,
+                "CAT_000086_e68": 40.8
+            },
+            "item_count": 198,
+            "low_price_c": 2.04,
+            "mean_price_c": 5.157538461538461,
+            "median_price_c": 3.06,
+            "mode_price_c": 3.06,
+            "sell_date": "1880-01",
+            "title": "RDA, N\u00b060 (F\u00e9vrier 1877)",
+            "total_price_c": 1005,
+            "variance_price_c": 28.26889240236686
+        },
+        "CAT_000087": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 91.8,
+            "high_price_items_c": {
+                "CAT_000087_e2": 91.8
+            },
+            "item_count": 202,
+            "low_price_c": 3.06,
+            "mean_price_c": 15.653465346534654,
+            "median_price_c": 12.24,
+            "mode_price_c": 15.3,
+            "sell_date": "1885-11",
+            "title": "RDA, N\u00b094 (Novembre 1885)",
+            "total_price_c": 3161,
+            "variance_price_c": 147.72517313988826
+        },
+        "CAT_000088": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 306.0,
+            "high_price_items_c": {
+                "CAT_000088_e47": 306.0
+            },
+            "item_count": 141,
+            "low_price_c": 3.06,
+            "mean_price_c": 28.531159420289857,
+            "median_price_c": 20.4,
+            "mode_price_c": 20.4,
+            "sell_date": "1885-12",
+            "title": "RDA, N\u00b095 (D\u00e9cembre 1885)",
+            "total_price_c": 3937,
+            "variance_price_c": 1292.4406493803824
+        },
+        "CAT_000091": {
+            "cat_type": "RDA",
+            "item_count": 16,
+            "sell_date": "1822",
+            "title": "Collection Germain Garnier"
+        },
+        "CAT_000092": {
+            "cat_type": "RDA",
+            "item_count": 21,
+            "sell_date": "1824",
+            "title": "Collection Markham Sherwill"
+        },
+        "CAT_000093": {
+            "cat_type": "RDA",
+            "item_count": 1,
+            "sell_date": "1829",
+            "title": "Collection Jacob"
+        },
+        "CAT_000094": {
+            "cat_type": "RDA",
+            "item_count": 56,
+            "sell_date": "1831",
+            "title": "Vente Techener, 31/01/1831"
+        },
+        "CAT_000095": {
+            "cat_type": "RDA",
+            "item_count": 1,
+            "sell_date": "1833",
+            "title": "Collection Bruy\u00e8res-Chalabre"
+        },
+        "CAT_000096": {
+            "cat_type": "RDA",
+            "item_count": 39,
+            "sell_date": "1840",
+            "title": "Collection Pix\u00e9r\u00e9court"
+        },
+        "CAT_000097": {
+            "cat_type": "RDA",
+            "item_count": 1,
+            "sell_date": "1842",
+            "title": "Collection Walpole"
+        },
+        "CAT_000098": {
+            "cat_type": "RDA",
+            "item_count": 4,
+            "sell_date": "1843",
+            "title": "Collection Dolomieu et Libri"
+        },
+        "CAT_000100": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 306.0,
+            "high_price_items_c": {
+                "CAT_000100_e229": 306.0
+            },
+            "item_count": 350,
+            "low_price_c": 1.02,
+            "mean_price_c": 12.974883720930233,
+            "median_price_c": 6.12,
+            "mode_price_c": 5.1,
+            "sell_date": "1886-02",
+            "title": "RDA, N\u00b097 (F\u00e9vrier 1886)",
+            "total_price_c": 4463,
+            "variance_price_c": 574.3361749864793
+        },
+        "CAT_000101": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 306.0,
+            "high_price_items_c": {
+                "CAT_000101_e134": 306.0,
+                "CAT_000101_e210": 306.0
+            },
+            "item_count": 254,
+            "low_price_c": 2.04,
+            "mean_price_c": 15.049047619047618,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1886-03",
+            "title": "RDA, N\u00b098 (Mars-Avril 1886)",
+            "total_price_c": 3792,
+            "variance_price_c": 1308.59920861678
+        },
+        "CAT_000102": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 714.0,
+            "high_price_items_c": {
+                "CAT_000102_e172": 714.0
+            },
+            "item_count": 291,
+            "low_price_c": 3.06,
+            "mean_price_c": 25.872827586206895,
+            "median_price_c": 15.3,
+            "mode_price_c": 15.3,
+            "sell_date": "1886-05",
+            "title": "RDA, N\u00b099 (Mai-Juillet 1886)",
+            "total_price_c": 7503,
+            "variance_price_c": 2060.900574763377
+        },
+        "CAT_000103": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 510.0,
+            "high_price_items_c": {
+                "CAT_000103_e194": 510.0
+            },
+            "item_count": 345,
+            "low_price_c": 1.02,
+            "mean_price_c": 9.447638483965015,
+            "median_price_c": 5.1,
+            "mode_price_c": 5.1,
+            "sell_date": "1886-10",
+            "title": "RDA, N\u00b0100 (Octobre 1886)",
+            "total_price_c": 3240,
+            "variance_price_c": 853.1352337818425
+        },
+        "CAT_000104": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000104_e68": 102.0
+            },
+            "item_count": 270,
+            "low_price_c": 1.02,
+            "mean_price_c": 13.766194029850746,
+            "median_price_c": 10.2,
+            "mode_price_c": 5.1,
+            "sell_date": "1886-11",
+            "title": "RDA, N\u00b0101 (Novembre 1886)",
+            "total_price_c": 3689,
+            "variance_price_c": 173.905951186233
+        },
+        "CAT_000105": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000105_e186": 153.0
+            },
+            "item_count": 248,
+            "low_price_c": 3.06,
+            "mean_price_c": 16.593708333333332,
+            "median_price_c": 11.22,
+            "mode_price_c": 15.3,
+            "sell_date": "1886-12",
+            "title": "RDA, N\u00b0102 (D\u00e9cembre 1886)",
+            "total_price_c": 3982,
+            "variance_price_c": 300.5370391649306
+        },
+        "CAT_000106": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 408.0,
+            "high_price_items_c": {
+                "CAT_000106_e43": 408.0
+            },
+            "item_count": 295,
+            "low_price_c": 1.53,
+            "mean_price_c": 14.447694915254237,
+            "median_price_c": 6.12,
+            "mode_price_c": 5.1,
+            "sell_date": "1887-01",
+            "title": "RDA, N\u00b0103 (Janvier 1887)",
+            "total_price_c": 4262,
+            "variance_price_c": 1074.8470312967538
+        },
+        "CAT_000107": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 408.0,
+            "high_price_items_c": {
+                "CAT_000107_e33": 408.0
+            },
+            "item_count": 273,
+            "low_price_c": 1.02,
+            "mean_price_c": 30.249850746268656,
+            "median_price_c": 12.239999999999998,
+            "mode_price_c": 5.1,
+            "sell_date": "1887-03",
+            "title": "RDA, N\u00b0104 (Mars 1887)",
+            "total_price_c": 8106,
+            "variance_price_c": 2326.970744007574
+        },
+        "CAT_000108": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000108_e236": 204.0
+            },
+            "item_count": 357,
+            "low_price_c": 1.02,
+            "mean_price_c": 7.319267605633803,
+            "median_price_c": 5.1,
+            "mode_price_c": 5.1,
+            "sell_date": "1887-04",
+            "title": "RDA, N\u00b0105 (Avril 1887)",
+            "total_price_c": 2598,
+            "variance_price_c": 135.30203439317597
+        },
+        "CAT_000109": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 510.0,
+            "high_price_items_c": {
+                "CAT_000109_e354": 510.0
+            },
+            "item_count": 384,
+            "low_price_c": 1.02,
+            "mean_price_c": 12.193394255874674,
+            "median_price_c": 6.12,
+            "mode_price_c": 5.1,
+            "sell_date": "1887-06",
+            "title": "RDA, N\u00b0106 (Juin 1887)",
+            "total_price_c": 4670,
+            "variance_price_c": 1250.730443309314
+        },
+        "CAT_000110": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 306.0,
+            "high_price_items_c": {
+                "CAT_000110_e280": 306.0
+            },
+            "item_count": 355,
+            "low_price_c": 2.04,
+            "mean_price_c": 20.991420454545455,
+            "median_price_c": 15.3,
+            "mode_price_c": 15.3,
+            "sell_date": "1887-09",
+            "title": "RDA, N\u00b0107 (Septembre 1887)",
+            "total_price_c": 7388,
+            "variance_price_c": 644.2296298004908
+        },
+        "CAT_000111": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 510.0,
+            "high_price_items_c": {
+                "CAT_000111_e171": 510.0
+            },
+            "item_count": 300,
+            "low_price_c": 1.02,
+            "mean_price_c": 22.481073825503355,
+            "median_price_c": 12.24,
+            "mode_price_c": 20.4,
+            "sell_date": "1887-10",
+            "title": "RDA, N\u00b0108 (Octobre 1887)",
+            "total_price_c": 6699,
+            "variance_price_c": 1675.0772256925363
+        },
+        "CAT_000112": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000112_e181": 204.0,
+                "CAT_000112_e209": 204.0
+            },
+            "item_count": 262,
+            "low_price_c": 1.02,
+            "mean_price_c": 20.197587548638133,
+            "median_price_c": 12.24,
+            "mode_price_c": 15.3,
+            "sell_date": "1887-11",
+            "title": "RDA, N\u00b0109 (Novembre 1887)",
+            "total_price_c": 5190,
+            "variance_price_c": 755.0101000166543
+        },
+        "CAT_000113": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000113_e293": 153.0,
+                "CAT_000113_e343": 153.0
+            },
+            "item_count": 373,
+            "low_price_c": 1.02,
+            "mean_price_c": 12.663432432432433,
+            "median_price_c": 8.16,
+            "mode_price_c": 6.12,
+            "sell_date": "1887-12",
+            "title": "RDA, N\u00b0110 (D\u00e9cembre 1887)",
+            "total_price_c": 4685,
+            "variance_price_c": 271.4117074075968
+        },
+        "CAT_000114": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 258.06,
+            "high_price_items_c": {
+                "CAT_000114_e75": 258.06
+            },
+            "item_count": 304,
+            "low_price_c": 1.02,
+            "mean_price_c": 12.818686868686868,
+            "median_price_c": 8.16,
+            "mode_price_c": 5.1,
+            "sell_date": "1888-02",
+            "title": "RDA, N\u00b0111 (F\u00e9vrier 1888)",
+            "total_price_c": 3807,
+            "variance_price_c": 313.99640938679727
+        },
+        "CAT_000115": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000115_e188": 153.0
+            },
+            "item_count": 290,
+            "low_price_c": 1.02,
+            "mean_price_c": 11.934718309859155,
+            "median_price_c": 8.16,
+            "mode_price_c": 5.1,
+            "sell_date": "1888-03",
+            "title": "RDA, N\u00b0113 (Avril-mai 1887)",
+            "total_price_c": 3389,
+            "variance_price_c": 182.71314252628446
+        },
+        "CAT_000116": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000116_e67": 153.0
+            },
+            "item_count": 316,
+            "low_price_c": 1.33,
+            "mean_price_c": 10.74304761904762,
+            "median_price_c": 8.16,
+            "mode_price_c": 10.2,
+            "sell_date": "1888-05",
+            "title": "RDA, N\u00b0112 (Mars 1887)",
+            "total_price_c": 3384,
+            "variance_price_c": 183.8333589659864
+        },
+        "CAT_000117": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 423.3,
+            "high_price_items_c": {
+                "CAT_000117_e241": 423.3
+            },
+            "item_count": 262,
+            "low_price_c": 5.1,
+            "mean_price_c": 20.902093023255812,
+            "median_price_c": 15.3,
+            "mode_price_c": 15.3,
+            "sell_date": "1888-08",
+            "title": "RDA, N\u00b0114 (Ao\u00fbt 1888)",
+            "total_price_c": 5392,
+            "variance_price_c": 848.1537770146025
+        },
+        "CAT_000118": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000118_e277": 204.0
+            },
+            "item_count": 294,
+            "low_price_c": 1.02,
+            "mean_price_c": 17.403092783505155,
+            "median_price_c": 10.2,
+            "mode_price_c": 5.1,
+            "sell_date": "1888-10",
+            "title": "RDA, N\u00b0115 (Octobre 1888)",
+            "total_price_c": 5064,
+            "variance_price_c": 668.9928832181954
+        },
+        "CAT_000119": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 178.5,
+            "high_price_items_c": {
+                "CAT_000119_e49": 178.5,
+                "CAT_000119_e61": 178.5
+            },
+            "item_count": 252,
+            "low_price_c": 1.02,
+            "mean_price_c": 22.446612903225805,
+            "median_price_c": 11.219999999999999,
+            "mode_price_c": 3.06,
+            "sell_date": "1888-11",
+            "title": "RDA, N\u00b0116 (Novembre 1888)",
+            "total_price_c": 5566,
+            "variance_price_c": 726.816860301769
+        },
+        "CAT_000120": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 357.0,
+            "high_price_items_c": {
+                "CAT_000120_e137": 357.0
+            },
+            "item_count": 305,
+            "low_price_c": 1.02,
+            "mean_price_c": 24.67290429042904,
+            "median_price_c": 15.3,
+            "mode_price_c": 20.4,
+            "sell_date": "1888-12",
+            "title": "RDA, N\u00b0117 (D\u00e9cembre 1888)",
+            "total_price_c": 7475,
+            "variance_price_c": 1128.015172423183
+        },
+        "CAT_000121": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 229.5,
+            "high_price_items_c": {
+                "CAT_000121_e199": 229.5
+            },
+            "item_count": 275,
+            "low_price_c": 1.02,
+            "mean_price_c": 14.472389705882353,
+            "median_price_c": 8.16,
+            "mode_price_c": 3.06,
+            "sell_date": "1889-02",
+            "title": "RDA, N\u00b0118 (F\u00e9vrier 1889)",
+            "total_price_c": 3936,
+            "variance_price_c": 444.095002009894
+        },
+        "CAT_000122": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 255.0,
+            "high_price_items_c": {
+                "CAT_000122_e171": 255.0,
+                "CAT_000122_e218": 255.0
+            },
+            "item_count": 224,
+            "low_price_c": 3.06,
+            "mean_price_c": 23.48744394618834,
+            "median_price_c": 16.32,
+            "mode_price_c": 15.3,
+            "sell_date": "1889-03",
+            "title": "RDA, N\u00b0119 (Mars 1889)",
+            "total_price_c": 5237,
+            "variance_price_c": 978.7123912244365
+        },
+        "CAT_000123": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 61.2,
+            "high_price_items_c": {
+                "CAT_000123_e37": 61.2
+            },
+            "item_count": 355,
+            "low_price_c": 1.02,
+            "mean_price_c": 12.135169491525424,
+            "median_price_c": 8.49,
+            "mode_price_c": 3.06,
+            "sell_date": "1889-04",
+            "title": "RDA, N\u00b0120 (Avril 1889)",
+            "total_price_c": 4295,
+            "variance_price_c": 105.02912836110313
+        },
+        "CAT_000124": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 178.5,
+            "high_price_items_c": {
+                "CAT_000124_e130": 178.5
+            },
+            "item_count": 270,
+            "low_price_c": 1.02,
+            "mean_price_c": 20.00825925925926,
+            "median_price_c": 15.3,
+            "mode_price_c": 15.3,
+            "sell_date": "1889-05",
+            "title": "RDA, N\u00b0121 (Avril 1889)",
+            "total_price_c": 5402,
+            "variance_price_c": 369.65401511796983
+        },
+        "CAT_000125": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 76.5,
+            "high_price_items_c": {
+                "CAT_000125_e172": 76.5,
+                "CAT_000125_e378": 76.5
+            },
+            "item_count": 381,
+            "low_price_c": 1.02,
+            "mean_price_c": 9.847857142857142,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1889-10",
+            "title": "RDA, N\u00b0122 (Avril 1889)",
+            "total_price_c": 3722,
+            "variance_price_c": 114.41701683673469
+        },
+        "CAT_000126": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 176.46,
+            "high_price_items_c": {
+                "CAT_000126_e240": 176.46
+            },
+            "item_count": 287,
+            "low_price_c": 1.02,
+            "mean_price_c": 15.632842105263158,
+            "median_price_c": 10.2,
+            "mode_price_c": 10.2,
+            "sell_date": "1889-11",
+            "title": "RDA, N\u00b0123 (Novembre 1889)",
+            "total_price_c": 4455,
+            "variance_price_c": 357.52032771191136
+        },
+        "CAT_000127": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 227.46,
+            "high_price_items_c": {
+                "CAT_000127_e174": 227.46
+            },
+            "item_count": 222,
+            "low_price_c": 1.53,
+            "mean_price_c": 20.6295,
+            "median_price_c": 15.3,
+            "mode_price_c": 15.3,
+            "sell_date": "1889-12",
+            "title": "RDA, N\u00b0124 (D\u00e9cembre 1889)",
+            "total_price_c": 4538,
+            "variance_price_c": 626.1108874772727
+        },
+        "CAT_000128": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 612.0,
+            "high_price_items_c": {
+                "CAT_000128_e179": 612.0
+            },
+            "item_count": 269,
+            "low_price_c": 1.02,
+            "mean_price_c": 22.521136363636362,
+            "median_price_c": 12.24,
+            "mode_price_c": 15.3,
+            "sell_date": "1890-02",
+            "title": "RDA, N\u00b0125 (F\u00e9vrier 1890)",
+            "total_price_c": 5945,
+            "variance_price_c": 2206.4079237086776
+        },
+        "CAT_000129": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 122.4,
+            "high_price_items_c": {
+                "CAT_000129_e371": 122.4
+            },
+            "item_count": 374,
+            "low_price_c": 1.02,
+            "mean_price_c": 10.550027932960894,
+            "median_price_c": 5.1,
+            "mode_price_c": 3.06,
+            "sell_date": "1890-03",
+            "title": "RDA, N\u00b0126 (Mars 1890)",
+            "total_price_c": 3776,
+            "variance_price_c": 172.9122170383259
+        },
+        "CAT_000130": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000130_e93": 102.0
+            },
+            "item_count": 263,
+            "low_price_c": 1.02,
+            "mean_price_c": 18.446692307692306,
+            "median_price_c": 15.3,
+            "mode_price_c": 10.2,
+            "sell_date": "1890-04",
+            "title": "RDA, N\u00b0127 (Avril 1890)",
+            "total_price_c": 4796,
+            "variance_price_c": 285.3616890591716
+        },
+        "CAT_000131": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 306.0,
+            "high_price_items_c": {
+                "CAT_000131_e204": 306.0
+            },
+            "item_count": 281,
+            "low_price_c": 1.02,
+            "mean_price_c": 18.2247311827957,
+            "median_price_c": 10.2,
+            "mode_price_c": 8.16,
+            "sell_date": "1890-05",
+            "title": "RDA, N\u00b0128 (Mai 1890)",
+            "total_price_c": 5084,
+            "variance_price_c": 809.5135862180599
+        },
+        "CAT_000132": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 142.8,
+            "high_price_items_c": {
+                "CAT_000132_e232": 142.8
+            },
+            "item_count": 372,
+            "low_price_c": 1.02,
+            "mean_price_c": 12.342837837837838,
+            "median_price_c": 8.16,
+            "mode_price_c": 3.06,
+            "sell_date": "1890-06",
+            "title": "RDA, N\u00b0129 (Juin 1890)",
+            "total_price_c": 4566,
+            "variance_price_c": 185.77860410883858
+        },
+        "CAT_000133": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 153.0,
+            "high_price_items_c": {
+                "CAT_000133_e299": 153.0
+            },
+            "item_count": 331,
+            "low_price_c": 3.06,
+            "mean_price_c": 21.940851063829786,
+            "median_price_c": 15.3,
+            "mode_price_c": 20.4,
+            "sell_date": "1890-10",
+            "title": "RDA, N\u00b0130 (Octobre 1890)",
+            "total_price_c": 7218,
+            "variance_price_c": 404.54234578024966
+        },
+        "CAT_000134": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000134_e79": 102.0
+            },
+            "item_count": 333,
+            "low_price_c": 2.04,
+            "mean_price_c": 18.836814159292036,
+            "median_price_c": 15.3,
+            "mode_price_c": 15.3,
+            "sell_date": "1890-11",
+            "title": "RDA, N\u00b0131 (Novembre 1890)",
+            "total_price_c": 4257,
+            "variance_price_c": 233.46921285926854
+        },
+        "CAT_000135": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 127.5,
+            "high_price_items_c": {
+                "CAT_000135_e140": 127.5,
+                "CAT_000135_e15": 127.5
+            },
+            "item_count": 298,
+            "low_price_c": 2.04,
+            "mean_price_c": 21.6613698630137,
+            "median_price_c": 15.3,
+            "mode_price_c": 20.4,
+            "sell_date": "1890-12",
+            "title": "RDA, N\u00b0132 (D\u00e9cembre 1890)",
+            "total_price_c": 6325,
+            "variance_price_c": 456.83575428785883
+        },
+        "CAT_000136": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 208.0,
+            "high_price_items_c": {
+                "CAT_000136_e240": 208.0
+            },
+            "item_count": 259,
+            "low_price_c": 2.08,
+            "mean_price_c": 19.695503875968992,
+            "median_price_c": 15.6,
+            "mode_price_c": 10.4,
+            "sell_date": "1891-01",
+            "title": "RDA, N\u00b0133 (Janvier 1891)",
+            "total_price_c": 5081,
+            "variance_price_c": 486.1289255213028
+        },
+        "CAT_000137": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 88.4,
+            "high_price_items_c": {
+                "CAT_000137_e154": 88.4
+            },
+            "item_count": 275,
+            "low_price_c": 2.08,
+            "mean_price_c": 15.415793357933579,
+            "median_price_c": 12.48,
+            "mode_price_c": 8.32,
+            "sell_date": "1891-02",
+            "title": "RDA, N\u00b0134 (F\u00e9vrier 1891)",
+            "total_price_c": 4177,
+            "variance_price_c": 154.39140813442083
+        },
+        "CAT_000138": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 390.0,
+            "high_price_items_c": {
+                "CAT_000138_e203": 390.0
+            },
+            "item_count": 329,
+            "low_price_c": 2.08,
+            "mean_price_c": 23.69552795031056,
+            "median_price_c": 15.6,
+            "mode_price_c": 15.6,
+            "sell_date": "1891-03",
+            "title": "RDA, N\u00b0135 (Avril 1891)",
+            "total_price_c": 7629,
+            "variance_price_c": 977.5455427336908
+        },
+        "CAT_000139": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 208.0,
+            "high_price_items_c": {
+                "CAT_000139_e138": 208.0,
+                "CAT_000139_e47": 208.0
+            },
+            "item_count": 402,
+            "low_price_c": 1.35,
+            "mean_price_c": 20.345775,
+            "median_price_c": 15.6,
+            "mode_price_c": 15.6,
+            "sell_date": "1891-04",
+            "title": "RDA, N\u00b0136 (Mars 1891)",
+            "total_price_c": 8138,
+            "variance_price_c": 445.974667899375
+        },
+        "CAT_000140": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 124.8,
+            "high_price_items_c": {
+                "CAT_000140_e77": 124.8
+            },
+            "item_count": 406,
+            "low_price_c": 0.21,
+            "mean_price_c": 17.54954659949622,
+            "median_price_c": 15.6,
+            "mode_price_c": 15.6,
+            "sell_date": "1891-05",
+            "title": "RDA, N\u00b0137 (Mai 1891)",
+            "total_price_c": 6967,
+            "variance_price_c": 227.99945168359673
+        },
+        "CAT_000141": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 156.0,
+            "high_price_items_c": {
+                "CAT_000141_e104": 156.0,
+                "CAT_000141_e133": 156.0
+            },
+            "item_count": 311,
+            "low_price_c": 3.12,
+            "mean_price_c": 22.371934426229508,
+            "median_price_c": 15.6,
+            "mode_price_c": 15.6,
+            "sell_date": "1891-06",
+            "title": "RDA, N\u00b0138 (Juin 1891)",
+            "total_price_c": 6823,
+            "variance_price_c": 550.9500529793066
+        },
+        "CAT_000142": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 260.0,
+            "high_price_items_c": {
+                "CAT_000142_e228": 260.0
+            },
+            "item_count": 268,
+            "low_price_c": 1.35,
+            "mean_price_c": 23.256844106463877,
+            "median_price_c": 18.72,
+            "mode_price_c": 20.8,
+            "sell_date": "1891-10",
+            "title": "RDA, N\u00b0139 (Octobre 1891)",
+            "total_price_c": 6116,
+            "variance_price_c": 597.9563432722751
+        },
+        "CAT_000143": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 572.0,
+            "high_price_items_c": {
+                "CAT_000143_e95": 572.0
+            },
+            "item_count": 320,
+            "low_price_c": 1.04,
+            "mean_price_c": 23.111540880503146,
+            "median_price_c": 12.48,
+            "mode_price_c": 20.8,
+            "sell_date": "1891-11",
+            "title": "RDA, N\u00b0140 (Novembre 1891)",
+            "total_price_c": 7349,
+            "variance_price_c": 1892.568909889838
+        },
+        "CAT_000144": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 156.0,
+            "high_price_items_c": {
+                "CAT_000144_e121": 156.0
+            },
+            "item_count": 265,
+            "low_price_c": 2.08,
+            "mean_price_c": 19.081389961389963,
+            "median_price_c": 12.48,
+            "mode_price_c": 15.6,
+            "sell_date": "1891-12",
+            "title": "RDA, N\u00b0141 (D\u00e9cembre 1891)",
+            "total_price_c": 4942,
+            "variance_price_c": 404.011951735961
+        },
+        "CAT_000145": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 128.75,
+            "high_price_items_c": {
+                "CAT_000145_e42": 128.75
+            },
+            "item_count": 250,
+            "low_price_c": 1.03,
+            "mean_price_c": 15.471352459016394,
+            "median_price_c": 10.3,
+            "mode_price_c": 10.3,
+            "sell_date": "1892-02",
+            "title": "RDA, N\u00b0142 (F\u00e9vrier 1892)",
+            "total_price_c": 3775,
+            "variance_price_c": 180.363525629871
+        },
+        "CAT_000146": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 309.0,
+            "high_price_items_c": {
+                "CAT_000146_e276": 309.0
+            },
+            "item_count": 277,
+            "low_price_c": 3.09,
+            "mean_price_c": 19.8352,
+            "median_price_c": 15.45,
+            "mode_price_c": 15.45,
+            "sell_date": "1892-03",
+            "title": "RDA, N\u00b0143 (Mars 1892)",
+            "total_price_c": 5454,
+            "variance_price_c": 630.1374380509092
+        },
+        "CAT_000147": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 180.25,
+            "high_price_items_c": {
+                "CAT_000147_e55": 180.25
+            },
+            "item_count": 232,
+            "low_price_c": 1.03,
+            "mean_price_c": 22.396926406926408,
+            "median_price_c": 15.45,
+            "mode_price_c": 20.6,
+            "sell_date": "1892-04",
+            "title": "RDA, N\u00b0144 (Avril 1892)",
+            "total_price_c": 5173,
+            "variance_price_c": 606.9906316785667
+        },
+        "CAT_000148": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 412.0,
+            "high_price_items_c": {
+                "CAT_000148_e126": 412.0
+            },
+            "item_count": 278,
+            "low_price_c": 1.03,
+            "mean_price_c": 20.542565055762083,
+            "median_price_c": 15.45,
+            "mode_price_c": 15.45,
+            "sell_date": "1892-05",
+            "title": "RDA, N\u00b0145 (Mai 1892)",
+            "total_price_c": 5525,
+            "variance_price_c": 831.0047982532026
+        },
+        "CAT_000149": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 329.6,
+            "high_price_items_c": {
+                "CAT_000149_e201": 329.6
+            },
+            "item_count": 281,
+            "low_price_c": 2.06,
+            "mean_price_c": 20.618659420289855,
+            "median_price_c": 10.3,
+            "mode_price_c": 10.3,
+            "sell_date": "1892-06",
+            "title": "RDA, N\u00b0146 (Juin 1892)",
+            "total_price_c": 5690,
+            "variance_price_c": 1131.430282623136
+        },
+        "CAT_000150": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 154.5,
+            "high_price_items_c": {
+                "CAT_000150_e122": 154.5,
+                "CAT_000150_e174": 154.5,
+                "CAT_000150_e218": 154.5
+            },
+            "item_count": 355,
+            "low_price_c": 0.52,
+            "mean_price_c": 16.223239436619718,
+            "median_price_c": 10.3,
+            "mode_price_c": 10.3,
+            "sell_date": "1892-06",
+            "title": "RDA, N\u00b0147 (Septembre 1892)",
+            "total_price_c": 5759,
+            "variance_price_c": 477.19293739337434
+        },
+        "CAT_000151": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 515.0,
+            "high_price_items_c": {
+                "CAT_000151_e295": 515.0
+            },
+            "item_count": 336,
+            "low_price_c": 1.03,
+            "mean_price_c": 17.964684684684684,
+            "median_price_c": 10.3,
+            "mode_price_c": 10.3,
+            "sell_date": "1892-10",
+            "title": "RDA, N\u00b0148 (Octobre 1892)",
+            "total_price_c": 5982,
+            "variance_price_c": 1122.1075840597355
+        },
+        "CAT_000152": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 206.0,
+            "high_price_items_c": {
+                "CAT_000152_e312": 206.0
+            },
+            "item_count": 312,
+            "low_price_c": 1.03,
+            "mean_price_c": 15.026077170418006,
+            "median_price_c": 10.3,
+            "mode_price_c": 10.3,
+            "sell_date": "1892-11",
+            "title": "RDA, N\u00b0149 (Novembre 1892)",
+            "total_price_c": 4673,
+            "variance_price_c": 339.0763241612473
+        },
+        "CAT_000153": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 154.5,
+            "high_price_items_c": {
+                "CAT_000153_e308": 154.5
+            },
+            "item_count": 317,
+            "low_price_c": 1.03,
+            "mean_price_c": 14.081054313099042,
+            "median_price_c": 10.3,
+            "mode_price_c": 10.3,
+            "sell_date": "1892-12",
+            "title": "RDA, N\u00b0150 (D\u00e9cembre 1892)",
+            "total_price_c": 4407,
+            "variance_price_c": 291.78175192356764
+        },
+        "CAT_000154": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 101.0,
+            "high_price_items_c": {
+                "CAT_000154_e166": 101.0
+            },
+            "item_count": 288,
+            "low_price_c": 1.01,
+            "mean_price_c": 13.97048951048951,
+            "median_price_c": 10.1,
+            "mode_price_c": 5.05,
+            "sell_date": "1893-01",
+            "title": "RDA, N\u00b0151 (Janvier 1893)",
+            "total_price_c": 3995,
+            "variance_price_c": 186.06461374639346
+        },
+        "CAT_000155": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 151.5,
+            "high_price_items_c": {
+                "CAT_000155_e215": 151.5,
+                "CAT_000155_e22": 151.5
+            },
+            "item_count": 317,
+            "low_price_c": 2.02,
+            "mean_price_c": 12.353076923076923,
+            "median_price_c": 10.1,
+            "mode_price_c": 10.1,
+            "sell_date": "1893-02",
+            "title": "RDA, N\u00b0152 (F\u00e9vrier 1893)",
+            "total_price_c": 3854,
+            "variance_price_c": 208.79807194280082
+        },
+        "CAT_000156": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 131.3,
+            "high_price_items_c": {
+                "CAT_000156_e169": 131.3
+            },
+            "item_count": 328,
+            "low_price_c": 0.0,
+            "mean_price_c": 13.017777777777777,
+            "median_price_c": 10.1,
+            "mode_price_c": 10.1,
+            "sell_date": "1893-03",
+            "title": "RDA, N\u00b0153 (Mars 1893)",
+            "total_price_c": 4217,
+            "variance_price_c": 181.1496098765432
+        },
+        "CAT_000157": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 252.5,
+            "high_price_items_c": {
+                "CAT_000157_e252": 252.5
+            },
+            "item_count": 299,
+            "low_price_c": 2.02,
+            "mean_price_c": 15.460506756756757,
+            "median_price_c": 10.1,
+            "mode_price_c": 10.1,
+            "sell_date": "1893-04",
+            "title": "RDA, N\u00b0154 (Avril 1893)",
+            "total_price_c": 4576,
+            "variance_price_c": 528.3119392702246
+        },
+        "CAT_000158": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 151.5,
+            "high_price_items_c": {
+                "CAT_000158_e112": 151.5
+            },
+            "item_count": 291,
+            "low_price_c": 1.01,
+            "mean_price_c": 14.641443661971831,
+            "median_price_c": 8.08,
+            "mode_price_c": 5.05,
+            "sell_date": "1893-05",
+            "title": "RDA, N\u00b0155 (Mai 1893)",
+            "total_price_c": 4158,
+            "variance_price_c": 377.8787912256993
+        },
+        "CAT_000159": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 326.23,
+            "high_price_items_c": {
+                "CAT_000159_e196": 326.23
+            },
+            "item_count": 269,
+            "low_price_c": 3.03,
+            "mean_price_c": 17.094060150375938,
+            "median_price_c": 12.12,
+            "mode_price_c": 15.15,
+            "sell_date": "1893-06",
+            "title": "RDA, N\u00b0156 (Juin 1893)",
+            "total_price_c": 4547,
+            "variance_price_c": 584.3888143422466
+        },
+        "CAT_000160": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 151.5,
+            "high_price_items_c": {
+                "CAT_000160_e233": 151.5
+            },
+            "item_count": 382,
+            "low_price_c": 2.02,
+            "mean_price_c": 8.642295514511874,
+            "median_price_c": 5.05,
+            "mode_price_c": 3.03,
+            "sell_date": "1893-07",
+            "title": "RDA, N\u00b0157 (Juillet 1893)",
+            "total_price_c": 3275,
+            "variance_price_c": 144.5353321976316
+        },
+        "CAT_000161": {
+            "cat_type": "RDA",
+            "item_count": 167,
+            "sell_date": "1879",
+            "title": "Vente Etienne Charavay, 15 f\u00e9vrier 1879"
+        },
+        "CAT_000162": {
+            "cat_type": "RDA",
+            "item_count": 161,
+            "sell_date": "1879",
+            "title": "Vente Etienne Charavay, 15 f\u00e9vrier 1879"
+        },
+        "CAT_000163": {
+            "cat_type": "RDA",
+            "item_count": 180,
+            "sell_date": "1879",
+            "title": "Vente Etienne Charavay, 24 mars 1879"
+        },
+        "CAT_000164": {
+            "cat_type": "RDA",
+            "item_count": 174,
+            "sell_date": "1879",
+            "title": "Vente Etienne Charavay, 20 mai 1879"
+        },
+        "CAT_000165": {
+            "cat_type": "RDA",
+            "item_count": 281,
+            "sell_date": "1893-08",
+            "title": "RDA, N\u00b0158 (Ao\u00fbt-Septembre 1893)"
+        },
+        "CAT_000166": {
+            "cat_type": "RDA",
+            "item_count": 410,
+            "sell_date": "1879",
+            "title": "Vente Etienne Charavay, 13 et 14 juin 1879"
+        },
+        "CAT_000167": {
+            "cat_type": "RDA",
+            "item_count": 115,
+            "sell_date": "1897",
+            "title": "Vente No\u00ebl Charavay, 5 juin 1897"
+        },
+        "CAT_000168": {
+            "cat_type": "RDA",
+            "item_count": 173,
+            "sell_date": "1879",
+            "title": "Vente Etienne Charavay, 12 juillet 1879"
+        },
+        "CAT_000169": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 202.0,
+            "high_price_items_c": {
+                "CAT_000169_e219": 202.0
+            },
+            "item_count": 291,
+            "low_price_c": 2.02,
+            "mean_price_c": 13.989201388888889,
+            "median_price_c": 10.1,
+            "mode_price_c": 10.1,
+            "sell_date": "1893-10",
+            "title": "RDA, N\u00b0159 (Octobre 1893)",
+            "total_price_c": 4028,
+            "variance_price_c": 293.5216608205536
+        },
+        "CAT_000170": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 202.0,
+            "high_price_items_c": {
+                "CAT_000170_e185": 202.0
+            },
+            "item_count": 300,
+            "low_price_c": 3.03,
+            "mean_price_c": 14.545351170568562,
+            "median_price_c": 10.1,
+            "mode_price_c": 10.1,
+            "sell_date": "1893-11",
+            "title": "RDA, N\u00b0160 (Novembre 1893)",
+            "total_price_c": 4349,
+            "variance_price_c": 403.74752654892006
+        },
+        "CAT_000171": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 101.0,
+            "high_price_items_c": {
+                "CAT_000171_e126": 101.0,
+                "CAT_000171_e159": 101.0,
+                "CAT_000171_e261": 101.0
+            },
+            "item_count": 296,
+            "low_price_c": 2.02,
+            "mean_price_c": 13.229965870307167,
+            "median_price_c": 10.1,
+            "mode_price_c": 10.1,
+            "sell_date": "1893-12",
+            "title": "RDA, N\u00b0161 (D\u00e9cembre 1893)",
+            "total_price_c": 3876,
+            "variance_price_c": 170.49989590327203
+        },
+        "CAT_000172": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 265.2,
+            "high_price_items_c": {
+                "CAT_000172_e153": 265.2
+            },
+            "item_count": 303,
+            "low_price_c": 3.12,
+            "mean_price_c": 14.8408,
+            "median_price_c": 10.4,
+            "mode_price_c": 10.4,
+            "sell_date": "1894-01",
+            "title": "RDA, N\u00b0162 (Janvier 1894)",
+            "total_price_c": 4452,
+            "variance_price_c": 375.70143936
+        },
+        "CAT_000173": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 156.0,
+            "high_price_items_c": {
+                "CAT_000173_e252": 156.0
+            },
+            "item_count": 301,
+            "low_price_c": 1.04,
+            "mean_price_c": 13.691582491582492,
+            "median_price_c": 10.4,
+            "mode_price_c": 5.2,
+            "sell_date": "1894-02",
+            "title": "RDA, N\u00b0163 (F\u00e9vrier 1894)",
+            "total_price_c": 4066,
+            "variance_price_c": 211.83669816912106
+        },
+        "CAT_000174": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 208.0,
+            "high_price_items_c": {
+                "CAT_000174_e37": 208.0
+            },
+            "item_count": 288,
+            "low_price_c": 2.08,
+            "mean_price_c": 15.300277777777778,
+            "median_price_c": 10.4,
+            "mode_price_c": 10.4,
+            "sell_date": "1894-03",
+            "title": "RDA, N\u00b0164 (Mars 1894)",
+            "total_price_c": 4406,
+            "variance_price_c": 269.9759221450617
+        },
+        "CAT_000175": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 228.8,
+            "high_price_items_c": {
+                "CAT_000175_e90": 228.8
+            },
+            "item_count": 277,
+            "low_price_c": 1.04,
+            "mean_price_c": 19.43259259259259,
+            "median_price_c": 10.4,
+            "mode_price_c": 5.2,
+            "sell_date": "1894-04",
+            "title": "RDA, N\u00b0165 (Avril 1894)",
+            "total_price_c": 5246,
+            "variance_price_c": 810.5840517969822
+        },
+        "CAT_000194": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 260.0,
+            "high_price_items_c": {
+                "CAT_000194_e238": 260.0,
+                "CAT_000194_e283": 260.0
+            },
+            "item_count": 283,
+            "low_price_c": 2.08,
+            "mean_price_c": 17.7688256227758,
+            "median_price_c": 10.4,
+            "mode_price_c": 10.4,
+            "sell_date": "1894-05",
+            "title": "RDA, N\u00b0166 (Mai 1894)",
+            "total_price_c": 4993,
+            "variance_price_c": 809.86031783792
+        },
+        "CAT_000197": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 124.8,
+            "high_price_items_c": {
+                "CAT_000197_e115": 124.8
+            },
+            "item_count": 298,
+            "low_price_c": 3.12,
+            "mean_price_c": 16.947605633802816,
+            "median_price_c": 12.48,
+            "mode_price_c": 10.4,
+            "sell_date": "1894-06",
+            "title": "RDA, N\u00b0167 (Juin 1894)",
+            "total_price_c": 4813,
+            "variance_price_c": 278.539249196588
+        },
+        "CAT_000198": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 364.0,
+            "high_price_items_c": {
+                "CAT_000198_e202": 364.0
+            },
+            "item_count": 288,
+            "low_price_c": 3.12,
+            "mean_price_c": 21.27884892086331,
+            "median_price_c": 10.4,
+            "mode_price_c": 10.4,
+            "sell_date": "1894-07",
+            "title": "RDA, N\u00b0168 (Juillet 1894)",
+            "total_price_c": 5915,
+            "variance_price_c": 1098.3728332073908
+        },
+        "CAT_000199": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 156.0,
+            "high_price_items_c": {
+                "CAT_000199_e220": 156.0
+            },
+            "item_count": 301,
+            "low_price_c": 2.08,
+            "mean_price_c": 13.319050847457627,
+            "median_price_c": 8.32,
+            "mode_price_c": 5.2,
+            "sell_date": "1894-08",
+            "title": "RDA, N\u00b0169 (Ao\u00fbt-septembre 1894)",
+            "total_price_c": 3929,
+            "variance_price_c": 256.26215503131283
+        },
+        "CAT_000200": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 208.0,
+            "high_price_items_c": {
+                "CAT_000200_e267": 208.0
+            },
+            "item_count": 290,
+            "low_price_c": 2.08,
+            "mean_price_c": 17.54498245614035,
+            "median_price_c": 12.48,
+            "mode_price_c": 10.4,
+            "sell_date": "1894-10",
+            "title": "RDA, N\u00b0170 (Octobre 1894)",
+            "total_price_c": 5000,
+            "variance_price_c": 377.30077657863956
+        },
+        "CAT_000221": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 156.0,
+            "high_price_items_c": {
+                "CAT_000221_e18": 156.0
+            },
+            "item_count": 296,
+            "low_price_c": 2.08,
+            "mean_price_c": 15.806575342465754,
+            "median_price_c": 10.4,
+            "mode_price_c": 10.4,
+            "sell_date": "1894-11",
+            "title": "CAT_000221",
+            "total_price_c": 4615,
+            "variance_price_c": 274.580011559392
+        },
+        "CAT_000222": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 1040.0,
+            "high_price_items_c": {
+                "CAT_000222_e261": 1040.0
+            },
+            "item_count": 261,
+            "low_price_c": 2.08,
+            "mean_price_c": 21.48536398467433,
+            "median_price_c": 10.4,
+            "mode_price_c": 10.4,
+            "sell_date": "1894-12",
+            "title": "CAT_000222",
+            "total_price_c": 5607,
+            "variance_price_c": 4390.2046670131085
+        },
+        "CAT_000224": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 357.0,
+            "high_price_items_c": {
+                "CAT_000224_e134": 357.0
+            },
+            "item_count": 282,
+            "low_price_c": 1.02,
+            "mean_price_c": 21.93182795698925,
+            "median_price_c": 12.24,
+            "mode_price_c": 10.2,
+            "sell_date": "1895-01",
+            "title": "CAT_000224",
+            "total_price_c": 6118,
+            "variance_price_c": 1202.08244504567
+        },
+        "CAT_000225": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 357.0,
+            "high_price_items_c": {
+                "CAT_000225_e129": 357.0
+            },
+            "item_count": 299,
+            "low_price_c": 2.04,
+            "mean_price_c": 16.714169491525425,
+            "median_price_c": 10.2,
+            "mode_price_c": 10.2,
+            "sell_date": "1895-02",
+            "title": "CAT_000225",
+            "total_price_c": 4930,
+            "variance_price_c": 792.7211266831371
+        },
+        "CAT_000226": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000226_e300": 204.0
+            },
+            "item_count": 312,
+            "low_price_c": 3.06,
+            "mean_price_c": 14.581363636363637,
+            "median_price_c": 10.2,
+            "mode_price_c": 10.2,
+            "sell_date": "1895-03",
+            "title": "CAT_000226",
+            "total_price_c": 4491,
+            "variance_price_c": 292.64328515348285
+        },
+        "CAT_000227": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000227_e288": 204.0
+            },
+            "item_count": 290,
+            "low_price_c": 3.06,
+            "mean_price_c": 13.778823529411765,
+            "median_price_c": 10.2,
+            "mode_price_c": 10.2,
+            "sell_date": "1895-04",
+            "title": "CAT_000227",
+            "total_price_c": 3982,
+            "variance_price_c": 228.14002214532871
+        },
+        "CAT_000228": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 408.0,
+            "high_price_items_c": {
+                "CAT_000228_e162": 408.0
+            },
+            "item_count": 302,
+            "low_price_c": 2.04,
+            "mean_price_c": 13.773445945945946,
+            "median_price_c": 10.2,
+            "mode_price_c": 10.2,
+            "sell_date": "1895-05",
+            "title": "CAT_000228",
+            "total_price_c": 4076,
+            "variance_price_c": 688.2597367741052
+        },
+        "CAT_000229": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 81.6,
+            "high_price_items_c": {
+                "CAT_000229_e297": 81.6
+            },
+            "item_count": 300,
+            "low_price_c": 2.04,
+            "mean_price_c": 11.714648829431438,
+            "median_price_c": 10.2,
+            "mode_price_c": 10.2,
+            "sell_date": "1895-06",
+            "title": "CAT_000229",
+            "total_price_c": 3502,
+            "variance_price_c": 82.90729176631133
+        },
+        "CAT_000230": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 102.0,
+            "high_price_items_c": {
+                "CAT_000230_e51": 102.0
+            },
+            "item_count": 308,
+            "low_price_c": 2.04,
+            "mean_price_c": 12.748327868852458,
+            "median_price_c": 8.16,
+            "mode_price_c": 5.1,
+            "sell_date": "1895-07",
+            "title": "CAT_000230",
+            "total_price_c": 3888,
+            "variance_price_c": 132.71495622037088
+        },
+        "CAT_000232": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 202.0,
+            "high_price_items_c": {
+                "CAT_000232_e18": 202.0
+            },
+            "item_count": 301,
+            "low_price_c": 3.03,
+            "mean_price_c": 12.871627906976745,
+            "median_price_c": 10.1,
+            "mode_price_c": 10.1,
+            "sell_date": "1893-02",
+            "title": "CAT_000232",
+            "total_price_c": 3874,
+            "variance_price_c": 261.19068206752684
+        },
+        "CAT_000233": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 121.2,
+            "high_price_items_c": {
+                "CAT_000233_e245": 121.2
+            },
+            "item_count": 288,
+            "low_price_c": 2.02,
+            "mean_price_c": 12.975156794425088,
+            "median_price_c": 10.1,
+            "mode_price_c": 10.1,
+            "sell_date": "1893-02",
+            "title": "CAT_000233",
+            "total_price_c": 3723,
+            "variance_price_c": 159.83671208342943
+        },
+        "CAT_000234": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 204.0,
+            "high_price_items_c": {
+                "CAT_000234_e45": 204.0
+            },
+            "item_count": 300,
+            "low_price_c": 3.06,
+            "mean_price_c": 14.238648648648649,
+            "median_price_c": 10.2,
+            "mode_price_c": 10.2,
+            "sell_date": "1895-12",
+            "title": "CAT_000234",
+            "total_price_c": 4214,
+            "variance_price_c": 294.05891439006575
+        },
+        "CAT_000235": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 100.0,
+            "high_price_items_c": {
+                "CAT_000235_e101": 100.0,
+                "CAT_000235_e180": 100.0,
+                "CAT_000235_e196": 100.0,
+                "CAT_000235_e197": 100.0
+            },
+            "item_count": 306,
+            "low_price_c": 2.0,
+            "mean_price_c": 13.247491638795987,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1896-01",
+            "title": "CAT_000235",
+            "total_price_c": 3961,
+            "variance_price_c": 195.53072113287323
+        },
+        "CAT_000236": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 500.0,
+            "high_price_items_c": {
+                "CAT_000236_e311": 500.0
+            },
+            "item_count": 311,
+            "low_price_c": 2.0,
+            "mean_price_c": 17.313915857605178,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1896-03",
+            "title": "CAT_000236",
+            "total_price_c": 5350,
+            "variance_price_c": 1469.794660717839
+        },
+        "CAT_000237": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 80.0,
+            "high_price_items_c": {
+                "CAT_000237_e118": 80.0,
+                "CAT_000237_e155": 80.0,
+                "CAT_000237_e54": 80.0
+            },
+            "item_count": 294,
+            "low_price_c": 2.0,
+            "mean_price_c": 12.465986394557824,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1896-04",
+            "title": "CAT_000237",
+            "total_price_c": 3665,
+            "variance_price_c": 125.4189111018557
+        },
+        "CAT_000238": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 200.0,
+            "high_price_items_c": {
+                "CAT_000238_e180": 200.0
+            },
+            "item_count": 291,
+            "low_price_c": 2.0,
+            "mean_price_c": 18.631944444444443,
+            "median_price_c": 12.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1896-05",
+            "title": "CAT_000238",
+            "total_price_c": 5366,
+            "variance_price_c": 532.135368441358
+        },
+        "CAT_000239": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 450.0,
+            "high_price_items_c": {
+                "CAT_000239_e289": 450.0
+            },
+            "item_count": 290,
+            "low_price_c": 3.0,
+            "mean_price_c": 16.84083044982699,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1896-07",
+            "title": "CAT_000239",
+            "total_price_c": 4867,
+            "variance_price_c": 1370.6459453311145
+        },
+        "CAT_000326": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 145.5,
+            "high_price_items_c": {
+                "CAT_000326_e102": 145.5,
+                "CAT_000326_e192": 145.5
+            },
+            "item_count": 314,
+            "low_price_c": 1.94,
+            "mean_price_c": 13.605113268608415,
+            "median_price_c": 7.76,
+            "mode_price_c": 4.85,
+            "sell_date": "1897-05",
+            "title": "RDA, N\u00b0198 (Mai 1897)",
+            "total_price_c": 4203,
+            "variance_price_c": 355.4525104240634
+        },
+        "CAT_000327": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 194.0,
+            "high_price_items_c": {
+                "CAT_000327_e84": 194.0
+            },
+            "item_count": 323,
+            "low_price_c": 2.91,
+            "mean_price_c": 14.222625,
+            "median_price_c": 9.7,
+            "mode_price_c": 9.7,
+            "sell_date": "1897-06",
+            "title": "RDA, N\u00b0199 (Juin 1897)",
+            "total_price_c": 4551,
+            "variance_price_c": 341.880572484375
+        },
+        "CAT_000328": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 194.0,
+            "high_price_items_c": {
+                "CAT_000328_e265": 194.0
+            },
+            "item_count": 323,
+            "low_price_c": 2.91,
+            "mean_price_c": 13.071904761904761,
+            "median_price_c": 9.7,
+            "mode_price_c": 7.76,
+            "sell_date": "1897-07",
+            "title": "RDA, N\u00b0200 (Juillet 1897)",
+            "total_price_c": 4117,
+            "variance_price_c": 245.35258303854874
+        },
+        "CAT_000329": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 72.75,
+            "high_price_items_c": {
+                "CAT_000329_e53": 72.75
+            },
+            "item_count": 297,
+            "low_price_c": 1.94,
+            "mean_price_c": 11.62040404040404,
+            "median_price_c": 9.7,
+            "mode_price_c": 9.7,
+            "sell_date": "1897-08",
+            "title": "RDA, N\u00b0201 (Ao\u00fbt 1897)",
+            "total_price_c": 3451,
+            "variance_price_c": 85.01642542597695
+        },
+        "CAT_000330": {
+            "cat_type": "RDA",
+            "item_count": 315,
+            "sell_date": "1897-09",
+            "title": "RDA, N\u00b0202 (Septembre 1897)"
+        },
+        "CAT_000417": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 297.0,
+            "high_price_items_c": {
+                "CAT_000417_e330": 297.0
+            },
+            "item_count": 336,
+            "low_price_c": 2.97,
+            "mean_price_c": 15.165000000000001,
+            "median_price_c": 9.9,
+            "mode_price_c": 9.9,
+            "sell_date": "1898-09",
+            "title": "DA, N\u00b0214 (Septembre 1898)",
+            "total_price_c": 5004,
+            "variance_price_c": 601.221825
+        },
+        "CAT_000418": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 495.0,
+            "high_price_items_c": {
+                "CAT_000418_e103": 495.0
+            },
+            "item_count": 310,
+            "low_price_c": 2.97,
+            "mean_price_c": 18.221176470588237,
+            "median_price_c": 9.9,
+            "mode_price_c": 14.85,
+            "sell_date": "1898-10",
+            "title": "RDA, N\u00b0215 (Octobre 1898)",
+            "total_price_c": 5575,
+            "variance_price_c": 1775.6201103806227
+        },
+        "CAT_000419": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 123.75,
+            "high_price_items_c": {
+                "CAT_000419_e131": 123.75
+            },
+            "item_count": 327,
+            "low_price_c": 2.97,
+            "mean_price_c": 12.056676923076923,
+            "median_price_c": 9.9,
+            "mode_price_c": 9.9,
+            "sell_date": "1898-11",
+            "title": "RDA, N\u00b0216 (Novembre 1898)",
+            "total_price_c": 3918,
+            "variance_price_c": 108.61814772639053
+        },
+        "CAT_000420": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 346.5,
+            "high_price_items_c": {
+                "CAT_000420_e140": 346.5
+            },
+            "item_count": 311,
+            "low_price_c": 2.97,
+            "mean_price_c": 19.444117647058825,
+            "median_price_c": 9.9,
+            "mode_price_c": 9.9,
+            "sell_date": "1898-12",
+            "title": "RDA, N\u00b0217 (D\u00e9cembre 1898)",
+            "total_price_c": 5949,
+            "variance_price_c": 1171.650159515571
+        },
+        "CAT_000421": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 250.0,
+            "high_price_items_c": {
+                "CAT_000421_e147": 250.0
+            },
+            "item_count": 316,
+            "low_price_c": 3.0,
+            "mean_price_c": 17.275641025641026,
+            "median_price_c": 12.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-01",
+            "title": "RDA, N\u00b0218 (Janvier 1899)",
+            "total_price_c": 5390,
+            "variance_price_c": 446.6868425378041
+        },
+        "CAT_000422": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 500.0,
+            "high_price_items_c": {
+                "CAT_000422_e316": 500.0
+            },
+            "item_count": 300,
+            "low_price_c": 2.0,
+            "mean_price_c": 15.219594594594595,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-02",
+            "title": "RDA, N\u00b0219 (F\u00e9vrier 1899)",
+            "total_price_c": 4505,
+            "variance_price_c": 1114.1713728086195
+        },
+        "CAT_000423": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 300.0,
+            "high_price_items_c": {
+                "CAT_000423_e6": 300.0
+            },
+            "item_count": 320,
+            "low_price_c": 2.0,
+            "mean_price_c": 14.477707006369426,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-03",
+            "title": "RDA, N\u00b0220 (Mars 1899)",
+            "total_price_c": 4546,
+            "variance_price_c": 600.905553977849
+        },
+        "CAT_000424": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 300.0,
+            "high_price_items_c": {
+                "CAT_000424_e66": 300.0
+            },
+            "item_count": 277,
+            "low_price_c": 2.0,
+            "mean_price_c": 16.934782608695652,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-05",
+            "title": "RDA, N\u00b0222 (Avril 1899)",
+            "total_price_c": 4674,
+            "variance_price_c": 631.1334278512918
+        },
+        "CAT_000425": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 250.0,
+            "high_price_items_c": {
+                "CAT_000425_e77": 250.0
+            },
+            "item_count": 266,
+            "low_price_c": 3.0,
+            "mean_price_c": 17.376923076923077,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-06",
+            "title": "RDA, N\u00b0223 (Juin 1899)",
+            "total_price_c": 4518,
+            "variance_price_c": 635.0963905325444
+        },
+        "CAT_000426": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 200.0,
+            "high_price_items_c": {
+                "CAT_000426_e142": 200.0
+            },
+            "item_count": 277,
+            "low_price_c": 3.0,
+            "mean_price_c": 15.591078066914498,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-07",
+            "title": "RDA, N\u00b0224 (juillet 1899)",
+            "total_price_c": 4194,
+            "variance_price_c": 356.6654966072885
+        },
+        "CAT_000427": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 175.0,
+            "high_price_items_c": {
+                "CAT_000427_e290": 175.0
+            },
+            "item_count": 291,
+            "low_price_c": 3.0,
+            "mean_price_c": 14.123674911660778,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-08",
+            "title": "RDA, N\u00b0225 (Ao\u00fbt 1899)",
+            "total_price_c": 3997,
+            "variance_price_c": 279.6702168837169
+        },
+        "CAT_000428": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 200.0,
+            "high_price_items_c": {
+                "CAT_000428_e270": 200.0
+            },
+            "item_count": 293,
+            "low_price_c": 3.0,
+            "mean_price_c": 15.928571428571429,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-09",
+            "title": "RDA, N\u00b0226 (Septembre 1899)",
+            "total_price_c": 4571,
+            "variance_price_c": 462.243155798905
+        },
+        "CAT_000429": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 1000.0,
+            "high_price_items_c": {
+                "CAT_000429_e32": 1000.0
+            },
+            "item_count": 279,
+            "low_price_c": 3.0,
+            "mean_price_c": 21.643382352941178,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-10",
+            "title": "RDA, N\u00b0227 (Octobre 1899)",
+            "total_price_c": 5887,
+            "variance_price_c": 6401.413265030276
+        },
+        "CAT_000430": {
+            "cat_type": "RDA",
+            "currency": "FRF",
+            "high_price_c": 3000.0,
+            "high_price_items_c": {
+                "CAT_000430_e309": 3000.0
+            },
+            "item_count": 311,
+            "low_price_c": 3.0,
+            "mean_price_c": 28.63915857605178,
+            "median_price_c": 10.0,
+            "mode_price_c": 10.0,
+            "sell_date": "1899-12",
+            "title": "RDA, N\u00b0229 (D\u00e9cembre 1899)",
+            "total_price_c": 8849,
+            "variance_price_c": 30094.915909971623
         }
     }
 }

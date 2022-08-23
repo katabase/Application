@@ -24,55 +24,104 @@
       </titleStmt>
       <publicationStmt>
         <ab>
-          <date type="file-creation-date" when-iso="2022-08-17T13:40:44.217345">2022-08-17T13:40:44.217345</date>
+          <date type="file-creation-date" when-iso="2022-08-23T16:54:37.235053">2022-08-23T16:54:37.235053</date>
           <ref type="http-status-code" target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200">200</ref>
           <note>Original data made available under Creative Commons Attribution 2.0 Generic (CC BY 2.0)</note>
           <table>
             <head>Query parameters</head>
             <row>
-              <cell role="key" xml:id="level">level</cell>
-              <cell role="key" xml:id="id">id</cell>
-              <cell role="key" xml:id="format">format</cell>
-            </row>
+  <cell role="key" xml:id="level">level</cell>
+  <cell role="key" xml:id="id">id</cell>
+  <cell role="key" xml:id="format">format</cell>
+</row>
             <row>
-              <cell role="value" corresp="level">cat_stat</cell>
-              <cell role="value" corresp="id">CAT_000362</cell>
-              <cell role="value" corresp="format">tei</cell>
-            </row>
+  <cell role="value" corresp="level">cat_stat</cell>
+  <cell role="value" corresp="id">CAT_000362</cell>
+  <cell role="value" corresp="format">tei</cell>
+</row>
           </table>
         </ab>
       </publicationStmt>
       <sourceDesc>
         <p>Sources may come from different documents. See the corresponding XML-TEI catalogues on 
-          <ref target="https://github.com/katabase/Application/tree/main/APP/data">Github</ref>
-          for detailed description of the sources.
-        </p>
+                    <ref target="https://github.com/katabase/Application/tree/main/APP/data">Github</ref>
+                    for detailed description of the sources.
+                </p>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy xml:id="cat_stat_keys">
+          <desc>Description of the possible values for the <att>key</att> attribute in the body.</desc>
+          <category xml:id="cat_stat_keys_sell_date">
+            <catDesc>The year of the sale presented in the catalogue.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_title">
+            <catDesc>The title of the catalogue, and, by extension, of the sale.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_cat_type">
+            <catDesc>The type of catalogue (`LAC`|`RDA`|`AUC`|`OTH`).</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_currency">
+            <catDesc>The currency of the prices returned. `FRF` corresponds to french francs.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_high_price_c">
+            <catDesc>The most expensive items in the catalogue, in constant 1900 francs.
+                    In the whole API, the `_c` suffix indicates that a price
+                    is expressed in constant 1900 francs.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_high_price_items_c">
+            <catDesc>The most expensive items in the catalogue. Each item's
+                    `@xml:id` is associated to its price, in constant francs.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_item_count">
+            <catDesc>The number of manuscripts for sale in the catalogue.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_low_price_c">
+            <catDesc>The least expensive item's price, in constant 1900 francs.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_mean_price_c">
+            <catDesc>The average price for a catalogue item, in constant 1900 francs.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_median_price_c">
+            <catDesc>The median price for a catalogue item, in constant francs.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_mode_price_c">
+            <catDesc>The mode price (the price that appears the most often in a catalogue)
+                    for an item, in constant francs.</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_total_price_c">
+            <catDesc>The sum of each item's price, in constant francs</catDesc>
+          </category>
+          <category xml:id="cat_stat_keys_variance_price_c">
+            <catDesc>The variance of the prices inside the catalogue.</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <div type="search-results">
-        <list>
-          <head>Search results</head>
-          <item ana="CAT_000362">
-            <label>CAT_000362</label>
-            <term key="title">Vente Jacques Charavay, août 1875, nº 185</term>
-            <term key="cat_type">LAC</term>
-            <term key="sell_date" type="date">1875</term>
-            <term key="item_count">106</term>
-            <term key="currency">FRF</term>
-            <term key="total_price_c" type="constant-price">1039</term>
-            <term key="low_price_c" type="constant-price">1.27</term>
-            <term key="high_price_c" type="constant-price">102.0</term>
-            <term key="mean_price_c" type="constant-price">9.810188679245282</term>
-            <term key="median_price_c" type="constant-price">4.59</term>
-            <term key="mode_price_c" type="constant-price">3.06</term>
-            <term key="variance_price_c" type="constant-price">194.2879773228907</term>
-            <term key="high_price_items_c" type="constant-price" ana="CAT_000362_e27096">102.0</term>
-          </item>
-        </list>
-      </div>
-    </body>
+        <div type="search-results">
+  <list>
+    <head>Search results</head>
+    <item ana="CAT_000362">
+      <label>CAT_000362</label>
+      <term key="title">Vente Jacques Charavay, août 1875, nº 185</term>
+      <term key="cat_type">LAC</term>
+      <term key="sell_date" type="date">1875</term>
+      <term key="item_count">106</term>
+      <term key="currency">FRF</term>
+      <term key="total_price_c" type="constant-price">1039</term>
+      <term key="low_price_c" type="constant-price">1.27</term>
+      <term key="high_price_c" type="constant-price">102.0</term>
+      <term key="mean_price_c" type="constant-price">9.810188679245282</term>
+      <term key="median_price_c" type="constant-price">4.59</term>
+      <term key="mode_price_c" type="constant-price">3.06</term>
+      <term key="variance_price_c" type="constant-price">194.2879773228907</term>
+      <term key="high_price_items_c" type="constant-price" ana="CAT_000362_e27096">102.0</term>
+    </item>
+  </list>
+</div></body>
   </text>
 </TEI>

@@ -16,22 +16,15 @@
             <publisher>Projet e-Ditiones, Université de Neuchâtel</publisher>
             <availability status="restricted">
                <licence target="https://creativecommons.org/licenses/by/2.0">Attribution 2.0 Generic (CC BY 2.0)</licence>
-               <p>KatAPI query results. File created automatically by KatAPI, an API developped as part of the<ref target="https://katabase.huma-num.fr/">Manuscript SaleS Catalogues project</ref></p><p>Query run on<date when-iso="2022-08-17T16:40:38.478088">2022-08-17T16:40:38.478088</date></p><p>Query ran with HTTP status code:<ref target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200"/></p><p>The current file has been retrieved and updated as a response to the query:
-                  <table>
-                     <head>Query parameters</head>
-                     <row>
-                        <cell role="key" xml:id="id">id</cell>
-                        <cell role="key" xml:id="output_format">format</cell>
-                        <cell role="key" xml:id="level">level</cell>
-                     </row>
-                     <row>
-                        <cell role="value" corresp="id">CAT_000300</cell>
-                        <cell role="value" corresp="format">tei</cell>
-                        <cell role="value" corresp="level">cat_full</cell>
-                     </row>
-                  </table>
-               </p>
-            </availability>
+            <p>KatAPI query results. File created automatically by KatAPI, an API developped as part of the<ref target="https://katabase.huma-num.fr/">Manuscript SaleS Catalogues project</ref></p><p>Query run on<date when-iso="2022-08-23T16:54:39.582260">2022-08-23T16:54:39.582260</date></p><p>Query ran with HTTP status code:<ref target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200"/></p><p>The current file has been retrieved and updated as a response to the query:<table><head>Query parameters</head><row>
+  <cell role="key" xml:id="id">id</cell>
+  <cell role="key" xml:id="output_format">format</cell>
+  <cell role="key" xml:id="level">level</cell>
+</row><row>
+  <cell role="value" corresp="id">CAT_000300</cell>
+  <cell role="value" corresp="format">tei</cell>
+  <cell role="value" corresp="level">cat_full</cell>
+</row></table></p></availability>
          </publicationStmt>
          <sourceDesc>
             <bibl ana="AUC">
@@ -83,130 +76,130 @@
             <p>This electronic version of the catalog only reproduces the entries that correspond to documents for sale. All text preceding or succeeding the list of documents for sale is not reproduced below.</p>
          </samplingDecl>
          <classDecl>
-            <taxonomy xml:id="format">
-               <desc>Document format</desc>
-               <category xml:id="document_format_1">
-                  <catDesc>In-folio</catDesc>
-               </category>
-               <category xml:id="document_format_2">
-                  <catDesc>In-2°</catDesc>
-               </category>
-               <category xml:id="document_format_3">
-                  <catDesc>In-3°</catDesc>
-               </category>
-               <category xml:id="document_format_4">
-                  <catDesc>In-quarto</catDesc>
-               </category>
-               <category xml:id="document_format_8">
-                  <catDesc>In-octavo</catDesc>
-               </category>
-               <category xml:id="document_format_12">
-                  <catDesc>In-12</catDesc>
-               </category>
-               <category xml:id="document_format_16">
-                  <catDesc>In-16</catDesc>
-               </category>
-               <category xml:id="document_format_18">
-                  <catDesc>In-18</catDesc>
-               </category>
-               <category xml:id="document_format_32">
-                  <catDesc>In-32</catDesc>
-               </category>
-               <category xml:id="document_format_40">
-                  <catDesc>In-40</catDesc>
-               </category>
-               <category xml:id="document_format_48">
-                  <catDesc>In-48</catDesc>
-               </category>
-               <category xml:id="document_format_64">
-                  <catDesc>In-64</catDesc>
-               </category>
-               <category xml:id="document_format_101">
-                  <catDesc>In-folio oblong</catDesc>
-               </category>
-               <category xml:id="document_format_102">
-                  <catDesc>In-2° oblong</catDesc>
-               </category>
-               <category xml:id="document_format_103">
-                  <catDesc>In-3° oblong</catDesc>
-               </category>
-               <category xml:id="document_format_104">
-                  <catDesc>In-quarto oblong</catDesc>
-               </category>
-               <category xml:id="document_format_108">
-                  <catDesc>In-octavo oblong</catDesc>
-               </category>
-               <category xml:id="document_format_112">
-                  <catDesc>In-12 oblong</catDesc>
-               </category>
-               <category xml:id="document_format_116">
-                  <catDesc>In-16 oblong</catDesc>
-               </category>
-               <category xml:id="document_format_118">
-                  <catDesc>In-18 oblong</catDesc>
-               </category>
-               <category xml:id="document_format_132">
-                  <catDesc>In-32 oblong</catDesc>
-               </category>
-               <category xml:id="document_format_140">
-                  <catDesc>In-40 oblong</catDesc>
-               </category>
-               <category xml:id="document_format_148">
-                  <catDesc>In-48 oblong</catDesc>
-               </category>
-               <category xml:id="document_format_164">
-                  <catDesc>In-64 oblong</catDesc>
-               </category>
-            </taxonomy>
-            <taxonomy xml:id="document_type">
-               <desc>Document type</desc>
-               <category xml:id="document_type_1">
-                  <catDesc>Apostille autographe signée</catDesc>
-               </category>
-               <category xml:id="document_type_2">
-                  <catDesc>Pièce autographe signée</catDesc>
-               </category>
-               <category xml:id="document_type_3">
-                  <catDesc>Pièce autographe</catDesc>
-               </category>
-               <category xml:id="document_type_4">
-                  <catDesc>Pièce signée</catDesc>
-               </category>
-               <category xml:id="document_type_5">
-                  <catDesc>Billet autographe signé</catDesc>
-               </category>
-               <category xml:id="document_type_6">
-                  <catDesc>Billet signé</catDesc>
-               </category>
-               <category xml:id="document_type_7">
-                  <catDesc>Lettre autographe signée</catDesc>
-               </category>
-               <category xml:id="document_type_8">
-                  <catDesc>Lettre autographe</catDesc>
-               </category>
-               <category xml:id="document_type_9">
-                  <catDesc>Lettre signée</catDesc>
-               </category>
-               <category xml:id="document_type_10">
-                  <catDesc>Brevet signé</catDesc>
-               </category>
-               <category xml:id="document_type_11">
-                  <catDesc>Quittance autographe signée</catDesc>
-               </category>
-               <category xml:id="document_type_12">
-                  <catDesc>Quittance signée</catDesc>
-               </category>
-               <category xml:id="document_type_13">
-                  <catDesc>Manuscrit autographe</catDesc>
-               </category>
-               <category xml:id="document_type_14">
-                  <catDesc>Chanson autographe</catDesc>
-               </category>
-               <category xml:id="document_type_15">
-                  <catDesc>Document (?) Autographe signé</catDesc>
-               </category>
-            </taxonomy>
-         </classDecl><appInfo>
+        <taxonomy xml:id="format">
+           <desc>Document format</desc>
+           <category xml:id="document_format_1">
+              <catDesc>In-folio</catDesc>
+           </category>
+           <category xml:id="document_format_2">
+              <catDesc>In-2°</catDesc>
+           </category>
+           <category xml:id="document_format_3">
+              <catDesc>In-3°</catDesc>
+           </category>
+           <category xml:id="document_format_4">
+              <catDesc>In-quarto</catDesc>
+           </category>
+           <category xml:id="document_format_8">
+              <catDesc>In-octavo</catDesc>
+           </category>
+           <category xml:id="document_format_12">
+              <catDesc>In-12</catDesc>
+           </category>
+           <category xml:id="document_format_16">
+              <catDesc>In-16</catDesc>
+           </category>
+           <category xml:id="document_format_18">
+              <catDesc>In-18</catDesc>
+           </category>
+           <category xml:id="document_format_32">
+              <catDesc>In-32</catDesc>
+           </category>
+           <category xml:id="document_format_40">
+              <catDesc>In-40</catDesc>
+           </category>
+           <category xml:id="document_format_48">
+              <catDesc>In-48</catDesc>
+           </category>
+           <category xml:id="document_format_64">
+              <catDesc>In-64</catDesc>
+           </category>
+           <category xml:id="document_format_101">
+              <catDesc>In-folio oblong</catDesc>
+           </category>
+           <category xml:id="document_format_102">
+              <catDesc>In-2° oblong</catDesc>
+           </category>
+           <category xml:id="document_format_103">
+              <catDesc>In-3° oblong</catDesc>
+           </category>
+           <category xml:id="document_format_104">
+              <catDesc>In-quarto oblong</catDesc>
+           </category>
+           <category xml:id="document_format_108">
+              <catDesc>In-octavo oblong</catDesc>
+           </category>
+           <category xml:id="document_format_112">
+              <catDesc>In-12 oblong</catDesc>
+           </category>
+           <category xml:id="document_format_116">
+              <catDesc>In-16 oblong</catDesc>
+           </category>
+           <category xml:id="document_format_118">
+              <catDesc>In-18 oblong</catDesc>
+           </category>
+           <category xml:id="document_format_132">
+              <catDesc>In-32 oblong</catDesc>
+           </category>
+           <category xml:id="document_format_140">
+              <catDesc>In-40 oblong</catDesc>
+           </category>
+           <category xml:id="document_format_148">
+              <catDesc>In-48 oblong</catDesc>
+           </category>
+           <category xml:id="document_format_164">
+              <catDesc>In-64 oblong</catDesc>
+           </category>
+        </taxonomy>
+        <taxonomy xml:id="document_type">
+           <desc>Document type</desc>
+           <category xml:id="document_type_1">
+              <catDesc>Apostille autographe signée</catDesc>
+           </category>
+           <category xml:id="document_type_2">
+              <catDesc>Pièce autographe signée</catDesc>
+           </category>
+           <category xml:id="document_type_3">
+              <catDesc>Pièce autographe</catDesc>
+           </category>
+           <category xml:id="document_type_4">
+              <catDesc>Pièce signée</catDesc>
+           </category>
+           <category xml:id="document_type_5">
+              <catDesc>Billet autographe signé</catDesc>
+           </category>
+           <category xml:id="document_type_6">
+              <catDesc>Billet signé</catDesc>
+           </category>
+           <category xml:id="document_type_7">
+              <catDesc>Lettre autographe signée</catDesc>
+           </category>
+           <category xml:id="document_type_8">
+              <catDesc>Lettre autographe</catDesc>
+           </category>
+           <category xml:id="document_type_9">
+              <catDesc>Lettre signée</catDesc>
+           </category>
+           <category xml:id="document_type_10">
+              <catDesc>Brevet signé</catDesc>
+           </category>
+           <category xml:id="document_type_11">
+              <catDesc>Quittance autographe signée</catDesc>
+           </category>
+           <category xml:id="document_type_12">
+              <catDesc>Quittance signée</catDesc>
+           </category>
+           <category xml:id="document_type_13">
+              <catDesc>Manuscrit autographe</catDesc>
+           </category>
+           <category xml:id="document_type_14">
+              <catDesc>Chanson autographe</catDesc>
+           </category>
+           <category xml:id="document_type_15">
+              <catDesc>Document (?) Autographe signé</catDesc>
+           </category>
+        </taxonomy>
+    </classDecl><appInfo>
             <application version="1.11" ident="Transkribus" when="2020">
                <label>Transkribus</label>
                <ptr target="https://transkribus.eu/Transkribus/"/>

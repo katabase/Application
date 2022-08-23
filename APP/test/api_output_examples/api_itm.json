@@ -1,5 +1,53 @@
 {
     "head": {
+        "encoding_desc": {
+            "prefix_definition": {
+                "wd:": "https://www.wikidata.org/wiki/"
+            },
+            "taxonomy_format": {
+                "document_format_1": "In-folio",
+                "document_format_101": "In-folio oblong",
+                "document_format_102": "In-2\u00b0 oblong",
+                "document_format_103": "In-3\u00b0 oblong",
+                "document_format_104": "In-quarto oblong",
+                "document_format_108": "In-octavo oblong",
+                "document_format_112": "In-12 oblong",
+                "document_format_116": "In-16 oblong",
+                "document_format_118": "In-18 oblong",
+                "document_format_12": "In-12",
+                "document_format_132": "In-32 oblong",
+                "document_format_140": "In-40 oblong",
+                "document_format_148": "In-48 oblong",
+                "document_format_16": "In-16",
+                "document_format_164": "In-64 oblong",
+                "document_format_18": "In-18",
+                "document_format_2": "In-2\u00b0",
+                "document_format_3": "In-3\u00b0",
+                "document_format_32": "In-32",
+                "document_format_4": "In-quarto",
+                "document_format_40": "In-40",
+                "document_format_48": "In-48",
+                "document_format_64": "In-64",
+                "document_format_8": "In-octavo"
+            },
+            "taxonomy_term": {
+                "document_term_1": "Apostille autographe sign\u00e9e | signed autograph apostilla",
+                "document_term_10": "Brevet sign\u00e9 | signed certificate",
+                "document_term_11": "Quittance autographe sign\u00e9e | signed ",
+                "document_term_12": "Quittance sign\u00e9e | signed receipt",
+                "document_term_13": "Manuscrit autographe | autograph manuscript",
+                "document_term_14": "Chanson autographe | autograph song",
+                "document_term_15": "Document (?) Autographe sign\u00e9 | signed autograph document (?)",
+                "document_term_2": "Pi\u00e8ce autographe sign\u00e9e | signed autograph document",
+                "document_term_3": "Pi\u00e8ce autographe | signed autograph",
+                "document_term_4": "Pi\u00e8ce sign\u00e9e | signed document",
+                "document_term_5": "Billet autographe sign\u00e9 | signed autograph short document",
+                "document_term_6": "Billet sign\u00e9 | signed short document",
+                "document_term_7": "Lettre autographe sign\u00e9e | signed autograph letter",
+                "document_term_8": "Lettre autographe | autograph letter",
+                "document_term_9": "Lettre sign\u00e9e | signed letter"
+            }
+        },
         "query": {
             "format": "json",
             "level": "itm",
@@ -7,10 +55,30 @@
             "orig_date": "1500-1800",
             "sell_date": "1800-1900"
         },
-        "query_date": "2022-08-17T13:53:02.110102",
+        "query_date": "2022-08-23T16:54:07.537328",
         "status_code": 200
     },
     "results": {
+        "CAT_000185_e608_d1": {
+            "author": "S\u00e9vign\u00e9",
+            "date": "1685",
+            "desc": "L. aut. \u00e0 sa fille; mercredi 14 f\u00e9vrier (1685), 7 p. 1/2 in-4",
+            "format": 4,
+            "number_of_pages": 7.5,
+            "price": null,
+            "sell_date": "1881",
+            "term": 8
+        },
+        "CAT_000196_e179_d1": {
+            "author": "S\u00c9VIGN\u00c9",
+            "date": "1684",
+            "desc": "L. aut. \u00e0 sa fille; Saumur, 18 septembre (1684), 3 p. in-4",
+            "format": 4,
+            "number_of_pages": 3.0,
+            "price": null,
+            "sell_date": "1882",
+            "term": 8
+        },
         "CAT_000273_e234_d1": {
             "author": "S\u00c9VIGN\u00c9",
             "date": "1695-08-09",
