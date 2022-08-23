@@ -146,18 +146,19 @@ class APITest(unittest.TestCase):
                 if k == "p3":  # check the empty return
                     self.assertEqual(r["results"], {})
                 if k == "p4":  # check id parameter
+                    print(json.dumps(r, indent=4))
                     self.assertEqual(
                         r["results"],
                         {"CAT_000204_e108_d1": {
-                                "price": None,
                                 "author": "BEETHOVEN",
+                                "author_wikidata_id": "wd:Q255",
                                 "date": "1820-05-31",
-                                "number_of_pages": 2.0,
+                                "desc": "\n                        L. s. \u00e0 M. M. Schlesinger, \u00e0 Berlin; Vienne, 31 mai 1820, 2 p.\n                        in-4, cachet",
                                 "format": 4,
-                                "term": 9,
+                                "number_of_pages": 2.0,
+                                "price": None,
                                 "sell_date": "1882",
-                                "desc": "L. s. \u00e0 M. M. Schlesinger, "
-                                        "\u00e0 Berlin; Vienne, 31 mai 1820, 2 p. in-4, cachet"
+                                "term": 9,
                             }
                         }
                     )
@@ -184,7 +185,7 @@ class APITest(unittest.TestCase):
                     t_item = etree.fromstring("""
                         <item n="108" xml:id="CAT_000204_e108">
                             <num type="lot">108</num>
-                            <name type="author">BEETHOVEN (L. van)</name>
+                            <name type="author" ref="wd:Q255">BEETHOVEN (L. van)</name>
                             <trait>
                                 <p>le grand compositeur de musique.</p>
                             </trait>

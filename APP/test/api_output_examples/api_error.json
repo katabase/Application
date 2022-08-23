@@ -1,5 +1,6 @@
 {
     "head": {
+        "license": "Attribution 2.0 Generic (CC BY 2.0)",
         "query": {
             "api": "Durga Mahishasuraparini",
             "format": "json",
@@ -7,7 +8,7 @@
             "name": "Guyan Yin",
             "sell_date": "200000"
         },
-        "query_date": "2022-08-23T16:54:05.304419",
+        "query_date": "2022-08-23T18:28:03.926945",
         "status_code": 422
     },
     "results": {

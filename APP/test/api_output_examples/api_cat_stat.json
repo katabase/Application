@@ -15,13 +15,14 @@
             "total_price_c": "The sum of each item's price, in constant francs",
             "variance_price_c": "The variance of the prices inside the catalogue."
         },
+        "license": "Attribution 2.0 Generic (CC BY 2.0)",
         "query": {
             "format": "json",
             "level": "cat_stat",
             "name": "RDA",
             "sell_date": "1800-1900"
         },
-        "query_date": "2022-08-23T16:54:29.850978",
+        "query_date": "2022-08-23T18:28:22.767969",
         "status_code": 200
     },
     "results": {

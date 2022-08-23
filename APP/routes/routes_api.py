@@ -57,7 +57,7 @@ def katapi_cat_full(req_id):
     found = True  # boolean indicating wether a file has been found, which will define the
     #               way the response object is built
     try:
-        results = open(f"{DATA}/{req_id}_tagged.xml", mode="r", encoding="utf-8")
+        results = open(f"{DATA}/{req_id}_wd.xml", mode="r", encoding="utf-8")
     except FileNotFoundError:
         results = etree.Element("div", nsmap=XmlTei.ns)
         results.set("type", "search-results")

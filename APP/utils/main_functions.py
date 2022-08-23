@@ -41,7 +41,7 @@ def open_file(good_id):
     :param good_id: an id created before
     :return: the matching file parsed by lxml
     """
-    file = DATA + "/" + good_id + "_tagged.xml"
+    file = DATA + "/" + good_id + "_wd.xml"
     return etree.parse(file)
 
 
@@ -54,11 +54,11 @@ def create_index():
     """
     index = []
     # Only catalogues that have been tagged are displayed.
-    files = glob.glob(os.path.join(DATA, "*_tagged.xml"))
+    files = glob.glob(os.path.join(DATA, "CAT_*.xml"))
     for file in files:
         file_info = {}
         file_id = os.path.basename(file)
-        file_id = file_id.replace("_tagged.xml", "")
+        file_id = re.sub(r"_[a-z]+?\.xml$", "", file_id)
         file_info["id"] = file_id
         # The main title is used.
         opened_file = open_file(file_id)

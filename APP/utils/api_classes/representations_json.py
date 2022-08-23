@@ -93,6 +93,7 @@ class Json:
                 "status_code": status_code,  # status code to be changed upon response completion
                 "query_date": timestamp,  # the moment katapi is called (a query is run by a client)
                 "query": req,  # user query: params and value
+                "license": "Attribution 2.0 Generic (CC BY 2.0)",
             },
             "results": response_body  # results returned by the server (or error message)
         }  # response body
