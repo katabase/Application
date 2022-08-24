@@ -131,8 +131,8 @@ async function launchRequest() {
         + "\nAre your key-value couples separated by commas?"
         + "\nAre your research parameters enclosed inside curly brackets?"
         + "\nHere are some valid jsons:"
-        + '\n{"format": "json", "level": "itm", "name": "sevigne"}'
-        + '\n{"name": "sevigne", "level": "itm"}'
+        + '\n{"format": "json", "level": "item", "name": "sevigne"}'
+        + '\n{"name": "sevigne", "level": "item"}'
         + '\n{"id": "CAT_000352", "level": "cat_stat", "format": "tei"}'
       );
 

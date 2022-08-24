@@ -41,6 +41,8 @@
     <code>xml-tei</code> (depending on the client's request) describing the
     query parameters, the time of the query and the error that occured.</p>
 
+<p>The search for a <code>name</code> is case- and accents-insensitive.</p>
+
 <hr/>
 
 <h2>Try it out !</h2>
@@ -54,7 +56,7 @@
 </p>
 
 <div class="flex-in">
-    <input type="text" id="apiUrl" value='{"name": "sevigne", "level": "itm"}'/>
+    <input type="text" id="apiUrl" value='{"name": "sevigne", "level": "item"}'/>
     <button type="submit" id="sendApi" class="btn btn-outline-danger" onclick="launchRequest();">Search</button>
 </div>
 
@@ -84,7 +86,7 @@
     </li>    
     <li><strong><code>level</code></strong>: the requested data's level. Possible values are:
         <ul>    
-            <li><code>itm</code>: data is retrieved at item level. This is the default value.</li>
+            <li><code>item</code>: data is retrieved at item level. This is the default value.</li>
             <li><code>cat_data</code>: statistical data on one or several catalogues will be retrieved.
             This value is incompatible with the <code>orig_date</code> parameter.</li>
             <li>
@@ -111,7 +113,7 @@
       several items. This parameter is <strong>case-insensitive and doesn't take punctuation or accented letters into account</strong>.
       Possible values are:
         <ul>
-            <li>if <code>level=itm</code>, the <code>tei:name</code> being queried. Only the last name in
+            <li>if <code>level=item</code>, the <code>tei:name</code> being queried. Only the last name in
               the <code>tei:name</code> is indexed in the search engine and only this one will yield a
               result. If a first name and a last name are provided, no result can be yield, 
               since the first name is not indexed.</li>
@@ -133,7 +135,7 @@
       <code>YYYY-YYYY</code> foramat.
     </li>
     <li><strong><code>orig_date</code></strong>: the date a manuscript item was created. This parameter is only
-      authorized if <code>level=itm</code>. Values must match  the regular expression <code>\d{4}(-\d{4})?</code>:
+      authorized if <code>level=item</code>. Values must match  the regular expression <code>\d{4}(-\d{4})?</code>:
       a year in <code>YYYY</code> format or a year range in <code>YYYY-YYYY</code> format.
     </li>
 </ul>
@@ -202,10 +204,12 @@
     the header is enclosed in the <code>teiHeader</code> tag; in a <code>json</code> response, this
     header is mapped to the <code>head</code> key. This header contains descriptive information
     about the query: the requested parameters (and additional default parameters), the query date and
-    the status code. In <code>tei</code>, those informations are included inside the
+    the status code. In <code>tei</code>, this information is included inside the
     <code>teiHeader//publicationStmt</code>. If <code>level=cat_full</code>, they are in a
     <code>note</code> inside the publication statement; with other levels, the descriptive information
-    about the query takes up the entire publication statement. This allows the response issued by the API to
+    about the query takes up the entire publication statement. The response's head also contains an
+    <code>encoding_desc</code> which translates prefixes and project-specific vocabularies in a
+    human-readable manner.This allows the response issued by the API to
     always be self-descriptive. The results in themselves are contained inside the <code>body</code>
     of a <code>xml-tei</code> response. In a <code>json</code> response, the results are
     mapped to the <code>results</code> key.
@@ -273,7 +277,7 @@ is mapped to data. the meaning of the this data is specified by the following ke
         </pre>
     </div>
 
-<h3>At <code>itm</code> level</h3>
+<h3>At <code>item</code> level</h3>
 
 <p>The response is ordered by catalogue entries.
 Each entry, identified by its <code>@xml:id</code>, is mapped to information about that entry. The meaning
@@ -301,7 +305,7 @@ of this data is presented below:</p>
 
     <div class="codeblock">
         <pre>
-            <code>{{ examples["api_itm_json"] }}</code>
+            <code>{{ examples["api_item_json"] }}</code>
         </pre>
     </div>
 
@@ -309,7 +313,7 @@ of this data is presented below:</p>
 
     <div class="codeblock">
         <pre>
-            <code>{{ examples["api_itm_xml"] }}</code>
+            <code>{{ examples["api_item_xml"] }}</code>
         </pre>
     </div>
 
@@ -342,12 +346,12 @@ A <code>json</code> error response will look like this:
 
 <p>To get started, here are some URL examples and their meaning:</p>
 <ul>
-<li><a href="{{ url_for('katapi', level='itm', name='Sévigné', sell_date='1800-1900', orig_date='1500-1800', format='json') }}">
-    <code>https://katabase.huma-num.fr/katapi?level=itm&name=s%C3%A9vign%C3%A9&sell_date=1800-1900&orig_date=1500-1800&format=json</code>
+<li><a href="{{ url_for('katapi', level='item', name='Sévigné', sell_date='1800-1900', orig_date='1500-1800', format='json') }}">
+    <code>https://katabase.huma-num.fr/katapi?level=item&name=s%C3%A9vign%C3%A9&sell_date=1800-1900&orig_date=1500-1800&format=json</code>
     </a>: all catalogue items whose author is <code>Sévigné</code>, sold between 1800 and 1900 and
   written between 1500 and 1800, in <code>json</code>.</li>
-<li><a href="{{ url_for('katapi', level='itm', id='CAT_000204_e108_d1', format='tei') }}">
-    <code>https://katabase.huma-num.fr/katapi?level=itm&id=CAT_000204_e108_d1&format=tei</code></a>:
+<li><a href="{{ url_for('katapi', level='item', id='CAT_000204_e108_d1', format='tei') }}">
+    <code>https://katabase.huma-num.fr/katapi?level=item&id=CAT_000204_e108_d1&format=tei</code></a>:
   the catalogue item with an <code>@xml:id</code> corresponding to <code>CAT_000204_e108</code>, 
     in <code>tei</code>.</li>
 <li><a href="{{ url_for('katapi', level='cat_stat', name='RDA', format='json') }}">

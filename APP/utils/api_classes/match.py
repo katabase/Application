@@ -20,7 +20,7 @@ class Match:
     def set_match_mode(req):
         """
         for katapi.py
-        set the matching mode when req["name"], req["level"]=="itm"
+        set the matching mode when req["name"], req["level"]=="item"
         depending on whether req["sell_date"] and req["orig_date"] have been given by the user.
         this mode will be used to filter possible matching results
         :param req:

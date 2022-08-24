@@ -17,7 +17,7 @@
                 <availability status="restricted">
                     <licence target="https://creativecommons.org/licenses/by/2.0">Attribution 2.0 Generic (CC BY 2.0)</licence>
                     <p>KatAPI query results. File created automatically by KatAPI, an API developped as part of the<ref target="https://katabase.huma-num.fr/">Manuscript SaleS Catalogues project</ref></p>
-                    <p>Query run on<date when-iso="2022-08-23T22:38:57.371404">2022-08-23T22:38:57.371404</date></p>
+                    <p>Query run on<date when-iso="2022-08-24T16:41:52.101590">2022-08-24T16:41:52.101590</date></p>
                     <p>Query ran with HTTP status code:<ref target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200"/></p>
                     <p>The current file has been retrieved and updated as a response to the query:
                         <table>
@@ -26,7 +26,8 @@
                                 <cell role="key" xml:id="id">id</cell>
                                 <cell role="key" xml:id="output_format">format</cell>
                                 <cell role="key" xml:id="level">level</cell>
-                            </row><row>
+                            </row>
+                            <row>
                                 <cell role="value" corresp="id">CAT_000300</cell>
                                 <cell role="value" corresp="format">tei</cell>
                                 <cell role="value" corresp="level">cat_full</cell>

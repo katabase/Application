@@ -475,7 +475,7 @@ def figmaker_cat(cat_id):
     return figpath
 
 
-def figmaker_itm():
+def figmaker_item():
     pass
 
 

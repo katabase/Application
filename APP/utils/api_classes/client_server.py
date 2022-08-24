@@ -110,9 +110,9 @@ class APIInvalidInput(exceptions.HTTPException):
             "error_description": {}
         }  # output dictionnary
         error_messages = {
-            "level": "You must specify a request level matching: ^(itm|cat_full|cat_stat)$",
+            "level": "You must specify a request level matching: ^(item|cat_full|cat_stat)$",
             "format": "The format must match: (tei|json)",
-            "id": r"Invalid id. if level=itm, id must match CAT_\d+_e\d+_d\d+ ;"
+            "id": r"Invalid id. if level=item, id must match CAT_\d+_e\d+_d\d+ ;"
                   + r"if level=cat(_full|_stat), id must match CAT_\d+",
             "sell_date": r"The format must match: \d{4}(-\d{4})?",
             "orig_date": r"The format must match: \d{4}(-\d{4})?",
@@ -259,8 +259,10 @@ class ErrorLog:
         :return: None
         """
         logfile = ErrorLog.logfile
+        if not os.path.isdir(os.path.dirname(logfile)):
+            os.makedirs(os.path.dirname(logfile))
         if not os.path.exists(logfile):
-            with open(logfile, mode="w") as fh:
+            with open(logfile, mode="w+") as fh:
                 fh.write("")  # create file if it doesn't exist
         root = logging.getLogger()  # create a root logger
         root.setLevel(logging.WARNING)  # set level to which an info will be logged. debug < warning < error

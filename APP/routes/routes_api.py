@@ -25,7 +25,7 @@ from ..utils.api_classes.client_server import APIInvalidInput, APIInternalServer
 # different elements and are also separated into different functions:
 # - the interaction with the client, which happens in the `katapi()` function of this file
 # - the interaction with the database, which also happens in this file
-#   (`katapi_cat_full()`, `katapi_cat_stat()`, `katapi_itm()`)
+#   (`katapi_cat_full()`, `katapi_cat_stat()`, `katapi_item()`)
 # - the creation of representations, or views (aka, a whole response body in xml-tei or json)
 #   to return to the client. see the `utils/classes/representations.py` file for those functions
 #
@@ -124,13 +124,13 @@ def katapi_cat_stat(req):
     return results
 
 
-def katapi_itm(req):
+def katapi_item(req):
     """
     return all matching items (catalogue entries) from export_item.json
     - if `format==json`, the json is build directly from reading the data
       and there is no need to build an extra representation
     - if `format==tei`, data is retrieved here and then a tei representation
-      is built using `XmlTei.build_response_teibody_itm()`
+      is built using `XmlTei.build_response_teibody_item()`
 
     json return format:
     -------------------
@@ -220,7 +220,7 @@ def katapi_itm(req):
                     pass
 
         # pass the list of relevant tei:items to build the response body
-        results = XmlTei.build_response_teibody_itm(data)
+        results = XmlTei.build_response_teibody_item(data)
     return results
 
 
@@ -234,17 +234,17 @@ def katapi():
     global parameters:
     - level: the level of the query.
              values: a string corresponding to:
-                    - itm => item
+                    - item => item
                     - cat_full => complete catalogue (only works with format=tei)
                     - cat_data => statistical data on one/several catalogues (from export_catalog.json)
     - id: the identifier of the item or catalogue (depending on the value of level)
           values: a string corresponding to :
                   - if level=cat(_full|_stat), a catalogue entry's @xml:id (CAT_\d+)
-                  - if level=itm, an items @xml:id (CAT_\d+_e\d+_d\d+)
+                  - if level=item, an items @xml:id (CAT_\d+_e\d+_d\d+)
     - format: the return format
               values: "tei" / "json"
     - name: the name of the entry/catalogue:
-            - if level=itm, the tei:name being queried. use it only if id is none. only a last name will yield results
+            - if level=item, the tei:name being queried. use it only if id is none. only a last name will yield results
             - if level=cat_stat, the catalogue type (TEI//sourceDesc/bibl/@ana of the cats.). possible values:
                                  - 'LAC': Vente Jacques Charavay,
                                  - 'RDA': Revue des Autographes,
@@ -254,15 +254,15 @@ def katapi():
     - sell_date: the date the manuscript is being sold or the date of a catalogue.
                  values: \d{4}(-\d{4})? (aka a year in YYYY format or a date range in YYYY-YYYY format)
 
-    parameters specific to level=itm
+    parameters specific to level=item
     - orig_date: the original date of the manuscript
                  values: \d{4} (aka a year in YYYY format)
 
     tl;dr - possible argument combinations:
     ---------------------------------------
-    name or id are compulsory, format defaults to json, level defaults to itm. if id is provided, the
+    name or id are compulsory, format defaults to json, level defaults to item. if id is provided, the
     only other params allowed are level and format.
-    - level:itm
+    - level:item
           |______format: a value corresponding to tei|json. defaults to json
           |______id: an identifier matching CAT_\d+_e\d+_d\d+.
           |          if id is provided, the only other allowed params are level and format
@@ -301,7 +301,7 @@ def katapi():
         errors.append("unallowed_params")
     if "format" in req.keys() and not re.search(r"^(tei|json)$", req["format"]):
         errors.append("format")
-    if "level" in req.keys() and not re.search(r"^(cat_full|cat_stat|itm)$", req["level"]):
+    if "level" in req.keys() and not re.search(r"^(cat_full|cat_stat|item)$", req["level"]):
         errors.append("level")
     if "name" in req.keys() and "id" in req.keys():
         errors.append("name+id")
@@ -367,13 +367,13 @@ def katapi():
             if "level" in req.keys() and req["level"] == "cat_full" and "format" not in req.keys():
                 req["format"] = "tei"
             if "level" not in req.keys():
-                req["level"] = "itm"
+                req["level"] = "item"
             if "format" not in req.keys():
                 req["format"] = "json"
 
             # if we're working at item level
-            if req["level"] == "itm":
-                response_body = katapi_itm(req)
+            if req["level"] == "item":
+                response_body = katapi_item(req)
 
             # if we're retrieving catalogue statistics
             elif req["level"] == "cat_stat":

@@ -24,7 +24,7 @@
       </titleStmt>
       <publicationStmt>
         <ab>
-          <date type="file-creation-date" when-iso="2022-08-23T22:38:46.509234">2022-08-23T22:38:46.509234</date>
+          <date type="file-creation-date" when-iso="2022-08-24T16:41:40.267860">2022-08-24T16:41:40.267860</date>
           <ref type="http-status-code" target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200">200</ref>
           <note>Original data made available under Creative Commons Attribution 2.0 Generic (CC BY 2.0)</note>
           <table>
@@ -35,7 +35,7 @@
               <cell role="key" xml:id="format">format</cell>
             </row>
             <row>
-              <cell role="value" corresp="level">itm</cell>
+              <cell role="value" corresp="level">item</cell>
               <cell role="value" corresp="id">CAT_000204_e108_d1</cell>
               <cell role="value" corresp="format">tei</cell>
             </row>
@@ -184,19 +184,17 @@
   <text>
     <body>
       <div type="search-results">
-        <list>
-          <head>Search results</head>
-          <item n="108" xml:id="CAT_000204_e108">
-            <num type="lot">108</num>
-            <name type="author" ref="wd:Q255">BEETHOVEN (L. van)</name>
-            <trait>
-              <p>le grand compositeur de musique.</p>
-            </trait>
-            <desc xml:id="CAT_000204_e108_d1">
-              <term ana="#document_type_9">L. s.</term> à M. M. Schlesinger, à Berlin; Vienne, <date when="1820-05-31">31 mai 1820</date>, <measure type="length" unit="p" n="2">2 p.</measure>
-              <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet</desc>
-            <note>Curieuse lettre sur ses ouvrages. Il leur accorde le droit de vendre ses compositions en Angleterre, y compris les airs écossais, aux conditions indiquées par lui. Il s'engage à leur livrer dans trois mois trois sonates pour le prix de 90 florins qu'ils ont fixé. C'est pour leur être agréable qu'il accepte un si petit honoraire. « Je suis habitué à faire des sacrifices, la composition de mes OEuvres n'étant pas faite seulement au point de vue du rapport des honoraires, mais surtout dans l'intention d'en tirer quelque chose de bon pour l'art.»</note>
-          </item>
+        <list><head>Search results</head><item n="108" xml:id="CAT_000204_e108">
+          <num type="lot">108</num>
+          <name type="author" ref="wd:Q255">BEETHOVEN (L. van)</name>
+          <trait>
+            <p>le grand compositeur de musique.</p>
+          </trait>
+          <desc xml:id="CAT_000204_e108_d1">
+            <term ana="#document_type_9">L. s.</term> à M. M. Schlesinger, à Berlin; Vienne, <date when="1820-05-31">31 mai 1820</date>, <measure type="length" unit="p" n="2">2 p.</measure>
+            <measure type="format" unit="f" ana="#document_format_4">in-4</measure>, cachet</desc>
+          <note>Curieuse lettre sur ses ouvrages. Il leur accorde le droit de vendre ses compositions en Angleterre, y compris les airs écossais, aux conditions indiquées par lui. Il s'engage à leur livrer dans trois mois trois sonates pour le prix de 90 florins qu'ils ont fixé. C'est pour leur être agréable qu'il accepte un si petit honoraire. « Je suis habitué à faire des sacrifices, la composition de mes OEuvres n'étant pas faite seulement au point de vue du rapport des honoraires, mais surtout dans l'intention d'en tirer quelque chose de bon pour l'art.»</note>
+        </item>
         </list>
       </div>
     </body>

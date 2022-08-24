@@ -24,7 +24,7 @@
       </titleStmt>
       <publicationStmt>
         <ab>
-          <date type="file-creation-date" when-iso="2022-08-23T22:38:27.394900">2022-08-23T22:38:27.394900</date>
+          <date type="file-creation-date" when-iso="2022-08-24T16:41:16.346735">2022-08-24T16:41:16.346735</date>
           <ref type="http-status-code" target="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422">422</ref>
           <note>Original data made available under Creative Commons Attribution 2.0 Generic (CC BY 2.0)</note>
           <table>
@@ -62,7 +62,6 @@
             <desc>The format must match: \d{4}(-\d{4})?</desc>
           </item>
         </list>
-      </div>
-    </body>
+      </div></body>
   </text>
 </TEI>

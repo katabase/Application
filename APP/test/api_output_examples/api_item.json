@@ -51,12 +51,12 @@
         "license": "Attribution 2.0 Generic (CC BY 2.0)",
         "query": {
             "format": "json",
-            "level": "itm",
+            "level": "item",
             "name": "s\u00e9vign\u00e9",
             "orig_date": "1500-1800",
             "sell_date": "1800-1900"
         },
-        "query_date": "2022-08-23T22:38:29.947077",
+        "query_date": "2022-08-24T16:41:18.876602",
         "status_code": 200
     },
     "results": {

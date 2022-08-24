@@ -401,7 +401,7 @@ class XmlTei:
         """
         tei_encoding_desc = None  # by default, there is no encoding desc, since there's no projet-specific vocabulary
         if "level" in req.keys():
-            if req["level"] == "itm":
+            if req["level"] == "item":
                 tei_encoding_desc = etree.Element("encodingDesc", nsmap=XmlTei.ns)
                 tei_class_decl = etree.Element("classDecl", nsmap=XmlTei.ns)
                 tei_class_decl.append(XmlTei.taxonomy_format)
@@ -516,9 +516,9 @@ class XmlTei:
         return response
 
     @staticmethod
-    def build_response_teibody_itm(data: list):
+    def build_response_teibody_item(data: list):
         """
-        build a representation of the response data in TEI format for `level==itm`.
+        build a representation of the response data in TEI format for `level==item`.
         the response data is contained in a tei:list inside a tei:div with `@type=search-results`
         and this tei:div will be appended to the tei:body of the response.
         :param data: the data to build a representation from. it is a list of tei:items that match
@@ -637,15 +637,15 @@ class XmlTei:
 
         # add the errors to tei:items and append them to teilist
         for k, v in error_log["error_description"].items():
-            itm = etree.Element("item", nsmap=XmlTei.ns)
+            item = etree.Element("item", nsmap=XmlTei.ns)
             # add attributes to the tei:item:
             # - @type with k (the error type)
             # - @corresp with k if k is in the requested keys, to
             #   point towards the tei:header//tei:table containing
             #   the request.
-            itm.set("ana", k)
+            item.set("ana", k)
             if k in req.keys():
-                itm.set("corresp", k)
+                item.set("corresp", k)
 
             # build the inside of the tei:item: a label containing the
             # error_log key + a desc containing the error_log value
@@ -655,9 +655,9 @@ class XmlTei:
             desc.text = v
 
             # build the complete item and append it to the list
-            itm.append(label)
-            itm.append(desc)
-            tei_list.append(itm)
+            item.append(label)
+            item.append(desc)
+            tei_list.append(item)
 
         # add the list to the results and return them
         results.append(tei_list)

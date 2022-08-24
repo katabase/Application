@@ -60,7 +60,7 @@ The **possible parameters** are:
 	- `json`: **this is the default value**.
 	- `tei`: return an `xml-tei` response.
 - **`level`**: the requested data's level. Possible values are:
-	- `itm`: data is retrieved at item level. **This is the default value.**
+	- `item`: data is retrieved at item level. **This is the default value.**
 	- `cat_data`: statistical data on one or several catalogues will be retrieved
 		- this value is incompatible with the `orig_date` parameter.
 	- `cat_full`: a complete catalogue encoded in `xml-tei` will be retrieved
@@ -78,7 +78,7 @@ The **possible parameters** are:
 - **`name`**: if the `id` parameter is not supplied, the name of the catalogue(s) or
   catalogue entry(ies) to retrieve. Note that this parameter can, and will, return 
   several items. Possible values:
-	- if `level=itm`, the `tei:name` being queried. Only the last name in 
+	- if `level=item`, the `tei:name` being queried. Only the last name in 
 	  the `tei:name` is indexed in the search engine and only this one will yield a 
 	  result. If a first name and a last name are provided, no result can be yield,
       since the first name is not indexed.
@@ -94,7 +94,7 @@ The **possible parameters** are:
   the regular expression `\d{4}(-\d{4})?`: a year in `YYYY` format or a year range in
   `YYYY-YYYY` foramat.
 - **`orig_date`**: the date a manuscript item was created. This parameter is only 
-  authorized if `level=itm`. Values must match  the regular expression `\d{4}(-\d{4})?`: 
+  authorized if `level=item`. Values must match  the regular expression `\d{4}(-\d{4})?`: 
   a year in `YYYY` format or a year range in `YYYY-YYYY` foramat.
 
 ---

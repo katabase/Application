@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 # -----------------------------------------------------
 # functions to build json representations
 # of the data and to build complete responses in those
@@ -94,14 +96,15 @@ class Json:
                 "query_date": timestamp,  # the moment katapi is called (a query is run by a client)
                 "query": req,  # user query: params and value
                 "license": "Attribution 2.0 Generic (CC BY 2.0)",
+                "encoding_desc": Json.build_encoding_desc(req)
             },
             "results": response_body  # results returned by the server (or error message)
         }  # response body
 
         # add necessary taxonomies, if any
-        encoding_desc = Json.build_encoding_desc(req)
-        if encoding_desc is not None:
-            template["head"]["encoding_desc"] = encoding_desc
+        # encoding_desc = Json.build_encoding_desc(req)
+        # if encoding_desc is not None:
+        #     template["head"]["encoding_desc"] = encoding_desc
 
         response = APIGlobal.set_headers(response_body=template,
                                          response_format=req["format"],
@@ -120,7 +123,7 @@ class Json:
         :return: encoding_desc, a dict containing the relevant data
         """
         if "level" in req.keys():
-            if req["level"] == "itm":
+            if req["level"] == "item":
                 encoding_desc = {
                     "prefix_definition": Json.prefix_def,
                     "taxonomy_term": Json.taxonomy_term,

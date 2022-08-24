@@ -106,10 +106,10 @@ class APITest(unittest.TestCase):
 
         return None
 
-    def api_itm(self):
+    def api_item(self):
         """
         test that valid responses will be returned for
-        different queries run with param "level"=="itm",
+        different queries run with param "level"=="item",
         with "format"=="tei" and "json":
         - with params "name" + "sell_date" + "orig_date"
         - with params "name" + "sell_date"
@@ -119,10 +119,10 @@ class APITest(unittest.TestCase):
         :return: None
         """
         params = {
-            "p1": {"level": "itm", "name": "sévigné", "sell_date": "1800-1900", "orig_date": "1500-1800"},
-            "p2": {"level": "itm", "name": "sévigné", "sell_date": "1800-1900"},
-            "p3": {"level": "itm", "name": "sévigné", "orig_date": "1000-1000"},  # this one should return no result
-            "p4": {"level": "itm", "id": "CAT_000204_e108_d1"}
+            "p1": {"level": "item", "name": "sévigné", "sell_date": "1800-1900", "orig_date": "1500-1800"},
+            "p2": {"level": "item", "name": "sévigné", "sell_date": "1800-1900"},
+            "p3": {"level": "item", "name": "sévigné", "orig_date": "1000-1000"},  # this one should return no result
+            "p4": {"level": "item", "id": "CAT_000204_e108_d1"}
         }
 
         for k, v in params.items():
@@ -140,7 +140,7 @@ class APITest(unittest.TestCase):
                 # write output to file
                 if k == "p1":
                     # write output to file
-                    with open(f"{TEST}/api_output_examples/api_itm.json", mode="w") as fh:
+                    with open(f"{TEST}/api_output_examples/api_item.json", mode="w") as fh:
                         json.dump(r, fh, indent=4)
 
                 if k == "p3":  # check the empty return
@@ -180,7 +180,7 @@ class APITest(unittest.TestCase):
                         []
                     )  # check that an empty tei response is a tei:div with @type="search-results" and no children
                 if k == "p4":  # check id parameter
-                    XmlTei.xml_to_file(fpath=f"{TEST}/api_output_examples/api_itm.xml", tree=tree)  # write to file
+                    XmlTei.xml_to_file(fpath=f"{TEST}/api_output_examples/api_item.xml", tree=tree)  # write to file
                     t_item = etree.fromstring("""
                         <item n="108" xml:id="CAT_000204_e108">
                             <num type="lot">108</num>
@@ -386,7 +386,7 @@ def suite():
     suite = unittest.TestSuite()
     suite.addTest(APITest("setUp"))
     suite.addTest(APITest("api_invalid_input"))
-    suite.addTest(APITest("api_itm"))
+    suite.addTest(APITest("api_item"))
     suite.addTest(APITest("api_cat_stat"))
     suite.addTest(APITest("api_cat_full"))
     suite.addTest(APITest("tearDown"))
