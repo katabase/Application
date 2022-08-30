@@ -135,11 +135,14 @@ The application was designed by Alexandre Bartz and Paul Kervegan with the help 
 ## Cite this repository
 
 ## Licence
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-<img alt="Licence Creative Commons" style="border-width:0" 
-src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-<img alt="gnugpl" style="border-width:0"
-src="https://www.gnu.org/graphics/gplv3-127x51.png"/>
+<div style="{display:flex; justify-content:space-around;}">
+	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+		<img alt="Licence Creative Commons" style="border-width:0" 
+			src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+	</a>
+	<img alt="gnugpl" style="border-width:0"
+		src="https://www.gnu.org/graphics/gplv3-127x51.png"/>
+</div>
 <br/>
 The catalogues are licensed under 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons 
