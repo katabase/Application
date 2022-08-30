@@ -141,5 +141,5 @@ src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
 The catalogues are licensed under 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons 
 Attribution 4.0 International Licence</a> and the code is licensed under 
-[GNU GPL-3.0](/LICENSE).
+[GNU GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
