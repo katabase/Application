@@ -17,7 +17,7 @@ class Json:
     taxonomy_cat_stat_keys = {
         "sell_date": "The year of the sale presented in the catalogue.",
         "title": "The title of the catalogue, and, by extension, of the sale.",
-        "cat_type": "The type of catalogue (`LAC`|`RDA`|`AUC`|`OTH`)",
+        "cat_type": "The type of catalogue (`LAD`|`LAV`|`RDA`|`AUC`|`OTH`)",
         "currency": "The currency of the prices returned. `FRF` corresponds to french francs.",
         "high_price_c": "The most expensive items in the catalogue, in constant 1900 francs. "
                         + "In the whole API, the `_c` suffix indicates that a price "

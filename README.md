@@ -85,11 +85,11 @@ The **possible parameters** are:
 	- if `level=cat_stat`, the catalogue type (to be found in 
 	  `(TEI//sourceDesc/bibl/@ana` in the `xml` representation of a catalogue).
 	  Possible values are:
-		- 'LAC': Vente Jacques Charavay,
-		- 'RDA': Revue des Autographes,
+		- 'LAD': Lettres autographes et documents historiques,
+		- 'RDA': Revue des autographes, des curiosités de l'histoire et de la biographie,
 		- 'LAV': Catalogue Laveredet,
-		- 'AUC': Auction sale
-		- 'OTH': not yet in use in our dataset
+		- 'AUC': Auction sale,
+		- 'OTH': Other
 - **`sell_date`**: the sale date for a manuscript or a catalogue. Values must match
   the regular expression `\d{4}(-\d{4})?`: a year in `YYYY` format or a year range in
   `YYYY-YYYY` foramat.

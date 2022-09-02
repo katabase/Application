@@ -118,7 +118,7 @@ class APIInvalidInput(exceptions.HTTPException):
             "orig_date": r"The format must match: \d{4}(-\d{4})?",
             "name+id": "You cannot provide both a name and an id",
             "no_name+id": "You must specify at least a name or an id",
-            "cat_stat+name": "When level:cat_stat, name must match: ^(LAC|RDA|LAV|AUC|OTH)$",
+            "cat_stat+name": "When level:cat_stat, name must match: ^(LAD|RDA|LAV|AUC|OTH)$",
             "id_incompatible_params": f"Invalid parameters with parameter id: {str(incompatible_params)}",
             "unallowed_params": f"Unallowed parameters for the API: {str(unallowed_params)}",
             "cat_stat_incompatible_params": f"Invalid parameters for level=cat_stat: {str(incompatible_params)}",

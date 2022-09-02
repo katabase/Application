@@ -246,7 +246,7 @@ def katapi():
     - name: the name of the entry/catalogue:
             - if level=item, the tei:name being queried. use it only if id is none. only a last name will yield results
             - if level=cat_stat, the catalogue type (TEI//sourceDesc/bibl/@ana of the cats.). possible values:
-                                 - 'LAC': Vente Jacques Charavay,
+                                 - 'LAD': Lettres autographes et documents historiques,
                                  - 'RDA': Revue des Autographes,
                                  - 'LAV': Catalogue Laveredet,
                                  - 'AUC': Auction sale
@@ -274,7 +274,7 @@ def katapi():
           |______format: a value corresponding to tei|json. defaults to json
           |______id: an identifier matching CAT_\d+.
           |          if id is provided, the only other allowed params are level and format
-          |______name: a string matching ^(LAC|RDA|LAV|AUC|OTH)$. compulsory if no id is provided
+          |______name: a string matching ^(LAD|RDA|LAV|AUC|OTH)$. compulsory if no id is provided
           |______sell_date: a date matching \d{4}(-\d{4})?. optional
 
     - level:cat_full
@@ -325,7 +325,7 @@ def katapi():
     if "level" in req.keys() and req["level"] == "cat_stat":
         # check for invalid names
         if "name" in req.keys() and not re.search(
-                r"^([Ll][Aa][Cc]|[Rr][Dd][Aa]|[Ll][Aa][Vv]|[Aa][Uu][Cc]|[Oo][Tt][Hh])$", req["name"]
+                r"^([Ll][Aa][Dd]|[Rr][Dd][Aa]|[Ll][Aa][Vv]|[Aa][Uu][Cc]|[Oo][Tt][Hh])$", req["name"]
         ):
             errors.append("cat_stat+name")
         # check for general invalid data

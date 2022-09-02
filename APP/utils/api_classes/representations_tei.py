@@ -162,7 +162,7 @@ class XmlTei:
                 <catDesc>The title of the catalogue, and, by extension, of the sale.</catDesc>
             </category>
             <category xml:id="cat_stat_keys_cat_type">
-                <catDesc>The type of catalogue (`LAC`|`RDA`|`AUC`|`OTH`).</catDesc>
+                <catDesc>The type of catalogue (`LAV`|`LAD`|`RDA`|`AUC`|`OTH`).</catDesc>
             </category>
             <category xml:id="cat_stat_keys_currency">
                 <catDesc>The currency of the prices returned. `FRF` corresponds to french francs.</catDesc>
